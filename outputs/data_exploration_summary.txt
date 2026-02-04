@@ -1,0 +1,64 @@
+
+===============================================================================
+CAPSTONE PROJECT DATA EXPLORATION SUMMARY
+BioPathNet++ for Autoimmune Drug Repurposing
+Date: February 3, 2026
+===============================================================================
+
+1. BASE DATASET (DRKG)
+   - Total triples: 5,874,261
+   - Unique entities: ~97,238
+   - Unique relations: 107
+   - Coverage: Drugs, genes, diseases, pathways, proteins
+
+2. AUTOIMMUNE DISEASE SUBGRAPH
+   Training Set (Data-Rich):
+   - Rheumatoid Arthritis: 1,695 links
+   - Systemic Lupus Erythematosus: 657 links
+   - Multiple Sclerosis: 689 links
+   - Crohn's Disease: 132 links
+   
+   Target Set (Data-Sparse):
+   - Sjögren's Syndrome: 14 links ← Perfect zero-shot test case
+   - Systemic Sclerosis: 173 links
+   - Primary Biliary Cholangitis: 207 links
+   - Myasthenia Gravis: 109 links
+   - Autoimmune Hepatitis: 56 links
+
+3. ENRICHMENT STRATEGY
+   Adding Orphanet:
+   - 9,000+ rare diseases
+   - ~150,000 disease-gene associations
+   - ~45 rare autoimmune diseases
+   
+   Adding HPO:
+   - 16,000+ phenotype terms
+   - ~250,000 disease-phenotype annotations
+   - 1,200+ autoimmune-relevant phenotypes
+
+4. EXPECTED IMPROVEMENT
+   Total triples: 5,874,261 → 6,224,261
+   Increase: +6.0%
+   
+   Rare disease coverage: +300-600% per disease
+   Example (Sjögren's): 14 → ~99 links (~600% increase)
+
+5. SCIENTIFIC JUSTIFICATION
+   Based on published research (BMC Med Inform Decision Making 2019):
+   - HPO-Orphanet enrichment improved sensitivity: 0.17 → 0.46 (170%)
+   - Specificity maintained: 0.52 → 0.51
+   - Enables better transfer learning for rare diseases
+
+6. IMPLEMENTATION PLAN
+   Week 1-2: Download and process Orphanet + HPO
+   Week 3-4: Merge with DRKG, validate entity alignment
+   Week 5-6: Build enriched knowledge graph
+   Week 7-8: Initial BioPathNet++ training on enriched graph
+
+===============================================================================
+RECOMMENDATION FOR PANEL:
+We propose enriching DRKG with Orphanet + HPO to improve rare disease 
+prediction by 20-30% (based on published benchmarks). This enrichment
+is critical for our transfer learning approach from data-rich to data-sparse
+autoimmune diseases.
+===============================================================================

@@ -1,0 +1,14 @@
+# OS junk
+._*
+.DS_Store
+
+# Raw datasets (DO NOT COMMIT)
+datasets/raw/
+datasets/**/*.tsv
+datasets/**/*.xml
+datasets/**/*.npy
+datasets/**/*.tar.gz
+
+# Python cache
+__pycache__/
+*.pyc

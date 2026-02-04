@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .wrapper {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            gap: 10px;
+            height: calc(100vh - 100px);
+        }
+        .phase {
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid;
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+        }
+        .phase h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            text-align: center;
+            padding-bottom: 8px;
+            border-bottom: 3px solid;
+            line-height: 1.3;
+        }
+        .box {
+            background: white;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border: 2px solid;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .box h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .arrow-between {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #666;
+            width: 2%;
+        }
+        .arrow-down {
+            text-align: center;
+            font-size: 28px;
+            margin: 5px 0;
+            color: #666;
+        }
+        
+        .phase1 { background: #e3f2fd; border-color: #1976d2; }
+        .phase1 h2 { color: #1976d2; border-color: #1976d2; }
+        .phase1 .box { border-color: #1976d2; }
+        
+        .phase2 { background: #fff3e0; border-color: #f57c00; }
+        .phase2 h2 { color: #f57c00; border-color: #f57c00; }
+        .phase2 .box { border-color: #f57c00; }
+        
+        .phase3 { background: #f3e5f5; border-color: #7b1fa2; }
+        .phase3 h2 { color: #7b1fa2; border-color: #7b1fa2; }
+        .phase3 .box { border-color: #7b1fa2; }
+        
+        .phase4 { background: #e8f5e9; border-color: #388e3c; }
+        .phase4 h2 { color: #388e3c; border-color: #388e3c; }
+        .phase4 .box { border-color: #388e3c; }
+    </style>
+</head>
+<body>
+    <h1>BioPathNet Architecture</h1>
+    
+    <div class="wrapper">
+        <!-- PHASE 1 -->
+        <div class="phase phase1">
+            <h2>PHASE 1: DATA<br>PREPARATION</h2>
+            
+            <div class="box">
+                <h3>Load DRKG Base</h3>
+                97,238 entities<br>
+                5.8M triples<br>
+                Format: TSV
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Extract Autoimmune<br>Subgraph</h3>
+                9 target diseases<br>
+                ~50K entities<br>
+                ~1.2M triples
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Enrichment Layer</h3>
+                + Orphanet 150K triples<br>
+                + HPO 250K triples<br>
+                <strong>Result: 55K entities<br>
+                1.6M triples (+33%)</strong>
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Feature Engineering</h3>
+                • BioBERT diseases/genes<br>
+                • ChemBERTa drugs<br>
+                • Immune BRG 50K edges<br>
+                • 7 Immune Metapaths<br>
+                <strong>Output: 55K × 768 matrix</strong>
+            </div>
+        </div>
+        
+        <!-- ARROW BETWEEN PHASE 1 & 2 -->
+        <div class="arrow-between">→</div>
+        
+        <!-- PHASE 2 -->
+        <div class="phase phase2">
+            <h2>PHASE 2: MODEL<br>TRAINING</h2>
+            
+            <div class="box">
+                <h3>BioPathNet++ Core</h3>
+                Neural Bellman-Ford<br>
+                • 6-layer NBFNet<br>
+                • Path scoring GRU<br>
+                • Attention mechanism
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Multi-Disease Training</h3>
+                <strong>Data-Rich Diseases:</strong><br>
+                • RA: 1,695 pairs<br>
+                • SLE: 657 pairs<br>
+                • MS: 689 pairs<br>
+                • Crohn's: 132 pairs
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Learn Shared<br>Mechanisms</h3>
+                ✓ TNF-α inhibition<br>
+                ✓ JAK-STAT modulation<br>
+                ✓ IL-6 blockade<br>
+                ✓ B/T-cell targeting<br>
+                <strong>Save: θ_autoimmune</strong>
+            </div>
+        </div>
+        
+        <!-- ARROW BETWEEN PHASE 2 & 3 -->
+        <div class="arrow-between">→</div>
+        
+        <!-- PHASE 3 -->
+        <div class="phase phase3">
+            <h2>PHASE 3: TRANSFER<br>LEARNING</h2>
+            
+            <div class="box">
+                <h3>Target Diseases</h3>
+                <strong>Data-Sparse:</strong><br>
+                • Sjögren's: 14 links<br>
+                • Systemic Sclerosis: 173<br>
+                • PBC: 207<br>
+                • Myasthenia Gravis: 109<br>
+                • Autoimmune Hepatitis: 56
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Zero-Shot Transfer</h3>
+                Using θ_autoimmune<br>
+                <strong>NO fine-tuning</strong><br>
+                Reuse learned paths:<br>
+                Drug→TNF-α→Disease
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Generate Predictions</h3>
+                For each drug 24,313:<br>
+                • Run BioPathNet++<br>
+                • Extract top-50 paths<br>
+                • Apply attention<br>
+                • Score & rank<br>
+                <strong>Output: Top-20 per disease</strong>
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Path Extraction</h3>
+                For each prediction:<br>
+                • Top-5 paths<br>
+                • Attention weights<br>
+                • Mechanistic chains<br>
+                Example: Drug→Gene→<br>Pathway→Disease
+            </div>
+        </div>
+        
+        <!-- ARROW BETWEEN PHASE 3 & 4 -->
+        <div class="arrow-between">→</div>
+        
+        <!-- PHASE 4 -->
+        <div class="phase phase4">
+            <h2>PHASE 4: VALIDATION<br>& OUTPUT</h2>
+            
+            <div class="box">
+                <h3>5-Layer Validation</h3>
+                Layer 1: RepoDB AUPRC ≥0.92<br>
+                Layer 2: Zero-shot hit@20 ≥60%<br>
+                Layer 3: Temporal hit@50 ≥40%<br>
+                Layer 4: Literature support ≥70%<br>
+                Layer 5: Immune pathway ≥80%
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Confidence Scoring</h3>
+                Pass 5 layers: HIGH ⭐⭐⭐<br>
+                Pass 4 layers: HIGH ⭐⭐<br>
+                Pass 3 layers: MEDIUM ⭐<br>
+                Pass <3 layers: LOW<br>
+                <strong>Priority ranking</strong>
+            </div>
+            
+            <div class="arrow-down">↓</div>
+            
+            <div class="box">
+                <h3>Final Deliverables</h3>
+                ✓ Ranked drug list<br>
+                ✓ Mechanistic paths<br>
+                ✓ Validation report<br>
+                ✓ Visualizations<br>
+                ✓ Research paper<br>
+                <strong>Novel: First autoimmune<br>path-based transfer</strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
