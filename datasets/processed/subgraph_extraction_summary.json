@@ -1,0 +1,19 @@
+{
+  "extraction_date": "2026-02-09 22:41:02",
+  "original_drkg_triples": 5874261,
+  "subgraph_triples": 1245487,
+  "num_entities": 54985,
+  "num_relations": 107,
+  "diseases": {
+    "Rheumatoid Arthritis": "Disease::MESH:D001172",
+    "Systemic Lupus Erythematosus": "Disease::MESH:D008180",
+    "Multiple Sclerosis": "Disease::MESH:D009103",
+    "Crohn's Disease": "Disease::MESH:D003424",
+    "Sj\u00f6gren's Syndrome": "Disease::MESH:D012859",
+    "Systemic Sclerosis": "Disease::MESH:D012595",
+    "Primary Biliary Cholangitis": "Disease::MESH:D008105",
+    "Myasthenia Gravis": "Disease::MESH:D009157",
+    "Autoimmune Hepatitis": "Disease::MESH:D019693"
+  },
+  "note": "Using MESH IDs (Disease::MESH:DXXXXXX format)"
+}

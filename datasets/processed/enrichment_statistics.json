@@ -1,0 +1,83 @@
+{
+  "merge_date": "2026-02-10 10:07:32",
+  "overall": {
+    "original_size": 1245487,
+    "enriched_size": 1906058,
+    "added_triples": 660571,
+    "percent_increase": 53.03716538189479,
+    "entity_types": {
+      "Disease": 16715,
+      "Phenotype": 11608,
+      "Biological Process": 8033,
+      "Side Effect": 3478,
+      "Gene": 29249,
+      "Compound": 10572,
+      "Symptom": 132,
+      "Molecular Function": 1567,
+      "Atc": 679,
+      "Pathway": 1509,
+      "Cellular Component": 786,
+      "Pharmacologic Class": 120,
+      "Anatomy": 254,
+      "Tax": 10
+    }
+  },
+  "per_disease": {
+    "Rheumatoid Arthritis": {
+      "before": 1657,
+      "after": 1657,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Multiple Sclerosis": {
+      "before": 655,
+      "after": 655,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Systemic Lupus Erythematosus": {
+      "before": 629,
+      "after": 629,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Primary Biliary Cholangitis": {
+      "before": 200,
+      "after": 200,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Systemic Sclerosis": {
+      "before": 141,
+      "after": 141,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Crohn's Disease": {
+      "before": 123,
+      "after": 123,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Myasthenia Gravis": {
+      "before": 109,
+      "after": 109,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Autoimmune Hepatitis": {
+      "before": 51,
+      "after": 51,
+      "added": 0,
+      "percent_increase": 0.0
+    },
+    "Sj\u00f6gren's Syndrome": {
+      "before": 14,
+      "after": 14,
+      "added": 0,
+      "percent_increase": 0.0
+    }
+  },
+  "num_entities": 84712,
+  "num_relations": 2435
+}

@@ -1,0 +1,10 @@
+disease_name,mesh_entity,total_links,drug_links,gene_links,pathway_links,symptom_links
+Rheumatoid Arthritis,Disease::MESH:D001172,1657,395,1161,0,51
+Multiple Sclerosis,Disease::MESH:D009103,655,193,345,0,78
+Systemic Lupus Erythematosus,Disease::MESH:D008180,629,173,384,0,35
+Primary Biliary Cholangitis,Disease::MESH:D008105,200,61,116,0,8
+Systemic Sclerosis,Disease::MESH:D012595,141,62,79,0,0
+Crohn's Disease,Disease::MESH:D003424,123,59,64,0,0
+Myasthenia Gravis,Disease::MESH:D009157,109,70,39,0,0
+Autoimmune Hepatitis,Disease::MESH:D019693,51,32,19,0,0
+Sjögren's Syndrome,Disease::MESH:D012859,14,5,9,0,0
