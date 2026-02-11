@@ -1,0 +1,15 @@
+{
+  "num_edges": 567959,
+  "num_entities": 23971,
+  "num_relations": 66,
+  "entity_types": {
+    "Gene": 18922,
+    "Phenotype": 2995,
+    "Disease": 950,
+    "Compound": 1067,
+    "Side Effect": 35,
+    "Atc": 2
+  },
+  "avg_degree_approx": 47.387176171206875,
+  "creation_date": "2026-02-11 09:13:33"
+}

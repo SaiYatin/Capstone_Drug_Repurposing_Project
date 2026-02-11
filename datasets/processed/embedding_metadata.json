@@ -1,0 +1,7 @@
+{
+  "num_entities": 84712,
+  "embedding_dim": 768,
+  "model": "BioBERT (dmis-lab/biobert-v1.1)",
+  "device": "cuda",
+  "date_generated": "2026-02-10 18:33:10"
+}
