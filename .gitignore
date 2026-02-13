@@ -1,14 +1,166 @@
-# OS junk
-._*
-.DS_Store
+# BioPathNet++ Capstone Project .gitignore
+# ==========================================
 
-# Raw datasets (DO NOT COMMIT)
+# ============================================================================
+# DATASETS (DO NOT COMMIT - TOO LARGE)
+# ============================================================================
+
+# Raw datasets
 datasets/raw/
-datasets/**/*.tsv
-datasets/**/*.xml
-datasets/**/*.npy
-datasets/**/*.tar.gz
+datasets/raw/**/*
 
-# Python cache
+# Processed data files (regenerable from scripts)
+datasets/processed/*.tsv
+datasets/processed/*.npy
+datasets/processed/*.pt
+datasets/processed/*.pkl
+
+# Specific large files
+datasets/processed/autoimmune_subgraph.tsv
+datasets/processed/enriched_drkg.tsv
+datasets/processed/autoimmune_brg.tsv
+datasets/processed/entity_embeddings.npy
+datasets/processed/pyg_graph.pt
+datasets/processed/hpo_disease_phenotype.tsv
+datasets/processed/hpo_gene_phenotype.tsv
+datasets/processed/orphanet_disease_phenotype.tsv
+
+# Archive files
+*.tar.gz
+*.zip
+*.rar
+
+# ============================================================================
+# KEEP THESE (SMALL, IMPORTANT)
+# ============================================================================
+
+# Allow small metadata/stats files
+!datasets/processed/disease_statistics.csv
+!datasets/processed/*_metadata.json
+!datasets/processed/*_statistics.json
+!datasets/processed/*_summary.json
+!datasets/processed/train_pairs.csv
+!datasets/processed/val_pairs.csv
+!datasets/processed/test_pairs.csv
+!datasets/processed/download_log.json
+!datasets/processed/verification_report.json
+
+# Allow small entity mappings (if < 10 MB)
+# Comment these out if they're too large
+!datasets/processed/entity2id.json
+!datasets/processed/relation2id.json
+!datasets/processed/enriched_entity2id.json
+!datasets/processed/enriched_relation2id.json
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================================
+# OS & EDITORS
+# ============================================================================
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================================
+# MODEL OUTPUTS (LARGE)
+# ============================================================================
+
+# Trained models
+models/checkpoints/
+models/*.pth
+models/*.pt
+outputs/models/
+*.h5
+*.keras
+
+# Training logs
+logs/
+tensorboard_logs/
+wandb/
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+
+# Temporary processing files
+temp/
+tmp/
+*.tmp
+*.log
+
+# Cache files
+.cache/
+*.cache
+
+# ============================================================================
+# RESEARCH ARTIFACTS
+# ============================================================================
+
+# Papers/PDFs (optional - can keep small ones)
+papers/*.pdf
+
+# Large result files
+results/*.csv
+results/*.tsv
+results/*.npy
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+
+# Secrets
+secrets/
+credentials/
+*.key
+*.pem
+
+# Archives
+archives/
+old/
+backup/
+
+# Test outputs
+test_output/
+scratch/"datasets/processed/pyg_graph.pt" 
