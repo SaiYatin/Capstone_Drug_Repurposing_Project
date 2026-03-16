@@ -10,12 +10,18 @@ Author: Yatin
 Date: February 10, 2026
 """
 
+import sys
+from pathlib import Path
+
+# Add project root to Python path so imports work from any directory
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 import numpy as np
-from pathlib import Path
 import json
 from tqdm import tqdm
 import time
@@ -54,6 +60,36 @@ CONFIGS = {
         'learning_rate': 5e-5,      # Lower LR for stability
         'weight_decay': 1e-4,
         'batch_size': 64,           # 4x larger batch!
+        'num_epochs': 100,          # Train longer
+        'gradient_accumulation_steps': 1,
+        'mixed_precision': True     # FP16 for speed
+    },
+    
+    # RTX 4500 Ada (24 GB) - Professional GPU
+    'rtx_4500': {
+        'hidden_dim': 512,          # Large model
+        'num_nbf_layers': 4,        # Deep network
+        'num_metapaths': 7,
+        'num_attention_heads': 8,   # Rich attention
+        'dropout': 0.2,
+        'learning_rate': 5e-5,
+        'weight_decay': 1e-4,
+        'batch_size': 64,           # Large batch
+        'num_epochs': 100,          # Train longer
+        'gradient_accumulation_steps': 1,
+        'mixed_precision': True     # FP16 speedup
+    },
+    
+    # RTX 4500 Ada (24 GB) - Professional workstation GPU
+    'rtx_4500': {
+        'hidden_dim': 512,          # Large model
+        'num_nbf_layers': 4,        # Deep network
+        'num_metapaths': 7,
+        'num_attention_heads': 8,   # Multi-head attention
+        'dropout': 0.2,
+        'learning_rate': 5e-5,
+        'weight_decay': 1e-4,
+        'batch_size': 64,           # Large batch
         'num_epochs': 100,          # Train longer
         'gradient_accumulation_steps': 1,
         'mixed_precision': True     # FP16 for speed
@@ -404,6 +440,9 @@ def main():
         elif 'V100' in gpu_name:
             gpu_type = 'v100'
             print("  → Using V100 config (High Performance)")
+        elif '4500' in gpu_name:
+            gpu_type = 'rtx_4500'
+            print("  → Using RTX 4500 config (Professional Workstation - High Performance)")
         elif '4090' in gpu_name or '3090' in gpu_name:
             gpu_type = 'rtx_4090'
             print("  → Using RTX 4090 config (High Performance)")

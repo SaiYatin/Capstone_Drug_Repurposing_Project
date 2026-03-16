@@ -94,7 +94,7 @@ class GraphDataLoader:
     def load_graph(self):
         """Load PyG graph"""
         pyg_file = self.processed_dir / 'pyg_graph.pt'
-        self.graph_data = torch.load(pyg_file)
+        self.graph_data = torch.load(pyg_file, weights_only=False)
         
         self.num_nodes = self.graph_data.num_nodes
         self.num_edges = self.graph_data.edge_index.size(1)

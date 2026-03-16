@@ -68,14 +68,12 @@ class NBFNetConv(MessagePassing):
         
         # Message transformation (different for each relation)
         if message_func == 'rotate':
-            # RotatE-style: rotation in complex space
-            self.W_msg = nn.Parameter(torch.Tensor(num_relations, in_channels))
+            self.W_msg = nn.Embedding(num_relations, in_channels)
         elif message_func == 'distmult':
-            # DistMult-style: element-wise product
-            self.W_msg = nn.Parameter(torch.Tensor(num_relations, in_channels))
+            self.W_msg = nn.Embedding(num_relations, in_channels)
         else:
-            # Default: learned linear transformation per relation
-            self.W_msg = nn.Parameter(torch.Tensor(num_relations, in_channels, out_channels))
+            self.W_msg = nn.Embedding(num_relations, in_channels * out_channels)
+        self._out_channels = out_channels
         
         # Boundary (self-loop) transformation
         self.W_bound = nn.Linear(in_channels, out_channels)
@@ -105,7 +103,7 @@ class NBFNetConv(MessagePassing):
     def reset_parameters(self):
         """Initialize parameters"""
         nn.init.xavier_uniform_(self.relation_embedding.weight)
-        nn.init.xavier_uniform_(self.W_msg)
+        nn.init.xavier_uniform_(self.W_msg.weight)
         self.W_bound.reset_parameters()
         
         for layer in self.mlp:
@@ -153,42 +151,21 @@ class NBFNetConv(MessagePassing):
         return updated
     
     def message(self, x_j, edge_type):
-        """
-        Compute messages from source nodes to target nodes
-        
-        Args:
-            x_j: Source node features (num_edges, in_channels)
-            edge_type: Relation types (num_edges,)
-        
-        Returns:
-            Messages (num_edges, out_channels)
-        """
+        rel_emb = self.W_msg(edge_type)  # (num_edges, in_channels)
         
         if self.message_func == 'rotate':
-            # RotatE: h_j * r (complex rotation)
-            rel_emb = self.W_msg[edge_type]  # (num_edges, in_channels)
-            
-            # Treat as complex numbers: alternate dims are real/imaginary
-            # Split into real and imaginary parts
-            h_real, h_imag = x_j[..., ::2], x_j[..., 1::2]
-            r_real, r_imag = rel_emb[..., ::2], rel_emb[..., 1::2]
-            
-            # Complex multiplication: (a+bi)(c+di) = (ac-bd) + (ad+bc)i
+            half = x_j.size(-1) // 2
+            h_real, h_imag = x_j[..., :half], x_j[..., half:]
+            r_real, r_imag = rel_emb[..., :half], rel_emb[..., half:]
             msg_real = h_real * r_real - h_imag * r_imag
             msg_imag = h_real * r_imag + h_imag * r_real
-            
-            # Interleave back
-            msg = torch.stack([msg_real, msg_imag], dim=-1).flatten(-2)
+            msg = torch.cat([msg_real, msg_imag], dim=-1)
             
         elif self.message_func == 'distmult':
-            # DistMult: h_j ⊙ r (element-wise product)
-            rel_emb = self.W_msg[edge_type]  # (num_edges, in_channels)
             msg = x_j * rel_emb
             
         else:
-            # Default: linear transformation per relation
-            # msg = h_j @ W_r
-            rel_weight = self.W_msg[edge_type]  # (num_edges, in_channels, out_channels)
+            rel_weight = rel_emb.view(-1, self.in_channels, self._out_channels)
             msg = torch.einsum('ei,eio->eo', x_j, rel_weight)
         
         return msg
