@@ -65,35 +65,22 @@ CONFIGS = {
         'mixed_precision': True     # FP16 for speed
     },
     
-    # RTX 4500 Ada (24 GB) - Professional GPU
+    # RTX 4500 Ada (24 GB) - Professional GPU (CONSERVATIVE CONFIG)
+    # RTX 4500 Ada (24 GB) - Professional GPU (CONSERVATIVE)
     'rtx_4500': {
-        'hidden_dim': 512,          # Large model
-        'num_nbf_layers': 4,        # Deep network
+        'hidden_dim': 256,          # REDUCED to avoid OOM
+        'num_nbf_layers': 3,        # REDUCED depth
         'num_metapaths': 7,
-        'num_attention_heads': 8,   # Rich attention
+        'num_attention_heads': 4,   # REDUCED attention
         'dropout': 0.2,
         'learning_rate': 5e-5,
         'weight_decay': 1e-4,
-        'batch_size': 64,           # Large batch
-        'num_epochs': 100,          # Train longer
-        'gradient_accumulation_steps': 1,
-        'mixed_precision': True     # FP16 speedup
+        'batch_size': 4,            # SMALL batch to fit memory
+        'num_epochs': 100,
+        'gradient_accumulation_steps': 8,  # Simulate batch=32
+        'mixed_precision': True
     },
     
-    # RTX 4500 Ada (24 GB) - Professional workstation GPU
-    'rtx_4500': {
-        'hidden_dim': 512,          # Large model
-        'num_nbf_layers': 4,        # Deep network
-        'num_metapaths': 7,
-        'num_attention_heads': 8,   # Multi-head attention
-        'dropout': 0.2,
-        'learning_rate': 5e-5,
-        'weight_decay': 1e-4,
-        'batch_size': 64,           # Large batch
-        'num_epochs': 100,          # Train longer
-        'gradient_accumulation_steps': 1,
-        'mixed_precision': True     # FP16 for speed
-    },
     
     # V100 (16-32 GB) - Common in academic clusters
     'v100': {
@@ -309,11 +296,11 @@ class OptimizedTrainer:
                             disease_idx
                         )
                         
-                        all_scores.append(scores.cpu().numpy())
-                        all_labels.append(labels[i].cpu().numpy())
+                        all_scores.extend(scores.cpu().numpy().tolist())
+                        all_labels.append(labels[i].item())
         
-        all_scores = np.concatenate(all_scores)
-        all_labels = np.concatenate(all_labels)
+        all_scores = np.array(all_scores)
+        all_labels = np.array(all_labels)
         
         auprc = self.compute_auprc(all_scores, all_labels)
         return auprc

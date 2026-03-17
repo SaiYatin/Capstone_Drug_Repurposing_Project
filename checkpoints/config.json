@@ -1,13 +1,13 @@
 {
-  "hidden_dim": 512,
-  "num_nbf_layers": 4,
+  "hidden_dim": 256,
+  "num_nbf_layers": 3,
   "num_metapaths": 7,
-  "num_attention_heads": 8,
+  "num_attention_heads": 4,
   "dropout": 0.2,
   "learning_rate": 5e-05,
   "weight_decay": 0.0001,
-  "batch_size": 64,
+  "batch_size": 4,
   "num_epochs": 100,
-  "gradient_accumulation_steps": 1,
+  "gradient_accumulation_steps": 8,
   "mixed_precision": true
 }

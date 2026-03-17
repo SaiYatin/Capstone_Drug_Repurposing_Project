@@ -1,166 +1,82 @@
-# BioPathNet++ Capstone Project .gitignore
-# ==========================================
+# BioPathNet++ Drug Repurposing Project
+# =======================================
+# Updated: March 17, 2026
 
 # ============================================================================
-# DATASETS (DO NOT COMMIT - TOO LARGE)
+# LARGE DATA FILES - STORE ON GOOGLE DRIVE
 # ============================================================================
-
-# Raw datasets
 datasets/raw/
-datasets/raw/**/*
-
-# Processed data files (regenerable from scripts)
 datasets/processed/*.tsv
 datasets/processed/*.npy
 datasets/processed/*.pt
 datasets/processed/*.pkl
-
-# Specific large files
-datasets/processed/autoimmune_subgraph.tsv
-datasets/processed/enriched_drkg.tsv
-datasets/processed/autoimmune_brg.tsv
-datasets/processed/entity_embeddings.npy
 datasets/processed/pyg_graph.pt
-datasets/processed/hpo_disease_phenotype.tsv
-datasets/processed/hpo_gene_phenotype.tsv
-datasets/processed/orphanet_disease_phenotype.tsv
-
-# Archive files
-*.tar.gz
-*.zip
-*.rar
+datasets/processed/entity_embeddings.npy
+datasets/processed/enriched_drkg.tsv
+datasets/processed/autoimmune_*.tsv
 
 # ============================================================================
-# KEEP THESE (SMALL, IMPORTANT)
+# KEEP SMALL METADATA FILES
 # ============================================================================
-
-# Allow small metadata/stats files
-!datasets/processed/disease_statistics.csv
-!datasets/processed/*_metadata.json
-!datasets/processed/*_statistics.json
-!datasets/processed/*_summary.json
+!datasets/processed/*.json
+!datasets/processed/*.csv
 !datasets/processed/train_pairs.csv
 !datasets/processed/val_pairs.csv
 !datasets/processed/test_pairs.csv
-!datasets/processed/download_log.json
-!datasets/processed/verification_report.json
 
-# Allow small entity mappings (if < 10 MB)
-# Comment these out if they're too large
-!datasets/processed/entity2id.json
-!datasets/processed/relation2id.json
-!datasets/processed/enriched_entity2id.json
-!datasets/processed/enriched_relation2id.json
+# ============================================================================
+# TRAINED MODELS - KEEP BEST MODEL, EXCLUDE INTERMEDIATE CHECKPOINTS
+# ============================================================================
+# Keep best model (most important!)
+!checkpoints/best_model.pt
+!checkpoints/config.json
+
+# Exclude intermediate epoch checkpoints (too large)
+checkpoints/checkpoint_epoch_*.pt
+
+# ============================================================================
+# LOGS - KEEP TENSORBOARD LOGS
+# ============================================================================
+!logs/
+!logs/**/*
 
 # ============================================================================
 # PYTHON
 # ============================================================================
-
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-
-# Virtual environments
 venv/
 env/
-ENV/
-.venv
+.venv/
+.Python
 
-# PyCharm
-.idea/
-
-# VS Code
+# ============================================================================
+# IDE
+# ============================================================================
 .vscode/
+.idea/
 *.code-workspace
 
-# Jupyter Notebooks
-.ipynb_checkpoints/
-*.ipynb
-
 # ============================================================================
-# OS & EDITORS
+# OS
 # ============================================================================
-
-# macOS
 .DS_Store
-._*
-.Spotlight-V100
-.Trashes
-
-# Windows
 Thumbs.db
-ehthumbs.db
 Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-*~
 
 # ============================================================================
-# MODEL OUTPUTS (LARGE)
+# OUTPUTS - KEEP VISUALIZATIONS
 # ============================================================================
-
-# Trained models
-models/checkpoints/
-models/*.pth
-models/*.pt
-outputs/models/
-*.h5
-*.keras
-
-# Training logs
-logs/
-tensorboard_logs/
-wandb/
+!outputs/
+!outputs/**/*.png
+!outputs/**/*.jpg
+!outputs/**/*.pdf
 
 # ============================================================================
-# TEMPORARY FILES
+# TEMPORARY
 # ============================================================================
-
-# Temporary processing files
 temp/
 tmp/
-*.tmp
 *.log
-
-# Cache files
 .cache/
-*.cache
-
-# ============================================================================
-# RESEARCH ARTIFACTS
-# ============================================================================
-
-# Papers/PDFs (optional - can keep small ones)
-papers/*.pdf
-
-# Large result files
-results/*.csv
-results/*.tsv
-results/*.npy
-
-# ============================================================================
-# MISCELLANEOUS
-# ============================================================================
-
-# Environment variables
-.env
-.env.local
-
-# Secrets
-secrets/
-credentials/
-*.key
-*.pem
-
-# Archives
-archives/
-old/
-backup/
-
-# Test outputs
-test_output/
-scratch/"datasets/processed/pyg_graph.pt" 
