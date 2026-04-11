@@ -58,13 +58,14 @@ class DrugDiseaseDataset(Dataset):
         row = self.pairs.iloc[idx]
         
         # Get entity indices
-        drug_entity = row['head'] if '::' in row['head'] and 'Compound' in row['head'] else row['tail']
-        disease_entity = row['tail'] if '::' in row['tail'] and 'Disease' in row['tail'] else row['head']
-        
-        drug_idx = self.entity2id[drug_entity]
-        disease_idx = self.entity2id[disease_entity]
-        
-        return drug_idx, disease_idx, 1  # Label is 1 (positive pair)
+        drug_entity = row['head'] if '::' in str(row['head']) and 'Compound' in str(row['head']) else row['tail']
+        disease_entity = row['tail'] if '::' in str(row['tail']) and 'Disease' in str(row['tail']) else row['head']
+
+        drug_idx = self.entity2id.get(drug_entity, 0)
+        disease_idx = self.entity2id.get(disease_entity, 0)
+
+        label = int(row['label']) if 'label' in row.index else 1
+        return drug_idx, disease_idx, label
 
 
 class GraphDataLoader:

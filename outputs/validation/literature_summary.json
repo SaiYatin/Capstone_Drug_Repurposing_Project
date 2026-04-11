@@ -1,0 +1,51 @@
+{
+  "total_validated": 54,
+  "strong": 25,
+  "moderate": 15,
+  "weak": 14,
+  "support_rate": 74.07407407407408,
+  "per_disease": {
+    "Sj\u00f6gren's Syndrome": {
+      "validated": 10,
+      "strong": 4,
+      "moderate": 4,
+      "weak": 2,
+      "support_rate": 80.0
+    },
+    "Systemic Sclerosis": {
+      "validated": 10,
+      "strong": 4,
+      "moderate": 4,
+      "weak": 2,
+      "support_rate": 80.0
+    },
+    "Primary Biliary Cholangitis": {
+      "validated": 4,
+      "strong": 3,
+      "moderate": 0,
+      "weak": 1,
+      "support_rate": 75.0
+    },
+    "Myasthenia Gravis": {
+      "validated": 10,
+      "strong": 4,
+      "moderate": 2,
+      "weak": 4,
+      "support_rate": 60.0
+    },
+    "Autoimmune Hepatitis": {
+      "validated": 10,
+      "strong": 4,
+      "moderate": 2,
+      "weak": 4,
+      "support_rate": 60.0
+    },
+    "Crohn's Disease": {
+      "validated": 10,
+      "strong": 6,
+      "moderate": 3,
+      "weak": 1,
+      "support_rate": 90.0
+    }
+  }
+}

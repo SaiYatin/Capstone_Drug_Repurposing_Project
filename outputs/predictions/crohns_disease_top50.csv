@@ -1,0 +1,51 @@
+rank,drug_entity,drug_id,drug_name,score,known_drug,disease_entity,disease_name,path_genes_str
+1,Compound::DB00891,DB00891,Sulfamethoxazole,3.3717539310455322,False,Disease::MESH:D003424,Crohn's Disease,indirect
+2,Compound::DB01077,DB01077,Etidronic Acid,3.333911657333374,False,Disease::MESH:D003424,Crohn's Disease,indirect
+3,Compound::DB00720,DB00720,Clodronic Acid,3.3322548866271973,False,Disease::MESH:D003424,Crohn's Disease,Gene_4318
+4,Compound::DB00650,DB00650,Leucovorin,3.3249003887176514,False,Disease::MESH:D003424,Crohn's Disease,BAX
+5,Compound::DB00400,DB00400,Griseofulvin,3.318588972091675,False,Disease::MESH:D003424,Crohn's Disease,indirect
+6,Compound::DB02527,DB02527,Cyclic AMP,3.3138203620910645,False,Disease::MESH:D003424,Crohn's Disease,"Gene_3375, Gene_2688, CSF2, Gene_16153, Gene_5741, IFNG, CD4, Gene_929, Gene_5697, IL1A, TGFB1, Gene_4282, CTLA4, CXCL8, Gene_12504, IL10, Gene_4313, Gene_24835, Gene_4318, HGF"
+7,Compound::DB05381,DB05381,Histamine,3.300328016281128,False,Disease::MESH:D003424,Crohn's Disease,"IFNG, IL1A, ICAM1, Gene_51497, CCL5, IL10, IL18, Gene_57314, Gene_24835, Gene_929, Gene_2688, CSF2, Gene_5741, Gene_4318, Gene_12981, HGF"
+8,Compound::DB04540,DB04540,Cholesterol,3.2998759746551514,False,Disease::MESH:D003424,Crohn's Disease,"Gene_3375, IL18, Gene_2688, CSF2, Gene_16153, Gene_5741, IFNG, Gene_5697, TGFB1, Gene_6696, BAX, CXCL8, IL10, Gene_4313, Gene_24835, Gene_4318"
+9,Compound::DB05804,DB05804,Vaccine Components,3.2970707416534424,False,Disease::MESH:D003424,Crohn's Disease,indirect
+10,Compound::DB01257,DB01257,Spectinomycin,3.2955482006073,False,Disease::MESH:D003424,Crohn's Disease,indirect
+11,Compound::DB05259,DB05259,Omalizumab,3.294809579849243,False,Disease::MESH:D003424,Crohn's Disease,indirect
+12,Compound::DB01103,DB01103,Quinacrine,3.290802240371704,False,Disease::MESH:D003424,Crohn's Disease,ICAM1
+13,Compound::DB01393,DB01393,Bezafibrate,3.287276268005371,False,Disease::MESH:D003424,Crohn's Disease,indirect
+14,Compound::DB01586,DB01586,Ursodeoxycholic Acid,3.28714919090271,False,Disease::MESH:D003424,Crohn's Disease,IFNG
+15,Compound::DB06662,DB06662,Sparsentan,3.2868220806121826,False,Disease::MESH:D003424,Crohn's Disease,indirect
+16,Compound::DB01698,DB01698,Rutin,3.2853760719299316,False,Disease::MESH:D003424,Crohn's Disease,CXCL8
+17,Compound::DB04557,DB04557,Arachidonic Acid,3.2850682735443115,False,Disease::MESH:D003424,Crohn's Disease,"IFNG, IL1A, Gene_24835, CSF2, Gene_12981"
+18,Compound::DB00290,DB00290,Bleomycin,3.281463384628296,False,Disease::MESH:D003424,Crohn's Disease,"TGFB1, Gene_21803"
+19,Compound::DB09322,DB09322,Zinc Sulfate,3.2812399864196777,False,Disease::MESH:D003424,Crohn's Disease,indirect
+20,Compound::DB01436,DB01436,Alfacalcidol,3.2806284427642822,False,Disease::MESH:D003424,Crohn's Disease,Gene_5741
+21,Compound::DB13854,DB13854,Gamma-Linolenic acid,3.2803361415863037,False,Disease::MESH:D003424,Crohn's Disease,indirect
+22,Compound::DB01592,DB01592,Iron,3.280285358428955,True,Disease::MESH:D003424,Crohn's Disease,"IFNG, CXCL8, ICAM1, TGFB1, IL10, Gene_7099, Gene_21803, Gene_5265, Gene_16153, Gene_24835, CSF2, Gene_5741, Gene_4318, Gene_6556"
+23,Compound::DB08908,DB08908,Dimethyl Fumarate,3.2787420749664307,False,Disease::MESH:D003424,Crohn's Disease,indirect
+24,Compound::DB00630,DB00630,Alendronate,3.2784998416900635,False,Disease::MESH:D003424,Crohn's Disease,"Gene_4313, Gene_21803, Gene_5741"
+25,Compound::DB08834,DB08834,Tauroursodeoxycholic acid,3.277977228164673,False,Disease::MESH:D003424,Crohn's Disease,indirect
+26,Compound::DB00585,DB00585,Nizax,3.277698278427124,False,Disease::MESH:D003424,Crohn's Disease,Gene_4282
+27,Compound::DB02659,DB02659,Cholic Acid,3.277066946029663,False,Disease::MESH:D003424,Crohn's Disease,indirect
+28,Compound::DB03128,DB03128,Acetylcholine,3.2769052982330322,False,Disease::MESH:D003424,Crohn's Disease,Gene_2688
+29,Compound::DB00789,DB00789,Gadopentetic Acid,3.276421308517456,False,Disease::MESH:D003424,Crohn's Disease,indirect
+30,Compound::DB01073,DB01073,Fludarabine,3.2759997844696045,False,Disease::MESH:D003424,Crohn's Disease,"IFNG, Gene_3620, BAX, Gene_24835, CD8A"
+31,Compound::DB03203,DB03203,Sphingosine,3.275468587875366,False,Disease::MESH:D003424,Crohn's Disease,indirect
+32,Compound::DB00382,DB00382,Tacrine,3.2751591205596924,False,Disease::MESH:D003424,Crohn's Disease,indirect
+33,Compound::DB00917,DB00917,Prostaglandin E2,3.274813175201416,False,Disease::MESH:D003424,Crohn's Disease,"Gene_1236, IL18, Gene_2688, CSF2, Gene_5741, Gene_16153, Gene_12981, IFNG, ICAM1, Gene_3620, CD4, IL1A, TGFB1, IL2RA, CXCL8, Gene_12504, IL10, Gene_57314, Gene_4313, Gene_21803, Gene_24835, Gene_4318, HGF"
+34,Compound::DB05990,DB05990,Obeticholic Acid,3.2736220359802246,False,Disease::MESH:D003424,Crohn's Disease,indirect
+35,Compound::DB01373,DB01373,Calcium,3.2733514308929443,False,Disease::MESH:D003424,Crohn's Disease,"Gene_1236, Gene_3375, Gene_2688, CSF2, Gene_5741, IFNG, ICAM1, CD4, Gene_5697, IL1A, Gene_6696, BAX, CXCL8, Gene_51497, CCL5, Gene_9332, Gene_21803, Gene_24835, Gene_4318, HGF"
+36,Compound::DB13169,DB13169,Nandrolone,3.273057460784912,False,Disease::MESH:D003424,Crohn's Disease,indirect
+37,Compound::DB00995,DB00995,Auroafen,3.2728748321533203,False,Disease::MESH:D003424,Crohn's Disease,indirect
+38,Compound::DB13132,DB13132,Artemisinin,3.272822141647339,False,Disease::MESH:D003424,Crohn's Disease,indirect
+39,Compound::DB00859,DB00859,Penicillamine,3.272711992263794,False,Disease::MESH:D003424,Crohn's Disease,Gene_5741
+40,Compound::DB01022,DB01022,Phylloquinone,3.272263288497925,False,Disease::MESH:D003424,Crohn's Disease,indirect
+41,Compound::DB01406,DB01406,Danazol,3.271625280380249,False,Disease::MESH:D003424,Crohn's Disease,"CXCL8, Gene_6696"
+42,Compound::DB00896,DB00896,Rimexolone,3.271202325820923,False,Disease::MESH:D003424,Crohn's Disease,indirect
+43,Compound::DB01085,DB01085,Pilocarpine,3.2710750102996826,False,Disease::MESH:D003424,Crohn's Disease,indirect
+44,Compound::DB02362,DB02362,4-Aminobenzoic Acid,3.2706496715545654,False,Disease::MESH:D003424,Crohn's Disease,indirect
+45,Compound::DB00437,DB00437,Allopurinol,3.2705540657043457,False,Disease::MESH:D003424,Crohn's Disease,Gene_24835
+46,Compound::DB09097,DB09097,Quinagolide,3.2704036235809326,False,Disease::MESH:D003424,Crohn's Disease,indirect
+47,Compound::DB00470,DB00470,Tetrahydrocannabinol,3.2698636054992676,False,Disease::MESH:D003424,Crohn's Disease,indirect
+48,Compound::DB00778,DB00778,Roxithromycin,3.2698280811309814,False,Disease::MESH:D003424,Crohn's Disease,CXCL8
+49,Compound::DB06285,DB06285,DB06285,3.2688708305358887,False,Disease::MESH:D003424,Crohn's Disease,Gene_5741
+50,Compound::DB00691,DB00691,Moexipril,3.268026113510132,False,Disease::MESH:D003424,Crohn's Disease,indirect
