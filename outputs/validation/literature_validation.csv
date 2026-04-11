@@ -1,0 +1,61 @@
+disease_entity,disease_name,drug_entity,drug_id,drug_name,rank,score,known_drug,pubmed_total_papers,pubmed_treatment_papers,pubmed_query,evidence_level,top_pmids
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB00891,DB00891,Sulfamethoxazole,1,3.371753692626953,False,7,3,"""Sulfamethoxazole"" AND ""Sjögren's Syndrome""",STRONG,"41049911,23551350,10908703,10380837,3871870"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB01077,DB01077,Etidronic Acid,2,3.333911895751953,False,2,2,"""Etidronic Acid"" AND ""Sjögren's Syndrome""",MODERATE,"22740247,21764202"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB00720,DB00720,Clodronic Acid,3,3.3322548866271973,False,2,2,"""Clodronic Acid"" AND ""Sjögren's Syndrome""",MODERATE,"22770665,10638776"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB00650,DB00650,Leucovorin,4,3.324900388717652,False,2,2,"""Leucovorin"" AND ""Sjögren's Syndrome""",MODERATE,"28017209,23040694"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB00400,DB00400,Griseofulvin,5,3.318588972091675,False,2,2,"""Griseofulvin"" AND ""Sjögren's Syndrome""",MODERATE,"2084866,5869790"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB02527,DB02527,Cyclic AMP,6,3.313820600509644,False,21,5,"""Cyclic AMP"" AND ""Sjögren's Syndrome""",STRONG,"38912838,36133908,32632716,26569106,25847253"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB05381,DB05381,Histamine,7,3.300328016281128,False,23,15,"""Histamine"" AND ""Sjögren's Syndrome""",STRONG,"37343785,35315137,31067554,30104151,29929598"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB04540,DB04540,Cholesterol,8,3.299875974655152,False,64,22,"""Cholesterol"" AND ""Sjögren's Syndrome""",STRONG,"41819609,41416395,40765098,40750883,40649115"
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB05804,DB05804,Vaccine Components,9,3.2970707416534424,False,0,0,"""Vaccine Components"" AND ""Sjögren's Syndrome""",WEAK,
+Disease::MESH:D012859,Sjögren's Syndrome,Compound::DB01257,DB01257,Spectinomycin,10,3.2955482006073,False,0,0,"""Spectinomycin"" AND ""Sjögren's Syndrome""",WEAK,
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB00891,DB00891,Sulfamethoxazole,1,3.371753931045532,False,2,1,"""Sulfamethoxazole"" AND ""Systemic Sclerosis""",MODERATE,"31729682,10637675"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB01077,DB01077,Etidronic Acid,2,3.333911657333374,False,1,1,"""Etidronic Acid"" AND ""Systemic Sclerosis""",MODERATE,19337947
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB00720,DB00720,Clodronic Acid,3,3.3322548866271973,False,1,1,"""Clodronic Acid"" AND ""Systemic Sclerosis""",MODERATE,31127033
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB00650,DB00650,Leucovorin,4,3.3249008655548096,False,3,2,"""Leucovorin"" AND ""Systemic Sclerosis""",STRONG,"36443884,32875310,24101935"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB00400,DB00400,Griseofulvin,5,3.318589210510254,False,2,2,"""Griseofulvin"" AND ""Systemic Sclerosis""",MODERATE,"2260345,3823792"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB02527,DB02527,Cyclic AMP,6,3.313820600509644,False,20,10,"""Cyclic AMP"" AND ""Systemic Sclerosis""",STRONG,"40552889,40142089,40060695,39719300,39054558"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB05381,DB05381,Histamine,7,3.300327777862549,False,29,17,"""Histamine"" AND ""Systemic Sclerosis""",STRONG,"40334932,38918847,37639822,33408859,30104151"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB04540,DB04540,Cholesterol,8,3.299875974655152,False,80,29,"""Cholesterol"" AND ""Systemic Sclerosis""",STRONG,"41483078,40762859,40649115,40371550,40189995"
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB05804,DB05804,Vaccine Components,9,3.2970707416534424,False,0,0,"""Vaccine Components"" AND ""Systemic Sclerosis""",WEAK,
+Disease::MESH:D012595,Systemic Sclerosis,Compound::DB01257,DB01257,Spectinomycin,10,3.2955482006073,False,0,0,"""Spectinomycin"" AND ""Systemic Sclerosis""",WEAK,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB01041,DB01041,Thalidomide,1,8.463700294494629,True,0,0,"""Thalidomide"" AND ""Primary Biliary Cholangitis""",WEAK,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB01586,DB01586,Ursodeoxycholic Acid,2,8.44534969329834,True,804,738,"""Ursodeoxycholic Acid"" AND ""Primary Biliary Cholangitis""",STRONG,"41933920,41933275,41906662,41898408,41896470"
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB01039,DB01039,Fenofibrate,3,8.434556007385254,True,54,53,"""Fenofibrate"" AND ""Primary Biliary Cholangitis""",STRONG,"41906662,41705340,41473694,41153623,41077769"
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB00860,DB00860,Prednisolone,4,8.427263259887695,True,33,30,"""Prednisolone"" AND ""Primary Biliary Cholangitis""",STRONG,"40662118,40330361,40276483,40182330,39912050"
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB01229,DB01229,Paclitaxel,5,8.424507141113281,False,-1,-1,,SKIPPED,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB00763,DB00763,Methimazole,6,8.410101890563965,False,-1,-1,,SKIPPED,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB05266,DB05266,Ibudilast,7,8.404647827148438,False,-1,-1,,SKIPPED,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB00675,DB00675,Tamoxifen,8,8.38875961303711,False,-1,-1,,SKIPPED,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB00877,DB00877,Sirolimus,9,8.387212753295898,False,-1,-1,,SKIPPED,
+Disease::MESH:D008105,Primary Biliary Cholangitis,Compound::DB00778,DB00778,Roxithromycin,10,8.385049819946289,False,-1,-1,,SKIPPED,
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB00891,DB00891,Sulfamethoxazole,1,3.371753931045532,False,12,12,"""Sulfamethoxazole"" AND ""Myasthenia Gravis""",STRONG,"41603484,40874431,39416864,39128464,36569203"
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB01077,DB01077,Etidronic Acid,2,3.333911895751953,False,2,0,"""Etidronic Acid"" AND ""Myasthenia Gravis""",MODERATE,"23143965,18097124"
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB00720,DB00720,Clodronic Acid,3,3.3322548866271973,False,0,0,"""Clodronic Acid"" AND ""Myasthenia Gravis""",WEAK,
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB00650,DB00650,Leucovorin,4,3.324900388717652,False,1,1,"""Leucovorin"" AND ""Myasthenia Gravis""",MODERATE,25635260
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB00400,DB00400,Griseofulvin,5,3.318589448928833,False,0,0,"""Griseofulvin"" AND ""Myasthenia Gravis""",WEAK,
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB02527,DB02527,Cyclic AMP,6,3.3138203620910645,False,31,15,"""Cyclic AMP"" AND ""Myasthenia Gravis""",STRONG,"24878227,21861992,16004938,15355455,14761484"
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB05381,DB05381,Histamine,7,3.300328016281128,False,12,8,"""Histamine"" AND ""Myasthenia Gravis""",STRONG,"41109821,32644548,38309959,30020687,31469920"
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB04540,DB04540,Cholesterol,8,3.299875974655152,False,24,16,"""Cholesterol"" AND ""Myasthenia Gravis""",STRONG,"41257845,41163004,39939175,39680334,39144315"
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB05804,DB05804,Vaccine Components,9,3.2970707416534424,False,0,0,"""Vaccine Components"" AND ""Myasthenia Gravis""",WEAK,
+Disease::MESH:D009157,Myasthenia Gravis,Compound::DB01257,DB01257,Spectinomycin,10,3.295548439025879,True,0,0,"""Spectinomycin"" AND ""Myasthenia Gravis""",WEAK,
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB00891,DB00891,Sulfamethoxazole,1,3.371753931045532,False,6,6,"""Sulfamethoxazole"" AND ""Autoimmune Hepatitis""",STRONG,"40831426,32352943,29351806,30212050,26346512"
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB01077,DB01077,Etidronic Acid,2,3.333911895751953,False,0,0,"""Etidronic Acid"" AND ""Autoimmune Hepatitis""",WEAK,
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB00720,DB00720,Clodronic Acid,3,3.3322548866271973,False,1,0,"""Clodronic Acid"" AND ""Autoimmune Hepatitis""",MODERATE,37832236
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB00650,DB00650,Leucovorin,4,3.3249008655548096,False,1,1,"""Leucovorin"" AND ""Autoimmune Hepatitis""",MODERATE,21546639
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB00400,DB00400,Griseofulvin,5,3.318589448928833,False,0,0,"""Griseofulvin"" AND ""Autoimmune Hepatitis""",WEAK,
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB02527,DB02527,Cyclic AMP,6,3.313820600509644,False,3,2,"""Cyclic AMP"" AND ""Autoimmune Hepatitis""",STRONG,"35605433,35221290,30386344"
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB05381,DB05381,Histamine,7,3.300327777862549,False,3,2,"""Histamine"" AND ""Autoimmune Hepatitis""",STRONG,"30020687,31031775,11059062"
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB04540,DB04540,Cholesterol,8,3.299875974655152,False,39,22,"""Cholesterol"" AND ""Autoimmune Hepatitis""",STRONG,"41271978,40027577,39782681,38556822,32644704"
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB05804,DB05804,Vaccine Components,9,3.2970707416534424,False,0,0,"""Vaccine Components"" AND ""Autoimmune Hepatitis""",WEAK,
+Disease::MESH:D019693,Autoimmune Hepatitis,Compound::DB01257,DB01257,Spectinomycin,10,3.2955482006073,False,0,0,"""Spectinomycin"" AND ""Autoimmune Hepatitis""",WEAK,
+Disease::MESH:D003424,Crohn's Disease,Compound::DB00891,DB00891,Sulfamethoxazole,1,3.371753931045532,False,34,30,"""Sulfamethoxazole"" AND ""Crohn's Disease""",STRONG,"38034455,36671355,36222368,32266309,31583863"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB01077,DB01077,Etidronic Acid,2,3.333911657333374,False,8,8,"""Etidronic Acid"" AND ""Crohn's Disease""",STRONG,"24569060,24304669,24221457,24146170,22483568"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB00720,DB00720,Clodronic Acid,3,3.3322548866271973,False,1,1,"""Clodronic Acid"" AND ""Crohn's Disease""",MODERATE,9494315
+Disease::MESH:D003424,Crohn's Disease,Compound::DB00650,DB00650,Leucovorin,4,3.324900388717652,False,9,9,"""Leucovorin"" AND ""Crohn's Disease""",STRONG,"36514648,32798155,28827020,26771865,24245540"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB00400,DB00400,Griseofulvin,5,3.318588972091675,False,2,2,"""Griseofulvin"" AND ""Crohn's Disease""",MODERATE,"15764160,1350049"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB02527,DB02527,Cyclic AMP,6,3.3138203620910645,False,24,12,"""Cyclic AMP"" AND ""Crohn's Disease""",STRONG,"40319156,36219522,36142518,34799637,33972436"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB05381,DB05381,Histamine,7,3.300328016281128,False,63,28,"""Histamine"" AND ""Crohn's Disease""",STRONG,"41599774,40806058,39180897,38337636,37373085"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB04540,DB04540,Cholesterol,8,3.299875974655152,False,204,104,"""Cholesterol"" AND ""Crohn's Disease""",STRONG,"41914530,41896411,41476891,41476762,41428330"
+Disease::MESH:D003424,Crohn's Disease,Compound::DB05804,DB05804,Vaccine Components,9,3.2970707416534424,False,0,0,"""Vaccine Components"" AND ""Crohn's Disease""",WEAK,
+Disease::MESH:D003424,Crohn's Disease,Compound::DB01257,DB01257,Spectinomycin,10,3.2955482006073,False,1,1,"""Spectinomycin"" AND ""Crohn's Disease""",MODERATE,6765390

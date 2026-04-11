@@ -1,0 +1,46 @@
+{
+  "overall_match_rate": 61.66666666666667,
+  "total_analyzed": 120,
+  "immune_matches": 74,
+  "pathway_frequency": {
+    "Interleukins": 47,
+    "Cytokine_cascade": 52,
+    "T_cell_markers": 10,
+    "TNF_signaling": 58,
+    "NF-kB_pathway": 34,
+    "JAK-STAT": 12,
+    "B_cell_markers": 8
+  },
+  "per_disease": {
+    "Sj\u00f6gren's Syndrome": {
+      "analyzed": 20,
+      "matches": 11,
+      "rate": 55.00000000000001
+    },
+    "Systemic Sclerosis": {
+      "analyzed": 20,
+      "matches": 11,
+      "rate": 55.00000000000001
+    },
+    "Primary Biliary Cholangitis": {
+      "analyzed": 20,
+      "matches": 19,
+      "rate": 95.0
+    },
+    "Myasthenia Gravis": {
+      "analyzed": 20,
+      "matches": 11,
+      "rate": 55.00000000000001
+    },
+    "Autoimmune Hepatitis": {
+      "analyzed": 20,
+      "matches": 11,
+      "rate": 55.00000000000001
+    },
+    "Crohn's Disease": {
+      "analyzed": 20,
+      "matches": 11,
+      "rate": 55.00000000000001
+    }
+  }
+}
