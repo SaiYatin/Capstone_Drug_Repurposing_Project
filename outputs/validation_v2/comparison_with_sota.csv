@@ -1,0 +1,7 @@
+model,auprc,auroc
+Random Baseline,0.5,0.5
+TransE,0.65,0.68
+DRKG Baseline,0.7,0.72
+TxGNN (Stanford),0.92,0.93
+BioPathNet++ (Ours - Val),0.918,0.926
+BioPathNet++ (Ours - Test),0.935,0.941
