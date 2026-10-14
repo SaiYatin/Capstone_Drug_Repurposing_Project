@@ -1,0 +1,8 @@
+{
+  "best_val_auprc": 1.0,
+  "best_epoch": 9,
+  "test_auprc": 0.9990172856168487,
+  "test_auroc": 0.9990421570622956,
+  "num_epochs": 100,
+  "model_params": 8026113
+}

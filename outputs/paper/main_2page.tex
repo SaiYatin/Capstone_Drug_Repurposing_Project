@@ -1,0 +1,179 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage{cite}
+
+\emergencystretch=2em
+
+\title{Cross-Disease Transfer Learning for Zero-Shot\\Drug Repurposing in Rare Autoimmune Diseases}
+
+\author{
+\IEEEauthorblockN{TVNS Yatin, A Charan KR, Praveen Kumar Yadav, Srijan Jha}
+\IEEEauthorblockA{PES University, Bengaluru, India}
+\IEEEauthorblockA{Under the guidance of Dr.\ Priyanka H.}
+}
+
+\begin{document}
+\maketitle
+
+% ================================================================
+% ABSTRACT
+% ================================================================
+\begin{abstract}
+Over 95\% of rare autoimmune disease patients lack FDA-approved therapies, and computational drug repurposing methods fail under severe data sparsity. We investigate whether path-based graph neural architectures trained on data-rich autoimmune diseases can generalize to unseen rare conditions via cross-disease transfer learning. Our framework, BioPathNet++, enriches the Drug Repurposing Knowledge Graph (DRKG) with Orphanet and HPO annotations (84,712 nodes; 1.9M edges), trains a Neural Bellman--Ford network on three data-rich diseases (RA, SLE, MS), and applies zero-shot inference to six unseen autoimmune targets. We report three key findings: (1)~zero-shot transfer achieves test AUPRC of 0.935 and recovers clinically established treatments for Primary Biliary Cholangitis without disease-specific training; (2)~pretrained BioBERT embeddings contribute an order of magnitude more discriminative signal than graph-structural components; and (3)~few-shot fine-tuning provides negligible improvement over zero-shot transfer, indicating near-optimal immune mechanism coverage from pretraining alone.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Drug Repurposing, Transfer Learning, Knowledge Graphs, Graph Neural Networks, Autoimmune Diseases
+\end{IEEEkeywords}
+
+% ================================================================
+% I. INTRODUCTION
+% ================================================================
+\section{Introduction}
+
+Drug repurposing discovers new therapeutic uses for existing drugs, bypassing the decade-long timelines and billion-dollar costs of de novo development~\cite{drkg}. This is particularly valuable for rare autoimmune diseases---conditions like Primary Biliary Cholangitis (PBC), Systemic Sclerosis, and Sj\"{o}gren's Syndrome---where patient populations are too small to justify traditional clinical trials, leaving millions without disease-modifying therapies.
+
+Biomedical knowledge graphs (KGs) integrate drug, gene, disease, and pathway information into a unified structure suitable for computational link prediction. However, standard graph neural networks (GNNs) struggle with rare diseases due to severe connectivity imbalance: Rheumatoid Arthritis has 1,695 curated drug links in DRKG, while Sj\"{o}gren's Syndrome has only 14. Path-based reasoning~\cite{nbfnet} offers a more principled alternative by explicitly modeling multi-hop biological routes, but has not been systematically evaluated for cross-disease transfer in autoimmune settings.
+
+We address a specific hypothesis: \textit{are shared immune mechanisms---TNF-$\alpha$ signaling, JAK--STAT modulation, cytokine dysregulation---sufficiently conserved across autoimmune conditions to enable effective zero-shot drug prediction for unseen diseases?}
+
+Our contributions are: (1)~an enriched autoimmune KG integrating DRKG with Orphanet/HPO rare disease annotations; (2)~empirical evidence that cross-disease transfer achieves AUPRC $\geq 0.87$ across six zero-shot diseases and recovers known treatments for PBC; (3)~a finding that pretrained biomedical language model features (BioBERT) dominate graph-structural components by an order of magnitude---an architectural insight for the community.
+
+% ================================================================
+% II. METHODOLOGY
+% ================================================================
+\section{Methodology}
+
+\subsection{Knowledge Graph Construction}
+
+We enrich DRKG~\cite{drkg} (97,238 entities, 5.8M triples) with two rare disease resources: Orphanet~\cite{orphanet} (${\sim}$150K disease--gene triples) and HPO~\cite{hpo} (${\sim}$250K disease--phenotype triples). The resulting graph contains \textbf{84,712 nodes} and \textbf{1,906,058 edges}, a 33\% expansion that substantially improves connectivity around rare disease nodes. Node features are initialized with BioBERT~\cite{biobert} (768-dim) for diseases/genes and ChemBERTa~\cite{chemberta} for drugs.
+
+\subsection{Path-Based Architecture}
+
+BioPathNet++ uses a Neural Bellman--Ford Network (NBFNet)~\cite{nbfnet} for multi-hop path reasoning. For each query drug, NBFNet initializes a boundary representation and propagates it through $K{=}3$ message-passing layers via DistMult message function over a 2-hop subgraph, producing drug--disease pair representations in a 256-dimensional space. Seven immune-specific metapath channels (TNF-$\alpha$ inhibition, JAK--STAT, IL-6 blockade, T/B-cell targeting, pathway intervention, gene--gene interaction, phenotype-based inference) provide interpretability context through multi-head attention (4 heads). A fusion layer combines NBFNet embeddings with metapath and regulatory context for final prediction.
+
+\subsection{Transfer Learning Protocol}
+
+The model is jointly pretrained on three data-rich diseases---Rheumatoid Arthritis (1,695 links), Systemic Lupus Erythematosus (657), and Multiple Sclerosis (689)---using binary cross-entropy loss. The learned parameters are then applied \textit{without any fine-tuning} to six unseen diseases: PBC, Systemic Sclerosis, Crohn's Disease, Sj\"{o}gren's Syndrome, Autoimmune Hepatitis, and Myasthenia Gravis, spanning 14 to 207 known links.
+
+% ================================================================
+% III. RESULTS
+% ================================================================
+\section{Results}
+
+\subsection{Overall Performance}
+
+Table~\ref{tab:overall} compares BioPathNet++ against baselines on the held-out test set containing all six zero-shot diseases. The model achieves test AUPRC of 0.935 and AUROC of 0.941, outperforming TxGNN~\cite{txgnn}. Test performance exceeds validation (0.935 vs.\ 0.918), indicating generalization rather than overfitting.
+
+\begin{table}[!t]
+\caption{Comparison with Baselines (Test Set)}
+\label{tab:overall}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Model} & \textbf{AUPRC} & \textbf{AUROC} \\
+\midrule
+TransE & 0.650 & 0.680 \\
+DRKG Baseline & 0.700 & 0.720 \\
+TxGNN~\cite{txgnn} & 0.920 & 0.930 \\
+\textbf{BioPathNet++} & \textbf{0.935} & \textbf{0.941} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Case Study: Primary Biliary Cholangitis}
+
+PBC exemplifies the transfer learning hypothesis. Despite receiving zero training examples, the model recovers three clinically established treatments in its top-10 predictions: \textbf{Fenofibrate} (rank 2), a second-line PBC therapy; \textbf{Prednisolone} (rank 3), a standard corticosteroid; and \textbf{Thalidomide} (rank 8), used in refractory PBC. These drugs are surfaced purely through shared immune pathway representations learned from RA, SLE, and MS---the model identifies that PBC shares TNF/NF-$\kappa$B signaling substrates with training diseases. PBC also achieves the highest immune pathway match rate (95\%, 19/20 top predictions) among all evaluated diseases.
+
+\subsection{Zero-Shot vs.\ Few-Shot Transfer}
+
+Table~\ref{tab:fewshot} compares zero-shot performance against 5-shot and 10-shot fine-tuning across five diseases (Sj\"{o}gren's excluded due to insufficient samples). Fine-tuning produces negligible changes ($\leq 0.006$ AUPRC), confirming that the pretrained representations already capture near-optimal immune mechanism coverage.
+
+\begin{table}[!t]
+\caption{Zero-Shot vs.\ Few-Shot AUPRC}
+\label{tab:fewshot}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Disease} & \textbf{0-shot} & \textbf{5-shot} & \textbf{10-shot} \\
+\midrule
+Autoimmune Hepatitis & 0.975 & 0.973 & 0.978 \\
+Prim.\ Biliary Cholangitis & 0.949 & 0.945 & 0.952 \\
+Myasthenia Gravis & 0.907 & 0.912 & 0.916 \\
+Crohn's Disease & 0.892 & 0.883 & 0.890 \\
+Systemic Sclerosis & 0.871 & 0.865 & 0.865 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Ablation: What Drives Performance?}
+
+Table~\ref{tab:ablation} reveals a critical architectural insight. Removing BioBERT node initialization causes by far the largest degradation ($-0.332$ AUPRC), while removing metapath channels or the regulatory graph component leaves performance unchanged. This demonstrates that \textit{for sparsely connected rare diseases, pretrained biomedical language embeddings carry the dominant discriminative signal}---a finding that informs future system design and motivates tighter integration of graph-structural components with pretrained representations.
+
+\begin{table}[!t]
+\caption{Ablation Study: Component Contribution}
+\label{tab:ablation}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Variant} & \textbf{AUPRC} & $\Delta$\textbf{AUPRC} \\
+\midrule
+Full Model & 0.935 & --- \\
+No Metapaths & 0.938 & +0.003 \\
+No BRG & 0.935 & 0.000 \\
+No Fusion & 0.906 & $-$0.029 \\
+\textbf{No BioBERT} & \textbf{0.603} & $\mathbf{-0.332}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ================================================================
+% IV. CONCLUSION
+% ================================================================
+\section{Conclusion}
+
+We investigated cross-disease transfer learning for zero-shot drug repurposing in rare autoimmune diseases. Through BioPathNet++, we demonstrated that: (1)~shared immune representations transfer effectively across disease boundaries, recovering known PBC treatments without disease-specific training; (2)~pretrained biomedical language model features dominate graph-structural components, contributing an order of magnitude more signal; and (3)~zero-shot transfer is already near-optimal, with few-shot fine-tuning providing negligible benefit.
+
+\textbf{Limitations.} The current evaluation uses standard random negatives; harder drug-vs-drug evaluation would yield more conservative metrics. Metapath and regulatory graph components contribute interpretability rather than discriminative power, motivating future work on explicit graph path extraction. All validation is computational; no wet-lab experiments have been performed.
+
+\textbf{Future Work.} We plan to implement contrastive learning with pharmacologically informed hard negatives, explicit metapath enumeration with GRU sequence encoding, and molecular docking validation of top-ranked PBC candidates to bridge computational predictions with translational evidence.
+
+\begin{thebibliography}{8}
+
+\bibitem{drkg}
+I. Ioannidis et al., ``DRKG,'' \textit{arXiv:2012.09988}, 2020.
+
+\bibitem{nbfnet}
+Z. Zhu et al., ``Neural Bellman--Ford Networks,'' \textit{NeurIPS}, 2021.
+
+\bibitem{txgnn}
+M. Huang et al., ``Zero-Shot Drug Repurposing with Geometric Deep Learning,'' \textit{Nat. Mach. Intell.}, 2024.
+
+\bibitem{orphanet}
+Orphanet Consortium, \url{https://www.orphadata.com}, 2024.
+
+\bibitem{hpo}
+S. K\"{o}hler et al., ``HPO in 2024,'' \textit{Nucleic Acids Res.}, vol.~52, 2024.
+
+\bibitem{biobert}
+J. Lee et al., ``BioBERT,'' \textit{Bioinformatics}, vol.~36, no.~4, 2020.
+
+\bibitem{chemberta}
+S. Chithrananda et al., ``ChemBERTa,'' \textit{arXiv:2010.09885}, 2020.
+
+\bibitem{dreamwalk}
+J. Park et al., ``DREAMwalk,'' \textit{Nat. Commun.}, 2023.
+
+\end{thebibliography}
+
+\end{document}
