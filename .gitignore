@@ -80,3 +80,13 @@ temp/
 tmp/
 *.log
 .cache/
+
+# ============================================================================
+# BioPathNet++ v3
+# ============================================================================
+# Kaggle run logs are experimental evidence for the paper: keep them
+!outputs/bpp/**/*.log
+# Kaggle upload bundles (rebuildable from bpp/ + datasets/bpp_primekg/; runs zips hold checkpoints)
+kaggle/*.zip
+# invalid v2 model weights (66 MB; results invalidated by the leakage audit)
+checkpoints/best_model_v2.pt

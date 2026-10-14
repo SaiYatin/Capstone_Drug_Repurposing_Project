@@ -1,0 +1,161 @@
+{
+  "source": "PrimeKG",
+  "node_types": [
+    "anatomy",
+    "biological_process",
+    "cellular_component",
+    "disease",
+    "drug",
+    "effect/phenotype",
+    "exposure",
+    "gene/protein",
+    "molecular_function",
+    "pathway"
+  ],
+  "drug_type": "drug",
+  "disease_type": "disease",
+  "relations": [
+    "anatomy_anatomy",
+    "anatomy_protein_absent",
+    "anatomy_protein_present",
+    "bioprocess_bioprocess",
+    "bioprocess_protein",
+    "cellcomp_cellcomp",
+    "cellcomp_protein",
+    "disease_disease",
+    "disease_phenotype_negative",
+    "disease_phenotype_positive",
+    "disease_protein",
+    "drug_drug",
+    "drug_effect",
+    "drug_protein",
+    "exposure_bioprocess",
+    "exposure_cellcomp",
+    "exposure_disease",
+    "exposure_exposure",
+    "exposure_molfunc",
+    "exposure_protein",
+    "molfunc_molfunc",
+    "molfunc_protein",
+    "pathway_pathway",
+    "pathway_protein",
+    "phenotype_phenotype",
+    "phenotype_protein",
+    "protein_protein"
+  ],
+  "relation_orientation": {
+    "drug_drug": [
+      "drug",
+      "drug"
+    ],
+    "drug_protein": [
+      "drug",
+      "gene/protein"
+    ],
+    "protein_protein": [
+      "gene/protein",
+      "gene/protein"
+    ],
+    "anatomy_anatomy": [
+      "anatomy",
+      "anatomy"
+    ],
+    "anatomy_protein_present": [
+      "gene/protein",
+      "anatomy"
+    ],
+    "bioprocess_bioprocess": [
+      "biological_process",
+      "biological_process"
+    ],
+    "bioprocess_protein": [
+      "gene/protein",
+      "biological_process"
+    ],
+    "cellcomp_cellcomp": [
+      "cellular_component",
+      "cellular_component"
+    ],
+    "cellcomp_protein": [
+      "gene/protein",
+      "cellular_component"
+    ],
+    "disease_disease": [
+      "disease",
+      "disease"
+    ],
+    "disease_phenotype_negative": [
+      "disease",
+      "effect/phenotype"
+    ],
+    "disease_phenotype_positive": [
+      "disease",
+      "effect/phenotype"
+    ],
+    "disease_protein": [
+      "gene/protein",
+      "disease"
+    ],
+    "drug_effect": [
+      "drug",
+      "effect/phenotype"
+    ],
+    "exposure_bioprocess": [
+      "exposure",
+      "biological_process"
+    ],
+    "exposure_cellcomp": [
+      "exposure",
+      "cellular_component"
+    ],
+    "exposure_disease": [
+      "exposure",
+      "disease"
+    ],
+    "exposure_exposure": [
+      "exposure",
+      "exposure"
+    ],
+    "exposure_molfunc": [
+      "exposure",
+      "molecular_function"
+    ],
+    "exposure_protein": [
+      "exposure",
+      "gene/protein"
+    ],
+    "molfunc_molfunc": [
+      "molecular_function",
+      "molecular_function"
+    ],
+    "molfunc_protein": [
+      "gene/protein",
+      "molecular_function"
+    ],
+    "pathway_pathway": [
+      "pathway",
+      "pathway"
+    ],
+    "pathway_protein": [
+      "gene/protein",
+      "pathway"
+    ],
+    "phenotype_phenotype": [
+      "effect/phenotype",
+      "effect/phenotype"
+    ],
+    "phenotype_protein": [
+      "gene/protein",
+      "effect/phenotype"
+    ],
+    "anatomy_protein_absent": [
+      "gene/protein",
+      "anatomy"
+    ]
+  },
+  "therapeutic_relations": [
+    "indication",
+    "contraindication",
+    "off-label use"
+  ]
+}

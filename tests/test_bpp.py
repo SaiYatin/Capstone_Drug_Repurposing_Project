@@ -1,0 +1,99 @@
+"""Unit tests for BioPathNet++ v3. Run:  python -m pytest -q tests/test_bpp.py"""
+import sys
+from pathlib import Path
+
+import numpy as np
+import torch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from bpp.kg import CompactKG, MessageGraph, _csr          # noqa: E402
+from bpp.model import BioPathNetPP, RelSpMM, listwise_loss  # noqa: E402
+
+
+def toy_kg(tmp_path=None, seed=0):
+    """6 diseases, 8 drugs, 10 genes. Types: 0 disease, 1 drug, 2 gene."""
+    rng = np.random.default_rng(seed)
+    nd, ng, nge = 6, 8, 10
+    node_type = np.array([0] * nd + [1] * ng + [2] * nge, dtype=np.int16)
+    names = [f"dis{i}" for i in range(nd)] + [f"drug{i}" for i in range(ng)] + [f"gene{i}" for i in range(nge)]
+    dis, drugs, genes = np.arange(nd), np.arange(nd, nd + ng), np.arange(nd + ng, nd + ng + nge)
+    h, r, t = [], [], []
+    for d in dis:                       # disease-gene (rel 0)
+        for g in rng.choice(genes, 3, replace=False):
+            h.append(d); r.append(0); t.append(g)
+    for g in drugs:                     # drug-gene (rel 1)
+        for x in rng.choice(genes, 2, replace=False):
+            h.append(g); r.append(1); t.append(x)
+    td, tg, tr = [], [], []
+    for d in dis:                       # indications (trel 0)
+        for g in rng.choice(drugs, 2, replace=False):
+            td.append(d); tg.append(g); tr.append(0)
+    meta = {"node_types": ["disease", "drug", "gene"], "drug_type": "drug", "disease_type": "disease",
+            "relations": ["disease_gene", "drug_gene"], "therapeutic_relations": ["indication", "contraindication"]}
+    return CompactKG(Path(tmp_path or "."), meta, node_type, names, np.array(h), np.array(r), np.array(t),
+                     np.array(td), np.array(tg), np.array(tr))
+
+
+def test_relspmm_matches_dense_and_gradcheck():
+    torch.manual_seed(0)
+    V, B, d, R = 7, 2, 3, 3
+    mats, mats_t, dense = [], [], []
+    for _ in range(R):
+        m = (torch.rand(V, V) < 0.3).double()
+        idx = m.nonzero().t()
+        mats.append(_csr(idx[0], idx[1], torch.ones(idx.shape[1], dtype=torch.float64), V))
+        mats_t.append(_csr(idx[1], idx[0], torch.ones(idx.shape[1], dtype=torch.float64), V))
+        dense.append(m)
+    x = torch.randn(V, B, d, dtype=torch.float64, requires_grad=True)
+    w = torch.randn(B, R, d, dtype=torch.float64, requires_grad=True)
+    out = RelSpMM.apply(x, w, mats, mats_t)
+    ref = sum((dense[r] @ x.reshape(V, B * d)).view(V, B, d) * w[:, r].unsqueeze(0) for r in range(R))
+    assert torch.allclose(out, ref)
+    assert torch.autograd.gradcheck(lambda a, b: RelSpMM.apply(a, b, mats, mats_t), (x, w))
+
+
+def test_batch_diseases_lose_their_drug_edges():
+    kg = toy_kg()
+    allowed = [0, 1, 2, 3]                      # diseases 4,5 = held-out family
+    g = MessageGraph(kg, allowed)
+    mats, _, _ = g.build(drop_diseases=torch.tensor([0]))
+    nctx, nther = g.num_ctx, g.num_ther
+    ther_fwd = mats[nctx + 0].to_dense()        # indication drug->disease, row = disease
+    ther_inv = mats[2 * nctx + nther + 0].to_dense()
+    assert ther_fwd[0].sum() == 0 and ther_inv[:, 0].sum() == 0      # batch disease removed
+    for held in (4, 5):
+        assert ther_fwd[held].sum() == 0 and ther_inv[:, held].sum() == 0  # never in graph
+    assert ther_fwd[1].sum() > 0                # other train diseases keep their edges
+
+
+def test_inverse_edges_reach_diseases_without_out_edges():
+    """v1/v2 bug: diseases with only incoming edges were unreachable. Here every
+    disease must receive messages through inverse relations."""
+    kg = toy_kg()
+    g = MessageGraph(kg, list(range(6)))
+    mats, _, deg = g.build()
+    incoming = sum(m.to_dense() for m in mats).sum(1)
+    assert (incoming[:6] > 0).all()
+
+
+def test_model_forward_and_learns_toy_task():
+    torch.manual_seed(0)
+    kg = toy_kg()
+    g = MessageGraph(kg, list(range(6)))
+    model = BioPathNetPP(g.num_relations, num_query_relations=2, dim=8, num_layers=3, mlp_hidden=16)
+    cand = torch.as_tensor(kg.drug_ids())
+    pos = kg.positives("indication")
+    src = torch.tensor([0, 1, 2, 3]); q = torch.zeros(4, dtype=torch.long)
+    mask = torch.zeros(4, cand.numel(), dtype=torch.bool)
+    for i, s in enumerate(src.tolist()):
+        for drug in pos[s]:
+            mask[i, (cand == drug).nonzero()[0, 0]] = True
+    opt = torch.optim.Adam(model.parameters(), lr=1e-2)
+    losses = []
+    for _ in range(60):
+        graph = g.build(drop_diseases=src)
+        logits = model(graph, src, q, cand)
+        assert logits.shape == (4, cand.numel())
+        loss = listwise_loss(logits, mask)
+        opt.zero_grad(); loss.backward(); opt.step(); losses.append(loss.item())
+    assert losses[-1] < losses[0] - 0.1, (losses[0], losses[-1])
