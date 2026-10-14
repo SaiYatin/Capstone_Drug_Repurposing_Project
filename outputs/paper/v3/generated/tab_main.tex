@@ -1,0 +1,18 @@
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{5}{c}{68 zero-shot validation diseases} & \multicolumn{3}{c}{6 rare autoimmune targets}\\
+\cmidrule(lr){2-6}\cmidrule(lr){7-9}
+Method & MRR & H@1 & H@10 & AUROC & AUROC$_{\text{hard}}$ & MRR & H@10 & AUROC$_{\text{hard}}$\\
+\midrule
+Random & 0.001 & 0.000 & 0.002 & 0.471 & 0.488 & 0.001 & 0.000 & 0.488\\
+Drug degree & 0.004 & 0.000 & 0.003 & 0.783 & 0.421 & 0.003 & 0.000 & 0.404\\
+Popularity & 0.046 & 0.034 & 0.049 & 0.830 & 0.476 & 0.099 & 0.148 & 0.460\\
+Autoimmune frequency & 0.038 & 0.032 & 0.040 & 0.827 & 0.128 & 0.094 & 0.169 & 0.299\\
+Shared targets & 0.057 & 0.032 & 0.105 & 0.845 & 0.530 & 0.008 & 0.000 & 0.491\\
+Disease kNN & 0.281 & 0.239 & 0.350 & 0.860 & 0.661 & 0.296 & 0.424 & 0.778\\
+\midrule
+Prior only (transfer channel) ($n$=1) & 0.303 & 0.265 & 0.353 & 0.884 & 0.707 & 0.322 & 0.483 & 0.782\\
+Paths only (NBFNet) ($n$=3) & 0.405$\pm$0.013 & 0.363$\pm$0.019 & 0.479$\pm$0.025 & 0.946$\pm$0.004 & 0.829$\pm$0.011 & 0.463$\pm$0.087 & 0.657$\pm$0.025 & 0.907$\pm$0.007\\
+\textbf{BioPathNet++ (paths + prior) ($n$=3)} & 0.394$\pm$0.003 & 0.353$\pm$0.008 & 0.456$\pm$0.018 & 0.938$\pm$0.001 & 0.799$\pm$0.010 & 0.475$\pm$0.017 & 0.648$\pm$0.033 & 0.892$\pm$0.020\\
+\bottomrule
+\end{tabular}

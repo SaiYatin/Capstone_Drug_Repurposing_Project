@@ -1,0 +1,134 @@
+{
+  "leakage": {
+    "train": {
+      "unique_positive_pairs": 577,
+      "in_graph": 577
+    },
+    "val": {
+      "unique_positive_pairs": 150,
+      "in_graph": 150
+    },
+    "test": {
+      "unique_positive_pairs": 277,
+      "in_graph": 277
+    }
+  },
+  "degree_baselines": {
+    "train": {
+      "drug_degree": {
+        "auroc": 0.8781704466759002,
+        "auprc": 0.8842801393358669
+      },
+      "disease_degree": {
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "log_drug+log_disease": {
+        "auroc": 0.9920617100934902,
+        "auprc": 0.9920815540757071
+      }
+    },
+    "val": {
+      "drug_degree": {
+        "auroc": 0.8169080268272887,
+        "auprc": 0.8227820258628563
+      },
+      "disease_degree": {
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "log_drug+log_disease": {
+        "auroc": 0.9790251612627622,
+        "auprc": 0.979484679903045
+      }
+    },
+    "test": {
+      "drug_degree": {
+        "auroc": 0.9204870631338227,
+        "auprc": 0.9213003568902456
+      },
+      "disease_degree": {
+        "auroc": 0.9665712814741202,
+        "auprc": 0.9646122454114097
+      },
+      "log_drug+log_disease": {
+        "auroc": 0.9722405143616577,
+        "auprc": 0.9709079626804044
+      }
+    }
+  },
+  "disease_degree": {
+    "Rheumatoid Arthritis": {
+      "out_degree": 868,
+      "in_degree": 789
+    },
+    "Systemic Lupus Erythematosus": {
+      "out_degree": 227,
+      "in_degree": 402
+    },
+    "Multiple Sclerosis": {
+      "out_degree": 283,
+      "in_degree": 372
+    },
+    "Primary Biliary Cholangitis": {
+      "out_degree": 101,
+      "in_degree": 99
+    },
+    "Systemic Sclerosis": {
+      "out_degree": 0,
+      "in_degree": 141
+    },
+    "Myasthenia Gravis": {
+      "out_degree": 0,
+      "in_degree": 109
+    },
+    "Autoimmune Hepatitis": {
+      "out_degree": 0,
+      "in_degree": 51
+    },
+    "Crohn's Disease": {
+      "out_degree": 0,
+      "in_degree": 123
+    },
+    "Sjogren's Syndrome": {
+      "out_degree": 0,
+      "in_degree": 14
+    }
+  },
+  "hardneg_degree_auroc": {
+    "Crohn's Disease": {
+      "n_pos": 59,
+      "auroc": 0.5975294455616202
+    },
+    "Primary Biliary Cholangitis": {
+      "n_pos": 61,
+      "auroc": 0.5029561945713518
+    },
+    "Myasthenia Gravis": {
+      "n_pos": 70,
+      "auroc": 0.5198979591836735
+    },
+    "Systemic Sclerosis": {
+      "n_pos": 62,
+      "auroc": 0.6188865764828305
+    },
+    "Sjogren's Syndrome": {
+      "n_pos": 5,
+      "auroc": 0.8400000000000001
+    },
+    "Autoimmune Hepatitis": {
+      "n_pos": 32,
+      "auroc": 0.64794921875
+    }
+  },
+  "gnbr_share": {
+    "train": 0.9144736842105263,
+    "val": 0.9019607843137255,
+    "test": 0.8996539792387543
+  },
+  "hpo_freq_relations": {
+    "relation_types": 2325,
+    "edges": 216467,
+    "total_relation_types": 2435
+  }
+}

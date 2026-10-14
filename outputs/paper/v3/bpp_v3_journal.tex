@@ -1,0 +1,359 @@
+\documentclass[journal]{IEEEtran}
+\IEEEoverridecommandlockouts
+\input{common.tex}
+\usepackage{multirow}
+\usepackage{array}
+
+\begin{document}
+
+\title{Leakage-Controlled Zero-Shot Drug Repurposing for Rare Autoimmune Diseases with Path-Based Graph Neural Networks}
+
+% TODO(authors): confirm author list/order, affiliations, corresponding author and e-mail.
+\author{TVNS~Yatin, A~Charan~KR, Praveen~Kumar~Yadav, Srijan~Jha, and~Priyanka~H.%
+\thanks{The authors are with the Department of Computer Science and Engineering, PES University, Bengaluru, India.}}
+
+\markboth{Manuscript draft}{Yatin \MakeLowercase{\textit{et al.}}: Leakage-Controlled Zero-Shot Drug Repurposing}
+
+\maketitle
+
+\begin{abstract}
+Computational drug repurposing for rare diseases must work \emph{zero-shot}, ranking drugs for a disease whose treatments were never observed. This study makes three points about that setting, using six rare or sparsely annotated autoimmune diseases as targets: primary biliary cholangitis, systemic sclerosis, Sj\"ogren syndrome, autoimmune hepatitis, myasthenia gravis and Crohn disease. First, evaluation is fragile. An audit of our own earlier pipeline found that all 277 test pairs were edges of the message-passing graph and that a zero-parameter degree heuristic reached a test AUROC of 0.972. Second, we define a strict-family zero-shot protocol on PrimeKG: each held-out disease is removed together with its disease--disease neighbourhood, training batches mimic this removal, and every prediction is ranked against all 7,957 drugs. Third, on this protocol we evaluate \sysname, a BioPathNet-style Neural Bellman--Ford network that runs on the full 4-million-edge graph on a single 16\,GB GPU, extended with a leakage-free transfer channel. Across \MainSeeds{} seeds on 68 unseen validation diseases it reaches an MRR of \MainValidMrr{} (sd \MainValidMrrSd) and Hits@10 of \MainValidHitsTen{}. The strongest of six non-neural baselines reaches \KnnValidMrr{} and \KnnValidHitsTen{}; the paired difference is \DiffMainKnnValid{} MRR (95\% CI \DiffLoMainKnnValid{} to \DiffHiMainKnnValid{}, Wilcoxon $p$\,\PwilMainKnnValid). Ablations show that path reasoning carries the signal: the transfer channel lowers seed variance but not error. Removing all 123 autoimmune diseases from training does not lower accuracy on the targets, so the hypothesis of autoimmune-specific transfer is not supported. In case studies the model recovers ursodeoxycholic acid for primary biliary cholangitis and four cholinesterase inhibitors for myasthenia gravis. Its top unlabelled candidates are graded against registered clinical trials.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Drug repurposing, zero-shot learning, knowledge graphs, graph neural networks, Neural Bellman--Ford networks, autoimmune diseases, rare diseases, data leakage, evaluation methodology
+\end{IEEEkeywords}
+
+% =====================================================================
+\section{Introduction}
+\IEEEPARstart{D}{rug} repurposing identifies new indications for approved drugs. Because these drugs already have known safety profiles, development is shorter and cheaper than for new molecules~\cite{pushpakom2019repurposing}. Rare diseases need repurposing most: of more than 7,000 rare diseases only 5--7\% have an FDA-approved drug~\cite{huang2024txgnn}, and collectively they affect 3.5--5.9\% of the population~\cite{nguengang2020rare}. Autoimmune disorders are a related unmet need. In a UK cohort of 22 million people, 19 common autoimmune diseases together affected 10.2\% of the population~\cite{conrad2023autoimmune}. Many individual autoimmune conditions are rare and have few disease-specific drugs.
+
+Biomedical knowledge graphs (KGs) integrate drugs, genes, proteins, phenotypes, pathways and diseases. Link prediction on these graphs can then propose drug--disease pairs~\cite{himmelstein2017hetionet,bonner2022review}. Most work evaluates on randomly held-out \emph{edges}. Such evaluation rewards copying the drugs of near-identical diseases and does not reflect the clinical question: what could treat a disease for which nothing is known to work? The \emph{zero-shot} formulation of TxGNN~\cite{huang2024txgnn} instead holds out whole diseases. BioPathNet~\cite{hu2026biopathnet} showed that path-based reasoning with Neural Bellman--Ford networks (NBFNet)~\cite{zhu2021nbfnet} further improves zero-shot indication ranking on PrimeKG.
+
+Zero-shot evaluation is subtle. Labels can leak into the message graph, held-out diseases can have near-duplicates in training, and random negative sampling makes positives separable by degree alone~\cite{kapoor2023leakage}. All three problems were present in an earlier version of this project (Section~\ref{sec:audit}). This paper is the result of rebuilding that pipeline. Its contributions are:
+\begin{enumerate}
+\item \textbf{A leakage audit} showing that a zero-parameter degree heuristic matches a trained GNN under naive splits, and quantifying each leakage path (Section~\ref{sec:audit}).
+\item \textbf{A strict-family zero-shot protocol} on PrimeKG~\cite{chandak2023primekg}, with a second protocol that removes the whole autoimmune area, evaluated by full ranking over all drugs (Section~\ref{sec:protocol}).
+\item \textbf{\sysname}, a BioPathNet-style NBFNet with a relation-wise sparse propagation that keeps memory linear in the number of nodes, plus a leakage-free transfer channel (Section~\ref{sec:method}).
+\item \textbf{A statistically careful evaluation} with seeds, bootstrap intervals, paired tests, an analysis of selection bias and graph sparsity, two reported negative results, and clinical-trial evidence for the top candidates (Sections~\ref{sec:results}--\ref{sec:discussion}).
+\end{enumerate}
+We do not claim a new message-passing architecture. \sysname is built on BioPathNet's design, and our claims concern evaluation, efficiency and the rare-autoimmune setting.
+
+% =====================================================================
+\section{Related Work}
+\label{sec:related}
+\subsection{Knowledge graphs for drug repurposing}
+Hetionet integrated 29 public resources and used metapath features to prioritise repurposing candidates~\cite{himmelstein2017hetionet}. DRKG~\cite{drkg2020} and PrimeKG~\cite{chandak2023primekg} followed. PrimeKG covers 17,080 diseases and adds clinical descriptions and indication, contraindication and off-label edges. Bonner et al.\ review these resources and show that KG embedding results depend strongly on dataset construction and evaluation choices~\cite{bonner2022review,bonner2022kge}.
+
+\subsection{Embedding and GNN methods}
+Translational and bilinear embeddings (TransE, DistMult, RotatE)~\cite{bordes2013transe,yang2015distmult,sun2019rotate} and relational GCNs~\cite{schlichtkrull2018rgcn} are standard link predictors. They were used for COVID-19 repurposing~\cite{zhang2021covidkg,morselli2021covid}, for rare diseases from literature-derived graphs~\cite{sosa2020rare}, for polypharmacy side effects~\cite{zitnik2018decagon}, and in KG-Predict~\cite{gao2022kgpredict} and DREAMwalk~\cite{bang2023dreamwalk}. A unified benchmark showed that reported KG-embedding gains often shrink under consistent training and evaluation~\cite{ali2021pykeen}. Node-embedding methods learn a vector per node from its training edges. A disease without known drugs therefore gets little supervision, which motivates the zero-shot designs below.
+
+\subsection{Zero-shot and path-based methods}
+TxGNN~\cite{huang2024txgnn} combines a relational GNN with a disease-similarity metric-learning module. On zero-shot disease-area splits of PrimeKG it reports relative AUPRC gains of 0.5--59.3\% over baselines for indications, evaluated against sampled negatives (one per positive). NBFNet~\cite{zhu2021nbfnet} represents a (source, target) pair by generalised Bellman--Ford message passing from the source. This makes it inductive over nodes, in the spirit of subgraph reasoning~\cite{teru2020grail}, and lets it explain predictions through paths. A*Net and ULTRA scale and generalise the idea~\cite{zhu2023astarnet,galkin2024ultra}. BioPathNet~\cite{hu2026biopathnet} adapts NBFNet to biomedical KGs with a background regulatory graph and stringent negative sampling. On TxGNN's zero-shot splits it reports indication MRR from about 0.2 (cardiovascular) to above 0.6 (cell proliferation, adrenal gland), and Recall@20 of 0.619 versus 0.539 for TxGNN on the cell-proliferation split. Table~\ref{tab:related} positions this work.
+
+\begin{table*}[t]
+\centering
+\caption{Positioning against related work. Reported numbers are from the cited papers and use different splits and negatives; they are context, not a head-to-head comparison.}
+\label{tab:related}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{p{2.3cm}p{2.0cm}p{3.6cm}p{3.4cm}p{4.3cm}}
+\toprule
+Method & KG & Zero-shot unit held out & Evaluation & Reported indication result \\
+\midrule
+Hetionet~\cite{himmelstein2017hetionet} & Hetionet & none (edge-level) & metapath classifier & -- \\
+DREAMwalk~\cite{bang2023dreamwalk} & multi-layer KG & none (edge-level) & association prediction & up to 16.8\% accuracy gain over link-prediction models \\
+TxGNN~\cite{huang2024txgnn} & PrimeKG & disease area (indications, contraindications removed) & AUPRC, 1:1 sampled negatives & 0.5--59.3\% relative AUPRC gain over baselines across 9 areas \\
+BioPathNet~\cite{hu2026biopathnet} & PrimeKG & TxGNN areas (+95\% of molecular edges removed) & MRR, Hits@k, Recall@k over all drugs & MRR $\approx$0.2--0.8 by area; Recall@20 0.619 (cell proliferation) \\
+\textbf{This work} & PrimeKG & disease + all disease--disease neighbours; autoimmune area & MRR, Hits@k, AUROC (all/hard/degree-matched) over all 7,957 drugs; paired tests & MRR \MainValidMrr{} (68 valid.), \MainTargetsMrr{} (6 targets), \NoautoAreaMrr{} (21 autoimmune-area diseases) \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Leakage in machine-learning science}
+Kapoor and Narayanan catalogue leakage as a main cause of irreproducible ML-based science~\cite{kapoor2023leakage}. In KG link prediction, the typical forms are test edges left in the graph, inverse or duplicate relations, and near-duplicate entities. Random negatives add a further problem: they let node popularity alone separate the classes, so AUROC becomes uninformative when positives are rare~\cite{saito2015prc,davis2006prroc}.
+
+% =====================================================================
+\section{Leakage Audit of a Naive Pipeline}
+\label{sec:audit}
+Our earlier pipeline built a graph from an enriched DRKG extract (84,712 nodes), trained an NBFNet-style model, and reported test AUPRC values between 0.935 and 0.999. We audited it with a stand-alone script that is released with the code. Table~\ref{tab:audit} summarises the findings.
+
+\begin{table}[t]
+\centering
+\caption{Audit of the earlier (invalid) pipeline.}
+\label{tab:audit}
+\small
+\begin{tabular}{p{5.0cm}r}
+\toprule
+Finding & Value \\
+\midrule
+Test positive pairs present as edges of the message graph & 277 / 277 \\
+Test AUROC, zero-parameter $\log\deg(\text{drug})+\log\deg(\text{disease})$ & 0.972 \\
+Test AUPRC, same heuristic & 0.971 \\
+Targets with out-degree 0 for the subgraph extractor (score independent of disease) & 5 / 6 \\
+Drug-degree AUROC vs.\ other autoimmune drugs (per target) & 0.50--0.84 \\
+Positive labels that are text-mined (GNBR) edges & 90--91\% \\
+Spurious relation types from frequency strings & 2,325 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three mechanisms explain the high scores. (i) \emph{Target leakage}: the message graph was built from the full KG, so every test pair was an edge the model could traverse. (ii) \emph{Trivial negatives}: negatives were random drug--disease pairs, and indicated drugs and diseases with many indications have high degree. Degree alone therefore separates the classes, and the heuristic beat the model. (iii) \emph{One-directional subgraphs}: neighbourhoods were extracted along incoming edges only, without inverse relations. Five of the six targets were then unreachable and scored by drug features alone, which is why the same drug ranked first for every disease. Further problems were text-mined labels (one of them, thalidomide for PBC, contradicts a negative randomised trial~\cite{mccormick1994thalidomide}), language-model features computed from identifier strings, and ablation scripts that loaded the wrong model. Every number in the rest of this paper comes from the rebuilt pipeline.
+
+% =====================================================================
+\section{Data and Zero-Shot Protocol}
+\label{sec:protocol}
+\subsection{PrimeKG}
+We use PrimeKG~\cite{chandak2023primekg} (Table~\ref{tab:data}). Its 27 non-therapeutic relation types (protein--protein, drug--protein, disease--protein, disease--phenotype, anatomy--protein expression, drug--drug, pathways, exposures and others) form the \emph{context} graph. Each relation gets an explicit inverse, giving 54 context relations. The three therapeutic relations, also with inverses, bring the total to 60. MONDO disease groupings follow PrimeKG.
+
+\begin{table}[t]
+\centering
+\caption{Dataset and split statistics.}
+\label{tab:data}
+\small
+\begin{tabular}{lr}
+\toprule
+Nodes (drugs / diseases) & 129,375 (7,957 / 17,080) \\
+Context edges (relation types) & 4,007,433 (27; 54 with inverses) \\
+Therapeutic pairs & 42,631 \\
+\quad indication / contraindication / off-label & 9,388 / 30,675 / 2,568 \\
+\midrule
+\emph{Targets protocol}: train query diseases & 1,206 \\
+\quad validation diseases (positives) & 68 (450) \\
+\quad target families held out & 6 \\
+\emph{No-autoimmune protocol}: train / valid. & 1,194 / 66 \\
+\quad autoimmune nodes removed from training & 123 \\
+\quad autoimmune-area test diseases (positives) & 21 (147) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Labels}
+The model is trained to predict indications. For validation and area diseases, positives are their PrimeKG indications. For the six targets, positives are indications together with off-label uses, because some targets have almost no labelled indications: PBC 1, SSc 5, Sj\"ogren 12, AIH 1, MG 7 and Crohn 24 drugs (50 in total). Label sparsity is intrinsic to rare diseases. The targets are therefore analysed as case studies, while quantitative claims rest on the 68 validation and 21 area diseases.
+
+\subsection{Strict-family hold-out}
+Holding out a disease node alone is not enough. Clinical subtypes and synonyms linked by disease--disease edges often carry the same drugs: without further removal, all 16 Crohn indications remained reachable through ``Crohn's colitis'', MG through ``adult-onset myasthenia gravis'' and SSc through ``scleroderma''. We therefore define the \emph{family} of a disease as the disease plus its disease--disease neighbours, and we hold out whole families:
+\begin{itemize}
+\item no therapeutic edge of any held-out family member is ever in the message graph;
+\item validation diseases are sampled at random (5\% of labelled diseases, seed 0) and held out with their families, so model selection cannot reward sibling copying;
+\item in every training step, all therapeutic edges of the batch's query diseases and their families are also removed, so training matches the zero-shot condition at test time.
+\end{itemize}
+The rules are implemented in the graph builder rather than in the training script, and a unit test checks that removed edges are absent from the propagation matrices.
+
+\subsection{No-autoimmune protocol}
+To test whether accuracy on the targets comes from \emph{related} autoimmune diseases, the second protocol also removes TxGNN's autoimmune disease area (DOID:417, 70 nodes)~\cite{huang2024txgnn} and the families of all nine autoimmune diseases studied here, 123 nodes in total. Its 21 held-out area diseases with indications form an additional test set that is never used for model selection. TxGNN's area does not include PBC, SSc or Crohn disease, so the families add them.
+
+% =====================================================================
+\section{Method}
+\label{sec:method}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_pipeline.pdf}
+\caption{\sysname pipeline. Held-out families never contribute therapeutic edges; both channels see only training diseases' labels; evaluation ranks every drug.}
+\label{fig:pipeline}
+\end{figure*}
+
+Fig.~\ref{fig:pipeline} gives an overview.
+
+\subsection{Path channel}
+For a query $(u, r_q)$, with disease $u$ and query relation ``indication'', NBFNet~\cite{zhu2021nbfnet} computes a representation of every node $v$ that summarises all paths from $u$ to $v$. Node states start from an indicator boundary condition, $h^{(0)}_v=\mathbb{1}[v=u]\,q$, where $q=\mathrm{emb}(r_q)\in\mathbb{R}^{d}$. Each of $L$ layers aggregates relation-specific messages:
+\begin{align}
+m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)\in\mathcal{E}} h^{(t-1)}_x \odot w^{(t)}_{r_q,r} \;+\; \mathbb{1}[v=u]\,q,\label{eq:msg}\\
+h^{(t)}_v &= h^{(t-1)}_v + \mathrm{ReLU}\Big(\mathrm{LN}\big(W^{(t)}\big[h^{(t-1)}_v;\, m^{(t)}_v;\, a_v\, m^{(t)}_v\big]\big)\Big).\label{eq:upd}
+\end{align}
+Here $w^{(t)}_{r_q,r}$ are query-dependent DistMult relation vectors~\cite{yang2015distmult}, $a_v=\log(\deg v+1)/\overline{\log(\deg+1)}$ is a PNA-style degree amplifier~\cite{corso2020pna}, LN is layer normalisation, and the residual connection stabilises the 6-layer network. The path logit of drug $d$ is $s_\text{path}(u,d)=\mathrm{MLP}([h^{(1)}_d;\dots;h^{(L)}_d;q])$. Because propagation starts at $u$, a single forward pass scores all 7,957 drugs. The model needs no trained embedding for $u$, so a disease whose drugs were never seen is handled exactly like any other node.
+
+\subsection{Memory-efficient full-graph propagation}
+NBFNet implementations usually materialise per-edge messages, which needs $O(|\mathcal{E}|\,B\,d)$ memory for $B$ queries. That is 4\,M edges $\times$ 8 queries $\times$ 32 dimensions per layer here, and it does not fit on a commodity GPU. We write~\eqref{eq:msg} as $\sum_r (A_r H)\odot w_r$ over 60 sparse CSR adjacency matrices $A_r$. A custom autograd function stores only $H$ and recomputes $A_r H$ in the backward pass, reducing activation memory to $O(|\mathcal{V}|\,B\,d)$. The full graph takes 0.32\,GB. Training with $B=8$ peaks at 5.8\,GB and takes about 8.5\,s per step on an NVIDIA T4, and the gradients pass a finite-difference check.
+
+\subsection{Transfer channel}
+The ``++'' component adds four prior features $\phi(u,d)$ per pair:
+\begin{enumerate}
+\item popularity, the number of training diseases indicated for $d$;
+\item a disease-$k$NN transfer score, $\sum_{u'\in\mathcal{N}_k(u)}\mathrm{sim}(u,u')\,y_{u'd}$ with $k=20$ and cosine similarity of TF--IDF-weighted disease--protein and disease--phenotype profiles;
+\item the number of $d$'s protein targets associated with $u$;
+\item the frequency of $d$ among autoimmune training diseases.
+\end{enumerate}
+Each feature is computed with $u$'s family excluded, identically in training and testing. A two-layer MLP maps $\phi$ to a logit that is added to the path logit: $s(u,d)=s_\text{path}(u,d)+g(\phi(u,d))$.
+
+\subsection{Objective}
+Let $P_u$ be the training indications of $u$. We minimise a multi-positive softmax cross-entropy over all candidates,
+\begin{equation}
+\mathcal{L}(u)=-\frac{1}{|P_u|}\sum_{d\in P_u}\log\frac{\exp s(u,d)}{\sum_{d'}\exp s(u,d')},
+\end{equation}
+so every non-indicated drug acts as a negative and no negative sampling is needed. A self-adversarial binary cross-entropy, as used for NBFNet, is evaluated as an ablation.
+
+% =====================================================================
+\section{Experimental Setup}
+\subsection{Baselines}
+All baselines use the same protocol and the same family exclusions.
+\emph{Random} ranking.
+\emph{Drug degree}: context-graph degree.
+\emph{Popularity}: number of training diseases treated.
+\emph{Autoimmune frequency}: popularity among autoimmune training diseases.
+\emph{Shared targets}: number of the drug's targets associated with the disease.
+\emph{Disease $k$NN}: drugs of the 20 most similar training diseases, weighted by similarity.
+Disease $k$NN is a transparent version of the ``guilt by association'' rule used throughout repurposing~\cite{bang2023dreamwalk}, and the strongest baseline in our experiments.
+
+\subsection{Metrics}
+For disease $u$ with positives $P_u$, each positive $d$ is ranked among all drugs after removing the other positives (filtered rank~\cite{bordes2013transe}). We report
+\begin{align}
+\mathrm{MRR}_u&=\frac{1}{|P_u|}\sum_{d\in P_u}\frac{1}{\mathrm{rank}_u(d)}, &
+\mathrm{H@}k_u&=\frac{1}{|P_u|}\sum_{d\in P_u}\mathbb{1}[\mathrm{rank}_u(d)\le k],
+\end{align}
+macro-averaged over diseases. MRR originates in question-answering evaluation~\cite{voorhees1999trec} and is the standard KG-completion metric. We also report the share of diseases with at least one positive in the top 10, AUROC and AUPRC over all drugs, AUROC against \emph{hard} negatives (drugs indicated for other autoimmune diseases) and AUROC against \emph{degree-matched} negatives (five drugs of nearest degree per positive). With about 7 positives among 7,957 drugs, random ranking gives MRR $\approx$0.001 and AUPRC $\approx$0.001. AUROC is insensitive to this imbalance~\cite{saito2015prc}, so it is not a headline metric here (Section~\ref{sec:auroc}).
+
+\subsection{Statistics}
+Models were trained with \MainSeeds{} seeds (0--2) where compute allowed, and one seed for the remaining ablations (stated in each table). Per-disease metrics are first averaged over seeds and then over diseases. We report seed mean $\pm$ sd, percentile bootstrap 95\% CIs over diseases (1,000 resamples)~\cite{efron1993bootstrap}, and, for comparisons, the paired bootstrap CI of the mean difference together with the two-sided Wilcoxon signed-rank test~\cite{wilcoxon1945}. We call a difference significant only if both criteria agree at the 5\% level.
+
+\subsection{Training details}
+Hidden size 32, 6 layers, MLP hidden size 64, dropout 0.1, Adam with learning rate $5\times10^{-3}$, batch of 8 query diseases (151 steps per epoch), gradient clipping at 1.0, at most 20 epochs, early stopping on validation MRR with patience 6. The full model has 68,226 parameters. These settings were fixed in advance and were not tuned. Runs used two NVIDIA T4 GPUs (16\,GB each) on Kaggle, were resumable across 12-hour sessions, and stopped early after 10--20 epochs.
+
+% =====================================================================
+\section{Results}
+\label{sec:results}
+\begin{table*}[t]
+\centering
+\caption{Zero-shot drug ranking over all 7,957 drugs (targets protocol). Models: mean$\pm$sd over seeds ($n$). H@$k$: fraction of a disease's known drugs in the top $k$. AUROC$_\text{hard}$: known drugs vs.\ drugs of other autoimmune diseases.}
+\label{tab:main}
+\small
+\input{generated/tab_main.tex}
+\end{table*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_main_results.pdf}
+\caption{MRR with 95\% bootstrap CIs over diseases (seed-averaged). Dashed line: disease $k$NN, the strongest baseline.}
+\label{fig:main}
+\end{figure*}
+
+\subsection{Main comparison}
+Table~\ref{tab:main} and Fig.~\ref{fig:main} give the main results. On the 68 validation diseases, \sysname reaches MRR \MainValidMrr$\pm$\MainValidMrrSd, H@1 \MainValidHitsOne{} and H@10 \MainValidHitsTen. Disease $k$NN reaches \KnnValidMrr, and popularity only \PopValidMrr. The paired MRR gain over disease $k$NN is \DiffMainKnnValid{} (95\% CI \DiffLoMainKnnValid{} to \DiffHiMainKnnValid; Wilcoxon $p$\,\PwilMainKnnValid). The model is better on \WinsMainKnnValid{} diseases, tied on \TiesMainKnnValid{} and worse on \LossesMainKnnValid. The H@10 gain is also significant (\DiffMainKnnValidHitsTen, $p$\,\PwilMainKnnValidHitsTen). For \MainValidAnyTen\% of unseen diseases at least one approved drug appears in the top 10 of 7,957, compared with \KnnValidAnyTen\% for disease $k$NN and \PopValidAnyTen\% for popularity. Against hard negatives (drugs of other autoimmune diseases), AUROC is \MainValidAurocHard, versus \KnnValidAurocHard{} for disease $k$NN and \PopValidAurocHard{} (below chance) for popularity. The model therefore does more than rank generically popular drugs.
+
+On the six targets MRR is \MainTargetsMrr$\pm$\MainTargetsMrrSd{} versus \KnnTargetsMrr. The difference (\DiffMainKnnTargets, CI \DiffLoMainKnnTargets{} to \DiffHiMainKnnTargets) points the same way on \WinsMainKnnTargets{} of 6 targets. With six diseases it is not significant (Wilcoxon $p$\,\PwilMainKnnTargets), and we do not claim it is.
+
+\subsection{Why AUROC is not the headline metric}
+\label{sec:auroc}
+Fig.~\ref{fig:auroc} plots AUROC against MRR for every method. Baselines without learning reach AUROC 0.78--0.86, and popularity reaches \PopValidAuroc, yet their MRR is below 0.06. With thousands of negatives per positive, AUROC rewards placing positives above the long tail of irrelevant drugs. It says little about whether a positive reaches the top of the list, which is what a clinician would read. The same effect let a degree heuristic reach AUROC 0.972 in the audit. We therefore headline MRR and Hits@$k$ and report AUROC for completeness (\MainValidAuroc{} validation, \MainTargetsAuroc{} targets).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_auroc_vs_mrr.pdf}
+\caption{AUROC vs.\ MRR on the 68 validation diseases. AUROC is high even for no-learning baselines; MRR separates methods.}
+\label{fig:auroc}
+\end{figure}
+
+\subsection{Ablations}
+\begin{table}[t]
+\centering
+\caption{Ablations (targets protocol). $p$: two-sided Wilcoxon on paired validation MRR vs.\ the full model.}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{\input{generated/tab_ablation.tex}}
+\end{table}
+Table~\ref{tab:ablation} isolates the components. Without the transfer channel (paths only), validation MRR is \PathsValidMrr{}, statistically tied with the full model (difference \DiffMainPathsValid, $p$\,\PwilMainPathsValid). Without path reasoning (transfer channel only), MRR falls to \PriorValidMrr{} ($p$\,\PwilMainPriorValid), close to disease $k$NN, which is one of its inputs. Path reasoning is therefore the source of the gain. The transfer channel does not change the mean. It does reduce variability across seeds on the targets, from sd \PathsTargetsMrrSd{} to \MainTargetsMrrSd{} (Fig.~\ref{fig:pertarget}), which matters in practice because a ranking used for case studies should not depend on the seed. An earlier interim claim that the channel improved rare-target accuracy, based on one seed, did not survive replication and was withdrawn. The background-regulatory-graph relation subset~\cite{hu2026biopathnet} and the BCE objective are reported in Table~\ref{tab:ablation} as they complete.
+
+\subsection{Does transfer come from autoimmune diseases?}
+% RECHECK after Kaggle session 3 (noauto seeds 1-2, noauto_paths_s0): numbers update automatically; wording may need it.
+\begin{table}[t]
+\centering
+\caption{Effect of removing all 123 autoimmune diseases from training.}
+\label{tab:transfer}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{\input{generated/tab_transfer.tex}}
+\end{table}
+A natural hypothesis is that rare autoimmune targets benefit from data-rich autoimmune diseases with shared immune mechanisms. Table~\ref{tab:transfer} tests this. With all 123 autoimmune nodes removed from training, target MRR is \NoautoTargetsMrr{} versus \MainTargetsMrr{} with them (difference \DiffMainNoautoTargets, $p$\,\PwilMainNoautoTargets; \NoautoSeeds{} seed(s) without autoimmune data). On the 21 held-out autoimmune-area diseases, which are never used for selection, the model reaches MRR \NoautoAreaMrr{} versus \NoautoKnnAreaMrr{} for disease $k$NN. The difference is \DiffNoautoKnnArea{} (CI \DiffLoNoautoKnnArea{} to \DiffHiNoautoKnnArea), but the Wilcoxon test gives $p$\,\PwilNoautoKnnArea, so by our criterion it is suggestive rather than significant. The autoimmune-specific transfer hypothesis is therefore not supported. Whatever transfers comes from the general pharmacology and biology encoded in the KG, not from autoimmune training labels.
+
+\subsection{Sparsity}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_sparsity.pdf}
+\caption{Validation MRR by connectivity tertile of the held-out disease (number of context edges).}
+\label{fig:sparsity}
+\end{figure}
+Rare diseases are sparsely annotated, so we stratify the validation diseases by their number of context edges (Fig.~\ref{fig:sparsity}). Accuracy grows with connectivity (Spearman $\rho=\RhoMain$, $p$\,\RhoPMain). \sysname is ahead of disease $k$NN in every tertile: \TertMainLow{} vs.\ \TertKnnLow{} for the sparsest third, \TertMainMid{} vs.\ \TertKnnMid{} in the middle, and \TertMainHigh{} vs.\ \TertKnnHigh{} for the densest third. The relative gain is largest in the middle tertile. Diseases with almost no molecular annotation remain the hardest case for every method.
+
+\subsection{Model selection bias}
+Validation diseases also select the stopping epoch, so validation scores are optimistic. From the training logs, the gap between the best-epoch and last-epoch validation MRR is \SelGapMainMin--\SelGapMainMax{} for the full model and \SelGapPathsMin--\SelGapPathsMax{} for paths only. This is an order of magnitude smaller than the gain over disease $k$NN (\DiffMainKnnValid), but larger than the difference between the full model and paths only, so the latter is a tie. The targets and the 21 area diseases are untouched by selection, and their results agree with the validation conclusions.
+
+\subsection{Case studies}
+\begin{table}[t]
+\centering
+\caption{Per-target MRR (seed mean) and the model's top predictions (seed 0). $^{*}$\,labelled in PrimeKG.}
+\label{tab:targets}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\columnwidth}{!}{\input{generated/tab_targets.tex}}
+\end{table}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_per_target.pdf}
+\caption{Per-target MRR for each seed. The transfer channel narrows the spread across seeds (SSc, Sj\"ogren, MG).}
+\label{fig:pertarget}
+\end{figure}
+Table~\ref{tab:targets} and Fig.~\ref{fig:pertarget} show the six targets.
+\textbf{PBC.} Ursodeoxycholic acid, the first-line therapy and the only labelled drug, is ranked first in all seeds. Cholic acid and dehydrocholic acid, which are also bile acids, follow.
+\textbf{MG.} The four labelled cholinesterase inhibitors (ambenonium, neostigmine, pyridostigmine, distigmine) are ranked 1--4 in all seeds.
+\textbf{SSc.} The labelled drugs aminobenzoic acid, benzoic acid and bosentan lead, followed by corticosteroids.
+\textbf{Sj\"ogren.} Labelled tear-substitute components (propylene glycol, povidone, polysorbate~80) and prednisolone lead.
+\textbf{Crohn.} Labelled corticosteroids hold ranks 1--4. Mesalazine (off-label) and fluoroquinolones follow, but many of the 24 labelled drugs rank low, which keeps MRR modest.
+\textbf{AIH.} The model fails by the metric but arguably not clinically. PrimeKG lists a single off-label drug for AIH, while the model ranks prednisolone first in two of three seeds. Corticosteroids are standard AIH therapy and the comparator arm in AIH trials (prednisone in NCT00838214). This is a label gap, and it shows that metric values on sparsely labelled diseases are lower bounds.
+
+\subsection{External evidence for unlabelled candidates}
+Unlabelled top-ranked drugs are hypotheses. We graded several against ClinicalTrials.gov (searched 15 Oct 2026). Table~\ref{tab:evidence} reports the evidence, not accuracy. The model also proposes implausible candidates, such as the antibiotic doripenem for PBC and limaprost for SSc, for which no trial exists. A full grading of each target's top 20, preferably with a clinician, is left to future work.
+
+\begin{table}[t]
+\centering
+\caption{Registered-trial evidence for selected unlabelled top-10 candidates.}
+\label{tab:evidence}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{1.1cm}p{1.6cm}p{4.9cm}}
+\toprule
+Target & Candidate & Evidence (ClinicalTrials.gov) \\
+\midrule
+MG & amifampridine & completed phase 3 RCT in MuSK/AChR MG (NCT03304054); approved for LEMS \\
+AIH & prednisolone & corticosteroid comparator arm in AIH trials (NCT00838214, prednisone) \\
+Crohn & ciprofloxacin & phase 2 RCTs (NCT00609973, NCT01783106) \\
+Sj\"ogren & lifitegrast & no Sj\"ogren trial; approved for dry-eye disease \\
+SSc & limaprost & no registered SSc trial \\
+PBC & doripenem & no plausible rationale; likely spurious \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{Discussion}
+\label{sec:discussion}
+\subsection{How good are these numbers?}
+Two comparisons matter. Against chance and simple rules, the model improves MRR from 0.001 (random) and \PopValidMrr{} (popularity) to \MainValidMrr{}, and it is significantly better than a strong, interpretable similarity baseline. Against the literature, BioPathNet reports zero-shot indication MRR from about 0.2 to above 0.6 across disease areas, and Hits@10 from 30\% to 100\%~\cite{hu2026biopathnet}. Our values fall inside that range. The protocols differ, however. BioPathNet and TxGNN hold out disease areas and remove 95\% of their molecular edges, whereas we hold out families and keep molecular context. TxGNN's AUPRC uses one sampled negative per positive, while our AUPRC uses all drugs. We therefore do not rank our model against theirs. A head-to-head comparison on one split is the most important missing experiment.
+
+\subsection{Why the earlier numbers looked better}
+The earlier pipeline reported AUPRC up to 0.999 because it measured a different and easier quantity: separating known pairs, which were already in the graph, from random pairs. Values near 0.99 are common in medical classification tasks, where each decision has two classes. In ranking thousands of drugs for an unseen disease, the field's best reported MRRs lie well below 1. Reviewers should be sceptical of near-perfect zero-shot numbers.
+
+\subsection{Limitations}
+(i) The targets have 1--24 labelled drugs, and PBC and AIH have one each, so per-target metrics are noisy and can be lower bounds (AIH).
+(ii) Validation diseases select the epoch (Section~\ref{sec:results}); a separate test set of held-out families would remove this bias.
+(iii) Some ablations use one seed.
+(iv) The model favours corticosteroids across immune diseases. This is clinically sensible but partly popularity bias.
+(v) PrimeKG labels are incomplete and partly derived from curated resources, so true repurposing candidates are scored as false positives.
+(vi) Path explanations, a key advantage of NBFNet, are not yet extracted.
+(vii) No clinician has reviewed the candidates. The rankings are hypotheses for research, not treatment recommendations.
+
+% =====================================================================
+\section{Conclusion}
+On a strict-family zero-shot protocol with full ranking over all drugs, a path-based NBFNet model significantly outperforms strong similarity baselines for unseen diseases. It recovers established therapies for several rare autoimmune diseases and runs on a single commodity GPU. The evaluation also produced findings that are easy to miss: earlier near-perfect scores came from leakage and random negatives, the transfer channel stabilises rather than improves, and autoimmune training data are not what drives accuracy on autoimmune targets. Future work will (a) run TxGNN, BioPathNet and KG-embedding baselines on the same split, (b) add a selection-free test split, (c) extract path explanations, and (d) obtain clinician review of novel candidates.
+
+\section*{Data and Code Availability}
+PrimeKG is available from Harvard Dataverse (doi:10.7910/DVN/IXA7BM). Code, splits, the audit script, run logs and the analysis that generates every number and table in this paper are in the project repository.
+
+\section*{Acknowledgment}
+% IEEE policy requires disclosure of AI-generated content; edit to describe actual use.
+Generative AI tools were used to assist with code development, data analysis and language editing. All results were verified by the authors against the released run logs.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

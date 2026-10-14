@@ -1,0 +1,12 @@
+\begin{tabular}{lcccc}
+\toprule
+Training data & \multicolumn{2}{c}{6 targets} & \multicolumn{2}{c}{21 autoimmune-area diseases}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & MRR & H@10 & MRR & H@10\\
+\midrule
+BioPathNet++, all diseases in training ($n$=3) & 0.475$\pm$0.017 & 0.648$\pm$0.033 & -- & --\\
+BioPathNet++, 123 autoimmune diseases removed ($n$=1) & 0.473 & 0.628 & 0.485 & 0.608\\
+Paths only, 123 autoimmune diseases removed & \multicolumn{4}{c}{pending}\\
+Disease kNN (no-autoimmune pool) & 0.273 & 0.594 & 0.311 & 0.469\\
+\bottomrule
+\end{tabular}

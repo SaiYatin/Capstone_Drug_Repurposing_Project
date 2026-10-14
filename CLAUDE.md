@@ -29,9 +29,29 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | New code `bpp/` (v3) on PrimeKG | DONE, tested (4/4 pytest incl. gradcheck) |
 | Leakage-free splits + baselines | DONE |
 | Kaggle session 1 + 2 | DONE — main ×3 seeds, paths-only ×3, prior-only ×1, no-autoimmune ×1 finished |
-| Kaggle session 3 | **NEXT** (user is about to run it): finishes noauto_main_s1/s2, noauto_paths_s0, brg_main_s0, bce_main_s0 |
-| Paper rewrite (conference + journal) | NOT STARTED — main numbers are final, start here |
-| Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — must be rewritten, not patched |
+| Kaggle session 3 | **WAITING** (user out of Kaggle hours): finishes noauto_main_s1/s2, noauto_paths_s0, brg_main_s0, bce_main_s0 |
+| Paper rewrite (conference + journal) | **DRAFTED** 15 Oct: `outputs/paper/v3/` (see its README). Not compiled — no LaTeX on the laptop |
+| Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
+| Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
+| Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — superseded by v3, do not use |
+
+**When session 3 arrives:** copy runs to `outputs/bpp/kaggle_session3/runs/`, run
+`python -m bpp.analyze && python -m bpp.figures`, then re-read every `RECHECK` comment in the
+two .tex files (the no-autoimmune paragraph and ablation sentence interpret numbers).
+
+**Statistics correction (15 Oct):** the "targets p = 0.043" quoted earlier is a ONE-sided
+paired bootstrap. Two-sided Wilcoxon gives p = 0.188 (n = 6) and the diff CI crosses 0 →
+targets gain is NOT significant; papers say so. Rule used in papers: significant only if
+bootstrap CI excludes 0 AND Wilcoxon p < 0.05. Area (noauto vs kNN): CI excludes 0 but
+Wilcoxon p = 0.085 → "suggestive". Valid (68): significant under both.
+
+**Facts checked for the papers (don't re-derive):** amifampridine is approved for LEMS, not MG,
+but has a completed phase-3 MG RCT (NCT03304054); no lifitegrast–Sjögren or limaprost–SSc trial;
+ciprofloxacin–Crohn phase-2 RCTs NCT00609973, NCT01783106; prednisone comparator in AIH
+NCT00838214. BioPathNet reports indication MRR ≈0.2–0.8 by TxGNN area, Recall@20 0.619 vs
+TxGNN 0.539 (cell proliferation); TxGNN AUPRC uses 1:1 sampled negatives. "Brière et al.,
+Bioinformatics 2026" could NOT be found in OpenAlex — not cited. Commits: user only, no Claude
+co-author trailer (user request).
 
 Planning/audit doc (Claude Docs, user can share it):
 https://claude.ai/code/artifact/786aaa16-1565-43e1-8fc0-27f6b3926d6c
