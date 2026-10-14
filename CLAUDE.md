@@ -254,8 +254,21 @@ datasets/raw/primekg/         kg.csv(.gz)
 datasets/raw/txgnn_splits/    TxGNN DOID/MONDO files
 outputs/bpp/                  baselines_*.json, cpu_prioronly_*, kaggle_session1/, kaggle_session2/
 ```
-Not yet committed to git: everything above (repo last commit 0582dbd predates v3). Suggest
-the user commits with a clear message; do not delete v1/v2 files or checkpoints.
+Git: all v3 work is committed on branch **`bpp-v3`** (pushed to origin; commits authored as
+Sai Yatin <sumakkiyatin@gmail.com>, which GitHub maps to @SaiYatin). `main` is deliberately
+untouched until the v3 paper exists; then open a PR bpp-v3 → main. Not committed on purpose:
+`kaggle/*.zip` (gitignored; runs zips hold the best.pt checkpoints, keep them locally),
+`checkpoints/best_model_v2.pt` (66 MB, invalid), `Tatikonda_Joshika_CV.tex` + `resume.cls`
+(unrelated personal CV). Do not delete v1/v2 files or checkpoints.
+
+## 8b. Evaluation caveat found 15 Oct 2026 (must go in the paper)
+The 68 `valid` diseases are ALSO the early-stopping/model-selection set, so "Valid MRR" is
+optimistic. Measured from train_log.jsonl (best-epoch MRR minus last-epoch MRR):
+main 0.002–0.016, paths-only 0.022–0.024, noauto_main 0.002–0.044. The margin over kNN
+(+0.11) is far larger, so the main claim survives, but the paths-only "0.405 > 0.394" is
+within selection noise. Untouched by selection: `targets` (6) and noauto `area` (21) — treat
+these as the true test sets. Hyperparameters were fixed defaults (not tuned on valid);
+say so. A clean fix for the journal: carve a separate test split and retrain (~16 GPU-h).
 
 ## 9. Gotchas learned
 - Windows paths with spaces (`results (1)`) — quote them.
