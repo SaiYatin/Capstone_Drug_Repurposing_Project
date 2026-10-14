@@ -264,7 +264,7 @@ untouched until the v3 paper exists; then open a PR bpp-v3 → main. Not committ
 ## 8b. Evaluation caveat found 15 Oct 2026 (must go in the paper)
 The 68 `valid` diseases are ALSO the early-stopping/model-selection set, so "Valid MRR" is
 optimistic. Measured from train_log.jsonl (best-epoch MRR minus last-epoch MRR):
-main 0.002–0.016, paths-only 0.022–0.024, noauto_main 0.002–0.044. The margin over kNN
+main 0.002–0.016, paths-only 0.022–0.031, noauto_main 0.002–0.044 (s1,s2 unfinished). The margin over kNN
 (+0.11) is far larger, so the main claim survives, but the paths-only "0.405 > 0.394" is
 within selection noise. Untouched by selection: `targets` (6) and noauto `area` (21) — treat
 these as the true test sets. Hyperparameters were fixed defaults (not tuned on valid);
