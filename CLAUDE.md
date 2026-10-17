@@ -29,15 +29,26 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | New code `bpp/` (v3) on PrimeKG | DONE, tested (4/4 pytest incl. gradcheck) |
 | Leakage-free splits + baselines | DONE |
 | Kaggle session 1 + 2 | DONE — main ×3 seeds, paths-only ×3, prior-only ×1, no-autoimmune ×1 finished |
-| Kaggle session 3 | **WAITING** (user out of Kaggle hours): finishes noauto_main_s1/s2, noauto_paths_s0, brg_main_s0, bce_main_s0 |
-| Paper rewrite (conference + journal) | **DRAFTED** 15 Oct: `outputs/paper/v3/` (see its README). Not compiled — no LaTeX on the laptop |
+| Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished; no Kaggle runs pending |
+| Paper rewrite (conference + journal) | **DRAFTED**, numbers final for current experiments (session 3 text updated 17 Oct). Not compiled — no LaTeX on the laptop |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
 | Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — superseded by v3, do not use |
 
-**When session 3 arrives:** copy runs to `outputs/bpp/kaggle_session3/runs/`, run
-`python -m bpp.analyze && python -m bpp.figures`, then re-read every `RECHECK` comment in the
-two .tex files (the no-autoimmune paragraph and ablation sentence interpret numbers).
+**Session 3 results (17 Oct, verified; Kaggle code identical to repo, earlier runs byte-identical):**
+- E2 with 3 seeds: targets MRR without autoimmune training 0.487±0.031 vs 0.475±0.017 with
+  (paired with−without −0.013, CI −0.070..+0.055, Wilcoxon p = 0.81) → hypothesis NOT supported, confirmed.
+- Area (21 dis., noauto 3 seeds): MRR 0.449±0.042 vs kNN 0.311; diff +0.138, CI +0.010..+0.280,
+  Wilcoxon p = 0.147 → "suggestive" (was +0.174/p 0.085 with 1 seed — weakened; papers say so).
+- noauto_paths_s0 area 0.393 vs noauto main 0.449: prior channel MAY help on area (+0.056,
+  p = 0.073; seed-0 matched +0.092, p = 0.094) → not significant, stated as needing more seeds.
+- BCE ablation: valid MRR 0.347 vs 0.394 → listwise better (+0.047, CI +0.004..+0.093, p = 0.005
+  vs 3-seed mean; same-seed +0.048, CI −0.001..+0.100, p = 0.023 → "consistent, borderline").
+- BRG ablation (drop anatomy_protein_* + drug_drug): 4,007,433 → 1,133,029 edges (−72%),
+  valid MRR 0.397 (tie, p = 0.91), 7.49 vs 8.46 s/step (−11%), 5.52 vs 5.76 GB.
+- noauto_main_s1 hit the 20-epoch cap (best epoch 19), so it was still improving slightly.
+If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
+`python -m bpp.analyze && python -m bpp.figures`, and re-read sentences that interpret numbers.
 
 **Statistics correction (15 Oct):** the "targets p = 0.043" quoted earlier is a ONE-sided
 paired bootstrap. Two-sided Wilcoxon gives p = 0.188 (n = 6) and the diff CI crosses 0 →
@@ -198,7 +209,7 @@ Models (mean ± sd over seeds; session 1+2):
 | **BioPathNet++ (paths + prior)** | 3 | **0.394 ± 0.003** | 0.456 ± 0.015 | **0.475 ± 0.014** | 0.648 ± 0.027 | 0.892 ± 0.016 |
 | Paths only | 3 | 0.405 ± 0.010 | 0.479 ± 0.021 | 0.463 ± 0.071 | 0.657 ± 0.021 | 0.907 ± 0.006 |
 | Prior/transfer only | 1 | 0.303 | 0.353 | 0.322 | 0.483 | 0.782 |
-| No-autoimmune training (paths+prior) | 1 (s1,s2 unfinished) | 0.454* | 0.557* | 0.473 | 0.628 | 0.899 |
+| No-autoimmune training (paths+prior) | 3 | 0.445* | 0.554* | 0.487 ± 0.031 | 0.615 ± 0.022 | — |
 | No-autoimmune, `area` set (21 diseases) | 1 | — | — | area MRR 0.485 (kNN 0.311, p = 0.005) | area H@10 0.608 | 0.816 |
 
 *different validation set (noauto protocol), not comparable to the 0.394 row.

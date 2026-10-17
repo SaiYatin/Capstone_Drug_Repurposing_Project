@@ -117,6 +117,25 @@ def compare(per_a: dict, per_b: dict, key="mrr"):
             "wins": int(np.sum(a > b)), "ties": int(np.sum(a == b)), "losses": int(np.sum(a < b))}
 
 
+def run_info(run_dir: Path) -> dict:
+    """Graph size, last logged step time and peak GPU memory, parsed from train.log."""
+    info = {}
+    log = run_dir / "train.log"
+    if not log.exists():
+        return info
+    for line in log.read_text(errors="ignore").splitlines():
+        m = re.match(r"graph: [\d,]+ nodes, ([\d,]+) context edges", line)
+        if m:
+            info["edges"] = int(m.group(1).replace(",", ""))
+        m = re.search(r"([\d.]+)s/step peak_mem ([\d.]+)GB", line)
+        if m:
+            info["s_per_step"], info["peak_gb"] = float(m.group(1)), float(m.group(2))
+    res = run_dir / "results.json"
+    if res.exists():
+        info["best_epoch"] = json.loads(res.read_text()).get("best_epoch")
+    return info
+
+
 def selection_gap(run_dir: Path):
     log = run_dir / "train_log.jsonl"
     if not log.exists():
@@ -179,6 +198,18 @@ def analyse(root: Path, data: Path) -> dict:
     test("noauto_vs_knn_targets", ("noauto_main", "targets"), (knn_n, "targets"))
     test("noauto_main_vs_paths_area", ("noauto_main", "area"), ("noauto_paths", "area"))
 
+    # same-seed comparisons for single-seed ablations (robustness check vs the seed-averaged tests)
+    def test_runs(name, a, b, s, key="mrr"):
+        if a in runs and b in runs:
+            ra = json.loads((runs[a] / "results.json").read_text())
+            rb = json.loads((runs[b] / "results.json").read_text())
+            if s in ra and s in rb:
+                out["tests"][name] = compare(ra[s]["per_disease"], rb[s]["per_disease"], key)
+    test_runs("s0_main_vs_bce_valid", "main_s0", "bce_main_s0", "valid")
+    test_runs("s0_main_vs_brg_valid", "main_s0", "brg_main_s0", "valid")
+    test_runs("s0_noauto_main_vs_paths_area", "noauto_main_s0", "noauto_paths_s0", "area")
+
+    out["run_info"] = {name: run_info(path) for name, path in runs.items()}
     out["sparsity"] = sparsity(per, data)
     out["case_studies"] = case_studies(runs)
     return out
@@ -331,7 +362,8 @@ def macros(S) -> str:
     def g(group, s, k):
         return S["models"].get(group, {}).get("sets", {}).get(s, {}).get("seed_mean_sd", {}).get(k)
 
-    for grp, tag in (("main", "Main"), ("paths", "Paths"), ("prioronly", "Prior"), ("noauto_main", "Noauto")):
+    for grp, tag in (("main", "Main"), ("paths", "Paths"), ("prioronly", "Prior"), ("noauto_main", "Noauto"),
+                     ("noauto_paths", "NoautoPaths"), ("brg_main", "Brg"), ("bce_main", "Bce")):
         for s, st in (("valid", "Valid"), ("targets", "Targets"), ("area", "Area")):
             for k, kt in (("mrr", "Mrr"), ("hits@1", "HitsOne"), ("hits@10", "HitsTen"), ("hits@100", "HitsHundred"),
                           ("auroc", "Auroc"), ("auprc", "Auprc"), ("auroc_hard", "AurocHard"),
@@ -359,7 +391,10 @@ def macros(S) -> str:
              "main_vs_paths_valid": "MainPathsValid", "main_vs_paths_targets": "MainPathsTargets",
              "main_vs_noauto_targets": "MainNoautoTargets", "noauto_vs_knn_area": "NoautoKnnArea",
              "paths_vs_knn_valid": "PathsKnnValid", "main_vs_prioronly_valid": "MainPriorValid",
-             "main_vs_knn_valid_hits10": "MainKnnValidHitsTen"}
+             "main_vs_knn_valid_hits10": "MainKnnValidHitsTen", "main_vs_bce_valid": "MainBceValid",
+             "main_vs_brg_valid": "MainBrgValid", "main_vs_brg_targets": "MainBrgTargets",
+             "noauto_main_vs_paths_area": "NoautoPathsArea", "s0_main_vs_bce_valid": "SzeroMainBceValid",
+             "s0_main_vs_brg_valid": "SzeroMainBrgValid", "s0_noauto_main_vs_paths_area": "SzeroNoautoPathsArea"}
     for k, t in names.items():
         if k in S["tests"]:
             r = S["tests"][k]
@@ -376,6 +411,15 @@ def macros(S) -> str:
     for grp, tag in (("main", "Main"), ("paths", "Paths")):
         if gaps.get(grp):
             nc(f"SelGap{tag}Min", f"{min(gaps[grp]):.3f}"); nc(f"SelGap{tag}Max", f"{max(gaps[grp]):.3f}")
+    info = S.get("run_info", {})
+    for run, tag in (("main_s0", "Main"), ("brg_main_s0", "Brg")):
+        if run in info and info[run].get("edges"):
+            nc(f"Edges{tag}", f"{info[run]['edges']:,}".replace(",", "{,}"))
+            nc(f"StepSec{tag}", f"{info[run]['s_per_step']:.2f}")
+            nc(f"PeakMem{tag}", f"{info[run]['peak_gb']:.2f}")
+    if "main_s0" in info and "brg_main_s0" in info:
+        nc("BrgEdgeCutPct", f"{100 * (1 - info['brg_main_s0']['edges'] / info['main_s0']['edges']):.0f}")
+        nc("BrgSpeedupPct", f"{100 * (1 - info['brg_main_s0']['s_per_step'] / info['main_s0']['s_per_step']):.0f}")
     sp = S["sparsity"]
     for lab, tag in (("BioPathNet++", "Main"), ("Disease kNN", "Knn")):
         if lab in sp:
