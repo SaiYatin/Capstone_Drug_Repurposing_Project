@@ -29,8 +29,9 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | New code `bpp/` (v3) on PrimeKG | DONE, tested (4/4 pytest incl. gradcheck) |
 | Leakage-free splits + baselines | DONE |
 | Kaggle session 1 + 2 | DONE — main ×3 seeds, paths-only ×3, prior-only ×1, no-autoimmune ×1 finished |
-| Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished; no Kaggle runs pending |
-| Paper rewrite (conference + journal) | **DRAFTED**, numbers final for current experiments (session 3 text updated 17 Oct). Not compiled — no LaTeX on the laptop |
+| Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
+| Kaggle session 4 | **RUNNING / NEXT** (user starts it): transfer curve tr_A_s0-2, tr_Actl0-2_s0, tr_CE_s0, then clean test split test_main_s0-2. New zip `kaggle/biopathnet-pp-v3.zip` (old one kept as `.session1-3.zip`) |
+| Paper rewrite (conference + journal) | **REFRAMED 17 Oct around the user's original 3 aims** (Aim 1 transfer, Aim 2 accuracy, Aim 3 components); leakage = supporting section. Session-4 numbers print `[pending]` until analysed. Not compiled — no LaTeX on the laptop |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
 | Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — superseded by v3, do not use |
@@ -50,6 +51,24 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 `python -m bpp.analyze && python -m bpp.figures`, and re-read sentences that interpret numbers.
 
+**Session 4 design (17 Oct; `bpp/extra_splits.py`, tests in tests/test_bpp.py, 5/5 pass):**
+- Transfer test set E = 12 TxGNN-area diseases with indications that are NOT targets and NOT in
+  RA/SLE/MS families; E + targets + valid held out (families) in every condition.
+- A = RA/SLE/MS families (11 dis., 161 ind.); A′ = 3 draws of 11 non-autoimmune diseases matched
+  disease-by-disease on #indications (160 each); C_E = all 1,185 except E; D = existing noauto runs.
+- "B: all autoimmune" is impossible: beyond RA/SLE/MS, PrimeKG's autoimmune diseases ARE the area.
+- Test split: 68 random NON-autoimmune diseases (seed 1) + families held out; 1,065 train.
+- Graph only contains therapeutic edges of train diseases → each condition also limits drug knowledge.
+- Baselines already computed locally (outputs/bpp/baselines_tr_*.json, baselines_test.json):
+  kNN on E: A pool 0.258 vs controls 0.086 (better on 12/12, p<0.001) → autoimmune data helps
+  the baseline when data is scarce. kNN test-split MRR 0.392 (test diseases easier than valid).
+- Runner fix: per-run `--time-budget-h` is now the time LEFT in the session (was 11 h per run →
+  a late-starting run could outlive Kaggle's 12 h limit and lose the whole session's output).
+- After results: copy to `outputs/bpp/kaggle_session4/runs/`, run analyze + figures, then fix every
+  `RECHECK` comment (abstracts, Aim 1 paragraphs, test-split paragraph, journal conclusion).
+- Brière et al. 2026 VERIFIED (user opened it): Bioinformatics 42(8) btag608, doi:10.1093/bioinformatics/btag608;
+  cited for redundancy/split-realism; NOTE they found degree NOT a driver in KGE models (cited accordingly).
+
 **Statistics correction (15 Oct):** the "targets p = 0.043" quoted earlier is a ONE-sided
 paired bootstrap. Two-sided Wilcoxon gives p = 0.188 (n = 6) and the diff CI crosses 0 →
 targets gain is NOT significant; papers say so. Rule used in papers: significant only if
@@ -61,7 +80,7 @@ but has a completed phase-3 MG RCT (NCT03304054); no lifitegrast–Sjögren or l
 ciprofloxacin–Crohn phase-2 RCTs NCT00609973, NCT01783106; prednisone comparator in AIH
 NCT00838214. BioPathNet reports indication MRR ≈0.2–0.8 by TxGNN area, Recall@20 0.619 vs
 TxGNN 0.539 (cell proliferation); TxGNN AUPRC uses 1:1 sampled negatives. "Brière et al.,
-Bioinformatics 2026" could NOT be found in OpenAlex — not cited. Commits: user only, no Claude
+Bioinformatics 2026" was missing from OpenAlex on 15 Oct but IS real (verified 17 Oct, now cited). Commits: user only, no Claude
 co-author trailer (user request).
 
 Planning/audit doc (Claude Docs, user can share it):

@@ -443,6 +443,14 @@ def table_ablation(S):
     return "\n".join(lines)
 
 
+PENDING_MACROS = [
+    *(f"{c}{f}Mrr" for c in ("TrA", "TrActl", "TrD", "TrCE") for f in ("E", "EKnn", "Targets", "TargetsKnn")),
+    *(f"{p}{t}" for t in ("TrAActlE", "TrAActlEKnn", "TrAActlTargets", "TrCEDE", "TrCEAE", "TrDAE", "TestKnn")
+      for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
+    "TestMrr", "TestHitsTen", "TestAnyTen", "TestModelValidMrr", "KnnTestMrr", "KnnTestHitsTen", "KnnTestAnyTen",
+]
+
+
 def _ci(r):
     return "pending" if not r else f"{r['mean']:.3f} [{r['ci95'][0]:.2f}, {r['ci95'][1]:.2f}]"
 
@@ -553,6 +561,11 @@ def macros(S) -> str:
             nc(f"{kt}AnyTen", f"{100 * T[k]['_any10']['mean']:.0f}")
     if T.get("model_valid"):
         nc("TestModelValidMrr", f"{T['model_valid']['mean']:.3f}")
+    # numbers that only exist after Kaggle session 4: print "[pending]" so the papers compile meanwhile
+    defined = {re.match(r"\\newcommand\{\\(\w+)\}", l).group(1) for l in out}
+    for name in PENDING_MACROS:
+        if name not in defined:
+            nc(name, r"\textbf{[pending]}")
     info = S.get("run_info", {})
     for run, tag in (("main_s0", "Main"), ("brg_main_s0", "Brg")):
         if run in info and info[run].get("edges"):
