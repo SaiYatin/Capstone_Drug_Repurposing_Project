@@ -114,9 +114,13 @@ class RepurposingTask:
         """name -> list of (disease_label, node, include_offlabel)."""
         sets = {"valid": [(self.kg.node_names[d], d, False) for d in self.valid if d in self.ind]}
         sets["targets"] = [(n, int(p), True) for n, p in self.split["target_primary"].items()]
-        if self.split["protocol"] == "no_autoimmune":
+        if "eval_area" in self.split:          # transfer protocols (bpp/extra_splits.py)
+            sets["area"] = [(self.kg.node_names[d], d, False) for d in self.split["eval_area"] if d in self.ind]
+        elif self.split["protocol"] == "no_autoimmune":
             sets["area"] = [(self.kg.node_names[d], d, False) for d in self.split["area_diseases"]
                             if d in self.ind]
+        if "test_diseases" in self.split:      # selection-free test set: never trained on, never used to stop
+            sets["test"] = [(self.kg.node_names[d], d, False) for d in self.split["test_diseases"] if d in self.ind]
         return sets
 
     # ------------------------------------------------------------------ baselines / priors

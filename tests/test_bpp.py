@@ -97,3 +97,39 @@ def test_model_forward_and_learns_toy_task():
         loss = listwise_loss(logits, mask)
         opt.zero_grad(); loss.backward(); opt.step(); losses.append(loss.item())
     assert losses[-1] < losses[0] - 0.1, (losses[0], losses[-1])
+
+
+DATA = Path(__file__).resolve().parents[1] / "datasets" / "bpp_primekg"
+
+
+def test_extra_splits_never_train_on_evaluation_families():
+    """Transfer / test splits (bpp/extra_splits.py): no evaluation disease, and no disease-disease
+    neighbour of one, may be a training disease (its drug edges would enter the message graph)."""
+    import json
+    import pytest
+    if not (DATA / "splits_tr_A.json").exists():
+        pytest.skip("run `python -m bpp.extra_splits` first")
+    from bpp.task import RepurposingTask
+    kg = CompactKG.load(str(DATA))
+    base = json.loads((DATA / "splits.json").read_text())
+    auto = RepurposingTask(kg, base).autoimmune
+    a_ind = None
+    for name in ["splits_tr_A.json", "splits_tr_CE.json", "splits_test.json"] + \
+                [f"splits_tr_Actl{j}.json" for j in range(3)]:
+        s = json.loads((DATA / name).read_text())
+        task = RepurposingTask(kg, s)
+        train = set(task.train)
+        evaluated = set(s["valid_diseases"]) | set(s.get("eval_area", [])) | set(s.get("test_diseases", []))
+        # strict family = disease + direct disease-disease neighbours (same rule as splits.json);
+        # target families are stored already expanded
+        forbidden = set().union(*map(set, s["targets"].values()))
+        for d in evaluated:
+            forbidden |= task.exclusion(d)
+        assert not (train & forbidden), (name, len(train & forbidden))
+        if "Actl" in name:
+            assert not any(task.exclusion(d) & auto for d in train), name      # controls are non-autoimmune
+            n_ind = sum(len(task.ind[d]) for d in train)
+            assert abs(n_ind - a_ind) <= 0.1 * a_ind, (name, n_ind, a_ind)   # matched label budget
+        if name == "splits_tr_A.json":
+            a_ind = sum(len(task.ind[d]) for d in train)
+            assert train <= set().union(*map(set, s["rich_families"].values()))

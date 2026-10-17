@@ -178,6 +178,40 @@ def per_target(S, root: Path, out: Path):
     save(fig, out, "fig_per_target")
 
 
+# ------------------------------------------------------------------ 6. transfer curve (Aim 1)
+def transfer_curve(S, out: Path):
+    T = S.get("transfer", {}).get("conditions", {})
+    order = [k for k in ("Actl", "A", "D", "CE") if k in T]
+    if not order:
+        return
+    short = {"Actl": "A$'$ matched\nnon-autoimmune", "A": "A  RA/SLE/MS\n(original design)",
+             "D": "D  all non-\nautoimmune", "CE": "C$_E$  all\ndiseases"}
+    fig, axes = plt.subplots(1, 2, figsize=(COL2, 2.3), sharey=True)
+    for ax, (sname, title) in zip(axes, (("E", "12 held-out autoimmune-area diseases"), ("targets", "6 rare targets"))):
+        labelled = set()
+        for i, k in enumerate(order):
+            c = T[k]
+            for dx, f, col, lab in ((-0.12, "knn", GREY, "Disease kNN"), (0.12, "model", ACCENT, "BioPathNet++")):
+                r = c.get(f"{f}_{sname}")
+                if not r:
+                    if f == "model":
+                        ax.text(i + dx, 0.03, "pending", rotation=90, fontsize=6, color=MUTED, ha="center")
+                    continue
+                ax.plot([i + dx] * 2, r["ci95"], color=col, lw=1.2)
+                ax.plot(i + dx, r["mean"], "o", ms=5, color=col, mec="white", mew=0.8,
+                        label=None if lab in labelled else lab)
+                labelled.add(lab)
+        ax.set_xticks(range(len(order)))
+        ax.set_xticklabels([f"{short[k]}\n({T[k]['n_train']:,} dis.)" for k in order], fontsize=6.4)
+        ax.set_title(title, fontsize=8, color=INK, loc="left"); ax.set_ylim(0, 1.0)
+        ax.grid(axis="y", color=GRID, lw=0.5); ax.set_axisbelow(True); ax.tick_params(axis="x", length=0)
+    axes[0].set_ylabel("MRR (95% CI over diseases)")
+    handles, labels = axes[0].get_legend_handles_labels()
+    if handles:
+        axes[0].legend(handles, labels, frameon=False, fontsize=6.6, loc="upper left")
+    save(fig, out, "fig_transfer_curve")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="outputs/bpp")
@@ -186,6 +220,7 @@ def main():
     root, out = Path(a.root), Path(a.out)
     S = json.loads((root / "analysis" / "summary.json").read_text())
     pipeline(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
+    transfer_curve(S, out)
     print("figures ->", out)
 
 

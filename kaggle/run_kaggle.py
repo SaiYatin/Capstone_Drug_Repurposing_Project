@@ -22,8 +22,9 @@ RESUMING AFTER THE 12 h SESSION LIMIT
   experiment resumes from its last.pt. Finished experiments (results.json present) are skipped.
 
 QUOTA PLAN (30 GPU-h per week, both GPUs count as one session-hour)
-  Stage 3 runs EXPERIMENTS top to bottom; the first 4 are the paper's core and should finish in
-  the first session if the smoke test reports <= ~1.5 s/step. Edit EXPERIMENTS / EPOCHS below.
+  Stage 3 runs EXPERIMENTS top to bottom, two at a time. Every run gets the time left in the
+  SESSION (not 11 h of its own), and no run starts in the last 30 min, so the notebook always
+  finishes and saves its output before Kaggle's 12 h limit. Unfinished runs resume next session.
 """
 import glob
 import json
@@ -36,23 +37,27 @@ import time
 from pathlib import Path
 
 EPOCHS = 20
-COMMON = ["--dim", "32", "--layers", "6", "--batch", "8", "--epochs", str(EPOCHS), "--patience", "6",
-          "--time-budget-h", "11.0"]
+SESSION_H = 11.0   # whole-notebook budget: Kaggle kills the session at 12 h and then saves NOTHING
+COMMON = ["--dim", "32", "--layers", "6", "--batch", "8", "--epochs", str(EPOCHS), "--patience", "6"]
+SMALL = ["--epochs", "60", "--patience", "10"]   # 11 training diseases = 2 steps/epoch: allow more epochs
+
+# Sessions 1-3 (all finished; results in outputs/bpp/kaggle_session{1,2,3}): main_s0-2, paths_s0-2,
+# prioronly_s0, noauto_main_s0-2, noauto_paths_s0, brg_main_s0, bce_main_s0.
+#
+# Session 4: transfer curve (Aim 1) first, then the selection-free test split (journal).
+# Split files are made by `python -m bpp.extra_splits` and ship inside the dataset zip.
 EXPERIMENTS = [
-    # name,                 extra args                                      purpose
-    ("main_s0",            ["--prior", "--seed", "0"]),                    # BioPathNet++ (paths + transfer)
-    ("paths_s0",           ["--seed", "0"]),                               # ablation: paths only (BioPathNet-style)
-    ("noauto_main_s0",     ["--prior", "--seed", "0", "--split", "splits_noauto.json"]),  # E2 transfer test
-    ("prioronly_s0",       ["--prior", "--no-paths", "--seed", "0"]),      # ablation: transfer channel only
-    ("main_s1",            ["--prior", "--seed", "1"]),
-    ("main_s2",            ["--prior", "--seed", "2"]),
-    ("paths_s1",           ["--seed", "1"]),
-    ("paths_s2",           ["--seed", "2"]),
-    ("noauto_main_s1",     ["--prior", "--seed", "1", "--split", "splits_noauto.json"]),
-    ("noauto_main_s2",     ["--prior", "--seed", "2", "--split", "splits_noauto.json"]),
-    ("noauto_paths_s0",    ["--seed", "0", "--split", "splits_noauto.json"]),
-    ("brg_main_s0",        ["--prior", "--seed", "0", "--relations", "brg"]),  # BRG ablation
-    ("bce_main_s0",        ["--prior", "--seed", "0", "--loss", "bce"]),       # loss ablation
+    # name,                 extra args                                                       purpose
+    ("tr_A_s0",            ["--prior", "--seed", "0", "--split", "splits_tr_A.json"] + SMALL),   # A: RA/SLE/MS only
+    ("tr_Actl0_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl0.json"] + SMALL),  # A': matched controls
+    ("tr_Actl1_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl1.json"] + SMALL),
+    ("tr_Actl2_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl2.json"] + SMALL),
+    ("tr_A_s1",            ["--prior", "--seed", "1", "--split", "splits_tr_A.json"] + SMALL),
+    ("tr_A_s2",            ["--prior", "--seed", "2", "--split", "splits_tr_A.json"] + SMALL),
+    ("tr_CE_s0",           ["--prior", "--seed", "0", "--split", "splits_tr_CE.json"]),          # C_E: all but eval set
+    ("test_main_s0",       ["--prior", "--seed", "0", "--split", "splits_test.json"]),           # clean test split
+    ("test_main_s1",       ["--prior", "--seed", "1", "--split", "splits_test.json"]),
+    ("test_main_s2",       ["--prior", "--seed", "2", "--split", "splits_test.json"]),
 ]
 
 INPUT = os.environ.get("BPP_INPUT", "/kaggle/input")
@@ -87,6 +92,13 @@ def restore_previous_runs():
         if not (dst / "last.pt").exists():
             shutil.copytree(src, dst, dirs_exist_ok=True)
             print(f"restored {src.name} from previous session", flush=True)
+
+
+T0 = time.time()
+
+
+def hours_left():
+    return SESSION_H - (time.time() - T0) / 3600
 
 
 def main():
@@ -127,12 +139,13 @@ def main():
     def worker(gpu):
         while True:
             with lock:
-                if not queue:
+                if not queue or hours_left() < 0.5:      # too late to start: leave it for the next session
                     return
                 name, extra = queue.pop(0)
             out = RUNS / name
             out.mkdir(parents=True, exist_ok=True)
-            args = [py, "-m", "bpp.train", "--data", data, "--out", str(out), "--device", dev(gpu)] + COMMON + extra
+            budget = ["--time-budget-h", f"{hours_left():.2f}"]  # every run stops before the SESSION ends
+            args = [py, "-m", "bpp.train", "--data", data, "--out", str(out), "--device", dev(gpu)] + COMMON + budget + extra
             t0 = time.time()
             rc = sh(args, log=str(out / "train.log"), env=env)
             print(f"[gpu{gpu}] {name} finished rc={rc} in {(time.time() - t0) / 60:.1f} min", flush=True)
@@ -153,7 +166,7 @@ def main():
     rows = ["| run | set | MRR | 95% CI | Hits@10 | Hits@50 | AUROC | AUROC-hard |", "|---|---|---|---|---|---|---|---|"]
     for res in sorted(RUNS.glob("*/results.json")):
         r = json.loads(res.read_text())
-        for s in ("valid", "targets", "area"):
+        for s in ("valid", "targets", "area", "test"):
             if s in r:
                 g = r[s]["aggregate"]
                 ci = g["mrr"]["ci95"]

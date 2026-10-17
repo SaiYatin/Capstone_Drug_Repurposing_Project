@@ -36,7 +36,15 @@ GROUPS = {  # run-name prefix -> (label, split protocol)
     "bce_main": ("BioPathNet++, BCE loss", "targets"),
     "noauto_main": ("BioPathNet++, no autoimmune training", "no_autoimmune"),
     "noauto_paths": ("Paths only, no autoimmune training", "no_autoimmune"),
+    # transfer curve (bpp/extra_splits.py); "tr_Actl" pools the matched-control draws (draw j = "seed" j)
+    "tr_A": ("A: RA/SLE/MS families only", "transfer"),
+    "tr_Actl": ("A$'$: matched non-autoimmune controls", "transfer"),
+    "tr_CE": ("C$_E$: all diseases except E", "transfer"),
+    "test_main": ("BioPathNet++ (selection-free test split)", "test"),
 }
+# extra baseline files written by bpp.run_baselines for the derived splits
+EXTRA_BASELINES = {"tr_A": "baselines_tr_A.json", "tr_CE": "baselines_tr_CE.json", "test": "baselines_test.json",
+                   **{f"tr_Actl{j}": f"baselines_tr_Actl{j}.json" for j in range(3)}}
 BASELINES = {"random": "Random", "drug_degree": "Drug degree", "popularity": "Popularity",
              "autoimmune_frequency": "Autoimmune frequency", "shared_targets": "Shared targets",
              "disease_knn": "Disease kNN"}
@@ -62,8 +70,14 @@ def group_runs(runs: dict) -> dict:
     g = defaultdict(dict)
     for name, path in runs.items():
         m = re.match(r"(.+)_s(\d+)$", name)
-        if m and m.group(1) in GROUPS:
-            g[m.group(1)][int(m.group(2))] = json.loads((path / "results.json").read_text())
+        if not m:
+            continue
+        grp, key = m.group(1), int(m.group(2))
+        c = re.match(r"tr_Actl(\d+)$", grp)
+        if c:                                   # control draws pooled: draw index stands in for the seed
+            grp, key = "tr_Actl", int(c.group(1)) * 100 + key
+        if grp in GROUPS:
+            g[grp][key] = json.loads((path / "results.json").read_text())
     return {k: dict(sorted(v.items())) for k, v in g.items()}
 
 
@@ -156,7 +170,7 @@ def analyse(root: Path, data: Path) -> dict:
     for g, by_seed in groups.items():
         label, proto = GROUPS[g]
         out["models"][g] = {"label": label, "protocol": proto, "seeds": sorted(by_seed), "sets": {}}
-        for s in ("valid", "targets", "area"):
+        for s in ("valid", "targets", "area", "test"):
             if not any(s in r for r in by_seed.values()):
                 continue
             per[(g, s)] = seed_avg_per_disease(by_seed, s)
@@ -179,6 +193,13 @@ def analyse(root: Path, data: Path) -> dict:
                            "n_pos": m["n_pos"]} for d, m in r["per_disease"].items()}
                 per[(f"base:{proto}:{bname}", s)] = pd_
                 out["baselines"][proto][bname][s] = {"macro": {k: macro(pd_, k) for k in METRICS + ["_any10"]}}
+    for key, fname in EXTRA_BASELINES.items():
+        if (root / fname).exists():
+            for bname, sets in json.loads((root / fname).read_text()).items():
+                for s, r in sets.items():
+                    per[(f"base:{key}:{bname}", s)] = {
+                        d: {**{k: m[k] for k in METRICS if k in m}, "_any10": float(min(m["_ranks"]) <= 10),
+                            "n_pos": m["n_pos"]} for d, m in r["per_disease"].items()}
 
     def test(name, a, b, key="mrr"):
         if a in per and b in per:
@@ -212,6 +233,76 @@ def analyse(root: Path, data: Path) -> dict:
     out["run_info"] = {name: run_info(path) for name, path in runs.items()}
     out["sparsity"] = sparsity(per, data)
     out["case_studies"] = case_studies(runs)
+    out["transfer"] = transfer_curve(per, data, out["tests"])
+    out["test_split"] = test_split(per, out["tests"])
+    return out
+
+
+# ----------------------------------------------------------------------------- transfer curve (Aim 1)
+TRANSFER_CONDITIONS = [  # key, label, model group, baseline key(s), split file for the training-set size
+    ("Actl", "A$'$: 11 matched non-autoimmune diseases", "tr_Actl", [f"tr_Actl{j}" for j in range(3)],
+     "splits_tr_Actl0.json"),
+    ("A", "A: RA/SLE/MS families (11 diseases)", "tr_A", ["tr_A"], "splits_tr_A.json"),
+    ("D", "D: all non-autoimmune diseases", "noauto_main", ["no_autoimmune"], "splits_noauto.json"),
+    ("CE", "C$_E$: all diseases except the test set", "tr_CE", ["tr_CE"], "splits_tr_CE.json"),
+]
+
+
+def _restrict(pd_: dict, names) -> dict:
+    return {d: m for d, m in pd_.items() if d in names}
+
+
+def _avg(pds: list) -> dict:
+    """Average several per-disease dicts (e.g. the 3 control draws) disease by disease."""
+    common = [d for d in pds[0] if all(d in p for p in pds)]      # keep a stable order: bootstraps are seeded
+    return {d: {k: float(np.mean([p[d][k] for p in pds])) for k in pds[0][d] if not k.startswith("_") or k == "_any10"}
+            for d in common}
+
+
+def transfer_curve(per: dict, data: Path, tests: dict) -> dict:
+    """MRR on E (held-out autoimmune-area diseases) and on the 6 targets for each training condition,
+    model and disease-kNN baseline side by side. Missing runs are reported as pending."""
+    split_a = data / "splits_tr_A.json"
+    if not split_a.exists():
+        return {}
+    from bpp.kg import CompactKG
+    names = CompactKG.load(str(data)).node_names
+    E = {names[d] for d in json.loads(split_a.read_text())["eval_area"]}
+    res = {"eval_diseases": sorted(E), "conditions": {}}
+    paired = {}
+    for key, label, grp, bkeys, split_file in TRANSFER_CONDITIONS:
+        sp = json.loads((data / split_file).read_text())
+        row = {"label": label, "n_train": len(sp["train_diseases"])}
+        for s, sname in (("area", "E"), ("targets", "targets")):
+            m = per.get((grp, s))
+            if m is not None:
+                m = _restrict(m, E) if s == "area" else m
+                row[f"model_{sname}"] = macro(m, "mrr")
+                paired[(key, sname, "model")] = m
+            b = [per.get((f"base:{bk}:disease_knn", s)) for bk in bkeys]
+            if all(x is not None for x in b):
+                b = _avg([_restrict(x, E) if s == "area" else x for x in b])
+                row[f"knn_{sname}"] = macro(b, "mrr")
+                paired[(key, sname, "knn")] = b
+        res["conditions"][key] = row
+    for a, b, sname, kind in (("A", "Actl", "E", "model"), ("A", "Actl", "E", "knn"), ("A", "Actl", "targets", "model"),
+                              ("CE", "D", "E", "model"), ("CE", "A", "E", "model"), ("D", "A", "E", "model")):
+        if (a, sname, kind) in paired and (b, sname, kind) in paired:
+            tests[f"tr_{a}_vs_{b}_{sname}_{kind}"] = compare(paired[(a, sname, kind)], paired[(b, sname, kind)])
+    return res
+
+
+def test_split(per: dict, tests: dict) -> dict:
+    """Selection-free test set: never trained on, never used for early stopping."""
+    out = {}
+    if ("test_main", "test") in per:
+        out["model"] = {k: macro(per[("test_main", "test")], k) for k in ("mrr", "hits@10", "auroc_hard", "_any10")}
+        out["model_valid"] = macro(per[("test_main", "valid")], "mrr") if ("test_main", "valid") in per else None
+        if ("base:test:disease_knn", "test") in per:
+            tests["test_main_vs_knn_test"] = compare(per[("test_main", "test")], per[("base:test:disease_knn", "test")])
+    for b in ("random", "popularity", "disease_knn"):
+        if (f"base:test:{b}", "test") in per:
+            out[b] = {k: macro(per[(f"base:test:{b}", "test")], k) for k in ("mrr", "hits@10", "auroc_hard", "_any10")}
     return out
 
 
@@ -352,6 +443,40 @@ def table_ablation(S):
     return "\n".join(lines)
 
 
+def _ci(r):
+    return "pending" if not r else f"{r['mean']:.3f} [{r['ci95'][0]:.2f}, {r['ci95'][1]:.2f}]"
+
+
+def table_transfer_curve(S):
+    T = S.get("transfer", {})
+    lines = [r"\begin{tabular}{lrcccc}", r"\toprule",
+             r" & & \multicolumn{2}{c}{12 held-out autoimmune-area diseases (E)} & \multicolumn{2}{c}{6 rare targets}\\",
+             r"\cmidrule(lr){3-4}\cmidrule(lr){5-6}",
+             r"Training data & \#dis. & \sysname & disease $k$NN & \sysname & disease $k$NN\\", r"\midrule"]
+    for key, *_ in TRANSFER_CONDITIONS:
+        c = T.get("conditions", {}).get(key)
+        if not c:
+            continue
+        lines.append(f"{c['label']} & {c['n_train']:,} & {_ci(c.get('model_E'))} & {_ci(c.get('knn_E'))} & "
+                     f"{_ci(c.get('model_targets'))} & {_ci(c.get('knn_targets'))}\\\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
+def table_test(S):
+    T = S.get("test_split", {})
+    lines = [r"\begin{tabular}{lccc}", r"\toprule",
+             r"Method (68 test diseases, never used for training or stopping) & MRR & H@10 & AUROC$_\text{hard}$\\",
+             r"\midrule"]
+    for k, lab in (("random", "Random"), ("popularity", "Popularity"), ("disease_knn", "Disease $k$NN"),
+                   ("model", r"\textbf{\sysname}")):
+        r = T.get(k)
+        lines.append(f"{lab} & " + (" & ".join(f3((r.get(m) or {}).get("mean")) for m in ("mrr", "hits@10", "auroc_hard"))
+                                    if r else r"\multicolumn{3}{c}{pending}") + r"\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
 def macros(S) -> str:
     out = []
 
@@ -393,6 +518,9 @@ def macros(S) -> str:
              "paths_vs_knn_valid": "PathsKnnValid", "main_vs_prioronly_valid": "MainPriorValid",
              "main_vs_knn_valid_hits10": "MainKnnValidHitsTen", "main_vs_bce_valid": "MainBceValid",
              "main_vs_brg_valid": "MainBrgValid", "main_vs_brg_targets": "MainBrgTargets",
+             "tr_A_vs_Actl_E_model": "TrAActlE", "tr_A_vs_Actl_E_knn": "TrAActlEKnn",
+             "tr_A_vs_Actl_targets_model": "TrAActlTargets", "tr_CE_vs_D_E_model": "TrCEDE",
+             "tr_CE_vs_A_E_model": "TrCEAE", "tr_D_vs_A_E_model": "TrDAE", "test_main_vs_knn_test": "TestKnn",
              "noauto_main_vs_paths_area": "NoautoPathsArea", "s0_main_vs_bce_valid": "SzeroMainBceValid",
              "s0_main_vs_brg_valid": "SzeroMainBrgValid", "s0_noauto_main_vs_paths_area": "SzeroNoautoPathsArea"}
     for k, t in names.items():
@@ -411,6 +539,20 @@ def macros(S) -> str:
     for grp, tag in (("main", "Main"), ("paths", "Paths")):
         if gaps.get(grp):
             nc(f"SelGap{tag}Min", f"{min(gaps[grp]):.3f}"); nc(f"SelGap{tag}Max", f"{max(gaps[grp]):.3f}")
+    tags = {"Actl": "TrActl", "A": "TrA", "D": "TrD", "CE": "TrCE"}
+    for key, c in S.get("transfer", {}).get("conditions", {}).items():
+        nc(f"{tags[key]}NTrain", f"{c['n_train']:,}".replace(",", "{,}"))
+        for f, ft in (("model_E", "E"), ("knn_E", "EKnn"), ("model_targets", "Targets"), ("knn_targets", "TargetsKnn")):
+            if c.get(f):
+                nc(f"{tags[key]}{ft}Mrr", f"{c[f]['mean']:.3f}")
+    T = S.get("test_split", {})
+    for k, kt in (("model", "Test"), ("disease_knn", "KnnTest"), ("popularity", "PopTest")):
+        if T.get(k):
+            nc(f"{kt}Mrr", f"{T[k]['mrr']['mean']:.3f}")
+            nc(f"{kt}HitsTen", f"{T[k]['hits@10']['mean']:.3f}")
+            nc(f"{kt}AnyTen", f"{100 * T[k]['_any10']['mean']:.0f}")
+    if T.get("model_valid"):
+        nc("TestModelValidMrr", f"{T['model_valid']['mean']:.3f}")
     info = S.get("run_info", {})
     for run, tag in (("main_s0", "Main"), ("brg_main_s0", "Brg")):
         if run in info and info[run].get("edges"):
@@ -447,6 +589,8 @@ def main():
     (paper / "tab_targets.tex").write_text(table_targets(S))
     (paper / "tab_transfer.tex").write_text(table_transfer(S))
     (paper / "tab_ablation.tex").write_text(table_ablation(S))
+    (paper / "tab_transfer_curve.tex").write_text(table_transfer_curve(S))
+    (paper / "tab_test.tex").write_text(table_test(S))
     print("runs:", ", ".join(S["runs_found"]))
     for k, v in S["tests"].items():
         print(f"  {k:28s} diff {v['mean_diff']:+.3f} [{v['diff_ci95'][0]:+.3f},{v['diff_ci95'][1]:+.3f}] "
