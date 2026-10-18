@@ -30,7 +30,8 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Leakage-free splits + baselines | DONE |
 | Kaggle session 1 + 2 | DONE — main ×3 seeds, paths-only ×3, prior-only ×1, no-autoimmune ×1 finished |
 | Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
-| Kaggle session 4 | **RUNNING / NEXT** (user starts it): transfer curve tr_A_s0-2, tr_Actl0-2_s0, tr_CE_s0, then clean test split test_main_s0-2. New zip `kaggle/biopathnet-pp-v3.zip` (old one kept as `.session1-3.zip`) |
+| Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
+| Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
 | Paper rewrite (conference + journal) | **REFRAMED 17 Oct around the user's original 3 aims** (Aim 1 transfer, Aim 2 accuracy, Aim 3 components); leakage = supporting section. Session-4 numbers print `[pending]` until analysed. Not compiled — no LaTeX on the laptop |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
@@ -50,6 +51,19 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 - noauto_main_s1 hit the 20-epoch cap (best epoch 19), so it was still improving slightly.
 If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 `python -m bpp.analyze && python -m bpp.figures`, and re-read sentences that interpret numbers.
+
+**Session 4 RESULTS (18 Oct, verified; Kaggle code identical to repo; papers updated, no RECHECK left):**
+- Aim 1, scarce data: model MRR on E — A (RA/SLE/MS, 3 seeds) 0.290 vs A′ (3 matched draws) 0.126;
+  diff +0.164, CI +0.037..+0.316, Wilcoxon p = 0.016, 9/12 better → SIGNIFICANT. Targets +0.083, p = 0.062.
+  Same with FINAL checkpoints (`bpp/evaluate_checkpoint.py`, laptop GPU, `kaggle_session4/last_ckpt_eval/`):
+  0.223 vs 0.077, +0.146, CI +0.046..+0.263, p = 0.021. kNN shows same pattern (0.258 vs 0.086).
+- CAVEAT (in papers): the A model ranks the SAME corticosteroids first for every target → the scarce-data
+  transfer is a drug-class prior, not disease-specific reasoning; model ≈ kNN in this regime (0.290 vs 0.258).
+  A/A′ early-stop on general valid (all MRR < 0.05) → tr_A_s1 best epoch 0; tr_A_s2 falls 0.29→0.09 by last epoch.
+- Aim 1, full scale: D (non-autoimmune) 0.532 vs C_E (all, 1 seed) 0.452 on E; diff −0.081, p = 0.23 → no gain.
+  Answer to Aim 1: transfer from autoimmune diseases matters when data is scarce; at scale the broad graph supplies it.
+- Test split (1 seed): MRR 0.494 vs kNN 0.392, +0.102, CI +0.032..+0.179, p = 0.016 → significant; 75% vs 57% any-hit@10.
+- `kaggle/bpp-runs-session4.zip` = all session-4 run dirs incl. checkpoints (for resuming s1/s2).
 
 **Session 4 design (17 Oct; `bpp/extra_splits.py`, tests in tests/test_bpp.py, 5/5 pass):**
 - Transfer test set E = 12 TxGNN-area diseases with indications that are NOT targets and NOT in

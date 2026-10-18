@@ -1,0 +1,111 @@
+/kaggle/working/code/bpp/kg.py:112: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  a = torch.sparse_coo_tensor(torch.stack([rows, cols]), vals, (n, n)).coalesce()
+/kaggle/working/code/bpp/kg.py:113: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  return a.to_sparse_csr()
+graph: 129,375 nodes, 4,007,433 context edges, 60 relations (incl. inverse) [1.4s]
+parameters: 68,226
+  ep0 step 1/134 loss 8.7657 9.01s/step peak_mem 5.75GB
+  ep0 step 25/134 loss 8.2588 8.52s/step peak_mem 5.76GB
+  ep0 step 50/134 loss 7.5942 8.52s/step peak_mem 5.76GB
+  ep0 step 75/134 loss 6.3434 8.52s/step peak_mem 5.76GB
+  ep0 step 100/134 loss 6.5684 8.52s/step peak_mem 5.76GB
+  ep0 step 125/134 loss 7.8796 8.52s/step peak_mem 5.76GB
+  ep0 step 134/134 loss 3.7873 8.49s/step peak_mem 5.76GB
+epoch 0: loss 7.1546  valid MRR 0.1783  H@50 0.391  [0.32 h]
+  ep1 step 1/134 loss 5.9375 8.50s/step peak_mem 5.76GB
+  ep1 step 25/134 loss 6.9423 8.50s/step peak_mem 5.76GB
+  ep1 step 50/134 loss 4.2688 8.49s/step peak_mem 5.76GB
+  ep1 step 75/134 loss 5.0979 8.49s/step peak_mem 5.76GB
+  ep1 step 100/134 loss 6.3365 8.50s/step peak_mem 5.76GB
+  ep1 step 125/134 loss 7.0610 8.50s/step peak_mem 5.76GB
+  ep1 step 134/134 loss 1.9298 8.47s/step peak_mem 5.76GB
+epoch 1: loss 6.0376  valid MRR 0.2405  H@50 0.485  [0.65 h]
+  ep2 step 1/134 loss 4.6120 8.50s/step peak_mem 5.76GB
+  ep2 step 25/134 loss 6.1187 8.50s/step peak_mem 5.76GB
+  ep2 step 50/134 loss 6.5246 8.50s/step peak_mem 5.76GB
+  ep2 step 75/134 loss 5.8955 8.50s/step peak_mem 5.76GB
+  ep2 step 100/134 loss 6.6722 8.49s/step peak_mem 5.76GB
+  ep2 step 125/134 loss 6.7428 8.49s/step peak_mem 5.76GB
+  ep2 step 134/134 loss 5.9645 8.46s/step peak_mem 5.76GB
+epoch 2: loss 5.6869  valid MRR 0.3097  H@50 0.555  [0.97 h]
+  ep3 step 1/134 loss 6.0036 8.51s/step peak_mem 5.76GB
+  ep3 step 25/134 loss 2.0458 8.49s/step peak_mem 5.76GB
+  ep3 step 50/134 loss 5.0700 8.49s/step peak_mem 5.76GB
+  ep3 step 75/134 loss 5.4275 8.50s/step peak_mem 5.76GB
+  ep3 step 100/134 loss 5.5357 8.49s/step peak_mem 5.76GB
+  ep3 step 125/134 loss 5.2036 8.49s/step peak_mem 5.76GB
+  ep3 step 134/134 loss 10.8378 8.46s/step peak_mem 5.76GB
+epoch 3: loss 5.3858  valid MRR 0.3015  H@50 0.570  [1.29 h]
+  ep4 step 1/134 loss 3.6890 8.51s/step peak_mem 5.76GB
+  ep4 step 25/134 loss 5.0309 8.49s/step peak_mem 5.76GB
+  ep4 step 50/134 loss 4.5872 8.49s/step peak_mem 5.76GB
+  ep4 step 75/134 loss 5.3600 8.49s/step peak_mem 5.76GB
+  ep4 step 100/134 loss 3.8554 8.49s/step peak_mem 5.76GB
+  ep4 step 125/134 loss 3.8812 8.49s/step peak_mem 5.76GB
+  ep4 step 134/134 loss 5.8827 8.46s/step peak_mem 5.76GB
+epoch 4: loss 5.2385  valid MRR 0.3106  H@50 0.568  [1.61 h]
+  ep5 step 1/134 loss 3.8341 8.50s/step peak_mem 5.76GB
+  ep5 step 25/134 loss 4.3815 8.50s/step peak_mem 5.76GB
+  ep5 step 50/134 loss 5.0947 8.49s/step peak_mem 5.76GB
+  ep5 step 75/134 loss 5.1549 8.48s/step peak_mem 5.76GB
+  ep5 step 100/134 loss 6.3047 8.49s/step peak_mem 5.76GB
+  ep5 step 125/134 loss 8.1538 8.49s/step peak_mem 5.76GB
+  ep5 step 134/134 loss 1.8322 8.46s/step peak_mem 5.76GB
+epoch 5: loss 5.1141  valid MRR 0.3165  H@50 0.561  [1.94 h]
+  ep6 step 1/134 loss 5.4038 8.41s/step peak_mem 5.76GB
+  ep6 step 25/134 loss 4.6760 8.49s/step peak_mem 5.76GB
+  ep6 step 50/134 loss 5.5612 8.49s/step peak_mem 5.76GB
+  ep6 step 75/134 loss 4.8556 8.49s/step peak_mem 5.76GB
+  ep6 step 100/134 loss 5.7469 8.49s/step peak_mem 5.76GB
+  ep6 step 125/134 loss 6.6590 8.49s/step peak_mem 5.76GB
+  ep6 step 134/134 loss 3.5534 8.46s/step peak_mem 5.76GB
+epoch 6: loss 5.0434  valid MRR 0.3416  H@50 0.584  [2.26 h]
+  ep7 step 1/134 loss 6.0337 8.49s/step peak_mem 5.76GB
+  ep7 step 25/134 loss 6.2771 8.48s/step peak_mem 5.76GB
+  ep7 step 50/134 loss 3.6094 8.48s/step peak_mem 5.76GB
+  ep7 step 75/134 loss 5.4083 8.48s/step peak_mem 5.76GB
+  ep7 step 100/134 loss 3.8002 8.48s/step peak_mem 5.76GB
+  ep7 step 125/134 loss 2.8525 8.48s/step peak_mem 5.76GB
+  ep7 step 134/134 loss 9.5482 8.45s/step peak_mem 5.76GB
+epoch 7: loss 4.9963  valid MRR 0.3502  H@50 0.589  [2.58 h]
+  ep8 step 1/134 loss 4.2770 8.49s/step peak_mem 5.76GB
+  ep8 step 25/134 loss 3.4647 8.48s/step peak_mem 5.76GB
+  ep8 step 50/134 loss 5.1730 8.48s/step peak_mem 5.76GB
+  ep8 step 75/134 loss 5.2326 8.48s/step peak_mem 5.76GB
+  ep8 step 100/134 loss 4.4522 8.48s/step peak_mem 5.76GB
+  ep8 step 125/134 loss 3.7479 8.48s/step peak_mem 5.76GB
+  ep8 step 134/134 loss 8.7966 8.45s/step peak_mem 5.76GB
+epoch 8: loss 4.8859  valid MRR 0.3416  H@50 0.580  [2.90 h]
+  ep9 step 1/134 loss 4.2458 8.51s/step peak_mem 5.76GB
+  ep9 step 25/134 loss 2.4229 8.48s/step peak_mem 5.76GB
+  ep9 step 50/134 loss 4.1307 8.48s/step peak_mem 5.76GB
+  ep9 step 75/134 loss 3.9187 8.48s/step peak_mem 5.76GB
+  ep9 step 100/134 loss 5.2260 8.48s/step peak_mem 5.76GB
+  ep9 step 125/134 loss 6.8056 8.48s/step peak_mem 5.76GB
+  ep9 step 134/134 loss 7.0666 8.45s/step peak_mem 5.76GB
+epoch 9: loss 4.8269  valid MRR 0.3425  H@50 0.571  [3.22 h]
+  ep10 step 1/134 loss 6.0986 8.49s/step peak_mem 5.76GB
+  ep10 step 25/134 loss 5.2720 8.48s/step peak_mem 5.76GB
+  ep10 step 50/134 loss 3.1170 8.48s/step peak_mem 5.76GB
+  ep10 step 75/134 loss 4.5688 8.48s/step peak_mem 5.76GB
+  ep10 step 100/134 loss 4.6964 8.48s/step peak_mem 5.76GB
+  ep10 step 125/134 loss 7.0036 8.48s/step peak_mem 5.76GB
+  ep10 step 134/134 loss 1.2372 8.45s/step peak_mem 5.76GB
+epoch 10: loss 4.7362  valid MRR 0.3410  H@50 0.599  [3.55 h]
+  ep11 step 1/134 loss 4.1558 8.50s/step peak_mem 5.76GB
+  ep11 step 25/134 loss 5.3742 8.47s/step peak_mem 5.76GB
+  ep11 step 50/134 loss 5.0007 8.48s/step peak_mem 5.76GB
+  ep11 step 75/134 loss 7.1176 8.48s/step peak_mem 5.76GB
+  ep11 step 100/134 loss 5.1528 8.48s/step peak_mem 5.76GB
+  ep11 step 125/134 loss 5.6332 8.48s/step peak_mem 5.76GB
+  ep11 step 134/134 loss 4.2539 8.45s/step peak_mem 5.76GB
+epoch 11: loss 4.7108  valid MRR 0.3315  H@50 0.606  [3.87 h]
+  ep12 step 1/134 loss 4.0945 8.49s/step peak_mem 5.76GB
+  ep12 step 25/134 loss 4.6815 8.48s/step peak_mem 5.76GB
+  ep12 step 50/134 loss 4.4521 8.48s/step peak_mem 5.76GB
+  ep12 step 75/134 loss 6.2562 8.48s/step peak_mem 5.76GB
+  ep12 step 100/134 loss 4.7275 8.48s/step peak_mem 5.76GB
+  ep12 step 125/134 loss 5.1316 8.48s/step peak_mem 5.76GB
+  ep12 step 134/134 loss 9.4300 8.45s/step peak_mem 5.76GB
+epoch 12: loss 4.7102  valid MRR 0.3529  H@50 0.597  [4.19 h]
+time budget reached; rerun the same command to resume

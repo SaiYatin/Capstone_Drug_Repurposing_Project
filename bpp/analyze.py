@@ -234,6 +234,7 @@ def analyse(root: Path, data: Path) -> dict:
     out["sparsity"] = sparsity(per, data)
     out["case_studies"] = case_studies(runs)
     out["transfer"] = transfer_curve(per, data, out["tests"])
+    out["transfer"]["last_checkpoint"] = transfer_last_checkpoint(root, out.get("transfer", {}), out["tests"])
     out["test_split"] = test_split(per, out["tests"])
     return out
 
@@ -290,6 +291,27 @@ def transfer_curve(per: dict, data: Path, tests: dict) -> dict:
         if (a, sname, kind) in paired and (b, sname, kind) in paired:
             tests[f"tr_{a}_vs_{b}_{sname}_{kind}"] = compare(paired[(a, sname, kind)], paired[(b, sname, kind)])
     return res
+
+
+def transfer_last_checkpoint(root: Path, transfer: dict, tests: dict) -> dict:
+    """Sensitivity check: A vs A' with each run's FINAL checkpoint (bpp/evaluate_checkpoint.py), because
+    these runs early-stop on general validation diseases that do not resemble their training data."""
+    files = {p.stem: p for p in root.glob("kaggle_session*/last_ckpt_eval/*.json")}
+    a = [files[f"tr_A_s{i}"] for i in range(3) if f"tr_A_s{i}" in files]
+    c = [files[f"tr_Actl{j}_s0"] for j in range(3) if f"tr_Actl{j}_s0" in files]
+    E = set(transfer.get("eval_diseases", []))
+    if not (a and c and E):
+        return {}
+    def load(paths, s):
+        return _avg([json.loads(p.read_text())[s]["per_disease"] for p in paths])
+    out = {}
+    for s, sname in (("area", "E"), ("targets", "targets")):
+        pa, pc = load(a, s), load(c, s)
+        if s == "area":
+            pa, pc = _restrict(pa, E), _restrict(pc, E)
+        out[sname] = {"A": macro(pa, "mrr"), "Actl": macro(pc, "mrr")}
+        tests[f"tr_A_vs_Actl_{sname}_last"] = compare(pa, pc)
+    return out
 
 
 def test_split(per: dict, tests: dict) -> dict:
@@ -529,6 +551,7 @@ def macros(S) -> str:
              "tr_A_vs_Actl_E_model": "TrAActlE", "tr_A_vs_Actl_E_knn": "TrAActlEKnn",
              "tr_A_vs_Actl_targets_model": "TrAActlTargets", "tr_CE_vs_D_E_model": "TrCEDE",
              "tr_CE_vs_A_E_model": "TrCEAE", "tr_D_vs_A_E_model": "TrDAE", "test_main_vs_knn_test": "TestKnn",
+             "tr_A_vs_Actl_E_last": "TrAActlELast", "tr_A_vs_Actl_targets_last": "TrAActlTargetsLast",
              "noauto_main_vs_paths_area": "NoautoPathsArea", "s0_main_vs_bce_valid": "SzeroMainBceValid",
              "s0_main_vs_brg_valid": "SzeroMainBrgValid", "s0_noauto_main_vs_paths_area": "SzeroNoautoPathsArea"}
     for k, t in names.items():
@@ -553,7 +576,12 @@ def macros(S) -> str:
         for f, ft in (("model_E", "E"), ("knn_E", "EKnn"), ("model_targets", "Targets"), ("knn_targets", "TargetsKnn")):
             if c.get(f):
                 nc(f"{tags[key]}{ft}Mrr", f"{c[f]['mean']:.3f}")
+    for sname, st in (("E", "E"), ("targets", "Targets")):
+        lc = S.get("transfer", {}).get("last_checkpoint", {}).get(sname)
+        if lc:
+            nc(f"TrA{st}LastMrr", f"{lc['A']['mean']:.3f}"); nc(f"TrActl{st}LastMrr", f"{lc['Actl']['mean']:.3f}")
     T = S.get("test_split", {})
+    nc("TestSeeds", str(len(S["models"]["test_main"]["seeds"])) if "test_main" in S["models"] else "0")
     for k, kt in (("model", "Test"), ("disease_knn", "KnnTest"), ("popularity", "PopTest")):
         if T.get(k):
             nc(f"{kt}Mrr", f"{T[k]['mrr']['mean']:.3f}")

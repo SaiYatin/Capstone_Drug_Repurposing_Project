@@ -1,0 +1,12 @@
+/kaggle/working/code/bpp/kg.py:112: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  a = torch.sparse_coo_tensor(torch.stack([rows, cols]), vals, (n, n)).coalesce()
+/kaggle/working/code/bpp/kg.py:113: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  return a.to_sparse_csr()
+graph: 129,375 nodes, 4,007,433 context edges, 60 relations (incl. inverse) [1.4s]
+parameters: 68,226
+  ep0 step 1/3 loss 8.6251 9.63s/step peak_mem 5.75GB
+  ep0 step 3/3 loss 8.3815 8.81s/step peak_mem 5.76GB
+epoch 0: loss 8.6180  valid MRR 0.0279  H@50 0.156  [0.01 h]
+[valid] MRR 0.0279 [0.010142693889706794, 0.051560150772598894]  H@10 0.045  H@50 0.156  AUROC 0.849  AUROC-hard 0.436
+[targets] MRR 0.0487 [0.003439435687590363, 0.09475083061754513]  H@10 0.148  H@50 0.155  AUROC 0.852  AUROC-hard 0.394
+saved /kaggle/working/runs/_smoke/results.json
