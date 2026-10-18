@@ -1,0 +1,26 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02318160",
+    "briefTitle": "Oxidative Status in Children With Autoimmune Thyroiditis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "measurement of oxidant status in AIT"
+     }
+    ]
+   }
+  }
+ }
+]

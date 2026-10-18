@@ -1,0 +1,21 @@
+{
+ "term": "\"Levofloxacin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 13,
+ "top": [
+  {
+   "pmid": "38186434",
+   "title": "Disseminated Miliary and Intestinal Tuberculosis Mimicking Inflammatory Bowel Disease.",
+   "year": "2023"
+  },
+  {
+   "pmid": "37125071",
+   "title": "Endoscopic and video capsule endoscopic observation of Yersinia enterocolitis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "42244158",
+   "title": "Rare Complications in Crohn's Disease: Diagnostic and Therapeutic Challenge of Dermal Abscesses Caused by Nontuberculous Mycobacteria Following Infliximab Therapy, and Fluoroquinolone-Related Achilles Tendon Rupture.",
+   "year": "2026"
+  }
+ ]
+}

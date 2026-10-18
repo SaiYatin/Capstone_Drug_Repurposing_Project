@@ -1,0 +1,11 @@
+{
+ "term": "\"Fusidic acid\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "10528789",
+   "title": "Fusidic acid non-antibacterial activity.",
+   "year": "1999"
+  }
+ ]
+}

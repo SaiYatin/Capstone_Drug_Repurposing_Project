@@ -1,0 +1,11 @@
+{
+ "term": "\"Amikacin\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "30212050",
+   "title": "[A Case of Brain Abscess Caused by Nocardia farcinica in which the Test Results for Drug Susceptibility Conflicted with the Actual Clinical Course].",
+   "year": "2016"
+  }
+ ]
+}

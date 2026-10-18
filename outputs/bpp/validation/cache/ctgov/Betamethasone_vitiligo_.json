@@ -1,0 +1,212 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04440371",
+    "briefTitle": "Phototherapy Combination With Topicals in Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-06-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tacrolimus",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Combination Product: Tacrolimus 0.1% ointment twice daily plus NBUVB 3 times weekly",
+       "Combination Product: Calcipotriol/Betamethasone ointment plus NBUVB"
+      ]
+     },
+     {
+      "label": "calcipotriol / betamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Combination Product: Tacrolimus 0.1% ointment twice daily plus NBUVB 3 times weekly",
+       "Combination Product: Calcipotriol/Betamethasone ointment plus NBUVB"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tacrolimus 0.1% ointment twice daily plus NBUVB 3 times weekly"
+     },
+     {
+      "name": "Calcipotriol/Betamethasone ointment plus NBUVB"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07398807",
+    "briefTitle": "Effectiveness of Micro-needling With 5 Fluorouracil Versus Potent Topical Steroids in the Treatment of Limited Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-08-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Microneedling with topical 5-fluorouracil",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Microneedling with 5-fluorouracil"
+      ]
+     },
+     {
+      "label": "Clobetasol propionate 0.05%",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical application of 0.05% Clobetasol propionate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Microneedling with 5-fluorouracil"
+     },
+     {
+      "name": "Topical application of 0.05% Clobetasol propionate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05233735",
+    "briefTitle": "Enhanced Transcutaneous Delivery of Betamethasone for the Treatment of Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "topical treatment",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Topical treatment"
+      ]
+     },
+     {
+      "label": "Enhanced Transcutaneous Delivery",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Enhanced Transcutaneous Delivery of Topical Betamethasone after the treatment with Tixel"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Enhanced Transcutaneous Delivery of Topical Betamethasone after the treatment with Tixel"
+     },
+     {
+      "name": "Topical treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07673640",
+    "briefTitle": "Ruxolitinib Cream Combined With Corticosteroids for Progressive Non-Segmental Vitiligo: A Multicenter Real-World Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-07-02"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "1.5% Ruxolitinib Phosphate Cream (Opzelura)"
+     },
+     {
+      "name": "Corticosteroid Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07267273",
+    "briefTitle": "Betamethasone Phonophoresis For Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-11-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Beclomethasone"
+      ]
+     },
+     {
+      "label": "Control Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Beclomethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Beclomethasone"
+     }
+    ]
+   }
+  }
+ }
+]

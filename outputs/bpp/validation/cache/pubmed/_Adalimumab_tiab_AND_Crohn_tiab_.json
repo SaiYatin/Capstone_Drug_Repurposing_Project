@@ -1,0 +1,21 @@
+{
+ "term": "\"Adalimumab\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 2296,
+ "top": [
+  {
+   "pmid": "17241859",
+   "title": "Adalimumab for maintenance of clinical response and remission in patients with Crohn's disease: the CHARM trial.",
+   "year": "2007"
+  },
+  {
+   "pmid": "41258994",
+   "title": "Serum protein profiles differ with adalimumab and ustekinumab treatment in moderately to severely active Crohn's disease.",
+   "year": "2025"
+  },
+  {
+   "pmid": "27389085",
+   "title": "Adalimumab and Azathioprine Combination Therapy for Crohn's Disease: A Shining Diamond?",
+   "year": "2016"
+  }
+ ]
+}

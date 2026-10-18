@@ -1,0 +1,21 @@
+{
+ "term": "\"Pyridostigmine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 825,
+ "top": [
+  {
+   "pmid": "26376969",
+   "title": "Myasthenia gravis: subgroup classification and therapeutic strategies.",
+   "year": "2015"
+  },
+  {
+   "pmid": "38494283",
+   "title": "Myasthenia gravis-Pathophysiology, diagnosis, and treatment.",
+   "year": "2024"
+  },
+  {
+   "pmid": "35157811",
+   "title": "Ocular myasthenia gravis: a review and practical guide for clinicians.",
+   "year": "2022"
+  }
+ ]
+}

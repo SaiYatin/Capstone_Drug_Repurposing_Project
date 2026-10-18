@@ -1,0 +1,145 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07471997",
+    "briefTitle": "Triamcinolone Acetonide Injection for Upper Eyelid Retraction in Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-06-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Triamcinolone Injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Triamcinolone Acetonide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Triamcinolone Acetonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01599273",
+    "briefTitle": "Treatment of Upper Eyelid Retraction Related to Thyroid-associated Ophthalmopathy Using Subconjunctival Triamcinolone Injections"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Triam inj",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: subconjunctival triamcinolone injection"
+      ]
+     },
+     {
+      "label": "observation group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "subconjunctival triamcinolone injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04976816",
+    "briefTitle": "Local Betamethasone Versus Triamcinolone Injection in Management of Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A1 peri-levator betamethasone injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: peri-levator betamethasone injection"
+      ]
+     },
+     {
+      "label": "A2 Peri-levator triamcinolone acetate injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: peri-levator triamcinolone injection"
+      ]
+     },
+     {
+      "label": "B1 Peri-levator and retrobulbar betamethasone injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: peri-levator and retrobulbar betamethasone injection"
+      ]
+     },
+     {
+      "label": "B2 Peri-levator and retrobulbar triamcinolone acetate injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: peri-levator and retrobulbar triamcinolone injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "peri-levator betamethasone injection"
+     },
+     {
+      "name": "peri-levator triamcinolone injection"
+     },
+     {
+      "name": "peri-levator and retrobulbar betamethasone injection"
+     },
+     {
+      "name": "peri-levator and retrobulbar triamcinolone injection"
+     }
+    ]
+   }
+  }
+ }
+]

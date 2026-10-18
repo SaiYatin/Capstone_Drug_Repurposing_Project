@@ -1,0 +1,21 @@
+{
+ "term": "\"Tetracycline\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "34712442",
+   "title": "Malakoplakia as a Rare Cause of Diarrhea: Case Presentation and Review of Literature.",
+   "year": "2021"
+  },
+  {
+   "pmid": "20505195",
+   "title": "Adeno-associated virus-mediated IL-10 gene transfer suppresses lacrimal gland immunopathology in a rabbit model of autoimmune dacryoadenitis.",
+   "year": "2010"
+  },
+  {
+   "pmid": "3062531",
+   "title": "Lymphogranuloma venereum conjunctivitis with a marginal corneal perforation.",
+   "year": "1988"
+  }
+ ]
+}

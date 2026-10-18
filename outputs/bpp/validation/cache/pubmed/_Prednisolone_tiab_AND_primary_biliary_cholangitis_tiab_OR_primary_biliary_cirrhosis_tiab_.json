@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 131,
+ "top": [
+  {
+   "pmid": "25749982",
+   "title": "Autoimmune hepatitis.",
+   "year": "2015"
+  },
+  {
+   "pmid": "11595467",
+   "title": "Treatment of primary biliary cirrhosis.",
+   "year": "2001"
+  },
+  {
+   "pmid": "30874827",
+   "title": "[Immune-mediated cholangiopathies : Diagnostic and therapeutic challenges].",
+   "year": "2019"
+  }
+ ]
+}

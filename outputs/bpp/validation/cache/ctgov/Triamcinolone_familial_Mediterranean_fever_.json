@@ -1,0 +1,48 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03771768",
+    "briefTitle": "Diode Laser Versus Topical Corticosteroids in Management of Oral Ulcers in Behcet's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-05-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Triamcinolone acetonide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Triamcinolone Acetonide"
+      ]
+     },
+     {
+      "label": "Diode laser",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Radiation: Diode laser 980nm&100 mWatt"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Diode laser 980nm&100 mWatt"
+     },
+     {
+      "name": "Triamcinolone Acetonide"
+     }
+    ]
+   }
+  }
+ }
+]

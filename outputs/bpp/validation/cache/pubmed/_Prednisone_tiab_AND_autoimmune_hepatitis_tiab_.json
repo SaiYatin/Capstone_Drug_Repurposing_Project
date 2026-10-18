@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 303,
+ "top": [
+  {
+   "pmid": "29644994",
+   "title": "Autoimmune hepatitis.",
+   "year": "2018"
+  },
+  {
+   "pmid": "25749982",
+   "title": "Autoimmune hepatitis.",
+   "year": "2015"
+  },
+  {
+   "pmid": "38527524",
+   "title": "Treatment response and clinical event-free survival in autoimmune hepatitis: A Canadian multicentre cohort study.",
+   "year": "2024"
+  }
+ ]
+}

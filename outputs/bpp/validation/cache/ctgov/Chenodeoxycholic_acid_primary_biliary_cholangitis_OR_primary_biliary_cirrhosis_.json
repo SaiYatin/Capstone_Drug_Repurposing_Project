@@ -1,0 +1,226 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01865812",
+    "briefTitle": "Phase 2 Study on Effects of Obeticholic Acid (OCA) on Lipoprotein Metabolism in Participants With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-12-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA: 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01473524",
+    "briefTitle": "Phase 3 Study of Obeticholic Acid in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "DB OCA 5-10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB OCA 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "LTSE OCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid (OCA)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00570765",
+    "briefTitle": "Study of INT-747 as Monotherapy in Participants With Primary Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "DB OCA 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB OCA 50 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB OCA Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "LTSE OCA Total",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Obeticholic Acid (OCA)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00550862",
+    "briefTitle": "Study of INT 747 in Combination With URSO in Patients With Primay Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2007-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "INT-747 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "INT-747 25 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "INT-747 50 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "INT-747"
+     },
+     {
+      "name": "Ursodeoxycholic Acid (URSO)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

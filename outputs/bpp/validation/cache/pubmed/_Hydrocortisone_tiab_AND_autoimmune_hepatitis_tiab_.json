@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 5,
+ "top": [
+  {
+   "pmid": "22312376",
+   "title": "Hepatitis and the polyglandular autoimmune syndrome, type 1.",
+   "year": "2011"
+  },
+  {
+   "pmid": "12003388",
+   "title": "A patient with autoimmune hepatitis type I, Addison's disease, atrophic thyroiditis, atrophic gastritis, exocrine pancreatic insufficiency, and heterozygous alpha1-antitrypsin deficiency.",
+   "year": "2002"
+  },
+  {
+   "pmid": "31281763",
+   "title": "Autoimmune Hepatitis Refractory to Treatment Due to Underlying Grave's Disease.",
+   "year": "2019"
+  }
+ ]
+}

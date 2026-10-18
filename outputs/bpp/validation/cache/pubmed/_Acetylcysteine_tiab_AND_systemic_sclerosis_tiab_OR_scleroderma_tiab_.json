@@ -1,0 +1,21 @@
+{
+ "term": "\"Acetylcysteine\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 33,
+ "top": [
+  {
+   "pmid": "33031308",
+   "title": "Scleroderma-associated thrombotic microangiopathy in overlap syndrome of systemic sclerosis and systemic lupus erythematosus: A case report and literature review.",
+   "year": "2020"
+  },
+  {
+   "pmid": "23554239",
+   "title": "Meta-analysis of healing and prevention of digital ulcers in systemic sclerosis.",
+   "year": "2013"
+  },
+  {
+   "pmid": "31320973",
+   "title": "The Potential Uses of N-acetylcysteine in Dermatology: A Review.",
+   "year": "2019"
+  }
+ ]
+}

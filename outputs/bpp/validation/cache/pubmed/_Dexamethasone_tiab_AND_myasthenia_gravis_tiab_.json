@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 48,
+ "top": [
+  {
+   "pmid": "37498332",
+   "title": "Dexamethasone improves thymoma-associated myasthenia gravis via the AKT-mTOR pathway.",
+   "year": "2024"
+  },
+  {
+   "pmid": "36571580",
+   "title": "Central Role of Macrophages and Nucleic Acid Release in Myasthenia Gravis Thymus.",
+   "year": "2023"
+  },
+  {
+   "pmid": "41815330",
+   "title": "Concurrent Nivolumab-Induced Myocarditis and Myasthenia Gravis: A Case Report.",
+   "year": "2026"
+  }
+ ]
+}

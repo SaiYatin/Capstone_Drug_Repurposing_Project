@@ -1,0 +1,11 @@
+{
+ "term": "\"Cortisone acetate\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "9916871",
+   "title": "Antiphospholipid syndrome, adrenal failure, dilated cardiomyopathy and chronic hepatitis: an unusual manifestation of multiorgan autoimmune injury?",
+   "year": "1998"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "term": "\"Doxycycline\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "1918882",
+   "title": "Formation of iso-ursodeoxycholic acid during administration of ursodeoxycholic acid in man.",
+   "year": "1991"
+  },
+  {
+   "pmid": "21043007",
+   "title": "Giant cell hepatitis: an unusual cause of fulminant liver failure.",
+   "year": "2010"
+  }
+ ]
+}

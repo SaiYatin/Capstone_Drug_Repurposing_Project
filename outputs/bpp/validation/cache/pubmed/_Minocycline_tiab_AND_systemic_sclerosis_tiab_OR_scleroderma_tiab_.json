@@ -1,0 +1,21 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 18,
+ "top": [
+  {
+   "pmid": "11790173",
+   "title": "Treatment of scleroderma.",
+   "year": "2002"
+  },
+  {
+   "pmid": "35993867",
+   "title": "Calcinosis in systemic sclerosis.",
+   "year": "2022"
+  },
+  {
+   "pmid": "37830924",
+   "title": "Calcinosis in systemic sclerosis.",
+   "year": "2024"
+  }
+ ]
+}

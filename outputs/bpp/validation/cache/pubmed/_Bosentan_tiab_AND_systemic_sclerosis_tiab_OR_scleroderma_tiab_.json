@@ -1,0 +1,21 @@
+{
+ "term": "\"Bosentan\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 300,
+ "top": [
+  {
+   "pmid": "36849541",
+   "title": "State-of-the-art evidence in the treatment of systemic sclerosis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "41443227",
+   "title": "Systemic Sclerosis-Recent Advances in Diagnosis and Management.",
+   "year": "2025"
+  },
+  {
+   "pmid": "39040029",
+   "title": "Raynaud's Phenomenon: A Current Update on Pathogenesis, Diagnostic Workup, and Treatment.",
+   "year": "2024"
+  }
+ ]
+}

@@ -1,0 +1,632 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02324699",
+    "briefTitle": "Corticosteroids With Vedolizumab in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2016-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone co-inductive therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone",
+       "Drug: Vedolizumab"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: Vedolizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Vedolizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02056418",
+    "briefTitle": "Effects of Enteral Nutrition and Corticosteroid on Intestinal Flora in Induction Remission of Crohn Disease in Adult"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "enteral nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: enteral nutrition"
+      ]
+     },
+     {
+      "label": "Corticosteroid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: corticosteroid"
+      ]
+     },
+     {
+      "label": "Healthy control",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "enteral nutrition"
+     },
+     {
+      "name": "corticosteroid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00109473",
+    "briefTitle": "Trial of Growth Hormone Therapy in Pediatric Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Growth Hormone plus cortecosteroid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: growth hormone"
+      ]
+     },
+     {
+      "label": "Cortecosteroids alone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: cortecosteroid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "growth hormone"
+     },
+     {
+      "name": "cortecosteroid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05542355",
+    "briefTitle": "EXL01 in the Maintenance of Steroid-induced Clinical Response/Remission in Participants With Mild to Moderate Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2023-03-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A (Open-Label EXL01 Maintenance Therapy)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EXL01",
+       "Other: SoC corticosteroid - Induction Period",
+       "Other: SoC corticosteroid - Tapering"
+      ]
+     },
+     {
+      "label": "Part B (EXL01 Maintenance Therapy)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EXL01",
+       "Other: SoC corticosteroid - Induction Period",
+       "Other: SoC corticosteroid - Tapering"
+      ]
+     },
+     {
+      "label": "Part B (Placebo Maintenance Therapy)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Other: SoC corticosteroid - Induction Period",
+       "Other: SoC corticosteroid - Tapering"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EXL01"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "SoC corticosteroid - Induction Period"
+     },
+     {
+      "name": "SoC corticosteroid - Tapering"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00098111",
+    "briefTitle": "Imuran (Azathioprine) Dose-Ranging Study in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2005-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine 0.5 mg/kg body weight",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: azathioprine"
+      ]
+     },
+     {
+      "label": "Azathioprine 2.5 mg/kg body weight",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: azathioprine"
+      ]
+     },
+     {
+      "label": "Azathioprine 3.5 mg/kg body weight",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02392286",
+    "briefTitle": "Corticosteroid Dosage for Crohn's Disease Flare"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Weight-based",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Corticosteroid"
+      ]
+     },
+     {
+      "label": "Fixed dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Corticosteroid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Corticosteroid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03833596",
+    "briefTitle": "Exclusive Enteral Nutrition and Corticosteroids Therapy in Crohn's Disease (EENCD)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-10-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard course CS with Regular Food",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Standard course CS with EEN",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone",
+       "Dietary Supplement: Exclusive Enteral Nutrition"
+      ]
+     },
+     {
+      "label": "Short course CS with EEN",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone",
+       "Dietary Supplement: Exclusive Enteral Nutrition"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Exclusive Enteral Nutrition"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03553472",
+    "briefTitle": "Identifying Young Inflammatory Bowel Disease Patients at Risk for Herpes Zoster"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-immunosuppressed IBD patients"
+     },
+     {
+      "label": "Thiopurine group"
+     },
+     {
+      "label": "Anti-TNF therapy"
+     },
+     {
+      "label": "Combination therapy"
+     },
+     {
+      "label": "Healthy Control"
+     },
+     {
+      "label": "Vedolizumab therarpy"
+     },
+     {
+      "label": "Prednisone and Anti-TNF therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06986382",
+    "briefTitle": "Phase 1b/2a Trial of Allogeneic HSCT From an HLA-partially Matched Related or Unrelated Donor After TCRab+ T-cell/CD19+ B-cell Depletion for Patients With Monogenic and/or Early-onset Medically Refractory Crohn Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1b: Safety Lead-In",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Device: CliniMACS\u00ae TCR \u03b1/\u03b2 Reagent Kit and CliniMACS\u00ae CD19 System",
+       "Drug: Prednisone/Methylprenisolone",
+       "Drug: Palifermin",
+       "Drug: ATG",
+       "Drug: Clofarabine",
+       "Drug: Melphalan",
+       "Radiation: Total Body Irradiation",
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "Cohort 2a",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Device: CliniMACS\u00ae TCR \u03b1/\u03b2 Reagent Kit and CliniMACS\u00ae CD19 System",
+       "Drug: Prednisone/Methylprenisolone",
+       "Drug: Palifermin",
+       "Drug: ATG",
+       "Drug: Clofarabine",
+       "Drug: Melphalan",
+       "Radiation: Total Body Irradiation",
+       "Drug: Rituximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "CliniMACS\u00ae TCR \u03b1/\u03b2 Reagent Kit and CliniMACS\u00ae CD19 System"
+     },
+     {
+      "name": "Prednisone/Methylprenisolone"
+     },
+     {
+      "name": "Palifermin"
+     },
+     {
+      "name": "ATG"
+     },
+     {
+      "name": "Clofarabine"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Total Body Irradiation"
+     },
+     {
+      "name": "Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01235689",
+    "briefTitle": "Efficacy and Safety of Two Treatment Algorithms in Adults With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-02-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tight Control Management",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Drug: Prednisone",
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Clinically Driven Management",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Drug: Prednisone",
+       "Drug: Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02619552",
+    "briefTitle": "Impact of Medical Treatment on Sexual Function in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-TNF (Remicade, Humira or Cimzia) for luminal CD",
+      "interventionNames": [
+       "Drug: Anti-TNF"
+      ]
+     },
+     {
+      "label": "Anti-TNF (Remicade, Humira or Cimzia)for perianal CD",
+      "interventionNames": [
+       "Drug: Anti-TNF"
+      ]
+     },
+     {
+      "label": "Steroid (Prednisone or budesonide) for luminal CD",
+      "interventionNames": [
+       "Drug: Steroids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-TNF"
+     },
+     {
+      "name": "Anti-TNF"
+     },
+     {
+      "name": "Steroids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06637683",
+    "briefTitle": "Efficacy of LiveSpo COLON as a Supportive Treatment for Inflammatory Bowel Disease (IBD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-11-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Control group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Routine treatment"
+      ]
+     },
+     {
+      "label": "Test group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: LiveSpo COLON"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "LiveSpo COLON"
+     },
+     {
+      "name": "Routine treatment"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Kanamycin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "39931171",
+   "title": "Prominence of Microbiota to Predict Fibrous Stenosis in Crohn's Disease.",
+   "year": "2025"
+  },
+  {
+   "pmid": "9889208",
+   "title": "Development of a firefly luciferase-based assay for determining antimicrobial susceptibility of Mycobacterium avium subsp. paratuberculosis.",
+   "year": "1999"
+  },
+  {
+   "pmid": "6524906",
+   "title": "In vitro antimicrobial susceptibility of a Mycobacterium sp. isolated from patients with Crohn's disease.",
+   "year": "1984"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "26943397",
+   "title": "Successful living-donor liver transplantation after treatment of sinus aspergillosis by endoscopic mycetoma removal and sinus drainage.",
+   "year": "2015"
+  },
+  {
+   "pmid": "10978951",
+   "title": "Graft-versus-host disease after liver transplantation complicated by systemic aspergillosis with pancarditis.",
+   "year": "2000"
+  }
+ ]
+}

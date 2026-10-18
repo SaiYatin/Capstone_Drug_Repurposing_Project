@@ -1,0 +1,11 @@
+{
+ "term": "\"Veliparib\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "32943176",
+   "title": "Development and validation of an HPLC-MS/MS method for the determination of filgotinib, a selective Janus kinase 1 inhibitor: Application to a metabolic stability study.",
+   "year": "2020"
+  }
+ ]
+}

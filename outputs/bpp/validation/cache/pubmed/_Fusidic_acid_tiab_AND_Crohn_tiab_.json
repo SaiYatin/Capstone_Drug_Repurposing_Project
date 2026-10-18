@@ -1,0 +1,21 @@
+{
+ "term": "\"Fusidic acid\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "10528789",
+   "title": "Fusidic acid non-antibacterial activity.",
+   "year": "1999"
+  },
+  {
+   "pmid": "1420741",
+   "title": "Treatment of Crohn's disease with fusidic acid: an antibiotic with immunosuppressive properties similar to cyclosporin.",
+   "year": "1992"
+  },
+  {
+   "pmid": "14697740",
+   "title": "Curative effects of sodium fusidate on the development of dinitrobenzenesulfonic acid-induced colitis in rats.",
+   "year": "2003"
+  }
+ ]
+}

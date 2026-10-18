@@ -1,0 +1,21 @@
+{
+ "term": "\"Formic acid\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "36005588",
+   "title": "A Selective and Sensitive LC-MS/MS Method for Quantitation of Indole in Mouse Serum and Tissues.",
+   "year": "2022"
+  },
+  {
+   "pmid": "29529709",
+   "title": "A validated LC-MS/MS method for the simultaneous determination of thalidomide and its two metabolites in human plasma: Application to a pharmacokinetic assay.",
+   "year": "2018"
+  },
+  {
+   "pmid": "32348953",
+   "title": "Simultaneous determination of twelve biogenic amines in human urine as potential biomarkers of inflammatory bowel diseases by capillary electrophoresis - tandem mass spectrometry.",
+   "year": "2020"
+  }
+ ]
+}

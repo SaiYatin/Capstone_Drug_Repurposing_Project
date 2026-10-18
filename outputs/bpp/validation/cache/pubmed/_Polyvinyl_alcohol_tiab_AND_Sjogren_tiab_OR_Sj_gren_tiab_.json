@@ -1,0 +1,16 @@
+{
+ "term": "\"Polyvinyl alcohol\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "25114502",
+   "title": "Artificial tears potpourri: a literature review.",
+   "year": "2014"
+  },
+  {
+   "pmid": "1723363",
+   "title": "Therapeutic dilemmas in external ocular diseases.",
+   "year": "1991"
+  }
+ ]
+}

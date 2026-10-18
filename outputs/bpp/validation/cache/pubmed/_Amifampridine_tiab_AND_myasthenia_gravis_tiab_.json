@@ -1,0 +1,21 @@
+{
+ "term": "\"Amifampridine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 13,
+ "top": [
+  {
+   "pmid": "41945880",
+   "title": "Efficacy and Safety of Amifampridine in Myasthenia Gravis: A Randomized, Double-Blind, Placebo-Controlled Crossover Trial.",
+   "year": "2026"
+  },
+  {
+   "pmid": "31385879",
+   "title": "Diagnosis and treatment of myasthenia gravis.",
+   "year": "2019"
+  },
+  {
+   "pmid": "30574306",
+   "title": "Amifampridine phosphate in the treatment of muscle-specific kinase myasthenia gravis: a phase IIb, randomized, double-blind, placebo-controlled, double crossover study.",
+   "year": "2018"
+  }
+ ]
+}

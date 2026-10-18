@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxycycline\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 8,
+ "top": [
+  {
+   "pmid": "7864694",
+   "title": "Collagenase in Sj\u00f6gren's syndrome.",
+   "year": "1994"
+  },
+  {
+   "pmid": "41826593",
+   "title": "Immunomodulation of the Ocular Surface in Severe Dry Eye Disease: Expert-Driven Literature Review on Treatment Strategies with Description of Representative Challenging Cases.",
+   "year": "2026"
+  },
+  {
+   "pmid": "20505195",
+   "title": "Adeno-associated virus-mediated IL-10 gene transfer suppresses lacrimal gland immunopathology in a rabbit model of autoimmune dacryoadenitis.",
+   "year": "2010"
+  }
+ ]
+}

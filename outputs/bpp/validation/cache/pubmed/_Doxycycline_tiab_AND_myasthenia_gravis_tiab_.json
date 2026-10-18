@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxycycline\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "40418693",
+   "title": "Literature Commentary.",
+   "year": "2023"
+  },
+  {
+   "pmid": "32884545",
+   "title": "Ocular Myasthenia Gravis with Severe Blepharitis and Ocular Surface Disease: A Case Report.",
+   "year": "2020"
+  },
+  {
+   "pmid": "35706757",
+   "title": "A Case of COVID-19 With Myasthenic Crisis.",
+   "year": "2022"
+  }
+ ]
+}

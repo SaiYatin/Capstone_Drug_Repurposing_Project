@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 274,
+ "top": [
+  {
+   "pmid": "10097808",
+   "title": "Acquired haemophilia.",
+   "year": "1998"
+  },
+  {
+   "pmid": "18477219",
+   "title": "Glomeruloid hemangioma.",
+   "year": "2008"
+  },
+  {
+   "pmid": "11552335",
+   "title": "[Autoimmune cholangiopathy].",
+   "year": "2001"
+  }
+ ]
+}

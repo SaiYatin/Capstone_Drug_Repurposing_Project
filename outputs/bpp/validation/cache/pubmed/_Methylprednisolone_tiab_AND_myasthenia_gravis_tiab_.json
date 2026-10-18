@@ -1,0 +1,21 @@
+{
+ "term": "\"Methylprednisolone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 176,
+ "top": [
+  {
+   "pmid": "36693723",
+   "title": "Effectiveness of early cycles of fast-acting treatment in generalised myasthenia gravis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "32145521",
+   "title": "Initial deterioration and intravenous methylprednisolone therapy in patients with myasthenia gravis.",
+   "year": "2020"
+  },
+  {
+   "pmid": "38191134",
+   "title": "[Treatment and Management of Myasthenia Gravis in Adults].",
+   "year": "2024"
+  }
+ ]
+}

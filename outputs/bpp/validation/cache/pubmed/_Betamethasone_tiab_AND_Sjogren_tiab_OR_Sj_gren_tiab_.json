@@ -1,0 +1,21 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 8,
+ "top": [
+  {
+   "pmid": "36381208",
+   "title": "Sj\u00f6gren's syndrome and pregnancy: a Portuguese case-control study.",
+   "year": "2022"
+  },
+  {
+   "pmid": "33527325",
+   "title": "Sj\u00f6gren's Syndrome Associated with Chikungunya Infection: A Case Report.",
+   "year": "2021"
+  },
+  {
+   "pmid": "14550519",
+   "title": "[Neonatal lupus syndrome: review of the literature].",
+   "year": "2003"
+  }
+ ]
+}

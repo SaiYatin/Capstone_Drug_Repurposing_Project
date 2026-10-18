@@ -1,0 +1,11 @@
+{
+ "term": "\"Cannabidiol\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "29607695",
+   "title": "\"ALS reversals\": demographics, disease characteristics, treatments, and co-morbidities.",
+   "year": "2018"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 227,
+ "top": [
+  {
+   "pmid": "3280619",
+   "title": "Systemic scleroderma. Clinical and pathophysiologic aspects.",
+   "year": "1988"
+  },
+  {
+   "pmid": "41049217",
+   "title": "Coexistence of Localized and Systemic Juvenile Scleroderma: A Case Report and Review of Literature.",
+   "year": "2025"
+  },
+  {
+   "pmid": "11842824",
+   "title": "Cyclophosphamide with low or high dose prednisolone for systemic sclerosis lung disease.",
+   "year": "2002"
+  }
+ ]
+}

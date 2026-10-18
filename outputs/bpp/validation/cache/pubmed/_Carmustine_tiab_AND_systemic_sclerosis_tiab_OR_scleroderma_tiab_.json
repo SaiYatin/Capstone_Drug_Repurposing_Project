@@ -1,0 +1,16 @@
+{
+ "term": "\"Carmustine\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "18832930",
+   "title": "Haematopoietic stem cell transplantation for autoimmune disorders.",
+   "year": "2008"
+  },
+  {
+   "pmid": "25326407",
+   "title": "Autologous stem cell transplantation in a patient with severe systemic sclerosis.",
+   "year": "2014"
+  }
+ ]
+}

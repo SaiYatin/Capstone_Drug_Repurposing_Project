@@ -1,0 +1,21 @@
+{
+ "term": "\"N-\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1449,
+ "top": [
+  {
+   "pmid": "34861168",
+   "title": "Safety and efficacy of subcutaneous ianalumab (VAY736) in patients with primary Sj\u00f6gren's syndrome: a randomised, double-blind, placebo-controlled, phase 2b dose-finding trial.",
+   "year": "2022"
+  },
+  {
+   "pmid": "38839899",
+   "title": "CD40 ligand antagonist dazodalibep in Sj\u00f6gren's disease: a randomized, double-blinded, placebo-controlled, phase 2 trial.",
+   "year": "2024"
+  },
+  {
+   "pmid": "37610265",
+   "title": "Multimodal Single-Cell Sequencing of B Cells in Primary Sj\u00f6gren's Syndrome.",
+   "year": "2024"
+  }
+ ]
+}

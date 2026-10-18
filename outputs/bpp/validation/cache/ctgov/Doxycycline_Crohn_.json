@@ -1,0 +1,180 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01012726",
+    "briefTitle": "Study About the Effect of Doxycycline and Acetylcystein in the Treatment of CD-associated Fistulae"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Colonoscopy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02033408",
+    "briefTitle": "Manipulating the Microbiome in IBD by Antibiotics and FMT"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Antibiotics in addition to steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AB (antibiotics)"
+      ]
+     },
+     {
+      "label": "Steroids only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: CS (corticosteroids) Only"
+      ]
+     },
+     {
+      "label": "Open arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: AB (antibiotics)",
+       "Drug: CS (corticosteroids) Only"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AB (antibiotics)"
+     },
+     {
+      "name": "CS (corticosteroids) Only"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01783106",
+    "briefTitle": "Antibiotics and Hydroxychloroquine in Crohn's"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "budesonide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Budesonide"
+      ]
+     },
+     {
+      "label": "Ciprofloxacine, doxycycline and hydroxychloroquine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ciprofloxacin",
+       "Drug: Doxycycline",
+       "Drug: Hydroxychloroquine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Doxycycline"
+     },
+     {
+      "name": "Hydroxychloroquine"
+     },
+     {
+      "name": "Budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03322488",
+    "briefTitle": "Fistulodesis Pilot Study for Closure of Perianal Fistulae"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-06-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Crohn's Disease",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     },
+     {
+      "label": "Patients without IBD",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fistulodesis"
+     }
+    ]
+   }
+  }
+ }
+]

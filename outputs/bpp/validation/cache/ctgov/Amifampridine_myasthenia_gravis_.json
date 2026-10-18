@@ -1,0 +1,444 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01377922",
+    "briefTitle": "A Phase 3 Study of Amifampridine Phosphate in Patients With Lambert Eaton Myasthenic Syndrome (LEMS)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Amifampridine Phosphate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine Phosphate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Amifampridine Phosphate"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00872950",
+    "briefTitle": "3,4-Diaminopyridine Use in Lambert-Eaton Myasthenic Syndrome(LEMS) and Congenital Myasthenic Syndromes (CMS)"
+   },
+   "statusModule": {
+    "overallStatus": "APPROVED_FOR_MARKETING"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3,4-DIAMINOPYRIDINE"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03579966",
+    "briefTitle": "Long Term Safety Study of Amifampridine Phosphate in MuSK-MG (Muscle Specific Tyrosine Kinase Myasthenia Gravis)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-06-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "amifampridine phosphate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine Phosphate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Amifampridine Phosphate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01378546",
+    "briefTitle": "Treatment of Lambert-Eaton Myasthenic Syndrome (LEMS) With 3, 4 DAP"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE",
+    "startDateStruct": {
+     "date": "2005-05"
+    }
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3,4-diaminopyridine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02189720",
+    "briefTitle": "Expanded Access Study Amifampridine Phosphate in Lambert-Eaton Myasthenic Syndrome (LEMS),Congenital Myasthenic Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "APPROVED_FOR_MARKETING"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Amifampridine Phosphate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02012933",
+    "briefTitle": "3,4-Diaminopyridine for Lambert-Eaton Myasthenic Syndrome (LEMS) and Congenital Myasthenia (CM)"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3,4-diaminopyridine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00704925",
+    "briefTitle": "Treatment of Lambert-Eaton Syndrome With 3,4 DAP"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3, 4 DAP"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03304054",
+    "briefTitle": "Study to Evaluate Amifampridine Phosphate in Patients With MuSK-MG"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-04-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "amifamapridine phosphate tablets",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine Phosphate"
+      ]
+     },
+     {
+      "label": "placebo tablets",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Oral Tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Amifampridine Phosphate"
+     },
+     {
+      "name": "Placebo Oral Tablet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02970162",
+    "briefTitle": "Phase 3 Study to Evaluate Efficacy of Amifampridine Phosphate in Lambert-Eaton Myasthenic Syndrome (LEMS)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "amifampridine phosphate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine Phosphate"
+      ]
+     },
+     {
+      "label": "placebo (for amifampridine phosphate)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Oral Tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Amifampridine Phosphate"
+     },
+     {
+      "name": "Placebo Oral Tablet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01511978",
+    "briefTitle": "Effectiveness of 3,4-Diaminopyridine in Lambert-Eaton Myasthenic Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Continuous 3,4-DAP",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Continuous 3,4-DAP"
+      ]
+     },
+     {
+      "label": "Taper 3,4-DAP to Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Taper 3,4-DAP to Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Continuous 3,4-DAP"
+     },
+     {
+      "name": "Taper 3,4-DAP to Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00004832",
+    "briefTitle": "Randomized Study of 3,4-Diaminopyridine for Lambert-Eaton Myasthenic Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1994-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3,4-diaminopyridine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05919407",
+    "briefTitle": "Pyridostigmine and Amifampridine for Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-03-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Pyridostigmine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pyridostigmine"
+      ]
+     },
+     {
+      "label": "Placebo (pyridostigmine)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Amifampridine (base) with modified release",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine (base) with modified release"
+      ]
+     },
+     {
+      "label": "Placebo (amifampridine)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine"
+     },
+     {
+      "name": "Amifampridine (base) with modified release"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00994916",
+    "briefTitle": "Treatment of Lambert-Eaton Syndrome With 3,4 Diaminopyridine"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3,4 diaminopyridine"
+     }
+    ]
+   }
+  }
+ }
+]

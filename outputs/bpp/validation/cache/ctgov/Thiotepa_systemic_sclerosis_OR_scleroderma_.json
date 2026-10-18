@@ -1,0 +1,113 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03630211",
+    "briefTitle": "Autologous Stem Cell Transplantation in Patients With Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2018-07-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Autologous Stem Cell Transplantation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclophosphamide",
+       "Drug: Mesna",
+       "Drug: Rituximab",
+       "Drug: Alemtuzumab",
+       "Drug: Thiotepa",
+       "Drug: GM-CSF",
+       "Drug: Intravenous immunoglobulin",
+       "Radiation: Total Body Irradiation",
+       "Drug: Anti Thymocyte Globulin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Mesna"
+     },
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Alemtuzumab"
+     },
+     {
+      "name": "Thiotepa"
+     },
+     {
+      "name": "GM-CSF"
+     },
+     {
+      "name": "Intravenous immunoglobulin"
+     },
+     {
+      "name": "Total Body Irradiation"
+     },
+     {
+      "name": "Anti Thymocyte Globulin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01895244",
+    "briefTitle": "Autologous Stem Cell Transplantation for Progressive Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Conditioning with CYC/ antithymocyte globulin (ATG)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Autologous stemcell transplantation with CD (cluster of differentiation) 34 selected stem cells"
+      ]
+     },
+     {
+      "label": "Conditioning with CYC/Thiotepa/ATG",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Autologous stemcell transplantation with CD (cluster of differentiation) 34 selected stem cells"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Autologous stemcell transplantation with CD (cluster of differentiation) 34 selected stem cells"
+     }
+    ]
+   }
+  }
+ }
+]

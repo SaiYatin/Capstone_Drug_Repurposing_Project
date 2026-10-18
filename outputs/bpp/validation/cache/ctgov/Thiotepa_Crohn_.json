@@ -1,0 +1,158 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04528355",
+    "briefTitle": "Data Collection Study of Patients With Non-Malignant Disorders Undergoing UCBT, BMT or PBSCT With RIC"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2020-08-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "data collection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01962415",
+    "briefTitle": "Reduced Intensity Conditioning for Non-Malignant Disorders Undergoing UCBT, BMT or PBSCT"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2014-02-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UCBT:transfusion dependent anemias or increased rejection risk",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Hydroxyurea",
+       "Drug: Alemtuzumab",
+       "Drug: Fludarabine",
+       "Drug: Melphalan",
+       "Drug: Thiotepa"
+      ]
+     },
+     {
+      "label": "BMT, PBSCT and not transfusion dependent UCBT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Hydroxyurea",
+       "Drug: Alemtuzumab",
+       "Drug: Fludarabine",
+       "Drug: Melphalan",
+       "Drug: Thiotepa"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Hydroxyurea"
+     },
+     {
+      "name": "Alemtuzumab"
+     },
+     {
+      "name": "Fludarabine"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Thiotepa"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00692939",
+    "briefTitle": "Autologous Stem Cell Transplantation for Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2012-06-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: autologous CD34-selected peripheral blood stem cells transplant",
+       "Drug: Alemtuzumab",
+       "Drug: ATG",
+       "Drug: Melphalan",
+       "Drug: Thiotepa",
+       "Drug: Rituximab",
+       "Drug: Cyclophosphamide",
+       "Drug: G-CSF",
+       "Drug: Mesna"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "autologous CD34-selected peripheral blood stem cells transplant"
+     },
+     {
+      "name": "Alemtuzumab"
+     },
+     {
+      "name": "ATG"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Thiotepa"
+     },
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "G-CSF"
+     },
+     {
+      "name": "Mesna"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone acetate\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "20669022",
+   "title": "Effectiveness of budesonide-succinate-dextran conjugate as a novel prodrug of budesonide against acetic acid-induced colitis in rats.",
+   "year": "2010"
+  },
+  {
+   "pmid": "782236",
+   "title": "Pharmacotherapy of inflammatory bowel disease.",
+   "year": "1976"
+  },
+  {
+   "pmid": "9840102",
+   "title": "Effect of short-term topical corticosteroid treatment on mucosal enzyme systems in patients with distal inflammatory bowel disease.",
+   "year": "1998"
+  }
+ ]
+}

@@ -1,0 +1,5303 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02065570",
+    "briefTitle": "Study to Evaluate Efficacy and Safety of Two Drug Regimens in Subjects With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Induction: Standard Induction Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Induction: Higher Induction Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Maintenance: Clinically Adjusted (CA) Regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Maintenance: Therapeutic Drug Monitoring (TDM) Regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01759264",
+    "briefTitle": "An Observational Study of Fecal Calprotectin as Clinical Tool in Monitoring Moderate-to-severe Crohn's Disease on Adalimumab Induction Therapy: a KoRean Experience (FAIR)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Moderate-to-severe Crohn's disease"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04997733",
+    "briefTitle": "Fecal Microbiota Transplantation in Crohn's Disease as Relay After Anti-TNF Withdrawal"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-09-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fecal microbiota",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fecal Microbiota Transplantation (FMT)"
+      ]
+     },
+     {
+      "label": "Sham-transplantation",
+      "type": "SHAM_COMPARATOR",
+      "interventionNames": [
+       "Drug: Sham-transplantation (placebo)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fecal Microbiota Transplantation (FMT)"
+     },
+     {
+      "name": "Sham-transplantation (placebo)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03464136",
+    "briefTitle": "Safety and Efficacy of Adalimumab Versus Ustekinumab for One Year"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-03-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 (Ustekinumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Placebo for Ustekinumab",
+       "Biological: Ustekinumab (6 mg/kg)",
+       "Biological: Ustekinumab (90 mg)"
+      ]
+     },
+     {
+      "label": "Group 2 (Adalimumab)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Placebo for Adalimumab",
+       "Biological: Adalimumab (40 mg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo for Ustekinumab"
+     },
+     {
+      "name": "Placebo for Adalimumab"
+     },
+     {
+      "name": "Ustekinumab (6 mg/kg)"
+     },
+     {
+      "name": "Ustekinumab (90 mg)"
+     },
+     {
+      "name": "Adalimumab (40 mg)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00736983",
+    "briefTitle": "Adalimumab in Combination With Ciprofloxacin/Placebo Treatment of Perianal Fistulas in Crohn's"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: adalimumab"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: ciprofloxacin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "ciprofloxacin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02896985",
+    "briefTitle": "Observational Study Evaluating the Effectiveness of Drug Concentration to Predict the Recapture of Response in Crohn's Disease Patients With Loss of Response ( PRADA )"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-12-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with Crohn's disease"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03890445",
+    "briefTitle": "Real-world Study of Anti-TNFa Treatment Regimes of Hyrimoz or Zessly in Patients With Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab Biosimilar (Hyrimoz)"
+     },
+     {
+      "label": "Infliximab Biosimilar (Zessly)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07258641",
+    "briefTitle": "Fluorescence Imaging of Adalimumab-680LT and Risankizumab-800CW in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "25 mg adalimumab-680LT and 15/25 mg risankizumab-800CW",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 25mg adalimumab-680LT and 15/25 mg risankizumab-800CW"
+      ]
+     },
+     {
+      "label": "25 mg adalimumab-680LT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab-680LT 25mg"
+      ]
+     },
+     {
+      "label": "15/25 mg risankizumab-800CW",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Risankizumab-800CW 15 mg/25 mg"
+      ]
+     },
+     {
+      "label": "No second procedure",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "25mg adalimumab-680LT and 15/25 mg risankizumab-800CW"
+     },
+     {
+      "name": "Adalimumab-680LT 25mg"
+     },
+     {
+      "name": "Risankizumab-800CW 15 mg/25 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01674413",
+    "briefTitle": "Calprotectin-Directed Humira\u00ae Maintenance Therapy (CADHUM)"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2013-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo/Step-Down",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "PRNLOAD Arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab PRN"
+      ]
+     },
+     {
+      "label": "Maintenance Arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Adalimumab PRN"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00195715",
+    "briefTitle": "Long-term Safety and Tolerability Study of Adalimumab in Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04131504",
+    "briefTitle": "Precision Crohn's Disease Management Utilizing Predictive Protein Panels (ENvISION)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-10-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Phase I - Cross-sectional Study (CD and Suspected IBD)"
+     },
+     {
+      "label": "Phase I - Cross-sectional Study (healthy volunteers)"
+     },
+     {
+      "label": "Phase II - Longitudinal Study of Participants with CD",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03917303",
+    "briefTitle": "Control Crohn Safe Trial"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-12-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Standard step-up care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: standard step-up care"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "standard step-up care"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03662919",
+    "briefTitle": "One-year Persistence to Treatment of Participants Receiving Flixabi or Imraldi: a French Cohort Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-07-02"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Flixabi",
+      "interventionNames": [
+       "Drug: Infliximab"
+      ]
+     },
+     {
+      "label": "Imraldi",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05190484",
+    "briefTitle": "bIosimilar of aDalimumab, an European evAluation"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02185014",
+    "briefTitle": "Open Label Study to Evaluate Long Term Efficacy, Safety and Tolerability of Repeated Dosing in Subjects With Crohn's Disease and Who Participated and Successfully Completed M14-115"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-08-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05759104",
+    "briefTitle": "Treatment and Fate in Fistulizing Crohn's Disease in a Pediatric Population"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2012-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Stomy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05040464",
+    "briefTitle": "Comparison of Azathioprine to Methotrexate in Combination Therapy With Adalimumab in Crohn's Disease: an Open-label Randomized Controlled Trial"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-08-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AZA group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AZA capsules",
+       "Biological: blood sample"
+      ]
+     },
+     {
+      "label": "MTX group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MTX",
+       "Biological: blood sample"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AZA capsules"
+     },
+     {
+      "name": "MTX"
+     },
+     {
+      "name": "blood sample"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05542459",
+    "briefTitle": "Multi-omics to Predict Responses to Biologics in IBD"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-IBD control group"
+     },
+     {
+      "label": "CD group",
+      "interventionNames": [
+       "Drug: Biologics"
+      ]
+     },
+     {
+      "label": "UC group",
+      "interventionNames": [
+       "Drug: Biologics"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Biologics"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02994836",
+    "briefTitle": "GIS-SUSANTI-TNF-2015 (Anti-TNF Discontinuation )"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-TNF",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Anti-TNF: Infliximab (Infusion)",
+       "Biological: Anti-TNF:Adalimumab (Subcutaneus)"
+      ]
+     },
+     {
+      "label": "Anti-TNF discontinuation (Placebo)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Anti-TNF discontinuation: Physiological saline solution"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-TNF: Infliximab (Infusion)"
+     },
+     {
+      "name": "Anti-TNF discontinuation: Physiological saline solution"
+     },
+     {
+      "name": "Anti-TNF:Adalimumab (Subcutaneus)"
+     },
+     {
+      "name": "Anti-TNF discontinuation: Physiological saline solution"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00055523",
+    "briefTitle": "A Study of the Human Anti-TNF Antibody Adalimumab for the Induction of Clinical Remission in Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Adalimumab (D2E7)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01086059",
+    "briefTitle": "OTIS Humira Pregnancy Registry"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1 - Exposure cohort"
+     },
+     {
+      "label": "Cohort 2 - Matched Diseased Comparison Cohort"
+     },
+     {
+      "label": "Cohort 3-Non-Diseased Comparison Cohort"
+     },
+     {
+      "label": "Cohort 4 - Registry Group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01958827",
+    "briefTitle": "A Study of Adalimumab After Dose Escalation in Japanese Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab 80 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06673134",
+    "briefTitle": "Prospective Cohort Establishment and Clinical Observation of Children With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2023-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "enteral nutrition group",
+      "interventionNames": [
+       "Drug: Immunotherapy",
+       "Drug: biological agents",
+       "Drug: Glucocorticoids",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Glucocorticoid group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: biological agents",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Immunosuppressive group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: biological agents",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Fecal Microbiota Transplantation group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: Immunotherapy",
+       "Drug: biological agents",
+       "Drug: Glucocorticoids"
+      ]
+     },
+     {
+      "label": "Biologics group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: Immunotherapy",
+       "Drug: Glucocorticoids",
+       "Other: fecal microbiota transplantation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "enteral nutrition"
+     },
+     {
+      "name": "Immunotherapy"
+     },
+     {
+      "name": "biological agents"
+     },
+     {
+      "name": "Glucocorticoids"
+     },
+     {
+      "name": "fecal microbiota transplantation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01556672",
+    "briefTitle": "Adalimumab-psoriasis and Small Bowel Lesions"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab",
+       "Device: Capsule endoscopy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Capsule endoscopy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00686374",
+    "briefTitle": "Efficacy and Long Term Safety of Adalimumab in Pediatric Subjects Who Have Demonstrated Clinical Response in M06-806"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Any adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07510191",
+    "briefTitle": "TNFi Plus Low-Dose Upadacitinib vs TNFi Intensification in Crohn's Disease With Suboptimal Response"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard-Dose TNFi Plus Low-Dose Upadacitinib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Upadacitinib",
+       "Drug: Standard-Dose infliximab",
+       "Drug: Standard-Dose Adalimumab"
+      ]
+     },
+     {
+      "label": "TNFi Dose Intensification",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Infliximab Dose Intensification",
+       "Drug: Adalimumab Dose Intensification"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Upadacitinib"
+     },
+     {
+      "name": "Infliximab Dose Intensification"
+     },
+     {
+      "name": "Adalimumab Dose Intensification"
+     },
+     {
+      "name": "Standard-Dose infliximab"
+     },
+     {
+      "name": "Standard-Dose Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04859088",
+    "briefTitle": "Biologics and Partial Enteral Nutrition Study"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-09-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Partial Enteral Nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Partial Enteral Nutrition"
+      ]
+     },
+     {
+      "label": "Unrestricted diet",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Partial Enteral Nutrition"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02750800",
+    "briefTitle": "Post-marketing Observational Study to Evaluate the Incremental Impact of AbbVie's Patient Support Program on Patient Reported Outcomes and Health Resource Utilization in Inflammatory Arthritis, Psoriasis and Inflammatory Bowel Diseases in Hungary (VALUE)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-04-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab and AbbVie Care 2.0",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Behavioral: AbbVie Care 2.0"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "AbbVie Care 2.0"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01464333",
+    "briefTitle": "Special Investigation (Long-term Investigation) in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-12-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Humira"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00325078",
+    "briefTitle": "Infliximab to Treat Crohn'S-like Inflammatory Bowel Disease in Chronic Granulomatous Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2006-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab"
+      ]
+     },
+     {
+      "label": "Observation",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07818473",
+    "briefTitle": "Conventional vs Biologic Therapy in Pediatric IBD"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Conventional Therapy"
+     },
+     {
+      "label": "Biologic Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05598684",
+    "briefTitle": "SAPHIR : Assessment of Predictive Factors for Persistence of Treatment After Initiation of Adalimumab With a Biosimilar (Adalimumab Fresenius KaBI or Substitution of Reference Adalimumab With the Fresenius Kabi Adalimumab Biosimilar in Patients With Chronic Inflammatory Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-11-24"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04131322",
+    "briefTitle": "Loss of Response of Adalimumab Biosimilar vs Adalimumab Original, in Inflammatory Bowel Disease."
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2019-10-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "switch-cohort",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amgevita 40Mg Solution for Injection"
+      ]
+     },
+     {
+      "label": "non-switchcohort",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: HUMIRA 40Mg Solution for Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Amgevita 40Mg Solution for Injection"
+     },
+     {
+      "name": "HUMIRA 40Mg Solution for Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01275508",
+    "briefTitle": "Safety and Tolerability of FITC-Adalimumab Administration During Confocal Laser Endomicroscopy of the Gut"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "FITC-Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: FITC-Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "FITC-Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00105300",
+    "briefTitle": "Study of the Human Anti-TNF Monoclonal Antibody Adalimumab for the Induction of Clinical Remission in Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01881464",
+    "briefTitle": "Anti TNF \u03b1 Improves Endothelial Dysfunction in IBD Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2014-05"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "endothelial dysfunction assessment",
+      "interventionNames": [
+       "Device: Endopath from Itamar medical - FDA approved device.",
+       "Drug: Anti TNF Alfa."
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Endopath from Itamar medical - FDA approved device."
+     },
+     {
+      "name": "Anti TNF Alfa."
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05928039",
+    "briefTitle": "PATHFINDER: Evaluating the Optimal First-Line Treatment Strategy for Moderate-to-Severely Active Ileal-dominant Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-10-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TNF\u03b1 antagonist",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: TNFa Antagonist - Infliximab",
+       "Biological: TNFa Antagonist - Adalimumab"
+      ]
+     },
+     {
+      "label": "Anti-IL12/23 or anti-IL23",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Anti-IL12/23 or anti-IL23 - Ustekinumab",
+       "Biological: Anti-IL12/23 or anti-IL23 - Risankizumab"
+      ]
+     },
+     {
+      "label": "Anti-integrin",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Anti-integrin - Vedolizumab IV",
+       "Biological: Anti-integrin - Vedolizumab IV and SC"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "TNFa Antagonist - Infliximab"
+     },
+     {
+      "name": "TNFa Antagonist - Adalimumab"
+     },
+     {
+      "name": "Anti-IL12/23 or anti-IL23 - Ustekinumab"
+     },
+     {
+      "name": "Anti-IL12/23 or anti-IL23 - Risankizumab"
+     },
+     {
+      "name": "Anti-integrin - Vedolizumab IV"
+     },
+     {
+      "name": "Anti-integrin - Vedolizumab IV and SC"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03710486",
+    "briefTitle": "A Study to Observe Vedolizumab and Anti-tumour Necrosis Factors (Anti-TNFs) Outcomes in Real-world Biologic Ulcerative Colitis (UC) and Crohn's Disease (CD) Participants"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-02-19"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1: Vedolizumab"
+     },
+     {
+      "label": "Cohort 2: Other Biologic"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05051943",
+    "briefTitle": "A Study of the Real-world Use of an Adalimumab Biosimilar and Evaluation of Nutritional Status on the Therapeutic Response"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-09-29"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02413047",
+    "briefTitle": "Evaluate if Response to Infliximab or Adalimumab May be Regained With an Immunomodulator"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunomodulator",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Azathioprine",
+       "Drug: 6 mercaptopurine",
+       "Drug: Methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "6 mercaptopurine"
+     },
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00517296",
+    "briefTitle": "Endoscopic Ultrasound (EUS) Guided Treatment With Humira for Crohn's Perianal Fistulas"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab with EUS guided therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: EUA with seton placement if necessary",
+       "Drug: adalimumab",
+       "Procedure: EUS"
+      ]
+     },
+     {
+      "label": "Adalimumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: EUA with seton placement if necessary",
+       "Drug: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EUA with seton placement if necessary"
+     },
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "EUS"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03261102",
+    "briefTitle": "TDM Guided Early Optimization of ADAL in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2017-01-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard clinical care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "Active optimization",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01338740",
+    "briefTitle": "Switching From Adalimumab to Infliximab"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Switch from Adalimumab to Infliximab",
+      "interventionNames": [
+       "Drug: Adalimumab and Infliximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab and Infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00077779",
+    "briefTitle": "Adalimumab for the Induction and Maintenance of Clinical Remission in Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01144156",
+    "briefTitle": "Small Bowel Mucosal Healing Induced by Adalimumab in Crohn's Disease Patients as Assessed by Capsule Endoscopy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN"
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Treatment with Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02073526",
+    "briefTitle": "Anti-TNF-alpha Trough Level Measurements in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-05"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-TNF",
+      "interventionNames": [
+       "Drug: Infliximab, adalimumab, certolizumab pegol"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab, adalimumab, certolizumab pegol"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05781152",
+    "briefTitle": "Clinical, Imaging, and Endoscopic Outcomes of Children Newly Diagnosed With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-06-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-tumor necrosis factor (TNF)",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Anti-TNF therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-TNF therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01083121",
+    "briefTitle": "Surveillance of Humira Injection in Korean Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05394805",
+    "briefTitle": "A Study of Subcutaneous HUMIRA (Adalimumab) Injection to Assess Adverse Events and Change in Disease Activity In Adult Participants With Moderate to Severe Active Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-06-29"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants treated with Humira (Adalimumab)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04018599",
+    "briefTitle": "Comparison of PK and Tolerability of MSB11022 Administered by AI or PFS"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-07-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "40 mg MSB11022 via Auto-injector",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 40 mg MSB11022"
+      ]
+     },
+     {
+      "label": "40 mg MSB11022 via Pre-filled Syringe",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 40 mg MSB11022"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "40 mg MSB11022"
+     },
+     {
+      "name": "40 mg MSB11022"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04655807",
+    "briefTitle": "A Study of JNJ-64304500 as Add-on Therapy in Participants With Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2021-03-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1- Standard of Care (SOC) Biological Therapy: Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Group 2: SOC Biological Therapy: Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo",
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "JNJ-64304500"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02539849",
+    "briefTitle": "Effect of Prebiotic FOS on Intestinal Abundance of Faecalibacterium Prausnitzii in Patients With Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "adalimumab + FOS",
+      "type": "OTHER",
+      "interventionNames": [
+       "Dietary Supplement: FOS",
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "FOS"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00851565",
+    "briefTitle": "Use of Combined Measurements of Serum Infliximab and Anti-infliximab Antibodies in the Treatment of Patients With Crohns Disease Failing Infliximab Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2009-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Measurement of serum infliximab and anti-infliximab antibodies"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Treatment according to current standards without knowledge of serum infliximab and anti-infliximab Ab status"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Measurement of serum infliximab and anti-infliximab antibodies"
+     },
+     {
+      "name": "Treatment according to current standards without knowledge of serum infliximab and anti-infliximab Ab status"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01768858",
+    "briefTitle": "Assessment of Rheumatoid Arthritis, Psoriatic Arthritis, Ankylosing Spondylitis, Plaque Psoriasis, Crohn's Disease and Ulcerative Colitis Patients\u00b4 Adherence Attitudes to Maintenance Therapy With a Scheduled Adalimumab Treatment in Routine Clinical Practice"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-02-05"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants receiving adalimumab",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07694674",
+    "briefTitle": "Comparison of the Efficacy of Different Biologic Agents in Preventing Postoperative Endoscopic Recurrence of Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Postoperative anti-TNF biologics group",
+      "interventionNames": [
+       "Biological: Infliximab",
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "Postoperative non-anti-TNF biologics group",
+      "interventionNames": [
+       "Biological: Vedolizumab",
+       "Biological: Ustekinumab (UST)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Ustekinumab (UST)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01629628",
+    "briefTitle": "Adalimumab for the Management of Post-operative Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2012-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "6-mercaptopurine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: 6 Mercaptopurine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "6 Mercaptopurine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07663526",
+    "briefTitle": "Treatment of Chinese Adult Subjects With Moderate to Severe Crohn's Disease With Tabellvi\u00ae"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tabellvi\u00ae Adalimumab Injection",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: TyboWe\u00ae Adalimumab Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "TyboWe\u00ae Adalimumab Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01083680",
+    "briefTitle": "Effectiveness and Safety in Patients With Crohn\u00b4s Disease in Clinical Routine"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-05"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with Crohn's Disease (CD)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02256462",
+    "briefTitle": "Pediatric Crohn's Disease AdalImumab Level-based Optimization Treatment (PAILOT) Trial"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Interventional",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Clinical",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04646187",
+    "briefTitle": "De-escalation of Anti-TNF Therapy in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ENROLLING_BY_INVITATION",
+    "startDateStruct": {
+     "date": "2021-03-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intervention group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Infliximab",
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07344428",
+    "briefTitle": "Efficacy and Safety of CDED With Anti-TNF-\u03b1 Biologics in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's Disease Exclusion Diet + Anti-TNF-\u03b1 biologics",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Crohn's Disease Exclusion Diet"
+      ]
+     },
+     {
+      "label": "Anti-TNF-\u03b1 biologics only",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Crohn's Disease Exclusion Diet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00745329",
+    "briefTitle": "The Effect of Infliximab on Sperm Quality"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2008-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "2",
+      "interventionNames": [
+       "Other: sperm quality test"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "sperm quality test"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02087878",
+    "briefTitle": "A Blood and Tissue Sample Collection Study of Patients Who Have Inflammatory Bowel Disease, Who Have Been Treated With Adalimumab and Who Developed Hepatosplenic T-Cell Lymphoma"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2014-03-31"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00524537",
+    "briefTitle": "A Long-Term Registry of Humira\u00ae (Adalimumab) in Subjects With Moderately to Severely Active Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab (Humira) Treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03220841",
+    "briefTitle": "Stricture Definition and Treatment (STRIDENT) Drug Therapy Study"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-10-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard drug therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab Injection",
+       "Procedure: Endoscopic balloon dilatation"
+      ]
+     },
+     {
+      "label": "Intensive drug therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab Injection",
+       "Drug: Thiopurine",
+       "Procedure: Endoscopic balloon dilatation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab Injection"
+     },
+     {
+      "name": "Thiopurine"
+     },
+     {
+      "name": "Endoscopic balloon dilatation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02015793",
+    "briefTitle": "Study to Evaluate the Pharmacokinetics, Safety and Efficacy of Two Treatment Modules in Chinese Subjects With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Low Induction Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Biological: Placebo for adalimumab"
+      ]
+     },
+     {
+      "label": "Standard Induction Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Placebo for adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00409617",
+    "briefTitle": "Study of Adalimumab Treatment for Induction and Maintenance of Clinical Remission in Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open Label",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02634060",
+    "briefTitle": "Home basEd faecaL calProtectin Measurements Predicting Adalimumab Induction Destiny"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-03-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Home Based Fecal Calprotectin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Device: Home Based Fecal Calprotectin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Home Based Fecal Calprotectin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05169593",
+    "briefTitle": "Prevention of Postoperative Endoscopic Recurrence With Endoscopy-driven Versus Systematic Biological Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2022-09-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Endoscopy-driven postoperative biological therapy",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Biological Drug"
+      ]
+     },
+     {
+      "label": "Systematic postoperative prophylaxis with a biological",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Biological Drug"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Biological Drug"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01298648",
+    "briefTitle": "Special Investigation in Patients With Crohn's Disease (All Patients Investigation)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Humira"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00338650",
+    "briefTitle": "Treatment of the Human Anti-TNF Monoclonal Antibody Adalimumab in Moderate to Severe Crohn's Disease With Previous Exposure to Infliximab (CHOICE)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04196920",
+    "briefTitle": "Methotrexate-associated Anti-TNF Combination Therapy, the Neglected One !"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-12-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort with TNF combination therapy"
+     },
+     {
+      "label": "Cohort with anti-TNF combination therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07522528",
+    "briefTitle": "Biologics and Paediatric Enteral Nutrition in Crohn's Disease Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Enteral Nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: enteral nutrition"
+      ]
+     },
+     {
+      "label": "Unrestricted Diet",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "Exclusive Enteral Nutrition",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "Exclusive enteral nutrition alongside Infliximab or Adalimumab Induction Therapy",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "enteral nutrition"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01698307",
+    "briefTitle": "Enhanced Algorithm for Crohn's Treatment Incorporating Early Combination Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-03-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Enhanced Treatment Algorithm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: Enhanced Treatment Algorithm"
+      ]
+     },
+     {
+      "label": "Conventional Step-care Algorithm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Conventional Step-care Algorithm"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Enhanced Treatment Algorithm"
+     },
+     {
+      "name": "Conventional Step-care Algorithm"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03681652",
+    "briefTitle": "Post-Operative Crohn's Disease Outcome in Children"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2019-02-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine or 6MP",
+      "interventionNames": [
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Anti-TNF drug",
+      "interventionNames": [
+       "Drug: Anti-TNF Drug"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Anti-TNF Drug"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00409682",
+    "briefTitle": "Efficacy and Safety of Adalimumab in Pediatric Subjects With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open-label adalimumab (Week 0 to Week 4)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "Low-Dose Adalimumab: 20 mg or 10 mg eow (Week 4 to Week 52)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "High-Dose Adalimumab: 40 mg or 20 mg eow (Week 4 to Week 52)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02451839",
+    "briefTitle": "An ObserVatIonal STudy of the Effectiveness of AdaLimumab on Health and Disability Outcomes in New Zealand Patients With Immune-Mediated InflammaTorY Diseases (VITALITY)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-07-06"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's Disease"
+     },
+     {
+      "label": "Rheumatoid Arthritis"
+     },
+     {
+      "label": "Psoriasis"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06291948",
+    "briefTitle": "A Clinical Study With Adalimumab Biosimilar"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-08-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Humira\u00ae (adalimumab) AC Pen [Reference Product]",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Humira\u00ae (adalimumab) AC Pen [Reference Product]"
+      ]
+     },
+     {
+      "label": "Adalimumab Richmond [Test Product]",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab Richmond [Test Product]"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Humira\u00ae (adalimumab) AC Pen [Reference Product]"
+     },
+     {
+      "name": "Adalimumab Richmond [Test Product]"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00427921",
+    "briefTitle": "Human Anti-TNF Monoclonal Antibody Adalimumab in Canadian Subjects With Moderate to Severe Crohn's Disease (ACCESS)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02332356",
+    "briefTitle": "Therapeutic Optimization Study Based on MR Enterocolonography in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2014-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "step up",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: azathioprine or adalimumab and infliximab"
+      ]
+     },
+     {
+      "label": "observation step up",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "step down",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: azathioprine or adalimumab and infliximab"
+      ]
+     },
+     {
+      "label": "observation step down",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "azathioprine or adalimumab and infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01505855",
+    "briefTitle": "Efficacy Study of Pneumococcal Vaccination in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "anti-TNF only",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Combined immunosuppression",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Immunomodulator only",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Non-immunosuppression",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "23-valent polysaccharide pneumococcal vaccine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05427942",
+    "briefTitle": "Yuflyma\u00ae (Adalimumab), Patient Experience After Switching"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-06-03"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Switch from adalimumab originator",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Switch from adalimumab biosimilar 40 mg/0,8 mL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03017014",
+    "briefTitle": "A Study to Assess Safety and Effectiveness of Adalimumab for Treating Children and Adolescents With Crohn's Disease in Real Life Conditions"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2017-09-26"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Pediatric participants receiving adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05599347",
+    "briefTitle": "Pre-treatment With Azithromycin to Reduce Immunogenicity to to Anti-TNF Agents in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-04-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azithromycin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Azithromycin Pill"
+      ]
+     },
+     {
+      "label": "Control",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azithromycin Pill"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06441526",
+    "briefTitle": "Surgical Closure vs Anti-TNF in the Treatment of Perianal Fistulas in Crohn's Disease (PISA-II): a Comprehensive Cohort Design"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-09-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-TNF",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: anti-tumour necrosis factor \u03b1 antibodies"
+      ]
+     },
+     {
+      "label": "Surgical closure",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Advancement plasty"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "anti-tumour necrosis factor \u03b1 antibodies"
+     },
+     {
+      "name": "Advancement plasty"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00445432",
+    "briefTitle": "A Study of Adalimumab for the Maintenance of Clinical Remission in Japanese Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "DB Adalimumab 40 mg eow",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     },
+     {
+      "label": "Placebo eow",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     },
+     {
+      "label": "OL Adalimumab 40 mg eow",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07644117",
+    "briefTitle": "Individualizing Anti-TNF Therapy in Patients With Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-01-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IBD patients",
+      "interventionNames": [
+       "Other: This is an observational study with no intervention. Patients will receive anti- TNF therapy as part of their standard care"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "This is an observational study with no intervention. Patients will receive anti- TNF therapy as part of their standard care"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06045754",
+    "briefTitle": "A Study of Vedolizumab Intravenous (IV) and Adalimumab or Vedolizumab and Ustekinumab in Adults With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-04-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A, Cohort 1: Vedolizumab + Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Part A, Cohort 2: Vedolizumab + Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Part B: Vedolizumab Monotherapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01562951",
+    "briefTitle": "Assessment of Mucosal Activity to Improve the Prognosis of Patients With Crohn's Disease Treated With Immunosuppressants"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2012-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PLACEBO",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "ADALIMUMAB",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ADALIMUMAB"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ADALIMUMAB"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00445939",
+    "briefTitle": "A Study of Adalimumab for the Induction of Clinical Remission in Japanese Subjects With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab 160 mg/80 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     },
+     {
+      "label": "Adalimumab 80 mg/40 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05407350",
+    "briefTitle": "Validation of an IUS Activity Index"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-06"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohns disease patients",
+      "interventionNames": [
+       "Diagnostic Test: Ultrasound, Colonoscopy, MRE"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ultrasound, Colonoscopy, MRE"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02764762",
+    "briefTitle": "Triple Combination Therapy in High Risk Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vedolizumab 300 mg (IV) + Adalimumab 160-80-40 mg (SC) + Methotrexate 15 mg (Oral)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Adalimumab",
+       "Drug: Methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07545317",
+    "briefTitle": "Real-World Study of IL-23 Inhibitors in Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-04-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IL-23 Inhibitor Cohort",
+      "interventionNames": [
+       "Drug: IL-23 inhibitor"
+      ]
+     },
+     {
+      "label": "TNF Inhibitor Comparative Cohort",
+      "interventionNames": [
+       "Drug: TNF inhibitors"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IL-23 inhibitor"
+     },
+     {
+      "name": "TNF inhibitors"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02499783",
+    "briefTitle": "Study to Evaluate the Safety and Efficacy of Adalimumab in Chinese Subjects With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-08-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Induction Regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab",
+       "Other: placebo"
+      ]
+     },
+     {
+      "label": "Adalimumab Induction Regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02148718",
+    "briefTitle": "Rapidity of Response to Adalimumab Treatment in Patients With Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02674308",
+    "briefTitle": "Entyvio (Vedolizumab) Long Term Safety Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-03-24"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vedolizumab",
+      "interventionNames": [
+       "Drug: Vedolizumab"
+      ]
+     },
+     {
+      "label": "Other Biologic Agents",
+      "interventionNames": [
+       "Other: Other Biologic Agents"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Other Biologic Agents"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01235689",
+    "briefTitle": "Efficacy and Safety of Two Treatment Algorithms in Adults With Moderate to Severe Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-02-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tight Control Management",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Drug: Prednisone",
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Clinically Driven Management",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Drug: Prednisone",
+       "Drug: Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01564823",
+    "briefTitle": "Adalimumab on Preventing Post-chirurgic Recurrence on Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Metronidazole + Azathioprine.",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Metronidazole",
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Metronidazole + Adalimumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Metronidazole",
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Metronidazole"
+     },
+     {
+      "name": "Metronidazole"
+     },
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02852694",
+    "briefTitle": "Reduce Risk for Crohn's Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-02-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High Risk Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methotrexate",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Low risk group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methotrexate",
+       "Drug: Azathioprine / 6 Mercaptopurine"
+      ]
+     },
+     {
+      "label": "Ancillary",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methotrexate"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Azathioprine / 6 Mercaptopurine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03759288",
+    "briefTitle": "An Active and Placebo-Controlled Study of Brazikumab in Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-12-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "(Stage 1) Brazikumab high dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Brazikumab high dose"
+      ]
+     },
+     {
+      "label": "(Stage 1) Brazikumab low dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Brazikumab low dose"
+      ]
+     },
+     {
+      "label": "(Stage 1) Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "(Stage 2) Brazikumab high dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Brazikumab high dose"
+      ]
+     },
+     {
+      "label": "(Stage 2) Brazikumab low dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Brazikumab low dose"
+      ]
+     },
+     {
+      "label": "(Stage 2) Humira\u00ae",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Humira\u00ae"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Brazikumab low dose"
+     },
+     {
+      "name": "Brazikumab high dose"
+     },
+     {
+      "name": "Humira\u00ae"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04089514",
+    "briefTitle": "A Real-world Study of Imraldi\u00ae Use"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-06-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab Therapy",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07495644",
+    "briefTitle": "Efficacy of Different Biological Treatments in Patients With Inflammatory Bowel Disease After One Year of Treatment in Upper Egypt"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "adalimumab, infliximab, ustekinumab, golimumab, and vedolizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02619552",
+    "briefTitle": "Impact of Medical Treatment on Sexual Function in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Anti-TNF (Remicade, Humira or Cimzia) for luminal CD",
+      "interventionNames": [
+       "Drug: Anti-TNF"
+      ]
+     },
+     {
+      "label": "Anti-TNF (Remicade, Humira or Cimzia)for perianal CD",
+      "interventionNames": [
+       "Drug: Anti-TNF"
+      ]
+     },
+     {
+      "label": "Steroid (Prednisone or budesonide) for luminal CD",
+      "interventionNames": [
+       "Drug: Steroids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-TNF"
+     },
+     {
+      "name": "Anti-TNF"
+     },
+     {
+      "name": "Steroids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03059849",
+    "briefTitle": "Brief Escalation of Adalimumab Treatment for Prevention of Clinical Relapse in IBD"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2018-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Temporary increase in adalimumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Continued monitoring as per standard of care",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01012570",
+    "briefTitle": "The Effect of Adalimumab on the Bone Microstructure in Crohn's Disease (CD) Patients"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Application of Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01070303",
+    "briefTitle": "Remission in Subjects With Crohn's Disease, Open Label Extension"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab 40 mg every other week or every week",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab 40 mg eow or ew"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab 40 mg eow or ew"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04200547",
+    "briefTitle": "Interest of the Dosage of Adalimumab Serum Levels in Crohn's Disease Patients for Prevention of Postoperative Recurrence"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2020-01-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunomonitoring-based follow-up",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Immunomonitoring-based follow-up"
+      ]
+     },
+     {
+      "label": "Standard follow-up",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: Standard follow-up"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Immunomonitoring-based follow-up"
+     },
+     {
+      "name": "Standard follow-up"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02450513",
+    "briefTitle": "Adalimumab Trough Concentrations in Crohn's Disease: A Pilot Pharmacokinetic Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-03"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Single-group study",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07152977",
+    "briefTitle": "Description of the Radiological Response of Anoperineal Fistulizing Lesions of Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-07-31"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Radiological evolution of ano-perineal lesions by MRI"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06180382",
+    "briefTitle": "Comparison of Vedolizumab Treatment to Adalimumab Dose Intensification in Crohn's Disease Patients With Loss of Response or Biomarker Activity to Adalimumab on First Line With Therapeutic Drug Concentration."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-10-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab with optimisation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Vedolizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Vedolizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01986127",
+    "briefTitle": "Adalimumab Intralesional in Intestinal Strictures of Crohn's Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2014-02-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "saline",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01388257",
+    "briefTitle": "Anal Crohn Fistula Surgery"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2011-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Surgery",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: All types of surgery procedures"
+      ]
+     },
+     {
+      "label": "Simple seton drain removal",
+      "type": "OTHER",
+      "interventionNames": [
+       "Procedure: Simple seton drain removal"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "All types of surgery procedures"
+     },
+     {
+      "name": "Simple seton drain removal"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03885713",
+    "briefTitle": "Identification of Predictive Biomarkers for Response to Biologic Therapies and Tofacitinib in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Infliximab or adalimumab or golimumab or vedolizumab or ustekinumab or tofacitinib"
+      ]
+     },
+     {
+      "label": "healthy control",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab or adalimumab or golimumab or vedolizumab or ustekinumab or tofacitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00348283",
+    "briefTitle": "Effects of Adalimumab on Mucosal Healing in Subjects With Crohn's Disease Involving the Colon"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Double Blind",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: adalimumab",
+       "Biological: placebo"
+      ]
+     },
+     {
+      "label": "Open Label",
+      "type": "OTHER",
+      "interventionNames": [
+       "Biological: adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "placebo"
+     },
+     {
+      "name": "adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01960426",
+    "briefTitle": "Evaluation of Health Costs and Resource Utilization"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2014-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Empiric Dose Intensification",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: Intensify treatment with the existing drug"
+      ]
+     },
+     {
+      "label": "Testing based strategy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: Measurement of drug (Adalimumab/Infliximab)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Measurement of drug (Adalimumab/Infliximab)"
+     },
+     {
+      "name": "Intensify treatment with the existing drug"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01428115",
+    "briefTitle": "Reveal the Level of Anxiety in Patients With Crohn's Disease Receiving Adalimumab"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with severe active Crohn's disease"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01105741",
+    "briefTitle": "Metabolomic Analysis, a Potential Tool to Direct Treatment With Adalimumab in Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-06"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Active Crohn's disease - single arm"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00055497",
+    "briefTitle": "Remission in Subjects With Crohn's Disease, 1 Year Phase"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Double-blind (DB) adalimumab placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Double-blind (DB) adalimumab placebo"
+      ]
+     },
+     {
+      "label": "Double-blind adalimumab 40 mg every other week (eow)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: DB adalimumab 40 mg eow"
+      ]
+     },
+     {
+      "label": "Double-blind adalimumab 40 mg every week (ew)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: DB adalimumab 40 mg ew"
+      ]
+     },
+     {
+      "label": "Open-label adalimumab 40 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: OL adalimumab 40 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Double-blind (DB) adalimumab placebo"
+     },
+     {
+      "name": "DB adalimumab 40 mg eow"
+     },
+     {
+      "name": "DB adalimumab 40 mg ew"
+     },
+     {
+      "name": "OL adalimumab 40 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03223012",
+    "briefTitle": "Impact of AbbVie Care Patient Support Program on Clinical, Health Economic and Patient Reported Outcomes, in Crohn's Disease, Ulcerative Colitis, Rheumatoid Arthritis, Psoriatic Arthritis, Psoriasis and Axial Spondyloarthritis, in the Portuguese National Health Service"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-11-15"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants not included in the AbbVie care program"
+     },
+     {
+      "label": "Participants included in the AbbVie care program"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02322008",
+    "briefTitle": "Anti-TNF Therapy in Danish Patients With Inflammatory Bowel Diseases in Clinical Practice"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "infliximab and adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05913817",
+    "briefTitle": "The Evaluation of Injection Site Pain and Adherence in Patients Switching From a Low To High Concentration Adalimumab (AVT-02) Across Multiple Indications."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-01-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab Reference Product to AVT-02",
+      "interventionNames": [
+       "Biological: AVT02 (Alvotech Biosimilar to Adalimumab)"
+      ]
+     },
+     {
+      "label": "Other Adalimumab Biosimilar to AVT-02",
+      "interventionNames": [
+       "Biological: AVT02 (Alvotech Biosimilar to Adalimumab)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AVT02 (Alvotech Biosimilar to Adalimumab)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06117423",
+    "briefTitle": "Fluorescence Imaging of Adalimumab-680LT in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2024-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "No administration of adalimumab-680LT",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Control"
+      ]
+     },
+     {
+      "label": "4.5 mg adalimumab-680LT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab-680LT"
+      ]
+     },
+     {
+      "label": "15 mg adalimumab-680LT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab-680LT"
+      ]
+     },
+     {
+      "label": "25 mg adalimumab-680LT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab-680LT"
+      ]
+     },
+     {
+      "label": ">14 weeks of adalimumab therapy + optimal dose adalimumab-680LT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Adalimumab-680LT"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab-680LT"
+     },
+     {
+      "name": "Control"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06089590",
+    "briefTitle": "Ibd CAncer and seRious Infections in France (I-CARE 2)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group Anti-IL23p19",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Jak inhibitors",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group S1P Modulators",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti TNF",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti integrins",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti IL12/23",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Non-interventional"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02871635",
+    "briefTitle": "BI 695501 Versus Humira in Patients With Active Crohn's Disease: a Trial Comparing Efficacy, Endoscopic Improvement, Safety, and Immunogenicity"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-09-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "BI 695501",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: BI 695501"
+      ]
+     },
+     {
+      "label": "HUMIRA + BI 695501",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: BI 695501",
+       "Drug: HUMIRA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BI 695501"
+     },
+     {
+      "name": "HUMIRA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03172377",
+    "briefTitle": "Lengthening Adalimumab Dosing Interval in Quiescent Crohn's Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-05-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intervention group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Lengthening adalimumab dosing interval"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Lengthening adalimumab dosing interval"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00972218",
+    "briefTitle": "Effectiveness and Safety of Spondylitis Related to Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2009-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Enteropathic spondyloarthritis",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02130362",
+    "briefTitle": "A Non-Interventional Clinical Study to Evaluate Long-Term Safety and Effectiveness of HUMIRA (Adalimumab) in Pediatric Patients With Moderately to Severely Active Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2014-08-28"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunosuppressant Therapy"
+     },
+     {
+      "label": "Adalimumab (Humira) Treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03640637",
+    "briefTitle": "The Role of PET/MRI in the Diagnosis and Treatment of Children and Adolescents With Inflammatory Bowel Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-10-18"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Suspected IBD"
+     },
+     {
+      "label": "Treatment response group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03108326",
+    "briefTitle": "Real World Effectiveness of Ustekinumab in Induction and Maintenance Therapy for Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-04-15"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1a"
+     },
+     {
+      "label": "Group 1b"
+     },
+     {
+      "label": "Group 2",
+      "interventionNames": [
+       "Biological: Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+      ]
+     },
+     {
+      "label": "Group 3a"
+     },
+     {
+      "label": "Group 3b"
+     },
+     {
+      "label": "Group 4",
+      "interventionNames": [
+       "Biological: Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04372108",
+    "briefTitle": "A Study to Assess the Long-Term Safety of Ustekinumab Versus Other Biologics in Patients With Crohn's Disease and Ulcerative Colitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab New User Cohort",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Other Biologics Comparator Cohort",
+      "interventionNames": [
+       "Drug: Other Biologic Therapies"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Other Biologic Therapies"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04643483",
+    "briefTitle": "A Study to Test Efficacy, Safety, and Pharmacokinetics of Certolizumab Pegol in Children and Adolescents With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2021-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Certolizumab pegol low dose arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Certolizumab pegol",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Certolizumab pegol high dose arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Certolizumab pegol",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Adalimumab reference arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Adalimumab",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Certolizumab pegol"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

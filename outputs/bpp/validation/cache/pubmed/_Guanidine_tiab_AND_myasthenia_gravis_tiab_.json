@@ -1,0 +1,21 @@
+{
+ "term": "\"Guanidine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 16,
+ "top": [
+  {
+   "pmid": "13351131",
+   "title": "[Guanidine and myasthenia gravis].",
+   "year": "1956"
+  },
+  {
+   "pmid": "5457513",
+   "title": "Myasthenia gravis and the myasthenic syndrome.",
+   "year": "1970"
+  },
+  {
+   "pmid": "3761423",
+   "title": "Pharmacokinetics and pharmacodynamics of guanidine hydrochloride in an hereditary myasthenia gravis-like disorder in dogs.",
+   "year": "1986"
+  }
+ ]
+}

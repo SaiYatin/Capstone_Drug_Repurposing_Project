@@ -1,0 +1,235 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00685373",
+    "briefTitle": "Efficacy and Safety of ACZ885 in Patients With the Following Cryopyrin-associated Periodic Syndromes: Familial Cold Autoinflammatory Syndrome, Muckle-Wells Syndrome, or Neonatal Onset Multisystem Inflammatory Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Canakinumab (ACZ885)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Canakinumab (ACZ885)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Canakinumab (ACZ885)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01213641",
+    "briefTitle": "Clinical Outcomes and Safety: A Registry Study of Ilaris (Canakinumab) Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00991146",
+    "briefTitle": "Efficacy and Safety Study of Canakinumab Administered for 6 Months (24 Weeks) in Japanese Patients With Cryopyrin-associated Periodic Syndromes Followed by an Extension Phase"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "canakinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: canakinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "canakinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01105507",
+    "briefTitle": "The Safety and Efficacy of Canakinumab in Patients Aged 4 Years or Older Diagnosed With Cryopyrin-associated Periodic Syndromes (CAPS) in Canada"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "canakinumab arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: canakinumab (company code: ACZ885D)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "canakinumab (company code: ACZ885D)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01302860",
+    "briefTitle": "Efficacy, Safety and Tolerability of ACZ885 in Pediatric Patients With the Following Cryopyrin-associated Periodic Syndromes: Familial Cold Autoinflammatory Syndrome, Muckle-Wells Syndrome, or Neonatal Onset Multisystem Inflammatory Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Canakinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ACZ885"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ACZ885"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00770601",
+    "briefTitle": "Canakinumab to Treat Neonatal-Onset Multisystem Inflammatory Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-01-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Canakinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Canakinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Canakinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01576367",
+    "briefTitle": "Efficacy, Safety and Tolerability of ACZ885 in Pediatric Patients With the Following Cryopyrin-associated Periodic Syndromes: Familial Cold Autoinflammatory Syndrome, Muckle-Wells Syndrome, or Neonatal Onset Multisystem Inflammatory Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-01-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "canakinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: ACZ885"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ACZ885"
+     }
+    ]
+   }
+  }
+ }
+]

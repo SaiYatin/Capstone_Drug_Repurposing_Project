@@ -1,0 +1,21 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 9,
+ "top": [
+  {
+   "pmid": "23936710",
+   "title": "Pulmonary and Meningeal Cryptococcosis after Corticosteroid Therapy for Autoimmune Hepatitis: Coexistence of Cryptococci within Pulmonary Cancer Nodule.",
+   "year": "2013"
+  },
+  {
+   "pmid": "36911870",
+   "title": "Native valve Aspergillus fumigatus endocarditis in a patient with autoimmune hepatitis on low dose systemic corticosteroids: A case report.",
+   "year": "2023"
+  },
+  {
+   "pmid": "41142222",
+   "title": "When Hepatitis Masks Visceral Leishmaniasis: A Case of Secondary HLH in a Low-Endemic Region.",
+   "year": "2025"
+  }
+ ]
+}

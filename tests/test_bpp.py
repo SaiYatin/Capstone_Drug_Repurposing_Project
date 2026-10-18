@@ -133,3 +133,38 @@ def test_extra_splits_never_train_on_evaluation_families():
         if name == "splits_tr_A.json":
             a_ind = sum(len(task.ind[d]) for d in train)
             assert train <= set().union(*map(set, s["rich_families"].values()))
+
+
+def test_explain_replica_matches_model_and_paths_exist():
+    """bpp/explain.py must reproduce the model's logits exactly and only return paths made of real edges."""
+    from bpp.explain import best_paths, edge_importance, forward_with_states
+    torch.manual_seed(0)
+    kg = toy_kg()
+    g = MessageGraph(kg, list(range(6)))
+    model = BioPathNetPP(g.num_relations, num_query_relations=2, dim=8, num_layers=3, mlp_hidden=16).eval()
+    cand = torch.as_tensor(kg.drug_ids())
+    graph = g.build()
+    path_logits, _, xs, ss = forward_with_states(model, graph, 0, 0, cand)
+    ref = model(graph, torch.tensor([0]), torch.tensor([0]), cand)[0]
+    assert torch.allclose(ref, path_logits, atol=1e-5)
+    path_logits[0].backward()
+    edges = edge_importance(model, graph, xs, ss, 0, top_k=500)
+    real = set()
+    for r, a in enumerate(graph[0]):
+        d = a.to_dense()
+        for v, u in zip(*torch.nonzero(d, as_tuple=True)):
+            real.add((int(u), r, int(v)))
+    assert edges and all((u, r, v) in real for _, r, u, v, _ in edges)
+    for _, nodes, rels in best_paths(edges, 0, int(cand[0]), max_len=4):
+        assert nodes[0] == 0 and nodes[-1] == int(cand[0])
+        assert all((a, r, b) in real for a, r, b in zip(nodes[:-1], rels, nodes[1:]))
+
+
+def test_validation_helpers():
+    from bpp.validate import bh, grade
+    q = bh(np.array([0.01, 0.04, 0.03, 0.5]))
+    assert np.allclose(q, [0.04, 0.0533333, 0.0533333, 0.5], atol=1e-6)
+    assert grade([]) == "D"
+    assert grade([{"phase": "PHASE2/PHASE3"}]) == "A"
+    assert grade([{"phase": "PHASE2"}]) == "B"
+    assert grade([{"phase": "NA"}]) == "C"

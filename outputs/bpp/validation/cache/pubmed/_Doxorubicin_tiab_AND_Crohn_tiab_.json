@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 7,
+ "top": [
+  {
+   "pmid": "19387132",
+   "title": "Hodgkin lymphoma presenting as a vulvar mass in a patient with crohn disease: a case report and literature review.",
+   "year": "2009"
+  },
+  {
+   "pmid": "33786703",
+   "title": "Long-term endoscopic remission in Crohn's disease after allogeneic hematopoietic stem cell transplantation for diffuse large B cell lymphoma: case report and literature review.",
+   "year": "2021"
+  },
+  {
+   "pmid": "31350718",
+   "title": "Diffuse large B-cell lymphoma of the colon and rectum in a patient with colonic Crohn's disease treated with infliximab and azathioprine.",
+   "year": "2020"
+  }
+ ]
+}

@@ -1,0 +1,1733 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06463587",
+    "briefTitle": "Efficacy and Safety of a New Formulation of Oral Cladribine Compared With Placebo in Participants With Generalized Myasthenia Gravis (MyClad)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-06-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo",
+       "Drug: Cladribine Low Dose",
+       "Drug: Cladribine High Dose"
+      ]
+     },
+     {
+      "label": "Cladribine Low Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cladribine Low Dose"
+      ]
+     },
+     {
+      "label": "Cladribine High Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cladribine High Dose"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Cladribine Low Dose"
+     },
+     {
+      "name": "Cladribine High Dose"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05514873",
+    "briefTitle": "An Open-label Study to Evaluate the Safety, Tolerability, and Efficacy of Subcutaneous Zilucoplan in Participants With Generalized Myasthenia Gravis Who Were Previously Receiving Intravenous Complement Component 5 Inhibitors"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-10-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "0.3 mg/kg zilucoplan (RA101495)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: zilucoplan (RA101495)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "zilucoplan (RA101495)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05045248",
+    "briefTitle": "Efficacy of Apraclonidine Eye Drops in the Treatment of Ptosis Secondary to Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Apraclonidine Hcl 0.5% Oph Soln"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Apraclonidine Hcl 0.5% Oph Soln"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07058298",
+    "briefTitle": "GC012F Injection in the Treatment of Refractory Generalized Myasthenia Gravis(24103)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-07-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "3\u00d710^5/kg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GC012F injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GC012F injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06624345",
+    "briefTitle": "Interval Inspiratory Training and Aerobic Exercise for Muscle Recovery in Myasthenia Gravis Post-Hospitalization"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Inspiratory Muscle Training",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Inspiratory muscle training"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "SHAM_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Control Group"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Inspiratory muscle training"
+     },
+     {
+      "name": "Control Group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01927692",
+    "briefTitle": "Therapeutic Plasma Exchange in MG"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "MG subjects",
+      "interventionNames": [
+       "Other: Skin biopsy",
+       "Other: Single Fiber Electromyography"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Skin biopsy"
+     },
+     {
+      "name": "Single Fiber Electromyography"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05262582",
+    "briefTitle": "Comparison of Single Port and Two Ports Robotic Assisted Thoracic Surgery for Thymectomy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-05-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Thymectomy performed with sigle port RATS",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Sigle port RATS"
+      ]
+     },
+     {
+      "label": "Thymectomy performed with two ports RATS",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Two ports RATS"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sigle port RATS"
+     },
+     {
+      "name": "Two ports RATS"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06436768",
+    "briefTitle": "Efficacy and Safety of Sugammadex in Thoracoscopy Thymectomy for Chinese Adults With Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sugammadex group (S group)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sugammadex"
+      ]
+     },
+     {
+      "label": "Neostigmine group (N group)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Neostigmine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sugammadex"
+     },
+     {
+      "name": "Neostigmine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07022197",
+    "briefTitle": "Safety and Efficacy of BAFF-R CART for Refractory Neuroimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participant Group BAFF-R CART cells",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: BAFF-R CART"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BAFF-R CART"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06759948",
+    "briefTitle": "An Early Exploratory Clinical Study of GC012F Injection in the Treatment of Refractory Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-02-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "There're 3 dose groups in this study.Dose will be escalated based on \"3+3\" rule.",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GC012F injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GC012F injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06827587",
+    "briefTitle": "Efficacy and Safety of Efgartigimod Sequential Therapy with Telitacicept in Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Efgartigimod + Telitacicept (1-week interval) group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Efgartigimod + Telitacicept (1-week interval) group"
+      ]
+     },
+     {
+      "label": "Efgartigimod + Telitacicept (2-week interval) group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Efgartigimod + Telitacicept (2-week interval) group"
+      ]
+     },
+     {
+      "label": "Telitacicept-only group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Telitacicept-only group"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Efgartigimod + Telitacicept (1-week interval) group"
+     },
+     {
+      "name": "Efgartigimod + Telitacicept (2-week interval) group"
+     },
+     {
+      "name": "Telitacicept-only group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07337785",
+    "briefTitle": "CD19/BCMA-Targeted UCAR-T for Patients With Neurological Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CART Treatment Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: CD19/BCMA-targeted CAR-T cells",
+       "Drug: Lymphodepleting Conditioning"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "CD19/BCMA-targeted CAR-T cells"
+     },
+     {
+      "name": "Lymphodepleting Conditioning"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07154095",
+    "briefTitle": "A Single-Center, Randomized, Open-Label, Two-Sequence, Two-Period, Crossover Study Comparing the Pharmacokinetics and Safety of Pyridostigmine Sustained-Release and Immediate-Release Tablets Following Single and Multiple Doses in Healthy Chinese Participants"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-08-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "sustained-release pyridostigmine tablet",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sustained-Release Tablets"
+      ]
+     },
+     {
+      "label": "Immediate-Release Tablets",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Immediate-Release Tablets"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sustained-Release Tablets"
+     },
+     {
+      "name": "Immediate-Release Tablets"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07231523",
+    "briefTitle": "EFG vs IVIG in TAMG"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Efgartigimod + Thymectomy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: Efgartigimod + Thymectomy"
+      ]
+     },
+     {
+      "label": "Intravenous immunglobulin + Thymectomy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Combination Product: Intravenous immunglobulin + Thymectomy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Efgartigimod + Thymectomy"
+     },
+     {
+      "name": "Intravenous immunglobulin + Thymectomy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06491238",
+    "briefTitle": "Light vs. Moderate Intensity Exercise in Individuals With Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-09-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Light intensity Exercise",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Light Intensity Exercise"
+      ]
+     },
+     {
+      "label": "Moderate intensity Exercise",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Moderate Intensity Exercise"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Light Intensity Exercise"
+     },
+     {
+      "name": "Moderate Intensity Exercise"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06626919",
+    "briefTitle": "A Phase 1 Study of Anitocabtagene Autoleucel for the Treatment of Subjects With Non-oncology Plasma Cell-related Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "anito-cel",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: anito-cel",
+       "Drug: Standard Lymphodepletion regimen"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "anito-cel"
+     },
+     {
+      "name": "Standard Lymphodepletion regimen"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01555580",
+    "briefTitle": "A Pilot Study of Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF) in Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2012-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GM-CSF",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05556096",
+    "briefTitle": "Safety and Efficacy of ALXN1720 in Adults With Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2022-11-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ALXN1720",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: ALXN1720"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Combination Product: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ALXN1720"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03613272",
+    "briefTitle": "The Curative Effect of Extended Thymectomy Performed Through Subxiphoid-right VATS Approach With Elevation of Sternum"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subxiphoid approach",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Subxiphoid approach extended thymectomy by VATS"
+      ]
+     },
+     {
+      "label": "Intercostal approach",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Intercostal approach extended thymectomy by VATS"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Subxiphoid approach extended thymectomy by VATS"
+     },
+     {
+      "name": "Intercostal approach extended thymectomy by VATS"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07593911",
+    "briefTitle": "A Study to Evaluate MTM-H-001 Injection in Adult Patients With B-Cell-Related Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MTM-H-001 Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "MTM-H-001 Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07526493",
+    "briefTitle": "Safety and Pharmacodynamics of QH103 Cell Injection in the Treatment of Patients With Relapsed/Refractory Antibody-Mediated Neurological Autoimmune Diseases."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Relapsed/Refractory Antibody-Mediated Neurological Autoimmune Diseases",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Universal CD19 CAR-\u03b3\u03b4T Cell Injection",
+       "Drug: Cyclophosphamide",
+       "Drug: Fludarabine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Universal CD19 CAR-\u03b3\u03b4T Cell Injection"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Fludarabine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02774239",
+    "briefTitle": "A Pilot Trial To Assess The Feasibility And Efficacy Of SCIG In Patients With MG Exacerbation (SCIG-MG)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "SC Treatment Period",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Human normal immunoglobulin G (IgG)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Human normal immunoglobulin G (IgG)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03772587",
+    "briefTitle": "A Study to Evaluate the Safety, Tolerability, Efficacy, Pharmacokinetics and Pharmacodynamics of M281 Administered to Adults With Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-04-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: M281"
+      ]
+     },
+     {
+      "label": "Group 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: M281"
+      ]
+     },
+     {
+      "label": "Group 4",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: M281"
+      ]
+     },
+     {
+      "label": "Group 5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: M281"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "M281"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00704925",
+    "briefTitle": "Treatment of Lambert-Eaton Syndrome With 3,4 DAP"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "3, 4 DAP"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06607627",
+    "briefTitle": "PK, PD, Safety, and Efficacy Study of Gefurulimab in Pediatric Patients With AChR+ Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-11-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Gefurulimab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: Gefurulimab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Gefurulimab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07478172",
+    "briefTitle": "Effects of Whole-body Electrical Muscle Stimulation Exercise on Adults With Neuromuscular Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adults with Neuromuscular Disease",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Device: Whole-body Electrical Muscle Stimulation Exercise"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Whole-body Electrical Muscle Stimulation Exercise"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07499323",
+    "briefTitle": "Talquetamab in Patients With Refractory Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Talquetamab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Talquetamab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07298928",
+    "briefTitle": "A Study on the Efficacy and Safety of Telitacicept in the Treatment of Children Ocular Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "a single Telitacicept treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Telitacicept"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Telitacicept"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04431895",
+    "briefTitle": "Safety And Efficacy Of Tofacitinib In Patients With Refractory Myasthenia Gravis: A Pilot Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-06-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "tofacitinib 5mg twice a day",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tofacitinib 5 MG"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tofacitinib 5 MG"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07532707",
+    "briefTitle": "Efficacy of IVIG Versus PLEX in Myasthenic Crisis in Syria."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IVIG Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: IVIG (Intravenous Immunoglobulin)"
+      ]
+     },
+     {
+      "label": "PLEX Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Plasma exchange (PE)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IVIG (Intravenous Immunoglobulin)"
+     },
+     {
+      "name": "Plasma exchange (PE)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01268280",
+    "briefTitle": "Pharmacodynamic Study of CK-2017357 in Patients With Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2010-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment Sequence 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     },
+     {
+      "label": "Treatment Sequence 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     },
+     {
+      "label": "Treatment Sequence 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     },
+     {
+      "label": "Treatment Sequence 4",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     },
+     {
+      "label": "Treatment Sequence 5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     },
+     {
+      "label": "Treatment Sequence 6",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: 250 mg CK-2017357",
+       "Drug: 500 mg CK-2017357"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "250 mg CK-2017357"
+     },
+     {
+      "name": "500 mg CK-2017357"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06688435",
+    "briefTitle": "A Study to Evaluate the Safety and Preliminary Efficacy of SYS6020 CAR T-cells in Patients With Refractory Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-03-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "SYS6020 injection: 2*106CAR+ T-cells per kg(dose level 1)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection: 6*106CAR+ T-cells per kg(dose level 2)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection: 1.8*107CAR+ T-cells per kg(dose level 3)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection: 3.6*107CAR+ T-cells per kg(dose level 4)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection: 5.4*107CAR+ T-cells per kg(dose level 5)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection (Expansion stage group A)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     },
+     {
+      "label": "SYS6020 injection (Expansion stage group B)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: SYS6020 injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "SYS6020 injection"
+     },
+     {
+      "name": "SYS6020 injection"
+     },
+     {
+      "name": "SYS6020 injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06371040",
+    "briefTitle": "Safety and Efficacy of CD19-BCMA Targeted CAR-T Therapy for Refractory Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-07-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD19-BCMA Targeted CAR-T",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CD19-BCMA Targeted CAR-T Dose 1",
+       "Drug: CD19-BCMA Targeted CAR-T Dose 2"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "CD19-BCMA Targeted CAR-T Dose 1"
+     },
+     {
+      "name": "CD19-BCMA Targeted CAR-T Dose 2"
+     },
+     {
+      "name": "CD19-BCMA Targeted CAR-T Dose 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06684184",
+    "briefTitle": "Blinatumomab in Refractory Myasthenia Gravis (BLINA-MG)"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-11-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Blinatumomab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Blinatumomab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06836973",
+    "briefTitle": "Blinatumomab for Treatment of Refractory Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Blinatumomab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Blinatumomab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Blinatumomab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06002945",
+    "briefTitle": "Exploring Outcomes and Characteristics of Myasthenia Gravis 2"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-01-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Neurological Outpatients",
+      "interventionNames": [
+       "Other: Blood sample"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Blood sample"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00716066",
+    "briefTitle": "Autologous Stem Cell Transplant for Neurologic Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2008-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment (immunosuppressive therapy followed by transplant)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Anti-Thymocyte Globulin",
+       "Procedure: Autologous Hematopoietic Stem Cell Transplantation",
+       "Drug: Carmustine",
+       "Drug: Cytarabine",
+       "Drug: Etoposide",
+       "Other: Laboratory Biomarker Analysis",
+       "Drug: Melphalan",
+       "Procedure: Peripheral Blood Stem Cell Transplantation",
+       "Drug: Prednisone",
+       "Procedure: Syngeneic Bone Marrow Transplantation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-Thymocyte Globulin"
+     },
+     {
+      "name": "Autologous Hematopoietic Stem Cell Transplantation"
+     },
+     {
+      "name": "Carmustine"
+     },
+     {
+      "name": "Cytarabine"
+     },
+     {
+      "name": "Etoposide"
+     },
+     {
+      "name": "Laboratory Biomarker Analysis"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Peripheral Blood Stem Cell Transplantation"
+     },
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Syngeneic Bone Marrow Transplantation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07125105",
+    "briefTitle": "Integrating Art Therapy and Adapted Physical Activity: Toward Improved Quality of Life in Patients With Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adapted Physical Activity Only",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Adapted Physical Activity Only"
+      ]
+     },
+     {
+      "label": "Adapted Physical Activity + Art Therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Adapted Physical Activity + Art Therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adapted Physical Activity Only"
+     },
+     {
+      "name": "Adapted Physical Activity + Art Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01179893",
+    "briefTitle": "Intravenous Immunoglobulin and Plasma Exchange in Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IVIG",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: IVIG"
+      ]
+     },
+     {
+      "label": "PLEX",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: PLEX"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IVIG"
+     },
+     {
+      "name": "PLEX"
+     }
+    ]
+   }
+  }
+ }
+]

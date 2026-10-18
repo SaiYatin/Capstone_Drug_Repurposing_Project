@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 43,
+ "top": [
+  {
+   "pmid": "31069604",
+   "title": "Dexamethasone inhibits cytokine production in PBMC from systemic sclerosis patients.",
+   "year": "2019"
+  },
+  {
+   "pmid": "23572409",
+   "title": "Pomalidomide: first global approval.",
+   "year": "2013"
+  },
+  {
+   "pmid": "19736435",
+   "title": "Systemic sclerosis and dexamethasone cyclophosphamide pulse therapy.",
+   "year": "2009"
+  }
+ ]
+}

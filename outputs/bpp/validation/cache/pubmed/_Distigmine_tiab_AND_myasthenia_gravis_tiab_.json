@@ -1,0 +1,21 @@
+{
+ "term": "\"Distigmine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 7,
+ "top": [
+  {
+   "pmid": "31614352",
+   "title": "Sustainable Effects of Distigmine Bromide on Urinary Bladder Contractile Function.",
+   "year": "2020"
+  },
+  {
+   "pmid": "31257280",
+   "title": "Effects of Distigmine on the Mechanical Activity of Urinary Bladder Smooth Muscle.",
+   "year": "2019"
+  },
+  {
+   "pmid": "33518645",
+   "title": "[Mechanism of the Long-lasting Potentiating Effect of Distigmine on Urinary Bladder Motility].",
+   "year": "2021"
+  }
+ ]
+}

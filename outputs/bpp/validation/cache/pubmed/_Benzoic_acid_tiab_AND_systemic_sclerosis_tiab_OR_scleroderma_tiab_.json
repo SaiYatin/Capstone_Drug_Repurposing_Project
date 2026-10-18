@@ -1,0 +1,11 @@
+{
+ "term": "\"Benzoic acid\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "33331912",
+   "title": "The intracellular chloride channel 4 (CLIC4) activates systemic sclerosis fibroblasts.",
+   "year": "2021"
+  }
+ ]
+}

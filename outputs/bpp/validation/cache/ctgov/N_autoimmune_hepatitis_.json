@@ -1,0 +1,146 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03593460",
+    "briefTitle": "Phase II AutoImmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2019-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "sPIF 1 mg/kg (Starting Dose)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Synthetic PreImplantation Factor"
+      ]
+     },
+     {
+      "label": "sPIF 2 mg/kg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Synthetic PreImplantation Factor"
+      ]
+     },
+     {
+      "label": "sPIF 3 mg/kg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Synthetic PreImplantation Factor"
+      ]
+     },
+     {
+      "label": "sPIF 4 mg/kg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Synthetic PreImplantation Factor"
+      ]
+     },
+     {
+      "label": "sPIF 5 mg/kg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Synthetic PreImplantation Factor"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Synthetic PreImplantation Factor"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02556372",
+    "briefTitle": "Liver Test Study of Using JKB-122 in Autoimmune Hepatitis (AIH) Patients Who Are Refractory or Intolerant to Current Therapies"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "JKB-122",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JKB-122"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "JKB-122"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04902807",
+    "briefTitle": "Conception of a Diagnosis, Prognosis and Therapeutic Decision Tool for Patients With Autoimmunity and Inflammation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-09-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients",
+      "interventionNames": [
+       "Biological: Collection of samples"
+      ]
+     },
+     {
+      "label": "Patients' relatives (control)",
+      "interventionNames": [
+       "Biological: Collection of samples"
+      ]
+     },
+     {
+      "label": "Patients with unrelated diseases (control)",
+      "interventionNames": [
+       "Biological: Collection of samples"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Collection of samples"
+     }
+    ]
+   }
+  }
+ }
+]

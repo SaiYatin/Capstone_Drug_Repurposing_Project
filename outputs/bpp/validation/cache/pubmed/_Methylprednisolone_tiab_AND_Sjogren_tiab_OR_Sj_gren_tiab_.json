@@ -1,0 +1,21 @@
+{
+ "term": "\"Methylprednisolone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 174,
+ "top": [
+  {
+   "pmid": "37667931",
+   "title": "Efficacy and safety of iguratimod combined with methylprednisolone for primary Sj\u00f6gren's syndrome: a meta-analysis and trial sequential analysis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "9642746",
+   "title": "[Neurosarcoidosis].",
+   "year": "1998"
+  },
+  {
+   "pmid": "40159161",
+   "title": "Sj\u00f6gren's Syndrome with Sensory Neuronopathy and Polyradiculoneuropathy.",
+   "year": "2025"
+  }
+ ]
+}

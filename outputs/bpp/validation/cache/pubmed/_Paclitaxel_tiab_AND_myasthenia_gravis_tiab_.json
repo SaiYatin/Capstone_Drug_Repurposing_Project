@@ -1,0 +1,21 @@
+{
+ "term": "\"Paclitaxel\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 12,
+ "top": [
+  {
+   "pmid": "35871278",
+   "title": "Induction chemotherapy with carboplatin and paclitaxel for thymoma in acute respiratory distress due to myasthenia gravis: a case report.",
+   "year": "2022"
+  },
+  {
+   "pmid": "41169950",
+   "title": "Adverse events beyond the RUBY trial: reporting immunotherapy-associated myocarditis, myositis, and myasthenia gravis in a real-world endometrial cancer case.",
+   "year": "2025"
+  },
+  {
+   "pmid": "42261457",
+   "title": "Refractory Pembrolizumab-Induced Myocarditis-Myositis-Myasthenia Gravis Overlap Syndrome With Concurrent Hepatitis and Thyroiditis in Endometrial Carcinoma: A Case Report.",
+   "year": "2026"
+  }
+ ]
+}

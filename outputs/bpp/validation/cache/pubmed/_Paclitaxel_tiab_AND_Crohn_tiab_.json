@@ -1,0 +1,16 @@
+{
+ "term": "\"Paclitaxel\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "40929958",
+   "title": "Integrative multi-omics identifies S100A8/IGFBP5/CTSK/S100P as dual diagnostic biomarkers and therapeutic targets in Crohn's disease: from computational discovery to preclinical validation.",
+   "year": "2025"
+  },
+  {
+   "pmid": "29280707",
+   "title": "Successful conservative treatment of enterocutaneous fistula with cyanoacrylate surgical sealant: case report.",
+   "year": "2017"
+  }
+ ]
+}

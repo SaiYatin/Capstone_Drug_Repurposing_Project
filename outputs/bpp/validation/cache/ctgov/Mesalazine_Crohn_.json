@@ -1,0 +1,959 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06878495",
+    "briefTitle": "Efficacy and Safety of Discontinuing 5-ASA in Patients With Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-06-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "5-ASA Discontinuation Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Discontinuation of 5-ASA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Discontinuation of 5-ASA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05386290",
+    "briefTitle": "A Multicentered Prospective Cohort Study of Chinese IBD Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-07-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UC patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Vedolizumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     },
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Ustekinumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01696942",
+    "briefTitle": "Cimzia Versus Mesalamine for Crohn's Recurrence"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2013-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cimzia treatment arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cimzia"
+      ]
+     },
+     {
+      "label": "Mesalamine treatment arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mesalamine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cimzia"
+     },
+     {
+      "name": "Mesalamine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03261206",
+    "briefTitle": "Stopping Aminosalicylate Therapy in Inactive Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2017-11-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "5-ASA Continuation",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "5-ASA Withdrawal",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: 5-ASA Withdrawal"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "5-ASA Withdrawal"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07818473",
+    "briefTitle": "Conventional vs Biologic Therapy in Pediatric IBD"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Conventional Therapy"
+     },
+     {
+      "label": "Biologic Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02044952",
+    "briefTitle": "Efficacy and Safety Study of Tripterygium Glycoside in the Treatment of Crohn's Disease for Induction Remission"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mesalazine, Tripterygium glycosides",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mesalazine, Tripterygium glycosides"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mesalazine, Tripterygium glycosides"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00300118",
+    "briefTitle": "Oral Budesonide vs. Oral Mesalazine in Active Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: budesonide"
+      ]
+     },
+     {
+      "label": "B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: mesalazine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "budesonide"
+     },
+     {
+      "name": "mesalazine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07799428",
+    "briefTitle": "Bacillus Probiotic Spores in Supporting the Treatment of Chronic Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: RO"
+      ]
+     },
+     {
+      "label": "COLON",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: LiveSpo\u00ae COLON"
+      ]
+     },
+     {
+      "label": "DIA30-COLON",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Combination Product: LiveSpo\u00ae DIA30",
+       "Combination Product: LiveSpo\u00ae COLON"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "RO"
+     },
+     {
+      "name": "LiveSpo\u00ae DIA30"
+     },
+     {
+      "name": "LiveSpo\u00ae COLON"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00745329",
+    "briefTitle": "The Effect of Infliximab on Sperm Quality"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2008-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "2",
+      "interventionNames": [
+       "Other: sperm quality test"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "sperm quality test"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02769494",
+    "briefTitle": "The Efficacy of Topical Mesalazine Sustained-Release Tablets in Crohn's Disease Patients With Oral Ulcer"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2016-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mesalazine Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mesalazine Sustained-Release Tablets"
+      ]
+     },
+     {
+      "label": "Riboflavin Sodium Phosphate Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Riboflavin Sodium Phosphate Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mesalazine Sustained-Release Tablets"
+     },
+     {
+      "name": "Riboflavin Sodium Phosphate Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02335281",
+    "briefTitle": "Standardized Fecal Microbiota Transplantation for Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2015-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standardized FMT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: FMT"
+      ]
+     },
+     {
+      "label": "Mesalazine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mesalazine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "FMT"
+     },
+     {
+      "name": "Mesalazine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01331551",
+    "briefTitle": "Mesalamine and Reproductive Health Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-05"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "men with inflammatory bowel disease"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01349504",
+    "briefTitle": "Adherence to Mesalamine Profile for Patients With Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mesalmine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00167882",
+    "briefTitle": "The Influence of 5-Aminosalicylates on Thiopurine Metabolite Levels"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "5-aminosalicylate (Pentasa, Ferring)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00245505",
+    "briefTitle": "The Effect on Mucosal Healing With Pentasa Sachet in Mild to Moderate Active \"Drug: Crohn's Disease\""
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Mesalazine (Mesalamine)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01514240",
+    "briefTitle": "Phase III Study of D9421-C 9 mg in Patients With Active Crohn's Disease in Japan"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "D9421-C",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: D9421-C capsule 3 mg"
+      ]
+     },
+     {
+      "label": "Mesalazine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mesalazine tablets"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "D9421-C capsule 3 mg"
+     },
+     {
+      "name": "Mesalazine tablets"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01505855",
+    "briefTitle": "Efficacy Study of Pneumococcal Vaccination in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "anti-TNF only",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Combined immunosuppression",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Immunomodulator only",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     },
+     {
+      "label": "Non-immunosuppression",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 23-valent polysaccharide pneumococcal vaccine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "23-valent polysaccharide pneumococcal vaccine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03283085",
+    "briefTitle": "A Safety Extension Study of Ontamalimab in Participants With Moderate to Severe Ulcerative Colitis or Crohn's Disease (AIDA)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-02-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ulcerative Colitis (UC): Ontamalimab 25 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 25 mg Ontamalimab"
+      ]
+     },
+     {
+      "label": "UC: Ontamalimab 25mg then 75 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 25 mg Ontamalimab",
+       "Drug: 75 mg Ontamalimab"
+      ]
+     },
+     {
+      "label": "UC: Ontamalimab 75 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 75 mg Ontamalimab"
+      ]
+     },
+     {
+      "label": "Crohn's disease (CD): Ontamalimab 25 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 25 mg Ontamalimab"
+      ]
+     },
+     {
+      "label": "CD: Ontamalimab 25mg then 75 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 25 mg Ontamalimab",
+       "Drug: 75 mg Ontamalimab"
+      ]
+     },
+     {
+      "label": "CD: Ontamalimab 75 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 75 mg Ontamalimab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "25 mg Ontamalimab"
+     },
+     {
+      "name": "75 mg Ontamalimab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03553472",
+    "briefTitle": "Identifying Young Inflammatory Bowel Disease Patients at Risk for Herpes Zoster"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-immunosuppressed IBD patients"
+     },
+     {
+      "label": "Thiopurine group"
+     },
+     {
+      "label": "Anti-TNF therapy"
+     },
+     {
+      "label": "Combination therapy"
+     },
+     {
+      "label": "Healthy Control"
+     },
+     {
+      "label": "Vedolizumab therarpy"
+     },
+     {
+      "label": "Prednisone and Anti-TNF therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00976690",
+    "briefTitle": "Comparison Azathioprine to Mesalazine for the Prevention of Postoperative Recurrence in the Crohn Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine OR Mesalazine"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine OR Mesalazine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine OR Mesalazine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00862121",
+    "briefTitle": "A Study With Pentasa in Patients With Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mesalazine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pentasa"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pentasa"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00225810",
+    "briefTitle": "A Study Comparing the Acceptability of Pentasa\u00ae Sachets Versus Pentasa\u00ae Tablets in Children With Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Crohn's Disease"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00946946",
+    "briefTitle": "Preventing Postoperative Relapse in Crohn's Disease Patients at Risk: Azathioprine Versus Mesalazine"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Azathioprine",
+       "Drug: Mesalazine placebo"
+      ]
+     },
+     {
+      "label": "Mesalazine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mesalazine",
+       "Drug: Azathioprine placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Mesalazine"
+     },
+     {
+      "name": "Azathioprine placebo"
+     },
+     {
+      "name": "Mesalazine placebo"
+     }
+    ]
+   }
+  }
+ }
+]

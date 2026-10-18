@@ -1,0 +1,95 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06900777",
+    "briefTitle": "Oral Tacrolimus vs Dexamethasone Micro-pulse Therapy in Pediatric Rapidly Progressing Vitiligo: A Multicenter RCT"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tacrolimus Treatment Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     },
+     {
+      "label": "Dexamethasone Comparison Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tacrolimus"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03358082",
+    "briefTitle": "Effectivness of Topical Tacrolimus Monotherapy in Patients With Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tacrolimus group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Tacrolimus 0.03% Ointment"
+      ]
+     },
+     {
+      "label": "Hydrocortisone group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Hydrocortisone Acetate 1% Ointment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tacrolimus 0.03% Ointment"
+     },
+     {
+      "name": "Hydrocortisone Acetate 1% Ointment"
+     }
+    ]
+   }
+  }
+ }
+]

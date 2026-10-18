@@ -1,0 +1,11 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "32756151",
+   "title": "Pulmonary mucormycosis following autologous hematopoietic stem cell transplantation for rapidly progressive diffuse cutaneous systemic sclerosis: A case report.",
+   "year": "2020"
+  }
+ ]
+}

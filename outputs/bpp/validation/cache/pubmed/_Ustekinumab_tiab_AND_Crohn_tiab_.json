@@ -1,0 +1,21 @@
+{
+ "term": "\"Ustekinumab\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 1440,
+ "top": [
+  {
+   "pmid": "39018531",
+   "title": "Risankizumab versus Ustekinumab for Moderate-to-Severe Crohn's Disease.",
+   "year": "2024"
+  },
+  {
+   "pmid": "27959607",
+   "title": "Ustekinumab as Induction and Maintenance Therapy for Crohn's Disease.",
+   "year": "2016"
+  },
+  {
+   "pmid": "35691323",
+   "title": "Ustekinumab versus adalimumab for induction and maintenance therapy in biologic-naive patients with moderately to severely active Crohn's disease: a multicentre, randomised, double-blind, parallel-group, phase 3b trial.",
+   "year": "2022"
+  }
+ ]
+}

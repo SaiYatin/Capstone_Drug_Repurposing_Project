@@ -1,0 +1,11 @@
+{
+ "term": "\"Acalabrutinib\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "35628931",
+   "title": "Bruton's Kinase Inhibitors for the Treatment of Immunological Diseases: Current Status and Perspectives.",
+   "year": "2022"
+  }
+ ]
+}

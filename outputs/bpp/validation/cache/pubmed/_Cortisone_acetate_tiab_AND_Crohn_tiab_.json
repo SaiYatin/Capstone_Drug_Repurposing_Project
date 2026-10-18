@@ -1,0 +1,16 @@
+{
+ "term": "\"Cortisone acetate\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "23887940",
+   "title": "Glucocorticoids and microbiota regulate ontogeny of intestinal fucosyltransferase 2 requisite for gut homeostasis.",
+   "year": "2013"
+  },
+  {
+   "pmid": "34220206",
+   "title": "Adrenal Insufficiency Secondary to Septic Shock in a Male Patient with Iatrogenic Cushing's Syndrome: 2 sides of the Same Coin?",
+   "year": "2021"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "term": "\"Ampicillin\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "27920981",
+   "title": "Infective endocarditis and Sj\u00f6gren's syndrome diagnosed simultaneously.",
+   "year": "2017"
+  }
+ ]
+}

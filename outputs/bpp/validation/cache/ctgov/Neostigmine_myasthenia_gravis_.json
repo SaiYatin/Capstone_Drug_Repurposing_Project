@@ -1,0 +1,151 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05091177",
+    "briefTitle": "Study on Correlation Between Cytomegalovirus and Ocular Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "the patience group",
+      "interventionNames": [
+       "Diagnostic Test: Serum acetylcholine receptor antibody, erythrocyte deposition rate, hypersensitive C protein, neostigmine test,thymus CT, low frequency repeated nerve stimulation"
+      ]
+     },
+     {
+      "label": "the normal group",
+      "interventionNames": [
+       "Diagnostic Test: Serum acetylcholine receptor antibody, erythrocyte deposition rate, hypersensitive C protein, neostigmine test,thymus CT, low frequency repeated nerve stimulation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Serum acetylcholine receptor antibody, erythrocyte deposition rate, hypersensitive C protein, neostigmine test,thymus CT, low frequency repeated nerve stimulation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06436768",
+    "briefTitle": "Efficacy and Safety of Sugammadex in Thoracoscopy Thymectomy for Chinese Adults With Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sugammadex group (S group)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sugammadex"
+      ]
+     },
+     {
+      "label": "Neostigmine group (N group)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Neostigmine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sugammadex"
+     },
+     {
+      "name": "Neostigmine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05694234",
+    "briefTitle": "Influences of Sugammadex on Postoperative Progress in Patients With Myasthenia Gravis Undergoing Video-assisted Thoracoscopic Thymectomy: Retrospective Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "sugammadex group"
+     },
+     {
+      "label": "AChEI group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05380128",
+    "briefTitle": "Association Study Between VDR Gene Polymorphisms and Risk and Features of MG in Han Chinese Population"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "MG group",
+      "interventionNames": [
+       "Genetic: Genotype analysis for VDR rs1544410, rs2228570, rs731236, and rs7975232 polymorphisms"
+      ]
+     },
+     {
+      "label": "Healthy control",
+      "interventionNames": [
+       "Genetic: Genotype analysis for VDR rs1544410, rs2228570, rs731236, and rs7975232 polymorphisms"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Genotype analysis for VDR rs1544410, rs2228570, rs731236, and rs7975232 polymorphisms"
+     }
+    ]
+   }
+  }
+ }
+]

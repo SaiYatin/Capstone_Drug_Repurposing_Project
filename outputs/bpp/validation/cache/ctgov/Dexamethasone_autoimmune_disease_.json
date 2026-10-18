@@ -1,0 +1,3861 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00909077",
+    "briefTitle": "The Efficacy of Dexamethasone Versus Dexamethasone Combined With Rituximab in Patients With Newly Diagnosed Idiopathic Thrombocytopenic Purpura (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone and Rituximab"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Dexamethasone and Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04812483",
+    "briefTitle": "Immunomodulation With Eltrombopag in ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard Arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: standard therapy (without eltrombopag): HD-DXM"
+      ]
+     },
+     {
+      "label": "Study Arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag (Revolade\u00ae)",
+       "Drug: standard therapy (without eltrombopag): HD-DXM"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Eltrombopag (Revolade\u00ae)"
+     },
+     {
+      "name": "standard therapy (without eltrombopag): HD-DXM"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00232193",
+    "briefTitle": "Safety/Effectiveness of Adding Monthly Dexamethasone to Weekly Avonex for MS"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IFN\u03b2+DS group"
+     },
+     {
+      "label": "IFN\u03b2 group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00631358",
+    "briefTitle": "Assessment of Inflammatory Biomarkers Expressed in a Sjogren's Population: Effect of a Topical Steroid Intervention"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Maxidex",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Maxidex"
+      ]
+     },
+     {
+      "label": "No treatment",
+      "type": "SHAM_COMPARATOR",
+      "interventionNames": [
+       "Other: No treatment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Maxidex"
+     },
+     {
+      "name": "No treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01734044",
+    "briefTitle": "rhTPO Combining Dexamethasone Versus High-dose Dexamethasone for Initial Treatment of ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "combination treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: recombinant human thrombopoietin (rhTPO); dexamethasone"
+      ]
+     },
+     {
+      "label": "single treatment group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "recombinant human thrombopoietin (rhTPO); dexamethasone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03252457",
+    "briefTitle": "Decitabine Combining Dexamethasone Versus Dexamethasone in Management of ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "combination treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Decitabine",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "single treatment group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Decitabine"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05383547",
+    "briefTitle": "Bortezomib for Treating Glomerular Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-08-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Glomerular disease patients",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bortezomib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bortezomib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04368598",
+    "briefTitle": "The Combination of High-dose Dexamethasone and Acetylcysteine as the Treatment of Newly-diagnosed ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High-dose Dexamethasone plus Acetylcysteine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Acetylcysteine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Acetylcysteine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00657410",
+    "briefTitle": "Prednisone or Dexamethasone in Newly Diagnosed, Previously Untreated Primary Immune Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ARM A - PDN",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: prednisone",
+       "Procedure: quality-of-life assessment"
+      ]
+     },
+     {
+      "label": "ARM B - DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: dexamethasone",
+       "Procedure: quality-of-life assessment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "dexamethasone"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "quality-of-life assessment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03692754",
+    "briefTitle": "Atorvastatin in Management of Newly Diagnosed ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AT with 10 mg/d",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Atorvastatin 10mg",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "AT with 20 mg/d",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Atorvastatin 20mg",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Atorvastatin 20mg"
+     },
+     {
+      "name": "Atorvastatin 10mg"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01976195",
+    "briefTitle": "High-dose Dexamethasone Combining Thalidomide Versus Dexamethasone Mono-therapy for Management of Newly-diagnosed ITP"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2013-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Thalidomide plus HD-Dexmamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Thalidomide"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Thalidomide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03993262",
+    "briefTitle": "Trial to Evaluate Efficacy and Safety of Bortezomib in Patients With Severe Autoimmune Encephalitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2020-05-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Interventional",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bortezomib"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bortezomib"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02334813",
+    "briefTitle": "Daily Prednisone Versus Pulsed Dexamethasone in Treatment-na\u00efve Adult Patients With Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Arm A: daily prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Arm B: pulsed dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00656656",
+    "briefTitle": "Immunoadsorption, Dexamethasone Pulse Therapy and Rituximab for Pemphigus"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunoadsorption/Dexamethasone/Rituximab",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Combination of Protein A Immunoadsorption, Rituximab, Dexamethasone plus Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Combination of Protein A Immunoadsorption, Rituximab, Dexamethasone plus Azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04968899",
+    "briefTitle": "IgIV Plus Prednisone vs High-dose Dexamethasone for ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-04-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Neofordex\u00ae"
+      ]
+     },
+     {
+      "label": "Control",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Intravenous immunoglobulins"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Neofordex\u00ae"
+     },
+     {
+      "name": "Intravenous immunoglobulins"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00991939",
+    "briefTitle": "Initial Treatment of Patients With Immune Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2010-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High dose pulse dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone USP Micronized"
+      ]
+     },
+     {
+      "label": "Standard prednisone therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone USP Micronized"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04094805",
+    "briefTitle": "A Multicenter Randomized Study of Vitamin D Combined With HD-DXM Versus HD-DXM for the Treatment of ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rocaltrol Combining HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rocaltrol",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rocaltrol"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rocaltrol"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02642380",
+    "briefTitle": "Different Cycles of High-dose Dexamethasone for Initial Management of Primary Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2015-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "4 cycles",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone (4 cycles)"
+      ]
+     },
+     {
+      "label": "1 cycle",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone (1 cycle)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone (4 cycles)"
+     },
+     {
+      "name": "Dexamethasone (1 cycle)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07798050",
+    "briefTitle": "Selective Mediterranean Diet in Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mediterranean Diet + Standard Therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Selective Mediterranean Diet",
+       "Drug: Standard Pharmacological Therapy for ITP"
+      ]
+     },
+     {
+      "label": "Standard Therapy Only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standard Pharmacological Therapy for ITP"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Selective Mediterranean Diet"
+     },
+     {
+      "name": "Standard Pharmacological Therapy for ITP"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05012033",
+    "briefTitle": "Evaluation of High Dose Prednisolone Pharmacokinetics in the Acute and Chronic Setting"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-04-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group A",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     },
+     {
+      "label": "Group B",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     },
+     {
+      "label": "Group C",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "No intervention - prednisolone is taken as part if routine clinical care."
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06846255",
+    "briefTitle": "Comparing DCP and DAP for Pemphigus Vulgaris"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-06-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dexamethasone Cyclophosphamide Pulse therapy group (DCP group)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone Cyclophosphamide Pulse therapy"
+      ]
+     },
+     {
+      "label": "Dexamethasone Azathioprine Pulse therapy group (DAP group)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone Azathioprine Pulse therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone Cyclophosphamide Pulse therapy"
+     },
+     {
+      "name": "Dexamethasone Azathioprine Pulse therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02666443",
+    "briefTitle": "Low Dose Dexamethasone in Supraclavicular Blocks"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Control (C)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Control intervention (no dexamethasone)"
+      ]
+     },
+     {
+      "label": "Peri-neural (N)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Peri-neural Dexamethasone 1 mg"
+      ]
+     },
+     {
+      "label": "Intravenous",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Intravenous Dexamethasone 1 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Control intervention (no dexamethasone)"
+     },
+     {
+      "name": "Peri-neural Dexamethasone 1 mg"
+     },
+     {
+      "name": "Intravenous Dexamethasone 1 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07019545",
+    "briefTitle": "A PHASE II TRIAL AIMING TO INVESTIGATE THE SAFETY AND CLINICAL ACTIVITY OF BELANTAMAB MAFODOTIN IN ADULT PATIENTS WITH PRIMARY IMMUNE THROMBOCYTOPENIA PREVIOUSLY TREATED WITH A THROMBOPOIETIN RECEPTOR AGONIST AND/OR RITUXIMAB AFTER CORTICOSTEROID FIRST-LINE THERAPY"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-06-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Single Arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Belantamab Mafodotin",
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Belantamab Mafodotin"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05479448",
+    "briefTitle": "Predictive Factors for Treatment Response in Patients With Newly-diagnosed Polymyalgia Rheumatica and Giant Cell Arteritis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2022-06-03"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Data collection for cellular analyses (Immune subset composition, GCR expression, in vitro steroid responsiveness)"
+     },
+     {
+      "name": "Data collection for exploratory analyses of endogenous steroid hormones"
+     },
+     {
+      "name": "Data collection for correlation between clinical defined and lab defined GC responsivness"
+     },
+     {
+      "name": "Data collection for Prednisone metabolism"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06658834",
+    "briefTitle": "A Study of Romiplostim N01 as the First-line Treatment for Newly Diagnosed Adult Patients With ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2024-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "romiplostim combined with glucocorticoids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone Combined with romiplostim N01"
+      ]
+     },
+     {
+      "label": "glucocorticoids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone monotherapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone Combined with romiplostim N01"
+     },
+     {
+      "name": "Dexamethasone monotherapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00127764",
+    "briefTitle": "European Trial of Adjuvant Oral Glucocorticoid Pulse Therapy in Pemphigus"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2001-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "dexamethasone (50mg 1dd6, 3 consecutive days/month)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01652599",
+    "briefTitle": "Eltrombopag and High-dose Dexamethasone as First Line Treatment for IT"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Eltrombopag and dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag and dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Eltrombopag and dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07100990",
+    "briefTitle": "Treatment of Inflammatory Myelitis and Optic Neuritis With Early vs Rescue Plasma Exchange (TIMELY-PLEX)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-07-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Optic Neuritis (ON) \"Rescue PLEX\"",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: High-dose corticosteroids (HDCS)"
+      ]
+     },
+     {
+      "label": "Optic Neuritis (ON) \"Early PLEX\"",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: High-dose corticosteroids (HDCS) and PLEX"
+      ]
+     },
+     {
+      "label": "Transverse Myelitis \"Rescue PLEX\"",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: High-dose corticosteroids (HDCS)"
+      ]
+     },
+     {
+      "label": "Transverse Myelitis \"Early PLEX\"",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: High-dose corticosteroids (HDCS) and PLEX"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "High-dose corticosteroids (HDCS)"
+     },
+     {
+      "name": "High-dose corticosteroids (HDCS) and PLEX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01316770",
+    "briefTitle": "Dexamethasone Irrigation of the Parotid Glands in Primary Sj\u00f6gren's Syndrome Subjects"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Parotid Irrigation",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Parotid Irrigation"
+      ]
+     },
+     {
+      "label": "Dexamethasone Parotid Irrigation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone Parotid Irrigation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone Parotid Irrigation"
+     },
+     {
+      "name": "Placebo Parotid Irrigation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06176235",
+    "briefTitle": "Teriflunomide Plus High-dose Dexamethasone as First-line Treatment in Newly Diagnosed Primary Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2023-12-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Teriflunomide plus Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Teriflunomide",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Teriflunomide"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07064889",
+    "briefTitle": "The Combination of Upadacitinib and High-dose Dexamethasone as First-line Treatment in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-07-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Upadacitinib and HD-DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Upadacitinib"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Upadacitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03580291",
+    "briefTitle": "Human Umbilical Cord Mesenchymal Stem Cells Treatment for Lupus Nephritis (LN)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-08-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mesenchymal stem cells",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Mesenchymal stem cells",
+       "Drug: Placebo of Mycophenolate Mofetil"
+      ]
+     },
+     {
+      "label": "Mycophenolate Mofetil",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil",
+       "Other: Placebo of Mesenchymal stem cells"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mesenchymal stem cells"
+     },
+     {
+      "name": "Mycophenolate Mofetil"
+     },
+     {
+      "name": "Placebo of Mesenchymal stem cells"
+     },
+     {
+      "name": "Placebo of Mycophenolate Mofetil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01339455",
+    "briefTitle": "Autologous Hematopoietic Stem Cell Transplant in Neuromyelitis Optica"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AHSCT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: AHSCT"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AHSCT"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05232825",
+    "briefTitle": "A Phase III, Non-Inferiority, Randomized, Open-Label, Parallel Group, Multicenter Study To Investigate The Pharmacokinetics, Pharmacodynamics, Safety And Radiological And Clinical Effects Of Subcutaneous Ocrelizumab Versus Intravenous Ocrelizumab In Patients With Multiple Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-05-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ocrelizumab: Intravenous (IV) formulation",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ocrelizumab IV",
+       "Drug: Methylprednisolone IV",
+       "Drug: Diphenhydramine IV"
+      ]
+     },
+     {
+      "label": "Ocrelizumab: Subcutaneous (SC) formulation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ocrelizumab SC",
+       "Drug: Dexamethasone given orally",
+       "Drug: Desloratadine given orally"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ocrelizumab IV"
+     },
+     {
+      "name": "Ocrelizumab SC"
+     },
+     {
+      "name": "Methylprednisolone IV"
+     },
+     {
+      "name": "Diphenhydramine IV"
+     },
+     {
+      "name": "Dexamethasone given orally"
+     },
+     {
+      "name": "Desloratadine given orally"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04540133",
+    "briefTitle": "Dexamethasone Solution and Dexamethasone in Mucolox\u2122"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-12-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "dexamethasone 0.5mg/5ml solution in Mucolox\u2122 (group A)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: dexamethasone 0.5mg/5ml solution in Mucolox\u2122"
+      ]
+     },
+     {
+      "label": "dexamethasone 0.5mg/5ml solution (Arm B)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: dexamethasone 0.5mg/5ml solution"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "dexamethasone 0.5mg/5ml solution"
+     },
+     {
+      "name": "dexamethasone 0.5mg/5ml solution in Mucolox\u2122"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02644044",
+    "briefTitle": "Intrathecal Methotrexate for Progressive Multiple Sclerosis: An Open Label Single Arm Study"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Intrathecal methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Intrathecal methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06992128",
+    "briefTitle": "Romiplostim N01 Combined With Glucocorticoids as the First-line Treatment for Newly Diagnosed Adult Primary Immune Thrombocytopenia: A Multicenter, Interventional Trial"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-05-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "romiplostim N01 combined with glucocorticoids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Romiplostim N01 combined with dexamethasone"
+      ]
+     },
+     {
+      "label": "glucocorticoids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone monotherapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Romiplostim N01 combined with dexamethasone"
+     },
+     {
+      "name": "Dexamethasone monotherapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04320225",
+    "briefTitle": "Connection Between Vitamin D Level and the Efficacy of Dexamethasone in Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Lower vitamin D level group",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Higher vitamin D level group",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03033199",
+    "briefTitle": "Clinical Trial of Gut Microbiota in the Management of Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Probiotic Agent Combining HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Probiotic Agent",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Probiotic Agent"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04747080",
+    "briefTitle": "The Combination of Tacrolimus and High-dose Dexamethasone as First-line Treatment in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TAC and HD-DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Tacrolimus"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05861297",
+    "briefTitle": "Immune Thrombocytopenia Management in Adults"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-05-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Control group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "PSL - AZA group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisolone and Azathioprine"
+      ]
+     },
+     {
+      "label": "The RTX group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "The ELTRO group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag"
+      ]
+     },
+     {
+      "label": "The ROMP group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Romiplostim"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Prednisolone and Azathioprine"
+     },
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Eltrombopag"
+     },
+     {
+      "name": "Romiplostim"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05023915",
+    "briefTitle": "A Multicenter Randomized Open-label Study of Diammonium Glycyrrhizinate Enteric-coated Capsule Plus DXM Versus DXM in Treatment of ITP"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2021-08-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "diammonium glycyrrhizinate enteric-coated capsule + high-dose dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: dexamethasone",
+       "Drug: diammonium glycyrrhizinate enteric-coated capsule"
+      ]
+     },
+     {
+      "label": "High-dose dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "dexamethasone"
+     },
+     {
+      "name": "diammonium glycyrrhizinate enteric-coated capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07315373",
+    "briefTitle": "Optimal Dose of Zanubrutinib to Treat Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Zanubrutinib 80mg/d + Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Zanubrutinib 80mg/d",
+       "Drug: High dose dexamethasone"
+      ]
+     },
+     {
+      "label": "Zanubrutinib 160mg/d + Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: High dose dexamethasone",
+       "Drug: Zanubrutinib 160mg/d"
+      ]
+     },
+     {
+      "label": "Zanubrutinib 240mg/d + Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: High dose dexamethasone",
+       "Drug: Zanubrutinib 240mg/d"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Zanubrutinib 80mg/d"
+     },
+     {
+      "name": "High dose dexamethasone"
+     },
+     {
+      "name": "Zanubrutinib 160mg/d"
+     },
+     {
+      "name": "Zanubrutinib 240mg/d"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03010202",
+    "briefTitle": "The PROLONG Trial - Rituximab Maintenance Therapy in ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-01-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Induction phase: Rituximab+Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Induction phase: Rituximab",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "Maintenance phase: Rituximab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "Maintenance phase: Placebo",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03965624",
+    "briefTitle": "Efficacy and Safety of Ixazomib and Dexamethasone Refractory Autoimmune Cytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2019-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ixazomib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ninlaro"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ninlaro"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02751593",
+    "briefTitle": "Thrombocytopenia in Gestational Period"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04047628",
+    "briefTitle": "Best Available Therapy Versus Autologous Hematopoietic Stem Cell Transplant for Multiple Sclerosis (BEAT-MS)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2020-08-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AHSCT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous Hematopoietic Stem Cell Transplantation"
+      ]
+     },
+     {
+      "label": "Best Available Therapy (BAT)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Best Available Therapy (BAT)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Autologous Hematopoietic Stem Cell Transplantation"
+     },
+     {
+      "name": "Best Available Therapy (BAT)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03337165",
+    "briefTitle": "Autologous Tolerogenic Dendritic Cells for Treatment of Patients With Rheumatoid Arthritis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "tolerogenic dendritic cells",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: tolerogenic dendritic cells"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "tolerogenic dendritic cells"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07559331",
+    "briefTitle": "High-Dose Dexamethasone Combined With Orelabrutinib Versus High-Dose Dexamethasone Combined With Placebo in Adult Patients With Newly Diagnosed Primary Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-04-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Control Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: High-Dose Dexamethasone Combined with Placebo"
+      ]
+     },
+     {
+      "label": "Experimental Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: High-Dose Dexamethasone Combined with Orelabrutinib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "High-Dose Dexamethasone Combined with Orelabrutinib"
+     },
+     {
+      "name": "High-Dose Dexamethasone Combined with Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04128358",
+    "briefTitle": "Triple Therapy in Patients With Idiopathic Thrombocytopenic Purpura : What is Behind?"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group on high dose dexamethasone, cyclosporin and rituximab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Diagnostic Test: Serological assay for blood born viral hepatitis",
+       "Diagnostic Test: Quantitative microbiological test for HCV"
+      ]
+     },
+     {
+      "label": "Group on steroids only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Diagnostic Test: Serological assay for blood born viral hepatitis",
+       "Diagnostic Test: Quantitative microbiological test for HCV"
+      ]
+     },
+     {
+      "label": "Placebo group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Diagnostic Test: Serological assay for blood born viral hepatitis",
+       "Diagnostic Test: Quantitative microbiological test for HCV"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Serological assay for blood born viral hepatitis"
+     },
+     {
+      "name": "Quantitative microbiological test for HCV"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01534169",
+    "briefTitle": "Function of Regulatory T Cells Improved by Dexamethasone in Graves' Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Isotonic Na chloride",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02050581",
+    "briefTitle": "A Chart Review of Rituximab Plus Repeated Cycles of Dexamethasone"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05369364",
+    "briefTitle": "The Combination of Zanubrutinib and High-dose Dexamethasone as First-line Treatment in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Zanubrutinib and HD-DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Zanubrutinib",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Zanubrutinib"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00608101",
+    "briefTitle": "Hypoglycemia Associated Autonomic Failure in Type 1 Diabetes Mellitus"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2010-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fludrocortisone"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fludrocortisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01356511",
+    "briefTitle": "High-dose Dexamethasone Versus Conventional Dose Prednisone for Initial Treatment of Primary Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Dexamethasone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05325593",
+    "briefTitle": "Romiplostim Plus Dexamethasone vs Dexamethasone in Patients With Newly Diagnosed Primary Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2022-12-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "romiplostim plus dexamethasone (ROM + DEX)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: romiplostim plus dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone (DEX)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "romiplostim plus dexamethasone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04346654",
+    "briefTitle": "A Study to Assess Efficacy and Safety of Eltrombopag in Combination With a Short Course of Dexamethasone in Patients With Newly Diagnosed ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-10-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Eltrombopag + Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Eltrombopag"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00331162",
+    "briefTitle": "Study of Alemtuzumab Versus Anti-thymocyte Globulin to Help Prevent Rejection in Kidney and Pancreas Transplantation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Alemtuzumab"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Anti-Thymocyte Globulin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Alemtuzumab"
+     },
+     {
+      "name": "Anti-Thymocyte Globulin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05435547",
+    "briefTitle": "Preoperative Corticosteroids in Autoimmune Thyroid Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02153060",
+    "briefTitle": "An Investigation of Dexamethasone With Different Doses in the Management of Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "20mg dexamethasone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "40mg dexamethasone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03998982",
+    "briefTitle": "Glycyrrhetinic Acid Combined With Dexamethasone in Management of Newly Diagnosed ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-06-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "glycyrrhetinic acid Combining HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Glycyrrhetinic Acid",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Glycyrrhetinic Acid"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02649504",
+    "briefTitle": "Rituximab and Dexamethasone Followed by Mycophenolate Mofetil or Placebo in Patients With Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2016-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "R+3D, MMF",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Drug: Dexamethasone",
+       "Drug: Mycophenolate mofetil"
+      ]
+     },
+     {
+      "label": "R+3D, Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Drug: Dexamethasone",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Mycophenolate mofetil"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00917241",
+    "briefTitle": "Prevention Relapse of Graves' Disease by Intrathyroid Injection of Dexamethasone"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "MMI+IID group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MMI combined with IID"
+      ]
+     },
+     {
+      "label": "MMI Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: MMI"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "MMI combined with IID"
+     },
+     {
+      "name": "MMI"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03830749",
+    "briefTitle": "Safety and Efficacy of Eltrombopag Plus Pulsed Dexamethasone for Subjects With Idiopathic Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Single Arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Eltrombopag"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01107951",
+    "briefTitle": "Low-dose Rituximab and High-dose Dexamethasone as First Line Treatment for ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab -dexamethasone",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Rituximab and dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab and dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00451594",
+    "briefTitle": "High Dose Dexamethasone Vs. Conventional Dose Prednisolone in Adult ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01734057",
+    "briefTitle": "Recombinant Human Thrombopoietin (rhTPO) Combining Rituximab Versus High-dose Dexamethasone for Initial Treatment of Primary Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2012-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "combinant treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: recombinant human thrombopoietin (rhTPO); rituximab"
+      ]
+     },
+     {
+      "label": "single treatment group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "recombinant human thrombopoietin (rhTPO); rituximab"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02834468",
+    "briefTitle": "DEX Combined With RTX, CSA and IVIG in the Management of Newly Diagnosed ITP Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: DEX Combined With RTX, CSA and IVIG"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "DEX Combined With RTX, CSA and IVIG"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05943691",
+    "briefTitle": "High-dose Dexamethasone Plus Hetrombopag vs High-dose Dexamethasone Alone as Frontline Treatment for Newly Diagnosed Adult Primary Immune Thrombocytopenia: A Prospective, Multicenter, Randomized Trial"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-09-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Hetrombopag plus High-dose Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: hetrombopag 5mg po qd",
+       "Drug: High-dose Dexamethasone"
+      ]
+     },
+     {
+      "label": "High-dose Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: High-dose Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "hetrombopag 5mg po qd"
+     },
+     {
+      "name": "High-dose Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05522465",
+    "briefTitle": "Short-course High-dose Prednisone and Dexamethasone in Children With ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-10-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "prednisone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02351622",
+    "briefTitle": "Caffeic Acid Tablets as a Second-line Therapy for ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "caffeic acid tablet and dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Caffeic acid",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Placebo and dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Caffeic acid"
+     },
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06842316",
+    "briefTitle": "Effects of Phytocannabinoids on Immune Response and Autophagy During Chronic Immune-mediated Inflammatory Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rheumatoid polyarthritis",
+      "interventionNames": [
+       "Other: 1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+      ]
+     },
+     {
+      "label": "Spondyloarthropathy",
+      "interventionNames": [
+       "Other: 1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+      ]
+     },
+     {
+      "label": "Psoriatic arthritis",
+      "interventionNames": [
+       "Other: 1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+      ]
+     },
+     {
+      "label": "Systemic lupus erythematosus",
+      "interventionNames": [
+       "Other: 1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+      ]
+     },
+     {
+      "label": "Sj\u00f6gren's syndrome",
+      "interventionNames": [
+       "Other: 1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "1 blood sample, 40 mL (collection during a blood test, part of the standard of care for this disease)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02556814",
+    "briefTitle": "Caffeic Acid Combining High-dose Dexamethasone in Management of ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "caffeic acid tablet and dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Caffeic acid tablets",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Placebo and dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Caffeic acid tablets"
+     },
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04217148",
+    "briefTitle": "The Combination of ATRA and High-dose Dexamethasone as First-line Treatment in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ATRA and HD-DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: ATRA"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "ATRA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07597668",
+    "briefTitle": "A Comparative Study of Pharmacokinetics, Pharmacodynamics, Safety, and Immunogenicity of RPH-035 and Ocrevus\u00ae in Patients With Relapsing-remitting or Secondary Progressive Multiple Sclerosis With Exacerbations"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "RPH-035",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: RPH-035"
+      ]
+     },
+     {
+      "label": "Ocrevus\u00ae",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ocrevus\u00ae"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "RPH-035"
+     },
+     {
+      "name": "Ocrevus\u00ae"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00770562",
+    "briefTitle": "A Study Evaluating the Addition of MabThera (Rituximab) to Standard Treatment in Patients With Idiopathic Thrombocytopenic Purpura (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone plus Rituximab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: rituximab",
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "rituximab"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01763658",
+    "briefTitle": "Oxidant Status and Effect of Antioxidant in Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2013-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Antioxidant, drug therapy for ITP",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Antox tablets(Mepaco)",
+       "Other: drug therapy for ITP"
+      ]
+     },
+     {
+      "label": "drug therapy for ITP",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: drug therapy for ITP"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Antox tablets(Mepaco)"
+     },
+     {
+      "name": "drug therapy for ITP"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05932524",
+    "briefTitle": "Low-dose Baricitinib Plus High-dose Dexamethasone for Patients With Newly Diagnosed Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-07-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Low-dose baricitinib plus high-dose dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Baricitinib 2 MG",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "High-dose dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Baricitinib 2 MG"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01882127",
+    "briefTitle": "All-Trans Retinoic Acid (ATRA) Combining Dexamethasone Versus High-dose Dexamethasone for Initial Treatment of Primary Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2013-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High dose-DEX",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "ATRA & High dose-DEX",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: All-Trans Retinoid Acid(ATRA)",
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "All-Trans Retinoid Acid(ATRA)"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04588194",
+    "briefTitle": "Romiplostim, Rituximab and Dexamethasone as Frontline Treatment for Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Romiplostim, Rituximab, Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Romiplostim",
+       "Drug: Rituximab",
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Romiplostim"
+     },
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04113915",
+    "briefTitle": "Viral Hepatitis B and C Infection in Patients With Idiopathic Thrombocytopenic Purpura Treated With Triple Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1",
+      "interventionNames": [
+       "Drug: triple therapy"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "interventionNames": [
+       "Drug: Steroids"
+      ]
+     },
+     {
+      "label": "Group 3"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "triple therapy"
+     },
+     {
+      "name": "Steroids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07065968",
+    "briefTitle": "The Efficacy and Safety of Combined Teriflunomide and High-dose Dexamethasone in Newly Diagnosed Primary Immune Thrombocytopenia (TEMPO-2)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-08-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Teriflunomide plus Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Teriflunomide",
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Teriflunomide"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02834286",
+    "briefTitle": "Rituximab, Eltrombopag and Dexamethasone as Frontline Treatment for Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2015-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab, eltrombopag and dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Drug: Eltrombopag",
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Eltrombopag"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00674141",
+    "briefTitle": "Nasal Administration of Dexamethasone for Multiple Sclerosis (MS) Treatment"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2008-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Dexamethasone soduim phosphate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone soduim phosphate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07340463",
+    "briefTitle": "The Efficacy and Safety of Biologics (Belimumab/ Telitacicept) Induction Therapy in Proliferative Lupus Nephritis Patients for 6 Months Compared With Mycophenolate Mofetil Treatment"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Biologics Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids",
+       "Biological: belimumab",
+       "Biological: Telitacicept"
+      ]
+     },
+     {
+      "label": "Standard of Care (SOC) Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Glucocorticoids",
+       "Drug: Mycophenolate mofetil (MMF)"
+      ]
+     },
+     {
+      "label": "Triple Therapy Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids",
+       "Biological: belimumab",
+       "Biological: Telitacicept",
+       "Drug: Mycophenolate mofetil (MMF)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Glucocorticoids"
+     },
+     {
+      "name": "belimumab"
+     },
+     {
+      "name": "Telitacicept"
+     },
+     {
+      "name": "Mycophenolate mofetil (MMF)"
+     }
+    ]
+   }
+  }
+ }
+]

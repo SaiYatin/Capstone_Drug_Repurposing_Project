@@ -1,0 +1,78 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00632242",
+    "briefTitle": "ARC1779 Injection in Patients With Von Willebrand Factor-Related Platelet Function Disorders"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TTP Remission Cohort 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "TTP Remission Cohort 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "TTP Remission Cohort 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "Acute TTP Cohort 4",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "vWD-Type2b Cohort 5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 226,
+ "top": [
+  {
+   "pmid": "36884206",
+   "title": "Undifferentiated Connective Tissue Disease: Comprehensive Review.",
+   "year": "2023"
+  },
+  {
+   "pmid": "31309547",
+   "title": "Interventions for morphea.",
+   "year": "2019"
+  },
+  {
+   "pmid": "31345158",
+   "title": "Systemic sclerosis medications and risk of scleroderma renal crisis.",
+   "year": "2019"
+  }
+ ]
+}

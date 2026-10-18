@@ -1,0 +1,720 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05284136",
+    "briefTitle": "Exclusion Diet vs corticosteroIds in patientS With activE Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's disease exclusion diet (CDED)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Crohn's disease exclusion diet (CDED)"
+      ]
+     },
+     {
+      "label": "Steroids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Oral prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Crohn's disease exclusion diet (CDED)"
+     },
+     {
+      "name": "Oral prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01880307",
+    "briefTitle": "Infliximab Top-down in Pediatric Crohn"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2013-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Top-down",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Azathioprine",
+       "Drug: Infliximab"
+      ]
+     },
+     {
+      "label": "Step-up",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine",
+       "Drug: Prednisolon"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Prednisolon"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04224558",
+    "briefTitle": "Stem Cell Transplantation in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2019-11-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "HSCT after mobilization and conditioning",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mesna",
+       "Drug: Cyclophosphamide",
+       "Drug: Filgrastim",
+       "Procedure: Apheresis catheter placement",
+       "Procedure: Leukapheresis",
+       "Drug: Fludarabine",
+       "Drug: Methylprednisolone",
+       "Drug: Diphenhydramine",
+       "Drug: Acetaminophen",
+       "Drug: anti-thymocyte globulin (rabbit)",
+       "Drug: lymphocyte immune globulin",
+       "Biological: Peripheral Blood Stem Cell Infusion",
+       "Drug: Cytoxan"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mesna"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Filgrastim"
+     },
+     {
+      "name": "Apheresis catheter placement"
+     },
+     {
+      "name": "Leukapheresis"
+     },
+     {
+      "name": "Fludarabine"
+     },
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "Diphenhydramine"
+     },
+     {
+      "name": "Acetaminophen"
+     },
+     {
+      "name": "anti-thymocyte globulin (rabbit)"
+     },
+     {
+      "name": "lymphocyte immune globulin"
+     },
+     {
+      "name": "Peripheral Blood Stem Cell Infusion"
+     },
+     {
+      "name": "Cytoxan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02033408",
+    "briefTitle": "Manipulating the Microbiome in IBD by Antibiotics and FMT"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Antibiotics in addition to steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AB (antibiotics)"
+      ]
+     },
+     {
+      "label": "Steroids only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: CS (corticosteroids) Only"
+      ]
+     },
+     {
+      "label": "Open arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: AB (antibiotics)",
+       "Drug: CS (corticosteroids) Only"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AB (antibiotics)"
+     },
+     {
+      "name": "CS (corticosteroids) Only"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05587673",
+    "briefTitle": "High Dose Steroid Therapy to Treat Flares in Patients With Inflammatory Bowel Disease (IBD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-10-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02392286",
+    "briefTitle": "Corticosteroid Dosage for Crohn's Disease Flare"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Weight-based",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Corticosteroid"
+      ]
+     },
+     {
+      "label": "Fixed dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Corticosteroid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Corticosteroid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00672763",
+    "briefTitle": "Adjuvant Vitamin D With Corticosteroids in Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2008-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Colecalciferol D3 (Vigantol Oil)"
+      ]
+     },
+     {
+      "label": "B",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Medium chain triglycerides"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Colecalciferol D3 (Vigantol Oil)"
+     },
+     {
+      "name": "Medium chain triglycerides"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06953791",
+    "briefTitle": "Comparison of Quality of Life During a Flare of Crohn's Disease Treated With Prednisolone or aCDED With PEN in Adult Patients"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard of care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone"
+      ]
+     },
+     {
+      "label": "Interventional arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: aCDED + Modulen"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "aCDED + Modulen"
+     },
+     {
+      "name": "Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03219359",
+    "briefTitle": "Autologous Stem Cell Transplant for Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2018-02-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous stem cell transplant",
+       "Drug: Cyclophosphamide",
+       "Drug: Thymoglobulin",
+       "Drug: Methylprednisolone",
+       "Drug: Vedolizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Autologous stem cell transplant"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Thymoglobulin"
+     },
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "Vedolizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04921033",
+    "briefTitle": "Exclusive Enteral Nutrition in Patients With Ileocaecal Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Exclusive Enteral Nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: EEN (Nestle Modulen\u00ae)"
+      ]
+     },
+     {
+      "label": "Standard of care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standart of care"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EEN (Nestle Modulen\u00ae)"
+     },
+     {
+      "name": "Standart of care"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02517684",
+    "briefTitle": "Top-down Infliximab Study in Kids With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Top-down",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Step-up",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone",
+       "Other: Exclusive enteral nutrition",
+       "Drug: Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Prednisolone"
+     },
+     {
+      "name": "Exclusive enteral nutrition"
+     },
+     {
+      "name": "Azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00796250",
+    "briefTitle": "Efficacy of Infliximab in the Treatment of Patients Affected by Corticodependent Crohn's Disease (P02732)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2003-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Infliximab",
+       "Drug: AZA",
+       "Drug: Placebo Prednisolone"
+      ]
+     },
+     {
+      "label": "Group B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone",
+       "Drug: AZA",
+       "Biological: Placebo Infliximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "AZA"
+     },
+     {
+      "name": "Placebo Prednisolone"
+     },
+     {
+      "name": "Prednisolone"
+     },
+     {
+      "name": "AZA"
+     },
+     {
+      "name": "Placebo Infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00554710",
+    "briefTitle": "Top Down Versus Step Up Strategies in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2001-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: infliximab+azathioprine"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone or budesonide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "infliximab+azathioprine"
+     },
+     {
+      "name": "methylprednisolone or budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00609752",
+    "briefTitle": "Adverse Effects of Glucocorticoid Therapy on Bone in Childhood Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2008-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: prednisolone"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Dietary Supplement: Alicalm (polymeric liquid formula)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "prednisolone"
+     },
+     {
+      "name": "Alicalm (polymeric liquid formula)"
+     }
+    ]
+   }
+  }
+ }
+]

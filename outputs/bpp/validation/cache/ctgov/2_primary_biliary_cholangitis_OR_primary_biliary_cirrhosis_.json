@@ -1,0 +1,3952 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03112681",
+    "briefTitle": "Study to Evaluate Safety, Tolerability and Efficacy of Saroglitazar Mg in Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-08-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Saroglitazar magnesium 2 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar magnesium 2 mg"
+      ]
+     },
+     {
+      "label": "Saroglitazar magnesium 4 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar magnesium 4 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Oral Tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Saroglitazar magnesium 2 mg"
+     },
+     {
+      "name": "Saroglitazar magnesium 4 mg"
+     },
+     {
+      "name": "Placebo Oral Tablet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02026401",
+    "briefTitle": "Phase 2 Study of NGM282 in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NGM282 Dose 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "NGM282 Dose 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NGM282"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04514965",
+    "briefTitle": "Bezafibrate in Patients With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PBC patients offered bezafibrate treatment",
+      "interventionNames": [
+       "Other: Blood sampling",
+       "Device: Fibroscan",
+       "Other: Question"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Blood sampling"
+     },
+     {
+      "name": "Fibroscan"
+     },
+     {
+      "name": "Question"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02557360",
+    "briefTitle": "Effectiveness of S-adenosyl-L-methionine in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "S-adenosyl-L-methionine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: S-adenosyl-L-methionine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "S-adenosyl-L-methionine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04076527",
+    "briefTitle": "Prospective, Multicenter Cohort Study on Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-09-19"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 - Incomplete Responder",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Ocaliva"
+      ]
+     },
+     {
+      "label": "Group 2 - Responder",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Group 3",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Ocaliva"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "UDCA"
+     },
+     {
+      "name": "Ocaliva"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06247735",
+    "briefTitle": "Study to Evaluate the Efficacy and Safety of K-808 (Pemafibrate) in Participants With Primary Biliary Cholangitis (PBC) With Inadequate Response to Ursodeoxycholic Acid (UDCA) and/or Obeticholic Acid (OCA) Treatment."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-02-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo + K-808 (Group A)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: K-808 (Dose A)",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Placebo + K-808 (Group B)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: K-808 (Dose B)",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "K-808 Group A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808 (Dose A)"
+      ]
+     },
+     {
+      "label": "K-808 Group B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808 (Dose B)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "K-808 (Dose A)"
+     },
+     {
+      "name": "K-808 (Dose B)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04167358",
+    "briefTitle": "Linerixibat Long-term Safety, and Tolerability Study"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2020-07-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants receiving linerixibat",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Linerixibat"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06888115",
+    "briefTitle": "A Study of the Pharmacokinetics and Safety of CS0159 in Subjects With Hepatic Injury"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2025-03-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Guoup 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159"
+      ]
+     },
+     {
+      "label": "Guoup 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159"
+      ]
+     },
+     {
+      "label": "Guoup 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "CS0159"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03092765",
+    "briefTitle": "Study of E6011 in Japanese Subjects With Primary Biliary Cholangitis Inadequately Responding to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2017-05-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "low-dose, high-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, high-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "high-dose, low-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "high-dose, low-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, low-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, low-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "Placebo; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Placebo; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "E6011"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06016842",
+    "briefTitle": "A Long-Term Study of Elafibranor in Adult Participants With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-08-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor 80 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Matched 80 mg placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor"
+     },
+     {
+      "name": "Matched 80 mg placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02135536",
+    "briefTitle": "Phase 2b Study of NGM282 Extended Treatment in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NGM282 Dose 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "NGM282 Dose 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "NGM282 Dose 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NGM282"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06371196",
+    "briefTitle": "Clinical Study on the Treatment of Elevated Total Bilirubin in Primary Biliary Cholangitis With Baobao Dan Capsule"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2024-04-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Babaodan Capsule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Babaodan Capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Babaodan Capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05050136",
+    "briefTitle": "A Study to Evaluate Efficacy and Safety of an Investigational Drug Named Volixibat in Patients With Itching Caused by Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2021-09-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part 1 Arm 1: Volixibat 20mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Volixibat"
+      ]
+     },
+     {
+      "label": "Part 1 Arm 2: Volixibat 80mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Volixibat"
+      ]
+     },
+     {
+      "label": "Part 1 Arm 3: Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part 2 Arm 1: Volixibat Selected Dose 20mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Volixibat"
+      ]
+     },
+     {
+      "label": "Part 2 Arm 2: Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Volixibat"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07304843",
+    "briefTitle": "A Two-part Study to Investigate the Effects in Adults of Two Doses of Golexanolone in Patients With Primary Biliary Cholangitis (PBC) With Fatigue and Cognitive Dysfunction"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-04-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part B: Treatment arm 1 (golexanolone 40 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: golexanolone"
+      ]
+     },
+     {
+      "label": "Part B: Treatment arm 2 (golexanolone 80 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: golexanolone"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part A: Golexanolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: golexanolone"
+      ]
+     },
+     {
+      "label": "Part A: Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "golexanolone"
+     },
+     {
+      "name": "golexanolone"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "golexanolone"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05624294",
+    "briefTitle": "Study to Evaluate Safety, Tolerability and Pharmacokinetics of CS0159 in Chinese Healthy Subjects"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-12-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "2mg CS0159",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "4mg CS0159",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "6mg CS0159",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: CS0159",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "CS0159"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01865812",
+    "briefTitle": "Phase 2 Study on Effects of Obeticholic Acid (OCA) on Lipoprotein Metabolism in Participants With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-12-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA: 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00004784",
+    "briefTitle": "Phase III Randomized Study of Ursodiol With Vs Without Methotrexate for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1994-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "methotrexate"
+     },
+     {
+      "name": "ursodiol"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04933292",
+    "briefTitle": "A Randomised Clinical Trial Assessing the Efficacy and Safety of Mycophenolate Mofetil Versus Azathioprine for Induction of Remission in Treatment Primary Biliary Cholangitis-Autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone and Mycophenolate mofetil",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone and Mycophenolate mofetil"
+      ]
+     },
+     {
+      "label": "Methylprednisolone and Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone and azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone and Mycophenolate mofetil"
+     },
+     {
+      "name": "Methylprednisolone and azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07216235",
+    "briefTitle": "Long-Term Study to Evaluate the Safety and Efficacy in Participants With Primary Biliary Cholangitis of Saroglitazar Magnesium-V on Clinical Outcomes"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Saroglitazar 1 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar magnesium 1 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Saroglitazar magnesium 1 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04594694",
+    "briefTitle": "Study of OCA in Combination With BZF Evaluating Efficacy, Safety, and Tolerability in Participants With PBC"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2019-10-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment A: BZF 200 milligrams (mg) Immediate release (IR)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 MG",
+       "Drug: OCA Placebo",
+       "Drug: Bezafibrate 400 mg Placebo"
+      ]
+     },
+     {
+      "label": "Treatment B: BZF 400 mg SR",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: OCA Placebo",
+       "Drug: Bezafibrate 200 mg Placebo",
+       "Drug: Bezafibrate 400 MG"
+      ]
+     },
+     {
+      "label": "Treatment C: OCA 5 mg to 10 mg + BZF 200 mg IR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic acid",
+       "Drug: Bezafibrate 200 MG",
+       "Drug: Bezafibrate 400 mg Placebo"
+      ]
+     },
+     {
+      "label": "Treatment D: OCA 5 mg to 10 mg + BZF 400 mg SR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic acid",
+       "Drug: Bezafibrate 200 mg Placebo",
+       "Drug: Bezafibrate 400 MG"
+      ]
+     },
+     {
+      "label": "Long-term safety extension (LTSE) phase: OCA + BZF",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: OCA",
+       "Drug: Bezafibrate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic acid"
+     },
+     {
+      "name": "Bezafibrate 200 MG"
+     },
+     {
+      "name": "OCA Placebo"
+     },
+     {
+      "name": "Bezafibrate 200 mg Placebo"
+     },
+     {
+      "name": "Bezafibrate 400 MG"
+     },
+     {
+      "name": "Bezafibrate 400 mg Placebo"
+     },
+     {
+      "name": "OCA"
+     },
+     {
+      "name": "Bezafibrate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00004748",
+    "briefTitle": "Low-Dose Oral Methotrexate Versus Colchicine for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1989-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "colchicine"
+     },
+     {
+      "name": "methotrexate"
+     },
+     {
+      "name": "ursodiol"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03124108",
+    "briefTitle": "Study to Evaluate the Efficacy and Safety of Elafibranor in Patients With Primary Biliary Cholangitis (PBC) and Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Elafibranor 80 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Elafibranor 80 mg"
+      ]
+     },
+     {
+      "label": "Elafibranor 120 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Elafibranor 120 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor 80 mg"
+     },
+     {
+      "name": "Elafibranor 120 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05151809",
+    "briefTitle": "National Database on Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2019-09-19"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PBC population residing in Italy",
+      "interventionNames": [
+       "Other: Clinical information"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Clinical information"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00006168",
+    "briefTitle": "Ursodiol-Methotrexate for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1994-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05374200",
+    "briefTitle": "Mind-body Wellness Intervention in Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-10-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intervention group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Mind-body intervention with 1-1 support from study personnel"
+      ]
+     },
+     {
+      "label": "Wait list control group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mind-body intervention with 1-1 support from study personnel"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04950764",
+    "briefTitle": "An Open-Label Study Following Oral Dosing of Seladelpar to Participants With Primary Biliary Cholangitis (PBC) and Hepatic Impairment (HI)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-11-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A: Cohort 1 - CP-A Without PHT (Seladelpar 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     },
+     {
+      "label": "Part A: Cohort 2 - CP-A With PHT (Seladelpar 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     },
+     {
+      "label": "Part A: Cohort 3 - CP-B (Seladelpar 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     },
+     {
+      "label": "Part A: Cohort 4 - CP-C (Seladelpar 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     },
+     {
+      "label": "Experimental: Part B: Cohort 2 - CP-A With PHT (Seladelpar 5 mg or 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     },
+     {
+      "label": "Experimental: Part B: Cohort 3 - CP-B (Seladelpar 5 mg or 10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Seladelpar"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02963077",
+    "briefTitle": "A Safety and Pharmakokinetic Study of A4250 Alone or in Combination With A3384"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1 SAD - 0.1 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 2 SAD - 0.3 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 3 SAD - 1 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 4 SAD - 3 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 5 SAD - 10 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 1 SAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 2 SAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 3 SAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 4 SAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 5 SAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 1 MAD - 1 mg A4250 qd",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 1 MAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 2 MAD - 3 mg A4250",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 2 MAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 3 MAD - 1.5 mg A4250 b.i.d for 7 days.",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250"
+      ]
+     },
+     {
+      "label": "Cohort 3 MAD placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 4 MAD - 3 mg A4250 qd + 1 mg Questran b.i.d",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250",
+       "Drug: Questran"
+      ]
+     },
+     {
+      "label": "Cohort 4 MAD A4250 placebo + 1 mg Questran b.i.d",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Questran",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 5 MAD - 3 mg A4250 qd + 1 g CRC b.i.d",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250",
+       "Drug: CRC (A3384)"
+      ]
+     },
+     {
+      "label": "Cohort 5 MAD A4250 placebo + CRC placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 6 MAD - 1 g CRC",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: CRC (A3384)"
+      ]
+     },
+     {
+      "label": "Cohort 6 MAD CRC placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Cohort 7 MAD - 3 mg A4250 qd + 1 g CRC b.i.d",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: A4250",
+       "Drug: CRC (A3384)"
+      ]
+     },
+     {
+      "label": "Cohort 7 MAD A4250 placebo + CRC placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "A4250"
+     },
+     {
+      "name": "CRC (A3384)"
+     },
+     {
+      "name": "Questran"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02943447",
+    "briefTitle": "Study to Evaluate the Safety, Tolerability, and Efficacy of Cilofexor in Adults With Primary Biliary Cholangitis Without Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2016-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cilofexor 30 mg (Blinded Study Phase)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cilofexor",
+       "Drug: Placebo to match cilofexor"
+      ]
+     },
+     {
+      "label": "Cilofexor 100 mg (Blinded Study Phase)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cilofexor",
+       "Drug: Placebo to match cilofexor"
+      ]
+     },
+     {
+      "label": "Placebo (Blinded Study Phase)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo to match cilofexor"
+      ]
+     },
+     {
+      "label": "Cilofexor (Open Label Extension Phase)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cilofexor"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cilofexor"
+     },
+     {
+      "name": "Placebo to match cilofexor"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06383403",
+    "briefTitle": "A Study of Elafibranor in Adults With Primary Biliary Cholangitis and Inadequate Response or Intolerance to Ursodeoxycholic Acid."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-07-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor 80 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06798454",
+    "briefTitle": "Single Ascending Dose Study to Evaluate Safety Tolerability, Pharmacokinetics, and Pharmacodynamics of PVT201 in Healthy Subjects and Patients (PBC/PSC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-10-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PVT201",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: PVT201"
+      ]
+     },
+     {
+      "label": "Placebo (normal saline, 0.9% sodium chloride)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "PVT201"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03445585",
+    "briefTitle": "Biobank for Cholestatic Liver Diseases."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2017-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Primary Sclerosing Cholangitis"
+     },
+     {
+      "label": "Primary Biliary Cirrhosis/Cholangitis"
+     },
+     {
+      "label": "Control group 1"
+     },
+     {
+      "label": "Control group 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04047160",
+    "briefTitle": "Safety, Tolerability of OP-724 in Patients With Primary Biliary Cholangitis (Phase I)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-08-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OP-724",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: OP-724"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "OP-724"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01473524",
+    "briefTitle": "Phase 3 Study of Obeticholic Acid in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "DB OCA 5-10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB OCA 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "DB Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "LTSE OCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid (OCA)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03301506",
+    "briefTitle": "Study of Seladelpar in Participants With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2017-12-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Seladelpar 5 mg Capsules",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar 5 mg Capsule"
+      ]
+     },
+     {
+      "label": "Seladelpar 10 mg Capsule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar 10 mg Capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Seladelpar 5 mg Capsule"
+     },
+     {
+      "name": "Seladelpar 10 mg Capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04617561",
+    "briefTitle": "Ursodeoxycholic Acid Combined With Low Dose Glucocorticoid in the Treatment of PBC With AIH Features II"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic Acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic Acid+Low Dose Glucocorticoid group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid"
+     },
+     {
+      "name": "Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00805805",
+    "briefTitle": "Study Comparing Tetrathiomolybdate vs Standard Treatment in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tetrathiomolybdate"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tetrathiomolybdate"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03684187",
+    "briefTitle": "Mindfulness - Based Intervention in the Treatment of Fatigue in Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-11-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Stress in Control for Healthy Liver (SynC-HL) Intervention:",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Mindfulness Based Intervention"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mindfulness Based Intervention"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05133336",
+    "briefTitle": "Saroglitazar Magnesium for Treatment of Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Saroglitazar Magnesium 2 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar Magnesium 1 mg",
+       "Drug: Saroglitazar Magnesium 2 mg"
+      ]
+     },
+     {
+      "label": "Saroglitazar Magnesium 1 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar Magnesium 1 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Saroglitazar Magnesium 1 mg"
+     },
+     {
+      "name": "Saroglitazar Magnesium 2 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04650243",
+    "briefTitle": "Clinical Research of Tapering UDCA in PBC Patients With a Complete Response"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2020-01-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "10mg/Kg UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "5mg/Kg UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "standard 13-15mg/Kg UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06525311",
+    "briefTitle": "A Study to Evaluate the Pharmacokinetics and Safety of K-808 (Pemafibrate) in Subjects With Primary Biliary Cholangitis With Compensated Cirrhosis and Without Cirrhosis."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PBC w/o CIRR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808"
+      ]
+     },
+     {
+      "label": "PBC w/ CIRR CP-A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "K-808"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01879735",
+    "briefTitle": "Biliary Excretion of Conjugated Bile Acids in Humans Measured by 11C-cholylsarcosine PET/CT"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ICG's effect on 11C-CSar transport",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 11C-CSar",
+       "Drug: ICG"
+      ]
+     },
+     {
+      "label": "Infusion method",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 11C-CSar",
+       "Drug: ICG"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "11C-CSar"
+     },
+     {
+      "name": "ICG"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01614405",
+    "briefTitle": "Highly Active Antiretroviral Therapy for Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2012-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "TDF/FTC/LPV/r",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: TDF/FTC/LPV/r"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "TDF/FTC/LPV/r"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07449793",
+    "briefTitle": "Biochemical Response and Clinical Outcomes in Patients With PBC"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1: AKP<1*ULN",
+      "interventionNames": [
+       "Other: Only observation"
+      ]
+     },
+     {
+      "label": "Group 2: AKP<1.67*ULN and >1*ULN",
+      "interventionNames": [
+       "Other: Only observation"
+      ]
+     },
+     {
+      "label": "Group 3: AKP>1.67*ULN",
+      "interventionNames": [
+       "Other: Only observation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Only observation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05190523",
+    "briefTitle": "Study to Evaluate the Safety and Efficacy of ASC42 Tablets in Subjects With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-04-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ASC42 tablets of 5mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ASC42 5 mg"
+      ]
+     },
+     {
+      "label": "ASC42 tablets of 10mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ASC42 10 mg"
+      ]
+     },
+     {
+      "label": "ASC42 tablets of 15mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ASC42 15 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ASC42 5 mg"
+     },
+     {
+      "name": "ASC42 10 mg"
+     },
+     {
+      "name": "ASC42 15 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01899703",
+    "briefTitle": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of Repeat Doses of GSK2330672 Administration in Subjects With Primary Biliary Cirrhosis (PBC) and Symptoms of Pruritus"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-03-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GSK2330672",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GSK2330672",
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GSK2330672",
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GSK2330672"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05239468",
+    "briefTitle": "Study of OCA in Combination With BZF Evaluating Efficacy, Safety and Tolerability in Participants With PBC"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-03-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Double Blind (DB) Phase Treatment A: BZF 100 milligrams (mg) Immediate Release (IR) tablet",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Bezafibrate 100 mg",
+       "Drug: Obeticholic Acid placebo",
+       "Drug: Bezafibrate Placebo"
+      ]
+     },
+     {
+      "label": "Double Blind (DB) Phase Treatment B: BZF 400 mg IR tablet",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 mg",
+       "Drug: Obeticholic Acid placebo"
+      ]
+     },
+     {
+      "label": "Double Blind (DB) Phase Treatment C: OCA 5 mg + BZF 100 mg IR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 100 mg",
+       "Drug: Obeticholic Acid 5 mg",
+       "Drug: Bezafibrate Placebo"
+      ]
+     },
+     {
+      "label": "Double Blind (DB) Phase Treatment D: OCA 5 mg + BZF 400 mg IR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 mg",
+       "Drug: Obeticholic Acid 5 mg"
+      ]
+     },
+     {
+      "label": "Long Term Safety Extension (LTSE) Phase Treatment D of the DB phase: OCA 5 mg + BZF 400 mg IR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 mg",
+       "Drug: Obeticholic Acid 5 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bezafibrate 100 mg"
+     },
+     {
+      "name": "Bezafibrate 200 mg"
+     },
+     {
+      "name": "Obeticholic Acid 5 mg"
+     },
+     {
+      "name": "Obeticholic Acid placebo"
+     },
+     {
+      "name": "Bezafibrate Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02955602",
+    "briefTitle": "Seladelpar (MBX-8025) in Subjects With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-11-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "MBX-8025 (2 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 2 mg Capsule"
+      ]
+     },
+     {
+      "label": "MBX-8025 (5 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 5 mg Capsule"
+      ]
+     },
+     {
+      "label": "MBX-8025 (10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 10 mg Capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "MBX-8025 2 mg Capsule"
+     },
+     {
+      "name": "MBX-8025 5 mg Capsule"
+     },
+     {
+      "name": "MBX-8025 10 mg Capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07556913",
+    "briefTitle": "Elafibranor Pregnancy Surveillance Program: A Study to Evaluate the Safety of Elafibranor During Pregnancy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-07-29"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor Cohort",
+      "interventionNames": [
+       "Drug: Elafibranor"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03476993",
+    "briefTitle": "Non-comparative Study of BCD-085 in Combination With UDCA in Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-04-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "BCD-085",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: BCD-085"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BCD-085"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07841977",
+    "briefTitle": "Study of Seladelpar and Cilofexor in Participants With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Seladelpar (SEL) 10 mg + Placebo-to-Match (PTM) Cilofexor (CILO) Dose A + CILO Dose B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar",
+       "Drug: Cilofexor Dose B",
+       "Drug: PTM Cilofexor Dose A"
+      ]
+     },
+     {
+      "label": "SEL 10 mg + CILO Dose A + PTM CILO Dose B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar",
+       "Drug: PTM Cilofexor Dose B",
+       "Drug: Cilofexor Dose A"
+      ]
+     },
+     {
+      "label": "SEL 10 mg + PTM CILO Dose A + PTM CILO Dose B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Seladelpar",
+       "Drug: PTM Cilofexor Dose A",
+       "Drug: PTM Cilofexor Dose B"
+      ]
+     },
+     {
+      "label": "PTM SEL 10 mg + PTM CILO Dose A + PTM CILO Dose B",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: PTM Seladelpar",
+       "Drug: PTM Cilofexor Dose A",
+       "Drug: PTM Cilofexor Dose B"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Seladelpar"
+     },
+     {
+      "name": "PTM Seladelpar"
+     },
+     {
+      "name": "Cilofexor Dose B"
+     },
+     {
+      "name": "PTM Cilofexor Dose A"
+     },
+     {
+      "name": "PTM Cilofexor Dose B"
+     },
+     {
+      "name": "Cilofexor Dose A"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04053023",
+    "briefTitle": "Linerixibat and Obeticholic Acid Drug Interaction Study in Healthy Subjects"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-08-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants receiving obeticholic acid and linerixibat",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GSK2330672 (linerixibat)",
+       "Drug: Obeticholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GSK2330672 (linerixibat)"
+     },
+     {
+      "name": "Obeticholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01662973",
+    "briefTitle": "Umbilical Cord Mesenchymal Stem Cells for Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2011-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Conventional plus UC-MSC treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: conventional plus UC-MSC treatment"
+      ]
+     },
+     {
+      "label": "Conventional plus placebo treatment",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Conventional plus placebo treatment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "conventional plus UC-MSC treatment"
+     },
+     {
+      "name": "Conventional plus placebo treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01249092",
+    "briefTitle": "Pentoxifylline for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Pentoxifylline 400 mg TID",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pentoxifylline"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pentoxifylline"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03394924",
+    "briefTitle": "A Study to Assess the Safety, Tolerability, Pharmacokinetics and Efficacy of EDP-305 in Subjects With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-12-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "EDP-305 1 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EDP-305 1 mg"
+      ]
+     },
+     {
+      "label": "EDP-305 2.5 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EDP-305 2.5 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EDP-305 1 mg"
+     },
+     {
+      "name": "EDP-305 2.5 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03226067",
+    "briefTitle": "Study to Assess Safety & Efficacy of GKT137831 in Patients With Primary Biliary Cholangitis Receiving Ursodiol."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-06-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GKT137831 400mg twice daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GKT137831"
+      ]
+     },
+     {
+      "label": "GKT137831 400mg once daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GKT137831",
+       "Drug: Placebo oral capsule"
+      ]
+     },
+     {
+      "label": "Placebo Arm",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GKT137831"
+     },
+     {
+      "name": "Placebo oral capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05393076",
+    "briefTitle": "Phase I Study of Linerixibat in Adults With Moderate Hepatic Impairment and Healthy Controls"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-07-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1 (Moderate hepatic impairment participants)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat"
+      ]
+     },
+     {
+      "label": "Cohort 2 (Matched healthy control participants)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Linerixibat"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01389973",
+    "briefTitle": "A Study of Efficacy and Safety of Ustekinumab in Patients With Primary Biliary Cirrhosis (PBC) Who Had an Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open-label: ustekinumab 90 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumab 45 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 45 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumab 90 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumb 180 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 180 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ustekinumab 90 mg"
+     },
+     {
+      "name": "ustekinumab 45 mg"
+     },
+     {
+      "name": "ustekinumab 180 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02966834",
+    "briefTitle": "Dose Response Study of GSK2330672 for the Treatment of Pruritus in Participants With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-01-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "GSK2330672 20 mg once daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: GSK2330672"
+      ]
+     },
+     {
+      "label": "GSK2330672 90 mg once daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: GSK2330672"
+      ]
+     },
+     {
+      "label": "GSK2330672 180 mg once daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: GSK2330672"
+      ]
+     },
+     {
+      "label": "GSK2330672 40 mg twice daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: GSK2330672"
+      ]
+     },
+     {
+      "label": "GSK2330672 90 mg twice daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: GSK2330672"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "GSK2330672"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06675604",
+    "briefTitle": "LEOPARD Training and Validation Data Collection Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-02-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subset 1"
+     },
+     {
+      "label": "Subset 2"
+     },
+     {
+      "label": "Subset 3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03742973",
+    "briefTitle": "A Study of Baricitinib (LY3009104) in Participants With Primary Biliary Cholangitis Who do Not Respond or Cannot Take UDCA"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2019-03-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Baricitinib Cohort A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Baricitinib"
+      ]
+     },
+     {
+      "label": "Placebo Cohort A",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Baricitinib Cohort B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Baricitinib"
+      ]
+     },
+     {
+      "label": "Placebo Cohort B",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Baricitinib"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06767605",
+    "briefTitle": "Spanish Registry of Autoimmune and Cholestatic Liver Diseases (ColHai)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2016-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00125281",
+    "briefTitle": "SAMe to Treat Biliary Cirrhosis Symptoms"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2005-07-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "S-adenosyl-methionine (SAMe) capsules"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01857284",
+    "briefTitle": "Safety and Efficacy of Tauroursodeoxycholic Acid Versus Ursofalk in the Treatment of Adult Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tauroursodeoxycholic Acid Capsules"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid Capsules"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tauroursodeoxycholic Acid Capsules"
+     },
+     {
+      "name": "Ursodeoxycholic Acid Capsules"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06730061",
+    "briefTitle": "A Study of Elafibranor in Adult Japanese Participants With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-01-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03954327",
+    "briefTitle": "Combination Antiretroviral Therapy (cART) for PBC"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Emtricitabine (FTC)/Tenofovir Disoproxil (TDF) & Raltegravir",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Emtricitabine (FTC)/Tenofovir Disoproxil (TDF)",
+       "Drug: Raltegravir"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Oral Capsule [CEBOCAP]"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Emtricitabine (FTC)/Tenofovir Disoproxil (TDF)"
+     },
+     {
+      "name": "Raltegravir"
+     },
+     {
+      "name": "Placebo Oral Capsule [CEBOCAP]"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04526665",
+    "briefTitle": "Study of Elafibranor in Patients With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2020-09-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor 80mg double-blind",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor 80mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Elafibranor 80mg open label",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor 80mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor 80mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06723275",
+    "briefTitle": "LEOPARD Prospective Validation Cohort 1"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-07-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subset 1",
+      "interventionNames": [
+       "Other: Standardized assessments and biobanking"
+      ]
+     },
+     {
+      "label": "Subset 2",
+      "interventionNames": [
+       "Other: Standardized assessments and biobanking"
+      ]
+     },
+     {
+      "label": "Subset 3",
+      "interventionNames": [
+       "Other: Standardized assessments, guided tumor biopsy and biobanking"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Standardized assessments, guided tumor biopsy and biobanking"
+     },
+     {
+      "name": "Standardized assessments and biobanking"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04604652",
+    "briefTitle": "Open-Label Study of HTD1801 in Adult Subjects With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-05-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open-label",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: HTD1801 (BUDCA)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "HTD1801 (BUDCA)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01904058",
+    "briefTitle": "Phase 2 Study to Evaluate LUM001 in Combination With Ursodeoxycholic Acid in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "LUM001 and Ursodeoxycholic Acid (UDCA)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: LUM001",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Placebo and Ursodeoxycholic Acid (UDCA)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "LUM001"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04950127",
+    "briefTitle": "Global Linerixibat Itch Study of Efficacy and Safety in Primary Biliary Cholangitis (PBC) (GLISTEN)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-08-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A: Linerixibat 40 milligrams (mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat"
+      ]
+     },
+     {
+      "label": "Part A: Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part B: Placebo in Part A and Part B",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part B: Placebo in Part A and Linerixibat 40 mg in Part B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part B: Linerixibat 40 mg in Part A and Placebo in Part B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part B: Linerixibat 40 mg in Part A and Part B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Linerixibat"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Linerixibat"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02516605",
+    "briefTitle": "A Multi-part, Double Blind Study to Assess Safety, Tolerability and Efficacy of Tropifexor (LJN452) in PBC Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-09-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "LJN452",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Part 1: LJN452",
+       "Drug: Part 2: LJN452 Dose level 1",
+       "Drug: Part 2: LJN452 Dose level 2"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Part 1: Placebo",
+       "Drug: Part 2: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Part 1: LJN452"
+     },
+     {
+      "name": "Part 1: Placebo"
+     },
+     {
+      "name": "Part 2: LJN452 Dose level 1"
+     },
+     {
+      "name": "Part 2: Placebo"
+     },
+     {
+      "name": "Part 2: LJN452 Dose level 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02609048",
+    "briefTitle": "Study to Evaluate the Effects of Two Doses of Seladelpar (MBX-8025) in Subjects With Primary Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-11-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Dose",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Comparator"
+      ]
+     },
+     {
+      "label": "Seladelpar 50 mg Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo Comparator",
+       "Drug: Experimental: Seladelpar 50 mg"
+      ]
+     },
+     {
+      "label": "Seladelpar 200 mg Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Experimental: Seladelpar / MBX-8025 200 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo Comparator"
+     },
+     {
+      "name": "Experimental: Seladelpar 50 mg"
+     },
+     {
+      "name": "Experimental: Seladelpar / MBX-8025 200 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07795151",
+    "briefTitle": "Phase I/II Trial of Human Umbilical Cord Mesenchymal Stromal Cells for UDCA-Refractory Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "hUC-MSC Dose Level 1 (planned 1.5\u00d710\u2078 cells, final dose TBD)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Biological: hUC-MSC Dose Level 1"
+      ]
+     },
+     {
+      "label": "hUC-MSC Dose Level 2 (planned 2.0\u00d710\u2078 cells, final dose TBD)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Biological: hUC-MSC Dose Level 2"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Standard background therapy"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "hUC-MSC Dose Level 1"
+     },
+     {
+      "name": "hUC-MSC Dose Level 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00490620",
+    "briefTitle": "Study of Combivir for Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Combination antiviral therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Combination antiviral therapy"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04522869",
+    "briefTitle": "Umbilical Cord Derived Mesenchymal Stem Cell (UC -MSC) Transplantation for Children Suffering From Biliary Atresia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-08-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Umbilical cord blood - derived mesenchymal stem cells",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Umbilical Cord Derived Mesenchymal Stem Cell (UC -MSC) Transplantation"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Umbilical Cord Derived Mesenchymal Stem Cell (UC -MSC) Transplantation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03633227",
+    "briefTitle": "Study of Obeticholic Acid (OCA) Evaluating Pharmacokinetics and Safety in Participants With Primary Biliary Cholangitis (PBC) and Hepatic Impairment"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-06-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Obeticholic Acid (OCA)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid (OCA)"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid (OCA)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

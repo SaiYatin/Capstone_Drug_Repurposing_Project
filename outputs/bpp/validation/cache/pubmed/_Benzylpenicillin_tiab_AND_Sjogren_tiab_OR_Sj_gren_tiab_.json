@@ -1,0 +1,11 @@
+{
+ "term": "\"Benzylpenicillin\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "28348790",
+   "title": "Streptococcus pneumoniae bacteraemia due to parotitis in a patient with systemic sclerosis and secondary Sj\u00f6gren's syndrome.",
+   "year": "2016"
+  }
+ ]
+}

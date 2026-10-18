@@ -1,0 +1,146 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01766609",
+    "briefTitle": "Efficacy and Safety of Intralesional Corticosterois in the Treatment of Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2013-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A: Triamcinolone acetonide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Triamcinolone Acetonide"
+      ]
+     },
+     {
+      "label": "B: Normal saline",
+      "type": "PLACEBO_COMPARATOR"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Triamcinolone Acetonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03365141",
+    "briefTitle": "Efficacy of Intralesional Triamcinolone Injection in the Treatment of Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-11-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Triamcinolone acetonide 0.4mg/cc",
+       "Device: Phototherapy (NBUVB or excimer laser)",
+       "Drug: Topical tacrolimus"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Device: Phototherapy (NBUVB or excimer laser)",
+       "Drug: Topical tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Triamcinolone acetonide 0.4mg/cc"
+     },
+     {
+      "name": "Phototherapy (NBUVB or excimer laser)"
+     },
+     {
+      "name": "Topical tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02191748",
+    "briefTitle": "Assessing the Efficacy of Needling With or Without Corticosteroids in the Repigmentation of Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2014-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Needling",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Needling"
+      ]
+     },
+     {
+      "label": "Needling and Triamcinolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Needling",
+       "Drug: Triamcinolone"
+      ]
+     },
+     {
+      "label": "No treatment",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Needling"
+     },
+     {
+      "name": "Triamcinolone"
+     }
+    ]
+   }
+  }
+ }
+]

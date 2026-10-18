@@ -1,0 +1,21 @@
+{
+ "term": "\"Ciprofloxacin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 123,
+ "top": [
+  {
+   "pmid": "32681228",
+   "title": "Randomized Trial of Ciprofloxacin Doxycycline and Hydroxychloroquine Versus Budesonide in Active Crohn's Disease.",
+   "year": "2021"
+  },
+  {
+   "pmid": "24296421",
+   "title": "Ciprofloxacin usage and bacterial resistance patterns in Crohn's disease patients with abscesses.",
+   "year": "2014"
+  },
+  {
+   "pmid": "9544412",
+   "title": "Combination ciprofloxacin and metronidazole for active Crohn's disease.",
+   "year": "1998"
+  }
+ ]
+}

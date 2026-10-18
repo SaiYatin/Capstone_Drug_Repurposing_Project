@@ -1,0 +1,21 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "25899670",
+   "title": "Pyoderma gangrenosum and annular erythema associated with Sj\u00f6gren's syndrome controlled with minocycline.",
+   "year": "2015"
+  },
+  {
+   "pmid": "27795506",
+   "title": "[TAFRO syndrome with primary Sjogren's syndrome].",
+   "year": "2016"
+  },
+  {
+   "pmid": "19153345",
+   "title": "Minocycline-induced drug hypersensitivity syndrome followed by multiple autoimmune sequelae.",
+   "year": "2009"
+  }
+ ]
+}

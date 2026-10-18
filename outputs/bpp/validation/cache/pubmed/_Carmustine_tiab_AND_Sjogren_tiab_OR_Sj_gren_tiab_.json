@@ -1,0 +1,11 @@
+{
+ "term": "\"Carmustine\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "11012663",
+   "title": "Thioredoxin reductase as a pathophysiological factor and drug target.",
+   "year": "2000"
+  }
+ ]
+}

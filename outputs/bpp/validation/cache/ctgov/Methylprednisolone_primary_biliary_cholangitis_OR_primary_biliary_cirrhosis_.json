@@ -1,0 +1,186 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04376528",
+    "briefTitle": "Mycophenolate Mofetil Versus Cyclosporin A in the Treatment of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome Due to Nonresponse to Standard Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporin A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin A"
+      ]
+     },
+     {
+      "label": "Mycophenolate Mofetil",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin A"
+     },
+     {
+      "name": "Mycophenolate Mofetil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04933292",
+    "briefTitle": "A Randomised Clinical Trial Assessing the Efficacy and Safety of Mycophenolate Mofetil Versus Azathioprine for Induction of Remission in Treatment Primary Biliary Cholangitis-Autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone and Mycophenolate mofetil",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone and Mycophenolate mofetil"
+      ]
+     },
+     {
+      "label": "Methylprednisolone and Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone and azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone and Mycophenolate mofetil"
+     },
+     {
+      "name": "Methylprednisolone and azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04617561",
+    "briefTitle": "Ursodeoxycholic Acid Combined With Low Dose Glucocorticoid in the Treatment of PBC With AIH Features II"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic Acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic Acid+Low Dose Glucocorticoid group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid"
+     },
+     {
+      "name": "Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02936596",
+    "briefTitle": "Remission Induction of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic acid + immunosuppressive agents group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid combination of immunosuppressive agents"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid combination of immunosuppressive agents"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ }
+]

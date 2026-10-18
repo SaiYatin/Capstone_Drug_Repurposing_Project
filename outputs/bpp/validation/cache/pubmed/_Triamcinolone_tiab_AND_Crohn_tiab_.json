@@ -1,0 +1,21 @@
+{
+ "term": "\"Triamcinolone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 30,
+ "top": [
+  {
+   "pmid": "40696693",
+   "title": "Effectiveness of combination the photobiomodulation therapy and triamcinolone acetonide on managing oral major aphthous ulcer in Crohn's disease: A case report.",
+   "year": "2025"
+  },
+  {
+   "pmid": "40630559",
+   "title": "Vulvar Crohn disease: A case report.",
+   "year": "2025"
+  },
+  {
+   "pmid": "39906951",
+   "title": "Granulomatous vulvitis complicated by polymicrobial growth.",
+   "year": "2025"
+  }
+ ]
+}

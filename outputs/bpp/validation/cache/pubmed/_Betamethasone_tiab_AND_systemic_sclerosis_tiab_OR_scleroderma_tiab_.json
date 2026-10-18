@@ -1,0 +1,21 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 8,
+ "top": [
+  {
+   "pmid": "21886745",
+   "title": "Parry-Romberg syndrome.",
+   "year": "2010"
+  },
+  {
+   "pmid": "32815694",
+   "title": "An unusual presentation of localized bullous morphea.",
+   "year": "2020"
+  },
+  {
+   "pmid": "14079048",
+   "title": "[BETAMETHASONE IN DERMATOLOGY].",
+   "year": "1963"
+  }
+ ]
+}

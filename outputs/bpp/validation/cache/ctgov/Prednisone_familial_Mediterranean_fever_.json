@@ -1,0 +1,202 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06780462",
+    "briefTitle": "Randomized Controlled Multicenter Study Comparing Steroid Therapy Plus Anticoagulants to Steroid Therapy Alone in Deep Venous Thrombosis of Beh\u00e7et's Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Corticosteroids and Rivaroxaban",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Corticosteroids + Rivaroxaban"
+      ]
+     },
+     {
+      "label": "Corticosteroids alone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Corticosteroids alone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Corticosteroids + Rivaroxaban"
+     },
+     {
+      "name": "Corticosteroids alone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05845723",
+    "briefTitle": "Tocilizumab and Tofacitinib in the Treatment of Vascular Beh\u00e7et's Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tocilizumab+GCS for VBS",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: tocilizumab"
+      ]
+     },
+     {
+      "label": "Tofacitinib+GCS for VBS",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: tofacitinib"
+      ]
+     },
+     {
+      "label": "Cyclophosphamide+GCS for VBS",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: cyclophosphamide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "tocilizumab"
+     },
+     {
+      "name": "tofacitinib"
+     },
+     {
+      "name": "cyclophosphamide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05879419",
+    "briefTitle": "Recombinant Herpes Zoster Vaccine in Patients With Autoimmune Rheumatic Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2023-05-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subproject A: Patients with ARDs who received the vaccine at study entry (P1)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)"
+      ]
+     },
+     {
+      "label": "Subproject A: Patients with ARDs who received the placebo at study entry (P2)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: Placebo"
+      ]
+     },
+     {
+      "label": "Subproject A: Control group of non-immunosuppressed individuals (CG)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)"
+      ]
+     },
+     {
+      "label": "Subproject B: MTX-withhold",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MTX Discontinuation"
+      ]
+     },
+     {
+      "label": "Subproject B: MTX-maintain",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MTX maintain"
+      ]
+     },
+     {
+      "label": "Subproject B: MMF-withhold",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MMF Discontinuation"
+      ]
+     },
+     {
+      "label": "Subproject B: MMF-maintain",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MMF maintain"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Recombinant Herpes Zoster Vaccine (RZV)"
+     },
+     {
+      "name": "MTX Discontinuation"
+     },
+     {
+      "name": "MMF Discontinuation"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "MTX maintain"
+     },
+     {
+      "name": "MMF maintain"
+     }
+    ]
+   }
+  }
+ }
+]

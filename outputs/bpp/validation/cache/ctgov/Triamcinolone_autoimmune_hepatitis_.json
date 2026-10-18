@@ -1,0 +1,48 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05221411",
+    "briefTitle": "Tacrolimus Versus Mycophenolate for Autoimmune Hepatitis Patients With Incomplete Response on First Line Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-01-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mycofenolate Mofetil",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil"
+      ]
+     },
+     {
+      "label": "Tacrolimus (Envarsus)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mycophenolate Mofetil"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "31680988",
+   "title": "Ocular Pharmacological Profile of Hydrocortisone in Dry Eye Disease.",
+   "year": "2019"
+  },
+  {
+   "pmid": "17483660",
+   "title": "Periorbital cutaneous neonatal lupus.",
+   "year": "2007"
+  },
+  {
+   "pmid": "41399064",
+   "title": "[Untargeted metabolomics reveals differential serum metabolites and metabolic pathways in patients with primary Sj\u00f6gren syndrome and thrombocytopenia].",
+   "year": "2025"
+  }
+ ]
+}

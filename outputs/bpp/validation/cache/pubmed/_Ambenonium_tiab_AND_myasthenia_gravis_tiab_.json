@@ -1,0 +1,21 @@
+{
+ "term": "\"Ambenonium\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 21,
+ "top": [
+  {
+   "pmid": "38321574",
+   "title": "Generalized myasthenia gravis with acetylcholine receptor antibodies: A guidance for treatment.",
+   "year": "2024"
+  },
+  {
+   "pmid": "34981830",
+   "title": "Myasthenia gravis-treatment and severity in nationwide cohort.",
+   "year": "2022"
+  },
+  {
+   "pmid": "1823874",
+   "title": "Pharmacokinetic studies of ambenonium chloride in patients with myasthenia gravis.",
+   "year": "1991"
+  }
+ ]
+}

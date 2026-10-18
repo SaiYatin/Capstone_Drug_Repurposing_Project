@@ -1,0 +1,21 @@
+{
+ "term": "\"Ampicillin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 18,
+ "top": [
+  {
+   "pmid": "41375698",
+   "title": "Patient with Inflammatory Bowel Disease in a Dental Office-Which Antibiotic to Choose?-Narrative Review.",
+   "year": "2025"
+  },
+  {
+   "pmid": "39587720",
+   "title": "Comparison of Crohn's disease-associated adherent-invasive Escherichia coli (AIEC) from France and Hong Kong: results from the Pacific study.",
+   "year": "2024"
+  },
+  {
+   "pmid": "18319500",
+   "title": "Ciprofloxacin-induced Q-T interval prolongation.",
+   "year": "2008"
+  }
+ ]
+}

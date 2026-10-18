@@ -1,0 +1,167 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07385131",
+    "briefTitle": "Prophylactic Dexamethasone Before Infliximab in Moderate-to-Severe IBD"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-10-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TEST"
+     },
+     {
+      "label": "DEX",
+      "interventionNames": [
+       "Drug: Dexamethasone (IV)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone (IV)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03723447",
+    "briefTitle": "Intraoperative TAP Block With Bupivacaine/Dexamethasone Against Liposomal Bupivacaine (Exparel\u00ae)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-10-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bupivacaine/epinephrine/dexamethasone TAP block",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Bupivacaine/epinephrine/dexamethasone"
+      ]
+     },
+     {
+      "label": "Liposomal bupivacaine TAP block",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Liposomal bupivacaine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Liposomal bupivacaine"
+     },
+     {
+      "name": "Bupivacaine/epinephrine/dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05432934",
+    "briefTitle": "Transversus Abdominis Plane Blocks With and Without Dexamethasone"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Local anesthetic only",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01277289",
+    "briefTitle": "Intra-erythrocyte Dexamethasone Versus Placebo in Patients With Steroid-dependent Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-06-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ery-dex",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ }
+]

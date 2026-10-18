@@ -1,0 +1,16 @@
+{
+ "term": "\"Sulbactam\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "21490863",
+   "title": "Spontaneous Bacterial Peritonitis Caused by Infection with Listeria monocytogenes.",
+   "year": "2008"
+  },
+  {
+   "pmid": "16456741",
+   "title": "[Pleural empyema due to Salmonella typhi].",
+   "year": "2005"
+  }
+ ]
+}

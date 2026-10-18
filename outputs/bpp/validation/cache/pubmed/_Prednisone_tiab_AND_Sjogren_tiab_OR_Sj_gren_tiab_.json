@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 222,
+ "top": [
+  {
+   "pmid": "38289217",
+   "title": "Case 325.",
+   "year": "2024"
+  },
+  {
+   "pmid": "8508556",
+   "title": "Prednisone and piroxicam for treatment of primary Sj\u00f6gren's syndrome.",
+   "year": "1993"
+  },
+  {
+   "pmid": "11757271",
+   "title": "[Autoimmune neutropenias].",
+   "year": "2001"
+  }
+ ]
+}

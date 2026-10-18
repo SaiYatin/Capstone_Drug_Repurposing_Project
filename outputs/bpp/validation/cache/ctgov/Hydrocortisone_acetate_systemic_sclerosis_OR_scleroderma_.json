@@ -1,0 +1,45 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00849745",
+    "briefTitle": "Nonmyeloablative Allo Stem Cell Transplant for Severe Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2003-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Systemic Lupus Erythematosus",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Nonmyeloablative allogeneic stem cell transplant"
+      ]
+     },
+     {
+      "label": "Systemic Sclerosis",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Nonmyeloablative allogeneic stem cell transplant"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Nonmyeloablative allogeneic stem cell transplant"
+     }
+    ]
+   }
+  }
+ }
+]

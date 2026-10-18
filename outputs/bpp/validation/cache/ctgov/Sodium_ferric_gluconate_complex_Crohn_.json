@@ -1,0 +1,58 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04587141",
+    "briefTitle": "Clinical Burden of Anemia in Inflammatory Bowel Disease: Therapeutic Trial"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sucrosomial iron",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sucrosomial iron"
+      ]
+     },
+     {
+      "label": "Ferric gluconate",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ferric Gluconate"
+      ]
+     },
+     {
+      "label": "Ferric carboxymaltose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ferric carboxymaltose"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sucrosomial iron"
+     },
+     {
+      "name": "Ferric Gluconate"
+     },
+     {
+      "name": "Ferric carboxymaltose"
+     }
+    ]
+   }
+  }
+ }
+]

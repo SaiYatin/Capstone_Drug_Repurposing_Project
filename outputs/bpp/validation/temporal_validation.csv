@@ -1,0 +1,15 @@
+target,drug,in_primekg,primekg_name,already_labelled,rank_s0,rank_s1,rank_s2,mean_rank,percentile_top,knn_rank,popularity_rank,fda_approval,post_snapshot,source
+Primary Biliary Cholangitis,elafibranor,True,Elafibranor,False,5687.0,6896.0,4892.0,5825.0,73.21,3266.0,3266.0,2024-06-10,True,https://www.biospace.com/ipsen-s-iqirvo-receives-u-s-fda-accelerated-approval-as-a-first-in-class-ppar-treatment-for-primary-biliary-cholangitis
+Primary Biliary Cholangitis,seladelpar,False,,,,,,,,,,,,
+Primary Biliary Cholangitis,obeticholic acid,True,Obeticholic acid,False,3107.0,2344.0,1366.0,2272.3333333333335,28.56,6452.0,6452.0,2016-05,False,https://www.healio.com/news/gastroenterology/20160816/fda-approves-ocaliva-for-primary-biliary-cholangitis
+Myasthenia Gravis,efgartigimod,False,,,,,,,,,,,,
+Myasthenia Gravis,ravulizumab,True,Ravulizumab,False,1184.0,815.0,535.0,844.6666666666666,10.62,1383.0,1381.0,2022-04,True,https://practicalneurology.com/news/fda-approves-ravulizumab-for-generalized-myasthenia-gravis
+Myasthenia Gravis,rozanolixizumab,True,Rozanolixizumab,False,2615.0,2436.0,1784.0,2278.3333333333335,28.63,7182.0,7182.0,2023-06,True,https://www.managedhealthcareexecutive.com/view/fda-approves-rystiggo-for-generalized-myasthenia-gravis
+Myasthenia Gravis,zilucoplan,False,,,,,,,,,,,,
+Myasthenia Gravis,nipocalimab,False,,,,,,,,,,,,
+Crohn Disease,risankizumab,True,Risankizumab,False,37.0,45.0,30.0,37.333333333333336,0.47,30.0,951.0,2022-06-17,True,https://news.abbvie.com/2022-06-17-SKYRIZI-R-risankizumab-rzaa-Receives-FDA-Approval-as-the-First-and-Only-Specific-Interleukin-23-IL-23-to-Treat-Moderately-to-Severely-Active-Crohns-Disease-in-Adults
+Crohn Disease,upadacitinib,True,Upadacitinib,False,360.0,533.0,758.0,550.3333333333334,6.92,127.0,1527.0,2023-05-18,True,https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-treatment-moderately-severely-active-crohns-disease
+Crohn Disease,mirikizumab,False,,,,,,,,,,,,
+Crohn Disease,guselkumab,True,Guselkumab,False,987.0,1970.0,1132.0,1363.0,17.13,5570.0,5570.0,2025-03-20,True,https://www.hcplive.com/view/fda-approves-guselkumab-tremfya-for-crohn-disease
+Systemic Sclerosis,tocilizumab,True,Tocilizumab,False,38.0,100.0,35.0,57.666666666666664,0.72,35.0,260.0,2021-03-04,False,https://www.gene.com/media/press-releases/14897/2021-03-04/genentechs-actemra-becomes-the-first-bio
+Systemic Sclerosis,nintedanib,True,Nintedanib,False,1363.0,720.0,461.0,848.0,10.66,375.0,365.0,2019-09-06,False,https://boehringer-ingelheim.com/press-release/fda-approves-nintedanib-ssc-ild

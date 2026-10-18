@@ -1,0 +1,289 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01693393",
+    "briefTitle": "Low Dose Cyclosporin A in Primary Sj\u00f6gren Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporine A",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Cyclosporine A"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporine A"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03865888",
+    "briefTitle": "Comparing Effect of Topical Tacrolimus 0.03% Versus Cyclosporine 0.05% in Dry Eyes of Secondary Sjogren Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-10-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporins 0.05 % treated eyes",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Cyclosporins"
+      ]
+     },
+     {
+      "label": "Tacrolimus 0.03% treated eyes",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporins"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04597762",
+    "briefTitle": "Effect of Ciclosporin Eyedrops on Sj\u00f6gren Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-08-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "right eye: Ciclosporin, left eye: Ciclosporin + Hydrocortisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin",
+       "Drug: Hydrocortisone"
+      ]
+     },
+     {
+      "label": "left eye: Ciclosporin, right eye: Ciclosporin + Hydrocortisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin",
+       "Drug: Hydrocortisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin"
+     },
+     {
+      "name": "Hydrocortisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05605314",
+    "briefTitle": "Clinical Cohort Study in Patients With Different Subtypes of Primary Sjogren Syndrome Related Dry Eye"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "pSS-DED",
+      "interventionNames": [
+       "Other: Cyclosporine"
+      ]
+     },
+     {
+      "label": "nss-DED",
+      "interventionNames": [
+       "Other: Cyclosporine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02004067",
+    "briefTitle": "Safety Study of the Use of Topical Cyclosporine in the Treatment of Dry Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Refresh Endura",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Refresh Endura"
+      ]
+     },
+     {
+      "label": "Restasis",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Restasis"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Restasis"
+     },
+     {
+      "name": "Refresh Endura"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01850979",
+    "briefTitle": "Treatment of Dry Eye Using 0.03% Tacrolimus Eye Drops"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "tacrolimus",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     },
+     {
+      "label": "Olive Oil",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Olive Oil"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tacrolimus"
+     },
+     {
+      "name": "Olive Oil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02011776",
+    "briefTitle": "A Randomized, Parallel-Group Comparison Study of Topical Corticosteroids in Dry Eye Patients With Sj\u00f6gren Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-03"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1"
+     },
+     {
+      "label": "Group 2"
+     }
+    ]
+   }
+  }
+ }
+]

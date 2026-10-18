@@ -1,0 +1,173 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01951326",
+    "briefTitle": "Efficacy and Safety of Anti-MAP Therapy in Adult Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "RHB-104",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: RHB-104"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "RHB-104"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00513552",
+    "briefTitle": "Treatment of Crohn's Disease With an Antibiotic Regimen Directed Against Mycobacterium Avium Paratuberculosis"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2007-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Antibiotics",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rifabutin, Clarithromycin, and Clofazimine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rifabutin, Clarithromycin, and Clofazimine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03009396",
+    "briefTitle": "Open Label Efficacy and Safety of Anti-MAP (Mycobacterium Avium Ssp. Paratuberculosis) Therapy in Adult Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-03-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "RHB-104 - patients on ACTIVE therapy in RHB-104-01 study",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: RHB-104 (fixed-dose combination: 95 mg clarithromycin, 45 mg rifabutin, and 10 mg clofazimine)"
+      ]
+     },
+     {
+      "label": "RHB-104 - patients on PLACEBO therapy in RHB-104-01 study",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: RHB-104 (fixed-dose combination: 95 mg clarithromycin, 45 mg rifabutin, and 10 mg clofazimine)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "RHB-104 (fixed-dose combination: 95 mg clarithromycin, 45 mg rifabutin, and 10 mg clofazimine)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00269386",
+    "briefTitle": "Clarithromycin in Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2000-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1 (i)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Clarithromycin"
+      ]
+     },
+     {
+      "label": "2 (ii)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Clarithromycin"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

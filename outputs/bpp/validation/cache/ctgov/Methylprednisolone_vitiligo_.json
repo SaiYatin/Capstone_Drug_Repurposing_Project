@@ -1,0 +1,86 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04843059",
+    "briefTitle": "ERASE VITILIGO Early Repigmentation Approach for Stopping the Evolution of VITILIGO Prospective Multicentric Interventional Study With Blinded Evaluation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "the resident memory T-cell infiltrate in perilesional vitiligo skin",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: The resident memory T-cell infiltrate in perilesional vitiligo skin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "The resident memory T-cell infiltrate in perilesional vitiligo skin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05927272",
+    "briefTitle": "Deciphering the Vitiligo Transcriptomic Signature Between Repigmented and Non Repigmented Lesions"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2024-04-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with active non-segmental vitiligo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: SKIN SAMPLES",
+       "Procedure: BLOOD SAMPLES",
+       "Device: narrowband UVB",
+       "Drug: Systemic Steroids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "SKIN SAMPLES"
+     },
+     {
+      "name": "BLOOD SAMPLES"
+     },
+     {
+      "name": "narrowband UVB"
+     },
+     {
+      "name": "Systemic Steroids"
+     }
+    ]
+   }
+  }
+ }
+]

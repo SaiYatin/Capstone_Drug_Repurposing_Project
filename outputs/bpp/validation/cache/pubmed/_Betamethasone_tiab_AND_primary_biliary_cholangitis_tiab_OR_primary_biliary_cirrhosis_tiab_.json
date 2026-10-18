@@ -1,0 +1,16 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "27357021",
+   "title": "Successful treatment of hypertrophic lichen planus with betamethasone under occlusion and TCA-peelings.",
+   "year": "2016"
+  },
+  {
+   "pmid": "30996179",
+   "title": "Acute Adrenal Insufficiency Precipitated by the Discontinuation of a Betamethasone and Dextrochlorpheniramine Combination: The Diagnostic Utility of an Echocardiographic Assessment of Systemic Vascular Resistance.",
+   "year": "2019"
+  }
+ ]
+}

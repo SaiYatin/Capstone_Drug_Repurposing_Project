@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 81,
+ "top": [
+  {
+   "pmid": "33996408",
+   "title": "Biological drug and drug delivery-mediated immunotherapy.",
+   "year": "2021"
+  },
+  {
+   "pmid": "40390697",
+   "title": "The angiotensin receptor blocker, losartan, reduces inflammation and fibrosis, and prevents relapse of fibrosis after steroid-induced remission, in mice prone to Crohn's disease-like ileitis.",
+   "year": "2025"
+  },
+  {
+   "pmid": "17996686",
+   "title": "1,25-dihydroxyvitamin D3 and dexamethasone increase interleukin-10 production in CD4+ T cells from patients with Crohn's disease.",
+   "year": "2007"
+  }
+ ]
+}

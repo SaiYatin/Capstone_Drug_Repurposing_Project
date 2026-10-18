@@ -1,0 +1,21 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 6,
+ "top": [
+  {
+   "pmid": "40396778",
+   "title": "Membranous nephropathy in a patient with Sj\u00f6gren's disease.",
+   "year": "2025"
+  },
+  {
+   "pmid": "27586845",
+   "title": "Candida-induced prosthetic joint infection. A literature review including 72 cases and a case report.",
+   "year": "2017"
+  },
+  {
+   "pmid": "37690316",
+   "title": "Cryptococcosis among HIV negative liver disease patients: Epidemiology, underlying conditions, antifungal susceptibility profile from tertiary care hepatobiliary center.",
+   "year": "2023"
+  }
+ ]
+}

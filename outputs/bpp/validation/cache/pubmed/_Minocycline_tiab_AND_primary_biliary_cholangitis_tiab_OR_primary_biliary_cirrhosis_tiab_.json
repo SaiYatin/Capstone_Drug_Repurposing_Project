@@ -1,0 +1,21 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "33987431",
+   "title": "Autoimmune hepatitis-is histology conclusive?",
+   "year": "2021"
+  },
+  {
+   "pmid": "31257956",
+   "title": "Pharmacologic management of primary sclerosing cholangitis: what's in the pipeline?",
+   "year": "2019"
+  },
+  {
+   "pmid": "17023884",
+   "title": "Autoimmune liver disease.",
+   "year": "2000"
+  }
+ ]
+}

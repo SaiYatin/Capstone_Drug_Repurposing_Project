@@ -1,0 +1,50 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05694130",
+    "briefTitle": "Tacrolimus Plus Glucocorticoid for Severe Thrombocytopenia in SS"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisolone monotherapy",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone"
+      ]
+     },
+     {
+      "label": "Prednisolone plus Tacrolimus",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisolone",
+       "Drug: Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisolone"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ }
+]

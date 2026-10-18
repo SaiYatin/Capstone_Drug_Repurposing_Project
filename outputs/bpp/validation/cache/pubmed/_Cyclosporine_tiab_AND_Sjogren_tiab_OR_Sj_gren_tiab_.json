@@ -1,0 +1,21 @@
+{
+ "term": "\"Cyclosporine\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 148,
+ "top": [
+  {
+   "pmid": "39644019",
+   "title": "Large granular lymphocyte leukemia: a clonal disorder with autoimmune manifestations.",
+   "year": "2024"
+  },
+  {
+   "pmid": "31194419",
+   "title": "Keratoconjunctivitis.",
+   "year": "2025"
+  },
+  {
+   "pmid": "22515011",
+   "title": "[Relapsing polychondritis].",
+   "year": "2012"
+  }
+ ]
+}

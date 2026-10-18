@@ -1,0 +1,21 @@
+{
+ "term": "\"Aminobenzoic acid\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 14,
+ "top": [
+  {
+   "pmid": "2406809",
+   "title": "Treatment of generalized systemic sclerosis.",
+   "year": "1990"
+  },
+  {
+   "pmid": "17217320",
+   "title": "Natural remedies for scleroderma.",
+   "year": "2006"
+  },
+  {
+   "pmid": "13627705",
+   "title": "Treatment of scleroderma.",
+   "year": "1959"
+  }
+ ]
+}

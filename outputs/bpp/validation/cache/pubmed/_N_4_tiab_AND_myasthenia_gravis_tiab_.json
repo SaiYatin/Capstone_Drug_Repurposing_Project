@@ -1,0 +1,21 @@
+{
+ "term": "\"N-{4-\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 61,
+ "top": [
+  {
+   "pmid": "29305138",
+   "title": "MuSK myasthenia gravis and pregnancy.",
+   "year": "2018"
+  },
+  {
+   "pmid": "38633537",
+   "title": "Prognosis of immune checkpoint inhibitor-induced myasthenia gravis: a single center experience and systematic review.",
+   "year": "2024"
+  },
+  {
+   "pmid": "41004697",
+   "title": "Screening for Congenital Myasthenic Syndromes in Adults With Seronegative Myasthenia Gravis Using Next-Generation Sequencing.",
+   "year": "2025"
+  }
+ ]
+}

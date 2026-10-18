@@ -1,0 +1,432 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01086540",
+    "briefTitle": "Rituximab for Treatment of Systemic Sclerosis-Associated Pulmonary Arterial Hypertension (SSc-PAH)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab+PAH SOC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Rituximab",
+       "Diagnostic Test: CMRI",
+       "Drug: prednisone",
+       "Drug: methylprednisolone",
+       "Drug: diphenhydramine",
+       "Drug: acetaminophen"
+      ]
+     },
+     {
+      "label": "Placebo + PAH SOC",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo",
+       "Diagnostic Test: CMRI",
+       "Drug: prednisone",
+       "Drug: methylprednisolone",
+       "Drug: diphenhydramine",
+       "Drug: acetaminophen"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "CMRI"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "methylprednisolone"
+     },
+     {
+      "name": "diphenhydramine"
+     },
+     {
+      "name": "acetaminophen"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01570764",
+    "briefTitle": "Cyclophosphamide Systemic Sclerosis Associated Interstitial Lung Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-01-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclophosphamide",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclophosphamide"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03610217",
+    "briefTitle": "Pragmatic Clinical Trials in Scleroderma"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Interstitial lung disease induction",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Interstitial lung disease induction algorithm"
+      ]
+     },
+     {
+      "label": "Pulmonary arterial hypertension",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Pulmonary arterial hypertension algorithm"
+      ]
+     },
+     {
+      "label": "Raynaud's phenomenon",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Raynaud's phenomenon algorithm"
+      ]
+     },
+     {
+      "label": "Digital ulcers",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Digital ulcer algorithm"
+      ]
+     },
+     {
+      "label": "Inflammatory arthritis",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Inflammatory arthritis algorithm"
+      ]
+     },
+     {
+      "label": "Gastroesophageal reflux",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Gastroesophageal reflux algorithm"
+      ]
+     },
+     {
+      "label": "Bacterial overgrowth",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Bacterial overgrowth algorithm"
+      ]
+     },
+     {
+      "label": "Constipation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Constipation algorithm"
+      ]
+     },
+     {
+      "label": "Skin involvement",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Skin involvement algorithm"
+      ]
+     },
+     {
+      "label": "Pain",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Pain algorithm"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Interstitial lung disease induction algorithm"
+     },
+     {
+      "name": "Pulmonary arterial hypertension algorithm"
+     },
+     {
+      "name": "Raynaud's phenomenon algorithm"
+     },
+     {
+      "name": "Digital ulcer algorithm"
+     },
+     {
+      "name": "Inflammatory arthritis algorithm"
+     },
+     {
+      "name": "Gastroesophageal reflux algorithm"
+     },
+     {
+      "name": "Bacterial overgrowth algorithm"
+     },
+     {
+      "name": "Constipation algorithm"
+     },
+     {
+      "name": "Skin involvement algorithm"
+     },
+     {
+      "name": "Pain algorithm"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00849745",
+    "briefTitle": "Nonmyeloablative Allo Stem Cell Transplant for Severe Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2003-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Systemic Lupus Erythematosus",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Nonmyeloablative allogeneic stem cell transplant"
+      ]
+     },
+     {
+      "label": "Systemic Sclerosis",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Nonmyeloablative allogeneic stem cell transplant"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Nonmyeloablative allogeneic stem cell transplant"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05300932",
+    "briefTitle": "A Study Evaluating the Efficacy and Safety of Baricitinib in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2022-03-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Baricitinib 4mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Baricitinib"
+      ]
+     },
+     {
+      "label": "Cyclophosphamide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Cyclophosphamide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Baricitinib"
+     },
+     {
+      "name": "Cyclophosphamide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05879419",
+    "briefTitle": "Recombinant Herpes Zoster Vaccine in Patients With Autoimmune Rheumatic Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2023-05-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subproject A: Patients with ARDs who received the vaccine at study entry (P1)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)"
+      ]
+     },
+     {
+      "label": "Subproject A: Patients with ARDs who received the placebo at study entry (P2)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: Placebo"
+      ]
+     },
+     {
+      "label": "Subproject A: Control group of non-immunosuppressed individuals (CG)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)"
+      ]
+     },
+     {
+      "label": "Subproject B: MTX-withhold",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MTX Discontinuation"
+      ]
+     },
+     {
+      "label": "Subproject B: MTX-maintain",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MTX maintain"
+      ]
+     },
+     {
+      "label": "Subproject B: MMF-withhold",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MMF Discontinuation"
+      ]
+     },
+     {
+      "label": "Subproject B: MMF-maintain",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Recombinant Herpes Zoster Vaccine (RZV)",
+       "Other: MMF maintain"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Recombinant Herpes Zoster Vaccine (RZV)"
+     },
+     {
+      "name": "MTX Discontinuation"
+     },
+     {
+      "name": "MMF Discontinuation"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "MTX maintain"
+     },
+     {
+      "name": "MMF maintain"
+     }
+    ]
+   }
+  }
+ }
+]

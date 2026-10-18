@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 69,
+ "top": [
+  {
+   "pmid": "31562236",
+   "title": "British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults.",
+   "year": "2019"
+  },
+  {
+   "pmid": "9741018",
+   "title": "Intravenous corticotrophin vs. hydrocortisone in the treatment of hospitalized patients with Crohn's disease: a randomized double-blind study and follow-up.",
+   "year": "1998"
+  },
+  {
+   "pmid": "36375852",
+   "title": "Hydrocortisone-induced symptomatic sinus bradycardia.",
+   "year": "2022"
+  }
+ ]
+}

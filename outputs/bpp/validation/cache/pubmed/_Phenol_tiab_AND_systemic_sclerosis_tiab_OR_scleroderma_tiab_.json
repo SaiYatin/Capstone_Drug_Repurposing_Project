@@ -1,0 +1,21 @@
+{
+ "term": "\"Phenol\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "16029706",
+   "title": "Deep phenol peeling and fat injection: treatment option for perioral wrinkles in a scleroderma patient.",
+   "year": "2005"
+  },
+  {
+   "pmid": "5899511",
+   "title": "[Progressive scleroderma cured by the oral and parenteral administration of paramethyl-isopropyl-phenol (thymol)].",
+   "year": "1965"
+  },
+  {
+   "pmid": "9218819",
+   "title": "Reduced protein tyrosine phosphatase (PTPase) activity of CD45 on peripheral blood lymphocytes in patients with systemic lupus erythematosus (SLE).",
+   "year": "1997"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02680717",
+    "briefTitle": "Comparative Effectiveness Trial in the Treatment of Pediatric Plaque Morphea"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2016-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment 1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Calcipotriene"
+      ]
+     },
+     {
+      "label": "Treatment 2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Clobetasol"
+      ]
+     },
+     {
+      "label": "Treatment 3",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Clobetasol"
+     },
+     {
+      "name": "Calcipotriene"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ }
+]

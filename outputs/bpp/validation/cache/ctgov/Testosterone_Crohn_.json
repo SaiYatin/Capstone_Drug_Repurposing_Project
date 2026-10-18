@@ -1,0 +1,29 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00106314",
+    "briefTitle": "An Efficacy and Safety Evaluation of Inflabloc Cap in the Treatment of Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Dehydroepiandrosterone [DHEA]"
+     }
+    ]
+   }
+  }
+ }
+]

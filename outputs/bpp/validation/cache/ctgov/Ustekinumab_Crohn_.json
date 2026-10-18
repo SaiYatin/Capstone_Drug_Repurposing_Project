@@ -1,0 +1,3879 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05725876",
+    "briefTitle": "Quantitative Fluorescence Molecular Imaging of Ustekinumab-800CW to Elucidate the Drug Distribution Throughout Inflamed Tissue in Crohn's Disease and Psoriasis."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-01-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Crohn's disease eligible for ustekinumab therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Patients with Psoriasis eligible for Ustekunimab treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03464136",
+    "briefTitle": "Safety and Efficacy of Adalimumab Versus Ustekinumab for One Year"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-03-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 (Ustekinumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Placebo for Ustekinumab",
+       "Biological: Ustekinumab (6 mg/kg)",
+       "Biological: Ustekinumab (90 mg)"
+      ]
+     },
+     {
+      "label": "Group 2 (Adalimumab)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Placebo for Adalimumab",
+       "Biological: Adalimumab (40 mg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo for Ustekinumab"
+     },
+     {
+      "name": "Placebo for Adalimumab"
+     },
+     {
+      "name": "Ustekinumab (6 mg/kg)"
+     },
+     {
+      "name": "Ustekinumab (90 mg)"
+     },
+     {
+      "name": "Adalimumab (40 mg)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07263464",
+    "briefTitle": "The Association Between TNFSF4 Polymorphism and CD"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Biological: Ustekinumab - Standard Dosage"
+      ]
+     },
+     {
+      "label": "normal controls"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab - Standard Dosage"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06935929",
+    "briefTitle": "A Study on the Associations Between Microribonucleic Acid Gene Polymorphisms and Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Biological: Ustekinumab - Standard Dosage"
+      ]
+     },
+     {
+      "label": "normal controls"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab - Standard Dosage"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03926130",
+    "briefTitle": "A Study of Mirikizumab (LY3074828) in Participants With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-07-23"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "300 mg Mirikizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "90 mg Ustekinumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "300 mg Mirikizumab (Adolescents)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mirikizumab"
+     },
+     {
+      "name": "Mirikizumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06912815",
+    "briefTitle": "Ustekinumab With Semi-EN vs Exclusive EN for Preoperative Crohn's Disease Optimization."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-08-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ustekinumab and semi enteral nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: ustekinumab and semi enteral nutrition"
+      ]
+     },
+     {
+      "label": "Exclusive enteral nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Exclusive enteral nutrition"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ustekinumab and semi enteral nutrition"
+     },
+     {
+      "name": "Exclusive enteral nutrition"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05386290",
+    "briefTitle": "A Multicentered Prospective Cohort Study of Chinese IBD Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-07-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UC patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Vedolizumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     },
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Ustekinumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03362736",
+    "briefTitle": "An Early Access Program For Ustekinumab In Participants With Moderately To Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NO_LONGER_AVAILABLE"
+   },
+   "designModule": {
+    "studyType": "EXPANDED_ACCESS"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05542459",
+    "briefTitle": "Multi-omics to Predict Responses to Biologics in IBD"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-IBD control group"
+     },
+     {
+      "label": "CD group",
+      "interventionNames": [
+       "Drug: Biologics"
+      ]
+     },
+     {
+      "label": "UC group",
+      "interventionNames": [
+       "Drug: Biologics"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Biologics"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04673357",
+    "briefTitle": "A Study of Ustekinumab in Pediatric Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-04-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open- Label Ustekinumab Intravenous (IV): Induction Period",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Ustekinumab Subcutaneous (SC) Every 8 Weeks (q8w): Maintenance Period",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Ustekinumab SC Every 12 Weeks (q12w): Maintenance Period",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05056441",
+    "briefTitle": "A Study of Real-World Outcomes of People With Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1: Vedolizumab"
+     },
+     {
+      "label": "Cohort 2: Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07310095",
+    "briefTitle": "A Study to Evaluate the Efficacy of Guselkumab in Chinese Participants With Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Guselkumab Treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Guselkumab (GUS)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Guselkumab (GUS)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02103361",
+    "briefTitle": "Stelara and Tremfya Pregnancy Exposure Registry OTIS Autoimmune Diseases in Pregnancy Project"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2013-11"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Stelara (ustekinumab) exposed",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Tremfya (guselkumab) exposed",
+      "interventionNames": [
+       "Drug: Guselkumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Guselkumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06082986",
+    "briefTitle": "A Retrospective Observational Study of Ustekinumab Among Bio-naive Participants With Crohn's Disease in China"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-10-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bio-naive Participants With Crohn's Disease (CD)",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07600255",
+    "briefTitle": "Assessment on the Deep Remission Rate and Its Influencing Factors of Individualized Ustekinumab Therapy in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Observation group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07100093",
+    "briefTitle": "Prospective, Multicenter Study on the Association Between Serum Ustekinumab Levels and Clinical, Biological and Endoscopic Remission in Patients With Crohn's Disease."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Induction",
+      "interventionNames": [
+       "Procedure: Drug serum levels"
+      ]
+     },
+     {
+      "label": "Maintenance",
+      "interventionNames": [
+       "Procedure: Drug serum levels"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Drug serum levels"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07149467",
+    "briefTitle": "Ustekinumab and Upadacitinib for Induction and Maintenance Therapy in Patients With Refractory Crohn's Disease: A Multicenter, Randomized, Parallel-Controlled Study"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Upadacitinib"
+      ]
+     },
+     {
+      "label": "Upadacitinib Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab (approximately 6 mg/kg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab (approximately 6 mg/kg)"
+     },
+     {
+      "name": "Upadacitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07250815",
+    "briefTitle": "A Study on Infections in Adults With Ulcerative Colitis/Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2026-09-21"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with UC",
+      "interventionNames": [
+       "Other: No intervention"
+      ]
+     },
+     {
+      "label": "Participants with CD",
+      "interventionNames": [
+       "Other: No intervention"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "No intervention"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03495973",
+    "briefTitle": "Prospective Observational Study on Ustekinumab (Stelara) Assessing Efficacy and Healthcare Resource Utilization in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-10-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with Crohn's Disease (CD)",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03606499",
+    "briefTitle": "Real-world Effectiveness of Ustekinumab in Participants Suffering From Inflammatory Bowel Disease (Crohn's Disease or Ulcerative Colitis) With Extra-intestinal Manifestations or Immune-mediated Inflammatory Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-09-26"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Inflammatory Bowel Disease (IBD) Participants with EIMs and/or IMIDs",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06739278",
+    "briefTitle": "Individual Treatment of Ustekinumab in Perianal Fistulizing Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-12-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06520397",
+    "briefTitle": "Efficacy and Safety of Dual-targeted Therapy With Upadacitinib and Ustekinumab Versus Intensified Ustekinumab Therapy in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-07-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dual-target Therapy Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab and Upadacitinib"
+      ]
+     },
+     {
+      "label": "Intensified Ustekinumab Monotherapy Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab and Upadacitinib"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05057832",
+    "briefTitle": "Determination of Ustekinumab Levels in Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cases"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04524611",
+    "briefTitle": "Study Comparing Intravenous (IV)/Subcutaneous (SC) Risankizumab to IV/SC Ustekinumab to Assess Change in Crohn's Disease Activity Index (CDAI) in Adult Participants With Moderate to Severe Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2020-09-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Risankizumab Dose A Followed by Dose B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Risankizumab"
+      ]
+     },
+     {
+      "label": "Ustekinumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Risankizumab"
+     },
+     {
+      "name": "Risankizumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03466411",
+    "briefTitle": "A Study of the Efficacy and Safety of Guselkumab in Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2018-04-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Phase 2 (GALAXI 1): Group 1 (Guselkumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Guselkumab Dose 1",
+       "Drug: Guselkumab Dose 2"
+      ]
+     },
+     {
+      "label": "Phase 2 (GALAXI 1): Group 2 (Guselkumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Guselkumab Dose 2",
+       "Drug: Guselkumab Dose 3"
+      ]
+     },
+     {
+      "label": "Phase 2 (GALAXI 1): Group 3 (Guselkumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Guselkumab Dose 4",
+       "Drug: Guselkumab Dose 5"
+      ]
+     },
+     {
+      "label": "Phase 2 (GALAXI 1): Group 4 (Ustekinumab)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Phase 2 (GALAXI 1): Group 5 (Placebo/Ustekinumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Phase 3 (GALAXI 2 and 3): Group 1 and Group 2 (Guselkumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Guselkumab"
+      ]
+     },
+     {
+      "label": "Phase 3 (GALAXI 2 and 3): Group 3 (Ustekinumab)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Phase 3 (GALAXI 2 and 3): Group 4 (Placebo/Ustekinumab)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Guselkumab Dose 1"
+     },
+     {
+      "name": "Guselkumab Dose 2"
+     },
+     {
+      "name": "Guselkumab Dose 3"
+     },
+     {
+      "name": "Guselkumab Dose 4"
+     },
+     {
+      "name": "Guselkumab Dose 5"
+     },
+     {
+      "name": "Guselkumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04496063",
+    "briefTitle": "USTekinumab in Fistulising Perianal Crohn's Disease (USTAP)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Group 2 Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00771667",
+    "briefTitle": "A Study of Safety and Effectiveness of Ustekinumab in Patients With Moderate to Severe Active Crohn's Disease Who Have Been Previously Treated With Anti-TNF Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo (IP)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo (IP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab 1mg/kg (IP)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 1mg/kg (IP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab 3 mg/kg (IP)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 3 mg/kg (IP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab 6 mg/kg (IP)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 6 mg/kg (IP)"
+      ]
+     },
+     {
+      "label": "Placebo IV - Responder - Placebo SC (MP)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo IV - Responder - Placebo SC (MP)"
+      ]
+     },
+     {
+      "label": "Placebo IV - Nonresponder - Ustekinumab 270/90 mg SC",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo IV - Nonresponder - Ustekinumab 270/90 mg SC (MP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab IV - Responder - Placebo SC (MP)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab IV - Responder - Placebo SC (MP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab IV - Responder - Ustekinumab 90mg SC (MP)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab IV - Responder - Ustekinumab 90mg SC (MP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab IV - Nonresponder - Placebo SC (MP)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab IV - Nonresponder - Placebo SC (MP)"
+      ]
+     },
+     {
+      "label": "Ustekinumab IV - Nonresponder - Ustekinumab 90mg SC (MP)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab IV - Nonresponder - Ustekinumab 90mg SC (MP)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo (IP)"
+     },
+     {
+      "name": "Ustekinumab 1mg/kg (IP)"
+     },
+     {
+      "name": "Ustekinumab 3 mg/kg (IP)"
+     },
+     {
+      "name": "Ustekinumab 6 mg/kg (IP)"
+     },
+     {
+      "name": "Placebo IV - Responder - Placebo SC (MP)"
+     },
+     {
+      "name": "Placebo IV - Nonresponder - Ustekinumab 270/90 mg SC (MP)"
+     },
+     {
+      "name": "Ustekinumab IV - Responder - Placebo SC (MP)"
+     },
+     {
+      "name": "Ustekinumab IV - Responder - Ustekinumab 90mg SC (MP)"
+     },
+     {
+      "name": "Ustekinumab IV - Nonresponder - Placebo SC (MP)"
+     },
+     {
+      "name": "Ustekinumab IV - Nonresponder - Ustekinumab 90mg SC (MP)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05928039",
+    "briefTitle": "PATHFINDER: Evaluating the Optimal First-Line Treatment Strategy for Moderate-to-Severely Active Ileal-dominant Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-10-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TNF\u03b1 antagonist",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: TNFa Antagonist - Infliximab",
+       "Biological: TNFa Antagonist - Adalimumab"
+      ]
+     },
+     {
+      "label": "Anti-IL12/23 or anti-IL23",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Anti-IL12/23 or anti-IL23 - Ustekinumab",
+       "Biological: Anti-IL12/23 or anti-IL23 - Risankizumab"
+      ]
+     },
+     {
+      "label": "Anti-integrin",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Anti-integrin - Vedolizumab IV",
+       "Biological: Anti-integrin - Vedolizumab IV and SC"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "TNFa Antagonist - Infliximab"
+     },
+     {
+      "name": "TNFa Antagonist - Adalimumab"
+     },
+     {
+      "name": "Anti-IL12/23 or anti-IL23 - Ustekinumab"
+     },
+     {
+      "name": "Anti-IL12/23 or anti-IL23 - Risankizumab"
+     },
+     {
+      "name": "Anti-integrin - Vedolizumab IV"
+     },
+     {
+      "name": "Anti-integrin - Vedolizumab IV and SC"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04232553",
+    "briefTitle": "A Long-term Extension Study of Mirikizumab (LY3074828) in Participants With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2020-06-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AMAM Mirikizumab (Miri): Miri 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM Miri: Miri 900 mg IV Then 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM Placebo (PBO)/Miri: Miri 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM PBO/Miri: Miri 900 mg IV Then 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM Ustekinumab (Uste): Miri 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM Uste: Miri 900 mg IV Then 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM PBO: Miri 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "AMAM PBO: Miri 900 mg IV Then 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     },
+     {
+      "label": "All AMAG Participants: Miri 300 mg SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Mirikizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mirikizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00265122",
+    "briefTitle": "A Study of the Safety and Efficacy of Ustekinumab (CNTO 1275) in Participants With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Population 1: Placebo SC followed by ustekinumab SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 90 mg",
+       "Drug: Placebo SC"
+      ]
+     },
+     {
+      "label": "Population 1: Ustekinumab SC followed by Placebo SC:",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 90 mg",
+       "Drug: Placebo SC"
+      ]
+     },
+     {
+      "label": "Population 1: Placebo IV followed by ustekinumab IV",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 4.5 mg/kg",
+       "Drug: Placebo IV"
+      ]
+     },
+     {
+      "label": "Population 1: Ustekinumab IV followed by Placebo IV:",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 4.5 mg/kg",
+       "Drug: Placebo IV"
+      ]
+     },
+     {
+      "label": "Population 2: Ustekinumab SC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Population 2: Ustekinumab IV",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 4.5 mg/kg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab 90 mg"
+     },
+     {
+      "name": "Ustekinumab 4.5 mg/kg"
+     },
+     {
+      "name": "Placebo SC"
+     },
+     {
+      "name": "Placebo IV"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05705856",
+    "briefTitle": "Effectiveness and Safety of Ustekinumab Intensification in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-02-15"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "intravenous maintenance at early stage",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "intravenous escalation when poor response",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02968108",
+    "briefTitle": "A Pharmacokinetic Study of Ustekinumab in Pediatric Subjects With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-01-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group1: Ustekinumab Dose Regimen 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Group2: Ustekinumab Dose Regimen 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06203158",
+    "briefTitle": "Intestinal Epithelial Fucosylation Affects the Efficacy of Ustekinumab in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-12-26"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High fucosylation group"
+     },
+     {
+      "label": "Low fucosylation group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06788340",
+    "briefTitle": "MOdel-Informed Precision Dosing of Ustekinumab and VEdolizumab in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Model-informed precision dosing of Vedolizumab/Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: PK-model to decide when to dose Vedolizumab and Ustekinumab"
+      ]
+     },
+     {
+      "label": "Dosing of Vedolizumab/Ustekinumab by physicians best clinical assessment",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "PK-model to decide when to dose Vedolizumab and Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01369355",
+    "briefTitle": "A Study to Evaluate the Safety and Efficacy of Ustekinumab Maintenance Therapy in Patients With Moderately to Severely Active Crohn's Disease (IM-UNITI)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-09-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "001",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo SC"
+      ]
+     },
+     {
+      "label": "002",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 90 mg SC q12w"
+      ]
+     },
+     {
+      "label": "003",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab 90 mg SC q8w"
+      ]
+     },
+     {
+      "label": "004",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo IV",
+       "Drug: Ustekinumab 90 mg SC q8w"
+      ]
+     },
+     {
+      "label": "005",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo SC",
+       "Drug: Ustekinumab 130 mg IV",
+       "Drug: Ustekinumab 90 mg SC q12w"
+      ]
+     },
+     {
+      "label": "006",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo SC"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo SC"
+     },
+     {
+      "name": "Placebo IV"
+     },
+     {
+      "name": "Ustekinumab 90 mg SC q8w"
+     },
+     {
+      "name": "Ustekinumab 130 mg IV"
+     },
+     {
+      "name": "Ustekinumab 90 mg SC q12w"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06785493",
+    "briefTitle": "The Clinical Efficacy and Influence Factors of Individualized Treatment of Ustekinumab in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Optimized Treatment (OPT)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03351647",
+    "briefTitle": "Predictive Factors of Clinical Response to Ustekinumab in Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-02-14"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group Ustekinumab",
+      "interventionNames": [
+       "Biological: Evaluation of biological predictive factors of clinical response to ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Evaluation of biological predictive factors of clinical response to ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06523647",
+    "briefTitle": "Clinical Efficacy of Ustekinumab in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-06-27"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05029921",
+    "briefTitle": "A Study of Ustekinumab (STELARA) in Chinese Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-12-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07245394",
+    "briefTitle": "Switching to the IL-23 Inhibitor Guselkumab for People With Active IBD Who Previously Used Ustekinumab (SHIFT-IBD)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-29"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Early Switch Cohort (ESC)",
+      "interventionNames": [
+       "Biological: Guselkumab (Tremfya)"
+      ]
+     },
+     {
+      "label": "Exhausted Ustekinumab Cohort (EUC)",
+      "interventionNames": [
+       "Biological: Guselkumab (Tremfya)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Guselkumab (Tremfya)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04655807",
+    "briefTitle": "A Study of JNJ-64304500 as Add-on Therapy in Participants With Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2021-03-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1- Standard of Care (SOC) Biological Therapy: Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Group 2: SOC Biological Therapy: Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo",
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "JNJ-64304500"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06935942",
+    "briefTitle": "The Associations of Plasminogen Activator Inhibitor-1 Gene Polymorphisms With Crohn's Disease in Chinese Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Biological: Ustekinumab - Standard Dosage"
+      ]
+     },
+     {
+      "label": "normal controls"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab - Standard Dosage"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07694674",
+    "briefTitle": "Comparison of the Efficacy of Different Biologic Agents in Preventing Postoperative Endoscopic Recurrence of Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-16"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Postoperative anti-TNF biologics group",
+      "interventionNames": [
+       "Biological: Infliximab",
+       "Biological: Adalimumab"
+      ]
+     },
+     {
+      "label": "Postoperative non-anti-TNF biologics group",
+      "interventionNames": [
+       "Biological: Vedolizumab",
+       "Biological: Ustekinumab (UST)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Ustekinumab (UST)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07828886",
+    "briefTitle": "Immune Aging and Advanced Therapy Outcomes in Older Adults With IBD"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-10-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Older Adults With IBD Initiating Advanced Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01369342",
+    "briefTitle": "A Study to Evaluate the Safety and Efficacy of Ustekinumab Induction Therapy in Patients With Moderately to Severely Active Crohn's Disease (UNITI-2)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo IV",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Group 1: Placebo"
+      ]
+     },
+     {
+      "label": "Ustekinumab 130 milligram (mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Group 2 ustekinumab 130 mg"
+      ]
+     },
+     {
+      "label": "Ustekinumab approximately (~) 6 milligram per kilogram (mg/kg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Group 3: ustekinumab approximately 6 mg/kg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Group 1: Placebo"
+     },
+     {
+      "name": "Group 2 ustekinumab 130 mg"
+     },
+     {
+      "name": "Group 3: ustekinumab approximately 6 mg/kg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06274554",
+    "briefTitle": "Testing the Role of Anti-fungal Therapy in Improving the Response to Therapies for Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-10-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IL-23 Therapy with Fluconazole",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fluconazole",
+       "Biological: IL-23 Therapy"
+      ]
+     },
+     {
+      "label": "IL-23 Therapy with Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Biological: IL-23 Therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fluconazole"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "IL-23 Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04978493",
+    "briefTitle": "A Study to Test Whether BI 706321 Combined With Ustekinumab Helps People With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2021-12-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "BI 706321 and ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: BI 706321",
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Placebo and ustekinumab",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BI 706321"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03358706",
+    "briefTitle": "A Study to Evaluate the Effect of Ustekinumab on Cytochrome P450 Enzyme Activities Following Induction and Maintenance Dosing in Participants With Active Crohn's Disease or Ulcerative Colitis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-02-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's Disease or Ulcerative Colitis Participants: Ustekinumab + Probe Cocktail",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab IV Infusion",
+       "Drug: Ustekinumab SC Injection",
+       "Drug: Midazolam 2 mg",
+       "Drug: Warfarin 10 mg",
+       "Drug: Vitamin K 10 mg",
+       "Drug: Omeprazole 20 mg",
+       "Drug: Dextromethorphan 30 mg",
+       "Drug: Caffeine 100 mg"
+      ]
+     },
+     {
+      "label": "Healthy Participants: Probe Cocktail",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Midazolam 2 mg",
+       "Drug: Warfarin 10 mg",
+       "Drug: Vitamin K 10 mg",
+       "Drug: Omeprazole 20 mg",
+       "Drug: Dextromethorphan 30 mg",
+       "Drug: Caffeine 100 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab IV Infusion"
+     },
+     {
+      "name": "Ustekinumab SC Injection"
+     },
+     {
+      "name": "Midazolam 2 mg"
+     },
+     {
+      "name": "Warfarin 10 mg"
+     },
+     {
+      "name": "Vitamin K 10 mg"
+     },
+     {
+      "name": "Omeprazole 20 mg"
+     },
+     {
+      "name": "Dextromethorphan 30 mg"
+     },
+     {
+      "name": "Caffeine 100 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07198113",
+    "briefTitle": "COMPARE - Pediatric Inflammatory Bowel Disease (PIBD)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Children with Crohn's disease (CD)"
+     },
+     {
+      "label": "Children with Ulcerative Colitis (UC)"
+     },
+     {
+      "label": "Retrospective Safety Analysis"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01369329",
+    "briefTitle": "A Study to Evaluate the Safety and Efficacy of Ustekinumab in Patients With Moderately to Severely Active Crohn's Disease Who Have Failed or Are Intolerant to Tumor Necrosis Factor (TNF) Antagonist Therapy (UNITI-1)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "001",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Group 1: Placebo"
+      ]
+     },
+     {
+      "label": "002",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Group 2 ustekinumab 130 mg"
+      ]
+     },
+     {
+      "label": "003",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Group 3: ustekinumab approximately 6 mg/kg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Group 2 ustekinumab 130 mg"
+     },
+     {
+      "name": "Group 3: ustekinumab approximately 6 mg/kg"
+     },
+     {
+      "name": "Group 1: Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04779762",
+    "briefTitle": "Stelara and Diet Trial for Crohn\"s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Crohn's disease exclusion diet (CDED)",
+       "Drug: Ustekinumab Injection [Stelara]"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab Injection [Stelara]"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Crohn's disease exclusion diet (CDED)"
+     },
+     {
+      "name": "Ustekinumab Injection [Stelara]"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04795960",
+    "briefTitle": "Microbiome Modification to Enhance Stelara Response in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2021-03-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Low serine diet",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Low serine diet"
+      ]
+     },
+     {
+      "label": "High serine diet",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: High serine diet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Low serine diet"
+     },
+     {
+      "name": "High serine diet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07057856",
+    "briefTitle": "An Analysis of the Relationship Between the Genetic Polymorphisms of Interleukin 12 Receptor Subunit Beta 1 and Crohn's Disease in Chinese Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Biological: Ustekinumab (UST)"
+      ]
+     },
+     {
+      "label": "normal control"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab (UST)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05169593",
+    "briefTitle": "Prevention of Postoperative Endoscopic Recurrence With Endoscopy-driven Versus Systematic Biological Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2022-09-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Endoscopy-driven postoperative biological therapy",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Biological Drug"
+      ]
+     },
+     {
+      "label": "Systematic postoperative prophylaxis with a biological",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Biological Drug"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Biological Drug"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02877134",
+    "briefTitle": "Safety and Efficacy Study of JNJ-64304500 in Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-08-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part I : Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part I : JNJ-64304500",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500"
+      ]
+     },
+     {
+      "label": "Part II : Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Part II : JNJ-64304500 High Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500"
+      ]
+     },
+     {
+      "label": "Part II : JNJ-64304500 Middle Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500"
+      ]
+     },
+     {
+      "label": "Part II : JNJ-64304500 Low Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JNJ-64304500"
+      ]
+     },
+     {
+      "label": "Part II : Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "JNJ-64304500"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05867784",
+    "briefTitle": "Effect of Vitamin D Supplementation on the Efficacy of Ustekinumab in the Treatment of Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "supplementary group"
+     },
+     {
+      "label": "non-supplementary group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07077681",
+    "briefTitle": "Evaluation of the Acceptability and Therapeutic Maintenance After Substitution of Ustekinumab With a Biosimilar"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-06-02"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05092269",
+    "briefTitle": "A Long-term Extension Study of Ustekinumab in Pediatric Participants"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2021-10-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05642247",
+    "briefTitle": "Quantify the Value of Transmural Inflammation in the Treatment of Crohn's Disease With Ustekinumab:an Analysis Based on Imaging Science"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD patients who received Ustekinumab treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03942120",
+    "briefTitle": "Post-Marketing Surveillance for Crohn's Disease Participants Treated With Stelara (Ustekinumab)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-04-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with Crohn's Disease",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03107793",
+    "briefTitle": "Study of Treat to Target Versus Routine Care Maintenance Strategies in Crohn's Disease Patients Treated With Ustekinumab"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "All Participants",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Routine Care Arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Treat to Target (T2T) Arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Exploratory Extension period: From Week 48 to Week 104",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03782376",
+    "briefTitle": "A Study to Evaluate Efficacy and Safety of Ustekinumab Re-induction Therapy in Participants With Moderately to Severely Active Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-12-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1: Ustekinumab (IV re-induction)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab approximately 6 mg/kg (IV)",
+       "Drug: Placebo (SC)",
+       "Drug: Ustekinumab 90 mg (SC) Group 1"
+      ]
+     },
+     {
+      "label": "Group 2: Ustekinumab (Continuous q8w SC maintenance)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo (IV)",
+       "Drug: Ustekinumab 90 mg (SC) Group 2"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab approximately 6 mg/kg (IV)"
+     },
+     {
+      "name": "Placebo (SC)"
+     },
+     {
+      "name": "Placebo (IV)"
+     },
+     {
+      "name": "Ustekinumab 90 mg (SC) Group 1"
+     },
+     {
+      "name": "Ustekinumab 90 mg (SC) Group 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04245215",
+    "briefTitle": "Loss of RESponse to Ustekinumab Treated by Dose Escalation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-03-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1. Subcutaneous ustekinumab every 8 weeks",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "2. Subcutaneous ustekinumab every 4 weeks",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04629196",
+    "briefTitle": "Induction Optimization With Stelara for Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2022-02-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IV Weight-Based Induction Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Standard Subcutaenous Dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05387031",
+    "briefTitle": "Efficacy of Ustekinumab Therapy in Patients With Symptomatic Stricturing Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-08-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "patients with symptomatic stricturing Crohn's disease",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07697547",
+    "briefTitle": "Efficacy and Safety of Low-Dose Upadacitinib Combined With Ustekinumab in the Treatment of Refractory Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Low-dose upadacitinib plus ustekinumab cohort",
+      "interventionNames": [
+       "Drug: Upadacitinib",
+       "Drug: Ustekinumab (UST)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Upadacitinib"
+     },
+     {
+      "name": "Ustekinumab (UST)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07177118",
+    "briefTitle": "Risankizumab for Fibrostenotic Crohn's Disease Treatment"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-10-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ustekinumab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "risankizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Risankizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Risankizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06045754",
+    "briefTitle": "A Study of Vedolizumab Intravenous (IV) and Adalimumab or Vedolizumab and Ustekinumab in Adults With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-04-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A, Cohort 1: Vedolizumab + Adalimumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Part A, Cohort 2: Vedolizumab + Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Part B: Vedolizumab Monotherapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04852666",
+    "briefTitle": "Comparative Effectiveness of Biologics or Small Molecule Therapies in Inflammatory Bowel Disease (IBD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-07-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's Disease (Vedolizumab)"
+     },
+     {
+      "label": "Crohn's Disease (Ustekinumab)"
+     },
+     {
+      "label": "Ulcerative Colitis (Vedolizumab)"
+     },
+     {
+      "label": "Ulcerative Colitis (Tofacitinib)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05299931",
+    "briefTitle": "An Open-Label Extension and Long-term Efficacy and Safety Monitoring Study of Patients With Crohn's Disease Previously Included in the Loss of RESponse to Ustekinumab Treated by Dose Escalation Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Subcutaneous (SC) ustekinumab every 8 weeks (Q8w)",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Subcutaneous (SC) ustekinumab every 4 weeks (Q4w)",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06249555",
+    "briefTitle": "VOICE-Early Response to Vedolizumab and IL-23 Antagonists in Participants With Crohn's Disease: A Prospective Observational Study"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-03-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vedolizumab",
+      "interventionNames": [
+       "Drug: Vedolizumab (VDZ)"
+      ]
+     },
+     {
+      "label": "IL-23 Antagonists",
+      "interventionNames": [
+       "Drug: Ustekinumab (UST)",
+       "Drug: Risankizumab (RISA)",
+       "Drug: Guselkumab (GUS)",
+       "Drug: Mirikizumab (MIR)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab (VDZ)"
+     },
+     {
+      "name": "Ustekinumab (UST)"
+     },
+     {
+      "name": "Risankizumab (RISA)"
+     },
+     {
+      "name": "Guselkumab (GUS)"
+     },
+     {
+      "name": "Mirikizumab (MIR)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05407350",
+    "briefTitle": "Validation of an IUS Activity Index"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-06"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohns disease patients",
+      "interventionNames": [
+       "Diagnostic Test: Ultrasound, Colonoscopy, MRE"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ultrasound, Colonoscopy, MRE"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05242458",
+    "briefTitle": "A Study of Ustekinumab Treatment in Children With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-03-21"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants with Crohn's Disease (CD)",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06956703",
+    "briefTitle": "NAZA - Nottingham/Astra ZenecA Prospective IBD Cohort Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2022-12-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's Disease - anti-TNF\u03b1 therapy"
+     },
+     {
+      "label": "Crohn's Disease - ustekinumab"
+     },
+     {
+      "label": "Crohn's Disease - upadacitinib"
+     },
+     {
+      "label": "Ulcerative Colitis - anti-TNF\u03b1 therapy"
+     },
+     {
+      "label": "Ulcerative Colitis - vedolizumab"
+     },
+     {
+      "label": "Control non-IBD"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07495644",
+    "briefTitle": "Efficacy of Different Biological Treatments in Patients With Inflammatory Bowel Disease After One Year of Treatment in Upper Egypt"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "adalimumab, infliximab, ustekinumab, golimumab, and vedolizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05861167",
+    "briefTitle": "SIIT Based on UST CDST in Patients With CD"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "SIIT group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: selective intensive induction therapy based on ustekinumab clinical decision-making tools"
+      ]
+     },
+     {
+      "label": "Non-intensive induction therapy group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "selective intensive induction therapy based on ustekinumab clinical decision-making tools"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07303686",
+    "briefTitle": "De-escalation of Ustekinumab Therapy in Patients With Crohn's Disease and Ulcerative Colitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-10-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab Q4w",
+      "type": "OTHER",
+      "interventionNames": [
+       "Biological: Ustekinumab 90 mg SC q8w"
+      ]
+     },
+     {
+      "label": "Ustekinumab Q8w",
+      "type": "OTHER",
+      "interventionNames": [
+       "Biological: Ustekinumab 90 mg SC q12w"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab 90 mg SC q8w"
+     },
+     {
+      "name": "Ustekinumab 90 mg SC q12w"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07152977",
+    "briefTitle": "Description of the Radiological Response of Anoperineal Fistulizing Lesions of Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-07-31"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Radiological evolution of ano-perineal lesions by MRI"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07748338",
+    "briefTitle": "Ustekinumab Real World Evidence Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-10-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03885713",
+    "briefTitle": "Identification of Predictive Biomarkers for Response to Biologic Therapies and Tofacitinib in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-09-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Infliximab or adalimumab or golimumab or vedolizumab or ustekinumab or tofacitinib"
+      ]
+     },
+     {
+      "label": "healthy control",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab or adalimumab or golimumab or vedolizumab or ustekinumab or tofacitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06997055",
+    "briefTitle": "ROLL'YN-UST: an Observational Study in Patients Treated by Steqeyma\u00ae, an Ustekinumab Biosimilar"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-03-17"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "CD group",
+      "interventionNames": [
+       "Drug: Ustekinumab 45 mg",
+       "Drug: Ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Psoriasis Group",
+      "interventionNames": [
+       "Drug: Ustekinumab 45 mg",
+       "Drug: Ustekinumab 90 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab 45 mg"
+     },
+     {
+      "name": "Ustekinumab 90 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06089590",
+    "briefTitle": "Ibd CAncer and seRious Infections in France (I-CARE 2)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group Anti-IL23p19",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Jak inhibitors",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group S1P Modulators",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti TNF",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti integrins",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti IL12/23",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Non-interventional"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07444060",
+    "briefTitle": "Guselkumab Vs Ustekinumab in Stricturing Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GUS",
+      "interventionNames": [
+       "Drug: Guselkumab (GUS)"
+      ]
+     },
+     {
+      "label": "UST",
+      "interventionNames": [
+       "Drug: Ustekinumab (UST)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Guselkumab (GUS)"
+     },
+     {
+      "name": "Ustekinumab (UST)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03712826",
+    "briefTitle": "Identification by Cytometry by Mass of Predictive Immunological Profiles of Answer to Treatmentby Biotherapics for Patients With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2022-07-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "anti TNF",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Anti-TNF Drug"
+      ]
+     },
+     {
+      "label": "Ustekinumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-TNF Drug"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03167437",
+    "briefTitle": "An Open-Label, Proof of Consent Study of Vorinostat for the Treatment of Mdoerate-to-Severe Crohn s Disease and Maintenance Therapy With Ustekinumab"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2017-10-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vorinostat"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vorinostat"
+      ]
+     },
+     {
+      "label": "3",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vorinostat"
+     },
+     {
+      "name": "Ustekinumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03108326",
+    "briefTitle": "Real World Effectiveness of Ustekinumab in Induction and Maintenance Therapy for Crohn\u00b4s Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-04-15"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1a"
+     },
+     {
+      "label": "Group 1b"
+     },
+     {
+      "label": "Group 2",
+      "interventionNames": [
+       "Biological: Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+      ]
+     },
+     {
+      "label": "Group 3a"
+     },
+     {
+      "label": "Group 3b"
+     },
+     {
+      "label": "Group 4",
+      "interventionNames": [
+       "Biological: Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Stelara, Remicade, Entyvio, Humira, Remsima, Flixabi, Inflectra"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04372108",
+    "briefTitle": "A Study to Assess the Long-Term Safety of Ustekinumab Versus Other Biologics in Patients With Crohn's Disease and Ulcerative Colitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ustekinumab New User Cohort",
+      "interventionNames": [
+       "Drug: Ustekinumab"
+      ]
+     },
+     {
+      "label": "Other Biologics Comparator Cohort",
+      "interventionNames": [
+       "Drug: Other Biologic Therapies"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "Other Biologic Therapies"
+     }
+    ]
+   }
+  }
+ }
+]

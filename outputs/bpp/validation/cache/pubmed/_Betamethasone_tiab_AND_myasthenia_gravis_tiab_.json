@@ -1,0 +1,21 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "41383535",
+   "title": "The Use of Parabulbar and Sub-Tenon Injections to Correct Isolated Resistant Diplopia in Patients With Generalized Myasthenia Gravis: A Long Road to Clinically Meaningful Success.",
+   "year": "2025"
+  },
+  {
+   "pmid": "24187819",
+   "title": "[Premature birth in patient with cervix incompetence and history of myasthenia gravis].",
+   "year": "2013"
+  },
+  {
+   "pmid": "14102243",
+   "title": "SOME DISEASES OF MUSCLE.",
+   "year": "1964"
+  }
+ ]
+}

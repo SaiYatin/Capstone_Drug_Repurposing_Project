@@ -1,0 +1,1048 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05386290",
+    "briefTitle": "A Multicentered Prospective Cohort Study of Chinese IBD Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-07-09"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UC patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Vedolizumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     },
+     {
+      "label": "CD patients",
+      "interventionNames": [
+       "Drug: Infliximab",
+       "Drug: Ustekinumab",
+       "Drug: conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab"
+     },
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Ustekinumab"
+     },
+     {
+      "name": "conventional treatment (glucocoticoid, immunosupressive drugs and/or mesalazine)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00462072",
+    "briefTitle": "Centocor Microarray Study of Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05040464",
+    "briefTitle": "Comparison of Azathioprine to Methotrexate in Combination Therapy With Adalimumab in Crohn's Disease: an Open-label Randomized Controlled Trial"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-08-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "AZA group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AZA capsules",
+       "Biological: blood sample"
+      ]
+     },
+     {
+      "label": "MTX group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MTX",
+       "Biological: blood sample"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AZA capsules"
+     },
+     {
+      "name": "MTX"
+     },
+     {
+      "name": "blood sample"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06673134",
+    "briefTitle": "Prospective Cohort Establishment and Clinical Observation of Children With Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2023-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "enteral nutrition group",
+      "interventionNames": [
+       "Drug: Immunotherapy",
+       "Drug: biological agents",
+       "Drug: Glucocorticoids",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Glucocorticoid group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: biological agents",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Immunosuppressive group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: biological agents",
+       "Other: fecal microbiota transplantation"
+      ]
+     },
+     {
+      "label": "Fecal Microbiota Transplantation group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: Immunotherapy",
+       "Drug: biological agents",
+       "Drug: Glucocorticoids"
+      ]
+     },
+     {
+      "label": "Biologics group",
+      "interventionNames": [
+       "Drug: enteral nutrition",
+       "Drug: Immunotherapy",
+       "Drug: Glucocorticoids",
+       "Other: fecal microbiota transplantation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "enteral nutrition"
+     },
+     {
+      "name": "Immunotherapy"
+     },
+     {
+      "name": "biological agents"
+     },
+     {
+      "name": "Glucocorticoids"
+     },
+     {
+      "name": "fecal microbiota transplantation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02177071",
+    "briefTitle": "A proSpective Randomized Controlled Trial comParing infliximAb-antimetabolites Combination Therapy to Anti-metabolites monotheRapy and Infliximab monothErapy in Crohn's Disease Patients in Sustained Steroid-free Remission on Combination Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-10-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "INFLIXIMAB AND ANTI METABOLITE",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "STOP INFLIXIMAB CONTINUING ANTI METABOLITE",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: INFLIXIMAB"
+      ]
+     },
+     {
+      "label": "CONTINUING INFLIXIMAB AND discontinuing anti-metabolites",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: AZATHIOPRINE",
+       "Drug: MERCAPTOPURINE",
+       "Drug: Methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "INFLIXIMAB"
+     },
+     {
+      "name": "AZATHIOPRINE"
+     },
+     {
+      "name": "MERCAPTOPURINE"
+     },
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04109300",
+    "briefTitle": "Preemptive HLA Genotyping for the Safe Use of Infliximab-combination Therapy in Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "preemptive screening",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Genetic: HLADQA1*05A>G screening"
+      ]
+     },
+     {
+      "label": "standard of care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Other: Standard of Care"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "HLADQA1*05A>G screening"
+     },
+     {
+      "name": "Standard of Care"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02413047",
+    "briefTitle": "Evaluate if Response to Infliximab or Adalimumab May be Regained With an Immunomodulator"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunomodulator",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Azathioprine",
+       "Drug: 6 mercaptopurine",
+       "Drug: Methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "6 mercaptopurine"
+     },
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06059989",
+    "briefTitle": "InDuctIon TREatment with SubCuTaneous Infliximab for Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-11-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Monotherapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab subcutaneous"
+      ]
+     },
+     {
+      "label": "Combination therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab subcutaneous",
+       "Drug: Immunosuppressive Agents"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab subcutaneous"
+     },
+     {
+      "name": "Immunosuppressive Agents"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05458531",
+    "briefTitle": "Monitoring of Inflammatory Conditions"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-06-28"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with an inflammatory disease taking immune-suppressing medication",
+      "interventionNames": [
+       "Other: Questionnaire",
+       "Other: Semi-structured interview"
+      ]
+     },
+     {
+      "label": "Healthcare professionals",
+      "interventionNames": [
+       "Other: Semi-structured interview"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Questionnaire"
+     },
+     {
+      "name": "Semi-structured interview"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05043870",
+    "briefTitle": "Combined Immunosuppression for Pediatric Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2022-10-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "infliximab and immunosuppressives therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab and immunosuppressives"
+      ]
+     },
+     {
+      "label": "infliximab therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Infliximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab and immunosuppressives"
+     },
+     {
+      "name": "Infliximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00132899",
+    "briefTitle": "COMMIT (Combination Of Maintenance Methotrexate-Infliximab Trial)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methotrexate",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methotrexate"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methotrexate"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04196920",
+    "briefTitle": "Methotrexate-associated Anti-TNF Combination Therapy, the Neglected One !"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-12-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort with TNF combination therapy"
+     },
+     {
+      "label": "Cohort with anti-TNF combination therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02269358",
+    "briefTitle": "Salvage Therapy With High/Low Methotrexate for Loss of Response to Infliximab Dose Escalation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Addition of methotrexate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: METHOTREXATE"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "METHOTREXATE"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03553472",
+    "briefTitle": "Identifying Young Inflammatory Bowel Disease Patients at Risk for Herpes Zoster"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-immunosuppressed IBD patients"
+     },
+     {
+      "label": "Thiopurine group"
+     },
+     {
+      "label": "Anti-TNF therapy"
+     },
+     {
+      "label": "Combination therapy"
+     },
+     {
+      "label": "Healthy Control"
+     },
+     {
+      "label": "Vedolizumab therarpy"
+     },
+     {
+      "label": "Prednisone and Anti-TNF therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00546546",
+    "briefTitle": "Early Immunosuppressants in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "control = conventional treatment",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "Immunossuppresive treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: early immunosuppressants (azathioprine, methotrexate)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "early immunosuppressants (azathioprine, methotrexate)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02764762",
+    "briefTitle": "Triple Combination Therapy in High Risk Crohn's Disease (CD)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vedolizumab 300 mg (IV) + Adalimumab 160-80-40 mg (SC) + Methotrexate 15 mg (Oral)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vedolizumab",
+       "Drug: Adalimumab",
+       "Drug: Methotrexate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vedolizumab"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05072782",
+    "briefTitle": "Management of Moderate POstoperative Recurrence in Crohn's Disease: a randoMizEd contROLled Trial of Therapeutic Escalation, the POMEROL Trial. (POMEROL)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-12-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Status quo arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Immunosuppressors (Thiopurines or Methotrexate)"
+      ]
+     },
+     {
+      "label": "Therapy escalation arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Infliximab CT-P13"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Infliximab CT-P13"
+     },
+     {
+      "name": "Immunosuppressors (Thiopurines or Methotrexate)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02852694",
+    "briefTitle": "Reduce Risk for Crohn's Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-02-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High Risk Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methotrexate",
+       "Drug: Adalimumab"
+      ]
+     },
+     {
+      "label": "Low risk group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methotrexate",
+       "Drug: Azathioprine / 6 Mercaptopurine"
+      ]
+     },
+     {
+      "label": "Ancillary",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Adalimumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methotrexate"
+     },
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "Azathioprine / 6 Mercaptopurine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05927064",
+    "briefTitle": "Study Evaluating the Persistence, Efficacy and Tolerability of Methotrexate in Inflammatory Bowel Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-07-21"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01802593",
+    "briefTitle": "Comparison of 2 Immunomodulator Withdrawal Schemes for Infliximab Monotherapy in Active Pediatric Crohn's Disease After Thiopurine Failure"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2013-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunomodulator therapy 26 weeks",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AZATHIOPRINE or METHOTREXATE"
+      ]
+     },
+     {
+      "label": "Immunomodulator therapy 2 weeks",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AZATHIOPRINE or METHOTREXATE"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AZATHIOPRINE or METHOTREXATE"
+     },
+     {
+      "name": "AZATHIOPRINE or METHOTREXATE"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00554710",
+    "briefTitle": "Top Down Versus Step Up Strategies in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2001-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: infliximab+azathioprine"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone or budesonide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "infliximab+azathioprine"
+     },
+     {
+      "name": "methylprednisolone or budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06089590",
+    "briefTitle": "Ibd CAncer and seRious Infections in France (I-CARE 2)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group Anti-IL23p19",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Jak inhibitors",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group S1P Modulators",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti TNF",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti integrins",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     },
+     {
+      "label": "Group Anti IL12/23",
+      "interventionNames": [
+       "Other: Non-interventional"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Non-interventional"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06381518",
+    "briefTitle": "Switching From Intravenous to Subcutaneous Infliximab in Adult Patients With Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-03-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort 1: Infliximab monotherapy",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Switch to SC CT-P13."
+      ]
+     },
+     {
+      "label": "Cohort 2: infliximab combination therapy",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Switch to SC CT-P13."
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Switch to SC CT-P13."
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Triamcinolone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 5,
+ "top": [
+  {
+   "pmid": "38254041",
+   "title": "A controlled clinical study on efficacy and safety of periocular triamcinolone acetonide injection for treating ocular myasthenia gravis.",
+   "year": "2024"
+  },
+  {
+   "pmid": "38578695",
+   "title": "Peribulbar Corticosteroids for Ocular Myasthenia Gravis.",
+   "year": "2024"
+  },
+  {
+   "pmid": "14102243",
+   "title": "SOME DISEASES OF MUSCLE.",
+   "year": "1964"
+  }
+ ]
+}

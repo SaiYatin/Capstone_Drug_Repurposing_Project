@@ -1,0 +1,21 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 32,
+ "top": [
+  {
+   "pmid": "26398539",
+   "title": "Histoplasmosis: Up-to-Date Evidence-Based Approach to Diagnosis and Management.",
+   "year": "2015"
+  },
+  {
+   "pmid": "34796121",
+   "title": "First Case of Subcutaneous Mycoses Caused by Dirkmeia churashimaensis and a Literature Review of Human Ustilaginales Infections.",
+   "year": "2021"
+  },
+  {
+   "pmid": "32000281",
+   "title": "Current Concepts in the Epidemiology, Diagnosis, and Management of Histoplasmosis Syndromes.",
+   "year": "2020"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01783106",
+    "briefTitle": "Antibiotics and Hydroxychloroquine in Crohn's"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "budesonide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Budesonide"
+      ]
+     },
+     {
+      "label": "Ciprofloxacine, doxycycline and hydroxychloroquine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ciprofloxacin",
+       "Drug: Doxycycline",
+       "Drug: Hydroxychloroquine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Doxycycline"
+     },
+     {
+      "name": "Hydroxychloroquine"
+     },
+     {
+      "name": "Budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03322488",
+    "briefTitle": "Fistulodesis Pilot Study for Closure of Perianal Fistulae"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-06-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Crohn's Disease",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     },
+     {
+      "label": "Patients without IBD",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fistulodesis"
+     }
+    ]
+   }
+  }
+ }
+]

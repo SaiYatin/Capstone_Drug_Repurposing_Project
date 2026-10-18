@@ -1,0 +1,21 @@
+{
+ "term": "\"Methotrexate\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 880,
+ "top": [
+  {
+   "pmid": "37743037",
+   "title": "Vedolizumab, Adalimumab, and Methotrexate Combination Therapy in Crohn's Disease (EXPLORER).",
+   "year": "2024"
+  },
+  {
+   "pmid": "21524318",
+   "title": "Crohn's disease.",
+   "year": "2011"
+  },
+  {
+   "pmid": "37655055",
+   "title": "Effectiveness and tolerability of methotrexate monotherapy in Crohn's disease patients: a multicenter observational study.",
+   "year": "2023"
+  }
+ ]
+}

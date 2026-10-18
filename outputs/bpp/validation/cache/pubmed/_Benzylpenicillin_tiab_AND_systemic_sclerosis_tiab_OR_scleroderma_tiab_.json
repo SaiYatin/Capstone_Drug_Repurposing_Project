@@ -1,0 +1,16 @@
+{
+ "term": "\"Benzylpenicillin\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "28348790",
+   "title": "Streptococcus pneumoniae bacteraemia due to parotitis in a patient with systemic sclerosis and secondary Sj\u00f6gren's syndrome.",
+   "year": "2016"
+  },
+  {
+   "pmid": "13591560",
+   "title": "[Preliminary observations on the specific antisclerodermic activity of a penicillin derivative: the diethylaminoethyl ester of benzylpenicillin hydroiodide].",
+   "year": "1958"
+  }
+ ]
+}

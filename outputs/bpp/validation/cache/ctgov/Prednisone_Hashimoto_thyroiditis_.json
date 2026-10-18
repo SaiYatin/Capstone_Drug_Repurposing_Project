@@ -1,0 +1,42 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04542278",
+    "briefTitle": "Preoperative Steroids in Autoimmune Thyroid Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-11-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Steroids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "No Steroids",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ }
+]

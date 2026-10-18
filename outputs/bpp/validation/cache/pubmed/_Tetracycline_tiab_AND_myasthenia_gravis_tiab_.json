@@ -1,0 +1,21 @@
+{
+ "term": "\"Tetracycline\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "39984206",
+   "title": "A novel nanoprobe for multimodal instantaneous detection of tiopronin and tetracycline hydrochloride.",
+   "year": "2025"
+  },
+  {
+   "pmid": "15610703",
+   "title": "Neuromuscular Manifestations of Human West Nile Virus Infection.",
+   "year": "2005"
+  },
+  {
+   "pmid": "14215765",
+   "title": "THE AGGRAVATING EFFECT OF SOME ANTIBIOTICS ON THE NEUROMUSCULAR BLOCKADE IN MYASTHENIA GRAVIS.",
+   "year": "1964"
+  }
+ ]
+}

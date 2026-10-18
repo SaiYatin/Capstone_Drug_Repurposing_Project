@@ -1,0 +1,16 @@
+{
+ "term": "\"Testosterone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "27778162",
+   "title": "Low testosterone and myasthenia gravis in males: a national record-linkage study.",
+   "year": "2016"
+  },
+  {
+   "pmid": "17308692",
+   "title": "46,XY hypergonadotropic hypogonadism and myasthenia gravis.",
+   "year": "2006"
+  }
+ ]
+}

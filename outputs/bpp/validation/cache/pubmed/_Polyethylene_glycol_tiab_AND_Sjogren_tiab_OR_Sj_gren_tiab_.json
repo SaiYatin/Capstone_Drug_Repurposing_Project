@@ -1,0 +1,21 @@
+{
+ "term": "\"Polyethylene glycol\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 9,
+ "top": [
+  {
+   "pmid": "35930289",
+   "title": "Tear Film miRNAs and Their Association With Human Dry Eye Disease.",
+   "year": "2022"
+  },
+  {
+   "pmid": "9237100",
+   "title": "Phage-displayed La/SS-B antigen as a diagnostic reagent.",
+   "year": "1997"
+  },
+  {
+   "pmid": "22068541",
+   "title": "Discovery and development of telaprevir: an NS3-4A protease inhibitor for treating genotype 1 chronic hepatitis C virus.",
+   "year": "2011"
+  }
+ ]
+}

@@ -1,0 +1,576 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04182984",
+    "briefTitle": "TheRapeutic Effect of Different immunosuppressAnts on Non-Thymoma Ocular Myasthenia Gravis: a Real-world Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2019-11-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with autoimmune ocular MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents( azathioprine, tacrolimus, Mycophenolate Mofetil)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Symptomatic Treatment, Steroids, Immunosuppressive Agents( azathioprine, tacrolimus, Mycophenolate Mofetil)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00995722",
+    "briefTitle": "Efficacy of Prednisone In the Treatment of Ocular Myasthenia"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone + Pyridostigmine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Placebo + Pyridostigmine",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04101578",
+    "briefTitle": "Clinical Prognosis and Progression of Myasthenia Gravis Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-02-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ocular MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     },
+     {
+      "label": "Generalized MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00294658",
+    "briefTitle": "Thymectomy Trial in Non-Thymomatous Myasthenia Gravis Patients Receiving Prednisone Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Thymectomy plus prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: thymectomy plus prednisone"
+      ]
+     },
+     {
+      "label": "Prednisone alone",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: prednisone alone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "thymectomy plus prednisone"
+     },
+     {
+      "name": "prednisone alone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06723548",
+    "briefTitle": "Telitacicept and Low-dose Steroids in Refractory Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with refractory MG treated with Telitacicept combined with low-dose steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Telitacicept"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Telitacicept"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04768465",
+    "briefTitle": "Tacrolimus Combined With Low-dose Prednisone for Treatment of Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Combined Immunotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Prednisone, Tacrolimus"
+      ]
+     },
+     {
+      "label": "Tacrolimus monotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine, Prednisone, Tacrolimus"
+     },
+     {
+      "name": "Pyridostigmine, Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01828294",
+    "briefTitle": "Subcutaneous Ig Maintenance Therapy for Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Study Population",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Subcutaneous immunoglobulins"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Subcutaneous immunoglobulins"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06342544",
+    "briefTitle": "Immediate Corticosteroid Therapy and Rituximab to Prevent Generalization in Ocular Myasthenia: a PROBE Multicenter Open-label Randomized Controlled Trial."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "immediate treatment with corticosteroids addition of rituximab if recurrence",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: immediate treatment with corticosteroids",
+       "Drug: addition of rituximab if recurrence"
+      ]
+     },
+     {
+      "label": "based on standard practice",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "immediate treatment with corticosteroids"
+     },
+     {
+      "name": "addition of rituximab if recurrence"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00408213",
+    "briefTitle": "A Continuation Study to Assess the Effect of CellCept in Patients With Myasthenia Gravis."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: mycophenolate mofetil [CellCept]"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "mycophenolate mofetil [CellCept]"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07221838",
+    "briefTitle": "A Study to Investigate OCS Tapering in Adult Participants With Generalized Myasthenia Gravis Treated With Ravulizumab"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Oral Corticosteroid Tapering Schedule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Oral Corticosteroid Tapering Schedule",
+       "Drug: Ravulizumab",
+       "Drug: Prednisone/Prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Oral Corticosteroid Tapering Schedule"
+     },
+     {
+      "name": "Ravulizumab"
+     },
+     {
+      "name": "Prednisone/Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04158661",
+    "briefTitle": "Influence of Minimally Invasive Thymectomy on the Subsequent Clinical Course of Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-04-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tmin-group",
+      "interventionNames": [
+       "Procedure: thymectomy (robotic-assisted thoracoscopic, minimally-invasive thymectomy)"
+      ]
+     },
+     {
+      "label": "T0-group",
+      "interventionNames": [
+       "Procedure: no thymectomy (control)"
+      ]
+     },
+     {
+      "label": "MGTX-group (\"historical control group\")",
+      "interventionNames": [
+       "Procedure: thymectomy by means of median sternotomy (transsternal)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "thymectomy (robotic-assisted thoracoscopic, minimally-invasive thymectomy)"
+     },
+     {
+      "name": "thymectomy by means of median sternotomy (transsternal)"
+     },
+     {
+      "name": "no thymectomy (control)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00716066",
+    "briefTitle": "Autologous Stem Cell Transplant for Neurologic Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2008-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment (immunosuppressive therapy followed by transplant)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Anti-Thymocyte Globulin",
+       "Procedure: Autologous Hematopoietic Stem Cell Transplantation",
+       "Drug: Carmustine",
+       "Drug: Cytarabine",
+       "Drug: Etoposide",
+       "Other: Laboratory Biomarker Analysis",
+       "Drug: Melphalan",
+       "Procedure: Peripheral Blood Stem Cell Transplantation",
+       "Drug: Prednisone",
+       "Procedure: Syngeneic Bone Marrow Transplantation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-Thymocyte Globulin"
+     },
+     {
+      "name": "Autologous Hematopoietic Stem Cell Transplantation"
+     },
+     {
+      "name": "Carmustine"
+     },
+     {
+      "name": "Cytarabine"
+     },
+     {
+      "name": "Etoposide"
+     },
+     {
+      "name": "Laboratory Biomarker Analysis"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Peripheral Blood Stem Cell Transplantation"
+     },
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Syngeneic Bone Marrow Transplantation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00987116",
+    "briefTitle": "Study Comparing Two Tapering Strategies of Prednisone in Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Starting dose Prednisone Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone - Azathioprine"
+      ]
+     },
+     {
+      "label": "Starting dose Prednisone - Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone - Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone - Azathioprine"
+     }
+    ]
+   }
+  }
+ }
+]

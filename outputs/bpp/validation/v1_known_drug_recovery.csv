@@ -1,0 +1,51 @@
+target,drug,rank_s0,rank_s1,rank_s2,mean_rank
+Primary Biliary Cholangitis,Ursodeoxycholic acid,1,1,1,1.0
+Systemic Sclerosis,Sulfadiazine,117,245,130,164.0
+Systemic Sclerosis,Bosentan,2,14,8,8.0
+Systemic Sclerosis,Sulfasalazine,159,285,154,199.33333333333334
+Systemic Sclerosis,Benzoic acid,1,2,2,1.6666666666666667
+Systemic Sclerosis,Aminobenzoic acid,4,1,1,2.0
+Sjogren Syndrome,Prednisolone,1,10,10,7.0
+Sjogren Syndrome,Polyethylene glycol 400,2,8,12,7.333333333333333
+Sjogren Syndrome,Terbutaline,4,13,13,10.0
+Sjogren Syndrome,Cyclosporine,6,14,14,11.333333333333334
+Sjogren Syndrome,Polyethylene glycol,5,9,11,8.333333333333334
+Sjogren Syndrome,Polyvinyl alcohol,9,7,6,7.333333333333333
+Sjogren Syndrome,Polyethylene glycol 300,17,11,8,12.0
+Sjogren Syndrome,Polyethylene glycol 3500,18,12,9,13.0
+Sjogren Syndrome,Povidone,10,1,4,5.0
+Sjogren Syndrome,Povidone K30,11,2,5,6.0
+Sjogren Syndrome,Polysorbate 80,20,3,3,8.666666666666666
+Sjogren Syndrome,Propylene glycol,3,5,2,3.3333333333333335
+Autoimmune Hepatitis,Azathioprine,939,796,282,672.3333333333334
+Myasthenia Gravis,Prednisone,16,17,15,16.0
+Myasthenia Gravis,Prednisolone,7,6,6,6.333333333333333
+Myasthenia Gravis,Dexamethasone,10,13,13,12.0
+Myasthenia Gravis,Ambenonium,1,1,1,1.0
+Myasthenia Gravis,Neostigmine,2,2,2,2.0
+Myasthenia Gravis,Pyridostigmine,3,3,3,3.0
+Myasthenia Gravis,Distigmine,4,4,4,4.0
+Crohn Disease,Betamethasone,16,12,8,12.0
+Crohn Disease,Triamcinolone,2,3,3,2.6666666666666665
+Crohn Disease,Prednisone,14,13,11,12.666666666666666
+Crohn Disease,Hydrocortisone,1,1,1,1.0
+Crohn Disease,Prednisolone,9,4,4,5.666666666666667
+Crohn Disease,Budesonide,771,672,527,656.6666666666666
+Crohn Disease,Hydrocortisone acetate,20,10,10,13.333333333333334
+Crohn Disease,Salicylic acid,91,144,95,110.0
+Crohn Disease,Methylprednisolone,21,11,9,13.666666666666666
+Crohn Disease,Azathioprine,166,329,198,231.0
+Crohn Disease,Dexamethasone,15,17,12,14.666666666666666
+Crohn Disease,Mercaptopurine,220,280,305,268.3333333333333
+Crohn Disease,Aminosalicylic acid,170,292,221,227.66666666666666
+Crohn Disease,Metronidazole,98,166,83,115.66666666666667
+Crohn Disease,Cortisone acetate,3,2,2,2.3333333333333335
+Crohn Disease,Sulfadiazine,86,125,75,95.33333333333333
+Crohn Disease,Desonide,222,225,219,222.0
+Crohn Disease,Mesalazine,6,19,13,12.666666666666666
+Crohn Disease,Certolizumab pegol,69,84,61,71.33333333333333
+Crohn Disease,Sulfasalazine,58,94,46,66.0
+Crohn Disease,Natalizumab,125,314,206,215.0
+Crohn Disease,Vedolizumab,40,117,58,71.66666666666667
+Crohn Disease,Adalimumab,24,24,16,21.333333333333332
+Crohn Disease,Infliximab,33,37,24,31.333333333333332

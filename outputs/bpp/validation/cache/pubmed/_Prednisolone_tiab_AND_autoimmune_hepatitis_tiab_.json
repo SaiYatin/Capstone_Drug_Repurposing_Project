@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 446,
+ "top": [
+  {
+   "pmid": "34948375",
+   "title": "Pathogenesis of Autoimmune Hepatitis-Cellular and Molecular Mechanisms.",
+   "year": "2021"
+  },
+  {
+   "pmid": "29644994",
+   "title": "Autoimmune hepatitis.",
+   "year": "2018"
+  },
+  {
+   "pmid": "25749982",
+   "title": "Autoimmune hepatitis.",
+   "year": "2015"
+  }
+ ]
+}

@@ -1,0 +1,1432 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00799773",
+    "briefTitle": "Evaluating the Effectiveness of Adding Rituximab to Standard Treatment for Thrombotic Thrombocytopenic Purpura (TTP)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Procedure: Plasma exchange",
+       "Drug: Corticosteroids"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Plasma exchange",
+       "Drug: Corticosteroids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Plasma exchange"
+     },
+     {
+      "name": "Corticosteroids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00657410",
+    "briefTitle": "Prednisone or Dexamethasone in Newly Diagnosed, Previously Untreated Primary Immune Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ARM A - PDN",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: prednisone",
+       "Procedure: quality-of-life assessment"
+      ]
+     },
+     {
+      "label": "ARM B - DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: dexamethasone",
+       "Procedure: quality-of-life assessment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "dexamethasone"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "quality-of-life assessment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00161564",
+    "briefTitle": "A Trial to Treat Patients With ITP Who Do Not Achieve a Durable Response to Rituxan Alone"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2004-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02334813",
+    "briefTitle": "Daily Prednisone Versus Pulsed Dexamethasone in Treatment-na\u00efve Adult Patients With Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Arm A: daily prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Arm B: pulsed dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04968899",
+    "briefTitle": "IgIV Plus Prednisone vs High-dose Dexamethasone for ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-04-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Neofordex\u00ae"
+      ]
+     },
+     {
+      "label": "Control",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Intravenous immunoglobulins"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Neofordex\u00ae"
+     },
+     {
+      "name": "Intravenous immunoglobulins"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00991939",
+    "briefTitle": "Initial Treatment of Patients With Immune Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2010-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "High dose pulse dexamethasone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone USP Micronized"
+      ]
+     },
+     {
+      "label": "Standard prednisone therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone USP Micronized"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07798050",
+    "briefTitle": "Selective Mediterranean Diet in Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Mediterranean Diet + Standard Therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: Selective Mediterranean Diet",
+       "Drug: Standard Pharmacological Therapy for ITP"
+      ]
+     },
+     {
+      "label": "Standard Therapy Only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standard Pharmacological Therapy for ITP"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Selective Mediterranean Diet"
+     },
+     {
+      "name": "Standard Pharmacological Therapy for ITP"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07657793",
+    "briefTitle": "Sirolimus in Patients With Systemic Lupus Erythematosus-Associated Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-06-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sirolimus",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sirolimus"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sirolimus"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02627417",
+    "briefTitle": "Efficacy and Safety of DAPSone as a Second-line Option in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2015-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dapsone: (Disulone\u00ae)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dapsone (Disulone\u00ae)",
+       "Drug: Prednisone (Cortancyl\u00ae)"
+      ]
+     },
+     {
+      "label": "Prednisone (Cortancyl\u00ae) alone and \"standard of care\"",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone (Cortancyl\u00ae) alone followed by monitoring and \"standard of care\""
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dapsone (Disulone\u00ae)"
+     },
+     {
+      "name": "Prednisone (Cortancyl\u00ae) alone followed by monitoring and \"standard of care\""
+     },
+     {
+      "name": "Prednisone (Cortancyl\u00ae)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06533098",
+    "briefTitle": "A Study of Nipocalimab or Intravenous Immunoglobulin (IVIG) in Pregnancies At Risk of Fetal and Neonatal Alloimmune Thrombocytopenia (FNAIT)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-02-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Arm 1: Nipocalimab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Nipocalimab"
+      ]
+     },
+     {
+      "label": "Arm 2: Intravenous Immunoglobins (IVIG)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Intravenous immunoglobulins (IVIG)",
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Nipocalimab"
+     },
+     {
+      "name": "Intravenous immunoglobulins (IVIG)"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01648556",
+    "briefTitle": "Research of Predictive Factors to Immune Thrombopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-01-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "patients with a thrombopenia isolated",
+      "type": "OTHER",
+      "interventionNames": [
+       "Other: Blood tests and bone marrow biopsy repeated"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Blood tests and bone marrow biopsy repeated"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05506033",
+    "briefTitle": "Optimization of Glucocorticoid Taper Strategies for SLE-ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-08-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Standard GCs taper group",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "rapid GCs taper group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: rapid GCs taper"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "rapid GCs taper"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05468320",
+    "briefTitle": "Caplacizumab and Immunosuppressive Therapy Without Firstline Therapeutic Plasma Exchange in Adults With Immune-mediated Thrombotic Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2022-11-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Caplacizumab & immunosuppressive therapy without 1st-line TPE",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Caplacizumab",
+       "Drug: Corticosteroids",
+       "Biological: anti-CD20 antibody"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Caplacizumab"
+     },
+     {
+      "name": "Corticosteroids"
+     },
+     {
+      "name": "anti-CD20 antibody"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05459649",
+    "briefTitle": "Combined Steroid and Cyclosporin as First-line Treatment in Adults With Primary Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-07-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporin plus Steroid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporine Oral Product",
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Standard steroid",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporine Oral Product"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00486421",
+    "briefTitle": "Rituximab and Prednisone as First-Line Therapy in Treating Patients With Immune Thrombocytopenic Purpura"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PRED & RITUX",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Rituximab",
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06686927",
+    "briefTitle": "Study on Glucocorticoid Combined With Gamma Globulin and Ropristine N01 in Treatment of Initial Severe ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2024-11-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Corticosteroids combined with immunoglobulin and romiplostim",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: corticosteroids combined with immunoglobulin and romiplostim"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "corticosteroids combined with immunoglobulin and romiplostim"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01356511",
+    "briefTitle": "High-dose Dexamethasone Versus Conventional Dose Prednisone for Initial Treatment of Primary Immune Thrombocytopenia (ITP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Dexamethasone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00713193",
+    "briefTitle": "Study of Cyclosporine or Corticosteroids as an Adjunct to Plasma Exchange in Thrombotic Thrombocytopenic Purpura (TTP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2007-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporine and Plasma Exchange Arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporine"
+      ]
+     },
+     {
+      "label": "Prednisone and Plasma Exchange Arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporine"
+     },
+     {
+      "name": "Prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06577909",
+    "briefTitle": "Prednisone Plus IVIg vs. Prednisone for ITP During Pregnancy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-10-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "The combination group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone",
+       "Drug: IVIg"
+      ]
+     },
+     {
+      "label": "The prednisone group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "IVIg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05333744",
+    "briefTitle": "The Combination of Prednisone and Recombinant Human Thrombopoietin for Treatment of Immune Thrombocytopenia in Pregnancy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone plus rhTPO",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone",
+       "Drug: Recombinant Human TPO"
+      ]
+     },
+     {
+      "label": "Prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Recombinant Human TPO"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05135442",
+    "briefTitle": "Efficacy and Safety of Bortezomib as First-line Treatment of Acquired TTP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "bortezomib group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bortezomib Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bortezomib Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00451594",
+    "briefTitle": "High Dose Dexamethasone Vs. Conventional Dose Prednisolone in Adult ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00531089",
+    "briefTitle": "Rituximab in Patients With Relapsed or Refractory TTP-HUS"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2007-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Study group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00774202",
+    "briefTitle": "Higher Dose of Rituxan Versus Standard Doses of Rituxan With Cyclophosphamide, Vincristine, and Prednisone in Subjects With Chronic ITP"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab, Cyclophosphamide, Vincristine, Prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rituxan, Cyclophosphamide, Vincristine, Prednisone"
+      ]
+     },
+     {
+      "label": "Higher Dose of Rituximab",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Higher Dose of Rituximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituxan, Cyclophosphamide, Vincristine, Prednisone"
+     },
+     {
+      "name": "Higher Dose of Rituximab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01987791",
+    "briefTitle": "Observation Study of Prednisone and Cyclosporine in Treatment of Thrombocytopenia in Hepatitis B Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2005-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05522465",
+    "briefTitle": "Short-course High-dose Prednisone and Dexamethasone in Children With ITP"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-10-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "prednisone group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Dexamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06479304",
+    "briefTitle": "The Efficacy and Safety of HCQ Plus Pred in ANA Positive ITP"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-04-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "HCQ plus Pred group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Hydroxychloroquine Oral Tablet",
+       "Drug: Prednisone tablet"
+      ]
+     },
+     {
+      "label": "Pred group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisone tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Hydroxychloroquine Oral Tablet"
+     },
+     {
+      "name": "Prednisone tablet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07788456",
+    "briefTitle": "Multi-target Drugs Sequential Combination Therapy in Adults Patients With Newly Diagnosed Primary Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-06-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Initial therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: standard-dose methylprednisolone/prednisone.",
+       "Drug: thrombopoietin receptor agonist(TPO-RA), including but not limited to hetrombopag or eltrombopag."
+      ]
+     },
+     {
+      "label": "Sequential Combination Therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: thrombopoietin receptor agonist(TPO-RA), including but not limited to hetrombopag or eltrombopag.",
+       "Drug: rituximab.",
+       "Drug: Daratumumab"
+      ]
+     },
+     {
+      "label": "Exploratory treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: thrombopoietin receptor agonist(TPO-RA), including but not limited to hetrombopag or eltrombopag.",
+       "Drug: rituximab.",
+       "Drug: Daratumumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "standard-dose methylprednisolone/prednisone."
+     },
+     {
+      "name": "thrombopoietin receptor agonist(TPO-RA), including but not limited to hetrombopag or eltrombopag."
+     },
+     {
+      "name": "rituximab."
+     },
+     {
+      "name": "Daratumumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00194987",
+    "briefTitle": "A Trial of Antenatal Treatment of Alloimmune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2001-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IVIG x 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: IVIG (Intravenous Immunoglobulin)"
+      ]
+     },
+     {
+      "label": "IVIG x 1 + prednisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: IVIG (Intravenous Immunoglobulin)",
+       "Drug: prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IVIG (Intravenous Immunoglobulin)"
+     },
+     {
+      "name": "prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03939637",
+    "briefTitle": "Eltrombopag vs Standard Front Line Management for Newly Diagnosed Immune Thrombocytopenia (ITP) in Children"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2019-05-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Eltrombopag",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Eltrombopag"
+      ]
+     },
+     {
+      "label": "Standard first-line therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Steroids",
+       "Drug: IVIG",
+       "Drug: Rho(D) Immune Globulin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Eltrombopag"
+     },
+     {
+      "name": "Steroids"
+     },
+     {
+      "name": "IVIG"
+     },
+     {
+      "name": "Rho(D) Immune Globulin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00002665",
+    "briefTitle": "SWOG-9400 Combination Chemotherapy With or Without Bone Marrow Transplantation in Treating Patients With Previously Untreated Acute Lymphocytic Leukemia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1995-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "asparaginase"
+     },
+     {
+      "name": "cyclophosphamide"
+     },
+     {
+      "name": "cytarabine"
+     },
+     {
+      "name": "daunorubicin hydrochloride"
+     },
+     {
+      "name": "dexamethasone"
+     },
+     {
+      "name": "doxorubicin hydrochloride"
+     },
+     {
+      "name": "etoposide"
+     },
+     {
+      "name": "leucovorin calcium"
+     },
+     {
+      "name": "mercaptopurine"
+     },
+     {
+      "name": "methotrexate"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "thioguanine"
+     },
+     {
+      "name": "vincristine sulfate"
+     },
+     {
+      "name": "allogeneic bone marrow transplantation"
+     },
+     {
+      "name": "radiation therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00006055",
+    "briefTitle": "Autologous Peripheral Blood Stem Cell Transplantation in Patients With Life Threatening Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2000-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "anti-thymocyte globulin"
+     },
+     {
+      "name": "cyclophosphamide"
+     },
+     {
+      "name": "cyclosporine"
+     },
+     {
+      "name": "filgrastim"
+     },
+     {
+      "name": "methylprednisolone"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "Autologous Peripheral Blood Stem Cell Transplantation"
+     }
+    ]
+   }
+  }
+ }
+]

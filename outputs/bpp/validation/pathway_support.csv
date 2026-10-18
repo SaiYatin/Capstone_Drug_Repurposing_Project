@@ -1,0 +1,361 @@
+target,group,drug,labelled,n_targets,targets_in_disease_genes,p_disease,targets_in_immune_pathways,p_immune,q_disease,q_immune
+Primary Biliary Cholangitis,model,Ursodeoxycholic acid,True,9,1,0.015185493227239397,0,1.0,0.18222591872687277,1.0
+Primary Biliary Cholangitis,model,Cholic Acid,False,35,1,0.05779808512021616,1,0.9626300437144477,0.49541215817328144,1.0
+Primary Biliary Cholangitis,model,Doripenem,False,2,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,model,Homatropine,False,6,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,model,Ampicillin,False,6,1,0.010148910810449965,0,1.0,0.17662562607687454,1.0
+Primary Biliary Cholangitis,model,Dehydrocholic acid,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,model,Metacycline,False,1,1,0.0016985291460373674,0,1.0,0.054208377001192576,1.0
+Primary Biliary Cholangitis,model,Prednisolone,False,6,1,0.010148910810449965,0,1.0,0.17662562607687454,1.0
+Primary Biliary Cholangitis,model,Chenodeoxycholic acid,False,7,0,1.0,1,0.5015936026513648,1.0,1.0
+Primary Biliary Cholangitis,model,Triamcinolone,False,8,1,0.013509425664293287,1,0.5488047601939812,0.1801256755239105,1.0
+Primary Biliary Cholangitis,model,Dimethyl sulfoxide,False,4,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,model,Pentosan polysulfate,False,3,0,1.0,1,0.257975742972489,1.0,1.0
+Primary Biliary Cholangitis,model,Betamethasone,False,14,1,0.023524113846815638,0,1.0,0.2288832698609089,1.0
+Primary Biliary Cholangitis,model,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Primary Biliary Cholangitis,model,Cefazolin,False,9,1,0.015185493227239397,2,0.20686028180211233,0.18222591872687277,1.0
+Primary Biliary Cholangitis,model,Methylprednisolone,False,14,1,0.023524113846815638,1,0.7517084958523501,0.2288832698609089,1.0
+Primary Biliary Cholangitis,model,Prednisone,False,16,1,0.026840178408098537,0,1.0,0.24156160567288681,1.0
+Primary Biliary Cholangitis,model,Ciprofloxacin,False,10,1,0.01685877360531472,0,1.0,0.19577930638429997,1.0
+Primary Biliary Cholangitis,model,Ofloxacin,False,8,1,0.013509425664293287,0,1.0,0.1801256755239105,1.0
+Primary Biliary Cholangitis,model,Fusidic acid,False,7,2,5.897742344641789e-05,0,1.0,0.00530796811017761,1.0
+Primary Biliary Cholangitis,random,Beclamide,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,LGD-2226,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,2-(6-CHLORO-3-{,False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Primary Biliary Cholangitis,random,Clometocillin,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,"2-(Beta-D-Glucopyranosyl)-5-Methyl-1,3,4-Benzothiazole",False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,AICA ribonucleotide,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,N'-(Pyrrolidino,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Buthionine Sulfoximine,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,CRA_11092,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,"(3,4-DIHYDROXY-2-NITROPHENYL)(PHENYL)METHANONE",False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Bufylline,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Beclabuvir,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Amylamine,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Dicoumarol,False,5,1,0.008464454414783613,0,1.0,0.17662562607687454,1.0
+Primary Biliary Cholangitis,random,4-PHENOXY-N-(PYRIDIN-2-YLMETHYL)BENZAMIDE,False,1,1,0.0016985291460373674,0,1.0,0.054208377001192576,1.0
+Primary Biliary Cholangitis,random,Zopiclone,False,9,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,Cefozopran,False,0,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,8-(Pyrimidin-2-Ylamino)Naphthalene-2-Carboximidamide,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,random,2-,False,2,0,1.0,1,0.09466310259010047,1.0,1.0
+Primary Biliary Cholangitis,random,Aluminium,False,5,1,0.008464454414783613,1,0.3918520682503943,0.17662562607687454,1.0
+Primary Biliary Cholangitis,popularity,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,popularity,Prednisolone,False,6,1,0.010148910810449965,0,1.0,0.17662562607687454,1.0
+Primary Biliary Cholangitis,popularity,Dexamethasone,False,27,4,1.2455707437851626e-07,2,0.7395788888418673,2.2420273388132928e-05,1.0
+Primary Biliary Cholangitis,popularity,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Primary Biliary Cholangitis,popularity,Triamcinolone,False,8,1,0.013509425664293287,1,0.5488047601939812,0.1801256755239105,1.0
+Primary Biliary Cholangitis,popularity,Betamethasone,False,14,1,0.023524113846815638,0,1.0,0.2288832698609089,1.0
+Primary Biliary Cholangitis,popularity,Methylprednisolone,False,14,1,0.023524113846815638,1,0.7517084958523501,0.2288832698609089,1.0
+Primary Biliary Cholangitis,popularity,Prednisone,False,16,1,0.026840178408098537,0,1.0,0.24156160567288681,1.0
+Primary Biliary Cholangitis,popularity,Hydrocortisone acetate,False,16,1,0.026840178408098537,1,0.7752429097664837,0.24156160567288681,1.0
+Primary Biliary Cholangitis,popularity,Fusidic acid,False,7,2,5.897742344641789e-05,0,1.0,0.00530796811017761,1.0
+Primary Biliary Cholangitis,popularity,Doxorubicin,False,31,5,1.866166784783326e-09,1,0.9495939843121068,6.718200425219973e-07,1.0
+Primary Biliary Cholangitis,popularity,Benzylpenicillin,False,12,1,0.020196990936846897,0,1.0,0.22033081022014797,1.0
+Primary Biliary Cholangitis,popularity,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,popularity,Ofloxacin,False,8,1,0.013509425664293287,0,1.0,0.1801256755239105,1.0
+Primary Biliary Cholangitis,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Primary Biliary Cholangitis,popularity,Ampicillin,False,6,1,0.010148910810449965,0,1.0,0.17662562607687454,1.0
+Primary Biliary Cholangitis,popularity,Minocycline,False,23,2,0.0006983274086164214,8,0.000598566409643527,0.027933096344656856,0.03591398457861162
+Primary Biliary Cholangitis,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Benzoic acid,True,5,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Aminobenzoic acid,True,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Prednisolone,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Systemic Sclerosis,model,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Systemic Sclerosis,model,Bosentan,True,5,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Ofloxacin,False,8,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Systemic Sclerosis,model,Dexamethasone,False,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Systemic Sclerosis,model,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Limaprost,False,4,0,1.0,2,0.04719050086463716,1.0,1.0
+Systemic Sclerosis,model,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Systemic Sclerosis,model,Chloramphenicol,False,6,0,1.0,1,0.4494477825538659,1.0,1.0
+Systemic Sclerosis,model,Ciprofloxacin,False,10,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,model,Acetylcysteine,False,12,0,1.0,2,0.31638365519132733,1.0,1.0
+Systemic Sclerosis,model,Tafamidis,False,4,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,2-Bromoacetyl Group,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,"(5S)-5-(3-AMINOPROPYL)-3-(2,5-DIFLUOROPHENYL)-N-ETHYL-5-PHENYL-4,5-DIHYDRO-1H-PYRAZOLE-1-CARBOXAMIDE",False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Irinotecan,False,18,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Laevulinic Acid,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Metipranolol,False,3,0,1.0,2,0.025167521393898256,1.0,0.8236643365275793
+Systemic Sclerosis,random,Pentaglyme,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,3-BROMO-6-HYDROXY-2-(4-HYDROXYPHENYL)-1H-INDEN-1-ONE,False,2,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,GSK-1004723,False,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Human calcitonin,False,4,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Phenol,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Virginiamycin M1,False,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,"8,9,10-trihydroxy-7-hydroxymethyl-3-methyl-6-oxa-1,3-diaza-spiro",False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Trofosfamide,False,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Indanazoline,False,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Dalbavancin,False,0,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,REV131,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,"4-Bromo-2,5-dimethoxyphenethylamine",False,2,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,Hyoscyamine,False,4,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,random,"3-Mercapto-1-(1,3,4,9-Tetrahydro-B-Carbolin-2-Yl)-Propan-1-One",False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Systemic Sclerosis,popularity,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Prednisolone,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Dexamethasone,False,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Systemic Sclerosis,popularity,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Systemic Sclerosis,popularity,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Systemic Sclerosis,popularity,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Systemic Sclerosis,popularity,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Systemic Sclerosis,popularity,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Doxorubicin,False,31,0,1.0,1,0.9495939843121068,1.0,1.0
+Systemic Sclerosis,popularity,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Ofloxacin,False,8,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Systemic Sclerosis,popularity,Minocycline,False,23,0,1.0,8,0.000598566409643527,1.0,0.03591398457861162
+Systemic Sclerosis,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Propylene glycol,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Lifitegrast,False,4,0,1.0,1,0.3282374903417728,1.0,1.0
+Sjogren Syndrome,model,Povidone,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Povidone K30,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Prednisolone,True,6,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Lutein,False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Polyethylene glycol 400,True,6,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Polyvinyl alcohol,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Polyethylene glycol,True,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Polysorbate 80,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Terbutaline,True,4,0,1.0,3,0.003144541923159356,1.0,0.1617192989053383
+Sjogren Syndrome,model,Cyclosporine,True,18,0,1.0,1,0.7965485708030187,1.0,1.0
+Sjogren Syndrome,model,Polyethylene glycol 300,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Polyethylene glycol 3500,True,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Sjogren Syndrome,model,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Sjogren Syndrome,model,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Sjogren Syndrome,model,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,model,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Sjogren Syndrome,random,Mestranol,False,4,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Taxifolin,False,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Ivabradine,False,2,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Beta-(2-Naphthyl)-Alanine,False,3,0,1.0,1,0.257975742972489,1.0,1.0
+Sjogren Syndrome,random,TAS-108,False,2,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Phosphonoacetaldehyde,False,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Etanautine,False,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Indocyanine green acid form,False,4,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Mandelic acid,False,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,N-,False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,"5-(4-PHENOXYPHENYL)-5-(4-PYRIMIDIN-2-YLPIPERAZIN-1-YL)PYRIMIDINE-2,4,6(2H,3H)-TRIONE",False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Sjogren Syndrome,random,Acalabrutinib,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Sjogren Syndrome,random,Baclofen,False,2,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,"(1S,5S,7R)-N~7~-(BIPHENYL-4-YLMETHYL)-N~3~-HYDROXY-6,8-DIOXA-3-AZABICYCLO",False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,"N-Alpha-Acetyl-3,5-Diiodotyrosylglycine",False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,(1S)-2-(1H-INDOL-3-YL)-1-,False,2,0,1.0,1,0.09466310259010047,1.0,1.0
+Sjogren Syndrome,random,Phenylephrine,False,7,0,1.0,1,0.5015936026513648,1.0,1.0
+Sjogren Syndrome,random,N-Formylpiperidine,False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Beclabuvir,False,0,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,random,Ethyl pyruvate,False,2,0,1.0,2,0.008953202733908839,1.0,0.32231529842071815
+Sjogren Syndrome,popularity,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Dexamethasone,False,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Sjogren Syndrome,popularity,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Sjogren Syndrome,popularity,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Sjogren Syndrome,popularity,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Sjogren Syndrome,popularity,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Sjogren Syndrome,popularity,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Doxorubicin,False,31,0,1.0,1,0.9495939843121068,1.0,1.0
+Sjogren Syndrome,popularity,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Ofloxacin,False,8,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Minocycline,False,23,0,1.0,8,0.000598566409643527,1.0,0.03591398457861162
+Sjogren Syndrome,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Sjogren Syndrome,popularity,Tetracycline,False,8,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Prednisolone,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Autoimmune Hepatitis,model,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Autoimmune Hepatitis,model,Sulfacetamide,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Autoimmune Hepatitis,model,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Autoimmune Hepatitis,model,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Acetarsol,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Cefazolin,False,9,1,0.012293602304377878,2,0.20686028180211233,0.1801256755239105,1.0
+Autoimmune Hepatitis,model,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Quinfamide,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Diiodohydroxyquinoline,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Diloxanide furoate,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Amikacin,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Kanamycin,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,model,Dexamethasone,False,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Autoimmune Hepatitis,model,Sulbactam,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Tenidap,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Magnesium hydroxide,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Paramethadione,False,5,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,"2-(Oxalyl-Amino)-4,7-Dihydro-5h-Thieno",False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Bleomycin,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,"2-Amino-3-(3-Hydroxy-7,8-Dihydro-6h-Cyclohepta",False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Antihemophilic factor human,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,D-leucyl-N-(3-chlorobenzyl)-L-prolinamide,False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Autoimmune Hepatitis,random,5-Chloro-N-{(3S)-1-,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,4-(Hydroxymethyl)Benzamidine,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,XL844,False,2,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Aminoglutethimide,False,4,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Formoterol,False,17,0,1.0,3,0.2135133448306418,1.0,1.0
+Autoimmune Hepatitis,random,Vidarabine,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,N-,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,BCG vaccine,False,0,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Darunavir,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,Insulin glargine,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,random,"4-(1,3-Benzodioxol-5-Yl)-5-(5-Ethyl-2,4-Dihydroxyphenyl)-2h-Pyrazole-3-Carboxylic Acid",False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Autoimmune Hepatitis,random,Tyropanoic acid,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Prednisolone,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Dexamethasone,False,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Autoimmune Hepatitis,popularity,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Autoimmune Hepatitis,popularity,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Autoimmune Hepatitis,popularity,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Autoimmune Hepatitis,popularity,Prednisone,False,16,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Autoimmune Hepatitis,popularity,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Doxorubicin,False,31,0,1.0,1,0.9495939843121068,1.0,1.0
+Autoimmune Hepatitis,popularity,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Ofloxacin,False,8,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Autoimmune Hepatitis,popularity,Minocycline,False,23,1,0.031125026935345843,8,0.000598566409643527,0.27329291943230494,0.03591398457861162
+Autoimmune Hepatitis,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Ambenonium,True,2,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Neostigmine,True,2,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Pyridostigmine,True,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Distigmine,True,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Prednisolone,True,6,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Myasthenia Gravis,model,Amifampridine,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Guanidine,False,12,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Myasthenia Gravis,model,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Myasthenia Gravis,model,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Myasthenia Gravis,model,Dexamethasone,True,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Myasthenia Gravis,model,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Prednisone,True,16,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Salicylic acid,False,12,0,1.0,1,0.665279695277326,1.0,1.0
+Myasthenia Gravis,model,Testosterone,False,24,0,1.0,1,0.8987081377583176,1.0,1.0
+Myasthenia Gravis,model,Magnesium salicylate,False,3,0,1.0,1,0.257975742972489,1.0,1.0
+Myasthenia Gravis,model,Fluoxymesterone,False,5,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,model,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Lofepramine,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Cannabidiol,False,54,0,1.0,6,0.36952352393888,1.0,1.0
+Myasthenia Gravis,random,N-{4-,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Phenazocine,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Levoleucovorin,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,"4-O-(4,6-Dideoxy-4-{",False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Rufloxacin,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Ensartinib,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,"(3,4,5-Trihydroxy-6-Hydroxymethyl-Tetrahydro-Pyran-2-Yl)-Phosphoramidic Acid Dimethyl Ester",False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,D-tartaric acid,False,5,0,1.0,1,0.3918520682503943,1.0,1.0
+Myasthenia Gravis,random,4-amino-N-,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,5-,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Soybean oil,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Benzocaine,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,"N-(cyclopropylmethyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)biphenyl-4-carboxamide",False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,"9-Butyl-8-(2,5-Dimethoxy-Benzyl)-9h-Purin-6-Ylamine",False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Myasthenia Gravis,random,alpha-Ketoisovalerate,False,4,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Glesatinib,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Human adenovirus e serotype 4 strain cl-68578 antigen,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,random,Apaziquone,False,0,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Cortisone acetate,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Hydrocortisone,False,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Myasthenia Gravis,popularity,Triamcinolone,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Myasthenia Gravis,popularity,Betamethasone,False,14,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Methylprednisolone,False,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Myasthenia Gravis,popularity,Hydrocortisone acetate,False,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Myasthenia Gravis,popularity,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Doxorubicin,False,31,0,1.0,1,0.9495939843121068,1.0,1.0
+Myasthenia Gravis,popularity,Benzylpenicillin,False,12,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Norfloxacin,False,6,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Ofloxacin,False,8,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Ampicillin,False,6,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Minocycline,False,23,0,1.0,8,0.000598566409643527,1.0,0.03591398457861162
+Myasthenia Gravis,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Tetracycline,False,8,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Ciprofloxacin,False,10,0,1.0,0,1.0,1.0,1.0
+Myasthenia Gravis,popularity,Paclitaxel,False,18,0,1.0,1,0.7965485708030187,1.0,1.0
+Crohn Disease,model,Hydrocortisone,True,22,0,1.0,1,0.8763669809339608,1.0,1.0
+Crohn Disease,model,Cortisone acetate,True,3,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Triamcinolone,True,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Crohn Disease,model,Prednisolone,True,6,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Ofloxacin,False,8,2,8.897655796184957e-05,0,1.0,0.005338593477710974,1.0
+Crohn Disease,model,Ciprofloxacin,False,10,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Norfloxacin,False,6,1,0.010793788260253444,0,1.0,0.17662562607687454,1.0
+Crohn Disease,model,Cefuroxime,False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Betamethasone,True,14,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Prednisone,True,16,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Mesalazine,True,8,1,0.014366281097721078,4,0.004091975855283076,0.18222591872687277,0.18413891348773845
+Crohn Disease,model,Hydrocortisone acetate,True,16,0,1.0,1,0.7752429097664837,1.0,1.0
+Crohn Disease,model,Methylprednisolone,True,14,0,1.0,1,0.7517084958523501,1.0,1.0
+Crohn Disease,model,Dexamethasone,True,27,0,1.0,2,0.7395788888418673,1.0,1.0
+Crohn Disease,model,Loracarbef,False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Clarithromycin,False,8,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Levofloxacin,False,11,1,0.019701324985962474,0,1.0,0.22033081022014797,1.0
+Crohn Disease,model,Adalimumab,True,1,1,0.0018069459000397525,1,0.09466310259010047,0.054208377001192576,1.0
+Crohn Disease,model,Ketoconazole,False,29,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,model,Ustekinumab,False,2,1,0.003610691932023779,2,0.008953202733908839,0.09998839196373542,0.32231529842071815
+Crohn Disease,random,Ingavirin,False,0,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Kanamycin,False,0,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,"(1aR,8S,13S,14S,15aR)-5,13,14-trihydroxy-3-methoxy-8-methyl-8,9,13,14,15,15a-hexahydro-6H-oxireno",False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Levocetirizine,False,4,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Fluprednidene acetate,False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Riociguat,False,8,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Pagoclone,False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Metoprine,False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Formic acid,False,13,0,1.0,1,0.665279695277326,1.0,1.0
+Crohn Disease,random,Sodium ferric gluconate complex,False,3,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Acalabrutinib,False,8,0,1.0,1,0.5488047601939812,1.0,1.0
+Crohn Disease,random,Clonidine,False,15,2,0.00033097306273183755,0,1.0,0.01489378782293269,1.0
+Crohn Disease,random,Tafenoquine,False,4,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Fluocinolone acetonide,False,8,0,1.0,2,0.10387349673303693,1.0,1.0
+Crohn Disease,random,Veliparib,False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,"(1R,3R)-5-",False,2,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Iotrolan,False,0,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,APD791,False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,"N-((2-aminopyrimidin-5-yl)methyl)-5-(2,6-difluorophenyl)-3-ethylpyrazolo",False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,random,Nandrolone,False,0,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Fusidic acid,False,7,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Doxorubicin,False,31,0,1.0,1,0.9495939843121068,1.0,1.0
+Crohn Disease,popularity,Benzylpenicillin,False,12,2,0.00020876275683303375,0,1.0,0.010736370351413163,1.0
+Crohn Disease,popularity,Norfloxacin,False,6,1,0.010793788260253444,0,1.0,0.17662562607687454,1.0
+Crohn Disease,popularity,Carmustine,False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Amphotericin B,False,1,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Ofloxacin,False,8,2,8.897655796184957e-05,0,1.0,0.005338593477710974,1.0
+Crohn Disease,popularity,Doxycycline,False,3,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Ampicillin,False,6,1,0.010793788260253444,0,1.0,0.17662562607687454,1.0
+Crohn Disease,popularity,Minocycline,False,23,0,1.0,8,0.000598566409643527,1.0,0.03591398457861162
+Crohn Disease,popularity,Thiotepa,False,3,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Tetracycline,False,8,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Ciprofloxacin,False,10,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Paclitaxel,False,18,0,1.0,1,0.7965485708030187,1.0,1.0
+Crohn Disease,popularity,Meclocycline,False,0,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Demeclocycline,False,1,0,1.0,1,0.09466310259010047,1.0,1.0
+Crohn Disease,popularity,Testosterone,False,24,0,1.0,1,0.8987081377583176,1.0,1.0
+Crohn Disease,popularity,Oxytetracycline,False,5,0,1.0,0,1.0,1.0,1.0
+Crohn Disease,popularity,Methotrexate,False,35,1,0.061375028331234975,0,1.0,0.5138374464940603,1.0
+Crohn Disease,popularity,Vincristine,False,16,0,1.0,0,1.0,1.0,1.0

@@ -1,0 +1,48 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07300553",
+    "briefTitle": "Impact Of The Gut Microbiota On Host Cells Energy Metabolism in Health And In Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Healthy volunteers",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vancomycin /Amphotericin B (Fungizone\u00ae) /Gentamicine 80 mg"
+      ]
+     },
+     {
+      "label": "Patients with IBD",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Inulin/Inulin C13"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vancomycin /Amphotericin B (Fungizone\u00ae) /Gentamicine 80 mg"
+     },
+     {
+      "name": "Inulin/Inulin C13"
+     }
+    ]
+   }
+  }
+ }
+]

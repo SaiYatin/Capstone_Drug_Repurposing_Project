@@ -1,0 +1,419 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04371718",
+    "briefTitle": "Effect of JKB-122 on Prednisolone and Azathioprine Induced Remission in Autoimmune Hepatitis (AIH)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "JKB-122 Low dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JKB-122"
+      ]
+     },
+     {
+      "label": "JKB-122 Medium dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JKB-122"
+      ]
+     },
+     {
+      "label": "JKB-122 High dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: JKB-122"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "JKB-122"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04376528",
+    "briefTitle": "Mycophenolate Mofetil Versus Cyclosporin A in the Treatment of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome Due to Nonresponse to Standard Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporin A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin A"
+      ]
+     },
+     {
+      "label": "Mycophenolate Mofetil",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin A"
+     },
+     {
+      "name": "Mycophenolate Mofetil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04933292",
+    "briefTitle": "A Randomised Clinical Trial Assessing the Efficacy and Safety of Mycophenolate Mofetil Versus Azathioprine for Induction of Remission in Treatment Primary Biliary Cholangitis-Autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone and Mycophenolate mofetil",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone and Mycophenolate mofetil"
+      ]
+     },
+     {
+      "label": "Methylprednisolone and Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone and azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone and Mycophenolate mofetil"
+     },
+     {
+      "name": "Methylprednisolone and azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01170351",
+    "briefTitle": "Cyclosporine-A Versus Prednisolone for Induction of Remission in Auto-immune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group-A",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Cyclosporine-A"
+      ]
+     },
+     {
+      "label": "Group-B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporine-A"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporine-A"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04617561",
+    "briefTitle": "Ursodeoxycholic Acid Combined With Low Dose Glucocorticoid in the Treatment of PBC With AIH Features II"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic Acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic Acid+Low Dose Glucocorticoid group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid"
+     },
+     {
+      "name": "Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05473403",
+    "briefTitle": "Validation of a Prognostic Score for Steroid Therapy Response in Acute Severe Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Corticosteroid therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Corticosteroid therapy"
+      ]
+     },
+     {
+      "label": "Patient without corticosteroid therapy",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Corticosteroid therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02936596",
+    "briefTitle": "Remission Induction of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic acid + immunosuppressive agents group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid combination of immunosuppressive agents"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid combination of immunosuppressive agents"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00687180",
+    "briefTitle": "Mycophenolate vs Azathioprin in Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED"
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "I",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Treatment with mycophenolat mofetil"
+      ]
+     },
+     {
+      "label": "II",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Treatment with azathioprin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Treatment with mycophenolat mofetil"
+     },
+     {
+      "name": "Treatment with azathioprin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06650124",
+    "briefTitle": "Induction of Remission in Autoimmune Hepatitis With Azathioprine vs. MMF"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine + Prednisolone Arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine + Prednisolone"
+      ]
+     },
+     {
+      "label": "Mycophenolate Mofetil + Prednisolone Arm",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil + Prednisolone Participants will receive mycophenolate mofetil in combination."
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Mycophenolate Mofetil + Prednisolone Participants will receive mycophenolate mofetil in combination."
+     },
+     {
+      "name": "Azathioprine + Prednisolone"
+     }
+    ]
+   }
+  }
+ }
+]

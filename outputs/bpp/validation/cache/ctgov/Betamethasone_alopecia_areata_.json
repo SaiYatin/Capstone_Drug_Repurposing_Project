@@ -1,0 +1,380 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06087796",
+    "briefTitle": "Topical Pentoxifylline; Metformin Versus Betamethasone in the Treatment of Alopecia Areata."
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Topical betamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Betamethasone Valerate 0.1% Cream"
+      ]
+     },
+     {
+      "label": "Topical pentoxifylline",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pentoxifylline"
+      ]
+     },
+     {
+      "label": "Topical metformin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Metformin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Betamethasone Valerate 0.1% Cream"
+     },
+     {
+      "name": "Pentoxifylline"
+     },
+     {
+      "name": "Metformin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02350023",
+    "briefTitle": "Comparison of Topical Latanoprost vs Topical Corticosteroid in Treatment of Localized Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Topical latanoprost",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical latanoprost 0.005%"
+      ]
+     },
+     {
+      "label": "Topical betamethasone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical betamethasone 0.05%"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Topical latanoprost 0.005%"
+     },
+     {
+      "name": "Topical betamethasone 0.05%"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06786689",
+    "briefTitle": "To Compare the Efficacy of Weekly Azathioprine Pulse Versus Betamethasone Oral Mini-Pulse in the Treatment of Moderate to Severe Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Weekly Azathioprine Pulse Therapy (Group A)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine (AZA)"
+      ]
+     },
+     {
+      "label": "Betamethasone Oral Mini Pulse (Group B)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Betamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine (AZA)"
+     },
+     {
+      "name": "Betamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07696585",
+    "briefTitle": "New Topical Treatment in Patchy Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-06-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "group (1) will use topical metformin 30% ointment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: topical metformin 30% ointment"
+      ]
+     },
+     {
+      "label": "group (2) will use topical simvastatin 2% ointment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical Simvastatin 2% ointment"
+      ]
+     },
+     {
+      "label": "group (3)each patient (age and sex matched) will use topical betamethasone valerate 0.1% ointment",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical betamethasone valerate 0.1% ointment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "topical metformin 30% ointment"
+     },
+     {
+      "name": "Topical Simvastatin 2% ointment"
+     },
+     {
+      "name": "Topical betamethasone valerate 0.1% ointment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05803070",
+    "briefTitle": "Topical Cetirizine in Treatment of Localized Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A",
+      "interventionNames": [
+       "Drug: Topical Cetirizine 1 %"
+      ]
+     },
+     {
+      "label": "B",
+      "interventionNames": [
+       "Drug: Topical betamethasone valerate 0.1%"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Topical Cetirizine 1 %"
+     },
+     {
+      "name": "Topical betamethasone valerate 0.1%"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03535233",
+    "briefTitle": "Topical 5% Minoxidil and Potent Topical Corticosteroid Versus Intralesional Corticosteroid in the Treatment of Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intralesional group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Triamcinolone Acetonide"
+      ]
+     },
+     {
+      "label": "Topical therapy group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Minoxidil 5 % Topical Spray",
+       "Drug: clobetasol propionate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Triamcinolone Acetonide"
+     },
+     {
+      "name": "Minoxidil 5 % Topical Spray"
+     },
+     {
+      "name": "clobetasol propionate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04207931",
+    "briefTitle": "Treatment Results for Patients With Central Centrifugal Cicatricial Alopecia (CCCA): a Multicenter Prospective Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2018-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Topical steroid plus oral antibiotic group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical steroid class I-II",
+       "Drug: Doxycyline",
+       "Drug: Minoxidil"
+      ]
+     },
+     {
+      "label": "Topical steroid plus intralesional steroid injection group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical steroid class I-II",
+       "Drug: Triamcinolone Acetonide",
+       "Drug: Minoxidil"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Topical steroid class I-II"
+     },
+     {
+      "name": "Triamcinolone Acetonide"
+     },
+     {
+      "name": "Doxycyline"
+     },
+     {
+      "name": "Minoxidil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01111981",
+    "briefTitle": "Safety and Efficacy of Clobetasol Propionate 0.05% E Foam in Alopecia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2009-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Clobetasol Propionate 0.05% Emollient Foam"
+     }
+    ]
+   }
+  }
+ }
+]

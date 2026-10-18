@@ -1,0 +1,186 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04101578",
+    "briefTitle": "Clinical Prognosis and Progression of Myasthenia Gravis Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-02-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ocular MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     },
+     {
+      "label": "Generalized MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00294658",
+    "briefTitle": "Thymectomy Trial in Non-Thymomatous Myasthenia Gravis Patients Receiving Prednisone Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Thymectomy plus prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: thymectomy plus prednisone"
+      ]
+     },
+     {
+      "label": "Prednisone alone",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: prednisone alone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "thymectomy plus prednisone"
+     },
+     {
+      "name": "prednisone alone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00424489",
+    "briefTitle": "Hematopoietic Stem Cell Therapy for Patients With Refractory Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2002-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Hematopoietic Stem Cell Transplantation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Hematopoietic Stem Cell Transplantation",
+       "Drug: Cyclophosphamide",
+       "Drug: ATG (rabbit)",
+       "Drug: Mesna",
+       "Drug: Methylprednisolone",
+       "Drug: G-CSF"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Hematopoietic Stem Cell Transplantation"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "ATG (rabbit)"
+     },
+     {
+      "name": "Mesna"
+     },
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "G-CSF"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07221838",
+    "briefTitle": "A Study to Investigate OCS Tapering in Adult Participants With Generalized Myasthenia Gravis Treated With Ravulizumab"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Oral Corticosteroid Tapering Schedule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Oral Corticosteroid Tapering Schedule",
+       "Drug: Ravulizumab",
+       "Drug: Prednisone/Prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Oral Corticosteroid Tapering Schedule"
+     },
+     {
+      "name": "Ravulizumab"
+     },
+     {
+      "name": "Prednisone/Prednisolone"
+     }
+    ]
+   }
+  }
+ }
+]

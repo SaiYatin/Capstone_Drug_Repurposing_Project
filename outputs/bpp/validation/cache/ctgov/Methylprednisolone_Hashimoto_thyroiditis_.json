@@ -1,0 +1,105 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07571681",
+    "briefTitle": "Colchicine for Autoimmune and Subacute Thyroiditis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-06-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Colchicine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: colchicine"
+      ]
+     },
+     {
+      "label": "Prednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone"
+      ]
+     },
+     {
+      "label": "Supportive Care",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: NSAID"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "colchicine"
+     },
+     {
+      "name": "Prednisolone"
+     },
+     {
+      "name": "NSAID"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03289403",
+    "briefTitle": "The Role of Immunomodulatory Treatment in Success of ICSI in Patients With Autoimmune Thyroiditis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-03-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Study group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Immunomodulatory"
+      ]
+     },
+     {
+      "label": "Control group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Thyroxine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Immunomodulatory"
+     },
+     {
+      "name": "Thyroxine"
+     }
+    ]
+   }
+  }
+ }
+]

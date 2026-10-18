@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 18,
+ "top": [
+  {
+   "pmid": "22198497",
+   "title": "Prognosis and outcome of non-Hodgkin lymphoma in primary Sj\u00f6gren syndrome.",
+   "year": "2012"
+  },
+  {
+   "pmid": "27738539",
+   "title": "Bilateral Lacrimal Gland Lymphoma in Sj\u00f6gren Syndrome.",
+   "year": "2016"
+  },
+  {
+   "pmid": "16322082",
+   "title": "Long term remission of Sj\u00f6gren's syndrome associated aggressive B cell non-Hodgkin's lymphomas following combined B cell depletion therapy and CHOP (cyclophosphamide, doxorubicin, vincristine, prednisone).",
+   "year": "2006"
+  }
+ ]
+}

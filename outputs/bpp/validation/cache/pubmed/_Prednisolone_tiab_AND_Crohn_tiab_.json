@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 439,
+ "top": [
+  {
+   "pmid": "31562236",
+   "title": "British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults.",
+   "year": "2019"
+  },
+  {
+   "pmid": "27359251",
+   "title": "Focal intestinal lipogranulomatous lymphangitis in 10 dogs.",
+   "year": "2016"
+  },
+  {
+   "pmid": "39267473",
+   "title": "Mycofenolate-induced ileocolitis.",
+   "year": "2025"
+  }
+ ]
+}

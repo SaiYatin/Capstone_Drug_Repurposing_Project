@@ -1,0 +1,21 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 17,
+ "top": [
+  {
+   "pmid": "27844446",
+   "title": "Severe Infliximab-Induced Alopecia and Scalp Psoriasis in a Woman with Crohn's Disease: Dramatic Improvement after Drug Discontinuation and Treatment with Adjuvant Systemic and Topical Therapies.",
+   "year": "2016"
+  },
+  {
+   "pmid": "32682880",
+   "title": "Isotretinoin and risk of inflammatory bowel disease: More data to support lack of meaningful risk.",
+   "year": "2021"
+  },
+  {
+   "pmid": "18186842",
+   "title": "Cutaneous penile and perianal Crohn's disease treated with a combination of medical and surgical interventions.",
+   "year": "2008"
+  }
+ ]
+}

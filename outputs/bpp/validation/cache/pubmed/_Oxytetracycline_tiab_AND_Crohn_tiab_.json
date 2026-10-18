@@ -1,0 +1,16 @@
+{
+ "term": "\"Oxytetracycline\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "32569630",
+   "title": "Effects of protein-protein interface disruptors at the ligand of the glucocorticoid-induced tumor necrosis factor receptor-related gene (GITR).",
+   "year": "2020"
+  },
+  {
+   "pmid": "20700115",
+   "title": "Potential association between the oral tetracycline class of antimicrobials used to treat acne and inflammatory bowel disease.",
+   "year": "2010"
+  }
+ ]
+}

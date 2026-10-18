@@ -1,0 +1,74 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00716066",
+    "briefTitle": "Autologous Stem Cell Transplant for Neurologic Autoimmune Diseases"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2008-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment (immunosuppressive therapy followed by transplant)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Anti-Thymocyte Globulin",
+       "Procedure: Autologous Hematopoietic Stem Cell Transplantation",
+       "Drug: Carmustine",
+       "Drug: Cytarabine",
+       "Drug: Etoposide",
+       "Other: Laboratory Biomarker Analysis",
+       "Drug: Melphalan",
+       "Procedure: Peripheral Blood Stem Cell Transplantation",
+       "Drug: Prednisone",
+       "Procedure: Syngeneic Bone Marrow Transplantation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti-Thymocyte Globulin"
+     },
+     {
+      "name": "Autologous Hematopoietic Stem Cell Transplantation"
+     },
+     {
+      "name": "Carmustine"
+     },
+     {
+      "name": "Cytarabine"
+     },
+     {
+      "name": "Etoposide"
+     },
+     {
+      "name": "Laboratory Biomarker Analysis"
+     },
+     {
+      "name": "Melphalan"
+     },
+     {
+      "name": "Peripheral Blood Stem Cell Transplantation"
+     },
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Syngeneic Bone Marrow Transplantation"
+     }
+    ]
+   }
+  }
+ }
+]

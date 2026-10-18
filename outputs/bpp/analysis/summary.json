@@ -32806,6 +32806,2678 @@
    ]
   }
  },
+ "metrics_table": {
+  "n_drugs": 7957,
+  "test": {
+   "rows": {
+    "model": {
+     "_any10": 0.75,
+     "hits@1": 0.4353939592184561,
+     "hits@10": 0.6312452672456542,
+     "hits@50": 0.7481736803573105,
+     "auroc": 0.9563267594618985,
+     "auroc_hard": 0.8583572728908887,
+     "auroc_degmatch": 0.9201293040897649,
+     "auprc": 0.5540820808276852,
+     "mrr": 0.4944823771729481,
+     "mean_rank": 348.3088988657971
+    },
+    "random": {
+     "_any10": 0.014705882352941176,
+     "hits@1": 0.0,
+     "hits@10": 0.004901960784313725,
+     "hits@50": 0.0059742647058823525,
+     "auroc": 0.45317039261843883,
+     "auroc_hard": 0.47132554990493924,
+     "auroc_degmatch": 0.5001274095131815,
+     "auprc": 0.0020150322734692827,
+     "mrr": 0.0013184526716183776,
+     "mean_rank": 4348.716628733753
+    },
+    "popularity": {
+     "_any10": 0.19117647058823528,
+     "hits@1": 0.04213908028246264,
+     "hits@10": 0.07002611627708377,
+     "hits@50": 0.2673475636420683,
+     "auroc": 0.8847071006612663,
+     "auroc_hard": 0.5620151525976149,
+     "auroc_degmatch": 0.8119154258564133,
+     "auprc": 0.08429007661394941,
+     "mrr": 0.061757881097461886,
+     "mean_rank": 917.6738397481431
+    },
+    "disease_knn": {
+     "_any10": 0.5735294117647058,
+     "hits@1": 0.34718972816399285,
+     "hits@10": 0.4587683279053248,
+     "hits@50": 0.5825841550735127,
+     "auroc": 0.9067593123284597,
+     "auroc_hard": 0.7208155039932366,
+     "auroc_degmatch": 0.8593730061180174,
+     "auprc": 0.42886701417970086,
+     "mrr": 0.39216858138825883,
+     "mean_rank": 742.3872162409315
+    }
+   },
+   "n_diseases": 68,
+   "mean_positives": 6.720588235294118,
+   "prevalence": 0.0008446133260392257,
+   "random_expected_any10": 0.008379030477441084,
+   "median_rank_known_drug": 3.0,
+   "share_known_drugs_rank1": 0.40043763676148797
+  },
+  "valid": {
+   "rows": {
+    "model": {
+     "_any10": 0.5637254901960783,
+     "hits@1": 0.35280977637320643,
+     "hits@10": 0.4555097789798928,
+     "hits@50": 0.6008864797227969,
+     "auroc": 0.9379027949390776,
+     "auroc_hard": 0.7987024196340532,
+     "auroc_degmatch": 0.8862929758293145,
+     "auprc": 0.4244840306917754,
+     "mrr": 0.39415268320713126,
+     "mean_rank": 494.9292918093938
+    },
+    "random": {
+     "_any10": 0.014705882352941176,
+     "hits@1": 0.0,
+     "hits@10": 0.0024509803921568627,
+     "hits@50": 0.004025070438732677,
+     "auroc": 0.4712513646851004,
+     "auroc_hard": 0.4878780221202141,
+     "auroc_degmatch": 0.4900223392232088,
+     "auprc": 0.0015177640258223304,
+     "mrr": 0.000833904018718638,
+     "mean_rank": 4204.901028415957
+    },
+    "popularity": {
+     "_any10": 0.14705882352941177,
+     "hits@1": 0.0336259679187243,
+     "hits@10": 0.04930270989563746,
+     "hits@50": 0.18757910412163414,
+     "auroc": 0.8297663250171584,
+     "auroc_hard": 0.4759767854339633,
+     "auroc_degmatch": 0.7602065734728225,
+     "auprc": 0.06944724518454985,
+     "mrr": 0.0458365184321574,
+     "mean_rank": 1354.8938816201248
+    },
+    "disease_knn": {
+     "_any10": 0.4411764705882353,
+     "hits@1": 0.23883191393349382,
+     "hits@10": 0.35047988239633937,
+     "hits@50": 0.49013251261544505,
+     "auroc": 0.859522572911905,
+     "auroc_hard": 0.6613986868879747,
+     "auroc_degmatch": 0.822134580090478,
+     "auprc": 0.3132562204479227,
+     "mrr": 0.28067690384338617,
+     "mean_rank": 1118.310706822786
+    }
+   },
+   "n_diseases": 68,
+   "mean_positives": 6.617647058823529,
+   "prevalence": 0.0008316761416141171,
+   "random_expected_any10": 0.00823031722031953,
+   "median_rank_known_drug": 6.0,
+   "share_known_drugs_rank1": 0.4237037037037037
+  },
+  "targets": {
+   "rows": {
+    "model": {
+     "_any10": 0.8333333333333334,
+     "hits@1": 0.3957010582010582,
+     "hits@10": 0.6480820105820105,
+     "hits@50": 0.6949074074074074,
+     "auroc": 0.9824206763567034,
+     "auroc_hard": 0.8921733180119102,
+     "auroc_degmatch": 0.9540354267310788,
+     "auprc": 0.5940501065614116,
+     "mrr": 0.474515912728627,
+     "mean_rank": 140.8101851851852
+    },
+    "random": {
+     "_any10": 0.0,
+     "hits@1": 0.0,
+     "hits@10": 0.0,
+     "hits@50": 0.0,
+     "auroc": 0.47614267049153686,
+     "auroc_hard": 0.4875120381459124,
+     "auroc_degmatch": 0.38900606329488313,
+     "auprc": 0.0018228932983333078,
+     "mrr": 0.0006889596316112097,
+     "mean_rank": 4165.364880952381
+    },
+    "popularity": {
+     "_any10": 0.5,
+     "hits@1": 0.0625,
+     "hits@10": 0.14781746031746032,
+     "hits@50": 0.1617063492063492,
+     "auroc": 0.9051912904422581,
+     "auroc_hard": 0.45963364027582526,
+     "auroc_degmatch": 0.7657874396135265,
+     "auprc": 0.11643863812007316,
+     "mrr": 0.09910979820183696,
+     "mean_rank": 754.7926587301587
+    },
+    "disease_knn": {
+     "_any10": 0.6666666666666666,
+     "hits@1": 0.24305555555555555,
+     "hits@10": 0.4236111111111111,
+     "hits@50": 0.725,
+     "auroc": 0.9624983510803512,
+     "auroc_hard": 0.7778456400787087,
+     "auroc_degmatch": 0.9170507246376811,
+     "auprc": 0.4065973318514629,
+     "mrr": 0.2958950555961223,
+     "mean_rank": 299.2876984126984
+    }
+   },
+   "n_diseases": 6,
+   "mean_positives": 8.333333333333334,
+   "prevalence": 0.0010472958820325919,
+   "random_expected_any10": 0.010385121522198115,
+   "median_rank_known_drug": 4.0,
+   "share_known_drugs_rank1": 0.2733333333333333
+  }
+ },
+ "validation": {
+  "seeds": 3,
+  "top_k": 20,
+  "candidate_union_sizes": {
+   "Primary Biliary Cholangitis": 28,
+   "Systemic Sclerosis": 22,
+   "Sjogren Syndrome": 21,
+   "Autoimmune Hepatitis": 23,
+   "Myasthenia Gravis": 22,
+   "Crohn Disease": 29
+  },
+  "v1": {
+   "Autoimmune Hepatitis": {
+    "n_labelled": 1,
+    "best_mean_rank": 672.3333333333334,
+    "any_hit10_per_seed": [
+     false,
+     false,
+     false
+    ]
+   },
+   "Crohn Disease": {
+    "n_labelled": 24,
+    "best_mean_rank": 1.0,
+    "any_hit10_per_seed": [
+     true,
+     true,
+     true
+    ]
+   },
+   "Myasthenia Gravis": {
+    "n_labelled": 7,
+    "best_mean_rank": 1.0,
+    "any_hit10_per_seed": [
+     true,
+     true,
+     true
+    ]
+   },
+   "Primary Biliary Cholangitis": {
+    "n_labelled": 1,
+    "best_mean_rank": 1.0,
+    "any_hit10_per_seed": [
+     true,
+     true,
+     true
+    ]
+   },
+   "Sjogren Syndrome": {
+    "n_labelled": 12,
+    "best_mean_rank": 3.3333333333333335,
+    "any_hit10_per_seed": [
+     true,
+     true,
+     true
+    ]
+   },
+   "Systemic Sclerosis": {
+    "n_labelled": 5,
+    "best_mean_rank": 1.6666666666666667,
+    "any_hit10_per_seed": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  "v2_trial_grade_A_to_C_among_novel": {
+   "model": {
+    "n": 86,
+    "share": 0.186
+   },
+   "random": {
+    "n": 120,
+    "share": 0.008
+   },
+   "popularity": {
+    "n": 120,
+    "share": 0.15
+   }
+  },
+  "v2_trial_grade_A_or_B_among_novel": {
+   "model": {
+    "n": 86,
+    "share": 0.163
+   },
+   "random": {
+    "n": 120,
+    "share": 0.0
+   },
+   "popularity": {
+    "n": 120,
+    "share": 0.133
+   }
+  },
+  "v2_grade_counts_model_novel": {
+   "D": 70,
+   "A": 13,
+   "B": 1,
+   "C": 2
+  },
+  "v3_any_pubmed_hit_among_novel": {
+   "model": 0.628,
+   "random": 0.183,
+   "popularity": 0.717
+  },
+  "v3_supporting_among_novel": {
+   "model": {
+    "n": 86,
+    "share": 0.244
+   },
+   "random": {
+    "n": 120,
+    "share": 0.0
+   },
+   "popularity": {
+    "n": 120,
+    "share": 0.158
+   }
+  },
+  "v3_against_among_novel": {
+   "model": {
+    "n": 86,
+    "share": 0.035
+   },
+   "random": {
+    "n": 120,
+    "share": 0.0
+   },
+   "popularity": {
+    "n": 120,
+    "share": 0.117
+   }
+  },
+  "v3_class_counts_model_novel": {
+   "mixed": 10,
+   "no_hits": 32,
+   "unrelated": 20,
+   "supports": 21,
+   "against": 3
+  },
+  "v4": [
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "elafibranor",
+    "in_primekg": true,
+    "primekg_name": "Elafibranor",
+    "already_labelled": false,
+    "rank_s0": 5687.0,
+    "rank_s1": 6896.0,
+    "rank_s2": 4892.0,
+    "mean_rank": 5825.0,
+    "percentile_top": 73.21,
+    "knn_rank": 3266.0,
+    "popularity_rank": 3266.0,
+    "fda_approval": "2024-06-10",
+    "post_snapshot": true,
+    "source": "https://www.biospace.com/ipsen-s-iqirvo-receives-u-s-fda-accelerated-approval-as-a-first-in-class-ppar-treatment-for-primary-biliary-cholangitis"
+   },
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "seladelpar",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": null,
+    "post_snapshot": null,
+    "source": null
+   },
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "obeticholic acid",
+    "in_primekg": true,
+    "primekg_name": "Obeticholic acid",
+    "already_labelled": false,
+    "rank_s0": 3107.0,
+    "rank_s1": 2344.0,
+    "rank_s2": 1366.0,
+    "mean_rank": 2272.3333333333335,
+    "percentile_top": 28.56,
+    "knn_rank": 6452.0,
+    "popularity_rank": 6452.0,
+    "fda_approval": "2016-05",
+    "post_snapshot": false,
+    "source": "https://www.healio.com/news/gastroenterology/20160816/fda-approves-ocaliva-for-primary-biliary-cholangitis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "efgartigimod",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": null,
+    "post_snapshot": null,
+    "source": null
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "ravulizumab",
+    "in_primekg": true,
+    "primekg_name": "Ravulizumab",
+    "already_labelled": false,
+    "rank_s0": 1184.0,
+    "rank_s1": 815.0,
+    "rank_s2": 535.0,
+    "mean_rank": 844.6666666666666,
+    "percentile_top": 10.62,
+    "knn_rank": 1383.0,
+    "popularity_rank": 1381.0,
+    "fda_approval": "2022-04",
+    "post_snapshot": true,
+    "source": "https://practicalneurology.com/news/fda-approves-ravulizumab-for-generalized-myasthenia-gravis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "rozanolixizumab",
+    "in_primekg": true,
+    "primekg_name": "Rozanolixizumab",
+    "already_labelled": false,
+    "rank_s0": 2615.0,
+    "rank_s1": 2436.0,
+    "rank_s2": 1784.0,
+    "mean_rank": 2278.3333333333335,
+    "percentile_top": 28.63,
+    "knn_rank": 7182.0,
+    "popularity_rank": 7182.0,
+    "fda_approval": "2023-06",
+    "post_snapshot": true,
+    "source": "https://www.managedhealthcareexecutive.com/view/fda-approves-rystiggo-for-generalized-myasthenia-gravis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "zilucoplan",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": null,
+    "post_snapshot": null,
+    "source": null
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "nipocalimab",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": null,
+    "post_snapshot": null,
+    "source": null
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "risankizumab",
+    "in_primekg": true,
+    "primekg_name": "Risankizumab",
+    "already_labelled": false,
+    "rank_s0": 37.0,
+    "rank_s1": 45.0,
+    "rank_s2": 30.0,
+    "mean_rank": 37.333333333333336,
+    "percentile_top": 0.47,
+    "knn_rank": 30.0,
+    "popularity_rank": 951.0,
+    "fda_approval": "2022-06-17",
+    "post_snapshot": true,
+    "source": "https://news.abbvie.com/2022-06-17-SKYRIZI-R-risankizumab-rzaa-Receives-FDA-Approval-as-the-First-and-Only-Specific-Interleukin-23-IL-23-to-Treat-Moderately-to-Severely-Active-Crohns-Disease-in-Adults"
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "upadacitinib",
+    "in_primekg": true,
+    "primekg_name": "Upadacitinib",
+    "already_labelled": false,
+    "rank_s0": 360.0,
+    "rank_s1": 533.0,
+    "rank_s2": 758.0,
+    "mean_rank": 550.3333333333334,
+    "percentile_top": 6.92,
+    "knn_rank": 127.0,
+    "popularity_rank": 1527.0,
+    "fda_approval": "2023-05-18",
+    "post_snapshot": true,
+    "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-treatment-moderately-severely-active-crohns-disease"
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "mirikizumab",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": null,
+    "post_snapshot": null,
+    "source": null
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "guselkumab",
+    "in_primekg": true,
+    "primekg_name": "Guselkumab",
+    "already_labelled": false,
+    "rank_s0": 987.0,
+    "rank_s1": 1970.0,
+    "rank_s2": 1132.0,
+    "mean_rank": 1363.0,
+    "percentile_top": 17.13,
+    "knn_rank": 5570.0,
+    "popularity_rank": 5570.0,
+    "fda_approval": "2025-03-20",
+    "post_snapshot": true,
+    "source": "https://www.hcplive.com/view/fda-approves-guselkumab-tremfya-for-crohn-disease"
+   },
+   {
+    "target": "Systemic Sclerosis",
+    "drug": "tocilizumab",
+    "in_primekg": true,
+    "primekg_name": "Tocilizumab",
+    "already_labelled": false,
+    "rank_s0": 38.0,
+    "rank_s1": 100.0,
+    "rank_s2": 35.0,
+    "mean_rank": 57.666666666666664,
+    "percentile_top": 0.72,
+    "knn_rank": 35.0,
+    "popularity_rank": 260.0,
+    "fda_approval": "2021-03-04",
+    "post_snapshot": false,
+    "source": "https://www.gene.com/media/press-releases/14897/2021-03-04/genentechs-actemra-becomes-the-first-bio"
+   },
+   {
+    "target": "Systemic Sclerosis",
+    "drug": "nintedanib",
+    "in_primekg": true,
+    "primekg_name": "Nintedanib",
+    "already_labelled": false,
+    "rank_s0": 1363.0,
+    "rank_s1": 720.0,
+    "rank_s2": 461.0,
+    "mean_rank": 848.0,
+    "percentile_top": 10.66,
+    "knn_rank": 375.0,
+    "popularity_rank": 365.0,
+    "fda_approval": "2019-09-06",
+    "post_snapshot": false,
+    "source": "https://boehringer-ingelheim.com/press-release/fda-approves-nintedanib-ssc-ild"
+   }
+  ],
+  "v4_post_snapshot": {
+   "n": 6,
+   "median_model_rank": 1103.8333333333333,
+   "median_percentile": 13.875,
+   "n_in_top_10pct": 2,
+   "n_better_than_median_rank": 5,
+   "sign_test_p_one_sided": 0.109375,
+   "median_knn_rank": 2324.5,
+   "median_popularity_rank": 2396.5,
+   "n_model_better_than_knn": 3
+  },
+  "v4_label_gap": {
+   "n": 3,
+   "median_model_rank": 848.0,
+   "median_percentile": 10.66,
+   "n_in_top_10pct": 1,
+   "n_better_than_median_rank": 3,
+   "sign_test_p_one_sided": 0.125,
+   "median_knn_rank": 375.0,
+   "median_popularity_rank": 365.0,
+   "n_model_better_than_knn": 1
+  },
+  "v5_immune_enriched_q05": {
+   "model": 0.0,
+   "random": 0.0,
+   "popularity": 0.05
+  },
+  "v5_mean_immune_pathway_targets": {
+   "model": 0.48,
+   "random": 0.25,
+   "popularity": 0.72
+  },
+  "v5_share_any_disease_gene_target": {
+   "model": 0.167,
+   "random": 0.033,
+   "popularity": 0.158
+  },
+  "v5_disease_gene_overlap_q05": {
+   "model": 0.017,
+   "random": 0.008,
+   "popularity": 0.05
+  },
+  "v7": {
+   "atc_coverage": 0.5,
+   "share_corticosteroid_of_atc_mapped": 0.567,
+   "share_antibacterial_of_atc_mapped": 0.1,
+   "share_immunosuppressant_of_atc_mapped": 0.033,
+   "share_antineoplastic_of_atc_mapped": 0.0,
+   "share_corticosteroid_by_name_all_candidates": 0.408,
+   "share_antibacterial_by_name_all_candidates": 0.208,
+   "per_target_class_counts": {
+    "Autoimmune Hepatitis": {
+     "corticosteroid": 6
+    },
+    "Crohn Disease": {
+     "corticosteroid": 6,
+     "antibacterial": 2,
+     "immunosuppressant": 1
+    },
+    "Myasthenia Gravis": {
+     "corticosteroid": 6
+    },
+    "Primary Biliary Cholangitis": {
+     "corticosteroid": 5,
+     "antibacterial": 2
+    },
+    "Sjogren Syndrome": {
+     "corticosteroid": 5,
+     "immunosuppressant": 1
+    },
+    "Systemic Sclerosis": {
+     "corticosteroid": 6,
+     "antibacterial": 2
+    }
+   },
+   "per_target_top_classes": {
+    "Autoimmune Hepatitis": [
+     [
+      "S01",
+      2
+     ],
+     [
+      "R01",
+      2
+     ],
+     [
+      "D07",
+      1
+     ],
+     [
+      "D10",
+      1
+     ]
+    ],
+    "Crohn Disease": [
+     [
+      "S01",
+      2
+     ],
+     [
+      "J01",
+      2
+     ],
+     [
+      "R01",
+      2
+     ],
+     [
+      "A07",
+      2
+     ]
+    ],
+    "Myasthenia Gravis": [
+     [
+      "N07",
+      2
+     ],
+     [
+      "S01",
+      2
+     ],
+     [
+      "R01",
+      2
+     ],
+     [
+      "D07",
+      1
+     ]
+    ],
+    "Primary Biliary Cholangitis": [
+     [
+      "A05",
+      2
+     ],
+     [
+      "S01",
+      2
+     ],
+     [
+      "J01",
+      2
+     ],
+     [
+      "D07",
+      1
+     ]
+    ],
+    "Sjogren Syndrome": [
+     [
+      "S01",
+      2
+     ],
+     [
+      "A06",
+      1
+     ],
+     [
+      "L04",
+      1
+     ],
+     [
+      "D07",
+      1
+     ]
+    ],
+    "Systemic Sclerosis": [
+     [
+      "S01",
+      2
+     ],
+     [
+      "R01",
+      2
+     ],
+     [
+      "J01",
+      2
+     ],
+     [
+      "D02",
+      1
+     ]
+    ]
+   }
+  },
+  "e_check": {
+   "n_slots": 120,
+   "labelled_in_top10": 46,
+   "unlabelled": 74,
+   "unlabelled_with_trial_A_to_C": 21,
+   "diseases_with_labelled_in_top10": 9
+  },
+  "temporal_rows": [
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "elafibranor",
+    "in_primekg": true,
+    "primekg_name": "Elafibranor",
+    "already_labelled": false,
+    "rank_s0": 5687.0,
+    "rank_s1": 6896.0,
+    "rank_s2": 4892.0,
+    "mean_rank": 5825.0,
+    "percentile_top": 73.21,
+    "knn_rank": 3266.0,
+    "popularity_rank": 3266.0,
+    "fda_approval": "2024-06-10",
+    "post_snapshot": true,
+    "source": "https://www.biospace.com/ipsen-s-iqirvo-receives-u-s-fda-accelerated-approval-as-a-first-in-class-ppar-treatment-for-primary-biliary-cholangitis"
+   },
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "seladelpar",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": NaN,
+    "post_snapshot": NaN,
+    "source": NaN
+   },
+   {
+    "target": "Primary Biliary Cholangitis",
+    "drug": "obeticholic acid",
+    "in_primekg": true,
+    "primekg_name": "Obeticholic acid",
+    "already_labelled": false,
+    "rank_s0": 3107.0,
+    "rank_s1": 2344.0,
+    "rank_s2": 1366.0,
+    "mean_rank": 2272.333333333333,
+    "percentile_top": 28.56,
+    "knn_rank": 6452.0,
+    "popularity_rank": 6452.0,
+    "fda_approval": "2016-05",
+    "post_snapshot": false,
+    "source": "https://www.healio.com/news/gastroenterology/20160816/fda-approves-ocaliva-for-primary-biliary-cholangitis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "efgartigimod",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": NaN,
+    "post_snapshot": NaN,
+    "source": NaN
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "ravulizumab",
+    "in_primekg": true,
+    "primekg_name": "Ravulizumab",
+    "already_labelled": false,
+    "rank_s0": 1184.0,
+    "rank_s1": 815.0,
+    "rank_s2": 535.0,
+    "mean_rank": 844.6666666666666,
+    "percentile_top": 10.62,
+    "knn_rank": 1383.0,
+    "popularity_rank": 1381.0,
+    "fda_approval": "2022-04",
+    "post_snapshot": true,
+    "source": "https://practicalneurology.com/news/fda-approves-ravulizumab-for-generalized-myasthenia-gravis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "rozanolixizumab",
+    "in_primekg": true,
+    "primekg_name": "Rozanolixizumab",
+    "already_labelled": false,
+    "rank_s0": 2615.0,
+    "rank_s1": 2436.0,
+    "rank_s2": 1784.0,
+    "mean_rank": 2278.333333333333,
+    "percentile_top": 28.63,
+    "knn_rank": 7182.0,
+    "popularity_rank": 7182.0,
+    "fda_approval": "2023-06",
+    "post_snapshot": true,
+    "source": "https://www.managedhealthcareexecutive.com/view/fda-approves-rystiggo-for-generalized-myasthenia-gravis"
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "zilucoplan",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": NaN,
+    "post_snapshot": NaN,
+    "source": NaN
+   },
+   {
+    "target": "Myasthenia Gravis",
+    "drug": "nipocalimab",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": NaN,
+    "post_snapshot": NaN,
+    "source": NaN
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "risankizumab",
+    "in_primekg": true,
+    "primekg_name": "Risankizumab",
+    "already_labelled": false,
+    "rank_s0": 37.0,
+    "rank_s1": 45.0,
+    "rank_s2": 30.0,
+    "mean_rank": 37.333333333333336,
+    "percentile_top": 0.47,
+    "knn_rank": 30.0,
+    "popularity_rank": 951.0,
+    "fda_approval": "2022-06-17",
+    "post_snapshot": true,
+    "source": "https://news.abbvie.com/2022-06-17-SKYRIZI-R-risankizumab-rzaa-Receives-FDA-Approval-as-the-First-and-Only-Specific-Interleukin-23-IL-23-to-Treat-Moderately-to-Severely-Active-Crohns-Disease-in-Adults"
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "upadacitinib",
+    "in_primekg": true,
+    "primekg_name": "Upadacitinib",
+    "already_labelled": false,
+    "rank_s0": 360.0,
+    "rank_s1": 533.0,
+    "rank_s2": 758.0,
+    "mean_rank": 550.3333333333334,
+    "percentile_top": 6.92,
+    "knn_rank": 127.0,
+    "popularity_rank": 1527.0,
+    "fda_approval": "2023-05-18",
+    "post_snapshot": true,
+    "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-treatment-moderately-severely-active-crohns-disease"
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "mirikizumab",
+    "in_primekg": false,
+    "primekg_name": NaN,
+    "already_labelled": NaN,
+    "rank_s0": NaN,
+    "rank_s1": NaN,
+    "rank_s2": NaN,
+    "mean_rank": NaN,
+    "percentile_top": NaN,
+    "knn_rank": NaN,
+    "popularity_rank": NaN,
+    "fda_approval": NaN,
+    "post_snapshot": NaN,
+    "source": NaN
+   },
+   {
+    "target": "Crohn Disease",
+    "drug": "guselkumab",
+    "in_primekg": true,
+    "primekg_name": "Guselkumab",
+    "already_labelled": false,
+    "rank_s0": 987.0,
+    "rank_s1": 1970.0,
+    "rank_s2": 1132.0,
+    "mean_rank": 1363.0,
+    "percentile_top": 17.13,
+    "knn_rank": 5570.0,
+    "popularity_rank": 5570.0,
+    "fda_approval": "2025-03-20",
+    "post_snapshot": true,
+    "source": "https://www.hcplive.com/view/fda-approves-guselkumab-tremfya-for-crohn-disease"
+   },
+   {
+    "target": "Systemic Sclerosis",
+    "drug": "tocilizumab",
+    "in_primekg": true,
+    "primekg_name": "Tocilizumab",
+    "already_labelled": false,
+    "rank_s0": 38.0,
+    "rank_s1": 100.0,
+    "rank_s2": 35.0,
+    "mean_rank": 57.66666666666666,
+    "percentile_top": 0.72,
+    "knn_rank": 35.0,
+    "popularity_rank": 260.0,
+    "fda_approval": "2021-03-04",
+    "post_snapshot": false,
+    "source": "https://www.gene.com/media/press-releases/14897/2021-03-04/genentechs-actemra-becomes-the-first-bio"
+   },
+   {
+    "target": "Systemic Sclerosis",
+    "drug": "nintedanib",
+    "in_primekg": true,
+    "primekg_name": "Nintedanib",
+    "already_labelled": false,
+    "rank_s0": 1363.0,
+    "rank_s1": 720.0,
+    "rank_s2": 461.0,
+    "mean_rank": 848.0,
+    "percentile_top": 10.66,
+    "knn_rank": 375.0,
+    "popularity_rank": 365.0,
+    "fda_approval": "2019-09-06",
+    "post_snapshot": false,
+    "source": "https://boehringer-ingelheim.com/press-release/fda-approves-nintedanib-ssc-ild"
+   }
+  ],
+  "explanations": [
+   {
+    "disease": "primary biliary cholangitis",
+    "drug": "Ursodeoxycholic acid",
+    "path_logit": 4.268321990966797,
+    "prior_logit": 6.0837788581848145,
+    "paths": [
+     {
+      "log_score": -5.14777858406778,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "choledocholithiasis",
+       "Ursodeoxycholic acid"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] choledocholithiasis -> [indication (disease->drug)] Ursodeoxycholic acid"
+     },
+     {
+      "log_score": -5.83077821402774,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "choledocholithiasis",
+       "Ursodeoxycholic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] choledocholithiasis -> [indication (disease->drug)] Ursodeoxycholic acid"
+     },
+     {
+      "log_score": -5.87802886896999,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "Reynolds syndrome",
+       "Ursodeoxycholic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] Reynolds syndrome -> [indication (disease->drug)] Ursodeoxycholic acid"
+     }
+    ],
+    "target": "Primary Biliary Cholangitis"
+   },
+   {
+    "disease": "primary biliary cholangitis",
+    "drug": "Doripenem",
+    "path_logit": 3.8177490234375,
+    "prior_logit": 3.01582670211792,
+    "paths": [
+     {
+      "log_score": -3.804450103764969,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "low phospholipid associated cholelithiasis",
+       "Doripenem"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] low phospholipid associated cholelithiasis -> [indication (disease->drug)] Doripenem"
+     },
+     {
+      "log_score": -4.795283976979967,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "cholecystitis",
+       "Doripenem"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] cholecystitis -> [indication (disease->drug)] Doripenem"
+     },
+     {
+      "log_score": -8.24739372335597,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "cholecystitis",
+       "low phospholipid associated cholelithiasis",
+       "Doripenem"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] cholecystitis -> [disease_disease^-1] low phospholipid associated cholelithiasis -> [indication (disease->drug)] Doripenem"
+     }
+    ],
+    "target": "Primary Biliary Cholangitis"
+   },
+   {
+    "disease": "primary biliary cholangitis",
+    "drug": "Cholic Acid",
+    "path_logit": 3.163435935974121,
+    "prior_logit": 3.615603446960449,
+    "paths": [
+     {
+      "log_score": -2.719868826725442,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "choledocholithiasis",
+       "Cholic Acid"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] choledocholithiasis -> [indication (disease->drug)] Cholic Acid"
+     },
+     {
+      "log_score": -2.9796595410158506,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "choledocholithiasis",
+       "Cholic Acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] choledocholithiasis -> [indication (disease->drug)] Cholic Acid"
+     },
+     {
+      "log_score": -4.3400083247423495,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "biliary tract disease",
+       "Cholic Acid"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] biliary tract disease -> [indication (disease->drug)] Cholic Acid"
+     }
+    ],
+    "target": "Primary Biliary Cholangitis"
+   },
+   {
+    "disease": "primary biliary cholangitis",
+    "drug": "Dehydrocholic acid",
+    "path_logit": 3.226106643676758,
+    "prior_logit": 3.493271827697754,
+    "paths": [
+     {
+      "log_score": -2.0937236994485606,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "biliary tract disease",
+       "Dehydrocholic acid"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] biliary tract disease -> [indication (disease->drug)] Dehydrocholic acid"
+     },
+     {
+      "log_score": -2.4342127178727084,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "biliary tract disease",
+       "Dehydrocholic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] biliary tract disease -> [indication (disease->drug)] Dehydrocholic acid"
+     },
+     {
+      "log_score": -2.8708052984398043,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "obstructive jaundice",
+       "Dehydrocholic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] obstructive jaundice -> [indication (disease->drug)] Dehydrocholic acid"
+     }
+    ],
+    "target": "Primary Biliary Cholangitis"
+   },
+   {
+    "disease": "primary biliary cholangitis",
+    "drug": "Homatropine",
+    "path_logit": 2.711601734161377,
+    "prior_logit": 3.4352622032165527,
+    "paths": [
+     {
+      "log_score": -1.7246279755337528,
+      "nodes": [
+       "primary biliary cholangitis",
+       "genetic biliary tract disease",
+       "biliary tract disease",
+       "Homatropine"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_disease] genetic biliary tract disease -> [disease_disease] biliary tract disease -> [indication (disease->drug)] Homatropine"
+     },
+     {
+      "log_score": -1.7529986890191231,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "obstructive jaundice",
+       "Homatropine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] obstructive jaundice -> [indication (disease->drug)] Homatropine"
+     },
+     {
+      "log_score": -1.9975373392951368,
+      "nodes": [
+       "primary biliary cholangitis",
+       "ABCB4",
+       "biliary tract disease",
+       "Homatropine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "primary biliary cholangitis -> [disease_protein^-1] ABCB4 -> [disease_protein] biliary tract disease -> [indication (disease->drug)] Homatropine"
+     }
+    ],
+    "target": "Primary Biliary Cholangitis"
+   },
+   {
+    "disease": "systemic sclerosis",
+    "drug": "Benzoic acid",
+    "path_logit": 2.2218093872070312,
+    "prior_logit": 5.249725818634033,
+    "paths": [
+     {
+      "log_score": -3.2976069569031417,
+      "nodes": [
+       "systemic sclerosis",
+       "XYLT2",
+       "localized scleroderma",
+       "Benzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] XYLT2 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Benzoic acid"
+     },
+     {
+      "log_score": -4.314614538515713,
+      "nodes": [
+       "systemic sclerosis",
+       "CSF3",
+       "localized scleroderma",
+       "Benzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] CSF3 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Benzoic acid"
+     },
+     {
+      "log_score": -5.050175695471642,
+      "nodes": [
+       "systemic sclerosis",
+       "TNF",
+       "localized scleroderma",
+       "Benzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] TNF -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Benzoic acid"
+     }
+    ],
+    "target": "Systemic Sclerosis"
+   },
+   {
+    "disease": "systemic sclerosis",
+    "drug": "Bosentan",
+    "path_logit": 3.2257213592529297,
+    "prior_logit": 4.154633045196533,
+    "paths": [
+     {
+      "log_score": -3.330960725733684,
+      "nodes": [
+       "systemic sclerosis",
+       "XYLT2",
+       "localized scleroderma",
+       "Bosentan"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] XYLT2 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Bosentan"
+     },
+     {
+      "log_score": -4.169956603627517,
+      "nodes": [
+       "systemic sclerosis",
+       "CSF3",
+       "localized scleroderma",
+       "Bosentan"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] CSF3 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Bosentan"
+     },
+     {
+      "log_score": -4.821622837011167,
+      "nodes": [
+       "systemic sclerosis",
+       "TNF",
+       "localized scleroderma",
+       "Bosentan"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] TNF -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Bosentan"
+     }
+    ],
+    "target": "Systemic Sclerosis"
+   },
+   {
+    "disease": "systemic sclerosis",
+    "drug": "Limaprost",
+    "path_logit": 3.1141366958618164,
+    "prior_logit": 3.7372350692749023,
+    "paths": [
+     {
+      "log_score": -2.1151631792091963,
+      "nodes": [
+       "systemic sclerosis",
+       "glomerular disease",
+       "thromboangiitis obliterans",
+       "Limaprost"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_disease] glomerular disease -> [disease_disease^-1] thromboangiitis obliterans -> [indication (disease->drug)] Limaprost"
+     },
+     {
+      "log_score": -7.338187589156763,
+      "nodes": [
+       "systemic sclerosis",
+       "Raynaud phenomenon",
+       "thromboangiitis obliterans",
+       "Limaprost"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "disease_phenotype_positive^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_phenotype_positive] Raynaud phenomenon -> [disease_phenotype_positive^-1] thromboangiitis obliterans -> [indication (disease->drug)] Limaprost"
+     },
+     {
+      "log_score": -8.034303877897399,
+      "nodes": [
+       "systemic sclerosis",
+       "Gangrene",
+       "thromboangiitis obliterans",
+       "Limaprost"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "disease_phenotype_positive^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_phenotype_positive] Gangrene -> [disease_phenotype_positive^-1] thromboangiitis obliterans -> [indication (disease->drug)] Limaprost"
+     }
+    ],
+    "target": "Systemic Sclerosis"
+   },
+   {
+    "disease": "systemic sclerosis",
+    "drug": "Aminobenzoic acid",
+    "path_logit": 1.5387696027755737,
+    "prior_logit": 5.249725818634033,
+    "paths": [
+     {
+      "log_score": -2.809883672722729,
+      "nodes": [
+       "systemic sclerosis",
+       "XYLT2",
+       "localized scleroderma",
+       "Aminobenzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] XYLT2 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Aminobenzoic acid"
+     },
+     {
+      "log_score": -3.6664287739504187,
+      "nodes": [
+       "systemic sclerosis",
+       "CSF3",
+       "localized scleroderma",
+       "Aminobenzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] CSF3 -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Aminobenzoic acid"
+     },
+     {
+      "log_score": -4.486694037150578,
+      "nodes": [
+       "systemic sclerosis",
+       "TNF",
+       "localized scleroderma",
+       "Aminobenzoic acid"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_protein^-1] TNF -> [disease_protein] localized scleroderma -> [indication (disease->drug)] Aminobenzoic acid"
+     }
+    ],
+    "target": "Systemic Sclerosis"
+   },
+   {
+    "disease": "systemic sclerosis",
+    "drug": "Triamcinolone",
+    "path_logit": 1.110907793045044,
+    "prior_logit": 5.268050670623779,
+    "paths": [
+     {
+      "log_score": -1.4381301568153173,
+      "nodes": [
+       "systemic sclerosis",
+       "glomerular disease",
+       "temporal arteritis",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_disease] glomerular disease -> [disease_disease^-1] temporal arteritis -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -2.9937204224316134,
+      "nodes": [
+       "systemic sclerosis",
+       "autoimmune disease with skin involvement",
+       "autoimmune disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_disease] autoimmune disease with skin involvement -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -4.138972924568259,
+      "nodes": [
+       "systemic sclerosis",
+       "autoimmune disease with skin involvement",
+       "skin disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "systemic sclerosis -> [disease_disease] autoimmune disease with skin involvement -> [disease_disease^-1] skin disease -> [indication (disease->drug)] Triamcinolone"
+     }
+    ],
+    "target": "Systemic Sclerosis"
+   },
+   {
+    "disease": "Sjogren syndrome",
+    "drug": "Prednisolone",
+    "path_logit": 2.433039426803589,
+    "prior_logit": 5.31963586807251,
+    "paths": [
+     {
+      "log_score": -3.374791358239733,
+      "nodes": [
+       "Sjogren syndrome",
+       "IRAK1BP1",
+       "dry eye syndrome",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IRAK1BP1 -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Prednisolone"
+     },
+     {
+      "log_score": -3.545067848916509,
+      "nodes": [
+       "Sjogren syndrome",
+       "IL12A",
+       "dry eye syndrome",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IL12A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Prednisolone"
+     },
+     {
+      "log_score": -3.6958734046837054,
+      "nodes": [
+       "Sjogren syndrome",
+       "FCGR2A",
+       "dry eye syndrome",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] FCGR2A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Prednisolone"
+     }
+    ],
+    "target": "Sjogren Syndrome"
+   },
+   {
+    "disease": "Sjogren syndrome",
+    "drug": "Polyethylene glycol 400",
+    "path_logit": 3.5806407928466797,
+    "prior_logit": 3.8109021186828613,
+    "paths": [
+     {
+      "log_score": -1.6481115529738224,
+      "nodes": [
+       "Sjogren syndrome",
+       "IRAK1BP1",
+       "dry eye syndrome",
+       "Polyethylene glycol 400"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IRAK1BP1 -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol 400"
+     },
+     {
+      "log_score": -1.7379604968715587,
+      "nodes": [
+       "Sjogren syndrome",
+       "IL12A",
+       "dry eye syndrome",
+       "Polyethylene glycol 400"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IL12A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol 400"
+     },
+     {
+      "log_score": -1.7841519055691228,
+      "nodes": [
+       "Sjogren syndrome",
+       "FCGR2A",
+       "dry eye syndrome",
+       "Polyethylene glycol 400"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] FCGR2A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol 400"
+     }
+    ],
+    "target": "Sjogren Syndrome"
+   },
+   {
+    "disease": "Sjogren syndrome",
+    "drug": "Propylene glycol",
+    "path_logit": 3.4432578086853027,
+    "prior_logit": 3.8758983612060547,
+    "paths": [
+     {
+      "log_score": -0.45122425483138345,
+      "nodes": [
+       "Sjogren syndrome",
+       "IRAK1BP1",
+       "dry eye syndrome",
+       "Propylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IRAK1BP1 -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Propylene glycol"
+     },
+     {
+      "log_score": -0.5425184058319094,
+      "nodes": [
+       "Sjogren syndrome",
+       "IL12A",
+       "dry eye syndrome",
+       "Propylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IL12A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Propylene glycol"
+     },
+     {
+      "log_score": -0.582784674525916,
+      "nodes": [
+       "Sjogren syndrome",
+       "FCGR2A",
+       "dry eye syndrome",
+       "Propylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] FCGR2A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Propylene glycol"
+     }
+    ],
+    "target": "Sjogren Syndrome"
+   },
+   {
+    "disease": "Sjogren syndrome",
+    "drug": "Terbutaline",
+    "path_logit": 3.5811777114868164,
+    "prior_logit": 3.654299259185791,
+    "paths": [
+     {
+      "log_score": -2.3229997930378286,
+      "nodes": [
+       "Sjogren syndrome",
+       "IRAK1BP1",
+       "dry eye syndrome",
+       "Terbutaline"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IRAK1BP1 -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Terbutaline"
+     },
+     {
+      "log_score": -2.41482309741887,
+      "nodes": [
+       "Sjogren syndrome",
+       "IL12A",
+       "dry eye syndrome",
+       "Terbutaline"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IL12A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Terbutaline"
+     },
+     {
+      "log_score": -2.4574527128984363,
+      "nodes": [
+       "Sjogren syndrome",
+       "FCGR2A",
+       "dry eye syndrome",
+       "Terbutaline"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] FCGR2A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Terbutaline"
+     }
+    ],
+    "target": "Sjogren Syndrome"
+   },
+   {
+    "disease": "Sjogren syndrome",
+    "drug": "Polyethylene glycol",
+    "path_logit": 3.37253999710083,
+    "prior_logit": 3.8109021186828613,
+    "paths": [
+     {
+      "log_score": -1.4726067617925496,
+      "nodes": [
+       "Sjogren syndrome",
+       "IRAK1BP1",
+       "dry eye syndrome",
+       "Polyethylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IRAK1BP1 -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol"
+     },
+     {
+      "log_score": -1.5620032907169934,
+      "nodes": [
+       "Sjogren syndrome",
+       "IL12A",
+       "dry eye syndrome",
+       "Polyethylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] IL12A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol"
+     },
+     {
+      "log_score": -1.6078577118815138,
+      "nodes": [
+       "Sjogren syndrome",
+       "FCGR2A",
+       "dry eye syndrome",
+       "Polyethylene glycol"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Sjogren syndrome -> [disease_protein^-1] FCGR2A -> [disease_protein] dry eye syndrome -> [indication (disease->drug)] Polyethylene glycol"
+     }
+    ],
+    "target": "Sjogren Syndrome"
+   },
+   {
+    "disease": "autoimmune hepatitis",
+    "drug": "Prednisolone",
+    "path_logit": 1.7989014387130737,
+    "prior_logit": 5.31963586807251,
+    "paths": [
+     {
+      "log_score": -2.752046431993845,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of endocrine system",
+       "autoimmune disease",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of endocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Prednisolone"
+     },
+     {
+      "log_score": -3.1666948012440175,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of gastrointestinal tract",
+       "autoimmune disease",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of gastrointestinal tract -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Prednisolone"
+     },
+     {
+      "log_score": -3.5865708587623595,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of exocrine system",
+       "autoimmune disease",
+       "Prednisolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of exocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Prednisolone"
+     }
+    ],
+    "target": "Autoimmune Hepatitis"
+   },
+   {
+    "disease": "autoimmune hepatitis",
+    "drug": "Triamcinolone",
+    "path_logit": 1.9620816707611084,
+    "prior_logit": 4.910401821136475,
+    "paths": [
+     {
+      "log_score": -2.7005965670404746,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of endocrine system",
+       "autoimmune disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of endocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -3.112218055902583,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of gastrointestinal tract",
+       "autoimmune disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of gastrointestinal tract -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -3.5322683592544064,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of exocrine system",
+       "autoimmune disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of exocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Triamcinolone"
+     }
+    ],
+    "target": "Autoimmune Hepatitis"
+   },
+   {
+    "disease": "autoimmune hepatitis",
+    "drug": "Hydrocortisone",
+    "path_logit": 1.8897203207015991,
+    "prior_logit": 4.953010559082031,
+    "paths": [
+     {
+      "log_score": -2.715569326180729,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of endocrine system",
+       "autoimmune disease",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of endocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone"
+     },
+     {
+      "log_score": -3.1261627133155914,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of gastrointestinal tract",
+       "autoimmune disease",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of gastrointestinal tract -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone"
+     },
+     {
+      "log_score": -3.5458579979809954,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of exocrine system",
+       "autoimmune disease",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of exocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone"
+     }
+    ],
+    "target": "Autoimmune Hepatitis"
+   },
+   {
+    "disease": "autoimmune hepatitis",
+    "drug": "Betamethasone",
+    "path_logit": 1.9302451610565186,
+    "prior_logit": 4.886494159698486,
+    "paths": [
+     {
+      "log_score": -2.7071191399212067,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of endocrine system",
+       "autoimmune disease",
+       "Betamethasone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of endocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Betamethasone"
+     },
+     {
+      "log_score": -3.118500318116835,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of gastrointestinal tract",
+       "autoimmune disease",
+       "Betamethasone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of gastrointestinal tract -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Betamethasone"
+     },
+     {
+      "log_score": -3.5374993344538166,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of exocrine system",
+       "autoimmune disease",
+       "Betamethasone"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of exocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Betamethasone"
+     }
+    ],
+    "target": "Autoimmune Hepatitis"
+   },
+   {
+    "disease": "autoimmune hepatitis",
+    "drug": "Hydrocortisone acetate",
+    "path_logit": 2.0753259658813477,
+    "prior_logit": 4.74107027053833,
+    "paths": [
+     {
+      "log_score": -2.485414066984192,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of endocrine system",
+       "autoimmune disease",
+       "Hydrocortisone acetate"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of endocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone acetate"
+     },
+     {
+      "log_score": -2.898707637265091,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of gastrointestinal tract",
+       "autoimmune disease",
+       "Hydrocortisone acetate"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of gastrointestinal tract -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone acetate"
+     },
+     {
+      "log_score": -3.3176296851294085,
+      "nodes": [
+       "autoimmune hepatitis",
+       "autoimmune disease of exocrine system",
+       "autoimmune disease",
+       "Hydrocortisone acetate"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "autoimmune hepatitis -> [disease_disease] autoimmune disease of exocrine system -> [disease_disease^-1] autoimmune disease -> [indication (disease->drug)] Hydrocortisone acetate"
+     }
+    ],
+    "target": "Autoimmune Hepatitis"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Ambenonium",
+    "path_logit": 4.119330883026123,
+    "prior_logit": 4.06306266784668,
+    "paths": [
+     {
+      "log_score": -1.2920350458657062,
+      "nodes": [
+       "myasthenia gravis",
+       "MUSK",
+       "neuromuscular junction disease",
+       "Ambenonium"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] MUSK -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Ambenonium"
+     },
+     {
+      "log_score": -1.5160351397144631,
+      "nodes": [
+       "myasthenia gravis",
+       "HLA-DPB1",
+       "neuromuscular junction disease",
+       "Ambenonium"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] HLA-DPB1 -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Ambenonium"
+     },
+     {
+      "log_score": -1.6794616915651595,
+      "nodes": [
+       "myasthenia gravis",
+       "CFB",
+       "neuromuscular junction disease",
+       "Ambenonium"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] CFB -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Ambenonium"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Neostigmine",
+    "path_logit": 4.1068949699401855,
+    "prior_logit": 4.06306266784668,
+    "paths": [
+     {
+      "log_score": -0.6926551185454183,
+      "nodes": [
+       "myasthenia gravis",
+       "MUSK",
+       "neuromuscular junction disease",
+       "Neostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] MUSK -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Neostigmine"
+     },
+     {
+      "log_score": -0.9176969844891205,
+      "nodes": [
+       "myasthenia gravis",
+       "HLA-DPB1",
+       "neuromuscular junction disease",
+       "Neostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] HLA-DPB1 -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Neostigmine"
+     },
+     {
+      "log_score": -1.0963706633889083,
+      "nodes": [
+       "myasthenia gravis",
+       "CFB",
+       "neuromuscular junction disease",
+       "Neostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] CFB -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Neostigmine"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Pyridostigmine",
+    "path_logit": 3.935122013092041,
+    "prior_logit": 4.06306266784668,
+    "paths": [
+     {
+      "log_score": -0.6197675465424538,
+      "nodes": [
+       "myasthenia gravis",
+       "MUSK",
+       "neuromuscular junction disease",
+       "Pyridostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] MUSK -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Pyridostigmine"
+     },
+     {
+      "log_score": -0.8477753453785246,
+      "nodes": [
+       "myasthenia gravis",
+       "HLA-DPB1",
+       "neuromuscular junction disease",
+       "Pyridostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] HLA-DPB1 -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Pyridostigmine"
+     },
+     {
+      "log_score": -1.0384605319464701,
+      "nodes": [
+       "myasthenia gravis",
+       "CFB",
+       "neuromuscular junction disease",
+       "Pyridostigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] CFB -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Pyridostigmine"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Distigmine",
+    "path_logit": 3.7928853034973145,
+    "prior_logit": 3.9714558124542236,
+    "paths": [
+     {
+      "log_score": -0.5623183880421185,
+      "nodes": [
+       "myasthenia gravis",
+       "MUSK",
+       "neuromuscular junction disease",
+       "Distigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] MUSK -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Distigmine"
+     },
+     {
+      "log_score": -0.7798822809525113,
+      "nodes": [
+       "myasthenia gravis",
+       "HLA-DPB1",
+       "neuromuscular junction disease",
+       "Distigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] HLA-DPB1 -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Distigmine"
+     },
+     {
+      "log_score": -0.9744721296861412,
+      "nodes": [
+       "myasthenia gravis",
+       "CFB",
+       "neuromuscular junction disease",
+       "Distigmine"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_protein^-1] CFB -> [disease_protein] neuromuscular junction disease -> [indication (disease->drug)] Distigmine"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Amifampridine",
+    "path_logit": 3.8611721992492676,
+    "prior_logit": 2.5499703884124756,
+    "paths": [
+     {
+      "log_score": -3.48808107713782,
+      "nodes": [
+       "myasthenia gravis",
+       "immune-mediated acquired neuromuscular junction disease",
+       "Lambert-Eaton myasthenic syndrome",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_disease] immune-mediated acquired neuromuscular junction disease -> [disease_disease^-1] Lambert-Eaton myasthenic syndrome -> [indication (disease->drug)] Amifampridine"
+     },
+     {
+      "log_score": -33.148848415331386,
+      "nodes": [
+       "myasthenia gravis",
+       "Paresthesia",
+       "Iohexol",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "drug_effect^-1",
+       "drug_drug^-1"
+      ],
+      "text": "myasthenia gravis -> [disease_phenotype_positive] Paresthesia -> [drug_effect^-1] Iohexol -> [drug_drug^-1] Amifampridine"
+     },
+     {
+      "log_score": -33.18100614141777,
+      "nodes": [
+       "myasthenia gravis",
+       "Dyspnea",
+       "Iohexol",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "drug_effect^-1",
+       "drug_drug^-1"
+      ],
+      "text": "myasthenia gravis -> [disease_phenotype_positive] Dyspnea -> [drug_effect^-1] Iohexol -> [drug_drug^-1] Amifampridine"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   },
+   {
+    "disease": "Crohn disease",
+    "drug": "Hydrocortisone",
+    "path_logit": 1.4515225887298584,
+    "prior_logit": 5.2900919914245605,
+    "paths": [
+     {
+      "log_score": -1.2058305682243102,
+      "nodes": [
+       "Crohn disease",
+       "inflammatory bowel disease",
+       "proctitis",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] inflammatory bowel disease -> [disease_disease] proctitis -> [indication (disease->drug)] Hydrocortisone"
+     },
+     {
+      "log_score": -6.532708466207903,
+      "nodes": [
+       "Crohn disease",
+       "LEP",
+       "aphthous stomatitis",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] LEP -> [disease_protein] aphthous stomatitis -> [indication (disease->drug)] Hydrocortisone"
+     },
+     {
+      "log_score": -6.988198755981951,
+      "nodes": [
+       "Crohn disease",
+       "IL2RA",
+       "chronic beryllium disease",
+       "Hydrocortisone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] IL2RA -> [disease_protein] chronic beryllium disease -> [indication (disease->drug)] Hydrocortisone"
+     }
+    ],
+    "target": "Crohn Disease"
+   },
+   {
+    "disease": "Crohn disease",
+    "drug": "Triamcinolone",
+    "path_logit": 1.8040238618850708,
+    "prior_logit": 4.8295698165893555,
+    "paths": [
+     {
+      "log_score": -0.8362819832597972,
+      "nodes": [
+       "Crohn disease",
+       "mouth disease",
+       "lichen planus",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] mouth disease -> [disease_disease^-1] lichen planus -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -5.391338694491088,
+      "nodes": [
+       "Crohn disease",
+       "PPARG",
+       "lichen planus",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] PPARG -> [disease_protein] lichen planus -> [indication (disease->drug)] Triamcinolone"
+     },
+     {
+      "log_score": -8.978024829961036,
+      "nodes": [
+       "Crohn disease",
+       "IL2RA",
+       "chronic beryllium disease",
+       "Triamcinolone"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] IL2RA -> [disease_protein] chronic beryllium disease -> [indication (disease->drug)] Triamcinolone"
+     }
+    ],
+    "target": "Crohn Disease"
+   },
+   {
+    "disease": "Crohn disease",
+    "drug": "Cortisone acetate",
+    "path_logit": 1.2767289876937866,
+    "prior_logit": 5.328040599822998,
+    "paths": [
+     {
+      "log_score": -1.1614981008409284,
+      "nodes": [
+       "Crohn disease",
+       "inflammatory bowel disease",
+       "proctitis",
+       "Cortisone acetate"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] inflammatory bowel disease -> [disease_disease] proctitis -> [indication (disease->drug)] Cortisone acetate"
+     },
+     {
+      "log_score": -6.076239970164425,
+      "nodes": [
+       "Crohn disease",
+       "LEP",
+       "aphthous stomatitis",
+       "Cortisone acetate"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] LEP -> [disease_protein] aphthous stomatitis -> [indication (disease->drug)] Cortisone acetate"
+     },
+     {
+      "log_score": -6.62316501673731,
+      "nodes": [
+       "Crohn disease",
+       "IL2RA",
+       "chronic beryllium disease",
+       "Cortisone acetate"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "disease_protein",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] IL2RA -> [disease_protein] chronic beryllium disease -> [indication (disease->drug)] Cortisone acetate"
+     }
+    ],
+    "target": "Crohn Disease"
+   },
+   {
+    "disease": "Crohn disease",
+    "drug": "Ciprofloxacin",
+    "path_logit": 2.4646682739257812,
+    "prior_logit": 4.038430213928223,
+    "paths": [
+     {
+      "log_score": -0.6053593292490992,
+      "nodes": [
+       "Crohn disease",
+       "mouth disease",
+       "maxillary sinusitis",
+       "Ciprofloxacin"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] mouth disease -> [disease_disease] maxillary sinusitis -> [indication (disease->drug)] Ciprofloxacin"
+     },
+     {
+      "log_score": -25.331065113749005,
+      "nodes": [
+       "Crohn disease",
+       "mouth disease",
+       "digestive system disease",
+       "diarrheal disease",
+       "Ciprofloxacin"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease^-1",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] mouth disease -> [disease_disease^-1] digestive system disease -> [disease_disease^-1] diarrheal disease -> [indication (disease->drug)] Ciprofloxacin"
+     },
+     {
+      "log_score": -25.369741413095106,
+      "nodes": [
+       "Crohn disease",
+       "mouth disease",
+       "digestive system disease",
+       "diarrheal disease",
+       "Ciprofloxacin"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease^-1",
+       "disease_disease^-1",
+       "off-label use (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] mouth disease -> [disease_disease^-1] digestive system disease -> [disease_disease^-1] diarrheal disease -> [off-label use (disease->drug)] Ciprofloxacin"
+     }
+    ],
+    "target": "Crohn Disease"
+   },
+   {
+    "disease": "Crohn disease",
+    "drug": "Ofloxacin",
+    "path_logit": 2.2303390502929688,
+    "prior_logit": 4.168326377868652,
+    "paths": [
+     {
+      "log_score": -0.6223783691325782,
+      "nodes": [
+       "Crohn disease",
+       "mouth disease",
+       "maxillary sinusitis",
+       "Ofloxacin"
+      ],
+      "relations": [
+       "disease_disease^-1",
+       "disease_disease",
+       "indication (disease->drug)"
+      ],
+      "text": "Crohn disease -> [disease_disease^-1] mouth disease -> [disease_disease] maxillary sinusitis -> [indication (disease->drug)] Ofloxacin"
+     },
+     {
+      "log_score": -9.150071459629384,
+      "nodes": [
+       "Crohn disease",
+       "SLC22A4",
+       "Ofloxacin"
+      ],
+      "relations": [
+       "disease_protein^-1",
+       "drug_protein^-1"
+      ],
+      "text": "Crohn disease -> [disease_protein^-1] SLC22A4 -> [drug_protein^-1] Ofloxacin"
+     },
+     {
+      "log_score": -15.460436625944425,
+      "nodes": [
+       "Crohn disease",
+       "Crohn's colitis",
+       "SLC22A4",
+       "Ofloxacin"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_protein^-1",
+       "drug_protein^-1"
+      ],
+      "text": "Crohn disease -> [disease_disease] Crohn's colitis -> [disease_protein^-1] SLC22A4 -> [drug_protein^-1] Ofloxacin"
+     }
+    ],
+    "target": "Crohn Disease"
+   },
+   {
+    "disease": "myasthenia gravis",
+    "drug": "Amifampridine",
+    "path_logit": 3.8611721992492676,
+    "prior_logit": 2.5499703884124756,
+    "paths": [
+     {
+      "log_score": -3.48808107713782,
+      "nodes": [
+       "myasthenia gravis",
+       "immune-mediated acquired neuromuscular junction disease",
+       "Lambert-Eaton myasthenic syndrome",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_disease",
+       "disease_disease^-1",
+       "indication (disease->drug)"
+      ],
+      "text": "myasthenia gravis -> [disease_disease] immune-mediated acquired neuromuscular junction disease -> [disease_disease^-1] Lambert-Eaton myasthenic syndrome -> [indication (disease->drug)] Amifampridine"
+     },
+     {
+      "log_score": -33.14884816716428,
+      "nodes": [
+       "myasthenia gravis",
+       "Paresthesia",
+       "Iohexol",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "drug_effect^-1",
+       "drug_drug^-1"
+      ],
+      "text": "myasthenia gravis -> [disease_phenotype_positive] Paresthesia -> [drug_effect^-1] Iohexol -> [drug_drug^-1] Amifampridine"
+     },
+     {
+      "log_score": -33.18100609583978,
+      "nodes": [
+       "myasthenia gravis",
+       "Dyspnea",
+       "Iohexol",
+       "Amifampridine"
+      ],
+      "relations": [
+       "disease_phenotype_positive",
+       "drug_effect^-1",
+       "drug_drug^-1"
+      ],
+      "text": "myasthenia gravis -> [disease_phenotype_positive] Dyspnea -> [drug_effect^-1] Iohexol -> [drug_drug^-1] Amifampridine"
+     }
+    ],
+    "target": "Myasthenia Gravis"
+   }
+  ]
+ },
  "transfer": {
   "eval_diseases": [
    "Balo concentric sclerosis [MONDO:16430]",

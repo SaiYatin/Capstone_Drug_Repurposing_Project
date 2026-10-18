@@ -1,0 +1,21 @@
+{
+ "term": "\"Norfloxacin\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "42346839",
+   "title": "Treatment of Small Intestinal Bacterial Overgrowth (SIBO) in Gastrointestinal, Hepatic, Endocrine, Neurological, and Postoperative Diseases: A Comprehensive Narrative Review.",
+   "year": "2026"
+  },
+  {
+   "pmid": "29982822",
+   "title": "Treatment of small intestinal bacterial overgrowth in systemic sclerosis: a systematic review.",
+   "year": "2018"
+  },
+  {
+   "pmid": "19696066",
+   "title": "Small intestinal bacterial overgrowth in systemic sclerosis.",
+   "year": "2009"
+  }
+ ]
+}

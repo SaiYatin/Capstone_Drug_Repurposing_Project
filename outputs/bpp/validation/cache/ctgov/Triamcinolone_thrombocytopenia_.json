@@ -1,0 +1,142 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04747080",
+    "briefTitle": "The Combination of Tacrolimus and High-dose Dexamethasone as First-line Treatment in Adult Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TAC and HD-DXM",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone",
+       "Drug: Tacrolimus"
+      ]
+     },
+     {
+      "label": "HD-DXM",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone"
+     },
+     {
+      "name": "Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00360685",
+    "briefTitle": "Tacrolimus and Mycophenolate Mofetil (MMF) in GVHD Prophylactic Regimen Compared to Tacrolimus and Methotrexate (MTX"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TAC + MMF",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: TAC + MMF"
+      ]
+     },
+     {
+      "label": "TAC+MTX",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Tac+MTX"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tac+MTX"
+     },
+     {
+      "name": "TAC + MMF"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05471050",
+    "briefTitle": "The Combination of Tacrolimus and Danazol as the Treatment of Steroid-resistant/Relapse Immune Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-03-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "tacrolimus and Danazol",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: TAC",
+       "Drug: Danazol"
+      ]
+     },
+     {
+      "label": "Danazol",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Danazol"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "TAC"
+     },
+     {
+      "name": "Danazol"
+     }
+    ]
+   }
+  }
+ }
+]

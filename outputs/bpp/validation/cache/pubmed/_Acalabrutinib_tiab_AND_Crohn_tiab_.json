@@ -1,0 +1,11 @@
+{
+ "term": "\"Acalabrutinib\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "36403719",
+   "title": "Properties of FDA-approved small molecule protein kinase inhibitors: A 2023 update.",
+   "year": "2023"
+  }
+ ]
+}

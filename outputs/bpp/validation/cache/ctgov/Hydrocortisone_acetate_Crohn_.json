@@ -1,0 +1,188 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05284136",
+    "briefTitle": "Exclusion Diet vs corticosteroIds in patientS With activE Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Crohn's disease exclusion diet (CDED)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Crohn's disease exclusion diet (CDED)"
+      ]
+     },
+     {
+      "label": "Steroids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Oral prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Crohn's disease exclusion diet (CDED)"
+     },
+     {
+      "name": "Oral prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02056418",
+    "briefTitle": "Effects of Enteral Nutrition and Corticosteroid on Intestinal Flora in Induction Remission of Crohn Disease in Adult"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "enteral nutrition",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: enteral nutrition"
+      ]
+     },
+     {
+      "label": "Corticosteroid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: corticosteroid"
+      ]
+     },
+     {
+      "label": "Healthy control",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "enteral nutrition"
+     },
+     {
+      "name": "corticosteroid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01095042",
+    "briefTitle": "Cognition and Emotion in the SII and IBD"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Control group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: emotion"
+      ]
+     },
+     {
+      "label": "Experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Behavioral: emotion"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "emotion"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02872506",
+    "briefTitle": "Comparing the Quality of Life of Terminal Ileitis Patients With Crohn's Disease Treated With Anti-TNF or Surgical Resection"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2017-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "medical treatment by Anti TNF",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Anti TNF"
+      ]
+     },
+     {
+      "label": "ileocecal resection",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: ileocecal resection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Anti TNF"
+     },
+     {
+      "name": "ileocecal resection"
+     }
+    ]
+   }
+  }
+ }
+]

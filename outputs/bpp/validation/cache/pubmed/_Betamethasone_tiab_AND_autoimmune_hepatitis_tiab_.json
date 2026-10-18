@@ -1,0 +1,21 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "30383957",
+   "title": "Autoimmune Hepatitis in Pregnancy: Hematological Perturbation and Management Dilemma. A Case Report.",
+   "year": "2016"
+  },
+  {
+   "pmid": "35913606",
+   "title": "A case of drug-induced acute liver failure caused by corticosteroids.",
+   "year": "2022"
+  },
+  {
+   "pmid": "33087000",
+   "title": "Successful treatment of refractory acute lupus haemophagocytic syndrome using rituximab: a case report.",
+   "year": "2020"
+  }
+ ]
+}

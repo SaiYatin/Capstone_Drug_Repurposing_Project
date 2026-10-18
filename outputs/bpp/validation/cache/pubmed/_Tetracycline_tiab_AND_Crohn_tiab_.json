@@ -1,0 +1,21 @@
+{
+ "term": "\"Tetracycline\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 24,
+ "top": [
+  {
+   "pmid": "26404866",
+   "title": "Rosacea, Use of Tetracycline, and Risk of Incident Inflammatory Bowel Disease in Women.",
+   "year": "2016"
+  },
+  {
+   "pmid": "6765390",
+   "title": "Enteric diseases of homosexual men.",
+   "year": "1982"
+  },
+  {
+   "pmid": "20700115",
+   "title": "Potential association between the oral tetracycline class of antimicrobials used to treat acne and inflammatory bowel disease.",
+   "year": "2010"
+  }
+ ]
+}

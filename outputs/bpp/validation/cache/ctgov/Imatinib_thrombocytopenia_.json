@@ -1,0 +1,38 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00493181",
+    "briefTitle": "Interleukin 11, Thrombocytopenia, Imatinib in Chronic Myelogenous Leukemia (CML) Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Interleukin-11",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Interleukin-11 (IL-11 or Neumega)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Interleukin-11 (IL-11 or Neumega)"
+     }
+    ]
+   }
+  }
+ }
+]

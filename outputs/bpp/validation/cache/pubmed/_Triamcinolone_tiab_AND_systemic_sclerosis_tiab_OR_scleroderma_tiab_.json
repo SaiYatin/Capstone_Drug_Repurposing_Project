@@ -1,0 +1,21 @@
+{
+ "term": "\"Triamcinolone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 26,
+ "top": [
+  {
+   "pmid": "41718824",
+   "title": "A systematic review of therapeutic procedures for the treatment of morphea and systemic sclerosis.",
+   "year": "2026"
+  },
+  {
+   "pmid": "39527973",
+   "title": "Scleroderma Renal Crisis and Musculoskeletal Corticosteroid Injections.",
+   "year": "2025"
+  },
+  {
+   "pmid": "40653741",
+   "title": "Localized Morphea in a Pediatric Patient Successfully Treated With Topical Ruxolitinib.",
+   "year": "2025"
+  }
+ ]
+}

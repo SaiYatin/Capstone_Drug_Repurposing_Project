@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxycycline\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "32821768",
+   "title": "Doxycycline-Induced Autoimmune Hepatitis.",
+   "year": "2020"
+  },
+  {
+   "pmid": "11427798",
+   "title": "[Minocycline].",
+   "year": "2001"
+  },
+  {
+   "pmid": "31698502",
+   "title": "A Cautionary Report of Doxycycline-Induced Autoimmune Hepatitis.",
+   "year": "2020"
+  }
+ ]
+}

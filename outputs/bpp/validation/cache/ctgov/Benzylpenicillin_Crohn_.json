@@ -1,0 +1,38 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02750800",
+    "briefTitle": "Post-marketing Observational Study to Evaluate the Incremental Impact of AbbVie's Patient Support Program on Patient Reported Outcomes and Health Resource Utilization in Inflammatory Arthritis, Psoriasis and Inflammatory Bowel Diseases in Hungary (VALUE)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-04-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Adalimumab and AbbVie Care 2.0",
+      "interventionNames": [
+       "Biological: Adalimumab",
+       "Behavioral: AbbVie Care 2.0"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Adalimumab"
+     },
+     {
+      "name": "AbbVie Care 2.0"
+     }
+    ]
+   }
+  }
+ }
+]

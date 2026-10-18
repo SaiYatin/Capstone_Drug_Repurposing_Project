@@ -1,0 +1,21 @@
+{
+ "term": "\"Betamethasone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 17,
+ "top": [
+  {
+   "pmid": "35865666",
+   "title": "Betamethasone Dipropionate Derivatization, Biotransformation, Molecular Docking, and ADME Analysis as Glucocorticoid Receptor.",
+   "year": "2022"
+  },
+  {
+   "pmid": "14305348",
+   "title": "ORAL BETAMETHASONE 17-VALERATE IN CHRONIC ULCERATIVE COLITIS AND CROHN'S DISEASE.",
+   "year": "1965"
+  },
+  {
+   "pmid": "27844446",
+   "title": "Severe Infliximab-Induced Alopecia and Scalp Psoriasis in a Woman with Crohn's Disease: Dramatic Improvement after Drug Discontinuation and Treatment with Adjuvant Systemic and Topical Therapies.",
+   "year": "2016"
+  }
+ ]
+}

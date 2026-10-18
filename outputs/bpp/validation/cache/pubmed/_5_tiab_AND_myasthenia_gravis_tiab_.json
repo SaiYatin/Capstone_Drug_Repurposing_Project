@@ -1,0 +1,21 @@
+{
+ "term": "\"5-\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 3372,
+ "top": [
+  {
+   "pmid": "38191133",
+   "title": "[The Japanese Clinical Guidelines 2022 for Myasthenia Gravis and Lambert-Eaton Myasthenic Syndrome: An Overview].",
+   "year": "2024"
+  },
+  {
+   "pmid": "34175261",
+   "title": "Myasthenia gravis and systemic lupus erythematosus: presentation of 5 cases and PubMed review.",
+   "year": "2021"
+  },
+  {
+   "pmid": "39335366",
+   "title": "Epilepsy and Myasthenia Gravis: A Case Series.",
+   "year": "2024"
+  }
+ ]
+}

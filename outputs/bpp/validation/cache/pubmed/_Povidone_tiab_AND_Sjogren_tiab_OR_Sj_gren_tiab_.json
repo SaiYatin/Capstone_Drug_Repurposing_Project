@@ -1,0 +1,11 @@
+{
+ "term": "\"Povidone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "41871018",
+   "title": "A Lip Fixation Device Facilitates Labial Salivary Gland Biopsy for Sj\u00f6gren's Disease.",
+   "year": "2026"
+  }
+ ]
+}

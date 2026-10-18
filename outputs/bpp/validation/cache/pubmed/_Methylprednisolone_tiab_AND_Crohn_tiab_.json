@@ -1,0 +1,21 @@
+{
+ "term": "\"Methylprednisolone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 127,
+ "top": [
+  {
+   "pmid": "31562236",
+   "title": "British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults.",
+   "year": "2019"
+  },
+  {
+   "pmid": "40588110",
+   "title": "Appropriate Use and Complications of Corticosteroids in Inflammatory Bowel Disease: A Comprehensive Review.",
+   "year": "2025"
+  },
+  {
+   "pmid": "41579011",
+   "title": "AGA Clinical Practice Update on Inpatient Management of Adults With Inflammatory Bowel Disease: Expert Review.",
+   "year": "2026"
+  }
+ ]
+}

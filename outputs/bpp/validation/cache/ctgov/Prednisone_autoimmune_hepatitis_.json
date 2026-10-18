@@ -1,0 +1,210 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03711669",
+    "briefTitle": "Biomarkers to Predict the Success of Immunosuppression Withdrawal in Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-01-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Immunosuppression withdrawal"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00838214",
+    "briefTitle": "Budesonide 3x3mg/d Versus Prednisone in Active Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2001-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "budesonide",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: budesonide"
+      ]
+     },
+     {
+      "label": "prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "budesonide"
+     },
+     {
+      "name": "prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05473403",
+    "briefTitle": "Validation of a Prognostic Score for Steroid Therapy Response in Acute Severe Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Corticosteroid therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: Corticosteroid therapy"
+      ]
+     },
+     {
+      "label": "Patient without corticosteroid therapy",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Corticosteroid therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02463331",
+    "briefTitle": "Possible Role of Chloroquine to Induce a Complete Remission in the Treatment of Autoimmune Hepatitis: a Randomized Trial"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "chloroquine plus prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Chloroquine diphosphate",
+       "Drug: prednisone"
+      ]
+     },
+     {
+      "label": "azathioprine plus prednisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: prednisone",
+       "Drug: azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Chloroquine diphosphate"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "azathioprine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00608894",
+    "briefTitle": "LCP-Tacro vs. Azathioprine for the Treatment of Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2007-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "LCP-Tacro",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: LCP-Tacro (tacrolimus)"
+      ]
+     },
+     {
+      "label": "Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "LCP-Tacro (tacrolimus)"
+     },
+     {
+      "name": "Azathioprine"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,490 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00736983",
+    "briefTitle": "Adalimumab in Combination With Ciprofloxacin/Placebo Treatment of Perianal Fistulas in Crohn's"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: adalimumab"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: ciprofloxacin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "adalimumab"
+     },
+     {
+      "name": "ciprofloxacin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00609973",
+    "briefTitle": "Ciprofloxacin for the Prevention of Postoperative Endoscopic Recurrence in Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ciprofloxacin"
+      ]
+     },
+     {
+      "label": "B",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02033408",
+    "briefTitle": "Manipulating the Microbiome in IBD by Antibiotics and FMT"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Antibiotics in addition to steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: AB (antibiotics)"
+      ]
+     },
+     {
+      "label": "Steroids only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: CS (corticosteroids) Only"
+      ]
+     },
+     {
+      "label": "Open arm",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: AB (antibiotics)",
+       "Drug: CS (corticosteroids) Only"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "AB (antibiotics)"
+     },
+     {
+      "name": "CS (corticosteroids) Only"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02620007",
+    "briefTitle": "Evaluation of Adherent Invasive E. Coli Eradication in Adult Crohn Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Experimental arm",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ciprofloxacin",
+       "Drug: Rifaximin"
+      ]
+     },
+     {
+      "label": "Control arm",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ciprofloxacin Placebo",
+       "Drug: Rifaximin Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Rifaximin"
+     },
+     {
+      "name": "Ciprofloxacin Placebo"
+     },
+     {
+      "name": "Rifaximin Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01783106",
+    "briefTitle": "Antibiotics and Hydroxychloroquine in Crohn's"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "budesonide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Budesonide"
+      ]
+     },
+     {
+      "label": "Ciprofloxacine, doxycycline and hydroxychloroquine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ciprofloxacin",
+       "Drug: Doxycycline",
+       "Drug: Hydroxychloroquine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Doxycycline"
+     },
+     {
+      "name": "Hydroxychloroquine"
+     },
+     {
+      "name": "Budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03476317",
+    "briefTitle": "Pilot Study of Fundamental Modification of the Gut Microbiota in the Treatment of Refractory Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-07-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1-Fluconazole",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vancomycin",
+       "Drug: Neomycin",
+       "Drug: Ciprofloxacin",
+       "Drug: Polyethylene Glycol 3350",
+       "Drug: Fluconazole"
+      ]
+     },
+     {
+      "label": "Group 1-Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Vancomycin",
+       "Drug: Neomycin",
+       "Drug: Ciprofloxacin",
+       "Drug: Polyethylene Glycol 3350"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vancomycin"
+     },
+     {
+      "name": "Neomycin"
+     },
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Polyethylene Glycol 3350"
+     },
+     {
+      "name": "Fluconazole"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03322488",
+    "briefTitle": "Fistulodesis Pilot Study for Closure of Perianal Fistulae"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-06-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Crohn's Disease",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     },
+     {
+      "label": "Patients without IBD",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Fistulodesis"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fistulodesis"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00257699",
+    "briefTitle": "Study of Antibiotics in the Treatment of Colonic Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2006-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "I",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Metronidazole placebo",
+       "Drug: ciprofloxacin placebo"
+      ]
+     },
+     {
+      "label": "II",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ciprofloxacin",
+       "Drug: metronidazole"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Metronidazole placebo"
+     },
+     {
+      "name": "ciprofloxacin placebo"
+     },
+     {
+      "name": "ciprofloxacin"
+     },
+     {
+      "name": "metronidazole"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02765256",
+    "briefTitle": "Fundamental Modification of the Gut Microbiota in the Treatment of Refractory Crohn's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fluconazole",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fluconazole",
+       "Drug: Vancomycin",
+       "Drug: Neomycin",
+       "Drug: Ciprofloxacin",
+       "Drug: Polyethylene Glycol 3350",
+       "Drug: Promethazine"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Vancomycin",
+       "Drug: Neomycin",
+       "Drug: Ciprofloxacin",
+       "Drug: Polyethylene Glycol 3350",
+       "Drug: Promethazine",
+       "Drug: Fluconazole placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fluconazole"
+     },
+     {
+      "name": "Vancomycin"
+     },
+     {
+      "name": "Neomycin"
+     },
+     {
+      "name": "Ciprofloxacin"
+     },
+     {
+      "name": "Polyethylene Glycol 3350"
+     },
+     {
+      "name": "Promethazine"
+     },
+     {
+      "name": "Fluconazole placebo"
+     }
+    ]
+   }
+  }
+ }
+]

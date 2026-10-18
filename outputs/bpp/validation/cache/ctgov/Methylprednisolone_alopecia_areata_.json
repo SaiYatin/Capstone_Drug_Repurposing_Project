@@ -1,0 +1,120 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07101471",
+    "briefTitle": "Rhofanib\u00ae (Tofacitinib) Safety and Effectiveness Evaluation"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-08-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Participants received Rhofanib\u00ae (Tofacitinib)",
+      "interventionNames": [
+       "Drug: Tofacitinib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tofacitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01167946",
+    "briefTitle": "Safety and Efficacy of Oral Mega Pulse Methylprednisolone in Severe Therapy Resistant Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: methylprednisolone sodium succinate"
+      ]
+     },
+     {
+      "label": "Group B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone sodium succinate"
+      ]
+     },
+     {
+      "label": "Group C",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone sodium succinate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "methylprednisolone sodium succinate"
+     },
+     {
+      "name": "methylprednisolone sodium succinate"
+     },
+     {
+      "name": "methylprednisolone sodium succinate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01017510",
+    "briefTitle": "Comparative Study Examining the Effectiveness in Use of a DERMOJET and a Normal Syringe Treatment for Patients With Hair Loss - Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2009-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Subcutaneous injection luer syringe"
+     },
+     {
+      "name": "DERMOJET (a syringe without a needle)"
+     }
+    ]
+   }
+  }
+ }
+]

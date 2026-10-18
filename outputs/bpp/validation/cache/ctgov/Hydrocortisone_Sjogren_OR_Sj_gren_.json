@@ -1,0 +1,50 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04597762",
+    "briefTitle": "Effect of Ciclosporin Eyedrops on Sj\u00f6gren Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-08-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "right eye: Ciclosporin, left eye: Ciclosporin + Hydrocortisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin",
+       "Drug: Hydrocortisone"
+      ]
+     },
+     {
+      "label": "left eye: Ciclosporin, right eye: Ciclosporin + Hydrocortisone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin",
+       "Drug: Hydrocortisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin"
+     },
+     {
+      "name": "Hydrocortisone"
+     }
+    ]
+   }
+  }
+ }
+]

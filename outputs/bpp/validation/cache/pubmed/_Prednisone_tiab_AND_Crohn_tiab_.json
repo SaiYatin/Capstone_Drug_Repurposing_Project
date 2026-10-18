@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 471,
+ "top": [
+  {
+   "pmid": "29096949",
+   "title": "Effect of tight control management on Crohn's disease (CALM): a multicentre, randomised, controlled phase 3 trial.",
+   "year": "2017"
+  },
+  {
+   "pmid": "40588110",
+   "title": "Appropriate Use and Complications of Corticosteroids in Inflammatory Bowel Disease: A Comprehensive Review.",
+   "year": "2025"
+  },
+  {
+   "pmid": "34078656",
+   "title": "Nodular Pachymeningitis Associated With Relapsing Polychondritis and Crohn Disease Responsive to Adalimumab and Prednisone.",
+   "year": "2021"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"2-\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 3302,
+ "top": [
+  {
+   "pmid": "40398833",
+   "title": "Global Epidemiology of Primary Biliary Cholangitis: An Updated Systematic Review and Meta-Analysis.",
+   "year": "2026"
+  },
+  {
+   "pmid": "39480026",
+   "title": "Primary Biliary Cholangitis and Primary Sclerosing Cholangitis Therapy Landscape.",
+   "year": "2025"
+  },
+  {
+   "pmid": "34266966",
+   "title": "Recent advances in clinical practice: epidemiology of autoimmune liver diseases.",
+   "year": "2021"
+  }
+ ]
+}

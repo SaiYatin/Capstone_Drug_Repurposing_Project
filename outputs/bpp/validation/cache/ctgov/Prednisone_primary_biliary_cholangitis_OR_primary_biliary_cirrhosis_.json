@@ -1,0 +1,46 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06591468",
+    "briefTitle": "A Multicenter, Randomized, Controlled Trial of Prednisone Combined With Ursodeoxycholic Acid in the Treatment of Primary Biliary Cholangitis With Moderate to Severe Interface Hepatitis Characteristics"
+   },
+   "statusModule": {
+    "overallStatus": "ENROLLING_BY_INVITATION",
+    "startDateStruct": {
+     "date": "2024-10-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone",
+      "type": "EXPERIMENTAL"
+     },
+     {
+      "label": "UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     }
+    ]
+   }
+  }
+ }
+]

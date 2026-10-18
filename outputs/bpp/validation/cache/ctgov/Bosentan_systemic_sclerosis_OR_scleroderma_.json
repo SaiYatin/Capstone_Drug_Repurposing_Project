@@ -1,0 +1,580 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02798055",
+    "briefTitle": "Bosentan Treatment of Digital Ulcers Related to Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-09-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Bosentan group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00909337",
+    "briefTitle": "Early Therapy of Pulmonary Arterial Hypertension"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bosentan",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Bosentan"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00319033",
+    "briefTitle": "Open-label Study With Bosentan in Interstitial Lung Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05168215",
+    "briefTitle": "Effectiveness of Bosentan Therapy in Patients With Systemic scleRosis and Progressive Digital ulcEr Disease."
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01395732",
+    "briefTitle": "Bosentan in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-03-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bosentan"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01836263",
+    "briefTitle": "Prevention and Treatment of Digital Ulcers in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2013-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prevention arm: CCB & i.v. iloprost"
+     },
+     {
+      "label": "Prevention arm: bosentan & sildenafil"
+     },
+     {
+      "label": "Healing arm: CCB & i.v. iloprost"
+     },
+     {
+      "label": "Healing arm: bosentan & sildenafil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00377455",
+    "briefTitle": "Placebo Controlled Trial of Bosentan in Scleroderma Patients"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2006-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bosentan"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00319696",
+    "briefTitle": "Bosentan in Digital Ulcers"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-07-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bosentan 62.5 mg",
+       "Drug: Bosentan 125 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan 62.5 mg"
+     },
+     {
+      "name": "Bosentan 125 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00318175",
+    "briefTitle": "Effect of Bosentan on Skin Fibrosis in Patients With Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Bosentan (Tracleer)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00077584",
+    "briefTitle": "Efficacy and Safety of Oral Bosentan on Healing/Prevention of Digital (Finger) Ulcers in Patients With Scleroderma"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bosentan 62.5 mg",
+       "Drug: Bosentan 125 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan 62.5 mg"
+     },
+     {
+      "name": "Bosentan 125 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00080457",
+    "briefTitle": "Safety and Efficacy Study of Sitaxentan Sodium (Thelin\u2122) in Patients With Pulmonary Arterial Hypertension"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "sitaxsentan sodium"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03053739",
+    "briefTitle": "To Compare the Efficacy of Combination Therapy vs Monotherapy for Pulmonary Arterial Hypertension in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Combination arm A-Sildenafil and Bosentan",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Sildenafil 20mg and Bosentan 62.5mg"
+      ]
+     },
+     {
+      "label": "Monotherapy arm-Sildenafil and Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Sildenafil 20mg and Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sildenafil 20mg and Bosentan 62.5mg"
+     },
+     {
+      "name": "Sildenafil 20mg and Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00226889",
+    "briefTitle": "Treatment of Early Systemic Sclerosis by Bosentan"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2005-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02480335",
+    "briefTitle": "The Clinical And Subclinical Effects on Arterial Stiffness of Bosentan in Patients With Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2015-06-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Usual care and bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: bosentan"
+      ]
+     },
+     {
+      "label": "Usual care",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00595049",
+    "briefTitle": "Pulmonary Artery Remodelling With Bosentan"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-05-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: bosentan"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01241383",
+    "briefTitle": "Effect of Bosentan in Scleroderma Renal Crisis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2010-12-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bosentan",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bosentan"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bosentan"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00070590",
+    "briefTitle": "Efficacy and Safety of Oral Bosentan in Pulmonary Fibrosis Associated With Scleroderma"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Bosentan"
+     }
+    ]
+   }
+  }
+ }
+]

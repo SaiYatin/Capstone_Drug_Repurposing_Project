@@ -1,0 +1,21 @@
+{
+ "term": "\"Ofloxacin\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "21879778",
+   "title": "Fluoroquinolone-associated myasthenia gravis exacerbation: evaluation of postmarketing reports from the US FDA adverse event reporting system and a literature review.",
+   "year": "2011"
+  },
+  {
+   "pmid": "8263560",
+   "title": "Probable exacerbation of myasthenia gravis by ofloxacin.",
+   "year": "1993"
+  },
+  {
+   "pmid": "9521283",
+   "title": "Fluoroquinolone antibiotics block neuromuscular transmission.",
+   "year": "1998"
+  }
+ ]
+}

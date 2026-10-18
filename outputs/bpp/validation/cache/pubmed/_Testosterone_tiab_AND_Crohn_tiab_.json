@@ -1,0 +1,21 @@
+{
+ "term": "\"Testosterone\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 31,
+ "top": [
+  {
+   "pmid": "8293487",
+   "title": "Secondary osteoporosis.",
+   "year": "1993"
+  },
+  {
+   "pmid": "38462694",
+   "title": "Development and validation of a novel biomarker panel for Crohn's disease and rheumatoid arthritis diagnosis and treatment.",
+   "year": "2024"
+  },
+  {
+   "pmid": "39110886",
+   "title": "Distribution of Serum Testosterone Concentrations in IBD Males and Associations With Inflammatory Bowel Disease Activity.",
+   "year": "2025"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 20,
+ "top": [
+  {
+   "pmid": "36632578",
+   "title": "Synchronous Presentation of Autoimmune Hepatitis and Multiple Myeloma.",
+   "year": "2022"
+  },
+  {
+   "pmid": "34517094",
+   "title": "Probiotics alleviate autoimmune hepatitis in mice through modulation of gut microbiota and intestinal permeability.",
+   "year": "2021"
+  },
+  {
+   "pmid": "30883091",
+   "title": "Dexamethasone Conjugation to Biodegradable Avidin-Nucleic-Acid-Nano-Assemblies Promotes Selective Liver Targeting and Improves Therapeutic Efficacy in an Autoimmune Hepatitis Murine Model.",
+   "year": "2019"
+  }
+ ]
+}

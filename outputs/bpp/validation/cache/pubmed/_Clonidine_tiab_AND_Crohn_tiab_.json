@@ -1,0 +1,21 @@
+{
+ "term": "\"Clonidine\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 5,
+ "top": [
+  {
+   "pmid": "40650291",
+   "title": "Psychopharmacological Therapy Positively Modulates Disease Activity in Inflammatory Bowel Disease: A Systematic Review.",
+   "year": "2025"
+  },
+  {
+   "pmid": "2152845",
+   "title": "Advances in drug therapy for inflammatory bowel disease.",
+   "year": "1990"
+  },
+  {
+   "pmid": "2894889",
+   "title": "Medical treatment of inflammatory bowel disease: new therapies, new drugs.",
+   "year": "1987"
+  }
+ ]
+}

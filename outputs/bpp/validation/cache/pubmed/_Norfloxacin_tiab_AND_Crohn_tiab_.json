@@ -1,0 +1,16 @@
+{
+ "term": "\"Norfloxacin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "37997685",
+   "title": "Norfloxacin derivatives as DNA gyrase and urease inhibitors: synthesis, biological evaluation and molecular docking.",
+   "year": "2023"
+  },
+  {
+   "pmid": "42346839",
+   "title": "Treatment of Small Intestinal Bacterial Overgrowth (SIBO) in Gastrointestinal, Hepatic, Endocrine, Neurological, and Postoperative Diseases: A Comprehensive Narrative Review.",
+   "year": "2026"
+  }
+ ]
+}

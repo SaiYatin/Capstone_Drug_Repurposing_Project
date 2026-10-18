@@ -1,0 +1,429 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00726544",
+    "briefTitle": "Clinical Outcome Study of ARC1779 Injection in Patients With Thrombotic Microangiopathy"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2008-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: ARC 1779 Placebo"
+      ]
+     },
+     {
+      "label": "Low Dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ARC1779 Injection"
+      ]
+     },
+     {
+      "label": "Medium Dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ARC1779 Injection"
+      ]
+     },
+     {
+      "label": "High Dose",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ARC1779 Injection"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ARC 1779 Placebo"
+     },
+     {
+      "name": "ARC1779 Injection"
+     },
+     {
+      "name": "ARC1779 Injection"
+     },
+     {
+      "name": "ARC1779 Injection"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01257269",
+    "briefTitle": "Genotype and Phenotype Correlation in Hereditary Thrombotic Thrombocytopenic Purpura (Upshaw-Schulman Syndrome)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2006-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "interventionNames": [
+       "Other: Observation"
+      ]
+     },
+     {
+      "label": "2",
+      "interventionNames": [
+       "Other: Observation"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Observation"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01151423",
+    "briefTitle": "Study to Assess Efficacy and Safety of Anti-von Willebrand Factor (vWF) Nanobody in Patients With Acquired Thrombotic Thrombocytopenic Purpura (aTTP)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Caplacizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Caplacizumab"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Caplacizumab"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07615244",
+    "briefTitle": "MICROVASCULAR DAMAGE IN THROMBOTIC THROMBOCYTOPENIC PURPURA"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-02-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Acute TTP",
+      "type": "OTHER",
+      "interventionNames": [
+       "Diagnostic Test: Factor VIII (FVIII)",
+       "Diagnostic Test: Von Willebrand factor (VWF) antigen",
+       "Diagnostic Test: VWF:RCo",
+       "Diagnostic Test: VWF-propeptide",
+       "Diagnostic Test: VWF multimers",
+       "Diagnostic Test: sP-selectin",
+       "Diagnostic Test: sCD40L",
+       "Diagnostic Test: F1+2",
+       "Diagnostic Test: VEGF-A",
+       "Diagnostic Test: VCAM",
+       "Diagnostic Test: ICAM",
+       "Diagnostic Test: IL-1\u03b2",
+       "Diagnostic Test: IL-6",
+       "Diagnostic Test: PTX3",
+       "Diagnostic Test: BlyS",
+       "Diagnostic Test: Neutrophil elastase and myeloperoxidase (NETs) markers",
+       "Diagnostic Test: soluble C5b-9",
+       "Diagnostic Test: C5a",
+       "Diagnostic Test: NFL",
+       "Diagnostic Test: GFAP",
+       "Genetic: Whole exome sequencing - WES",
+       "Diagnostic Test: Proteomic Analysis"
+      ]
+     },
+     {
+      "label": "Remission TTP",
+      "type": "OTHER",
+      "interventionNames": [
+       "Diagnostic Test: Factor VIII (FVIII)",
+       "Diagnostic Test: Von Willebrand factor (VWF) antigen",
+       "Diagnostic Test: VWF:RCo",
+       "Diagnostic Test: VWF-propeptide",
+       "Diagnostic Test: VWF multimers",
+       "Diagnostic Test: sP-selectin",
+       "Diagnostic Test: sCD40L",
+       "Diagnostic Test: F1+2",
+       "Diagnostic Test: VEGF-A",
+       "Diagnostic Test: VCAM",
+       "Diagnostic Test: ICAM",
+       "Diagnostic Test: IL-1\u03b2",
+       "Diagnostic Test: IL-6",
+       "Diagnostic Test: PTX3",
+       "Diagnostic Test: Neutrophil elastase and myeloperoxidase (NETs) markers",
+       "Diagnostic Test: soluble C5b-9",
+       "Diagnostic Test: C5a",
+       "Diagnostic Test: NFL",
+       "Diagnostic Test: GFAP",
+       "Diagnostic Test: evaluation of thrombus formation with Total Thrombus formation Analysis System (T-TAS)",
+       "Diagnostic Test: Microfluidic Flow Chamber",
+       "Genetic: Whole exome sequencing - WES",
+       "Diagnostic Test: Proteomic Analysis"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Factor VIII (FVIII)"
+     },
+     {
+      "name": "Von Willebrand factor (VWF) antigen"
+     },
+     {
+      "name": "VWF:RCo"
+     },
+     {
+      "name": "VWF-propeptide"
+     },
+     {
+      "name": "VWF multimers"
+     },
+     {
+      "name": "sP-selectin"
+     },
+     {
+      "name": "sCD40L"
+     },
+     {
+      "name": "F1+2"
+     },
+     {
+      "name": "VEGF-A"
+     },
+     {
+      "name": "VCAM"
+     },
+     {
+      "name": "ICAM"
+     },
+     {
+      "name": "IL-1\u03b2"
+     },
+     {
+      "name": "IL-6"
+     },
+     {
+      "name": "PTX3"
+     },
+     {
+      "name": "BlyS"
+     },
+     {
+      "name": "Neutrophil elastase and myeloperoxidase (NETs) markers"
+     },
+     {
+      "name": "soluble C5b-9"
+     },
+     {
+      "name": "C5a"
+     },
+     {
+      "name": "NFL"
+     },
+     {
+      "name": "GFAP"
+     },
+     {
+      "name": "evaluation of thrombus formation with Total Thrombus formation Analysis System (T-TAS)"
+     },
+     {
+      "name": "Microfluidic Flow Chamber"
+     },
+     {
+      "name": "Whole exome sequencing - WES"
+     },
+     {
+      "name": "Proteomic Analysis"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00632242",
+    "briefTitle": "ARC1779 Injection in Patients With Von Willebrand Factor-Related Platelet Function Disorders"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "TTP Remission Cohort 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "TTP Remission Cohort 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "TTP Remission Cohort 3",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "Acute TTP Cohort 4",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     },
+     {
+      "label": "vWD-Type2b Cohort 5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ARC1779"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     },
+     {
+      "name": "ARC1779"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07273721",
+    "briefTitle": "Efficacy and Safety of BT200 (Rondaptivon Pegol) in Patients With Type 2B Von Willebrand Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-08-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "BT200",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: BT200"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BT200"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

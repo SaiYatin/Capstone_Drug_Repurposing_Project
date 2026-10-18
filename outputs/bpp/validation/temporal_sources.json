@@ -1,0 +1,65 @@
+{
+ "_note": "FDA approval dates for the target indication, checked 2026-10-19 via web search of manufacturer / FDA announcements. PrimeKG's drug-indication data predate 2022, so approvals from 2022 on are treated as post-snapshot ('future') tests; earlier approvals missing from PrimeKG are label gaps. Drugs not present in PrimeKG (seladelpar, efgartigimod, zilucoplan, nipocalimab, mirikizumab) were not verified because they cannot be ranked.",
+ "risankizumab": {
+  "target": "Crohn Disease",
+  "fda_approval": "2022-06-17",
+  "post_snapshot": true,
+  "source": "https://news.abbvie.com/2022-06-17-SKYRIZI-R-risankizumab-rzaa-Receives-FDA-Approval-as-the-First-and-Only-Specific-Interleukin-23-IL-23-to-Treat-Moderately-to-Severely-Active-Crohns-Disease-in-Adults"
+ },
+ "upadacitinib": {
+  "target": "Crohn Disease",
+  "fda_approval": "2023-05-18",
+  "post_snapshot": true,
+  "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-treatment-moderately-severely-active-crohns-disease"
+ },
+ "guselkumab": {
+  "target": "Crohn Disease",
+  "fda_approval": "2025-03-20",
+  "post_snapshot": true,
+  "source": "https://www.hcplive.com/view/fda-approves-guselkumab-tremfya-for-crohn-disease"
+ },
+ "ravulizumab": {
+  "target": "Myasthenia Gravis",
+  "fda_approval": "2022-04",
+  "post_snapshot": true,
+  "source": "https://practicalneurology.com/news/fda-approves-ravulizumab-for-generalized-myasthenia-gravis"
+ },
+ "rozanolixizumab": {
+  "target": "Myasthenia Gravis",
+  "fda_approval": "2023-06",
+  "post_snapshot": true,
+  "source": "https://www.managedhealthcareexecutive.com/view/fda-approves-rystiggo-for-generalized-myasthenia-gravis"
+ },
+ "elafibranor": {
+  "target": "Primary Biliary Cholangitis",
+  "fda_approval": "2024-06-10",
+  "post_snapshot": true,
+  "source": "https://www.biospace.com/ipsen-s-iqirvo-receives-u-s-fda-accelerated-approval-as-a-first-in-class-ppar-treatment-for-primary-biliary-cholangitis"
+ },
+ "obeticholic acid": {
+  "target": "Primary Biliary Cholangitis",
+  "fda_approval": "2016-05",
+  "post_snapshot": false,
+  "source": "https://www.healio.com/news/gastroenterology/20160816/fda-approves-ocaliva-for-primary-biliary-cholangitis"
+ },
+ "nintedanib": {
+  "target": "Systemic Sclerosis",
+  "fda_approval": "2019-09-06",
+  "post_snapshot": false,
+  "source": "https://boehringer-ingelheim.com/press-release/fda-approves-nintedanib-ssc-ild"
+ },
+ "tocilizumab": {
+  "target": "Systemic Sclerosis",
+  "fda_approval": "2021-03-04",
+  "post_snapshot": false,
+  "source": "https://www.gene.com/media/press-releases/14897/2021-03-04/genentechs-actemra-becomes-the-first-bio"
+ },
+ "_label_gap_examples": {
+  "ustekinumab": {
+   "target": "Crohn Disease",
+   "fda_approval": "2016-09-26",
+   "source": "https://www.jnj.com/media-center/press-releases/fda-approves-stelara-ustekinumab-for-treatment-of-adults-with-moderately-to-severely-active-crohns-disease",
+   "note": "appears as an unlabelled model candidate (grade A); not part of the temporal test"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"Phenylephrine\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 7,
+ "top": [
+  {
+   "pmid": "12358224",
+   "title": "Ocular manifestations of autoimmune disease.",
+   "year": "2002"
+  },
+  {
+   "pmid": "11878203",
+   "title": "General pharmacological profile of the novel muscarinic receptor agonist SNI-2011, a drug for xerostomia in Sj\u00f6gren's syndrome. 2nd communication: effects on somatic nervous system and on autonomic nervous system and smooth muscle.",
+   "year": "2002"
+  },
+  {
+   "pmid": "10738936",
+   "title": "Innervation pattern and Ca2+ signalling in labial salivary glands of healthy individuals and patients with primary Sj\u00f6gren's syndrome (pSS).",
+   "year": "2000"
+  }
+ ]
+}

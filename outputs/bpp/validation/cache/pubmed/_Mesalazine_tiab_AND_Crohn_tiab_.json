@@ -1,0 +1,21 @@
+{
+ "term": "\"Mesalazine\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 511,
+ "top": [
+  {
+   "pmid": "31562236",
+   "title": "British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults.",
+   "year": "2019"
+  },
+  {
+   "pmid": "40298599",
+   "title": "Case 340.",
+   "year": "2025"
+  },
+  {
+   "pmid": "9803254",
+   "title": "Inflammatory bowel disease.",
+   "year": "1998"
+  }
+ ]
+}

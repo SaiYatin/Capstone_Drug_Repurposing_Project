@@ -1,0 +1,21 @@
+{
+ "term": "\"N-\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 666,
+ "top": [
+  {
+   "pmid": "27956449",
+   "title": "Drug-induced liver injury.",
+   "year": "2016"
+  },
+  {
+   "pmid": "37309335",
+   "title": "SARS-CoV-2-Induced Autoimmune Hepatitis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "35371352",
+   "title": "N-acetylcysteine in non-acetaminophen-induced acute liver failure: a systematic review and meta-analysis of prospective studies.",
+   "year": "2022"
+  }
+ ]
+}

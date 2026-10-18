@@ -1,0 +1,11 @@
+{
+ "term": "\"Carmustine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "37726935",
+   "title": "Remission of severe myasthenia gravis after autologous stem cell transplantation.",
+   "year": "2023"
+  }
+ ]
+}

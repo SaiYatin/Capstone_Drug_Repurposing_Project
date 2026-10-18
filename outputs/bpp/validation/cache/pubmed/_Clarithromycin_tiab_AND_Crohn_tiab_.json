@@ -1,0 +1,21 @@
+{
+ "term": "\"Clarithromycin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 41,
+ "top": [
+  {
+   "pmid": "11930899",
+   "title": "Open clinical trial of rifabutin and clarithromycin therapy in Crohn's disease.",
+   "year": "2002"
+  },
+  {
+   "pmid": "17570206",
+   "title": "Two-year combination antibiotic therapy with clarithromycin, rifabutin, and clofazimine for Crohn's disease.",
+   "year": "2007"
+  },
+  {
+   "pmid": "11736715",
+   "title": "Randomized controlled trial of clarithromycin and ethambutol in the treatment of Crohn's disease.",
+   "year": "2001"
+  }
+ ]
+}

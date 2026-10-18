@@ -1,0 +1,11 @@
+{
+ "term": "\"Benzylpenicillin\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "22728502",
+   "title": "Infectious endocarditis caused by Lactobacillus acidophilus in a patient with mistreated dental caries.",
+   "year": "2012"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05980806",
+    "briefTitle": "A Study of Selinexor Monotherapy in Subjects With JAK Inhibitor-na\u00efve Myelofibrosis and Moderate Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-04-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Selinexor 60 mg (Arm 1)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Selinexor 60 mg",
+       "Drug: Ruxolitinib",
+       "Drug: Pacritinib",
+       "Drug: Momelotinib"
+      ]
+     },
+     {
+      "label": "Selinexor 40 mg (Arm 2)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Selinexor 40 mg",
+       "Drug: Ruxolitinib",
+       "Drug: Pacritinib",
+       "Drug: Momelotinib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Selinexor 60 mg"
+     },
+     {
+      "name": "Selinexor 40 mg"
+     },
+     {
+      "name": "Ruxolitinib"
+     },
+     {
+      "name": "Pacritinib"
+     },
+     {
+      "name": "Momelotinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04543279",
+    "briefTitle": "Fostamatinib as a Single Agent or in Combination With Ruxolitinib for Treatment of Patients With Myelofibrosis With Severe Thrombocytopenia"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2021-05-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A: Fostamatinib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fostamatinib"
+      ]
+     },
+     {
+      "label": "Part B: Fostamatinib + Ruxolitinib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fostamatinib",
+       "Drug: Ruxolitinib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fostamatinib"
+     },
+     {
+      "name": "Ruxolitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05037760",
+    "briefTitle": "A Study of Elritercept Alone or Together With Ruxolitinib in Adults With Myelofibrosis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2021-12-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Arm 1A: Elritercept",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept"
+      ]
+     },
+     {
+      "label": "Arm 1B: Elritercept + Ruxolitinib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept",
+       "Drug: Ruxolitinib"
+      ]
+     },
+     {
+      "label": "Arm 2A: Elritercept",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept"
+      ]
+     },
+     {
+      "label": "Arm 2B: Elritercept + Ruxolitinib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept",
+       "Drug: Ruxolitinib"
+      ]
+     },
+     {
+      "label": "Experimental: Arm 2C: Elritercept (Brazil Only)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept"
+      ]
+     },
+     {
+      "label": "Long-Term Extension",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elritercept",
+       "Drug: Ruxolitinib"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elritercept"
+     },
+     {
+      "name": "Ruxolitinib"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03165734",
+    "briefTitle": "A Phase 3 Study of Pacritinib in Patients With Primary Myelofibrosis, Post Polycythemia Vera Myelofibrosis, or Post-Essential Thrombocythemia Myelofibrosis"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2017-06-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Pacritinib 200 mg BID",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pacritinib"
+      ]
+     },
+     {
+      "label": "Physician's Choice (P/C) therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Physician's Choice medications"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pacritinib"
+     },
+     {
+      "name": "Physician's Choice medications"
+     }
+    ]
+   }
+  }
+ }
+]

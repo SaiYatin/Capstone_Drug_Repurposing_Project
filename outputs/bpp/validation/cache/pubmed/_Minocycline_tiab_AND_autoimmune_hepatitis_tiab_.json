@@ -1,0 +1,21 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 64,
+ "top": [
+  {
+   "pmid": "37164270",
+   "title": "Nomenclature, diagnosis and management of drug-induced autoimmune-like hepatitis (DI-ALH): An expert opinion meeting report.",
+   "year": "2023"
+  },
+  {
+   "pmid": "35979160",
+   "title": "Drug-induced autoimmune hepatitis: A minireview.",
+   "year": "2022"
+  },
+  {
+   "pmid": "21327704",
+   "title": "Drug-induced autoimmune-like hepatitis.",
+   "year": "2011"
+  }
+ ]
+}

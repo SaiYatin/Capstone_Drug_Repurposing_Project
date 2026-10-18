@@ -1,0 +1,121 @@
+target,drug,drugbank,labelled,atc,atc2,classes,class,name_corticosteroid,name_antibacterial
+Primary Biliary Cholangitis,Ursodeoxycholic acid,DB01586,True,"A,A05,A05A,A05AA,A05AA02",A05,,bile therapy,False,False
+Primary Biliary Cholangitis,Cholic Acid,DB02659,False,"A,A05,A05A,A05AA,A05AA03",A05,,bile therapy,False,False
+Primary Biliary Cholangitis,Doripenem,DB06211,False,,,,,False,True
+Primary Biliary Cholangitis,Homatropine,DB11181,False,,,,,False,False
+Primary Biliary Cholangitis,Ampicillin,DB00415,False,,,,,False,True
+Primary Biliary Cholangitis,Dehydrocholic acid,DB11622,False,,,,,False,False
+Primary Biliary Cholangitis,Metacycline,DB00931,False,,,,,False,True
+Primary Biliary Cholangitis,Prednisolone,DB00860,False,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Primary Biliary Cholangitis,Chenodeoxycholic acid,DB06777,False,,,,,False,False
+Primary Biliary Cholangitis,Triamcinolone,DB00620,False,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Primary Biliary Cholangitis,Dimethyl sulfoxide,DB01093,False,"M,M02,M02A,M02AX,M02AX03",M02,,M02,False,False
+Primary Biliary Cholangitis,Pentosan polysulfate,DB00686,False,,,,,False,False
+Primary Biliary Cholangitis,Betamethasone,DB00443,False,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Primary Biliary Cholangitis,Hydrocortisone,DB00741,False,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Primary Biliary Cholangitis,Cefazolin,DB01327,False,,,,,False,True
+Primary Biliary Cholangitis,Methylprednisolone,DB00959,False,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Primary Biliary Cholangitis,Prednisone,DB00635,False,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Primary Biliary Cholangitis,Ciprofloxacin,DB00537,False,"J,J01,J01R,J01RA,J01RA11",J01,antibacterial,antibacterials (systemic),False,True
+Primary Biliary Cholangitis,Ofloxacin,DB01165,False,"J,J01,J01M,J01MA,J01MA01",J01,antibacterial,antibacterials (systemic),False,True
+Primary Biliary Cholangitis,Fusidic acid,DB02703,False,,,,,False,True
+Systemic Sclerosis,Benzoic acid,DB03793,True,,,,,False,False
+Systemic Sclerosis,Aminobenzoic acid,DB02362,True,"D,D02,D02B,D02BA,D02BA01",D02,,D02,False,False
+Systemic Sclerosis,Prednisolone,DB00860,False,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Systemic Sclerosis,Triamcinolone,DB00620,False,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Systemic Sclerosis,Betamethasone,DB00443,False,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Systemic Sclerosis,Methylprednisolone,DB00959,False,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Systemic Sclerosis,Bosentan,DB00559,True,,,,,False,False
+Systemic Sclerosis,Prednisone,DB00635,False,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Systemic Sclerosis,Ampicillin,DB00415,False,,,,,False,True
+Systemic Sclerosis,Cortisone acetate,DB01380,False,,,,,True,False
+Systemic Sclerosis,Ofloxacin,DB01165,False,"J,J01,J01M,J01MA,J01MA01",J01,antibacterial,antibacterials (systemic),False,True
+Systemic Sclerosis,Hydrocortisone,DB00741,False,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Systemic Sclerosis,Dexamethasone,DB01234,False,"R,R01,R01A,R01AD,R01AD53",R01,corticosteroid,R01,True,False
+Systemic Sclerosis,Norfloxacin,DB01059,False,,,,,False,True
+Systemic Sclerosis,Limaprost,DB09211,False,,,,,False,False
+Systemic Sclerosis,Hydrocortisone acetate,DB14539,False,,,,,True,False
+Systemic Sclerosis,Chloramphenicol,DB00446,False,,,,,False,True
+Systemic Sclerosis,Ciprofloxacin,DB00537,False,"J,J01,J01R,J01RA,J01RA11",J01,antibacterial,antibacterials (systemic),False,True
+Systemic Sclerosis,Acetylcysteine,DB06151,False,"R,R05,R05C,R05CB,R05CB01",R05,,R05,False,False
+Systemic Sclerosis,Tafamidis,DB11644,False,,,,,False,False
+Sjogren Syndrome,Propylene glycol,DB01839,True,,,,,False,False
+Sjogren Syndrome,Lifitegrast,DB11611,False,,,,,False,False
+Sjogren Syndrome,Povidone,DB11061,True,,,,,False,False
+Sjogren Syndrome,Povidone K30,DB14478,True,,,,,False,False
+Sjogren Syndrome,Prednisolone,DB00860,True,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Sjogren Syndrome,Lutein,DB00137,False,,,,,False,False
+Sjogren Syndrome,Polyethylene glycol 400,DB11077,True,,,,,False,False
+Sjogren Syndrome,Polyvinyl alcohol,DB11060,True,,,,,False,False
+Sjogren Syndrome,Polyethylene glycol,DB09287,True,"A,A06,A06A,A06AD,A06AD15",A06,,A06,False,False
+Sjogren Syndrome,Polysorbate 80,DB11063,True,,,,,False,False
+Sjogren Syndrome,Terbutaline,DB00871,True,,,,,False,False
+Sjogren Syndrome,Cyclosporine,DB00091,True,"L,L04,L04A,L04AD,L04AD01",L04,immunosuppressant,immunosuppressants,False,False
+Sjogren Syndrome,Polyethylene glycol 300,DB11161,True,,,,,False,False
+Sjogren Syndrome,Polyethylene glycol 3500,DB11236,True,,,,,False,False
+Sjogren Syndrome,Hydrocortisone acetate,DB14539,False,,,,,True,False
+Sjogren Syndrome,Triamcinolone,DB00620,False,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Sjogren Syndrome,Prednisone,DB00635,False,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Sjogren Syndrome,Hydrocortisone,DB00741,False,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Sjogren Syndrome,Betamethasone,DB00443,False,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Sjogren Syndrome,Methylprednisolone,DB00959,False,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Autoimmune Hepatitis,Prednisolone,DB00860,False,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Autoimmune Hepatitis,Triamcinolone,DB00620,False,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Autoimmune Hepatitis,Hydrocortisone acetate,DB14539,False,,,,,True,False
+Autoimmune Hepatitis,Sulfacetamide,DB00634,False,,,,,False,True
+Autoimmune Hepatitis,Hydrocortisone,DB00741,False,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Autoimmune Hepatitis,Betamethasone,DB00443,False,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Autoimmune Hepatitis,Methylprednisolone,DB00959,False,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Autoimmune Hepatitis,Cortisone acetate,DB01380,False,,,,,True,False
+Autoimmune Hepatitis,Prednisone,DB00635,False,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Autoimmune Hepatitis,Acetarsol,DB13268,False,,,,,False,False
+Autoimmune Hepatitis,Cefazolin,DB01327,False,,,,,False,True
+Autoimmune Hepatitis,Ampicillin,DB00415,False,,,,,False,True
+Autoimmune Hepatitis,Quinfamide,DB12780,False,,,,,False,False
+Autoimmune Hepatitis,Diiodohydroxyquinoline,DB09115,False,,,,,False,False
+Autoimmune Hepatitis,Fusidic acid,DB02703,False,,,,,False,True
+Autoimmune Hepatitis,Diloxanide furoate,DB14638,False,,,,,False,False
+Autoimmune Hepatitis,Amikacin,DB00479,False,,,,,False,False
+Autoimmune Hepatitis,Kanamycin,DB01172,False,,,,,False,True
+Autoimmune Hepatitis,Dexamethasone,DB01234,False,"R,R01,R01A,R01AD,R01AD53",R01,corticosteroid,R01,True,False
+Autoimmune Hepatitis,Sulbactam,DB09324,False,,,,,False,True
+Myasthenia Gravis,Ambenonium,DB01122,True,,,,,False,False
+Myasthenia Gravis,Neostigmine,DB01400,True,"N,N07,N07A,N07AA,N07AA01",N07,,other nervous system (incl. cholinesterase inhibitors),False,False
+Myasthenia Gravis,Pyridostigmine,DB00545,True,"N,N07,N07A,N07AA,N07AA02",N07,,other nervous system (incl. cholinesterase inhibitors),False,False
+Myasthenia Gravis,Distigmine,DB13694,True,,,,,False,False
+Myasthenia Gravis,Prednisolone,DB00860,True,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Myasthenia Gravis,Triamcinolone,DB00620,False,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Myasthenia Gravis,Amifampridine,DB11640,False,,,,,False,False
+Myasthenia Gravis,Guanidine,DB00536,False,,,,,False,False
+Myasthenia Gravis,Betamethasone,DB00443,False,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Myasthenia Gravis,Hydrocortisone,DB00741,False,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Myasthenia Gravis,Hydrocortisone acetate,DB14539,False,,,,,True,False
+Myasthenia Gravis,Methylprednisolone,DB00959,False,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Myasthenia Gravis,Dexamethasone,DB01234,True,"R,R01,R01A,R01AD,R01AD53",R01,corticosteroid,R01,True,False
+Myasthenia Gravis,Cortisone acetate,DB01380,False,,,,,True,False
+Myasthenia Gravis,Prednisone,DB00635,True,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Myasthenia Gravis,Salicylic acid,DB00936,False,"D,D01,D01A,D01AE,D01AE12",D01,,D01,False,False
+Myasthenia Gravis,Testosterone,DB00624,False,"G,G03,G03B,G03BA,G03BA03",G03,,G03,False,False
+Myasthenia Gravis,Magnesium salicylate,DB01397,False,,,,,False,False
+Myasthenia Gravis,Fluoxymesterone,DB01185,False,,,,,False,False
+Myasthenia Gravis,Benzylpenicillin,DB01053,False,,,,,False,True
+Crohn Disease,Hydrocortisone,DB00741,True,"S,S01,S01C,S01CB,S01CB03",S01,,ophthalmologicals,True,False
+Crohn Disease,Cortisone acetate,DB01380,True,,,,,True,False
+Crohn Disease,Triamcinolone,DB00620,True,"D,D07,D07A,D07AB,D07AB09",D07,corticosteroid,corticosteroids (dermatological),True,False
+Crohn Disease,Prednisolone,DB00860,True,"S,S01,S01C,S01CA,S01CA02",S01,corticosteroid,ophthalmologicals,True,False
+Crohn Disease,Ofloxacin,DB01165,False,"J,J01,J01M,J01MA,J01MA01",J01,antibacterial,antibacterials (systemic),False,True
+Crohn Disease,Ciprofloxacin,DB00537,False,"J,J01,J01R,J01RA,J01RA11",J01,antibacterial,antibacterials (systemic),False,True
+Crohn Disease,Norfloxacin,DB01059,False,,,,,False,True
+Crohn Disease,Cefuroxime,DB01112,False,,,,,False,True
+Crohn Disease,Betamethasone,DB00443,True,"R,R01,R01A,R01AD,R01AD06",R01,corticosteroid,R01,True,False
+Crohn Disease,Prednisone,DB00635,True,"A,A07,A07E,A07EA,A07EA03",A07,corticosteroid,intestinal anti-inflammatory/anti-infective,True,False
+Crohn Disease,Mesalazine,DB00244,True,"A,A07,A07E,A07EC,A07EC02",A07,,intestinal anti-inflammatory/anti-infective,False,False
+Crohn Disease,Hydrocortisone acetate,DB14539,True,,,,,True,False
+Crohn Disease,Methylprednisolone,DB00959,True,"D,D10,D10A,D10AA,D10AA02",D10,corticosteroid,D10,True,False
+Crohn Disease,Dexamethasone,DB01234,True,"R,R01,R01A,R01AD,R01AD53",R01,corticosteroid,R01,True,False
+Crohn Disease,Loracarbef,DB00447,False,,,,,False,False
+Crohn Disease,Clarithromycin,DB01211,False,"A,A02,A02B,A02BD,A02BD11",A02,,A02,False,True
+Crohn Disease,Levofloxacin,DB01137,False,,,,,False,True
+Crohn Disease,Adalimumab,DB00051,True,"L,L04,L04A,L04AB,L04AB04",L04,immunosuppressant,immunosuppressants,False,False
+Crohn Disease,Ketoconazole,DB01026,False,,,,,False,False
+Crohn Disease,Ustekinumab,DB05679,False,,,,,False,False

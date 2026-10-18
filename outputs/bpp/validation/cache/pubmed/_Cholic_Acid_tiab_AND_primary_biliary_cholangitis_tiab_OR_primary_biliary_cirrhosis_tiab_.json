@@ -1,0 +1,21 @@
+{
+ "term": "\"Cholic Acid\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 44,
+ "top": [
+  {
+   "pmid": "31643938",
+   "title": "Bile Acids.",
+   "year": "2012"
+  },
+  {
+   "pmid": "35068796",
+   "title": "A Current Understanding of Bile Acids in Chronic Liver Disease.",
+   "year": "2022"
+  },
+  {
+   "pmid": "32555455",
+   "title": "A metabolic pathway for bile acid dehydroxylation by the gut microbiome.",
+   "year": "2020"
+  }
+ ]
+}

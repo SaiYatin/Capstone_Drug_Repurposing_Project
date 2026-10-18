@@ -1,0 +1,123 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07164079",
+    "briefTitle": "Rubus Sanctus (Wild Blackberry) Root Extract as a Dietary Supplement for Graves' Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-12-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Blackberry root group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: blackberry root"
+      ]
+     },
+     {
+      "label": "Black Tea group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Dietary Supplement: black tea"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "blackberry root"
+     },
+     {
+      "name": "black tea"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05461820",
+    "briefTitle": "Effects of Different Treatment Schemes on the Regulation and Recurrence of Graves' Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2018-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Conventional treatment group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methimazole"
+      ]
+     },
+     {
+      "label": "Intensive treatment group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methimazole"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methimazole"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05043233",
+    "briefTitle": "Observation in the Treatment of Graves' Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with Graves' disease",
+      "interventionNames": [
+       "Drug: Methimazole(MMI)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methimazole(MMI)"
+     }
+    ]
+   }
+  }
+ }
+]

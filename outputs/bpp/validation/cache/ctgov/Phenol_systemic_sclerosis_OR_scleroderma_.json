@@ -1,0 +1,84 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04484948",
+    "briefTitle": "Utility of Breath-holding Test in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-08-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Systemic sclerosis group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: scleroderma health assessment questionnaire (SHAQ), BHT, and 6MWT"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "scleroderma health assessment questionnaire (SHAQ), BHT, and 6MWT"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03558854",
+    "briefTitle": "Evaluation of Effectiveness of Acetylsalicylic Acid on Markers of Vascular Dysfunction in Scleroderma Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-08-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "ASA group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Acetylsalicylic acid"
+      ]
+     },
+     {
+      "label": "Placebo oral capsule group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Acetylsalicylic acid"
+     },
+     {
+      "name": "Placebo oral capsule"
+     }
+    ]
+   }
+  }
+ }
+]

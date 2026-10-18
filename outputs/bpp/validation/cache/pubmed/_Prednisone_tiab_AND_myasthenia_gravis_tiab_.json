@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 544,
+ "top": [
+  {
+   "pmid": "36537972",
+   "title": "Diagnosis and Management of Myasthenia Gravis.",
+   "year": "2022"
+  },
+  {
+   "pmid": "29655452",
+   "title": "Treatment of Myasthenia Gravis.",
+   "year": "2018"
+  },
+  {
+   "pmid": "35329925",
+   "title": "Current Treatment of Myasthenia Gravis.",
+   "year": "2022"
+  }
+ ]
+}

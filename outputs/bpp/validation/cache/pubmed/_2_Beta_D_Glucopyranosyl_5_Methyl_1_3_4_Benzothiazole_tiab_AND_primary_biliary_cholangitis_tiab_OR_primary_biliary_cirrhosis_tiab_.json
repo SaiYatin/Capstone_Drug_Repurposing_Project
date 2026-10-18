@@ -1,0 +1,5 @@
+{
+ "term": "\"2-(Beta-D-Glucopyranosyl)-5-Methyl-1,3,4-Benzothiazole\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 0,
+ "top": []
+}

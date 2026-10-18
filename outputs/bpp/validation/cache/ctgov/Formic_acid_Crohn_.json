@@ -1,0 +1,58 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05456932",
+    "briefTitle": "Predicting Response to Iron Supplementation in Patients With Active Inflammatory Bowel Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-08-19"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intravenous iron",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Intravenous iron"
+      ]
+     },
+     {
+      "label": "Ferric maltol",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ferric maltol"
+      ]
+     },
+     {
+      "label": "Ferrous fumarate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ferrous fumarate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Intravenous iron"
+     },
+     {
+      "name": "Ferric maltol"
+     },
+     {
+      "name": "Ferrous fumarate"
+     }
+    ]
+   }
+  }
+ }
+]

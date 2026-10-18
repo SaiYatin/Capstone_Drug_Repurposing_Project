@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 18,
+ "top": [
+  {
+   "pmid": "35871278",
+   "title": "Induction chemotherapy with carboplatin and paclitaxel for thymoma in acute respiratory distress due to myasthenia gravis: a case report.",
+   "year": "2022"
+  },
+  {
+   "pmid": "42534859",
+   "title": "Neoadjuvant chemotherapy enabling resection of stage IVA thymoma with myasthenia gravis and systemic lupus erythematosus: a case report.",
+   "year": "2026"
+  },
+  {
+   "pmid": "40467556",
+   "title": "Cytoreductive surgery and hyperthermic intrathoracic chemotherapy in thymic epithelial tumors with pleural spread or recurrence: a prospective, single-arm, phase II study.",
+   "year": "2025"
+  }
+ ]
+}

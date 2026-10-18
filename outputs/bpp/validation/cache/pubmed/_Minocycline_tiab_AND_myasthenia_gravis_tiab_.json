@@ -1,0 +1,16 @@
+{
+ "term": "\"Minocycline\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "15610703",
+   "title": "Neuromuscular Manifestations of Human West Nile Virus Infection.",
+   "year": "2005"
+  },
+  {
+   "pmid": "32563248",
+   "title": "Disseminated Mycobacterium abscessus subsp. massiliense infection in a Good's syndrome patient negative for human immunodeficiency virus and anti-interferon-\u03b3 autoantibody: a case report.",
+   "year": "2020"
+  }
+ ]
+}

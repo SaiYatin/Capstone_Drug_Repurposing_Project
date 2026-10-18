@@ -1,0 +1,78 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06867913",
+    "briefTitle": "A Study of Selenomethionine and Myo-inositol(SOLOWAYS_TM) in Patients With Autoimmune Thyroiditis Carrying the DIO2 Thr92Ala Polymorphism"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-05-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cohort A (Thr92Ala Carriers)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Supplement groupx"
+      ]
+     },
+     {
+      "label": "Cohort B (Wild-Type DIO2)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Supplement groupx"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Supplement groupx"
+     },
+     {
+      "name": "Supplement groupx"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07510750",
+    "briefTitle": "rT3 and Inflammation in Hashimoto's Thyroiditis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2025-08-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Healty control"
+     },
+     {
+      "label": "Use medicine with Hashimoto thyroiditis"
+     },
+     {
+      "label": "Not use medicine with Hashimoto thyroiditis"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Dehydrocholic acid\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "37191344",
+   "title": "Bacterial and metabolic phenotypes associated with inadequate response to ursodeoxycholic acid treatment in primary biliary cholangitis.",
+   "year": "2023"
+  },
+  {
+   "pmid": "22194894",
+   "title": "Ursodeoxycholic acid is conjugated with taurine to promote secretin-stimulated biliary hydrocholeresis in the normal rat.",
+   "year": "2011"
+  },
+  {
+   "pmid": "25641915",
+   "title": "Dynamic mechanistic modeling of the multienzymatic one-pot reduction of dehydrocholic acid to 12-keto ursodeoxycholic acid with competing substrates and cofactors.",
+   "year": "2015"
+  }
+ ]
+}

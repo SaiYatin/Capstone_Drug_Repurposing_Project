@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 78,
+ "top": [
+  {
+   "pmid": "39285783",
+   "title": "A review of neonatal lupus syndrome.",
+   "year": "2024"
+  },
+  {
+   "pmid": "8941454",
+   "title": "Neonatal lupus.",
+   "year": "1996"
+  },
+  {
+   "pmid": "7993711",
+   "title": "Neonatal lupus syndromes.",
+   "year": "1994"
+  }
+ ]
+}

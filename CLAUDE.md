@@ -32,7 +32,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
 | Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
-| Paper rewrite (conference + journal) | **REFRAMED 17 Oct around the user's original 3 aims** (Aim 1 transfer, Aim 2 accuracy, Aim 3 components); leakage = supporting section. Session-4 numbers print `[pending]` until analysed. Not compiled — no LaTeX on the laptop |
+| Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
 | Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — superseded by v3, do not use |
@@ -51,6 +51,40 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 - noauto_main_s1 hit the 20-epoch cap (best epoch 19), so it was still improving slightly.
 If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 `python -m bpp.analyze && python -m bpp.figures`, and re-read sentences that interpret numbers.
+
+**Validation + paper finalisation (19 Oct; user's pasted plan V1–V8; outputs/bpp/validation/):**
+- Decisions applied: title "BioPathNet++ for Autoimmune Diseases: Path-Based Transfer Learning for Rare Disease
+  Drug Repurposing" (journal adds "---A Leakage-Controlled Study"); authors TVNS Yatin, Srijan Jha, A Charan KR,
+  Praveen Kumar Yadav; Dr. Priyanka H. = guide (author-block note / \thanks + acknowledgment), NOT co-author.
+  Claim wording: "outperforms every baseline evaluated on the same leakage-free split"; tool for expert review.
+- New code: `bpp/score.py` (full 7,957-drug scores; laptop GPU reproduces Kaggle top-10 for 17/18 lists, 1 exact tie
+  swap), `bpp/validate.py` (V1–V5, V7, V8, E check; API responses cached in validation/cache/), `bpp/explain.py`
+  (grad×input edge attribution + beam search; replica asserted equal to model), tests now 7/7.
+- Corrections to the pasted plan: random any-hit@10 = 0.8% (not 1.5%); "MRR 0.49 ≈ first true drug at rank 2" is
+  wrong → papers use median known-drug rank (test 3, 40% at rank 1).
+- Metrics table (test, 1 seed): Any@10 75% vs kNN 57% vs pop 19% vs random 0.8%; AUPRC 0.554 vs prevalence ~0.001.
+- V2 trials (ClinicalTrials.gov API v2, drug must be a NAMED intervention): unlabelled model top-20 (n=86) grade A–C
+  19% vs popularity 15% vs random 1%; 13 grade A. Caveats in papers: PBC/AIH grades partly from overlap-syndrome
+  trials; ustekinumab–Crohn is a PrimeKG label gap (FDA 2016-09-26, J&J release).
+- V3 PubMed: any co-mention 63% (pop 72%, random 18%); titles classified (AI-assisted, 394 titles,
+  literature_labels.csv, MUST be verified by authors): supports 24% (pop 16%, random 0%); against 4% (pop 12%).
+  Model "against" = corticosteroids in SSc (renal crisis) + 1 AIH case; popularity "against" = antibiotics.
+- V4 temporal (dates verified via manufacturer/FDA pages, temporal_sources.json): post-2022 approvals in PrimeKG:
+  risankizumab 37, upadacitinib 550, ravulizumab 845, guselkumab 1,363, rozanolixizumab 2,278, elafibranor 5,825
+  → median 1,104 (top 14%), 5/6 better than random median, sign test p = 0.11 (NOT significant); kNN better on 3/6.
+  Absent from PrimeKG: seladelpar, efgartigimod, zilucoplan, nipocalimab, mirikizumab. Label gaps: tocilizumab-SSc
+  rank 58, nintedanib 848, obeticholic acid 2,272.
+- V5: ≥1 drug target among disease genes 17% (pop 16%, random 3%); immune-pathway enrichment null for all sets.
+- V6 paths (main_s0): MG cholinesterase inhibitors via MUSK → NMJ disease; amifampridine via Lambert–Eaton;
+  UDCA via biliary diseases; spurious ciprofloxacin–Crohn via "mouth disease → sinusitis".
+- V7: corticosteroids 41%, antibacterials 21% of 120 top-20 slots (name heuristic; DRKG ATC covers only 50% and
+  lists steroids under D07/S01/R01, not H02). Popularity-adjusted list (exploratory): amifampridine, guanidine (MG),
+  lifitegrast (Sjögren), tildrakizumab (Crohn).
+- E check (C_E model, 12 area diseases): 9/12 have a labelled drug in top-10; 21/74 unlabelled have trials.
+- V8 `expert_review_sheet.xlsx` ready (empty rating column).
+- NOT done / could not verify: no LaTeX compiler (tectonic/MiKTeX need a download → not installed; Overleaf zip
+  `outputs/paper/v3_latest.zip` instead) → page counts unmeasured (conf ≈5 pp, journal may exceed 11 pp by word
+  count); test split still 1 seed (session 5 optional); literature labels not human-verified.
 
 **Session 4 RESULTS (18 Oct, verified; Kaggle code identical to repo; papers updated, no RECHECK left):**
 - Aim 1, scarce data: model MRR on E — A (RA/SLE/MS, 3 seeds) 0.290 vs A′ (3 matched draws) 0.126;

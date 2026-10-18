@@ -1,0 +1,11 @@
+{
+ "term": "\"Soybean oil\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "3341673",
+   "title": "Botulism from chopped garlic: delayed recognition of a major outbreak.",
+   "year": "1988"
+  }
+ ]
+}

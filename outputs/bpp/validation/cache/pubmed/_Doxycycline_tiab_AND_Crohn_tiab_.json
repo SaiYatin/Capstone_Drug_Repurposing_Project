@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxycycline\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 27,
+ "top": [
+  {
+   "pmid": "32681228",
+   "title": "Randomized Trial of Ciprofloxacin Doxycycline and Hydroxychloroquine Versus Budesonide in Active Crohn's Disease.",
+   "year": "2021"
+  },
+  {
+   "pmid": "25839777",
+   "title": "Killing of Escherichia coli by Crohn's Disease Monocyte-derived Macrophages and Its Enhancement by Hydroxychloroquine and Vitamin D.",
+   "year": "2015"
+  },
+  {
+   "pmid": "32682880",
+   "title": "Isotretinoin and risk of inflammatory bowel disease: More data to support lack of meaningful risk.",
+   "year": "2021"
+  }
+ ]
+}

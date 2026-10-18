@@ -1,0 +1,508 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05706636",
+    "briefTitle": "T Central Memory Cells in Early Localized Non-Segmental Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Early localized vitiligo on topical treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Topical cream",
+       "Device: targeted phototherapy"
+      ]
+     },
+     {
+      "label": "Early localized vitiligo on topical and systemic treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: oral mini pulse",
+       "Drug: Topical cream",
+       "Device: targeted phototherapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "oral mini pulse"
+     },
+     {
+      "name": "Topical cream"
+     },
+     {
+      "name": "targeted phototherapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06900777",
+    "briefTitle": "Oral Tacrolimus vs Dexamethasone Micro-pulse Therapy in Pediatric Rapidly Progressing Vitiligo: A Multicenter RCT"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tacrolimus Treatment Group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tacrolimus"
+      ]
+     },
+     {
+      "label": "Dexamethasone Comparison Group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Dexamethasone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tacrolimus"
+     },
+     {
+      "name": "Dexamethasone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03872804",
+    "briefTitle": "Punch Minigraft Versus Transverse Needling or Combination of Both in Treatment of Non-Segmental Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-02-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vitiligo patient",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous punch mini grafts:",
+       "Procedure: Transverse needling",
+       "Procedure: Punch minigrafts followed by transverse needling",
+       "Other: Oral pulse steroid with narrow band"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Autologous punch mini grafts:"
+     },
+     {
+      "name": "Transverse needling"
+     },
+     {
+      "name": "Punch minigrafts followed by transverse needling"
+     },
+     {
+      "name": "Oral pulse steroid with narrow band"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04030988",
+    "briefTitle": "Contribution of Skin Color in Stabilization of Active Cases of Vitiligo by Narrow Band UVB"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Active",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Oral dexamethasone minipulse"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Oral dexamethasone minipulse"
+     },
+     {
+      "name": "Placebo oral tablet"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06946069",
+    "briefTitle": "Immunomodulatory Effects of NB-UVB and Steroids in Vitiligo: A Study on CXCL11 and TEMRA Biomarkers"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 (NB-UVB Monotherapy)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Radiation: NB-UVB twice weekly"
+      ]
+     },
+     {
+      "label": "Group 2 (NB-UVB + OMP Steroids)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Other: NB-UVB + dexamethasone (2.5-3 mg/week)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NB-UVB twice weekly"
+     },
+     {
+      "name": "NB-UVB + dexamethasone (2.5-3 mg/week)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06768840",
+    "briefTitle": "Vitiligo, New Treatment and Serum s100B"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-10-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "baricitinib",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Baricitinib",
+       "Radiation: Narrow Band UVB Treatment"
+      ]
+     },
+     {
+      "label": "control",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "oral mini pulse",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: oral mini pulse",
+       "Radiation: Narrow Band UVB Treatment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Baricitinib"
+     },
+     {
+      "name": "oral mini pulse"
+     },
+     {
+      "name": "Narrow Band UVB Treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06974669",
+    "briefTitle": "The Value of Using Mini-oral Pulse Steroid Therapy Along With Non Cultured Epidermal Cell Suspension (NCES) in Stable Resistant Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-05-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Vitiligo surgery with added mini-oral pulse steroid therapy in the peri-surgical period",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: oral steroid-dexamethasone",
+       "Procedure: non cultured epidermal suspension"
+      ]
+     },
+     {
+      "label": "Vitiligo surgery without mini-oral pulse steroid therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: non cultured epidermal suspension"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "oral steroid-dexamethasone"
+     },
+     {
+      "name": "non cultured epidermal suspension"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07673640",
+    "briefTitle": "Ruxolitinib Cream Combined With Corticosteroids for Progressive Non-Segmental Vitiligo: A Multicenter Real-World Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-07-02"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "1.5% Ruxolitinib Phosphate Cream (Opzelura)"
+     },
+     {
+      "name": "Corticosteroid Therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04765826",
+    "briefTitle": "Comparison Between Systemic Steroids, Topical Steroids, or Calcineurin Inhibitors With Mini Punch Grafting in Treatment of Stable Non-segmental Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-25"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "high dose oral steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous mini punch grafting"
+      ]
+     },
+     {
+      "label": "low dose oral steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous mini punch grafting"
+      ]
+     },
+     {
+      "label": "topical treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Autologous mini punch grafting"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Autologous mini punch grafting"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07472816",
+    "briefTitle": "The Value of Adding Mini-oral Pulse Steroid Therapy in Preventing Peri-lesional Halo Post Non-cultured Epidermal Cell Suspension (NCES) in Cases With Stable Segmental and Non-acral Vitiligo."
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-cultured epidermal cell suspension surgery with Mini-Oral Pulse Steroid Therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Non-cultured epidermal cell suspension (NCES) surgery",
+       "Drug: Oral mini pulse",
+       "Device: Excimer Sessions"
+      ]
+     },
+     {
+      "label": "Non-cultured epidermal cell suspension Surgery Alone",
+      "type": "OTHER",
+      "interventionNames": [
+       "Procedure: Non-cultured epidermal cell suspension (NCES) surgery",
+       "Device: Excimer Sessions"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Non-cultured epidermal cell suspension (NCES) surgery"
+     },
+     {
+      "name": "Oral mini pulse"
+     },
+     {
+      "name": "Excimer Sessions"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07353801",
+    "briefTitle": "Oral Mini Pulse Dexamethasone in Pediatric Vitiligo"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2026-02-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OMP dexamethasone 2 consecutive days per week in a dose of 0.1mg/kg/day for 3 months",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Dexamethasone (0.1 mg/kg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Dexamethasone (0.1 mg/kg)"
+     }
+    ]
+   }
+  }
+ }
+]

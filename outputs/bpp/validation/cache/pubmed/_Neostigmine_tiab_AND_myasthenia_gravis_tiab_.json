@@ -1,0 +1,21 @@
+{
+ "term": "\"Neostigmine\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 314,
+ "top": [
+  {
+   "pmid": "34324776",
+   "title": "The clinical utility of neostigmine administration in the diagnosis of acquired myasthenia gravis.",
+   "year": "2021"
+  },
+  {
+   "pmid": "39618072",
+   "title": "A Review of Muscle Relaxants in Anesthesia in Patients with Neuromuscular Disorders Including Guillain-Barr\u00e9 Syndrome, Myasthenia Gravis, Duchenne Muscular Dystrophy, Charcot-Marie-Tooth Disease, and Inflammatory Myopathies.",
+   "year": "2024"
+  },
+  {
+   "pmid": "40544117",
+   "title": "A comprehensive review of the treatment options in myasthenia gravis.",
+   "year": "2025"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "26790326",
+   "title": "[Cesarean Section Under Combined Spinal and Epidural Anesthesia for a Pregnant Woman with Primary Biliary Cirrhosis].",
+   "year": "2015"
+  },
+  {
+   "pmid": "30996179",
+   "title": "Acute Adrenal Insufficiency Precipitated by the Discontinuation of a Betamethasone and Dextrochlorpheniramine Combination: The Diagnostic Utility of an Echocardiographic Assessment of Systemic Vascular Resistance.",
+   "year": "2019"
+  }
+ ]
+}

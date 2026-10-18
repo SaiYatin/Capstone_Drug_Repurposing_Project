@@ -1,0 +1,21 @@
+{
+ "term": "\"Thiotepa\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 7,
+ "top": [
+  {
+   "pmid": "24459219",
+   "title": "Autologous stem cell transplantation with thiotepa-based conditioning in patients with systemic sclerosis and cardiac manifestations.",
+   "year": "2014"
+  },
+  {
+   "pmid": "38850365",
+   "title": "High-dose chemotherapy and autologous hematopoietic stem cell transplantation for progressive systemic sclerosis: a retrospective study of outcome and prognostic factors.",
+   "year": "2024"
+  },
+  {
+   "pmid": "16636524",
+   "title": "Successful autologous peripheral blood stem cell transplantation using thiotepa in a patient with systemic sclerosis and cardiac involvement.",
+   "year": "2006"
+  }
+ ]
+}

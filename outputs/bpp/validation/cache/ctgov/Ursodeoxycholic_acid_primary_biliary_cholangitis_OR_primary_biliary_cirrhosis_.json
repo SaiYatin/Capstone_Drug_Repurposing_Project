@@ -1,0 +1,3460 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02026401",
+    "briefTitle": "Phase 2 Study of NGM282 in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NGM282 Dose 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "NGM282 Dose 2",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: NGM282"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Biological: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NGM282"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03665519",
+    "briefTitle": "Clinical Trial on the Effect of the Sublimated Mare Milk Supplement on Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-01-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Dietary supplement and ursodeoxycholic acid therapy.",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Dietary Supplement: Sublimated mare milk",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid therapy only.",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sublimated mare milk"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03602560",
+    "briefTitle": "ENHANCE: Seladelpar in Subjects With Primary Biliary Cholangitis (PBC) and an Inadequate Response to or an Intolerance to Ursodeoxycholic Acid (UDCA)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Seladelpar 5-10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: seladelpar 5-10 mg"
+      ]
+     },
+     {
+      "label": "Seladelpar 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: seladelpar 10 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "seladelpar 5-10 mg"
+     },
+     {
+      "name": "seladelpar 10 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04076527",
+    "briefTitle": "Prospective, Multicenter Cohort Study on Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-09-19"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1 - Incomplete Responder",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Ocaliva"
+      ]
+     },
+     {
+      "label": "Group 2 - Responder",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Group 3",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Ocaliva"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "UDCA"
+     },
+     {
+      "name": "Ocaliva"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06247735",
+    "briefTitle": "Study to Evaluate the Efficacy and Safety of K-808 (Pemafibrate) in Participants With Primary Biliary Cholangitis (PBC) With Inadequate Response to Ursodeoxycholic Acid (UDCA) and/or Obeticholic Acid (OCA) Treatment."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-02-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo + K-808 (Group A)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: K-808 (Dose A)",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Placebo + K-808 (Group B)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: K-808 (Dose B)",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "K-808 Group A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808 (Dose A)"
+      ]
+     },
+     {
+      "label": "K-808 Group B",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: K-808 (Dose B)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "K-808 (Dose A)"
+     },
+     {
+      "name": "K-808 (Dose B)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06591468",
+    "briefTitle": "A Multicenter, Randomized, Controlled Trial of Prednisone Combined With Ursodeoxycholic Acid in the Treatment of Primary Biliary Cholangitis With Moderate to Severe Interface Hepatitis Characteristics"
+   },
+   "statusModule": {
+    "overallStatus": "ENROLLING_BY_INVITATION",
+    "startDateStruct": {
+     "date": "2024-10-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone",
+      "type": "EXPERIMENTAL"
+     },
+     {
+      "label": "UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07424677",
+    "briefTitle": "Study of Saroglitazar Magnesium for PBC Patients With Incomplete Response or Intolerant to UDCA Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Saroglitazar Magnesium 1 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Saroglitazar Magnesium 1 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Saroglitazar Magnesium 1 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03092765",
+    "briefTitle": "Study of E6011 in Japanese Subjects With Primary Biliary Cholangitis Inadequately Responding to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2017-05-29"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "low-dose, high-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, high-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "high-dose, low-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "high-dose, low-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, low-frequency E6011; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "low-dose, low-frequency E6011; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011"
+      ]
+     },
+     {
+      "label": "Placebo; high-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Placebo; low-dose, low-frequency E6011",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: E6011",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "E6011"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04376528",
+    "briefTitle": "Mycophenolate Mofetil Versus Cyclosporin A in the Treatment of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome Due to Nonresponse to Standard Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-06-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclosporin A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cyclosporin A"
+      ]
+     },
+     {
+      "label": "Mycophenolate Mofetil",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Mycophenolate Mofetil"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin A"
+     },
+     {
+      "name": "Mycophenolate Mofetil"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07296458",
+    "briefTitle": "FIREFLY Trial: Fenofibrate Intervention---Randomized Evaluation in First-Line PBC Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate"
+      ]
+     },
+     {
+      "label": "UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05749822",
+    "briefTitle": "Fenofibrate for Compensated Cirrhosis Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-02-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo-UDCA",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Fenofibrate-UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate 200mg",
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate 200mg"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01865812",
+    "briefTitle": "Phase 2 Study on Effects of Obeticholic Acid (OCA) on Lipoprotein Metabolism in Participants With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-12-03"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA: 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00004784",
+    "briefTitle": "Phase III Randomized Study of Ursodiol With Vs Without Methotrexate for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1994-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "methotrexate"
+     },
+     {
+      "name": "ursodiol"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04620733",
+    "briefTitle": "RESPONSE: Response to Seladelpar in Subjects With Primary Biliary Cholangitis (PBC) and an Inadequate Control to or an Intolerance to Ursodeoxycholic Acid (UDCA)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-04-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Seladelpar",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar 10 mg",
+       "Drug: Seladelpar 5 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Seladelpar 10 mg"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Seladelpar 5 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04594694",
+    "briefTitle": "Study of OCA in Combination With BZF Evaluating Efficacy, Safety, and Tolerability in Participants With PBC"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2019-10-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Treatment A: BZF 200 milligrams (mg) Immediate release (IR)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 MG",
+       "Drug: OCA Placebo",
+       "Drug: Bezafibrate 400 mg Placebo"
+      ]
+     },
+     {
+      "label": "Treatment B: BZF 400 mg SR",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: OCA Placebo",
+       "Drug: Bezafibrate 200 mg Placebo",
+       "Drug: Bezafibrate 400 MG"
+      ]
+     },
+     {
+      "label": "Treatment C: OCA 5 mg to 10 mg + BZF 200 mg IR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic acid",
+       "Drug: Bezafibrate 200 MG",
+       "Drug: Bezafibrate 400 mg Placebo"
+      ]
+     },
+     {
+      "label": "Treatment D: OCA 5 mg to 10 mg + BZF 400 mg SR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic acid",
+       "Drug: Bezafibrate 200 mg Placebo",
+       "Drug: Bezafibrate 400 MG"
+      ]
+     },
+     {
+      "label": "Long-term safety extension (LTSE) phase: OCA + BZF",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: OCA",
+       "Drug: Bezafibrate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic acid"
+     },
+     {
+      "name": "Bezafibrate 200 MG"
+     },
+     {
+      "name": "OCA Placebo"
+     },
+     {
+      "name": "Bezafibrate 200 mg Placebo"
+     },
+     {
+      "name": "Bezafibrate 400 MG"
+     },
+     {
+      "name": "Bezafibrate 400 mg Placebo"
+     },
+     {
+      "name": "OCA"
+     },
+     {
+      "name": "Bezafibrate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00004748",
+    "briefTitle": "Low-Dose Oral Methotrexate Versus Colchicine for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1989-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "colchicine"
+     },
+     {
+      "name": "methotrexate"
+     },
+     {
+      "name": "ursodiol"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03124108",
+    "briefTitle": "Study to Evaluate the Efficacy and Safety of Elafibranor in Patients With Primary Biliary Cholangitis (PBC) and Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-04-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Elafibranor 80 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Elafibranor 80 mg"
+      ]
+     },
+     {
+      "label": "Elafibranor 120 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Elafibranor 120 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor 80 mg"
+     },
+     {
+      "name": "Elafibranor 120 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03188146",
+    "briefTitle": "Performance of Scoring Systems in Chinese Patients With Primary Biliary Cholangitis (PBC) on Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PBC patients with liver biopsy",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03521297",
+    "briefTitle": "Probiotics in PBC Patients of Poor Response to UDCA"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-01-20"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Dietary Supplement: Placebo"
+      ]
+     },
+     {
+      "label": "Probiotics group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Probiotic"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Probiotic"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06060665",
+    "briefTitle": "Intended to Determine the Effects of Seladelpar on Normalization of Alkaline Phosphatase Levels in Subjects With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-09-05"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Seladelpar",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Seladelpar 10 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Seladelpar 10 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07122206",
+    "briefTitle": "Monitoring the Response of Combination Ursodiol and Seladelpar Treatment"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Blood Draws"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02965911",
+    "briefTitle": "Efficacy and Safety of Fenofibrate Combined With UDCA in PBC Patients With an Incomplete Biochemical Response to UDCA"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UDCA Standard treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Fenofibrate Combined with UDCA Treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate",
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06755541",
+    "briefTitle": "Fenofibrate in Combination With Ursodeoxycholic Acid in Primary Biliary Cholangitis: a Real World Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate in Combination With Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate in Combination With Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00746486",
+    "briefTitle": "Ursodeoxycholic Acid Plus Budesonide Versus Ursodeoxycholic Acid Alone in Primary Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2009-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: budesonide"
+      ]
+     },
+     {
+      "label": "B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: budesonide placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "budesonide"
+     },
+     {
+      "name": "budesonide placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00006168",
+    "briefTitle": "Ursodiol-Methotrexate for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "1994-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02916290",
+    "briefTitle": "Fuzhenghuayu in Combination With Ursodeoxycholic Acid in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fuzhenghuayu+UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fuzhenghuayu",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Monotherapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fuzhenghuayu"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06591455",
+    "briefTitle": "A Pilot Study of Fenofibrate and Ursodeoxycholic Acid in the Treatment of Newly Diagnosed Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-09-14"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate"
+      ]
+     },
+     {
+      "label": "UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00587119",
+    "briefTitle": "Oral Budesonide in the Treatment of Patients With Primary Biliary Cirrhosis and Overlap Features of Autoimmune Hepatitis"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2007-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Budesonide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Budesonide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01141296",
+    "briefTitle": "Fenofibrate in Combination With Ursodeoxycholic Acid (UDCA) in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2011-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fenofibrate",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: fenofibrate"
+      ]
+     },
+     {
+      "label": "sugar pill",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "fenofibrate"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06383403",
+    "briefTitle": "A Study of Elafibranor in Adults With Primary Biliary Cholangitis and Inadequate Response or Intolerance to Ursodeoxycholic Acid."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2024-07-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor 80 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03322943",
+    "briefTitle": "The Comparison About the Response of Ursodeoxycholic Acid in Primary Biliary Cholangitis Only and Primary Biliary Cholangitis With High Immune Globulin G or Aminotransferase at West China Hospital"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04617561",
+    "briefTitle": "Ursodeoxycholic Acid Combined With Low Dose Glucocorticoid in the Treatment of PBC With AIH Features II"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-11-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic Acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic Acid+Low Dose Glucocorticoid group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid"
+     },
+     {
+      "name": "Ursodeoxycholic acid+Low Dose Glucocorticoid(Methylprednisolone)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06365424",
+    "briefTitle": "Fenofibrate in Patients With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2017-04-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "UDCA+Fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate",
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00805805",
+    "briefTitle": "Study Comparing Tetrathiomolybdate vs Standard Treatment in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tetrathiomolybdate"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tetrathiomolybdate"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05751967",
+    "briefTitle": "Fenofibrate Combined With Ursodeoxycholic Acid in Subjects With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-02-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Combined With Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate Combined With Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo Combined With Ursodeoxycholic Acid"
+     },
+     {
+      "name": "Fenofibrate Combined With Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02916641",
+    "briefTitle": "Fuzhenghuayu for Patients With PBC Who Had An Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fuzhenghuayu+UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fuzhenghuayu",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Monotherapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fuzhenghuayu"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04650243",
+    "briefTitle": "Clinical Research of Tapering UDCA in PBC Patients With a Complete Response"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2020-01-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "10mg/Kg UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "5mg/Kg UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "standard 13-15mg/Kg UDCA",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04956328",
+    "briefTitle": "Study of Obeticholic Acid\uff08OCA\uff09 Combination With Ursodeoxycholic Acid (UDCA) in Patients With Primay Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-07-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA Tablets 5-10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Obeticholic Acid Tablets",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Obeticholic Acid Tablets"
+     },
+     {
+      "name": "UDCA"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01430429",
+    "briefTitle": "Primary Biliary Cirrhosis: Investigating A New Treatment Option Using NI-0801, an Anti-CXCL10 Monoclonal Antibody"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED"
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NI-0801",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: NI-0801"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NI-0801"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06174402",
+    "briefTitle": "Fenofibrate in Combination With Ursodeoxycholic Acid in Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2023-08-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fenofibrate-ursodesoxycholic acid\uff08UDCA\uff09",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Placebo-UDCA",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06309589",
+    "briefTitle": "The Effectiveness of Combining Ursodeoxycholic Acid With Vitamin D in Treating Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-05-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "experimental group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Vitamin D"
+      ]
+     },
+     {
+      "label": "control group",
+      "type": "NO_INTERVENTION"
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Vitamin D"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01899703",
+    "briefTitle": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of Repeat Doses of GSK2330672 Administration in Subjects With Primary Biliary Cirrhosis (PBC) and Symptoms of Pruritus"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-03-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GSK2330672",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GSK2330672",
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic acid"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GSK2330672",
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GSK2330672"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00588302",
+    "briefTitle": "Moexipril for Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A, 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Moexipril"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Moexipril"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06715319",
+    "briefTitle": "Obeticholic Acid Versus Placebo, in Combination with Ursodeoxycholic Acid in Patients with Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-10-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA and UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: OCA",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Placebo and UDCA",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "OCA"
+     },
+     {
+      "name": "UDCA"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02955602",
+    "briefTitle": "Seladelpar (MBX-8025) in Subjects With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-11-28"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "MBX-8025 (2 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 2 mg Capsule"
+      ]
+     },
+     {
+      "label": "MBX-8025 (5 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 5 mg Capsule"
+      ]
+     },
+     {
+      "label": "MBX-8025 (10 mg)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: MBX-8025 10 mg Capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "MBX-8025 2 mg Capsule"
+     },
+     {
+      "name": "MBX-8025 5 mg Capsule"
+     },
+     {
+      "name": "MBX-8025 10 mg Capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06488911",
+    "briefTitle": "To Evaluate Safety and Tolerability of the Fixed- Dose Combination of Obeticholic Acid and Bezafibrate"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2024-07-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "OCA 5 mg + BZF 400 mg SR",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: FDC tablet (OCA 5 mg + BZF 400 mg SR)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "FDC tablet (OCA 5 mg + BZF 400 mg SR)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01654731",
+    "briefTitle": "Phase 3 Study of Bezafibrate in Combination With Ursodeoxycholic Acid in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-10-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bezafibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bezafibrate"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03476993",
+    "briefTitle": "Non-comparative Study of BCD-085 in Combination With UDCA in Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-04-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "BCD-085",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: BCD-085"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "BCD-085"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02936596",
+    "briefTitle": "Remission Induction of Primary Biliary Cholangitis-autoimmune Hepatitis Overlap Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic acid + immunosuppressive agents group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid combination of immunosuppressive agents"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid combination of immunosuppressive agents"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06755151",
+    "briefTitle": "Fenofibrate in Primary Biliary Cholangitis: a Real World Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "fenofibrate",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03394924",
+    "briefTitle": "A Study to Assess the Safety, Tolerability, Pharmacokinetics and Efficacy of EDP-305 in Subjects With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-12-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "EDP-305 1 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EDP-305 1 mg"
+      ]
+     },
+     {
+      "label": "EDP-305 2.5 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EDP-305 2.5 mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EDP-305 1 mg"
+     },
+     {
+      "name": "EDP-305 2.5 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03226067",
+    "briefTitle": "Study to Assess Safety & Efficacy of GKT137831 in Patients With Primary Biliary Cholangitis Receiving Ursodiol."
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-06-26"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GKT137831 400mg twice daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GKT137831"
+      ]
+     },
+     {
+      "label": "GKT137831 400mg once daily",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: GKT137831",
+       "Drug: Placebo oral capsule"
+      ]
+     },
+     {
+      "label": "Placebo Arm",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "GKT137831"
+     },
+     {
+      "name": "Placebo oral capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01389973",
+    "briefTitle": "A Study of Efficacy and Safety of Ustekinumab in Patients With Primary Biliary Cirrhosis (PBC) Who Had an Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Open-label: ustekinumab 90 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumab 45 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 45 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumab 90 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 90 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: ustekinumb 180 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: ustekinumab 180 mg"
+      ]
+     },
+     {
+      "label": "Double-blind: placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ustekinumab 90 mg"
+     },
+     {
+      "name": "ustekinumab 45 mg"
+     },
+     {
+      "name": "ustekinumab 180 mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02937012",
+    "briefTitle": "Use of Bezafibrate in Patients With Primary Biliary Cirrhosis to Archive Complete Biochemical Response in Non-responders"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bezafibrate & Ursodeoxycholic acid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Placebo & Ursodeoxycholic acid",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid",
+       "Drug: Placebo (for Bezafibrate)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bezafibrate"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     },
+     {
+      "name": "Placebo (for Bezafibrate)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04618575",
+    "briefTitle": "Ursodeoxycholic Acid Combined With Total Glucosides of Paeony in the Treatment of PBC With AIH Features 1"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-03-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic acid combined with total glucosides of paeony",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid combined with total glucosides of paeony"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid only",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic acid only"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic acid combined with total glucosides of paeony"
+     },
+     {
+      "name": "Ursodeoxycholic acid only"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01857284",
+    "briefTitle": "Safety and Efficacy of Tauroursodeoxycholic Acid Versus Ursofalk in the Treatment of Adult Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2009-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group 1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tauroursodeoxycholic Acid Capsules"
+      ]
+     },
+     {
+      "label": "Group 2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid Capsules"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tauroursodeoxycholic Acid Capsules"
+     },
+     {
+      "name": "Ursodeoxycholic Acid Capsules"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02823366",
+    "briefTitle": "Fenofibrate for Patients With Primary Biliary Cirrhosis Who Had An Inadequate Response to Ursodeoxycholic Acid"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fenofibrate + UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Monotherapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02823353",
+    "briefTitle": "Fenofibrate in Combination With Ursodeoxycholic Acid in Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-04-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Fenofibrate + UDCA",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Fenofibrate",
+       "Drug: UDCA"
+      ]
+     },
+     {
+      "label": "Monotherapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Fenofibrate"
+     },
+     {
+      "name": "UDCA"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03954327",
+    "briefTitle": "Combination Antiretroviral Therapy (cART) for PBC"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-03-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Emtricitabine (FTC)/Tenofovir Disoproxil (TDF) & Raltegravir",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Emtricitabine (FTC)/Tenofovir Disoproxil (TDF)",
+       "Drug: Raltegravir"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Oral Capsule [CEBOCAP]"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Emtricitabine (FTC)/Tenofovir Disoproxil (TDF)"
+     },
+     {
+      "name": "Raltegravir"
+     },
+     {
+      "name": "Placebo Oral Capsule [CEBOCAP]"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04526665",
+    "briefTitle": "Study of Elafibranor in Patients With Primary Biliary Cholangitis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "ACTIVE_NOT_RECRUITING",
+    "startDateStruct": {
+     "date": "2020-09-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Elafibranor 80mg double-blind",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor 80mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Elafibranor 80mg open label",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Elafibranor 80mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Elafibranor 80mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01904058",
+    "briefTitle": "Phase 2 Study to Evaluate LUM001 in Combination With Ursodeoxycholic Acid in Patients With Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "LUM001 and Ursodeoxycholic Acid (UDCA)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: LUM001",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Placebo and Ursodeoxycholic Acid (UDCA)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "LUM001"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05812612",
+    "briefTitle": "UDCA in the Treatment of COVID-19 Infection and Its Clinical Prognosis in Patients With Autoimmune Liver Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-01-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "COVID-19 infection in patients with autoimmune liver disease",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00550862",
+    "briefTitle": "Study of INT 747 in Combination With URSO in Patients With Primay Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2007-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "INT-747 10 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "INT-747 25 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "INT-747 50 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: INT-747",
+       "Drug: Ursodeoxycholic Acid (URSO)",
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "INT-747"
+     },
+     {
+      "name": "Ursodeoxycholic Acid (URSO)"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02078882",
+    "briefTitle": "Study of Abatacept (Orencia) to Treat Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2014-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Abatacept 125 mg weekly",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: abatacept"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "abatacept"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03489889",
+    "briefTitle": "Development of Ursodeoxycholic Acid 300 mg at Hospital Das Clinicas of the University of S\u00e3o Paulo School of Medicine"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2016-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "capsule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid 300mg capsule"
+      ]
+     },
+     {
+      "label": "tablet",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Ursodeoxycholic Acid 300mg tablet"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ursodeoxycholic Acid 300mg tablet"
+     },
+     {
+      "name": "Ursodeoxycholic Acid 300mg capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02609048",
+    "briefTitle": "Study to Evaluate the Effects of Two Doses of Seladelpar (MBX-8025) in Subjects With Primary Biliary Cirrhosis (PBC)"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2015-11-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Dose",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo Comparator"
+      ]
+     },
+     {
+      "label": "Seladelpar 50 mg Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Placebo Comparator",
+       "Drug: Experimental: Seladelpar 50 mg"
+      ]
+     },
+     {
+      "label": "Seladelpar 200 mg Dose",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Experimental: Seladelpar / MBX-8025 200 mg"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo Comparator"
+     },
+     {
+      "name": "Experimental: Seladelpar 50 mg"
+     },
+     {
+      "name": "Experimental: Seladelpar / MBX-8025 200 mg"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07795151",
+    "briefTitle": "Phase I/II Trial of Human Umbilical Cord Mesenchymal Stromal Cells for UDCA-Refractory Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-31"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Placebo Group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "hUC-MSC Dose Level 1 (planned 1.5\u00d710\u2078 cells, final dose TBD)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Biological: hUC-MSC Dose Level 1"
+      ]
+     },
+     {
+      "label": "hUC-MSC Dose Level 2 (planned 2.0\u00d710\u2078 cells, final dose TBD)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Standard background therapy",
+       "Biological: hUC-MSC Dose Level 2"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Standard background therapy"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "hUC-MSC Dose Level 1"
+     },
+     {
+      "name": "hUC-MSC Dose Level 2"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01510860",
+    "briefTitle": "Ursofalk Tablets (500 mg) Versus Ursofalk Capsules (250 mg) in the Treatment of Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ursodeoxycholic acid (UDCA)250 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     },
+     {
+      "label": "Ursodeoxycholic acid (UDCA)500 mg",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: UDCA (Ursodeoxycholic acid)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     },
+     {
+      "name": "UDCA (Ursodeoxycholic acid)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01440309",
+    "briefTitle": "Efficacy and Safety Study of Allogenic Mesenchymal Stem Cells for Patients With Refractory Primary Biliary Cirrhosis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2011-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "allogenic mesenchymal stem cells (MSCs)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Biological: mesenchymal stem cell"
+      ]
+     },
+     {
+      "label": "ursodeoxycholic acid (UDCA)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: ursodeoxycholic acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Biological: mesenchymal stem cell"
+     },
+     {
+      "name": "ursodeoxycholic acid"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07282353",
+    "briefTitle": "A Study of CS0159 in Patients With PBC With Inadequate Response or Intolerance to UDCA"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-12-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "4 mg CS0159",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 2mg CS0159"
+      ]
+     },
+     {
+      "label": "placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "2mg CS0159"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03345589",
+    "briefTitle": "A Trial of 18-22mg/kg/d Ursodeoxycholic in Refractory Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-01-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "18-22mg/kg/d Ursodeoxycholic group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 18-22mg/kg/d Ursodeoxycholic"
+      ]
+     },
+     {
+      "label": "13-15mg/kg/d Ursodeoxycholic group",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: 13-15mg/kg/d Ursodeoxycholic"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "18-22mg/kg/d Ursodeoxycholic"
+     },
+     {
+      "name": "13-15mg/kg/d Ursodeoxycholic"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06443606",
+    "briefTitle": "Efficacy and Safety of Bezafibrate 400 mg and Bezafibrate 200 mg as Adjunctive Treatments in Patients With Primary Biliary Cholangitis and Non-optimal Biochemical Response to Ursodeoxycholic Acid Therapy"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-03-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bezafibrate 400 mg group in addition to UDCA therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 400 mg in addition to UDCA therapy"
+      ]
+     },
+     {
+      "label": "Bezafibrate 200 mg group in addition to UDCA therapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 mg in addition to UDCA therapy"
+      ]
+     },
+     {
+      "label": "Placebo group in addition to UDCA therapy",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo in addition to UDCA therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bezafibrate 400 mg in addition to UDCA therapy"
+     },
+     {
+      "name": "Bezafibrate 200 mg in addition to UDCA therapy"
+     },
+     {
+      "name": "Placebo in addition to UDCA therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04751188",
+    "briefTitle": "A Study to Assess Efficacy and Safety of Bezafibrate in Patients With Primary Biliary Cholangitis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-10-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Bezafibrate and Ursodeoxycholic acid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Bezafibrate 200 MG Oral Tablet",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     },
+     {
+      "label": "Placebo and Ursodeoxycholic acid",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo",
+       "Drug: Ursodeoxycholic Acid"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Bezafibrate 200 MG Oral Tablet"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Ursodeoxycholic Acid"
+     }
+    ]
+   }
+  }
+ }
+]

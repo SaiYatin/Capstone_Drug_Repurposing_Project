@@ -1,0 +1,29 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00429533",
+    "briefTitle": "Efficacy of Dapsone as a Steroid Sparing Agent in Pemphigus Vulgaris"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "1996-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Dapsone"
+     }
+    ]
+   }
+  }
+ }
+]

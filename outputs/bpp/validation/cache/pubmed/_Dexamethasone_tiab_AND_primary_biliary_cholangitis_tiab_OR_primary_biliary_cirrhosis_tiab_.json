@@ -1,0 +1,21 @@
+{
+ "term": "\"Dexamethasone\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "35226290",
+   "title": "Therapeutic effects of dexamethasone-loaded hyaluronan nanogels in the experimental cholestasis.",
+   "year": "2022"
+  },
+  {
+   "pmid": "18188457",
+   "title": "Combination of ursodeoxycholic acid and glucocorticoids upregulates the AE2 alternate promoter in human liver cells.",
+   "year": "2008"
+  },
+  {
+   "pmid": "18285252",
+   "title": "Primary biliary cirrhosis and IgG-kappa type multiple myeloma both respond well to vincristine, adriamycin and dexamethasone: is there a pathogenic relationship?",
+   "year": "2008"
+  }
+ ]
+}

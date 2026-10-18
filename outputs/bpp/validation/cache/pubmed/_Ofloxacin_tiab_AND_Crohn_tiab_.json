@@ -1,0 +1,21 @@
+{
+ "term": "\"Ofloxacin\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "30483528",
+   "title": "Drug resistance in intestinal tuberculosis: A reason to worry?",
+   "year": "2017"
+  },
+  {
+   "pmid": "16213026",
+   "title": "Ofloxacin induced Sweet's syndrome in a patient with Crohn's disease.",
+   "year": "2006"
+  },
+  {
+   "pmid": "1482157",
+   "title": "Activity of clarithromycin compared with those of other drugs against Mycobacterium paratuberculosis and further enhancement of its extracellular and intracellular activities by ethambutol.",
+   "year": "1992"
+  }
+ ]
+}

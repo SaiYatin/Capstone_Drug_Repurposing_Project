@@ -1,0 +1,21 @@
+{
+ "term": "\"Lifitegrast\"[tiab] AND (\"Sjogren\"[tiab] OR \"Sj\u00f6gren\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "29958030",
+   "title": "Suppression of Th1-Mediated Keratoconjunctivitis Sicca by Lifitegrast.",
+   "year": "2018"
+  },
+  {
+   "pmid": "41826593",
+   "title": "Immunomodulation of the Ocular Surface in Severe Dry Eye Disease: Expert-Driven Literature Review on Treatment Strategies with Description of Representative Challenging Cases.",
+   "year": "2026"
+  },
+  {
+   "pmid": "42468897",
+   "title": "Risk of Incident Dry Eye Disease Among Patients With Chronic Pain Conditions.",
+   "year": "2026"
+  }
+ ]
+}

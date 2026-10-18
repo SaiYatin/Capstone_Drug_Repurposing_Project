@@ -1,0 +1,21 @@
+{
+ "term": "\"Ampicillin\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "36569203",
+   "title": "Pneumonia in myasthenia gravis: Microbial etiology and clinical management.",
+   "year": "2022"
+  },
+  {
+   "pmid": "3947272",
+   "title": "Ampicillin may aggravate clinical and experimental myasthenia gravis.",
+   "year": "1986"
+  },
+  {
+   "pmid": "38075415",
+   "title": "Brain abscesses caused by Listeria monocytogenes in a patient with myasthenia gravis - Case report and systematic review.",
+   "year": "2023"
+  }
+ ]
+}

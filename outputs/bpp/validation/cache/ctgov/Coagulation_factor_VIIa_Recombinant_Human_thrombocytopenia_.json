@@ -1,0 +1,84 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07290634",
+    "briefTitle": "Comparative Outcomes of PCC and Recombinant Activated Factor VIIa in Trauma-Associated Massive Transfusion"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2026-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "PCC group",
+      "interventionNames": [
+       "Procedure: Number of Participants with massive blood transfusion"
+      ]
+     },
+     {
+      "label": "rFVIIa group",
+      "interventionNames": [
+       "Procedure: Number of Participants with massive blood transfusion"
+      ]
+     },
+     {
+      "label": "Combination group",
+      "interventionNames": [
+       "Procedure: Number of Participants with massive blood transfusion"
+      ]
+     },
+     {
+      "label": "Control group",
+      "interventionNames": [
+       "Procedure: Number of Participants with massive blood transfusion"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Number of Participants with massive blood transfusion"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03251547",
+    "briefTitle": "Recombinant Activated Factor VII in the Management of Massive Bleeding in Hospital Universiti Sains Malaysia"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-08-21"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NovoSeven",
+      "interventionNames": [
+       "Drug: NovoSeven"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "NovoSeven"
+     }
+    ]
+   }
+  }
+ }
+]

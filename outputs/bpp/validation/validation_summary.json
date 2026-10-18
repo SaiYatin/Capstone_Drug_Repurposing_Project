@@ -1,0 +1,575 @@
+{
+ "seeds": 3,
+ "top_k": 20,
+ "candidate_union_sizes": {
+  "Primary Biliary Cholangitis": 28,
+  "Systemic Sclerosis": 22,
+  "Sjogren Syndrome": 21,
+  "Autoimmune Hepatitis": 23,
+  "Myasthenia Gravis": 22,
+  "Crohn Disease": 29
+ },
+ "v1": {
+  "Autoimmune Hepatitis": {
+   "n_labelled": 1,
+   "best_mean_rank": 672.3333333333334,
+   "any_hit10_per_seed": [
+    false,
+    false,
+    false
+   ]
+  },
+  "Crohn Disease": {
+   "n_labelled": 24,
+   "best_mean_rank": 1.0,
+   "any_hit10_per_seed": [
+    true,
+    true,
+    true
+   ]
+  },
+  "Myasthenia Gravis": {
+   "n_labelled": 7,
+   "best_mean_rank": 1.0,
+   "any_hit10_per_seed": [
+    true,
+    true,
+    true
+   ]
+  },
+  "Primary Biliary Cholangitis": {
+   "n_labelled": 1,
+   "best_mean_rank": 1.0,
+   "any_hit10_per_seed": [
+    true,
+    true,
+    true
+   ]
+  },
+  "Sjogren Syndrome": {
+   "n_labelled": 12,
+   "best_mean_rank": 3.3333333333333335,
+   "any_hit10_per_seed": [
+    true,
+    true,
+    true
+   ]
+  },
+  "Systemic Sclerosis": {
+   "n_labelled": 5,
+   "best_mean_rank": 1.6666666666666667,
+   "any_hit10_per_seed": [
+    true,
+    true,
+    true
+   ]
+  }
+ },
+ "v2_trial_grade_A_to_C_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.186
+  },
+  "random": {
+   "n": 120,
+   "share": 0.008
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.15
+  }
+ },
+ "v2_trial_grade_A_or_B_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.163
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.133
+  }
+ },
+ "v2_grade_counts_model_novel": {
+  "D": 70,
+  "A": 13,
+  "B": 1,
+  "C": 2
+ },
+ "v3_any_pubmed_hit_among_novel": {
+  "model": 0.628,
+  "random": 0.183,
+  "popularity": 0.717
+ },
+ "v3_supporting_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.244
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.158
+  }
+ },
+ "v3_against_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.035
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.117
+  }
+ },
+ "v3_class_counts_model_novel": {
+  "mixed": 10,
+  "no_hits": 32,
+  "unrelated": 20,
+  "supports": 21,
+  "against": 3
+ },
+ "v4": [
+  {
+   "target": "Primary Biliary Cholangitis",
+   "drug": "elafibranor",
+   "in_primekg": true,
+   "primekg_name": "Elafibranor",
+   "already_labelled": false,
+   "rank_s0": 5687.0,
+   "rank_s1": 6896.0,
+   "rank_s2": 4892.0,
+   "mean_rank": 5825.0,
+   "percentile_top": 73.21,
+   "knn_rank": 3266.0,
+   "popularity_rank": 3266.0,
+   "fda_approval": "2024-06-10",
+   "post_snapshot": true,
+   "source": "https://www.biospace.com/ipsen-s-iqirvo-receives-u-s-fda-accelerated-approval-as-a-first-in-class-ppar-treatment-for-primary-biliary-cholangitis"
+  },
+  {
+   "target": "Primary Biliary Cholangitis",
+   "drug": "seladelpar",
+   "in_primekg": false,
+   "primekg_name": NaN,
+   "already_labelled": NaN,
+   "rank_s0": NaN,
+   "rank_s1": NaN,
+   "rank_s2": NaN,
+   "mean_rank": NaN,
+   "percentile_top": NaN,
+   "knn_rank": NaN,
+   "popularity_rank": NaN,
+   "fda_approval": null,
+   "post_snapshot": null,
+   "source": null
+  },
+  {
+   "target": "Primary Biliary Cholangitis",
+   "drug": "obeticholic acid",
+   "in_primekg": true,
+   "primekg_name": "Obeticholic acid",
+   "already_labelled": false,
+   "rank_s0": 3107.0,
+   "rank_s1": 2344.0,
+   "rank_s2": 1366.0,
+   "mean_rank": 2272.3333333333335,
+   "percentile_top": 28.56,
+   "knn_rank": 6452.0,
+   "popularity_rank": 6452.0,
+   "fda_approval": "2016-05",
+   "post_snapshot": false,
+   "source": "https://www.healio.com/news/gastroenterology/20160816/fda-approves-ocaliva-for-primary-biliary-cholangitis"
+  },
+  {
+   "target": "Myasthenia Gravis",
+   "drug": "efgartigimod",
+   "in_primekg": false,
+   "primekg_name": NaN,
+   "already_labelled": NaN,
+   "rank_s0": NaN,
+   "rank_s1": NaN,
+   "rank_s2": NaN,
+   "mean_rank": NaN,
+   "percentile_top": NaN,
+   "knn_rank": NaN,
+   "popularity_rank": NaN,
+   "fda_approval": null,
+   "post_snapshot": null,
+   "source": null
+  },
+  {
+   "target": "Myasthenia Gravis",
+   "drug": "ravulizumab",
+   "in_primekg": true,
+   "primekg_name": "Ravulizumab",
+   "already_labelled": false,
+   "rank_s0": 1184.0,
+   "rank_s1": 815.0,
+   "rank_s2": 535.0,
+   "mean_rank": 844.6666666666666,
+   "percentile_top": 10.62,
+   "knn_rank": 1383.0,
+   "popularity_rank": 1381.0,
+   "fda_approval": "2022-04",
+   "post_snapshot": true,
+   "source": "https://practicalneurology.com/news/fda-approves-ravulizumab-for-generalized-myasthenia-gravis"
+  },
+  {
+   "target": "Myasthenia Gravis",
+   "drug": "rozanolixizumab",
+   "in_primekg": true,
+   "primekg_name": "Rozanolixizumab",
+   "already_labelled": false,
+   "rank_s0": 2615.0,
+   "rank_s1": 2436.0,
+   "rank_s2": 1784.0,
+   "mean_rank": 2278.3333333333335,
+   "percentile_top": 28.63,
+   "knn_rank": 7182.0,
+   "popularity_rank": 7182.0,
+   "fda_approval": "2023-06",
+   "post_snapshot": true,
+   "source": "https://www.managedhealthcareexecutive.com/view/fda-approves-rystiggo-for-generalized-myasthenia-gravis"
+  },
+  {
+   "target": "Myasthenia Gravis",
+   "drug": "zilucoplan",
+   "in_primekg": false,
+   "primekg_name": NaN,
+   "already_labelled": NaN,
+   "rank_s0": NaN,
+   "rank_s1": NaN,
+   "rank_s2": NaN,
+   "mean_rank": NaN,
+   "percentile_top": NaN,
+   "knn_rank": NaN,
+   "popularity_rank": NaN,
+   "fda_approval": null,
+   "post_snapshot": null,
+   "source": null
+  },
+  {
+   "target": "Myasthenia Gravis",
+   "drug": "nipocalimab",
+   "in_primekg": false,
+   "primekg_name": NaN,
+   "already_labelled": NaN,
+   "rank_s0": NaN,
+   "rank_s1": NaN,
+   "rank_s2": NaN,
+   "mean_rank": NaN,
+   "percentile_top": NaN,
+   "knn_rank": NaN,
+   "popularity_rank": NaN,
+   "fda_approval": null,
+   "post_snapshot": null,
+   "source": null
+  },
+  {
+   "target": "Crohn Disease",
+   "drug": "risankizumab",
+   "in_primekg": true,
+   "primekg_name": "Risankizumab",
+   "already_labelled": false,
+   "rank_s0": 37.0,
+   "rank_s1": 45.0,
+   "rank_s2": 30.0,
+   "mean_rank": 37.333333333333336,
+   "percentile_top": 0.47,
+   "knn_rank": 30.0,
+   "popularity_rank": 951.0,
+   "fda_approval": "2022-06-17",
+   "post_snapshot": true,
+   "source": "https://news.abbvie.com/2022-06-17-SKYRIZI-R-risankizumab-rzaa-Receives-FDA-Approval-as-the-First-and-Only-Specific-Interleukin-23-IL-23-to-Treat-Moderately-to-Severely-Active-Crohns-Disease-in-Adults"
+  },
+  {
+   "target": "Crohn Disease",
+   "drug": "upadacitinib",
+   "in_primekg": true,
+   "primekg_name": "Upadacitinib",
+   "already_labelled": false,
+   "rank_s0": 360.0,
+   "rank_s1": 533.0,
+   "rank_s2": 758.0,
+   "mean_rank": 550.3333333333334,
+   "percentile_top": 6.92,
+   "knn_rank": 127.0,
+   "popularity_rank": 1527.0,
+   "fda_approval": "2023-05-18",
+   "post_snapshot": true,
+   "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-treatment-moderately-severely-active-crohns-disease"
+  },
+  {
+   "target": "Crohn Disease",
+   "drug": "mirikizumab",
+   "in_primekg": false,
+   "primekg_name": NaN,
+   "already_labelled": NaN,
+   "rank_s0": NaN,
+   "rank_s1": NaN,
+   "rank_s2": NaN,
+   "mean_rank": NaN,
+   "percentile_top": NaN,
+   "knn_rank": NaN,
+   "popularity_rank": NaN,
+   "fda_approval": null,
+   "post_snapshot": null,
+   "source": null
+  },
+  {
+   "target": "Crohn Disease",
+   "drug": "guselkumab",
+   "in_primekg": true,
+   "primekg_name": "Guselkumab",
+   "already_labelled": false,
+   "rank_s0": 987.0,
+   "rank_s1": 1970.0,
+   "rank_s2": 1132.0,
+   "mean_rank": 1363.0,
+   "percentile_top": 17.13,
+   "knn_rank": 5570.0,
+   "popularity_rank": 5570.0,
+   "fda_approval": "2025-03-20",
+   "post_snapshot": true,
+   "source": "https://www.hcplive.com/view/fda-approves-guselkumab-tremfya-for-crohn-disease"
+  },
+  {
+   "target": "Systemic Sclerosis",
+   "drug": "tocilizumab",
+   "in_primekg": true,
+   "primekg_name": "Tocilizumab",
+   "already_labelled": false,
+   "rank_s0": 38.0,
+   "rank_s1": 100.0,
+   "rank_s2": 35.0,
+   "mean_rank": 57.666666666666664,
+   "percentile_top": 0.72,
+   "knn_rank": 35.0,
+   "popularity_rank": 260.0,
+   "fda_approval": "2021-03-04",
+   "post_snapshot": false,
+   "source": "https://www.gene.com/media/press-releases/14897/2021-03-04/genentechs-actemra-becomes-the-first-bio"
+  },
+  {
+   "target": "Systemic Sclerosis",
+   "drug": "nintedanib",
+   "in_primekg": true,
+   "primekg_name": "Nintedanib",
+   "already_labelled": false,
+   "rank_s0": 1363.0,
+   "rank_s1": 720.0,
+   "rank_s2": 461.0,
+   "mean_rank": 848.0,
+   "percentile_top": 10.66,
+   "knn_rank": 375.0,
+   "popularity_rank": 365.0,
+   "fda_approval": "2019-09-06",
+   "post_snapshot": false,
+   "source": "https://boehringer-ingelheim.com/press-release/fda-approves-nintedanib-ssc-ild"
+  }
+ ],
+ "v4_post_snapshot": {
+  "n": 6,
+  "median_model_rank": 1103.8333333333333,
+  "median_percentile": 13.875,
+  "n_in_top_10pct": 2,
+  "n_better_than_median_rank": 5,
+  "sign_test_p_one_sided": 0.109375,
+  "median_knn_rank": 2324.5,
+  "median_popularity_rank": 2396.5,
+  "n_model_better_than_knn": 3
+ },
+ "v4_label_gap": {
+  "n": 3,
+  "median_model_rank": 848.0,
+  "median_percentile": 10.66,
+  "n_in_top_10pct": 1,
+  "n_better_than_median_rank": 3,
+  "sign_test_p_one_sided": 0.125,
+  "median_knn_rank": 375.0,
+  "median_popularity_rank": 365.0,
+  "n_model_better_than_knn": 1
+ },
+ "v5_immune_enriched_q05": {
+  "model": 0.0,
+  "random": 0.0,
+  "popularity": 0.05
+ },
+ "v5_mean_immune_pathway_targets": {
+  "model": 0.48,
+  "random": 0.25,
+  "popularity": 0.72
+ },
+ "v5_share_any_disease_gene_target": {
+  "model": 0.167,
+  "random": 0.033,
+  "popularity": 0.158
+ },
+ "v5_disease_gene_overlap_q05": {
+  "model": 0.017,
+  "random": 0.008,
+  "popularity": 0.05
+ },
+ "v7": {
+  "atc_coverage": 0.5,
+  "share_corticosteroid_of_atc_mapped": 0.567,
+  "share_antibacterial_of_atc_mapped": 0.1,
+  "share_immunosuppressant_of_atc_mapped": 0.033,
+  "share_antineoplastic_of_atc_mapped": 0.0,
+  "share_corticosteroid_by_name_all_candidates": 0.408,
+  "share_antibacterial_by_name_all_candidates": 0.208,
+  "per_target_class_counts": {
+   "Autoimmune Hepatitis": {
+    "corticosteroid": 6
+   },
+   "Crohn Disease": {
+    "corticosteroid": 6,
+    "antibacterial": 2,
+    "immunosuppressant": 1
+   },
+   "Myasthenia Gravis": {
+    "corticosteroid": 6
+   },
+   "Primary Biliary Cholangitis": {
+    "corticosteroid": 5,
+    "antibacterial": 2
+   },
+   "Sjogren Syndrome": {
+    "corticosteroid": 5,
+    "immunosuppressant": 1
+   },
+   "Systemic Sclerosis": {
+    "corticosteroid": 6,
+    "antibacterial": 2
+   }
+  },
+  "per_target_top_classes": {
+   "Autoimmune Hepatitis": [
+    [
+     "S01",
+     2
+    ],
+    [
+     "R01",
+     2
+    ],
+    [
+     "D07",
+     1
+    ],
+    [
+     "D10",
+     1
+    ]
+   ],
+   "Crohn Disease": [
+    [
+     "S01",
+     2
+    ],
+    [
+     "J01",
+     2
+    ],
+    [
+     "R01",
+     2
+    ],
+    [
+     "A07",
+     2
+    ]
+   ],
+   "Myasthenia Gravis": [
+    [
+     "N07",
+     2
+    ],
+    [
+     "S01",
+     2
+    ],
+    [
+     "R01",
+     2
+    ],
+    [
+     "D07",
+     1
+    ]
+   ],
+   "Primary Biliary Cholangitis": [
+    [
+     "A05",
+     2
+    ],
+    [
+     "S01",
+     2
+    ],
+    [
+     "J01",
+     2
+    ],
+    [
+     "D07",
+     1
+    ]
+   ],
+   "Sjogren Syndrome": [
+    [
+     "S01",
+     2
+    ],
+    [
+     "A06",
+     1
+    ],
+    [
+     "L04",
+     1
+    ],
+    [
+     "D07",
+     1
+    ]
+   ],
+   "Systemic Sclerosis": [
+    [
+     "S01",
+     2
+    ],
+    [
+     "R01",
+     2
+    ],
+    [
+     "J01",
+     2
+    ],
+    [
+     "D02",
+     1
+    ]
+   ]
+  }
+ },
+ "e_check": {
+  "n_slots": 120,
+  "labelled_in_top10": 46,
+  "unlabelled": 74,
+  "unlabelled_with_trial_A_to_C": 21,
+  "diseases_with_labelled_in_top10": 9
+ }
+}

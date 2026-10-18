@@ -1,0 +1,502 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05095103",
+    "briefTitle": "Immune Profiles in Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-10"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Stable Immunosuppressed"
+     },
+     {
+      "label": "Stable Non-immunosuppressed"
+     },
+     {
+      "label": "Refractory"
+     },
+     {
+      "label": "Healthy Controls"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04182984",
+    "briefTitle": "TheRapeutic Effect of Different immunosuppressAnts on Non-Thymoma Ocular Myasthenia Gravis: a Real-world Study"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2019-11-04"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with autoimmune ocular MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents( azathioprine, tacrolimus, Mycophenolate Mofetil)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Symptomatic Treatment, Steroids, Immunosuppressive Agents( azathioprine, tacrolimus, Mycophenolate Mofetil)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00995722",
+    "briefTitle": "Efficacy of Prednisone In the Treatment of Ocular Myasthenia"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisone + Pyridostigmine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisone"
+      ]
+     },
+     {
+      "label": "Placebo + Pyridostigmine",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisone"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04101578",
+    "briefTitle": "Clinical Prognosis and Progression of Myasthenia Gravis Patients"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-02-08"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ocular MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     },
+     {
+      "label": "Generalized MG",
+      "interventionNames": [
+       "Drug: Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Symptomatic Treatment, Steroids, Immunosuppressive Agents, Plasma Exchange(PE), Intravenous Immunoglobulin(IVIg)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01727193",
+    "briefTitle": "The Efficacy and Safety of Leflunomide or Azathioprine Therapy in Myasthenia Gravis Patients After Expand Thymectomy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Leflunomide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Leflunomide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Leflunomide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03510546",
+    "briefTitle": "Effect of Pyridostigmine (Mestinon) on Muscle Strength in Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2018-04-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Active",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pyridostigmine"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral capsule"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine"
+     },
+     {
+      "name": "Placebo oral capsule"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06723548",
+    "briefTitle": "Telitacicept and Low-dose Steroids in Refractory Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients with refractory MG treated with Telitacicept combined with low-dose steroids",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Telitacicept"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Telitacicept"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07154095",
+    "briefTitle": "A Single-Center, Randomized, Open-Label, Two-Sequence, Two-Period, Crossover Study Comparing the Pharmacokinetics and Safety of Pyridostigmine Sustained-Release and Immediate-Release Tablets Following Single and Multiple Doses in Healthy Chinese Participants"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2023-08-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "sustained-release pyridostigmine tablet",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sustained-Release Tablets"
+      ]
+     },
+     {
+      "label": "Immediate-Release Tablets",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Immediate-Release Tablets"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sustained-Release Tablets"
+     },
+     {
+      "name": "Immediate-Release Tablets"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04226170",
+    "briefTitle": "Study of Pyridostigmine With Ondansetron in Subjects With Anti-AchR Positive Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2023-11-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "treatment",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: DAS-001"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: DAS-001"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "DAS-001"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04768465",
+    "briefTitle": "Tacrolimus Combined With Low-dose Prednisone for Treatment of Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Combined Immunotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Prednisone, Tacrolimus"
+      ]
+     },
+     {
+      "label": "Tacrolimus monotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine, Prednisone, Tacrolimus"
+     },
+     {
+      "name": "Pyridostigmine, Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05694234",
+    "briefTitle": "Influences of Sugammadex on Postoperative Progress in Patients With Myasthenia Gravis Undergoing Video-assisted Thoracoscopic Thymectomy: Retrospective Study"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "sugammadex group"
+     },
+     {
+      "label": "AChEI group"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05919407",
+    "briefTitle": "Pyridostigmine and Amifampridine for Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-03-22"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Pyridostigmine",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Pyridostigmine"
+      ]
+     },
+     {
+      "label": "Placebo (pyridostigmine)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     },
+     {
+      "label": "Amifampridine (base) with modified release",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Amifampridine (base) with modified release"
+      ]
+     },
+     {
+      "label": "Placebo (amifampridine)",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine"
+     },
+     {
+      "name": "Amifampridine (base) with modified release"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,229 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00664599",
+    "briefTitle": "Rituximab for the Treatment of Severe Ocular Manifestations of Behcet's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Cytotoxic Combination"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Cytotoxic Combination"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00931957",
+    "briefTitle": "Etanercept: Single Blind Control Study in Ocular Manifestations of Behcet's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2010-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Etanercept-MTX-Prednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Etanercept, Methotrexate, Prednisolone"
+      ]
+     },
+     {
+      "label": "B, MTX-Prednisolone",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Etanercept, Methotrexate, Prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Etanercept, Methotrexate, Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00167583",
+    "briefTitle": "Interferon-alpha2a Versus Cyclosporin A for Severe Ocular Behcet's Disease (INCYTOB)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "A Cyclosporin A",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Cyclosporin A"
+      ]
+     },
+     {
+      "label": "B Interferon alpha",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Interferon-alpha2a"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cyclosporin A"
+     },
+     {
+      "name": "Interferon-alpha2a"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06925698",
+    "briefTitle": "Immunosuppressive Therapy Alone Versus Plus Oral Anticoagulation in the Treatment of VT Associated With Behcet's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Immunosuppressive Therapy + Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo plus immunosuppression"
+      ]
+     },
+     {
+      "label": "Immunosuppressive Therapy + Rivaroxaban",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rivaroxaban plus immunosupression"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Placebo plus immunosuppression"
+     },
+     {
+      "name": "Rivaroxaban plus immunosupression"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01306955",
+    "briefTitle": "The Efficacy of Methylprednisolone in the Treatment of Patients With Ocular Involvement in Behcet's Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2010-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "methylprednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylorednisolone"
+      ]
+     },
+     {
+      "label": "dextrose water 5%",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: dextrose water 5%"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "methylorednisolone"
+     },
+     {
+      "name": "dextrose water 5%"
+     }
+    ]
+   }
+  }
+ }
+]

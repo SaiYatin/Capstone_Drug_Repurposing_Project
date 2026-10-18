@@ -1,0 +1,11 @@
+{
+ "term": "\"Bleomycin\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "18501091",
+   "title": "Hodgkin lymphoma presenting with various immunologic abnormalities, including autoimmune hepatitis, Hashimoto's thyroiditis, autoimmune hemolytic anemia, and immune thrombocytopenia.",
+   "year": "2008"
+  }
+ ]
+}

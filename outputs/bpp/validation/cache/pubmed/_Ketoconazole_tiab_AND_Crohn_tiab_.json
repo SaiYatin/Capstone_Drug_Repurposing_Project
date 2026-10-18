@@ -1,0 +1,21 @@
+{
+ "term": "\"Ketoconazole\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 7,
+ "top": [
+  {
+   "pmid": "38616572",
+   "title": "Longitudinal evaluation of the cutaneous and rectal microbiota of German shepherd dogs with perianal fistulas undergoing therapy with ciclosporin and ketoconazole.",
+   "year": "2024"
+  },
+  {
+   "pmid": "15355126",
+   "title": "Pharmacokinetics of budesonide (Entocort EC) capsules for Crohn's disease.",
+   "year": "2004"
+  },
+  {
+   "pmid": "27844446",
+   "title": "Severe Infliximab-Induced Alopecia and Scalp Psoriasis in a Woman with Crohn's Disease: Dramatic Improvement after Drug Discontinuation and Treatment with Adjuvant Systemic and Topical Therapies.",
+   "year": "2016"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07085117",
+    "briefTitle": "Real World Study to Describe the Effectiveness and Safety of Teprotumumab Among Thyroid Eye Disease Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2025-07-02"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Teprotumumab",
+      "interventionNames": [
+       "Drug: Teprotumumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Teprotumumab"
+     }
+    ]
+   }
+  }
+ }
+]

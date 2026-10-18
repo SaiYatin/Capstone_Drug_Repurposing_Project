@@ -1,0 +1,1684 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07265258",
+    "briefTitle": "A Study of Teprotumumab N01 in Subjects With Active Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-07-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Intravenous glucocorticoid (IVGC) group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "Teprotumumab N01 group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Teprotumumab N01"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Teprotumumab N01"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04391439",
+    "briefTitle": "Heart Rhythm After Intravenous Methylprednisolone Administration"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "active, moderate-to-severe GO",
+      "interventionNames": [
+       "Drug: Intravenous Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Intravenous Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06693856",
+    "briefTitle": "Multi-center Prospective Clinical Study on Glucocorticoid Pulse Therapy for Graves' Ophthalmopathy (GO)"
+   },
+   "statusModule": {
+    "overallStatus": "ENROLLING_BY_INVITATION",
+    "startDateStruct": {
+     "date": "2025-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "a high-dose group",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: High-Dose Methylprednisolone"
+      ]
+     },
+     {
+      "label": "a low-dose group",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Low-Dose Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "High-Dose Methylprednisolone"
+     },
+     {
+      "name": "Low-Dose Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06510114",
+    "briefTitle": "A Randomized Clinical Trial of Intravenous Methylprednisolone With 2 Protocols in Patients With Graves Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: methylprednisolone(daily scheme)"
+      ]
+     },
+     {
+      "label": "Group B",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone(weekly scheme)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "methylprednisolone(daily scheme)"
+     },
+     {
+      "name": "methylprednisolone(weekly scheme)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05012033",
+    "briefTitle": "Evaluation of High Dose Prednisolone Pharmacokinetics in the Acute and Chronic Setting"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-04-12"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group A",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     },
+     {
+      "label": "Group B",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     },
+     {
+      "label": "Group C",
+      "interventionNames": [
+       "Other: No intervention - prednisolone is taken as part if routine clinical care."
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "No intervention - prednisolone is taken as part if routine clinical care."
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04096612",
+    "briefTitle": "The Therapeutic Effect of Dysthyroid Optic Neuropathy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Orbital decompression combined MPT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Orbital decompression combined with MPT"
+      ]
+     },
+     {
+      "label": "Separate MPT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Orbital decompression combined with MPT"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Orbital decompression combined with MPT"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03107078",
+    "briefTitle": "Using A Novel Classification System in Intravenous GCs Therapy of TAO: A Multi-central, Randomized, Open, Superior Trial"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2016-10-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group Ia",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     },
+     {
+      "label": "Group Ib",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     },
+     {
+      "label": "Group IIa",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     },
+     {
+      "label": "Group IIb",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Glucocorticoids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04876534",
+    "briefTitle": "Tocilizumab in Active Moderate-severe Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2019-12-18"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Tocilizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Tocilizumab 20 Mg/mL Intravenous Solution"
+      ]
+     },
+     {
+      "label": "Methylprednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: MethylPREDNISolone Injectable Solution"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tocilizumab 20 Mg/mL Intravenous Solution"
+     },
+     {
+      "name": "MethylPREDNISolone Injectable Solution"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05199103",
+    "briefTitle": "Antithymocyte Globulin as a Second Line Therapy in Graves Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2020-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rabbit antithymocyte globulin (rATG)",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: rabbit anti-thymocyte globulin"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "rabbit anti-thymocyte globulin"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07594912",
+    "briefTitle": "Teprotumumab N01 Versus Methylprednisolone After Urgent Orbital Decompression for Dysthyroid Optic Neuropathy"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Postoperative Sequential Teprotumumab N01",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Teprotumumab N01"
+      ]
+     },
+     {
+      "label": "Postoperative Sequential Intravenous Methylprednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Intravenous Methylprednisolone (IVMP)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Teprotumumab N01"
+     },
+     {
+      "name": "Intravenous Methylprednisolone (IVMP)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03098225",
+    "briefTitle": "A Trial to Evaluate the Efficacy of Orbital Radiotherapy in Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Radiotherapy",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Radiation: Orbital radiotherapy",
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "No Radiotherapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Orbital radiotherapy"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03122847",
+    "briefTitle": "Glucocorticoids and Bone in Graves' Ophthalmopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-06-07"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03948191",
+    "briefTitle": "99Tc-MDP for Thyroid-Associated Ophthalmopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-10-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone(ivMP)",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "99Tc-MDP",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: 99Tc-MDP(99Technetium-Methylenediphosphonate Injection)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "99Tc-MDP(99Technetium-Methylenediphosphonate Injection)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01114503",
+    "briefTitle": "A Safety and Tolerability Study of Otelixizumab in Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2010-07-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Part A",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Otelixizumab - low dose",
+       "Drug: Otelixizumab - medium low dose",
+       "Drug: Otelixizumab - medium high dose",
+       "Drug: Otelixizumab - high dose"
+      ]
+     },
+     {
+      "label": "Part B - Otelixizumab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Otelixizumab"
+      ]
+     },
+     {
+      "label": "Part B - Methylprednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Otelixizumab - low dose"
+     },
+     {
+      "name": "Otelixizumab - medium low dose"
+     },
+     {
+      "name": "Otelixizumab - medium high dose"
+     },
+     {
+      "name": "Otelixizumab - high dose"
+     },
+     {
+      "name": "Otelixizumab"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00595335",
+    "briefTitle": "Trial of Rituximab for Graves' Ophthalmopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2008-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Saline"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Saline"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07152366",
+    "briefTitle": "Efficacy and Safety of Sequential Hormone Therapy and Tetuzumab Therapy in Patients With Moderate to Severe TAO in the Active Stage After Glucocorticoid Treatment."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "GC\u22656g : IBI311",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: IBI311"
+      ]
+     },
+     {
+      "label": "GC<6g : IBI311",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: IBI311"
+      ]
+     },
+     {
+      "label": "GC<6g : Glucocorticoid",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IBI311"
+     },
+     {
+      "name": "Glucocorticoids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03303053",
+    "briefTitle": "Efficacy and Safety of Cholestyramine and Prednisolone as Adjunctive Therapy in Treatment of Overt Hyperthyroidism"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-05-11"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Group1:Cholestyramine+standard treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Cholestyramine Powder 4g"
+      ]
+     },
+     {
+      "label": "Group2:Prednisolone+standard treatment",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisolone"
+      ]
+     },
+     {
+      "label": "Group 3: Standard treatment alone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Standard treatment"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Cholestyramine Powder 4g"
+     },
+     {
+      "name": "Prednisolone"
+     },
+     {
+      "name": "Standard treatment"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02378298",
+    "briefTitle": "Rituximab (RTX) Therapy in Patients With Active TAO"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-12"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Non-responder RTX+MTX",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "Relapse RTX+MTX",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     },
+     {
+      "label": "Relapse po GC+MTX",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: peroral methylprednisolone and Methotrexate"
+      ]
+     },
+     {
+      "label": "Responders without relapse",
+      "type": "NO_INTERVENTION"
+     },
+     {
+      "label": "Methylprednisolone iv",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Iv Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Iv Methylprednisolone"
+     },
+     {
+      "name": "peroral methylprednisolone and Methotrexate"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05345119",
+    "briefTitle": "Sirolimus in Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-01-15"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sirolimus",
+      "interventionNames": [
+       "Drug: Sirolimus"
+      ]
+     },
+     {
+      "label": "Methylprednisolone",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sirolimus"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00348413",
+    "briefTitle": "Thyroid Treatment Trial"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2003-06"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Intravenous Methylprednisolone + Oral Methotrexate vs Intravenous Methylprednisolone + Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03667157",
+    "briefTitle": "Liver Function After Intravenous Methylprednisolone Administration"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "moderate-to-severe Graves Orbitopathy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: every week IVMP therapy"
+      ]
+     },
+     {
+      "label": "Dysthyroid Orbit Neuropathy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: very high doses IVMP therapy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "every week IVMP therapy"
+     },
+     {
+      "name": "very high doses IVMP therapy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04936854",
+    "briefTitle": "Sirolimus vs Corticosteroids in Treatment of Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2023-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sirolimus",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Sirolimus 1 mg Oral Tablet"
+      ]
+     },
+     {
+      "label": "Corticosteroids",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sirolimus 1 mg Oral Tablet"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05793359",
+    "briefTitle": "Comparison of the Effectiveness of Two Glucocorticoid Regimens for Treatment of Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-07-25"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Modified monthly regimen",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "Weekly regimen",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05532072",
+    "briefTitle": "Rapamycin Plus Methylprednisolone Versus Methylprednisolone Alone in Active, Moderate-to-severe Graves' Orbitopathy."
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2022-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "The group of Meprednone combined with Rapamycin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rapamycin",
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "The group of Meprednone alone",
+      "type": "OTHER",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rapamycin"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01579539",
+    "briefTitle": "The Effect of Intravenous Glucocorticoids on the Tearfilm in Eyes With Thyroid-associated Ophthalmopathy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-06-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Patients",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone",
+       "Drug: Esomeprazole"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "Esomeprazole"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07152340",
+    "briefTitle": "The Safety and Efficacy of Sequential Hormone Therapy and IBI311 Therapy in Patients With Active Moderate to Severe TAO in the Initial Treatment."
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2025-04-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "IBI311",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: IBI311"
+      ]
+     },
+     {
+      "label": "Glucocorticoid",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Glucocorticoids"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "IBI311"
+     },
+     {
+      "name": "Glucocorticoids"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01969019",
+    "briefTitle": "A Prospective, Randomized Trial of Intravenous Pulse Versus Sequential Steroid Therapy for Patients With Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2010-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "methylprednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone, prednisone"
+      ]
+     },
+     {
+      "label": "methylprednisolone plus prednisone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone, prednisone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "methylprednisolone, prednisone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04776993",
+    "briefTitle": "A Conservative vs an Ablative Approach for Treatment of Hyperthyroidism in Patients With Graves' Orbitopathy"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-03-02"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methimazole",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methimazole"
+      ]
+     },
+     {
+      "label": "Thyroid ablation",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Radioiodine or thyroidectomy"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methimazole"
+     },
+     {
+      "name": "Radioiodine or thyroidectomy"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07762105",
+    "briefTitle": "Study of Atorvastatin and Its Effects in Clinical and Radiological Aspects in Patients With Moderate-to-Severe Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-08-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone only",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone (IVMP)"
+      ]
+     },
+     {
+      "label": "Methylprednisolone plus Atorvastatin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Atorvastatin",
+       "Drug: methylprednisolone (IVMP)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Atorvastatin"
+     },
+     {
+      "name": "methylprednisolone (IVMP)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04598815",
+    "briefTitle": "Sirolimus for Graves' Orbitopathy (GO)"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2023-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Sirolimus",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sirolimus"
+      ]
+     },
+     {
+      "label": "Methylprendnisolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Sirolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Sirolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03535090",
+    "briefTitle": "Coagulation After Intravenous Methylprednisolone Administration"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "active, moderate-to-severe GO",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT05049603",
+    "briefTitle": "A Randomized Clinical Trial to Evaluate the Effects of Atorvastatin on Graves' Orbitopathy (GO): the STAGO-2 Study"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2024-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Atorvastatin",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Atorvastatin 20mg"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Atorvastatin 20mg"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03110848",
+    "briefTitle": "Effects of Atorvastatin in Graves' Orbitopathy (GO)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-06-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Statins",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Atorvastatin",
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "No statins",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Atorvastatin"
+     },
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00312325",
+    "briefTitle": "Effect of High-Dose Prednisolone (Solu Dacortin\u00ae) Treatment on Choroidal and Optic Nerve Head Blood Flow in Humans"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2005-07"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "interventions": [
+     {
+      "name": "Prednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03590080",
+    "briefTitle": "Impact of Intravenous Methylprednisolone Treatment on Blood Pressure"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "active, moderate-to-severe GO",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02339142",
+    "briefTitle": "Combined Radiotherapy and Intravenous Steroids for Early Progressive Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2015-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Combined radiotherapy and iv corticosteroid",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Radiation: External beam radiotherapy",
+       "Drug: intravenous corticosteroids (methylprednisolone)"
+      ]
+     },
+     {
+      "label": "iv Corticosteroid",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: intravenous corticosteroids (methylprednisolone)"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "External beam radiotherapy"
+     },
+     {
+      "name": "intravenous corticosteroids (methylprednisolone)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT06367517",
+    "briefTitle": "Tocilizumab in Corticosteroid-Resistant Graves' Orbitopathy (Thyroid Eye Disease)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-05-20"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Graves' orbitopathy",
+      "interventionNames": [
+       "Drug: Tocilizumab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Tocilizumab"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT02422368",
+    "briefTitle": "The Effect of a New Antioxidant Combination (ASTED) on Moderate to Severe Thyroid Eye Disease"
+   },
+   "statusModule": {
+    "overallStatus": "WITHDRAWN",
+    "startDateStruct": {
+     "date": "2022-09-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone + ASTED",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Methylprednisolone + ASTED"
+      ]
+     },
+     {
+      "label": "Methylprednisolone + Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone +Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone + ASTED"
+     },
+     {
+      "name": "Methylprednisolone +Placebo"
+     }
+    ]
+   }
+  }
+ }
+]

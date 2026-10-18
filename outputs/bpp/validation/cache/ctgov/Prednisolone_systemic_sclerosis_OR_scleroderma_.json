@@ -1,0 +1,514 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01086540",
+    "briefTitle": "Rituximab for Treatment of Systemic Sclerosis-Associated Pulmonary Arterial Hypertension (SSc-PAH)"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2011-06-24"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Rituximab+PAH SOC",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Rituximab",
+       "Diagnostic Test: CMRI",
+       "Drug: prednisone",
+       "Drug: methylprednisolone",
+       "Drug: diphenhydramine",
+       "Drug: acetaminophen"
+      ]
+     },
+     {
+      "label": "Placebo + PAH SOC",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: Placebo",
+       "Diagnostic Test: CMRI",
+       "Drug: prednisone",
+       "Drug: methylprednisolone",
+       "Drug: diphenhydramine",
+       "Drug: acetaminophen"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Placebo"
+     },
+     {
+      "name": "CMRI"
+     },
+     {
+      "name": "prednisone"
+     },
+     {
+      "name": "methylprednisolone"
+     },
+     {
+      "name": "diphenhydramine"
+     },
+     {
+      "name": "acetaminophen"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04464434",
+    "briefTitle": "Upfront Autologous HSCT Versus Immunosuppression in Early Diffuse Cutaneous Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2020-09-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Upfront autologous HSCT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Upfront autologous HSCT"
+      ]
+     },
+     {
+      "label": "Immunosuppressive therapy",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Procedure: Upfront autologous HSCT"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Upfront autologous HSCT"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03059979",
+    "briefTitle": "The Effect of High Dose Methylprednisolone on Nailfold in Early Systemic Sclerosis ( SSc )"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2017-01"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "EARLY_PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Methylprednisolone 1000 mg",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Methylprednisolone"
+      ]
+     },
+     {
+      "label": "sodium chloride",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Other: sodium chloride"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "sodium chloride"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01748084",
+    "briefTitle": "Rituximab in Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2013-04-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "NaCl",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo (NaCl)"
+      ]
+     },
+     {
+      "label": "Rituximab",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Placebo (NaCl)"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03593902",
+    "briefTitle": "Cardiac Safe Transplants for Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2018-05-17"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Hematopoietic Stem Cell Transplantation",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Rituximab",
+       "Drug: Fludarabine",
+       "Drug: Cyclophosphamide",
+       "Drug: Mesna",
+       "Drug: rATG",
+       "Drug: Methylprednisolone",
+       "Drug: G-CSF",
+       "Biological: IVIg",
+       "Biological: Autologous Stem Cells"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Rituximab"
+     },
+     {
+      "name": "Fludarabine"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Mesna"
+     },
+     {
+      "name": "rATG"
+     },
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "G-CSF"
+     },
+     {
+      "name": "IVIg"
+     },
+     {
+      "name": "Autologous Stem Cells"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03607071",
+    "briefTitle": "Outcome of Steroid Therapy for Myocardial Inflammation in Scleroderma"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-05-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Prednisolone and taper"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisolone and taper"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00379431",
+    "briefTitle": "A Protocol Based Treatment for Early and Severe Systemic Sclerosis With (Anti-CD20), Rituximab"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2006-11-27"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Administration of rituximab and methylprednisolone",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Administration of rituximab and methylprednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Administration of rituximab and methylprednisolone"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03708718",
+    "briefTitle": "Prednisolone in Early Diffuse Systemic Sclerosis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2017-12-21"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE2"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Prednisolone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Prednisolone 5 mg"
+      ]
+     },
+     {
+      "label": "Placebo oral capsule; From August 2020 - 'no additional treatment'",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo oral capsule; From August 2020 'no additional treatment'"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Prednisolone 5 mg"
+     },
+     {
+      "name": "Placebo oral capsule; From August 2020 'no additional treatment'"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01445821",
+    "briefTitle": "Autologous Stem Cell Systemic Sclerosis Immune Suppression Trial"
+   },
+   "statusModule": {
+    "overallStatus": "TERMINATED",
+    "startDateStruct": {
+     "date": "2011-09-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Cyclophosphamide rATG/HSCT",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Biological: Peripheral Blood Stem Cells",
+       "Drug: Cyclophosphamide",
+       "Drug: Mesna",
+       "Drug: rATG",
+       "Drug: Methylprednisolone",
+       "Drug: Filgrastim"
+      ]
+     },
+     {
+      "label": "Cyclophosphamide rATG/Fludarabine/HSCT",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Peripheral Blood Stem Cells",
+       "Drug: Cyclophosphamide",
+       "Drug: Mesna",
+       "Drug: rATG",
+       "Drug: Methylprednisolone",
+       "Drug: Filgrastim",
+       "Drug: Fludarabine"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Peripheral Blood Stem Cells"
+     },
+     {
+      "name": "Cyclophosphamide"
+     },
+     {
+      "name": "Mesna"
+     },
+     {
+      "name": "rATG"
+     },
+     {
+      "name": "Methylprednisolone"
+     },
+     {
+      "name": "Filgrastim"
+     },
+     {
+      "name": "Fludarabine"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT03742466",
+    "briefTitle": "Local Injection of Ozone Versus Methylprednisolone Acetate in Carpal Tunnel Syndrome of Scleroderma Patients"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2018-11-10"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Ozone",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Ozone"
+      ]
+     },
+     {
+      "label": "methylprednisolone acetate",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: methylprednisolone acetate"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Ozone"
+     },
+     {
+      "name": "methylprednisolone acetate"
+     }
+    ]
+   }
+  }
+ }
+]

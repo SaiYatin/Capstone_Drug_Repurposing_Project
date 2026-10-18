@@ -1,0 +1,16 @@
+{
+ "term": "\"Ampicillin\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "34966624",
+   "title": "Infective Aortic Valve Endocarditis in a Patient With Mixed Connective Tissue Disease.",
+   "year": "2021"
+  },
+  {
+   "pmid": "17313025",
+   "title": "[A case of bacterial pneumonia caused by Streptococcus dysgalactiae subsp. equisimilis, showing patchy consolidations resembling organizing pneumonia].",
+   "year": "2007"
+  }
+ ]
+}

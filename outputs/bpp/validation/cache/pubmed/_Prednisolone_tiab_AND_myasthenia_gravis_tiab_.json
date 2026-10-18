@@ -1,0 +1,21 @@
+{
+ "term": "\"Prednisolone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 386,
+ "top": [
+  {
+   "pmid": "36121672",
+   "title": "Efficacy and Safety of Rituximab for New-Onset Generalized Myasthenia Gravis: The RINOMAX Randomized Clinical Trial.",
+   "year": "2022"
+  },
+  {
+   "pmid": "32793107",
+   "title": "Management of Juvenile Myasthenia Gravis.",
+   "year": "2020"
+  },
+  {
+   "pmid": "39798959",
+   "title": "Efgartigimod efficacy and safety in refractory myasthenia gravis: UK's first real-world experience.",
+   "year": "2025"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "term": "\"Darunavir\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "30722751",
+   "title": "A case of late presentation of darunavir-related cholestatic hepatitis.",
+   "year": "2019"
+  }
+ ]
+}

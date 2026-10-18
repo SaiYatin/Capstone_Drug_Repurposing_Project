@@ -1,0 +1,46 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07221838",
+    "briefTitle": "A Study to Investigate OCS Tapering in Adult Participants With Generalized Myasthenia Gravis Treated With Ravulizumab"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-03-04"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE4"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Oral Corticosteroid Tapering Schedule",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Procedure: Oral Corticosteroid Tapering Schedule",
+       "Drug: Ravulizumab",
+       "Drug: Prednisone/Prednisolone"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Oral Corticosteroid Tapering Schedule"
+     },
+     {
+      "name": "Ravulizumab"
+     },
+     {
+      "name": "Prednisone/Prednisolone"
+     }
+    ]
+   }
+  }
+ }
+]

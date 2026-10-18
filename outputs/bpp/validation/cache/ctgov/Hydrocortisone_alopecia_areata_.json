@@ -1,0 +1,48 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01453686",
+    "briefTitle": "A Trial of Clobetasol Propionate Versus Hydrocortisone in Children With Alopecia Areata"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2002-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Hydrocortisone 1%",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Hydrocortisone 1%"
+      ]
+     },
+     {
+      "label": "Clobetasol Propionate 0.05%",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Clobetasol Propionate 0.05%"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Hydrocortisone 1%"
+     },
+     {
+      "name": "Clobetasol Propionate 0.05%"
+     }
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "term": "\"Aluminium\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "14616161",
+   "title": "Systematic review: ursodeoxycholic acid--adverse effects and drug interactions.",
+   "year": "2003"
+  },
+  {
+   "pmid": "7085352",
+   "title": "Copper accumulation in primary biliary cirrhosis. An electron and X-ray microanalytical study.",
+   "year": "1982"
+  },
+  {
+   "pmid": "1991643",
+   "title": "Successful control of bleeding from gastric antral vascular ectasia (watermelon stomach) by laser photocoagulation.",
+   "year": "1991"
+  }
+ ]
+}

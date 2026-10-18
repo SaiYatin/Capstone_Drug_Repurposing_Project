@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 12,
+ "top": [
+  {
+   "pmid": "38422196",
+   "title": "",
+   "year": "2024"
+  },
+  {
+   "pmid": "28116181",
+   "title": "Artifactual Hypoglycaemia in Systemic Sclerosis and Raynaud's Phenomenon: A Clinical Case Report and Short Review.",
+   "year": "2016"
+  },
+  {
+   "pmid": "15243755",
+   "title": "Erythema multiforme major following docetaxel.",
+   "year": "2005"
+  }
+ ]
+}

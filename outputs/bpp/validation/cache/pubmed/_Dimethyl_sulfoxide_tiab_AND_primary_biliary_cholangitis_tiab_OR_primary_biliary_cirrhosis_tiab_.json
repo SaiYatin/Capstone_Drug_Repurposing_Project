@@ -1,0 +1,11 @@
+{
+ "term": "\"Dimethyl sulfoxide\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "24371721",
+   "title": "Quantitation of fibroblast activation protein (FAP)-specific protease activity in mouse, baboon and human fluids and organs.",
+   "year": "2013"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "11986025",
+   "title": "Hepatocellular carcinoma: a prime indication for living donor liver transplantation.",
+   "year": "2002"
+  },
+  {
+   "pmid": "14745320",
+   "title": "Adult living donor liver transplantation for patients with hepatocellular carcinoma: extending UNOS priority criteria.",
+   "year": "2004"
+  },
+  {
+   "pmid": "26746426",
+   "title": "Differentiation of sarcoidosis-lymphoma\u00a0syndrome lesions: a case report on the use of two different positron emission tomography tracers.",
+   "year": "2016"
+  }
+ ]
+}

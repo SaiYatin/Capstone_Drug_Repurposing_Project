@@ -1,0 +1,21 @@
+{
+ "term": "\"Hydrocortisone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "932425",
+   "title": "Immunosuppression of experimental autoimmune myasthenia gravis by hydrocortisone and azathioprine.",
+   "year": "1976"
+  },
+  {
+   "pmid": "33389160",
+   "title": "Steroid-induced rapid recovery from respiratory dysfunction in a patient with myasthenia gravis after spinal anesthesia.",
+   "year": "2021"
+  },
+  {
+   "pmid": "1537395",
+   "title": "Glucocorticoid increases acetylcholinesterase and organization of the postsynaptic membrane in innervated cultured human muscle.",
+   "year": "1992"
+  }
+ ]
+}

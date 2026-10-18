@@ -1,0 +1,11 @@
+{
+ "term": "\"Cefuroxime\"[tiab] AND (\"Crohn\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "7721244",
+   "title": "Enteral and parenteral anti-endotoxin treatment in experimental colitis.",
+   "year": "1994"
+  }
+ ]
+}

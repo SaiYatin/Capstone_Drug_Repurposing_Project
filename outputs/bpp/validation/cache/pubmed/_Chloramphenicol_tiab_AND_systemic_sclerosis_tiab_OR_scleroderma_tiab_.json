@@ -1,0 +1,21 @@
+{
+ "term": "\"Chloramphenicol\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "9840121",
+   "title": "Deconjugation ability of bacteria isolated from the jejunal fluid of patients with progressive systemic sclerosis and its gastric pH.",
+   "year": "1998"
+  },
+  {
+   "pmid": "8119541",
+   "title": "Toxic oil stimulates collagen synthesis acting at a pretranslational level in cultured fat-storing cells.",
+   "year": "1994"
+  },
+  {
+   "pmid": "16319104",
+   "title": "Constitutively phosphorylated Smad3 interacts with Sp1 and p300 in scleroderma fibroblasts.",
+   "year": "2006"
+  }
+ ]
+}

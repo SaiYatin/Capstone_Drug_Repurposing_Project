@@ -1,0 +1,21 @@
+{
+ "term": "\"Chenodeoxycholic acid\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 76,
+ "top": [
+  {
+   "pmid": "31643938",
+   "title": "Bile Acids.",
+   "year": "2012"
+  },
+  {
+   "pmid": "35068796",
+   "title": "A Current Understanding of Bile Acids in Chronic Liver Disease.",
+   "year": "2022"
+  },
+  {
+   "pmid": "40545045",
+   "title": "The history and future of bile acid therapies.",
+   "year": "2025"
+  }
+ ]
+}

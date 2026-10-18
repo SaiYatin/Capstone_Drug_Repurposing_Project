@@ -1,0 +1,280 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07818291",
+    "briefTitle": "An Open-label, Dose-escalation Phase Ib Study of EA5 Injection in Adults With Anti-AChR Antibody-Positive Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "NOT_YET_RECRUITING",
+    "startDateStruct": {
+     "date": "2026-09-15"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE1"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Administration of low-dose EA5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EA5"
+      ]
+     },
+     {
+      "label": "Administration of mid-dose EA5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EA5"
+      ]
+     },
+     {
+      "label": "Administration of high-dose EA5",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: EA5"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "EA5"
+     },
+     {
+      "name": "EA5"
+     },
+     {
+      "name": "EA5"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT01727193",
+    "briefTitle": "The Efficacy and Safety of Leflunomide or Azathioprine Therapy in Myasthenia Gravis Patients After Expand Thymectomy"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2012-09"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Azathioprine",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Azathioprine"
+      ]
+     },
+     {
+      "label": "Leflunomide",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: Leflunomide"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Azathioprine"
+     },
+     {
+      "name": "Leflunomide"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04768465",
+    "briefTitle": "Tacrolimus Combined With Low-dose Prednisone for Treatment of Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "UNKNOWN",
+    "startDateStruct": {
+     "date": "2021-01-01"
+    }
+   },
+   "designModule": {
+    "studyType": "OBSERVATIONAL"
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Combined Immunotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Prednisone, Tacrolimus"
+      ]
+     },
+     {
+      "label": "Tacrolimus monotherapy",
+      "interventionNames": [
+       "Drug: Pyridostigmine, Tacrolimus"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Pyridostigmine, Prednisone, Tacrolimus"
+     },
+     {
+      "name": "Pyridostigmine, Tacrolimus"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04980495",
+    "briefTitle": "An Open-label Study to Investigate the Clinical Efficacy of Different Dosing Regimens of Efgartigimod IV in Patients With Generalized Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-12-16"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Efgartigimod IV - continuous regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Efgartigimod IV"
+      ]
+     },
+     {
+      "label": "Efgartigimod IV - cyclic regimen",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Biological: Efgartigimod IV"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Efgartigimod IV"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT07249632",
+    "briefTitle": "A Study of Telitacicept in Patients With Ocular Myasthenia Gravis (OMG)"
+   },
+   "statusModule": {
+    "overallStatus": "RECRUITING",
+    "startDateStruct": {
+     "date": "2026-01-13"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "Telitacicept",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: Telitacicept"
+      ]
+     },
+     {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "Telitacicept"
+     },
+     {
+      "name": "Placebo"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT00683969",
+    "briefTitle": "A Study to Assess the Effect of CellCept (Mycophenolate Mofetil) and Reduced Corticosteroids in Controlling Symptoms of Myasthenia Gravis"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2004-08"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "PHASE3"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "1",
+      "type": "EXPERIMENTAL",
+      "interventionNames": [
+       "Drug: mycophenolate mofetil (CellCept)"
+      ]
+     },
+     {
+      "label": "2",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: placebo"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "mycophenolate mofetil (CellCept)"
+     },
+     {
+      "name": "placebo"
+     }
+    ]
+   }
+  }
+ }
+]

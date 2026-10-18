@@ -1,0 +1,21 @@
+{
+ "term": "\"Amphotericin B\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 11,
+ "top": [
+  {
+   "pmid": "41245252",
+   "title": "Cryptococcosis in patients with myasthenia gravis: clinical characteristics and management strategy.",
+   "year": "2025"
+  },
+  {
+   "pmid": "40874431",
+   "title": "Multiple concurrent opportunistic infections in patient with myasthenia gravis: A case report.",
+   "year": "2025"
+  },
+  {
+   "pmid": "33612571",
+   "title": "Visceral leishmaniasis masquerading as drug-induced pancytopenia in myasthenia gravis.",
+   "year": "2021"
+  }
+ ]
+}

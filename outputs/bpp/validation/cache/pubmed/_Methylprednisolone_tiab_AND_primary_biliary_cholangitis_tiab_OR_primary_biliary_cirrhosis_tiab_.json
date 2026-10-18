@@ -1,0 +1,21 @@
+{
+ "term": "\"Methylprednisolone\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 34,
+ "top": [
+  {
+   "pmid": "34447236",
+   "title": "Autoimmune enteropathy and primary biliary cholangitis after proctocolectomy for ulcerative colitis: A case report and review of the literature.",
+   "year": "2021"
+  },
+  {
+   "pmid": "30213010",
+   "title": "Primary biliary cholangitis associated with drug-induced liver injury and alcoholic liver fibrosis: A case report.",
+   "year": "2018"
+  },
+  {
+   "pmid": "10630500",
+   "title": "Methylprednisolone administration in primary biliary cirrhosis increases cholic acid turnover, synthesis, and deoxycholate concentration in bile.",
+   "year": "1999"
+  }
+ ]
+}

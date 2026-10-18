@@ -1,0 +1,11 @@
+{
+ "term": "\"Fluoxymesterone\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 1,
+ "top": [
+  {
+   "pmid": "4017676",
+   "title": "Experience with surgery for thymoma associated with pure red blood cell aplasia. Report of three cases.",
+   "year": "1985"
+  }
+ ]
+}

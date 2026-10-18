@@ -1,0 +1,21 @@
+{
+ "term": "\"Ciprofloxacin\"[tiab] AND (\"myasthenia gravis\"[tiab])",
+ "count": 18,
+ "top": [
+  {
+   "pmid": "40166923",
+   "title": "Frequency and Severity of Myasthenia Gravis Exacerbations Associated With the Use of Ciprofloxacin, Levofloxacin, and Azithromycin.",
+   "year": "2025"
+  },
+  {
+   "pmid": "2224281",
+   "title": "Ciprofloxacin and myasthenia gravis.",
+   "year": "1990"
+  },
+  {
+   "pmid": "9017031",
+   "title": "Myasthenia gravis and ciprofloxacin.",
+   "year": "1996"
+  }
+ ]
+}

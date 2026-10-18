@@ -1,0 +1,21 @@
+{
+ "term": "\"Methylprednisolone\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 83,
+ "top": [
+  {
+   "pmid": "31680966",
+   "title": "Methylprednisolone Decreases Mitochondria-Mediated Apoptosis and Autophagy Dysfunction in Hepatocytes of Experimental Autoimmune Hepatitis Model via the Akt/mTOR Signaling.",
+   "year": "2019"
+  },
+  {
+   "pmid": "37029249",
+   "title": "Corticosteroid-refractory autoimmune hepatitis after COVID-19 vaccination: a case report and literature review.",
+   "year": "2023"
+  },
+  {
+   "pmid": "36267822",
+   "title": "Case of recurring Kikuchi disease and autoimmune hepatitis.",
+   "year": "2022"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "term": "\"Ampicillin\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 2,
+ "top": [
+  {
+   "pmid": "39371856",
+   "title": "A Case of Persistent Pasteurella multocida Cellulitis Complicated With Large Endocarditis Vegetation.",
+   "year": "2024"
+  },
+  {
+   "pmid": "20671045",
+   "title": "Spontaneous bacterial peritonitis due to Listeria monocytogenes: importance of enrichment culture.",
+   "year": "2010"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"systemic sclerosis\"[tiab] OR \"scleroderma\"[tiab])",
+ "count": 4,
+ "top": [
+  {
+   "pmid": "35715007",
+   "title": "Profibrotic Role of Inducible Heat Shock Protein 90\u03b1 Isoform in Systemic Sclerosis.",
+   "year": "2022"
+  },
+  {
+   "pmid": "15725240",
+   "title": "Chemotherapy-induced scleroderma: a pleiomorphic syndrome.",
+   "year": "2005"
+  },
+  {
+   "pmid": "23607751",
+   "title": "Mesenchymal stem cells (MSCs) from scleroderma patients (SSc) preserve their immunomodulatory properties although senescent and normally induce T regulatory cells (Tregs) with a functional phenotype: implications for cellular-based therapy.",
+   "year": "2013"
+  }
+ ]
+}

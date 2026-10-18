@@ -1,0 +1,48 @@
+[
+ {
+  "protocolSection": {
+   "identificationModule": {
+    "nctId": "NCT04793646",
+    "briefTitle": "N-acetylcysteine for Primary Sj\u00f6gren's Syndrome"
+   },
+   "statusModule": {
+    "overallStatus": "COMPLETED",
+    "startDateStruct": {
+     "date": "2021-04-30"
+    }
+   },
+   "designModule": {
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+     "NA"
+    ]
+   },
+   "armsInterventionsModule": {
+    "armGroups": [
+     {
+      "label": "N-acetylcysteine syrup",
+      "type": "ACTIVE_COMPARATOR",
+      "interventionNames": [
+       "Drug: N-acetylcysteine syrup"
+      ]
+     },
+     {
+      "label": "Placebo syrup",
+      "type": "PLACEBO_COMPARATOR",
+      "interventionNames": [
+       "Drug: Placebo syrup"
+      ]
+     }
+    ],
+    "interventions": [
+     {
+      "name": "N-acetylcysteine syrup"
+     },
+     {
+      "name": "Placebo syrup"
+     }
+    ]
+   }
+  }
+ }
+]

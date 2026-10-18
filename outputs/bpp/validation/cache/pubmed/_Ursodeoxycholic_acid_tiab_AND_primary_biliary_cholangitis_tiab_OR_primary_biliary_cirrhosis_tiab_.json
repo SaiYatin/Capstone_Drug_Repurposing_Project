@@ -1,0 +1,21 @@
+{
+ "term": "\"Ursodeoxycholic acid\"[tiab] AND (\"primary biliary cholangitis\"[tiab] OR \"primary biliary cirrhosis\"[tiab])",
+ "count": 1641,
+ "top": [
+  {
+   "pmid": "39159277",
+   "title": "Elafibranor.",
+   "year": "2012"
+  },
+  {
+   "pmid": "31643632",
+   "title": "Ursodiol (Ursodeoxycholic Acid).",
+   "year": "2012"
+  },
+  {
+   "pmid": "39110316",
+   "title": "Elafibranor: First Approval.",
+   "year": "2024"
+  }
+ ]
+}

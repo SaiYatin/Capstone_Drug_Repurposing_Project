@@ -233,10 +233,62 @@ def analyse(root: Path, data: Path) -> dict:
     out["run_info"] = {name: run_info(path) for name, path in runs.items()}
     out["sparsity"] = sparsity(per, data)
     out["case_studies"] = case_studies(runs)
+    out["metrics_table"] = metrics_table(per, groups, data)
+    out["validation"] = load_validation(root)
     out["transfer"] = transfer_curve(per, data, out["tests"])
     out["transfer"]["last_checkpoint"] = transfer_last_checkpoint(root, out.get("transfer", {}), out["tests"])
     out["test_split"] = test_split(per, out["tests"])
     return out
+
+
+# ----------------------------------------------------------------------------- reader-friendly metrics table
+TABLE_METRICS = [("_any10", "Any@10"), ("hits@1", "H@1"), ("hits@10", "H@10"), ("hits@50", "H@50"), ("auroc", "AUROC"),
+                 ("auroc_hard", r"AUROC$_\text{hard}$"), ("auroc_degmatch", r"AUROC$_\text{deg}$"), ("auprc", "AUPRC"),
+                 ("mrr", "MRR"), ("mean_rank", "Mean rank")]
+
+
+def metrics_table(per: dict, groups: dict, data: Path) -> dict:
+    """Model vs baselines on test / valid / targets for every metric, plus the random references a
+    non-specialist needs: expected any-hit@10 and AUPRC (= prevalence) of a random ranking, and the
+    median rank of a known drug."""
+    from bpp.kg import CompactKG
+    n_drugs = len(CompactKG.load(str(data)).drug_ids())
+    sets = {"test": (("test_main", "test"), "base:test"), "valid": (("main", "valid"), "base:targets"),
+            "targets": (("main", "targets"), "base:targets")}
+    out = {"n_drugs": n_drugs}
+    for s, (mkey, bpref) in sets.items():
+        rows = {}
+        if mkey in per:
+            rows["model"] = {k: (macro(per[mkey], k) or {}).get("mean") for k, _ in TABLE_METRICS}
+        for b in ("random", "popularity", "disease_knn"):
+            if (f"{bpref}:{b}", s) in per:
+                rows[b] = {k: (macro(per[(f"{bpref}:{b}", s)], k) or {}).get("mean") for k, _ in TABLE_METRICS}
+        ref = per.get(mkey) or per.get((f"{bpref}:random", s)) or {}
+        npos = np.array([m["n_pos"] for m in ref.values()], float)
+        if len(npos):
+            exp_any10 = np.mean([1 - np.prod([(n_drugs - n - i) / (n_drugs - i) for i in range(10)]) for n in npos])
+            out[s] = {"rows": rows, "n_diseases": int(len(npos)), "mean_positives": float(npos.mean()),
+                      "prevalence": float(np.mean(npos / n_drugs)), "random_expected_any10": float(exp_any10)}
+        grp = groups.get(mkey[0], {})
+        ranks = [r for res in grp.values() if s in res for m in res[s]["per_disease"].values() for r in m["_ranks"]]
+        if ranks and s in out:
+            ranks = np.array(ranks)
+            out[s]["median_rank_known_drug"] = float(np.median(ranks))
+            out[s]["share_known_drugs_rank1"] = float(np.mean(ranks <= 1))
+    return out
+
+
+def load_validation(root: Path) -> dict:
+    vdir = root / "validation"
+    if not (vdir / "validation_summary.json").exists():
+        return {}
+    v = json.loads((vdir / "validation_summary.json").read_text())
+    import pandas as pd
+    if (vdir / "temporal_validation.csv").exists():
+        v["temporal_rows"] = pd.read_csv(vdir / "temporal_validation.csv").to_dict(orient="records")
+    if (vdir / "explanations_main_s0.json").exists():
+        v["explanations"] = json.loads((vdir / "explanations_main_s0.json").read_text())
+    return v
 
 
 # ----------------------------------------------------------------------------- transfer curve (Aim 1)
@@ -465,6 +517,87 @@ def table_ablation(S):
     return "\n".join(lines)
 
 
+def table_metrics(S):
+    M = S.get("metrics_table", {})
+    head = " & ".join(lab for _, lab in TABLE_METRICS)
+    lines = [r"\begin{tabular}{ll" + "c" * len(TABLE_METRICS) + "}", r"\toprule", f"Set & Method & {head}\\\\", r"\midrule"]
+    names = {"random": "Random", "popularity": "Popularity", "disease_knn": "Disease $k$NN", "model": r"\textbf{\sysname}"}
+    titles = {"test": "Test (68, never selected)", "valid": "Validation (68)", "targets": "Rare targets (6)"}
+    for s in ("test", "valid", "targets"):
+        if s not in M:
+            continue
+        first = True
+        for k in ("random", "popularity", "disease_knn", "model"):
+            r = M[s]["rows"].get(k)
+            if not r:
+                continue
+            cells = []
+            for m, _ in TABLE_METRICS:
+                v = r.get(m)
+                cells.append("--" if v is None else (f"{100 * v:.0f}\\%" if m == "_any10" else
+                                                     (f"{v:,.0f}" if m == "mean_rank" else f"{v:.3f}")))
+            lines.append((titles[s] if first else "") + f" & {names[k]} & " + " & ".join(cells) + r"\\")
+            first = False
+        lines.append(r"\midrule" if s != "targets" else "")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(l for l in lines if l)
+
+
+def table_validation(S):
+    V = S.get("validation", {})
+    if not V:
+        return "% validation pending"
+    def pct(d, g):
+        x = d.get(g)
+        x = x["share"] if isinstance(x, dict) else x
+        return "--" if x is None else f"{100 * x:.0f}\\%"
+    rows = [("Trial evidence, grade A--C (ClinicalTrials.gov)", V["v2_trial_grade_A_to_C_among_novel"]),
+            ("Trial evidence, phase $\\geq$2 (grade A--B)", V["v2_trial_grade_A_or_B_among_novel"]),
+            ("Any PubMed co-mention", V["v3_any_pubmed_hit_among_novel"]),
+            ("PubMed title supports use", V["v3_supporting_among_novel"]),
+            ("PubMed title reports harm / no benefit", V["v3_against_among_novel"]),
+            ("$\\geq$1 drug target among disease genes", V["v5_share_any_disease_gene_target"])]
+    n = {g: V["v2_trial_grade_A_to_C_among_novel"][g]["n"] for g in ("model", "random", "popularity")}
+    lines = [r"\begin{tabular}{lccc}", r"\toprule",
+             f"Evidence for unlabelled candidates & \\sysname{{}} top-20 ($n$={n['model']}) & Popularity top-20 ($n$={n['popularity']}) & Random ($n$={n['random']})\\\\",
+             r"\midrule"]
+    for lab, d in rows:
+        lines.append(f"{lab} & {pct(d, 'model')} & {pct(d, 'popularity')} & {pct(d, 'random')}\\\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
+def table_temporal(S):
+    rows = [r for r in S.get("validation", {}).get("temporal_rows", []) if r.get("in_primekg") and not r.get("already_labelled")]
+    short = {"Primary Biliary Cholangitis": "PBC", "Myasthenia Gravis": "MG", "Crohn Disease": "Crohn", "Systemic Sclerosis": "SSc"}
+    lines = [r"\begin{tabular}{llccccc}", r"\toprule",
+             r"Drug & Target & FDA approval & \sysname{} rank & Top \% & $k$NN rank & Popularity rank\\", r"\midrule"]
+    for post in (True, False):
+        for r in sorted([r for r in rows if r.get("post_snapshot") == post], key=lambda r: r["mean_rank"]):
+            lines.append(f"{r['primekg_name']} & {short.get(r['target'], r['target'])} & {str(r.get('fda_approval'))[:7]} & "
+                         f"{r['mean_rank']:,.0f} & {r['percentile_top']:.1f} & {int(r['knn_rank']):,} & {int(r['popularity_rank']):,}\\\\")
+        if post:
+            lines.append(r"\midrule")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
+def table_paths(S, picks=(("Myasthenia Gravis", "Pyridostigmine"), ("Primary Biliary Cholangitis", "Ursodeoxycholic acid"),
+                          ("Myasthenia Gravis", "Amifampridine"), ("Crohn Disease", "Ciprofloxacin"))):
+    ex = {(e["target"], e["drug"]): e for e in S.get("validation", {}).get("explanations", [])}
+    lines = [r"\begin{tabular}{p{0.97\linewidth}}", r"\toprule"]
+    for t, d in picks:
+        e = ex.get((t, d))
+        if not e or not e["paths"]:
+            continue
+        p = e["paths"][0]
+        steps = [p["nodes"][0]] + [f"$\\xrightarrow{{\\text{{{rel.replace('_', ' ').replace('^-1', '$^{-1}$').replace('->', r'$\to$')}}}}}$ {n}"
+                                   for rel, n in zip(p["relations"], p["nodes"][1:])]
+        lines.append(r"\textbf{" + f"{d} for {t}" + r"}: " + " ".join(steps).replace("&", r"\&") + r"\\[2pt]")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
 PENDING_MACROS = [
     *(f"{c}{f}Mrr" for c in ("TrA", "TrActl", "TrD", "TrCE") for f in ("E", "EKnn", "Targets", "TargetsKnn")),
     *(f"{p}{t}" for t in ("TrAActlE", "TrAActlEKnn", "TrAActlTargets", "TrCEDE", "TrCEAE", "TrDAE", "TestKnn")
@@ -589,6 +722,52 @@ def macros(S) -> str:
             nc(f"{kt}AnyTen", f"{100 * T[k]['_any10']['mean']:.0f}")
     if T.get("model_valid"):
         nc("TestModelValidMrr", f"{T['model_valid']['mean']:.3f}")
+    M = S.get("metrics_table", {})
+    for s, st in (("test", "Test"), ("valid", "Valid"), ("targets", "Targets")):
+        if s in M:
+            nc(f"RandExpAnyTen{st}", f"{100 * M[s]['random_expected_any10']:.1f}")
+            nc(f"Prevalence{st}", f"{M[s]['prevalence']:.4f}")
+            nc(f"MeanPos{st}", f"{M[s]['mean_positives']:.1f}")
+            if "median_rank_known_drug" in M[s]:
+                nc(f"MedRank{st}", f"{M[s]['median_rank_known_drug']:.0f}")
+                nc(f"RankOneShare{st}", f"{100 * M[s]['share_known_drugs_rank1']:.0f}")
+            for k, kt in (("model", "Model"), ("disease_knn", "Knn"), ("popularity", "Pop"), ("random", "Rand")):
+                r = M[s]["rows"].get(k)
+                if r:
+                    nc(f"Tab{kt}{st}AnyTen", f"{100 * r['_any10']:.0f}")
+                    if r.get("auprc") is not None:
+                        nc(f"Tab{kt}{st}Auprc", f"{r['auprc']:.3f}")
+                    if r.get("auroc") is not None:
+                        nc(f"Tab{kt}{st}Auroc", f"{r['auroc']:.3f}")
+    V = S.get("validation", {})
+    if V:
+        def sh(d, g):
+            x = d[g]
+            return f"{100 * (x['share'] if isinstance(x, dict) else x):.0f}"
+        for key, tag in (("v2_trial_grade_A_to_C_among_novel", "ValTrial"), ("v2_trial_grade_A_or_B_among_novel", "ValTrialAB"),
+                         ("v3_any_pubmed_hit_among_novel", "ValLitHit"), ("v3_supporting_among_novel", "ValLitSup"),
+                         ("v3_against_among_novel", "ValLitAgainst"), ("v5_share_any_disease_gene_target", "ValDisGene")):
+            for g, gt in (("model", "Model"), ("random", "Rand"), ("popularity", "Pop")):
+                nc(f"{tag}{gt}", sh(V[key], g))
+        nc("ValNovelN", str(V["v2_trial_grade_A_to_C_among_novel"]["model"]["n"]))
+        e = V.get("e_check")
+        if e:
+            nc("EcheckLabelled", str(e["labelled_in_top10"])); nc("EcheckDiseases", str(e["diseases_with_labelled_in_top10"]))
+            nc("EcheckNovel", str(e["unlabelled"])); nc("EcheckNovelTrial", str(e["unlabelled_with_trial_A_to_C"]))
+        nc("ValGradeA", str(V["v2_grade_counts_model_novel"].get("A", 0)))
+        nc("ValSteroidShare", f"{100 * V['v7']['share_corticosteroid_by_name_all_candidates']:.0f}")
+        nc("ValAntibioticShare", f"{100 * V['v7']['share_antibacterial_by_name_all_candidates']:.0f}")
+        nc("ValAtcCoverage", f"{100 * V['v7']['atc_coverage']:.0f}")
+        for tag, key in (("TempPost", "v4_post_snapshot"), ("TempGap", "v4_label_gap")):
+            t = V.get(key)
+            if t:
+                nc(f"{tag}N", str(t["n"])); nc(f"{tag}MedRank", f"{t['median_model_rank']:,.0f}".replace(",", "{,}"))
+                nc(f"{tag}MedPct", f"{t['median_percentile']:.0f}"); nc(f"{tag}Better", str(t["n_better_than_median_rank"]))
+                nc(f"{tag}P", ptext(t["sign_test_p_one_sided"])); nc(f"{tag}KnnMedRank", f"{t['median_knn_rank']:,.0f}".replace(",", "{,}"))
+                nc(f"{tag}BetterKnn", str(t["n_model_better_than_knn"]))
+        for r in V.get("temporal_rows", []):
+            if r.get("in_primekg"):
+                nc("TempRank" + re.sub(r"[^A-Za-z]", "", r["drug"].title()), f"{r['mean_rank']:,.0f}".replace(",", "{,}"))
     # numbers that only exist after Kaggle session 4: print "[pending]" so the papers compile meanwhile
     defined = {re.match(r"\\newcommand\{\\(\w+)\}", l).group(1) for l in out}
     for name in PENDING_MACROS:
@@ -632,6 +811,10 @@ def main():
     (paper / "tab_ablation.tex").write_text(table_ablation(S))
     (paper / "tab_transfer_curve.tex").write_text(table_transfer_curve(S))
     (paper / "tab_test.tex").write_text(table_test(S))
+    (paper / "tab_metrics.tex").write_text(table_metrics(S))
+    (paper / "tab_validation.tex").write_text(table_validation(S))
+    (paper / "tab_temporal.tex").write_text(table_temporal(S))
+    (paper / "tab_paths.tex").write_text(table_paths(S))
     print("runs:", ", ".join(S["runs_found"]))
     for k, v in S["tests"].items():
         print(f"  {k:28s} diff {v['mean_diff']:+.3f} [{v['diff_ci95'][0]:+.3f},{v['diff_ci95'][1]:+.3f}] "

@@ -1,0 +1,21 @@
+{
+ "term": "\"Doxorubicin\"[tiab] AND (\"autoimmune hepatitis\"[tiab])",
+ "count": 3,
+ "top": [
+  {
+   "pmid": "18501091",
+   "title": "Hodgkin lymphoma presenting with various immunologic abnormalities, including autoimmune hepatitis, Hashimoto's thyroiditis, autoimmune hemolytic anemia, and immune thrombocytopenia.",
+   "year": "2008"
+  },
+  {
+   "pmid": "29252180",
+   "title": "Folliculotropic Mycosis Fungoides Associated with Autoimmune Hepatitis.",
+   "year": "2017"
+  },
+  {
+   "pmid": "36676701",
+   "title": "Hepatic Involvement of Diffuse Large B-Cell Lymphoma Mimicking Antinuclear Antibody-Negative Autoimmune Hepatitis Diagnosed by Liver Biopsy.",
+   "year": "2022"
+  }
+ ]
+}
