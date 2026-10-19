@@ -116,25 +116,33 @@ We use PrimeKG~\cite{chandak2023primekg} (Table~\ref{tab:data}). Its 27 non-ther
 \caption{Dataset and split statistics.}
 \label{tab:data}
 \small
-\begin{tabular}{lr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lr@{}}
 \toprule
-Nodes (drugs / diseases) & 129,375 (7,957 / 17,080) \\
-Context edges (relation types) & 4,007,433 (27; 54 with inverses) \\
+Nodes & 129,375 \\
+\quad drugs / diseases & 7,957 / 17,080 \\
+Context edges & 4,007,433 \\
+\quad relation types (with inverses) & 27 (54) \\
 Therapeutic pairs & 42,631 \\
-\quad indication / contraindication / off-label & 9,388 / 30,675 / 2,568 \\
+\quad indication & 9,388 \\
+\quad contraindication & 30,675 \\
+\quad off-label & 2,568 \\
 \midrule
-\emph{Targets protocol}: train query diseases & 1,206 \\
+\emph{Targets protocol} \\
+\quad train query diseases & 1,206 \\
 \quad validation diseases (positives) & 68 (450) \\
 \quad target families held out & 6 \\
-\emph{No-autoimmune protocol}: train / valid. & 1,194 / 66 \\
-\quad autoimmune nodes removed from training & 123 \\
-\quad autoimmune-area test diseases (positives) & 21 (147) \\
+\emph{No-autoimmune protocol} \\
+\quad train / validation diseases & 1,194 / 66 \\
+\quad autoimmune nodes removed & 123 \\
+\quad area test diseases (positives) & 21 (147) \\
 \midrule
-\emph{Transfer}: train diseases A / A$'$ / C$_E$ & 11 / 11 / 1,185 \\
+\emph{Transfer}: train diseases \\
+\quad A / A$'$ / C$_E$ & 11 / 11 / 1,185 \\
 \quad held-out autoimmune test set $E$ & 12 \\
 \emph{Test split}: train / test diseases & 1,065 / 68 \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}
 
 \subsection{Labels}
