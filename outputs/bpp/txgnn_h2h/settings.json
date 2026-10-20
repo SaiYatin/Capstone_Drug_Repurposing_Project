@@ -1,0 +1,11 @@
+{
+ "tx_commit": "0e0203c3939f7d12da27aaf10e55daaff5424023",
+ "split": "autoimmune",
+ "split_random_seed": 0,
+ "tx_seed": 1,
+ "our_seed": 0,
+ "pretrain_max_h": 3.0,
+ "finetune_epochs": 500,
+ "dgl_ok": true,
+ "ours_finished": true
+}

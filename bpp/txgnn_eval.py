@@ -84,6 +84,9 @@ def main():
         o = next(iter(res["ours"].values()))["per_disease_txgnn"]
         t = next(iter(res["txgnn"].values()))["per_disease_txgnn"]
         res["paired"] = {k: compare(o, t, k) for k in ("recall@100", "auroc", "auprc")}
+        of = next(iter(res["ours"].values()))["per_disease_full"]
+        tf = next(iter(res["txgnn"].values()))["per_disease_full"]
+        res["paired_full"] = {k: compare(of, tf, k) for k in ("mrr", "hits@10", "hits@100", "auroc")}
     Path(a.out).write_text(json.dumps(res, indent=1))
     for who, d in (("ours", res["ours"]), ("txgnn", res["txgnn"])):
         for run, r in d.items():

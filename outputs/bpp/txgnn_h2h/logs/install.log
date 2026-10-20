@@ -1,0 +1,170 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 94.9 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/txgnn_h2h/txenv
+Activate with: source /tmp/txgnn_h2h/txenv/bin/activate
+Using Python 3.11.17 environment at: /tmp/txgnn_h2h/txenv
+Resolved 22 packages in 739ms
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading torch (760.4MiB)
+Downloading triton (199.7MiB)
+Downloading nvidia-cusolver-cu12 (122.5MiB)
+Downloading sympy (6.0MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-nvjitlink-cu12 (20.1MiB)
+Downloading nvidia-cublas-cu12 (346.2MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (23.5MiB)
+Downloading nvidia-curand-cu12 (53.7MiB)
+Downloading nvidia-cufft-cu12 (201.7MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.2MiB)
+Downloading nvidia-cusparse-cu12 (197.8MiB)
+Downloading nvidia-nccl-cu12 (168.1MiB)
+ Downloaded networkx
+ Downloaded sympy
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded triton
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 22 packages in 35.22s
+Installed 22 packages in 215ms
+ + filelock==3.32.3
+ + fsspec==2026.7.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + nvidia-cublas-cu12==12.4.2.65
+ + nvidia-cuda-cupti-cu12==12.4.99
+ + nvidia-cuda-nvrtc-cu12==12.4.99
+ + nvidia-cuda-runtime-cu12==12.4.99
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.2.0.44
+ + nvidia-curand-cu12==10.3.5.119
+ + nvidia-cusolver-cu12==11.6.0.99
+ + nvidia-cusparse-cu12==12.3.0.142
+ + nvidia-nccl-cu12==2.20.5
+ + nvidia-nvjitlink-cu12==12.4.99
+ + nvidia-nvtx-cu12==12.4.99
+ + sympy==1.14.0
+ + torch==2.4.0+cu124
+ + triton==3.0.0
+ + typing-extensions==4.16.0
+Using Python 3.11.17 environment at: /tmp/txgnn_h2h/txenv
+Resolved 63 packages in 3.65s
+Downloading numpy (17.4MiB)
+Downloading scipy (33.7MiB)
+Downloading pygments (1.2MiB)
+Downloading goatools (15.0MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading pydantic-core (2.1MiB)
+Downloading aiohttp (1.8MiB)
+Downloading pillow (6.8MiB)
+Downloading torch-geometric (1.3MiB)
+Downloading fonttools (5.2MiB)
+Downloading matplotlib (9.4MiB)
+Downloading pandas (11.5MiB)
+Downloading statsmodels (11.5MiB)
+Downloading scikit-learn (8.9MiB)
+ Downloaded pygments
+ Downloaded torch-geometric
+ Downloaded kiwisolver
+ Downloaded aiohttp
+ Downloaded pydantic-core
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded scikit-learn
+ Downloaded matplotlib
+ Downloaded pandas
+ Downloaded statsmodels
+ Downloaded goatools
+ Downloaded numpy
+ Downloaded scipy
+Prepared 58 packages in 7.27s
+Installed 58 packages in 1.53s
+ + aiohappyeyeballs==2.7.1
+ + aiohttp==3.14.5
+ + aiosignal==1.4.0
+ + annotated-types==0.8.0
+ + attrs==26.1.0
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + cloudpickle==3.1.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + et-xmlfile==2.0.0
+ + fonttools==4.67.0
+ + formulaic==1.2.2
+ + frozenlist==1.8.0
+ + ftpretty==0.4.0
+ + goatools==1.6.6
+ + idna==3.20
+ + interface-meta==2.0.1
+ + joblib==1.6.0
+ + kiwisolver==1.5.1
+ + markdown-it-py==4.2.0
+ + matplotlib==3.11.2
+ + mdurl==0.1.2
+ + multidict==7.1.0
+ + narwhals==2.27.1
+ + numpy==1.26.4
+ + openpyxl==3.1.5
+ + packaging==26.3
+ + pandas==1.5.3
+ + patsy==1.0.3
+ + pillow==13.0.0
+ + propcache==0.5.4
+ + psutil==7.2.2
+ + pydantic==2.14.1
+ + pydantic-core==2.50.1
+ + pydot==4.0.1
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + python-dateutil==2.9.0.post0
+ + pytz==2026.5
+ + pyyaml==6.0.3
+ + requests==2.34.2
+ + rich==15.0.0
+ + scikit-learn==1.9.1
+ + scipy==1.17.1
+ + seaborn==0.13.2
+ + setuptools==84.2.0
+ + six==1.17.0
+ + statsmodels==0.15.0
+ + threadpoolctl==3.7.0
+ + torch-geometric==2.8.1
+ + tqdm==4.70.1
+ + typing-inspection==0.4.4
+ + urllib3==2.8.0
+ + wrapt==2.5.1
+ + xlsxwriter==3.2.9
+ + xxhash==4.0.2
+ + yarl==1.25.1
+Using Python 3.11.17 environment at: /tmp/txgnn_h2h/txenv
+Resolved 1 package in 53ms
+Downloading dgl (331.7MiB)
+ Downloaded dgl
+Prepared 1 package in 5.62s
+Installed 1 package in 42ms
+ + dgl==2.4.0+cu124
+Using Python 3.11.17 environment at: /tmp/txgnn_h2h/txenv
+Resolved 1 package in 121ms
+Downloading torchdata (2.6MiB)
+ Downloaded torchdata
+Prepared 1 package in 124ms
+Installed 1 package in 3ms
+ + torchdata==0.8.0
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+DGL_OK 2.4.0+cu124 2.4.0+cu124 3.11.17
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+/tmp/txgnn_h2h/txenv/lib/python3.11/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(

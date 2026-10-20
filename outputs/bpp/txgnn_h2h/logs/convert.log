@@ -1,0 +1,11 @@
+{
+ "nodes": 129312,
+ "context_edges": 3430198,
+ "relations": 27,
+ "therapeutic": 37550,
+ "train_diseases": 637,
+ "valid_diseases": 34,
+ "eval_diseases": 13,
+ "test_pairs": 75,
+ "candidate_drugs": 1798
+}

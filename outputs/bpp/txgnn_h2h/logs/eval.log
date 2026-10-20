@@ -1,0 +1,10 @@
+/kaggle/working/txgnn_h2h/code/bpp/kg.py:112: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  a = torch.sparse_coo_tensor(torch.stack([rows, cols]), vals, (n, n)).coalesce()
+/kaggle/working/txgnn_h2h/code/bpp/kg.py:113: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  return a.to_sparse_csr()
+graph: 129,312 nodes, 3,430,198 context edges, 60 relations (incl. inverse) [1.1s]
+parameters: 68,226
+/kaggle/working/txgnn_h2h/runs/ours_s0: (13, 7957) -> /kaggle/working/txgnn_h2h/results/ours_s0.npz
+aligned 13 diseases, 0 missing in TxGNN output
+ours   ours_s0                n=13  TxGNN-protocol Recall@100 0.475 AUROC 0.746 AUPRC 0.101 | full MRR 0.061
+txgnn  txgnn_s1               n=13  TxGNN-protocol Recall@100 0.474 AUROC 0.909 AUPRC 0.147 | full MRR 0.026

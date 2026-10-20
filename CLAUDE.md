@@ -32,7 +32,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
 | Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
-| TxGNN head-to-head (20 Oct) | **READY, not yet run.** `kaggle/run_txgnn.py` (separate notebook, Internet ON, T4×2, needs the NEW biopathnet-pp-v3 dataset version from `kaggle/biopathnet-pp-v3.zip`). Results → copy `/kaggle/working/txgnn_h2h/results/*` to `outputs/bpp/txgnn_h2h/`, run analyze, fix the 2 TxGNN `RECHECK` comments (journal §"Head-to-head with TxGNN", conf discussion) |
+| TxGNN head-to-head | **DONE 21 Oct** (Kaggle, results (5).zip) → `outputs/bpp/txgnn_h2h/`; papers updated (journal §"Head-to-head with TxGNN" + abstract sentence, conf discussion); no TxGNN RECHECK left |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
@@ -86,6 +86,23 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 - NOT done / could not verify: no LaTeX compiler (tectonic/MiKTeX need a download → not installed; Overleaf zip
   `outputs/paper/v3_latest.zip` instead) → page counts unmeasured (conf ≈5 pp, journal may exceed 11 pp by word
   count); test split still 1 seed (session 5 optional); literature labels not human-verified.
+
+**TxGNN head-to-head RESULTS (21 Oct, verified; 1 seed each; Kaggle h2h.json reproduced locally byte-for-byte in summaries):**
+- Run: DGL OK, TxGNN full pretrain epoch 1.27 h (cap NOT hit), finetune 500 ep 0.14 h (val AUROC still rising at
+  ep 480); ours early-stopped (best ep 13, valid MRR 0.186). Test = 13 area diseases with indications, 75 pairs;
+  TxGNN candidates 1,798 drugs. TxGNN official eval Recall@100 0.474 = our re-implementation (published 0.338,
+  different split draw).
+- Coverage handicap (coverage.json): split has 1,299 non-test diseases with indications; ours trained on 637 (+34
+  valid) because build_txgnn holds out every disease with ANY TxGNN test edge (+families). Stated in papers.
+- TxGNN protocol: R@100 0.475 vs 0.474 (tie, p 0.83); AUROC 0.746 vs 0.909 (TxGNN better, −0.163, CI −0.245..−0.080,
+  p 0.003, 10/13); AUPRC 0.101 vs 0.147 (n.s., p 0.46).
+- Full ranking (all 7,957): H@100 0.398 vs 0.155 (+0.243, CI +0.089..+0.414, p 0.031 → significant); AUROC 0.910
+  vs 0.736 (+0.174, p 0.002 → significant); MRR 0.061 vs 0.026 (11/13 wins, p 0.033 but CI −0.034..+0.105 → NOT
+  significant by our rule).
+- Why: only 16% of TxGNN's full top-100 are drugs with any indication (ours 99%); TxGNN's protocol filters them out.
+  Paper wording: "neither model dominates; first data point (1 seed, 13 diseases)".
+- Possible follow-up: retrain ours with the diseases that only have random (non-area) test edges kept in training
+  (needs build_txgnn to drop just those test edges from the graph), more seeds for both.
 
 **TxGNN head-to-head design (20 Oct; `bpp/build_txgnn.py`, `bpp/txgnn_eval.py`, `kaggle/run_txgnn.py`, test 8/8):**
 - TxGNN's own code (git commit 0e0203c, not pip) generates its `autoimmune` disease-area split; its random test edges

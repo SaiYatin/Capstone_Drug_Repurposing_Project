@@ -1,11 +1,11 @@
-\begin{tabular}{lccccc}
+\begin{tabular}{lcccccc}
 \toprule
- & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{2}{c}{full ranking}\\
-\cmidrule(lr){2-4}\cmidrule(lr){5-6}
-Method & R@100 & AUROC & AUPRC & MRR & H@10\\
+ & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{3}{c}{full ranking}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Method & R@100 & AUROC & AUPRC & MRR & H@100 & AUROC\\
 \midrule
-TxGNN, published (5 seeds) & 0.338 & -- & -- & -- & --\\
-TxGNN, re-run (this split) & \multicolumn{5}{c}{pending}\\
-\textbf{\sysname} (this split) & \multicolumn{5}{c}{pending}\\
+TxGNN, published (5 seeds) & 0.338 & -- & -- & -- & -- & --\\
+TxGNN, re-run (this split) & 0.474 & 0.909 & 0.147 & 0.026 & 0.155 & 0.736\\
+\sysname (this split) & 0.475 & 0.746 & 0.101 & 0.061 & 0.398 & 0.910\\
 \bottomrule
 \end{tabular}

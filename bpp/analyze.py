@@ -257,7 +257,7 @@ def load_txgnn_h2h(root: Path) -> dict:
     h = json.loads((d / "h2h.json").read_text())
     out = {"settings": json.loads((d / "settings.json").read_text()) if (d / "settings.json").exists() else {},
            "split_info": json.loads((d / "split_info.json").read_text()) if (d / "split_info.json").exists() else {},
-           "paired": h.get("paired", {})}
+           "paired": h.get("paired", {}), "paired_full": h.get("paired_full", {})}
     for who in ("ours", "txgnn"):
         if h.get(who):
             out[who] = next(iter(h[who].values()))["summary"]
@@ -265,6 +265,27 @@ def load_txgnn_h2h(root: Path) -> dict:
     if off.exists():
         rows = json.loads(off.read_text()).get("rev_indication", [])
         out["txgnn_official"] = {name: {"mean": m, "sd": sd} for name, m, sd in rows}
+    proto = json.loads((d / "txgnn_protocol.json").read_text()) if (d / "txgnn_protocol.json").exists() else {}
+    if proto:
+        out["n_candidates"], out["n_test_pairs"] = len(proto["candidate_drugs"]), len(proto["test_pairs"])
+        # share of each model's full-ranking top 100 that are drugs with >= 1 indication (TxGNN's candidate set)
+        for who, f in (("ours", "ours_s0.npz"), ("txgnn", "txgnn_s1.npz")):
+            if (d / f).exists():
+                z = np.load(d / f)
+                cand = np.isin(z["drugs"], proto["candidate_drugs"])
+                out[f"{who}_top100_indicated_share"] = float(np.mean([cand[np.argsort(-s)[:100]].mean() for s in z["scores"]]))
+    if (d / "splits.json").exists():
+        sp = json.loads((d / "splits.json").read_text())
+        out["n_train_diseases"], out["n_valid_diseases"] = len(sp["train_diseases"]), len(sp["valid_diseases"])
+    if (d / "coverage.json").exists():
+        out["coverage"] = json.loads((d / "coverage.json").read_text())
+    log = d / "logs" / "txgnn_train.log"
+    if log.exists():
+        for stage in ("pretrain", "finetune"):
+            m = re.search(rf"### {stage} ([\d.]+) h", log.read_text(errors="replace"))
+            if m:
+                out[f"txgnn_{stage}_h"] = float(m.group(1))
+        out["txgnn_pretrain_capped"] = "### PRETRAIN CAP" in log.read_text(errors="replace")
     return out
 
 
@@ -637,12 +658,16 @@ PENDING_MACROS = [
     "TrAPathsEMrr", "TrActlPathsEMrr",
     *(f"{p}TrAActlPathsE" for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
     "TestMrr", "TestHitsTen", "TestAnyTen", "TestModelValidMrr", "KnnTestMrr", "KnnTestHitsTen", "KnnTestAnyTen",
-    "TxhN", "TxhPairs", "TxhTxOfficialRecall",
-    *(f"Txh{w}{k}" for w in ("Ours", "Tx") for k in ("Recall", "RecallTen", "Auroc", "Auprc", "Mrr", "HitsTen")),
-    *(f"Txh{p}{k}" for k in ("Recall", "Auroc", "Auprc") for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Losses")),
+    "TxhN", "TxhPairs", "TxhTxOfficialRecall", "TxhCand", "TxhTrainDis", "TxhValidDis", "TxhPretrainH", "TxhFinetuneH",
+    "TxhOursIndShare", "TxhTxIndShare", "TxhNonTestDis",
+    *(f"Txh{w}{k}" for w in ("Ours", "Tx") for k in ("Recall", "RecallTen", "Auroc", "Auprc", "Mrr", "HitsTen",
+                                                       "HitsHund", "FullAuroc")),
+    *(f"Txh{p}{k}" for k in ("Recall", "Auroc", "Auprc", "FullMrr", "FullHitsHund", "FullAuroc")
+      for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Losses")),
 ]
 TXH_KEYS = (("Recall", "txgnn_recall@100"), ("RecallTen", "txgnn_recall@10"), ("Auroc", "txgnn_auroc"),
-            ("Auprc", "txgnn_auprc"), ("Mrr", "full_mrr"), ("HitsTen", "full_hits@10"))
+            ("Auprc", "txgnn_auprc"), ("Mrr", "full_mrr"), ("HitsTen", "full_hits@10"),
+            ("HitsHund", "full_hits@100"), ("FullAuroc", "full_auroc"))
 
 
 def _ci(r):
@@ -681,16 +706,17 @@ def table_test(S):
 
 def table_txgnn(S):
     H = S.get("txgnn_h2h", {})
-    lines = [r"\begin{tabular}{lccccc}", r"\toprule",
-             r" & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{2}{c}{full ranking}\\",
-             r"\cmidrule(lr){2-4}\cmidrule(lr){5-6}",
-             r"Method & R@100 & AUROC & AUPRC & MRR & H@10\\", r"\midrule",
-             f"TxGNN, published (5 seeds) & {TXGNN_PUBLISHED_RECALL100:.3f} & -- & -- & -- & --" + r"\\"]
-    for who, lab in (("txgnn", "TxGNN, re-run (this split)"), ("ours", r"\textbf{\sysname} (this split)")):
+    lines = [r"\begin{tabular}{lcccccc}", r"\toprule",
+             r" & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{3}{c}{full ranking}\\",
+             r"\cmidrule(lr){2-4}\cmidrule(lr){5-7}",
+             r"Method & R@100 & AUROC & AUPRC & MRR & H@100 & AUROC\\", r"\midrule",
+             f"TxGNN, published (5 seeds) & {TXGNN_PUBLISHED_RECALL100:.3f} & -- & -- & -- & -- & --" + r"\\"]
+    for who, lab in (("txgnn", "TxGNN, re-run (this split)"), ("ours", r"\sysname (this split)")):
         r = H.get(who)
         lines.append(f"{lab} & " + (" & ".join(f3((r.get(k) or {}).get("mean")) for k in
-                                               ("txgnn_recall@100", "txgnn_auroc", "txgnn_auprc", "full_mrr", "full_hits@10"))
-                                    if r else r"\multicolumn{5}{c}{pending}") + r"\\")
+                                               ("txgnn_recall@100", "txgnn_auroc", "txgnn_auprc", "full_mrr",
+                                                "full_hits@100", "full_auroc"))
+                                    if r else r"\multicolumn{6}{c}{pending}") + r"\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
     return "\n".join(lines)
 
@@ -836,12 +862,24 @@ def macros(S) -> str:
             for k, key in TXH_KEYS:
                 if H[who].get(key):
                     nc(f"Txh{wt}{k}", f"{H[who][key]['mean']:.3f}")
-    if H.get("split_info"):
-        nc("TxhPairs", str(H["split_info"].get("test_diseases_indication", "")))
+    if H.get("n_test_pairs"):
+        nc("TxhPairs", str(H["n_test_pairs"])); nc("TxhCand", f"{H['n_candidates']:,}".replace(",", "{,}"))
+    if H.get("n_train_diseases"):
+        nc("TxhTrainDis", str(H["n_train_diseases"])); nc("TxhValidDis", str(H["n_valid_diseases"]))
+    if H.get("coverage"):
+        nc("TxhNonTestDis", f"{H['coverage']['non_test_diseases_with_indications']:,}".replace(",", "{,}"))
+    for stage, tag in (("pretrain", "TxhPretrainH"), ("finetune", "TxhFinetuneH")):
+        if H.get(f"txgnn_{stage}_h") is not None:
+            nc(tag, f"{H[f'txgnn_{stage}_h']:.2f}")
+    for who, tag in (("ours", "TxhOursIndShare"), ("txgnn", "TxhTxIndShare")):
+        if H.get(f"{who}_top100_indicated_share") is not None:
+            nc(tag, f"{100 * H[f'{who}_top100_indicated_share']:.0f}")
     if H.get("txgnn_official", {}).get("Recall@100"):
         nc("TxhTxOfficialRecall", f"{H['txgnn_official']['Recall@100']['mean']:.3f}")
-    for k, key in (("Recall", "recall@100"), ("Auroc", "auroc"), ("Auprc", "auprc")):
-        c = H.get("paired", {}).get(key)
+    for k, key, src in (("Recall", "recall@100", "paired"), ("Auroc", "auroc", "paired"), ("Auprc", "auprc", "paired"),
+                        ("FullMrr", "mrr", "paired_full"), ("FullHitsHund", "hits@100", "paired_full"),
+                        ("FullAuroc", "auroc", "paired_full")):
+        c = H.get(src, {}).get(key)
         if c:
             nc(f"TxhDiff{k}", f"{c['mean_diff']:+.3f}"); nc(f"TxhDiffLo{k}", f"{c['diff_ci95'][0]:+.3f}")
             nc(f"TxhDiffHi{k}", f"{c['diff_ci95'][1]:+.3f}"); nc(f"TxhPwil{k}", ptext(c["p_wilcoxon_two_sided"]))

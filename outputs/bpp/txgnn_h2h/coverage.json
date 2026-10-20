@@ -1,0 +1,9 @@
+{
+ "source": "converted KG kg_txgnn_autoimmune from the Kaggle run (results (5).zip), computed 21 Oct 2026",
+ "diseases_with_indications": 1312,
+ "eval_diseases": 13,
+ "non_test_diseases_with_indications": 1299,
+ "ours_train": 637,
+ "ours_valid": 34,
+ "note": "bpp.build_txgnn held out every disease with any TxGNN test edge (plus families) so no test edge enters our message graph"
+}
