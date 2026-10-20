@@ -250,9 +250,10 @@ def fetch_txgnn(log):
             urllib.request.urlretrieve(TX_TARBALL, tgz)
             break
         except OSError as e:
-            with open(log, "a") as f:
-                f.write(f"TxGNN download attempt {attempt + 1} failed: {e}\n")
+            print(f"TxGNN download attempt {attempt + 1} failed: {e}", flush=True)
             time.sleep(15)
+    else:
+        raise RuntimeError(f"could not download {TX_TARBALL}")
     with tarfile.open(tgz) as t:
         top = t.getmembers()[0].name.split("/")[0]
         t.extractall(SCRATCH, filter="data")
@@ -292,7 +293,22 @@ def install(tx_env):
     return False
 
 
+def check_internet():
+    import urllib.error
+    import urllib.request
+    for url in ("https://codeload.github.com", "https://pypi.org/simple/", "https://dataverse.harvard.edu"):
+        try:
+            urllib.request.urlopen(url, timeout=15)
+        except urllib.error.HTTPError:
+            pass                    # the server answered (e.g. 404): the network is fine
+        except Exception as e:      # noqa: BLE001 - DNS/connection failure: no internet
+            raise SystemExit(f"\n*** NO INTERNET ({url}: {e}).\n*** In the notebook editor: Settings (right panel) -> "
+                             "Internet -> ON (needs a phone-verified Kaggle account), then Save Version again.\n")
+    print("internet OK", flush=True)
+
+
 def main():
+    check_internet()
     for d in (LOGS, OUT):
         d.mkdir(parents=True, exist_ok=True)
     write_scripts()
