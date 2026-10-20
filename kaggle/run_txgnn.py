@@ -7,7 +7,9 @@ Harvard Dataverse, DGL from data.dgl.ai). Input: the biopathnet-pp-v3 dataset (v
 bpp/build_txgnn.py and bpp/txgnn_eval.py). Paste this file into one cell, Save Version -> Save & Run All.
 
 STAGES (all heavy work runs in subprocesses, logs in /kaggle/working/txgnn_h2h/logs)
-  1 install   TxGNN (git, pinned commit), torch_geometric, goatools, DGL matched to torch; DGL self-test
+  1 install   TxGNN (pinned-commit tarball) in its OWN Python 3.11 env (uv): torch 2.4.0+cu124, DGL 2.4.0+cu124,
+              torch_geometric, goatools; DGL self-test. (DGL has no wheels for Kaggle's Python 3.13; our model
+              keeps using Kaggle's own Python.)
   2 split     TxGNN's own code builds the 'autoimmune' disease-area split; exported to export/
   3 convert   bpp.build_txgnn -> our CompactKG with the same training graph and test labels
   4 train     GPU0: TxGNN with the official reproduce/train.py settings  |  GPU1: BioPathNet++ (--prior)
@@ -33,8 +35,12 @@ import threading
 import time
 from pathlib import Path
 
-TX_REPO = "https://github.com/mims-harvard/TxGNN.git"
 TX_COMMIT = "0e0203c3939f7d12da27aaf10e55daaff5424023"   # main as of 2026-10-20
+TX_TARBALL = f"https://codeload.github.com/mims-harvard/TxGNN/tar.gz/{TX_COMMIT}"
+TX_PYTHON = "3.11"
+TX_TORCH = "torch==2.4.0"
+TX_DGL = "dgl==2.4.0+cu124"
+TX_WHEELS = {"torch": "https://download.pytorch.org/whl/cu124", "dgl": "https://data.dgl.ai/wheels/torch-2.4/cu124/repo.html"}
 SPLIT = "autoimmune"
 SPLIT_RANDOM_SEED = 0          # numpy global seed for TxGNN's unseeded random test edges
 TX_SEED = 1                    # TxGNN train/valid split seed (their reproduce runs used 1-5)
@@ -45,8 +51,11 @@ SESSION_H = 11.0
 
 INPUT = os.environ.get("BPP_INPUT", "/kaggle/input")
 WORK = Path(os.environ.get("BPP_WORK", "/kaggle/working")) / "txgnn_h2h"
-LOGS, SCRIPTS, EXPORT = WORK / "logs", WORK / "scripts", WORK / "export"
-TXDATA, KG, OUT = WORK / "txdata", WORK / "kg_txgnn_autoimmune", WORK / "results"
+SCRATCH = Path(os.environ.get("BPP_SCRATCH", "/tmp/txgnn_h2h"))    # big files, NOT saved as notebook output
+LOGS, SCRIPTS, OUT = WORK / "logs", WORK / "scripts", WORK / "results"
+KG = WORK / "kg_txgnn_autoimmune"
+EXPORT, TXDATA, TXREPO, TXENV = SCRATCH / "export", SCRATCH / "txdata", SCRATCH / "TxGNN", SCRATCH / "txenv"
+TX_PY = TXENV / "bin" / "python"
 T0 = time.time()
 
 
@@ -118,13 +127,18 @@ else:
 '''
 
 DGL_TEST = r'''
-import torch, dgl, dgl.function as fn
-g = dgl.heterograph({("a", "r", "b"): (torch.tensor([0, 1]), torch.tensor([1, 0]))}).to("cuda")
-g.nodes["a"].data["h"] = torch.ones(2, 4, device="cuda")
-g.multi_update_all({"r": (fn.copy_u("h", "m"), fn.mean("m", "h"))}, "sum")
+import sys, torch, dgl, dgl.function as fn
+from dgl.ops import edge_softmax
+g = dgl.heterograph({("a", "r", "b"): (torch.tensor([0, 1]), torch.tensor([1, 0]))})
+# TxGNN pretraining samples minibatches from a CPU graph ...
 s = dgl.dataloading.as_edge_prediction_sampler(dgl.dataloading.MultiLayerFullNeighborSampler(1))
 next(iter(dgl.dataloading.DataLoader(g, {"r": torch.tensor([0, 1])}, s, batch_size=2)))
-print("DGL_OK", dgl.__version__, torch.__version__)
+# ... and runs full-graph message passing on the GPU
+g = g.to("cuda")
+g.nodes["a"].data["h"] = torch.ones(2, 4, device="cuda")
+g.multi_update_all({"r": (fn.copy_u("h", "m"), fn.mean("m", "h"))}, "sum")
+assert torch.allclose(g.nodes["b"].data["h"], torch.ones(2, 4, device="cuda"))
+print("DGL_OK", dgl.__version__, torch.__version__, sys.version.split()[0])
 '''
 
 SPLIT_SCRIPT = COMPAT + r'''
@@ -223,37 +237,58 @@ def locate_bpp():
     return str(code)
 
 
-def install(env):
-    log = LOGS / "install.log"
-    if not (WORK / "TxGNN").exists():
-        sh(["git", "clone", "-q", TX_REPO, WORK / "TxGNN"], log)
-        sh(["git", "-C", WORK / "TxGNN", "checkout", "-q", TX_COMMIT], log)
-    py = sys.executable
-    sh([py, "-m", "pip", "install", "-q", "torch_geometric", "goatools"], log)
-    sh([py, "-m", "pip", "install", "-q", "pydantic", "psutil", "networkx"], log)      # DGL's runtime deps
-    probe = subprocess.run([py, "-c", "import torch;print(torch.__version__.split('+')[0], torch.version.cuda)"],
-                           capture_output=True, text=True).stdout.split()
-    tv, cu = ".".join(probe[0].split(".")[:2]), probe[1].replace(".", "")
-    print("torch", tv, "cuda", cu, flush=True)
+def fetch_txgnn(log):
+    """TxGNN source at the pinned commit (GitHub tarball: one request, no git needed)."""
+    if (TXREPO / "txgnn" / "TxGNN.py").exists():
+        return
+    import tarfile
+    import urllib.request
+    SCRATCH.mkdir(parents=True, exist_ok=True)
+    tgz = SCRATCH / "txgnn.tar.gz"
+    for attempt in range(3):
+        try:
+            urllib.request.urlretrieve(TX_TARBALL, tgz)
+            break
+        except OSError as e:
+            with open(log, "a") as f:
+                f.write(f"TxGNN download attempt {attempt + 1} failed: {e}\n")
+            time.sleep(15)
+    with tarfile.open(tgz) as t:
+        top = t.getmembers()[0].name.split("/")[0]
+        t.extractall(SCRATCH, filter="data")
+    shutil.rmtree(TXREPO, ignore_errors=True)
+    shutil.move(str(SCRATCH / top), str(TXREPO))
+    for need in ("txgnn/TxGNN.py", f"data/disease_files/{SPLIT}.csv", "txgnn/data_splits/HumanDO.obo"):
+        assert (TXREPO / need).exists(), f"TxGNN download incomplete: {need} missing (see install.log)"
+    print("TxGNN source:", TXREPO, flush=True)
 
-    def dgl_from(url):      # --no-index: never fall back to PyPI's CPU-only dgl wheel
-        return [py, "-m", "pip", "install", "-q", "--force-reinstall", "--no-deps", "--no-index", "dgl", "-f", url]
-    attempts = [dgl_from(f"https://data.dgl.ai/wheels/torch-{tv}/cu{cu}/repo.html"),
-                # fallback: torch 2.4 (newest torch with DGL CUDA wheels), then also torchdata for older graphbolt
-                [py, "-m", "pip", "install", "-q", "torch==2.4.0", "--index-url", "https://download.pytorch.org/whl/cu124"],
-                dgl_from("https://data.dgl.ai/wheels/torch-2.4/cu124/repo.html"),
-                [py, "-m", "pip", "install", "-q", "torchdata==0.8.0", "--no-deps"]]
-    for a in attempts:
-        sh(a, log)
-        if "torch==2.4.0" in a:
-            continue
-        r = subprocess.run([py, SCRIPTS / "dgl_test.py"], capture_output=True, text=True, env=env)
+
+def install(tx_env):
+    """Python 3.11 env for TxGNN (DGL has no wheels for Python >= 3.13). Returns True if DGL works on the GPU."""
+    log = LOGS / "install.log"
+    fetch_txgnn(log)
+    py = sys.executable
+    if not TX_PY.exists():
+        sh([py, "-m", "pip", "install", "-q", "uv"], log)
+        uv = [py, "-m", "uv"]
+        sh(uv + ["venv", "--python", TX_PYTHON, TXENV], log)          # uv fetches a standalone CPython if needed
+        pip = uv + ["pip", "install", "--python", TX_PY]
+        sh(pip + [TX_TORCH, "--index-url", TX_WHEELS["torch"]], log)
+        sh(pip + ["numpy<2", "pandas<2.2", "scipy", "scikit-learn", "matplotlib", "seaborn", "tqdm", "requests",
+                  "networkx", "psutil", "pydantic", "pyyaml", "packaging", "torch_geometric", "goatools"], log)
+        sh(pip + ["--no-deps", TX_DGL, "-f", TX_WHEELS["dgl"]], log)
+        sh(pip + ["--no-deps", "torchdata==0.8.0"], log)                # older graphbolt builds import it
+    r = subprocess.run([str(TX_PY), str(SCRIPTS / "dgl_test.py")], capture_output=True, text=True, env=tx_env) \
+        if TX_PY.exists() else None
+    if r is not None:
         with open(log, "a") as f:
             f.write(r.stdout + r.stderr)
-        if "DGL_OK" in r.stdout:
-            print(r.stdout.strip(), flush=True)
-            return True
-    print("DGL could not be installed: TxGNN will be skipped (see install.log)", flush=True)
+    if r is not None and "DGL_OK" in r.stdout:
+        print(r.stdout.strip(), flush=True)
+        return True
+    print("DGL could not be installed: TxGNN will be skipped (see install.log); split via DGL stub", flush=True)
+    tail(log, 40)
+    sh([py, "-m", "pip", "install", "-q", "torch_geometric", "goatools"], log)   # stub split runs on Kaggle's Python
     return False
 
 
@@ -262,19 +297,24 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
     write_scripts()
     code = locate_bpp()
-    env = dict(os.environ, PYTHONPATH=os.pathsep.join([str(WORK / "TxGNN"), code, os.environ.get("PYTHONPATH", "")]),
+    # our model: Kaggle's Python + bpp code. TxGNN: its own Python 3.11 env, which must NOT see Kaggle's
+    # (Python 3.13) PYTHONPATH entries, only the TxGNN source.
+    env = dict(os.environ, PYTHONPATH=os.pathsep.join([str(TXREPO), code, os.environ.get("PYTHONPATH", "")]),
                TX_PRETRAIN_MAX_H=str(PRETRAIN_MAX_H))
+    tx_env = {k: v for k, v in env.items() if k not in ("PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP")}
+    tx_env.update(PYTHONPATH=str(TXREPO), PYTHONNOUSERSITE="1")
     if shutil.which("nvidia-smi"):
         sh(["nvidia-smi"])
-    dgl_ok = install(env)
+    dgl_ok = install(tx_env)
     py = sys.executable
+    tx_py = str(TX_PY) if dgl_ok else py
 
     # stage 2: TxGNN's own split (stub DGL if the real one is unavailable)
-    split_env = dict(env, TX_DGL_STUB="0" if dgl_ok else "1")
+    split_env = dict(tx_env if dgl_ok else env, TX_DGL_STUB="0" if dgl_ok else "1")
     # process_disease_area_split reads <data>/disease_files/<split>.csv, which ships with the repo, not Dataverse
-    shutil.copytree(WORK / "TxGNN" / "data" / "disease_files", TXDATA / "disease_files", dirs_exist_ok=True)
+    shutil.copytree(TXREPO / "data" / "disease_files", TXDATA / "disease_files", dirs_exist_ok=True)
     if not (EXPORT / "split_info.json").exists():
-        rc = sh([py, SCRIPTS / "split_export.py", TXDATA, EXPORT, SPLIT, TX_SEED, SPLIT_RANDOM_SEED], LOGS / "split.log", split_env)
+        rc = sh([tx_py, SCRIPTS / "split_export.py", TXDATA, EXPORT, SPLIT, TX_SEED, SPLIT_RANDOM_SEED], LOGS / "split.log", split_env)
         tail(LOGS / "split.log")
         assert rc == 0, "split generation failed: see split.log"
 
@@ -289,8 +329,8 @@ def main():
     def run_txgnn():
         if not dgl_ok or (OUT / "txgnn_raw_indication.pkl").exists():
             return
-        rc = sh([py, SCRIPTS / "tx_train.py", TXDATA, SPLIT, TX_SEED, OUT, FINETUNE_EPOCHS], LOGS / "txgnn_train.log",
-                dict(env, CUDA_VISIBLE_DEVICES="0"), timeout=max(600, int(3600 * (hours_left() - 0.5))))
+        rc = sh([tx_py, SCRIPTS / "tx_train.py", TXDATA, SPLIT, TX_SEED, OUT, FINETUNE_EPOCHS], LOGS / "txgnn_train.log",
+                dict(tx_env, CUDA_VISIBLE_DEVICES="0"), timeout=max(600, int(3600 * (hours_left() - 0.5))))
         print("TxGNN rc", rc, flush=True); tail(LOGS / "txgnn_train.log")
 
     run_dir = WORK / "runs" / f"ours_s{OUR_SEED}"

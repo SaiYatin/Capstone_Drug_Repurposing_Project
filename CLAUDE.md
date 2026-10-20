@@ -97,9 +97,13 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 - Ids: TxGNN `convert2str` (numeric → float string); node names "<name> [<type>:<id>]" align predictions.
 - TxGNN trained with reproduce/train.py settings (proto, 3 protos, all_nodes_profile, rarity; pretrain 1 ep lr 1e-3
   bs 1024 — capped at 3 h, logged "### PRETRAIN CAP"; finetune 500 ep lr 5e-4) on GPU0; ours (`--prior`) on GPU1.
-- Compat shims: pandas DataFrame.append; DGL EdgeDataLoader → DataLoader+as_edge_prediction_sampler. DGL install tries
-  wheels for Kaggle's torch, else pins torch 2.4.0+cu124 + DGL cu124 wheel. If DGL fails: a dgl stub still lets
-  TxGNN generate the split (tested locally), only ours runs, compare with published Recall@100.
+- Compat shims: pandas DataFrame.append; DGL EdgeDataLoader → DataLoader+as_edge_prediction_sampler.
+- 20 Oct first Kaggle attempt FAILED: Kaggle image is now Python 3.13 + torch 2.11/cu128; DGL's last wheels (2.4.0)
+  stop at cp312 and torch 2.4.0 has no cp313 → no pip route. Also the git clone failed silently. Fix: TxGNN source
+  from the GitHub tarball of the pinned commit (checked locally), and TxGNN runs in its own uv-made Python 3.11 env
+  in /tmp/txgnn_h2h/txenv (torch 2.4.0+cu124, dgl 2.4.0+cu124, numpy<2, pandas<2.2) with a clean PYTHONPATH; our
+  model stays on Kaggle's Python. Big files (TxGNN data, export CSVs, env) live in /tmp, not the notebook output.
+  If DGL still fails: a dgl stub still lets TxGNN generate the split (tested locally), only ours runs.
 - Published (TxGNN reproduce/result_more_metrics.csv, autoimmune, indication, 5 seeds): Recall@100 0.338 ± 0.004.
   Its AUROC/AUPRC (0.875) use balanced sampled negatives → NOT comparable; papers quote only Recall@100.
 - Eval: `bpp.txgnn_eval` = TxGNN disease-centric protocol (candidates = drugs with ≥1 indication in kg_directed;
