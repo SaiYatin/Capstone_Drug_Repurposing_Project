@@ -275,7 +275,7 @@ def install(tx_env):
         sh(uv + ["venv", "--python", TX_PYTHON, TXENV], log)          # uv fetches a standalone CPython if needed
         pip = uv + ["pip", "install", "--python", TX_PY]
         sh(pip + [TX_TORCH, "--index-url", TX_WHEELS["torch"]], log)
-        sh(pip + ["numpy<2", "pandas<2.2", "scipy", "scikit-learn", "matplotlib", "seaborn", "tqdm", "requests",
+        sh(pip + ["numpy<2", "pandas==1.5.3", "scipy",       # pandas 1.x: what TxGNN was written for "scikit-learn", "matplotlib", "seaborn", "tqdm", "requests",
                   "networkx", "psutil", "pydantic", "pyyaml", "packaging", "torch_geometric", "goatools"], log)
         sh(pip + ["--no-deps", TX_DGL, "-f", TX_WHEELS["dgl"]], log)
         sh(pip + ["--no-deps", "torchdata==0.8.0"], log)                # older graphbolt builds import it
@@ -315,8 +315,9 @@ def main():
     code = locate_bpp()
     # our model: Kaggle's Python + bpp code. TxGNN: its own Python 3.11 env, which must NOT see Kaggle's
     # (Python 3.13) PYTHONPATH entries, only the TxGNN source.
+    # MPLBACKEND: the notebook kernel exports Jupyter's inline backend, which subprocesses cannot load
     env = dict(os.environ, PYTHONPATH=os.pathsep.join([str(TXREPO), code, os.environ.get("PYTHONPATH", "")]),
-               TX_PRETRAIN_MAX_H=str(PRETRAIN_MAX_H))
+               TX_PRETRAIN_MAX_H=str(PRETRAIN_MAX_H), MPLBACKEND="Agg")
     tx_env = {k: v for k, v in env.items() if k not in ("PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP")}
     tx_env.update(PYTHONPATH=str(TXREPO), PYTHONNOUSERSITE="1")
     if shutil.which("nvidia-smi"):
