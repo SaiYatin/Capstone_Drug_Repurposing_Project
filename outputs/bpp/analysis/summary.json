@@ -35824,6 +35824,7 @@
    }
   }
  },
+ "txgnn_h2h": {},
  "_knn_targets_pd": {
   "Primary Biliary Cholangitis": {
    "mrr": 1.0

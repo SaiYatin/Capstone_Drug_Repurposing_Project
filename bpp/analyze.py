@@ -240,6 +240,31 @@ def analyse(root: Path, data: Path) -> dict:
     out["transfer"] = transfer_curve(per, data, out["tests"])
     out["transfer"]["last_checkpoint"] = transfer_last_checkpoint(root, out.get("transfer", {}), out["tests"])
     out["test_split"] = test_split(per, out["tests"])
+    out["txgnn_h2h"] = load_txgnn_h2h(root)
+    return out
+
+
+# TxGNN's own reproduce/result_more_metrics.csv (commit 0e0203c), autoimmune split, indication, 5 seeds:
+# TxGNN Recall@100 0.338 +- 0.004. Its AUROC/AUPRC there use sampled balanced negatives -> not comparable.
+TXGNN_PUBLISHED_RECALL100 = 0.338
+
+
+def load_txgnn_h2h(root: Path) -> dict:
+    """Head-to-head on TxGNN's autoimmune split (kaggle/run_txgnn.py): copy its results/ to outputs/bpp/txgnn_h2h/."""
+    d = root / "txgnn_h2h"
+    if not (d / "h2h.json").exists():
+        return {}
+    h = json.loads((d / "h2h.json").read_text())
+    out = {"settings": json.loads((d / "settings.json").read_text()) if (d / "settings.json").exists() else {},
+           "split_info": json.loads((d / "split_info.json").read_text()) if (d / "split_info.json").exists() else {},
+           "paired": h.get("paired", {})}
+    for who in ("ours", "txgnn"):
+        if h.get(who):
+            out[who] = next(iter(h[who].values()))["summary"]
+    off = d / "txgnn_official_summary.json"
+    if off.exists():
+        rows = json.loads(off.read_text()).get("rev_indication", [])
+        out["txgnn_official"] = {name: {"mean": m, "sd": sd} for name, m, sd in rows}
     return out
 
 
@@ -612,7 +637,12 @@ PENDING_MACROS = [
     "TrAPathsEMrr", "TrActlPathsEMrr",
     *(f"{p}TrAActlPathsE" for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
     "TestMrr", "TestHitsTen", "TestAnyTen", "TestModelValidMrr", "KnnTestMrr", "KnnTestHitsTen", "KnnTestAnyTen",
+    "TxhN", "TxhPairs", "TxhTxOfficialRecall",
+    *(f"Txh{w}{k}" for w in ("Ours", "Tx") for k in ("Recall", "RecallTen", "Auroc", "Auprc", "Mrr", "HitsTen")),
+    *(f"Txh{p}{k}" for k in ("Recall", "Auroc", "Auprc") for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Losses")),
 ]
+TXH_KEYS = (("Recall", "txgnn_recall@100"), ("RecallTen", "txgnn_recall@10"), ("Auroc", "txgnn_auroc"),
+            ("Auprc", "txgnn_auprc"), ("Mrr", "full_mrr"), ("HitsTen", "full_hits@10"))
 
 
 def _ci(r):
@@ -645,6 +675,22 @@ def table_test(S):
         r = T.get(k)
         lines.append(f"{lab} & " + (" & ".join(f3((r.get(m) or {}).get("mean")) for m in ("mrr", "hits@10", "auroc_hard"))
                                     if r else r"\multicolumn{3}{c}{pending}") + r"\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
+def table_txgnn(S):
+    H = S.get("txgnn_h2h", {})
+    lines = [r"\begin{tabular}{lccccc}", r"\toprule",
+             r" & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{2}{c}{full ranking}\\",
+             r"\cmidrule(lr){2-4}\cmidrule(lr){5-6}",
+             r"Method & R@100 & AUROC & AUPRC & MRR & H@10\\", r"\midrule",
+             f"TxGNN, published (5 seeds) & {TXGNN_PUBLISHED_RECALL100:.3f} & -- & -- & -- & --" + r"\\"]
+    for who, lab in (("txgnn", "TxGNN, re-run (this split)"), ("ours", r"\textbf{\sysname} (this split)")):
+        r = H.get(who)
+        lines.append(f"{lab} & " + (" & ".join(f3((r.get(k) or {}).get("mean")) for k in
+                                               ("txgnn_recall@100", "txgnn_auroc", "txgnn_auprc", "full_mrr", "full_hits@10"))
+                                    if r else r"\multicolumn{5}{c}{pending}") + r"\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
     return "\n".join(lines)
 
@@ -780,7 +826,27 @@ def macros(S) -> str:
         for r in V.get("temporal_rows", []):
             if r.get("in_primekg"):
                 nc("TempRank" + re.sub(r"[^A-Za-z]", "", r["drug"].title()), f"{r['mean_rank']:,.0f}".replace(",", "{,}"))
-    # numbers that only exist after Kaggle session 4: print "[pending]" so the papers compile meanwhile
+    H = S.get("txgnn_h2h", {})
+    nc("TxhTxPublishedRecall", f"{TXGNN_PUBLISHED_RECALL100:.3f}")
+    n = (H.get("ours") or H.get("txgnn") or {}).get("n_diseases")
+    if n:
+        nc("TxhN", str(n))
+    for who, wt in (("ours", "Ours"), ("txgnn", "Tx")):
+        if H.get(who):
+            for k, key in TXH_KEYS:
+                if H[who].get(key):
+                    nc(f"Txh{wt}{k}", f"{H[who][key]['mean']:.3f}")
+    if H.get("split_info"):
+        nc("TxhPairs", str(H["split_info"].get("test_diseases_indication", "")))
+    if H.get("txgnn_official", {}).get("Recall@100"):
+        nc("TxhTxOfficialRecall", f"{H['txgnn_official']['Recall@100']['mean']:.3f}")
+    for k, key in (("Recall", "recall@100"), ("Auroc", "auroc"), ("Auprc", "auprc")):
+        c = H.get("paired", {}).get(key)
+        if c:
+            nc(f"TxhDiff{k}", f"{c['mean_diff']:+.3f}"); nc(f"TxhDiffLo{k}", f"{c['diff_ci95'][0]:+.3f}")
+            nc(f"TxhDiffHi{k}", f"{c['diff_ci95'][1]:+.3f}"); nc(f"TxhPwil{k}", ptext(c["p_wilcoxon_two_sided"]))
+            nc(f"TxhWins{k}", str(c["wins"])); nc(f"TxhLosses{k}", str(c["losses"]))
+    # numbers that only exist after later Kaggle sessions: print "[pending]" so the papers compile meanwhile
     defined = {re.match(r"\\newcommand\{\\(\w+)\}", l).group(1) for l in out}
     for name in PENDING_MACROS:
         if name not in defined:
@@ -827,6 +893,7 @@ def main():
     (paper / "tab_validation.tex").write_text(table_validation(S))
     (paper / "tab_temporal.tex").write_text(table_temporal(S))
     (paper / "tab_paths.tex").write_text(table_paths(S))
+    (paper / "tab_txgnn.tex").write_text(table_txgnn(S))
     print("runs:", ", ".join(S["runs_found"]))
     for k, v in S["tests"].items():
         print(f"  {k:28s} diff {v['mean_diff']:+.3f} [{v['diff_ci95'][0]:+.3f},{v['diff_ci95'][1]:+.3f}] "

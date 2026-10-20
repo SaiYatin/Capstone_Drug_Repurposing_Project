@@ -32,6 +32,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
 | Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
+| TxGNN head-to-head (20 Oct) | **READY, not yet run.** `kaggle/run_txgnn.py` (separate notebook, Internet ON, T4×2, needs the NEW biopathnet-pp-v3 dataset version from `kaggle/biopathnet-pp-v3.zip`). Results → copy `/kaggle/working/txgnn_h2h/results/*` to `outputs/bpp/txgnn_h2h/`, run analyze, fix the 2 TxGNN `RECHECK` comments (journal §"Head-to-head with TxGNN", conf discussion) |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
@@ -85,6 +86,25 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 - NOT done / could not verify: no LaTeX compiler (tectonic/MiKTeX need a download → not installed; Overleaf zip
   `outputs/paper/v3_latest.zip` instead) → page counts unmeasured (conf ≈5 pp, journal may exceed 11 pp by word
   count); test split still 1 seed (session 5 optional); literature labels not human-verified.
+
+**TxGNN head-to-head design (20 Oct; `bpp/build_txgnn.py`, `bpp/txgnn_eval.py`, `kaggle/run_txgnn.py`, test 8/8):**
+- TxGNN's own code (git commit 0e0203c, not pip) generates its `autoimmune` disease-area split; its random test edges
+  use unseeded np.random → we seed (SPLIT_RANDOM_SEED 0, TX_SEED 1) → different draw from the published runs (say so).
+  Its autoimmune area (data/disease_files/autoimmune.csv) INCLUDES Sjögren.
+- `bpp.build_txgnn` converts TxGNN's train.csv (forward rows, homogeneous deduped) into a CompactKG → both models see
+  the same training graph; test = area diseases' rev_indication rows of test_processed; TxGNN's valid edges dropped;
+  ours carves 5% training diseases (+families) for early stopping. Asserts no test pair/disease leaks.
+- Ids: TxGNN `convert2str` (numeric → float string); node names "<name> [<type>:<id>]" align predictions.
+- TxGNN trained with reproduce/train.py settings (proto, 3 protos, all_nodes_profile, rarity; pretrain 1 ep lr 1e-3
+  bs 1024 — capped at 3 h, logged "### PRETRAIN CAP"; finetune 500 ep lr 5e-4) on GPU0; ours (`--prior`) on GPU1.
+- Compat shims: pandas DataFrame.append; DGL EdgeDataLoader → DataLoader+as_edge_prediction_sampler. DGL install tries
+  wheels for Kaggle's torch, else pins torch 2.4.0+cu124 + DGL cu124 wheel. If DGL fails: a dgl stub still lets
+  TxGNN generate the split (tested locally), only ours runs, compare with published Recall@100.
+- Published (TxGNN reproduce/result_more_metrics.csv, autoimmune, indication, 5 seeds): Recall@100 0.338 ± 0.004.
+  Its AUROC/AUPRC (0.875) use balanced sampled negatives → NOT comparable; papers quote only Recall@100.
+- Eval: `bpp.txgnn_eval` = TxGNN disease-centric protocol (candidates = drugs with ≥1 indication in kg_directed;
+  per-disease AUROC/AUPRC/Recall@k/MRR@k) + our full ranking; paired tests (Recall@100, AUROC, AUPRC).
+- Paper macros `Txh*` (pending until results), table `generated/tab_txgnn.tex`.
 
 **Session 4 RESULTS (18 Oct, verified; Kaggle code identical to repo; papers updated, no RECHECK left):**
 - Aim 1, scarce data: model MRR on E — A (RA/SLE/MS, 3 seeds) 0.290 vs A′ (3 matched draws) 0.126;

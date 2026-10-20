@@ -21,7 +21,9 @@ from bpp.train import Runner, build_parser
 
 @torch.no_grad()
 def score(run: Path, ckpt: str, data: str, sets, device: str, batch: int = 2):
-    saved = json.loads((run / "results.json").read_text())["args"]
+    rj = run / "results.json"           # absent if training stopped on its time budget: use the checkpoint's args
+    saved = (json.loads(rj.read_text())["args"] if rj.exists()
+             else torch.load(run / ckpt, map_location="cpu", weights_only=False)["args"])
     args = build_parser().parse_args(["--data", data, "--out", str(run / "_score_tmp"), "--split", saved["split"],
                                       "--device", device, "--seed", str(saved["seed"]),
                                       "--dim", str(saved["dim"]), "--layers", str(saved["layers"]),

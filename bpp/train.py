@@ -148,6 +148,8 @@ class Runner:
             if sets and set_name not in sets:
                 continue
             items = [(l, d, o) for l, d, o in items if len(self.task.eval_labels(d, o))]
+            if not items:                       # e.g. no rare targets in the TxGNN head-to-head split
+                continue
             per = {}
             for i in range(0, len(items), self.a.eval_batch):
                 chunk = items[i:i + self.a.eval_batch]

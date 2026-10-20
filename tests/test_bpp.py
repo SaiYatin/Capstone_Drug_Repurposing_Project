@@ -168,3 +168,59 @@ def test_validation_helpers():
     assert grade([{"phase": "PHASE2/PHASE3"}]) == "A"
     assert grade([{"phase": "PHASE2"}]) == "B"
     assert grade([{"phase": "NA"}]) == "C"
+
+
+def _toy_txgnn_export(out: Path):
+    """Tiny export in TxGNN's file format: kg_directed.csv, train.csv / test_processed.csv with 'rev_' rows."""
+    import pandas as pd
+    rng = np.random.default_rng(0)
+    rows = []
+
+    def add(xt, xi, rel, yt, yi, split="train"):
+        rows.append(dict(x_type=xt, x_id=f"{xi}" if xt == "disease" else f"DB{xi:05d}", relation=rel, y_type=yt,
+                         y_id=f"{yi}" if yt == "disease" else (f"DB{yi:05d}" if yt == "drug" else f"g{yi}"),
+                         split=split, x_idx=xi, y_idx=yi))
+    for g in range(30):
+        for p in rng.choice(40, 3, replace=False):
+            add("drug", g, "drug_protein", "gene/protein", int(p))
+    for d in range(20):
+        for p in rng.choice(40, 4, replace=False):
+            add("disease", d, "disease_protein", "gene/protein", int(p))
+    for d in range(0, 19, 3):
+        add("disease", d, "disease_disease", "disease", d + 1)
+    for d in range(20):
+        for g in rng.choice(30, 3, replace=False):
+            add("drug", int(g), "indication", "disease", d, "test" if d >= 16 else "train")
+    df = pd.DataFrame(rows).drop_duplicates(["x_type", "x_idx", "relation", "y_type", "y_idx"])
+    df.to_csv(out / "kg_directed.csv", index=False)
+
+    def with_rev(f):
+        rev = f.rename(columns={"x_type": "y_type", "x_id": "y_id", "x_idx": "y_idx",
+                                "y_type": "x_type", "y_id": "x_id", "y_idx": "x_idx"})
+        het = rev.x_type != rev.y_type
+        rev.loc[het, "relation"] = "rev_" + rev.loc[het, "relation"]
+        return pd.concat([f, rev])
+    with_rev(df[df.split == "train"]).to_csv(out / "train.csv", index=False)
+    with_rev(df[df.split == "test"]).to_csv(out / "test_processed.csv", index=False)
+
+
+def test_txgnn_conversion_and_protocol(tmp_path):
+    import json
+    from bpp.build_txgnn import build, convert2str
+    from bpp.txgnn_eval import txgnn_protocol
+    assert [convert2str(x) for x in ("1234", "12_34", "DB00001", "0005388")] == ["1234.0", "12_34", "DB00001", "5388.0"]
+    _toy_txgnn_export(tmp_path)
+    info = build(tmp_path, tmp_path / "kg")          # asserts no test pair / test disease leaks into training
+    kg = CompactKG.load(tmp_path / "kg")
+    proto = json.loads((tmp_path / "kg" / "txgnn_protocol.json").read_text())
+    assert info["eval_diseases"] == 4 and len(proto["eval_diseases"]) == 4
+    split = json.loads((tmp_path / "kg" / "splits.json").read_text())
+    assert not set(proto["eval_diseases"]) & (set(split["train_diseases"]) | set(split["valid_diseases"]))
+    # the message graph never contains a test disease's drug edges
+    mg = MessageGraph(kg, sorted(split["train_diseases"]), device="cpu")
+    assert mg.num_ctx_edges > 0
+    # protocol: a perfect scorer gets recall/AUROC/AUPRC/MRR 1, a reversed one AUROC 0
+    s = np.arange(10.0)
+    m = txgnn_protocol(s, np.array([9, 8]), np.arange(10))
+    assert m["auroc"] == 1 and m["auprc"] == 1 and m["recall@10"] == 1 and m["mrr@10"] == 1
+    assert txgnn_protocol(-s, np.array([9, 8]), np.arange(10))["auroc"] == 0
