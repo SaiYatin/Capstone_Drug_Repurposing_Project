@@ -44,20 +44,20 @@ SMALL = ["--epochs", "60", "--patience", "10"]   # 11 training diseases = 2 step
 # Sessions 1-3 (all finished; results in outputs/bpp/kaggle_session{1,2,3}): main_s0-2, paths_s0-2,
 # prioronly_s0, noauto_main_s0-2, noauto_paths_s0, brg_main_s0, bce_main_s0.
 #
-# Session 4: transfer curve (Aim 1) first, then the selection-free test split (journal).
-# Split files are made by `python -m bpp.extra_splits` and ship inside the dataset zip.
+# Session 4 (finished): tr_A_s0-2, tr_Actl0-2_s0, tr_CE_s0, test_main_s0 (test_main_s1/s2 stopped by the time budget).
+#
+# Session 5: resume the two test seeds (needs the bpp-runs-session4 dataset as an input, so their last.pt
+# files are restored), then paths-only transfer runs: does path reasoning itself transfer when data is scarce?
 EXPERIMENTS = [
     # name,                 extra args                                                       purpose
-    ("tr_A_s0",            ["--prior", "--seed", "0", "--split", "splits_tr_A.json"] + SMALL),   # A: RA/SLE/MS only
-    ("tr_Actl0_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl0.json"] + SMALL),  # A': matched controls
-    ("tr_Actl1_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl1.json"] + SMALL),
-    ("tr_Actl2_s0",        ["--prior", "--seed", "0", "--split", "splits_tr_Actl2.json"] + SMALL),
-    ("tr_A_s1",            ["--prior", "--seed", "1", "--split", "splits_tr_A.json"] + SMALL),
-    ("tr_A_s2",            ["--prior", "--seed", "2", "--split", "splits_tr_A.json"] + SMALL),
-    ("tr_CE_s0",           ["--prior", "--seed", "0", "--split", "splits_tr_CE.json"]),          # C_E: all but eval set
-    ("test_main_s0",       ["--prior", "--seed", "0", "--split", "splits_test.json"]),           # clean test split
-    ("test_main_s1",       ["--prior", "--seed", "1", "--split", "splits_test.json"]),
-    ("test_main_s2",       ["--prior", "--seed", "2", "--split", "splits_test.json"]),
+    ("test_main_s2",       ["--prior", "--seed", "2", "--split", "splits_test.json"]),           # resumes at epoch 9
+    ("test_main_s1",       ["--prior", "--seed", "1", "--split", "splits_test.json"]),           # resumes at epoch 13
+    ("tr_A_paths_s0",      ["--seed", "0", "--split", "splits_tr_A.json"] + SMALL),               # A, no transfer channel
+    ("tr_Actl0_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl0.json"] + SMALL),           # A', no transfer channel
+    ("tr_A_paths_s1",      ["--seed", "1", "--split", "splits_tr_A.json"] + SMALL),
+    ("tr_Actl1_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl1.json"] + SMALL),
+    ("tr_A_paths_s2",      ["--seed", "2", "--split", "splits_tr_A.json"] + SMALL),
+    ("tr_Actl2_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl2.json"] + SMALL),
 ]
 
 INPUT = os.environ.get("BPP_INPUT", "/kaggle/input")

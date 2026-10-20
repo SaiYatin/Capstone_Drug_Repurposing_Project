@@ -40,6 +40,8 @@ GROUPS = {  # run-name prefix -> (label, split protocol)
     "tr_A": ("A: RA/SLE/MS families only", "transfer"),
     "tr_Actl": ("A$'$: matched non-autoimmune controls", "transfer"),
     "tr_CE": ("C$_E$: all diseases except E", "transfer"),
+    "tr_A_paths": ("A, paths only (no transfer channel)", "transfer"),
+    "tr_Actl_paths": ("A$'$, paths only (no transfer channel)", "transfer"),
     "test_main": ("BioPathNet++ (selection-free test split)", "test"),
 }
 # extra baseline files written by bpp.run_baselines for the derived splits
@@ -73,9 +75,9 @@ def group_runs(runs: dict) -> dict:
         if not m:
             continue
         grp, key = m.group(1), int(m.group(2))
-        c = re.match(r"tr_Actl(\d+)$", grp)
+        c = re.match(r"tr_Actl(\d+)(_paths)?$", grp)
         if c:                                   # control draws pooled: draw index stands in for the seed
-            grp, key = "tr_Actl", int(c.group(1)) * 100 + key
+            grp, key = "tr_Actl" + (c.group(2) or ""), int(c.group(1)) * 100 + key
         if grp in GROUPS:
             g[grp][key] = json.loads((path / "results.json").read_text())
     return {k: dict(sorted(v.items())) for k, v in g.items()}
@@ -338,6 +340,11 @@ def transfer_curve(per: dict, data: Path, tests: dict) -> dict:
                 row[f"knn_{sname}"] = macro(b, "mrr")
                 paired[(key, sname, "knn")] = b
         res["conditions"][key] = row
+    for pa, pc, tname in (("tr_A_paths", "tr_Actl_paths", "tr_A_vs_Actl_paths_E"),):
+        if (pa, "area") in per and (pc, "area") in per:
+            ma, mc = _restrict(per[(pa, "area")], E), _restrict(per[(pc, "area")], E)
+            res["paths_only"] = {"A": macro(ma, "mrr"), "Actl": macro(mc, "mrr")}
+            tests[tname] = compare(ma, mc)
     for a, b, sname, kind in (("A", "Actl", "E", "model"), ("A", "Actl", "E", "knn"), ("A", "Actl", "targets", "model"),
                               ("CE", "D", "E", "model"), ("CE", "A", "E", "model"), ("D", "A", "E", "model")):
         if (a, sname, kind) in paired and (b, sname, kind) in paired:
@@ -423,7 +430,7 @@ def pfmt(p):
 
 
 def ptext(p):
-    """p-value for running text: '$<$0.001' or '$=$0.012' (always written as  $p$\,\Pwil...)."""
+    r"""p-value for running text: '$<$0.001' or '$=$0.012' (always written as  $p$\,\Pwil...)."""
     if p is None or np.isnan(p):
         return "n/a"
     return "$<$0.001" if p < 0.001 else f"$=${p:.3f}"
@@ -602,6 +609,8 @@ PENDING_MACROS = [
     *(f"{c}{f}Mrr" for c in ("TrA", "TrActl", "TrD", "TrCE") for f in ("E", "EKnn", "Targets", "TargetsKnn")),
     *(f"{p}{t}" for t in ("TrAActlE", "TrAActlEKnn", "TrAActlTargets", "TrCEDE", "TrCEAE", "TrDAE", "TestKnn")
       for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
+    "TrAPathsEMrr", "TrActlPathsEMrr",
+    *(f"{p}TrAActlPathsE" for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
     "TestMrr", "TestHitsTen", "TestAnyTen", "TestModelValidMrr", "KnnTestMrr", "KnnTestHitsTen", "KnnTestAnyTen",
 ]
 
@@ -684,7 +693,7 @@ def macros(S) -> str:
              "tr_A_vs_Actl_E_model": "TrAActlE", "tr_A_vs_Actl_E_knn": "TrAActlEKnn",
              "tr_A_vs_Actl_targets_model": "TrAActlTargets", "tr_CE_vs_D_E_model": "TrCEDE",
              "tr_CE_vs_A_E_model": "TrCEAE", "tr_D_vs_A_E_model": "TrDAE", "test_main_vs_knn_test": "TestKnn",
-             "tr_A_vs_Actl_E_last": "TrAActlELast", "tr_A_vs_Actl_targets_last": "TrAActlTargetsLast",
+             "tr_A_vs_Actl_E_last": "TrAActlELast", "tr_A_vs_Actl_paths_E": "TrAActlPathsE", "tr_A_vs_Actl_targets_last": "TrAActlTargetsLast",
              "noauto_main_vs_paths_area": "NoautoPathsArea", "s0_main_vs_bce_valid": "SzeroMainBceValid",
              "s0_main_vs_brg_valid": "SzeroMainBrgValid", "s0_noauto_main_vs_paths_area": "SzeroNoautoPathsArea"}
     for k, t in names.items():
@@ -713,6 +722,9 @@ def macros(S) -> str:
         lc = S.get("transfer", {}).get("last_checkpoint", {}).get(sname)
         if lc:
             nc(f"TrA{st}LastMrr", f"{lc['A']['mean']:.3f}"); nc(f"TrActl{st}LastMrr", f"{lc['Actl']['mean']:.3f}")
+    po = S.get("transfer", {}).get("paths_only")
+    if po:
+        nc("TrAPathsEMrr", f"{po['A']['mean']:.3f}"); nc("TrActlPathsEMrr", f"{po['Actl']['mean']:.3f}")
     T = S.get("test_split", {})
     nc("TestSeeds", str(len(S["models"]["test_main"]["seeds"])) if "test_main" in S["models"] else "0")
     for k, kt in (("model", "Test"), ("disease_knn", "KnnTest"), ("popularity", "PopTest")):
