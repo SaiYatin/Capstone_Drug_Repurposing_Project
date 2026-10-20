@@ -33,6 +33,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
 | Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
 | TxGNN head-to-head | **DONE 21 Oct** (Kaggle, results (5).zip) → `outputs/bpp/txgnn_h2h/`; papers updated (journal §"Head-to-head with TxGNN" + abstract sentence, conf discussion); no TxGNN RECHECK left |
+| TxGNN head-to-head run 2 (fair coverage, 3 seeds each) | **PREPARED 21 Oct, not run**: `--coverage full`, multi-seed notebook; Kaggle steps in "RUN 2" block below |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
@@ -101,8 +102,41 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
   significant by our rule).
 - Why: only 16% of TxGNN's full top-100 are drugs with any indication (ours 99%); TxGNN's protocol filters them out.
   Paper wording: "neither model dominates; first data point (1 seed, 13 diseases)".
-- Possible follow-up: retrain ours with the diseases that only have random (non-area) test edges kept in training
-  (needs build_txgnn to drop just those test edges from the graph), more seeds for both.
+- Follow-up PREPARED 21 Oct (second, fairer run; see next block). Paper numbers stay as above until it returns.
+
+**TxGNN head-to-head RUN 2 — prepared 21 Oct, NOT run yet (code + notebook only; tests 9/9):**
+- `bpp.build_txgnn --coverage {strict,full}` (default strict = run 1, unchanged except new keys `coverage` in
+  splits.json and `coverage/stats/dropped_test_pairs` in txgnn_protocol.json). TxGNN's test set = all drug edges of
+  the area diseases + 5% random edges from the area's 2-hop neighbourhood (txgnn/data_splits/datasplit.py
+  get_edge_group), which is why run 1 held out 873 diseases. `full`: area = diseases whose `rev_` therapeutic rows
+  survive process_disease_area_split (TxGNN's area list) → held out WITH their disease-disease families (run 1 held
+  out the area without family expansion, but most neighbours were held anyway via random test edges); every other
+  disease trains normally and its random test edges are REMOVED from our therapeutic table (= message graph + labels)
+  and only listed in txgnn_protocol.json `dropped_test_pairs`. New assert: no test pair of any disease is in the
+  table of a train/valid disease (mutation-checked: fires when the removal is disabled). Stats include
+  `held_out_with_train_indications` (= remaining coverage handicap vs TxGNN, report it).
+- Mini real-ID rehearsal (21 Oct, earlier mini export): strict 64 train dis. / 48 held-out with indications →
+  full 100 / 12; 191 random test edges dropped; eval set, candidates, test pairs identical in both modes; tiny
+  ours (2 seeds) + align + eval ran. Full-size numbers unknown until Kaggle (expect ~1,260 train diseases).
+- `bpp.txgnn_eval`: several npz per model = seeds; `paired`/`paired_full` now use per-disease means over seeds
+  (verified: reproduces run-1 h2h.json paired blocks exactly with 1 seed); new `seeds` (mean ± sd over seeds),
+  `n_seeds`.
+- `kaggle/run_txgnn.py`: COVERAGE = "full", TX_SPLIT_SEED = 1 (one cached TxGNN split for all runs), TX_SEEDS =
+  [0,1,2] (training seed set after txgnn's import-time torch.manual_seed(0); run 1 ≈ training seed 0), OUR_SEEDS =
+  [0,1,2]. Job queue over both GPUs (order ours0, tx0, tx1, tx2, ours1, ours2; never two TxGNN at once — CPU RAM);
+  each job scored right after training; jobs skipped if they no longer fit (TX_RUN_H 1.7 h, OUR_MIN_H 1 h); ours
+  stops on the time budget and is scored from best.pt (settings.json `ours_finished` / `jobs` say which). Plan:
+  ours ≤ ~4.4 h/seed (≈2× run 1's 6 min/epoch, 20 epochs), TxGNN ~1.6 h/seed → ~9.2 h + setup within SESSION_H 11.
+  Per-seed outputs: results/ours_s{N}.npz, ours_s{N}_train_log.jsonl, txgnn_s{N}/ (raw pkl + official summary),
+  txgnn_s{N}.npz, logs/ours_s{N}.log, logs/txgnn_s{N}.log. Verified by a stubbed dry run of main() (queue, GPUs,
+  no TxGNN overlap, eval gets all 6 npz); TxGNN's training-seed lines were only compile-checked (no DGL env here).
+- KAGGLE STEPS (user): (1) Datasets → biopathnet-pp-v3 → New Version → upload the rebuilt `kaggle/biopathnet-pp-v3.zip`
+  (21 Oct; run-1 zip kept as `kaggle/biopathnet-pp-v3.txgnn-run1.zip`). (2) Open the TxGNN notebook, replace the
+  cell with the new `kaggle/run_txgnn.py`, check the input uses the new dataset version. (3) Settings: GPU T4 ×2,
+  Internet ON. (4) Save Version → Save & Run All (~10–11 h). (5) Download output; copy `txgnn_h2h/results/*` + logs to
+  `outputs/bpp/txgnn_h2h_full/` (keep run 1 in `outputs/bpp/txgnn_h2h/`).
+- AFTER results: `bpp/analyze.py::load_txgnn_h2h` still reads only run 1's layout (first run per model, files
+  `ours_s0.npz` / `txgnn_s1.npz`) → extend it for run 2 (seed means, coverage stats) before touching paper text.
 
 **TxGNN head-to-head design (20 Oct; `bpp/build_txgnn.py`, `bpp/txgnn_eval.py`, `kaggle/run_txgnn.py`, test 8/8):**
 - TxGNN's own code (git commit 0e0203c, not pip) generates its `autoimmune` disease-area split; its random test edges

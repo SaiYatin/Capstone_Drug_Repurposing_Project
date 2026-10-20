@@ -170,8 +170,14 @@ def test_validation_helpers():
     assert grade([{"phase": "NA"}]) == "C"
 
 
+# toy disease-area split: diseases 16-19 are the area; 2 and 5 are NON-area diseases that also lost one drug edge
+# each to TxGNN's random test edges (2: indication, 5: contraindication); 15 is a disease_disease neighbour of 16
+TOY_AREA, TOY_RANDOM_TEST = (16, 17, 18, 19), {2: "indication", 5: "contraindication"}
+
+
 def _toy_txgnn_export(out: Path):
-    """Tiny export in TxGNN's file format: kg_directed.csv, train.csv / test_processed.csv with 'rev_' rows."""
+    """Tiny export in TxGNN's file format: kg_directed.csv, train.csv / test_processed.csv with 'rev_' rows.
+    Like TxGNN's process_disease_area_split, reverse therapeutic test rows are kept only for area diseases."""
     import pandas as pd
     rng = np.random.default_rng(0)
     rows = []
@@ -189,8 +195,11 @@ def _toy_txgnn_export(out: Path):
     for d in range(0, 19, 3):
         add("disease", d, "disease_disease", "disease", d + 1)
     for d in range(20):
-        for g in rng.choice(30, 3, replace=False):
-            add("drug", int(g), "indication", "disease", d, "test" if d >= 16 else "train")
+        drugs = rng.choice(30, 3, replace=False)
+        for g in drugs:
+            add("drug", int(g), "indication", "disease", d, "test" if d in TOY_AREA else "train")
+        if d in TOY_RANDOM_TEST:
+            add("drug", int(min(set(range(30)) - set(drugs.tolist()))), TOY_RANDOM_TEST[d], "disease", d, "test")
     df = pd.DataFrame(rows).drop_duplicates(["x_type", "x_idx", "relation", "y_type", "y_idx"])
     df.to_csv(out / "kg_directed.csv", index=False)
 
@@ -201,7 +210,9 @@ def _toy_txgnn_export(out: Path):
         rev.loc[het, "relation"] = "rev_" + rev.loc[het, "relation"]
         return pd.concat([f, rev])
     with_rev(df[df.split == "train"]).to_csv(out / "train.csv", index=False)
-    with_rev(df[df.split == "test"]).to_csv(out / "test_processed.csv", index=False)
+    te = with_rev(df[df.split == "test"])
+    rev_ther = te.relation.isin(["rev_indication", "rev_contraindication", "rev_off-label use"])
+    te[~rev_ther | te.x_idx.isin(TOY_AREA)].to_csv(out / "test_processed.csv", index=False)
 
 
 def test_txgnn_conversion_and_protocol(tmp_path):
@@ -224,3 +235,55 @@ def test_txgnn_conversion_and_protocol(tmp_path):
     m = txgnn_protocol(s, np.array([9, 8]), np.arange(10))
     assert m["auroc"] == 1 and m["auprc"] == 1 and m["recall@10"] == 1 and m["mrr@10"] == 1
     assert txgnn_protocol(-s, np.array([9, 8]), np.arange(10))["auroc"] == 0
+    # strict coverage (default): the non-area diseases with a random test edge are held out too
+    assert set(TOY_RANDOM_TEST) <= set(split["held_out_diseases"]) and split["coverage"] == "strict"
+    assert info["dropped_test_edges"] == 0
+
+
+def test_txgnn_full_coverage(tmp_path):
+    """--coverage full: non-area diseases with random test edges are trained on, minus exactly those edges."""
+    import json
+    from bpp.build_txgnn import build
+    from bpp.task import RepurposingTask
+    _toy_txgnn_export(tmp_path)
+    info = build(tmp_path, tmp_path / "kg", coverage="full")      # its own leakage asserts run here
+    kg = CompactKG.load(tmp_path / "kg")
+    proto = json.loads((tmp_path / "kg" / "txgnn_protocol.json").read_text())
+    split = json.loads((tmp_path / "kg" / "splits.json").read_text())
+    dis = {int(n.split("[disease:")[1].rstrip("]").split(".")[0]): i
+           for i, n in enumerate(kg.node_names) if "[disease:" in n}
+    drug = {int(n.split("[drug:DB")[1].rstrip("]")): i for i, n in enumerate(kg.node_names) if "[drug:" in n}
+    area = sorted(dis[d] for d in TOY_AREA)
+    assert split["coverage"] == "full" and split["area_diseases"] == area and proto["eval_diseases"] == area
+    # area diseases AND their families are held out (15 is 16's neighbour), nothing else is
+    seen = set(split["train_diseases"]) | set(split["valid_diseases"])
+    assert set(area) | {dis[15]} <= set(split["held_out_diseases"]) and not (set(area) | {dis[15]}) & seen
+    assert {dis[d] for d in TOY_RANDOM_TEST} <= seen
+    assert info["dropped_test_edges"] == 2 and info["diseases_with_dropped_test_edges"] == 2
+    # the dropped pairs are exactly the random test edges, and they are nowhere in our therapeutic table ...
+    raw = pd_read(tmp_path / "test_processed.csv")
+    rnd = raw[(raw.y_type == "disease") & raw.y_idx.isin(list(TOY_RANDOM_TEST))]
+    rnd_pairs = {(dis[int(r.y_idx)], drug[int(r.x_idx)]) for r in rnd.itertuples()}
+    assert {tuple(p) for p in proto["dropped_test_pairs"]} == rnd_pairs
+    table = set(zip(kg.t_disease.tolist(), kg.t_drug.tolist()))
+    assert not rnd_pairs & table
+    # ... so neither the message graph nor the training labels contain them; the train edges are still there
+    mg = MessageGraph(kg, sorted(split["train_diseases"]), device="cpu")
+    graph_pairs = set(zip(mg.td.tolist(), mg.tg.tolist()))
+    assert not rnd_pairs & graph_pairs and not {tuple(p) for p in proto["test_pairs"]} & graph_pairs
+    task = RepurposingTask(kg, split)
+    for d, g in rnd_pairs:
+        assert g not in task.ind.get(d, set()) and g not in task.off.get(d, set())
+        assert len(task.ind[d]) == 3                                  # its 3 training indications are kept
+    # the evaluation labels of the area diseases are unchanged
+    assert all(len(task.eval_labels(d, False)) == 3 for d in area)
+    # strict and full give the same evaluation set and candidates
+    build(tmp_path, tmp_path / "kg_strict")
+    strict = json.loads((tmp_path / "kg_strict" / "txgnn_protocol.json").read_text())
+    for k in ("test_pairs", "eval_diseases", "candidate_drugs"):
+        assert strict[k] == proto[k]
+
+
+def pd_read(path):
+    import pandas as pd
+    return pd.read_csv(path)

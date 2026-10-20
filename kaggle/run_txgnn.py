@@ -11,9 +11,16 @@ STAGES (all heavy work runs in subprocesses, logs in /kaggle/working/txgnn_h2h/l
               torch_geometric, goatools; DGL self-test. (DGL has no wheels for Kaggle's Python 3.13; our model
               keeps using Kaggle's own Python.)
   2 split     TxGNN's own code builds the 'autoimmune' disease-area split; exported to export/
-  3 convert   bpp.build_txgnn -> our CompactKG with the same training graph and test labels
-  4 train     GPU0: TxGNN with the official reproduce/train.py settings  |  GPU1: BioPathNet++ (--prior)
-  5 evaluate  both models, TxGNN's disease-centric protocol AND our full-ranking protocol -> h2h.json
+  3 convert   bpp.build_txgnn --coverage COVERAGE -> our CompactKG with the same training graph and test labels
+  4 train     job queue over both GPUs: TxGNN (official reproduce/train.py settings) for every seed in TX_SEEDS,
+              BioPathNet++ (--prior) for every seed in OUR_SEEDS, all on the ONE cached split of stage 2;
+              each job is scored right after it finishes, jobs that no longer fit in SESSION_H are skipped
+  5 evaluate  all runs, TxGNN's disease-centric protocol AND our full-ranking protocol -> h2h.json
+              (paired tests on per-disease means over seeds)
+
+Runs: 21 Oct 2026 = COVERAGE "strict", 1 seed each (TX_SEED 1 then also meant torch seed 0 from TxGNN's import).
+Second run = COVERAGE "full": our model trains on every non-area disease (minus TxGNN's random test edges), 3 seeds
+each. Time plan on 2 x T4: TxGNN ~1.6 h per seed, ours <= ~4.4 h per seed (~1,260 training diseases, 20 epochs).
 
 Fairness notes (also written to summary.md)
   * TxGNN draws the 5% random test edges of a disease-area split with numpy's global RNG and no seed;
@@ -43,17 +50,21 @@ TX_DGL = "dgl==2.4.0+cu124"
 TX_WHEELS = {"torch": "https://download.pytorch.org/whl/cu124", "dgl": "https://data.dgl.ai/wheels/torch-2.4/cu124/repo.html"}
 SPLIT = "autoimmune"
 SPLIT_RANDOM_SEED = 0          # numpy global seed for TxGNN's unseeded random test edges
-TX_SEED = 1                    # TxGNN train/valid split seed (their reproduce runs used 1-5)
-OUR_SEED = 0
+TX_SPLIT_SEED = 1              # TxGNN train/valid split seed (their reproduce runs used 1-5): ONE cached split
+TX_SEEDS = [0, 1, 2]           # TxGNN training seeds (random/numpy/torch, set after txgnn's import-time seed 0)
+OUR_SEEDS = [0, 1, 2]          # BioPathNet++ training seeds
+COVERAGE = "full"              # bpp.build_txgnn --coverage: "full" (2nd run) | "strict" (1st run, 21 Oct)
 PRETRAIN_MAX_H = 3.0
 FINETUNE_EPOCHS = 500          # official reproduce/train.py
+TX_RUN_H = 1.7                 # one TxGNN run incl. eval on a T4 (21 Oct: pretrain 1.27 h + finetune 0.14 h)
+OUR_MIN_H = 1.0                # do not start one of our runs with less time left than this
 SESSION_H = 11.0
 
 INPUT = os.environ.get("BPP_INPUT", "/kaggle/input")
 WORK = Path(os.environ.get("BPP_WORK", "/kaggle/working")) / "txgnn_h2h"
 SCRATCH = Path(os.environ.get("BPP_SCRATCH", "/tmp/txgnn_h2h"))    # big files, NOT saved as notebook output
 LOGS, SCRIPTS, OUT = WORK / "logs", WORK / "scripts", WORK / "results"
-KG = WORK / "kg_txgnn_autoimmune"
+KG = WORK / f"kg_txgnn_{SPLIT}_{COVERAGE}"
 EXPORT, TXDATA, TXREPO, TXENV = SCRATCH / "export", SCRATCH / "txdata", SCRATCH / "TxGNN", SCRATCH / "txenv"
 TX_PY = TXENV / "bin" / "python"
 T0 = time.time()
@@ -172,12 +183,14 @@ print(json.dumps(info, indent=1))
 '''
 
 TX_TRAIN = COMPAT + r'''
-import json, pickle, numpy as np
-data, split, seed, out, ft = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4], int(sys.argv[5])
-from txgnn import TxData, TxGNN, TxEval
+import json, pickle, random, numpy as np, torch
+data, split, seed, out, ft, ts = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4], int(sys.argv[5]), int(sys.argv[6])
+from txgnn import TxData, TxGNN, TxEval                  # txgnn/TxGNN.py runs torch.manual_seed(0) at import
+random.seed(ts); np.random.seed(ts); torch.manual_seed(ts); torch.cuda.manual_seed_all(ts)
 tx = TxData(data_folder_path=data)
-tx.prepare_split(split=split, seed=seed)                 # loads the cached split from stage 2
-m = TxGNN(data=tx, weight_bias_track=False, proj_name="h2h", exp_name=f"TxGNN_{seed}_{split}",
+tx.prepare_split(split=split, seed=seed)                 # loads the cached split from stage 2 (seed = split seed)
+print(f"### split seed {seed}, training seed {ts}", flush=True)
+m = TxGNN(data=tx, weight_bias_track=False, proj_name="h2h", exp_name=f"TxGNN_{seed}_{split}_t{ts}",
           device=os.environ.get("TX_DEVICE", "cuda:0"))
 m.model_initialize(n_hid=100, n_inp=100, n_out=100, proto=True, proto_num=3, attention=False,
                    sim_measure="all_nodes_profile", agg_measure="rarity")
@@ -334,77 +347,126 @@ def main():
     # process_disease_area_split reads <data>/disease_files/<split>.csv, which ships with the repo, not Dataverse
     shutil.copytree(TXREPO / "data" / "disease_files", TXDATA / "disease_files", dirs_exist_ok=True)
     if not (EXPORT / "split_info.json").exists():
-        rc = sh([tx_py, SCRIPTS / "split_export.py", TXDATA, EXPORT, SPLIT, TX_SEED, SPLIT_RANDOM_SEED], LOGS / "split.log", split_env)
+        rc = sh([tx_py, SCRIPTS / "split_export.py", TXDATA, EXPORT, SPLIT, TX_SPLIT_SEED, SPLIT_RANDOM_SEED], LOGS / "split.log", split_env)
         tail(LOGS / "split.log")
         assert rc == 0, "split generation failed: see split.log"
 
     # stage 3: convert
     if not (KG / "splits.json").exists():
-        rc = sh([py, "-m", "bpp.build_txgnn", "--export", EXPORT, "--out", KG, "--names", TXDATA / "kg.csv"],
-                LOGS / "convert.log", env)
+        rc = sh([py, "-m", "bpp.build_txgnn", "--export", EXPORT, "--out", KG, "--names", TXDATA / "kg.csv",
+                 "--coverage", COVERAGE], LOGS / "convert.log", env)
         tail(LOGS / "convert.log")
         assert rc == 0, "conversion failed: see convert.log"
 
-    # stage 4: train both in parallel
-    def run_txgnn():
-        if not dgl_ok or (OUT / "txgnn_raw_indication.pkl").exists():
-            return
-        rc = sh([tx_py, SCRIPTS / "tx_train.py", TXDATA, SPLIT, TX_SEED, OUT, FINETUNE_EPOCHS], LOGS / "txgnn_train.log",
-                dict(tx_env, CUDA_VISIBLE_DEVICES="0"), timeout=max(600, int(3600 * (hours_left() - 0.5))))
-        print("TxGNN rc", rc, flush=True); tail(LOGS / "txgnn_train.log")
+    # stage 4: job queue over both GPUs. Ours (longest) first on one GPU, the TxGNN seeds back to back on the other,
+    # then the remaining seeds of ours; never two TxGNN runs at once (each holds the full graph in CPU RAM)
+    def run_txgnn(seed, gpu):
+        out = OUT / f"txgnn_s{seed}"
+        pkl = out / "txgnn_raw_indication.pkl"
+        if not dgl_ok:
+            return "skipped: no DGL"
+        if not pkl.exists():
+            if hours_left() < TX_RUN_H + 0.5:
+                return f"skipped: {hours_left():.2f} h left"
+            rc = sh([tx_py, SCRIPTS / "tx_train.py", TXDATA, SPLIT, TX_SPLIT_SEED, out, FINETUNE_EPOCHS, seed],
+                    LOGS / f"txgnn_s{seed}.log", dict(tx_env, CUDA_VISIBLE_DEVICES=str(gpu)),
+                    timeout=max(600, int(3600 * (hours_left() - 0.5))))
+            print(f"TxGNN s{seed} rc {rc}", flush=True); tail(LOGS / f"txgnn_s{seed}.log")
+        if not pkl.exists():
+            return "failed (see log)"
+        sh([py, SCRIPTS / "align.py", KG, pkl, OUT / f"txgnn_s{seed}.npz", code], LOGS / "eval.log", env)
+        return "done"
 
-    run_dir = WORK / "runs" / f"ours_s{OUR_SEED}"
+    def run_ours(seed, gpu):
+        run_dir = WORK / "runs" / f"ours_s{seed}"
+        genv = dict(env, CUDA_VISIBLE_DEVICES=str(gpu))
+        if not (run_dir / "results.json").exists():
+            if hours_left() < OUR_MIN_H + 0.75:
+                return f"skipped: {hours_left():.2f} h left"
+            rc = sh([py, "-m", "bpp.train", "--data", KG, "--split", "splits.json", "--out", run_dir, "--device", "cuda:0",
+                     "--prior", "--seed", seed, "--dim", "32", "--layers", "6", "--batch", "8", "--epochs", "20",
+                     "--patience", "6", "--time-budget-h", f"{hours_left() - 0.75:.2f}"],
+                    LOGS / f"ours_s{seed}.log", genv)
+            print(f"ours s{seed} rc {rc}", flush=True); tail(LOGS / f"ours_s{seed}.log")
+        if not (run_dir / "best.pt").exists():
+            return "failed (see log)"
+        # scored from best.pt also when training stopped on the time budget (no results.json -> flagged unfinished)
+        sh([py, "-m", "bpp.score", "--run", run_dir, "--data", KG, "--sets", "area", "--device", "cuda:0",
+            "--out", OUT / f"ours_s{seed}.npz"], LOGS / "eval.log", genv)
+        for f in ("train_log.jsonl", "results.json"):
+            if (run_dir / f).exists():
+                shutil.copy(run_dir / f, OUT / f"ours_s{seed}_{f}")
+        return "done" if (run_dir / "results.json").exists() else "unfinished (time budget), scored from best.pt"
 
-    def run_ours():
-        if (run_dir / "results.json").exists():
-            return
-        rc = sh([py, "-m", "bpp.train", "--data", KG, "--split", "splits.json", "--out", run_dir, "--device", "cuda:0",
-                 "--prior", "--seed", OUR_SEED, "--dim", "32", "--layers", "6", "--batch", "8", "--epochs", "20",
-                 "--patience", "6", "--time-budget-h", f"{hours_left() - 0.75:.2f}"],
-                LOGS / "ours_train.log", dict(env, CUDA_VISIBLE_DEVICES="1"))
-        print("ours rc", rc, flush=True); tail(LOGS / "ours_train.log")
+    jobs = [("ours", s) for s in OUR_SEEDS[:1]] + [("txgnn", s) for s in TX_SEEDS] + [("ours", s) for s in OUR_SEEDS[1:]]
+    lock, busy, status = threading.Lock(), {"txgnn": False}, {}
 
-    threads = [threading.Thread(target=run_txgnn), threading.Thread(target=run_ours)]
+    def take():
+        with lock:
+            for j in jobs:
+                if j[0] == "txgnn" and busy["txgnn"]:
+                    continue
+                jobs.remove(j)
+                busy["txgnn"] |= j[0] == "txgnn"
+                return j, bool(jobs)
+            return None, bool(jobs)
+
+    def worker(gpu):
+        while True:
+            job, more = take()
+            if job is None:
+                if not more:
+                    return
+                time.sleep(60)                       # only a TxGNN job is left and the other GPU runs TxGNN
+                continue
+            kind, seed = job
+            print(f"[GPU{gpu}] start {kind} s{seed} ({hours_left():.2f} h left)", flush=True)
+            try:
+                status[f"{kind}_s{seed}"] = (run_txgnn if kind == "txgnn" else run_ours)(seed, gpu)
+            except Exception as e:                   # noqa: BLE001 - keep the other jobs going
+                status[f"{kind}_s{seed}"] = f"error: {e!r}"
+            finally:
+                if kind == "txgnn":
+                    with lock:
+                        busy["txgnn"] = False
+            print(f"[GPU{gpu}] {kind} s{seed}: {status[f'{kind}_s{seed}']} ({hours_left():.2f} h left)", flush=True)
+
+    n_gpu = 2 if shutil.which("nvidia-smi") and "GPU 1" in subprocess.run(["nvidia-smi", "-L"], capture_output=True,
+                                                                        text=True).stdout else 1
+    threads = [threading.Thread(target=worker, args=(g,)) for g in range(n_gpu)]
     for t in threads:
         t.start()
     while any(t.is_alive() for t in threads):
         time.sleep(600)
-        for lg in ("txgnn_train.log", "ours_train.log"):
+        for lg in sorted(LOGS.glob("*_s*.log")):
             try:
-                print(f"  {lg:18s} | {open(LOGS / lg).read().strip().splitlines()[-1][:140]}", flush=True)
+                print(f"  {lg.name:16s} | {lg.read_text(errors='replace').strip().splitlines()[-1][:140]}", flush=True)
             except (OSError, IndexError):
                 pass
     for t in threads:
         t.join()
 
-    # stage 5: evaluate
-    args = []
-    if (run_dir / "best.pt").exists():      # also when training stopped on the time budget (no results.json)
-        sh([py, "-m", "bpp.score", "--run", run_dir, "--data", KG, "--sets", "area", "--device", "cuda:0",
-            "--out", OUT / f"ours_s{OUR_SEED}.npz"], LOGS / "eval.log", env)
-        args += ["--ours", OUT / f"ours_s{OUR_SEED}.npz"]
-    if (OUT / "txgnn_raw_indication.pkl").exists():
-        sh([py, SCRIPTS / "align.py", KG, OUT / "txgnn_raw_indication.pkl", OUT / f"txgnn_s{TX_SEED}.npz", code],
+    # stage 5: evaluate every scored run together (paired tests on per-disease seed means)
+    ours_npz = [OUT / f"ours_s{s}.npz" for s in OUR_SEEDS if (OUT / f"ours_s{s}.npz").exists()]
+    tx_npz = [OUT / f"txgnn_s{s}.npz" for s in TX_SEEDS if (OUT / f"txgnn_s{s}.npz").exists()]
+    if ours_npz or tx_npz:
+        sh([py, "-m", "bpp.txgnn_eval", "--kg", KG, "--ours", *ours_npz, "--txgnn", *tx_npz, "--out", OUT / "h2h.json"],
            LOGS / "eval.log", env)
-        args += ["--txgnn", OUT / f"txgnn_s{TX_SEED}.npz"]
-    if args:
-        sh([py, "-m", "bpp.txgnn_eval", "--kg", KG, *args, "--out", OUT / "h2h.json"], LOGS / "eval.log", env)
     tail(LOGS / "eval.log", 40)
     for f in ("splits.json", "txgnn_protocol.json", "meta.json"):
         if (KG / f).exists():
             shutil.copy(KG / f, OUT / f)
     shutil.copy(EXPORT / "split_info.json", OUT / "split_info.json")
     (OUT / "settings.json").write_text(json.dumps({
-        "tx_commit": TX_COMMIT, "split": SPLIT, "split_random_seed": SPLIT_RANDOM_SEED, "tx_seed": TX_SEED,
-        "our_seed": OUR_SEED, "pretrain_max_h": PRETRAIN_MAX_H, "finetune_epochs": FINETUNE_EPOCHS, "dgl_ok": dgl_ok,
-        "ours_finished": (run_dir / "results.json").exists()}, indent=1))
-    for f in ("train_log.jsonl", "results.json"):
-        if (run_dir / f).exists():
-            shutil.copy(run_dir / f, OUT / f"ours_{f}")
+        "tx_commit": TX_COMMIT, "split": SPLIT, "split_random_seed": SPLIT_RANDOM_SEED, "tx_split_seed": TX_SPLIT_SEED,
+        "tx_seeds": TX_SEEDS, "our_seeds": OUR_SEEDS, "coverage": COVERAGE, "pretrain_max_h": PRETRAIN_MAX_H,
+        "finetune_epochs": FINETUNE_EPOCHS, "dgl_ok": dgl_ok, "jobs": status,
+        "ours_finished": {s: (WORK / "runs" / f"ours_s{s}" / "results.json").exists() for s in OUR_SEEDS},
+        "convert_stats": json.loads((KG / "txgnn_protocol.json").read_text()).get("stats", {})}, indent=1))
     notes = []
-    for lg in ("txgnn_train.log", "ours_train.log", "eval.log"):
+    for lg in sorted(LOGS.glob("*_s*.log")) + [LOGS / "eval.log"]:
         try:
-            notes += [f"[{lg}] {l.rstrip()}" for l in open(LOGS / lg)
+            notes += [f"[{lg.name}] {l.rstrip()}" for l in open(lg)
                       if l.startswith(("###", "aligned", "ours ", "txgnn ", "early stopping", "time budget", "epoch "))]
         except OSError:
             pass

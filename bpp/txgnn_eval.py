@@ -10,6 +10,8 @@ Protocols
           AUROC/AUPRC over those candidates. Means over test diseases (as in TxGNN's summary()).
   full  : our protocol, every drug ranked, filtered ranks (bpp/metrics.py).
 Both npz files hold scores aligned to the converted KG's drug order (see run_txgnn.py).
+Several npz files per model = several training seeds: paired tests then compare per-disease means over the seeds
+(as for the main results); 'seeds' gives each summary metric as mean +- sd over seeds.
 """
 from __future__ import annotations
 
@@ -69,6 +71,27 @@ def evaluate(kg: CompactKG, proto: dict, npz: Path) -> dict:
             "per_disease_full": {d: {k: v for k, v in m.items() if not k.startswith("_")} for d, m in per_full.items()}}
 
 
+def seed_mean(runs: dict, part: str) -> dict:
+    """Per-disease metrics averaged over one model's seeds (identical to the single run when there is one seed)."""
+    per = [r[part] for r in runs.values()]
+    out = {}
+    for d, m in per[0].items():
+        if all(d in p for p in per):
+            out[d] = {k: float(np.mean([p[d][k] for p in per])) for k, v in m.items()
+                      if isinstance(v, (int, float)) and all(k in p[d] for p in per)}
+    return out
+
+
+def seed_summary(runs: dict) -> dict:
+    """Each summary metric: mean and sd over seeds of the per-seed macro means."""
+    out = {}
+    for k in next(iter(runs.values()))["summary"]:
+        v = [r["summary"][k]["mean"] for r in runs.values() if isinstance(r["summary"].get(k), dict)]
+        if v:
+            out[k] = {"mean": float(np.mean(v)), "sd": float(np.std(v, ddof=1)) if len(v) > 1 else None, "seeds": v}
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kg", required=True)
@@ -80,12 +103,12 @@ def main():
     proto = json.loads((Path(a.kg) / "txgnn_protocol.json").read_text())
     res = {"ours": {Path(p).stem: evaluate(kg, proto, Path(p)) for p in a.ours},
            "txgnn": {Path(p).stem: evaluate(kg, proto, Path(p)) for p in a.txgnn}}
-    if a.ours and a.txgnn:          # paired, per disease, first seed of each
-        o = next(iter(res["ours"].values()))["per_disease_txgnn"]
-        t = next(iter(res["txgnn"].values()))["per_disease_txgnn"]
+    res["seeds"] = {who: seed_summary(res[who]) for who in ("ours", "txgnn") if res[who]}
+    if a.ours and a.txgnn:          # paired, per disease, seed-averaged
+        res["n_seeds"] = {"ours": len(res["ours"]), "txgnn": len(res["txgnn"])}
+        o, t = seed_mean(res["ours"], "per_disease_txgnn"), seed_mean(res["txgnn"], "per_disease_txgnn")
         res["paired"] = {k: compare(o, t, k) for k in ("recall@100", "auroc", "auprc")}
-        of = next(iter(res["ours"].values()))["per_disease_full"]
-        tf = next(iter(res["txgnn"].values()))["per_disease_full"]
+        of, tf = seed_mean(res["ours"], "per_disease_full"), seed_mean(res["txgnn"], "per_disease_full")
         res["paired_full"] = {k: compare(of, tf, k) for k in ("mrr", "hits@10", "hits@100", "auroc")}
     Path(a.out).write_text(json.dumps(res, indent=1))
     for who, d in (("ours", res["ours"]), ("txgnn", res["txgnn"])):
