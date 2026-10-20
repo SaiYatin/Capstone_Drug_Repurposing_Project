@@ -177,7 +177,8 @@ data, split, seed, out, ft = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.arg
 from txgnn import TxData, TxGNN, TxEval
 tx = TxData(data_folder_path=data)
 tx.prepare_split(split=split, seed=seed)                 # loads the cached split from stage 2
-m = TxGNN(data=tx, weight_bias_track=False, proj_name="h2h", exp_name=f"TxGNN_{seed}_{split}", device="cuda:0")
+m = TxGNN(data=tx, weight_bias_track=False, proj_name="h2h", exp_name=f"TxGNN_{seed}_{split}",
+          device=os.environ.get("TX_DEVICE", "cuda:0"))
 m.model_initialize(n_hid=100, n_inp=100, n_out=100, proto=True, proto_num=3, attention=False,
                    sim_measure="all_nodes_profile", agg_measure="rarity")
 t = time.time(); m.pretrain(n_epoch=1, learning_rate=1e-3, batch_size=1024, train_print_per_n=20)
@@ -275,7 +276,9 @@ def install(tx_env):
         sh(uv + ["venv", "--python", TX_PYTHON, TXENV], log)          # uv fetches a standalone CPython if needed
         pip = uv + ["pip", "install", "--python", TX_PY]
         sh(pip + [TX_TORCH, "--index-url", TX_WHEELS["torch"]], log)
-        sh(pip + ["numpy<2", "pandas==1.5.3", "scipy",       # pandas 1.x: what TxGNN was written for "scikit-learn", "matplotlib", "seaborn", "tqdm", "requests",
+        # pandas 1.x: what TxGNN was written for. Every third-party import in txgnn/ is covered here
+        # (wandb, pydot, pygraphviz are only imported inside functions this run does not call).
+        sh(pip + ["numpy<2", "pandas==1.5.3", "scipy", "scikit-learn", "matplotlib", "seaborn", "tqdm", "requests",
                   "networkx", "psutil", "pydantic", "pyyaml", "packaging", "torch_geometric", "goatools"], log)
         sh(pip + ["--no-deps", TX_DGL, "-f", TX_WHEELS["dgl"]], log)
         sh(pip + ["--no-deps", "torchdata==0.8.0"], log)                # older graphbolt builds import it

@@ -104,6 +104,15 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
   in /tmp/txgnn_h2h/txenv (torch 2.4.0+cu124, dgl 2.4.0+cu124, numpy<2, pandas<2.2) with a clean PYTHONPATH; our
   model stays on Kaggle's Python. Big files (TxGNN data, export CSVs, env) live in /tmp, not the notebook output.
   If DGL still fails: a dgl stub still lets TxGNN generate the split (tested locally), only ours runs.
+- Later Kaggle failures, fixed: Jupyter's MPLBACKEND leaked into subprocesses (→ MPLBACKEND=Agg); a `#` comment
+  inside the uv package list dropped scikit-learn/matplotlib/seaborn/tqdm/requests (→ fixed; all third-party
+  imports of txgnn/ checked statically).
+- LOCAL REHEARSAL PASSED (20 Oct, laptop CPU, scratch env Python 3.11 + torch 2.3.0 CPU + DGL 2.2.1 + pandas 1.5.3):
+  mini real-ID PrimeKG (481k rows, all 55 autoimmune-area diseases) → the notebook's own split_export.py, TxGNN
+  pretrain (cap path hit) + finetune + eval_disease_centric, bpp.build_txgnn, bpp.train/score, align.py,
+  bpp.txgnn_eval all ran. On TxGNN's predictions our protocol re-implementation EQUALS TxGNN's official summary
+  (AUROC, AUPRC, Recall@10/50/100, MRR@100 to 4 d.p.) → can be stated in the paper. Untested: full-graph GPU
+  memory/time of TxGNN on a T4, DGL 2.4 vs 2.2 differences.
 - Published (TxGNN reproduce/result_more_metrics.csv, autoimmune, indication, 5 seeds): Recall@100 0.338 ± 0.004.
   Its AUROC/AUPRC (0.875) use balanced sampled negatives → NOT comparable; papers quote only Recall@100.
 - Eval: `bpp.txgnn_eval` = TxGNN disease-centric protocol (candidates = drugs with ≥1 indication in kg_directed;
