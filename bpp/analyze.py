@@ -240,7 +240,9 @@ def analyse(root: Path, data: Path) -> dict:
     out["transfer"] = transfer_curve(per, data, out["tests"])
     out["transfer"]["last_checkpoint"] = transfer_last_checkpoint(root, out.get("transfer", {}), out["tests"])
     out["test_split"] = test_split(per, out["tests"])
-    out["txgnn_h2h"] = load_txgnn_h2h(root)
+    out["txgnn_h2h"] = load_txgnn_h2h(root, "txgnn_h2h_full")            # run 2: matched coverage, 3 seeds (main)
+    out["txgnn_h2h_strict"] = load_txgnn_h2h(root, "txgnn_h2h")          # run 1: strict coverage, 1 seed (ablation)
+    out["txgnn_coverage_ablation"] = txgnn_coverage_ablation(out["txgnn_h2h"], out["txgnn_h2h_strict"])
     return out
 
 
@@ -249,9 +251,12 @@ def analyse(root: Path, data: Path) -> dict:
 TXGNN_PUBLISHED_RECALL100 = 0.338
 
 
-def load_txgnn_h2h(root: Path) -> dict:
-    """Head-to-head on TxGNN's autoimmune split (kaggle/run_txgnn.py): copy its results/ to outputs/bpp/txgnn_h2h/."""
-    d = root / "txgnn_h2h"
+def load_txgnn_h2h(root: Path, sub: str) -> dict:
+    """Head-to-head on TxGNN's autoimmune split (kaggle/run_txgnn.py; copy its results/ + logs/ to outputs/bpp/<sub>/).
+    txgnn_h2h_full = run 2 (bpp.build_txgnn --coverage full, 3 seeds per model): model rows are means over seeds
+    (+ sd), paired tests use per-disease seed means. txgnn_h2h = run 1 (--coverage strict, 1 seed per model)."""
+    from bpp.txgnn_eval import seed_mean        # local import: bpp.txgnn_eval imports this module
+    d = root / sub
     if not (d / "h2h.json").exists():
         return {}
     h = json.loads((d / "h2h.json").read_text())
@@ -259,34 +264,56 @@ def load_txgnn_h2h(root: Path) -> dict:
            "split_info": json.loads((d / "split_info.json").read_text()) if (d / "split_info.json").exists() else {},
            "paired": h.get("paired", {}), "paired_full": h.get("paired_full", {})}
     for who in ("ours", "txgnn"):
-        if h.get(who):
-            out[who] = next(iter(h[who].values()))["summary"]
-    off = d / "txgnn_official_summary.json"
-    if off.exists():
-        rows = json.loads(off.read_text()).get("rev_indication", [])
-        out["txgnn_official"] = {name: {"mean": m, "sd": sd} for name, m, sd in rows}
+        runs = h.get(who) or {}
+        if not runs:
+            continue
+        out[f"n_seeds_{who}"] = len(runs)
+        out["n_diseases"] = next(iter(runs.values()))["summary"]["n_diseases"]
+        out[who] = h.get("seeds", {}).get(who) or next(iter(runs.values()))["summary"]
+        out[f"{who}_per_disease_txgnn"] = seed_mean(runs, "per_disease_txgnn")
+        out[f"{who}_per_disease_full"] = seed_mean(runs, "per_disease_full")
+    official = sorted(d.glob("txgnn_official_summary.json")) + sorted(d.glob("txgnn_s*/txgnn_official_summary.json"))
+    if official:
+        rows = [{name: m for name, m, _ in json.loads(f.read_text()).get("rev_indication", [])} for f in official]
+        out["txgnn_official"] = {k: {"mean": float(np.mean([r[k] for r in rows])), "n_runs": len(rows)} for k in rows[0]}
     proto = json.loads((d / "txgnn_protocol.json").read_text()) if (d / "txgnn_protocol.json").exists() else {}
     if proto:
         out["n_candidates"], out["n_test_pairs"] = len(proto["candidate_drugs"]), len(proto["test_pairs"])
-        # share of each model's full-ranking top 100 that are drugs with >= 1 indication (TxGNN's candidate set)
-        for who, f in (("ours", "ours_s0.npz"), ("txgnn", "txgnn_s1.npz")):
-            if (d / f).exists():
-                z = np.load(d / f)
+        # share of each model's full-ranking top 100 that are drugs with >= 1 indication (TxGNN's candidate set),
+        # mean over diseases and seeds
+        for who in ("ours", "txgnn"):
+            shares = []
+            for f in sorted(d.glob(f"{who}_s*.npz")):
+                z = np.load(f)
                 cand = np.isin(z["drugs"], proto["candidate_drugs"])
-                out[f"{who}_top100_indicated_share"] = float(np.mean([cand[np.argsort(-s)[:100]].mean() for s in z["scores"]]))
+                shares += [cand[np.argsort(-sc)[:100]].mean() for sc in z["scores"]]
+            if shares:
+                out[f"{who}_top100_indicated_share"] = float(np.mean(shares))
     if (d / "splits.json").exists():
         sp = json.loads((d / "splits.json").read_text())
         out["n_train_diseases"], out["n_valid_diseases"] = len(sp["train_diseases"]), len(sp["valid_diseases"])
     if (d / "coverage.json").exists():
         out["coverage"] = json.loads((d / "coverage.json").read_text())
-    log = d / "logs" / "txgnn_train.log"
-    if log.exists():
-        for stage in ("pretrain", "finetune"):
-            m = re.search(rf"### {stage} ([\d.]+) h", log.read_text(errors="replace"))
-            if m:
-                out[f"txgnn_{stage}_h"] = float(m.group(1))
-        out["txgnn_pretrain_capped"] = "### PRETRAIN CAP" in log.read_text(errors="replace")
+    logs = sorted((d / "logs").glob("txgnn_s*.log")) or sorted((d / "logs").glob("txgnn_train.log"))
+    texts = [lg.read_text(errors="replace") for lg in logs]
+    for stage in ("pretrain", "finetune"):
+        hs = [float(m.group(1)) for t in texts for m in [re.search(rf"### {stage} ([\d.]+) h", t)] if m]
+        if hs:
+            out[f"txgnn_{stage}_h"] = float(np.mean(hs))
+    if texts:
+        out["txgnn_pretrain_capped"] = any("### PRETRAIN CAP" in t for t in texts)
     return out
+
+
+def txgnn_coverage_ablation(full: dict, strict: dict) -> dict:
+    """Our model with matched (run 2, seed means) vs strict (run 1) coverage on the same 13 test diseases and the
+    same TxGNN split: how much of the run-1 gap to TxGNN was the training-coverage handicap."""
+    if not (full.get("ours_per_disease_txgnn") and strict.get("ours_per_disease_txgnn")):
+        return {}
+    return {"txgnn_protocol": {k: compare(full["ours_per_disease_txgnn"], strict["ours_per_disease_txgnn"], k)
+                               for k in ("recall@100", "auroc", "auprc")},
+            "full": {k: compare(full["ours_per_disease_full"], strict["ours_per_disease_full"], k)
+                     for k in ("mrr", "hits@10", "hits@100", "auroc")}}
 
 
 # ----------------------------------------------------------------------------- reader-friendly metrics table
@@ -705,19 +732,28 @@ def table_test(S):
 
 
 def table_txgnn(S):
-    H = S.get("txgnn_h2h", {})
-    lines = [r"\begin{tabular}{lcccccc}", r"\toprule",
-             r" & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{3}{c}{full ranking}\\",
-             r"\cmidrule(lr){2-4}\cmidrule(lr){5-7}",
-             r"Method & R@100 & AUROC & AUPRC & MRR & H@100 & AUROC\\", r"\midrule",
-             f"TxGNN, published (5 seeds) & {TXGNN_PUBLISHED_RECALL100:.3f} & -- & -- & -- & -- & --" + r"\\"]
-    for who, lab in (("txgnn", "TxGNN, re-run (this split)"), ("ours", r"\sysname (this split)")):
-        r = H.get(who)
-        lines.append(f"{lab} & " + (" & ".join(f3((r.get(k) or {}).get("mean")) for k in
-                                               ("txgnn_recall@100", "txgnn_auroc", "txgnn_auprc", "full_mrr",
-                                                "full_hits@100", "full_auroc"))
-                                    if r else r"\multicolumn{6}{c}{pending}") + r"\\")
-    lines += [r"\bottomrule", r"\end{tabular}"]
+    H, R = S.get("txgnn_h2h", {}), S.get("txgnn_h2h_strict", {})
+    keys = ("txgnn_recall@100", "txgnn_auroc", "txgnn_auprc", "full_mrr", "full_hits@100", "full_auroc")
+
+    def row(lab, H_, who):
+        r = H_.get(who)
+        if not r:
+            return f"{lab} & -- & " + r"\multicolumn{6}{c}{pending}\\"
+        return f"{lab} & {H_.get(f'n_seeds_{who}', 1)} & " + " & ".join(f3((r.get(k) or {}).get("mean")) for k in keys) + r"\\"
+
+    n_full, n_strict = H.get("n_train_diseases"), R.get("n_train_diseases")
+    lines = [r"\begin{tabular}{lccccccc}", r"\toprule",
+             r" & & \multicolumn{3}{c}{TxGNN protocol} & \multicolumn{3}{c}{full ranking}\\",
+             r"\cmidrule(lr){3-5}\cmidrule(lr){6-8}",
+             r"Method & seeds & R@100 & AUROC & AUPRC & MRR & H@100 & AUROC\\", r"\midrule",
+             f"TxGNN, published & 5 & {TXGNN_PUBLISHED_RECALL100:.3f} & -- & -- & -- & -- & --" + r"\\", r"\midrule",
+             r"\multicolumn{8}{l}{\emph{Full training coverage (main comparison)}}\\",
+             row("TxGNN", H, "txgnn"),
+             row(r"\sysname" + (f" ({n_full:,} train dis.)" if n_full else ""), H, "ours"), r"\midrule",
+             r"\multicolumn{8}{l}{\emph{Strict coverage: every disease with a test edge held out (ablation)}}\\",
+             row("TxGNN (unchanged)", R, "txgnn"),
+             row(r"\sysname" + (f" ({n_strict:,} train dis.)" if n_strict else ""), R, "ours"),
+             r"\bottomrule", r"\end{tabular}"]
     return "\n".join(lines)
 
 
@@ -854,20 +890,50 @@ def macros(S) -> str:
                 nc("TempRank" + re.sub(r"[^A-Za-z]", "", r["drug"].title()), f"{r['mean_rank']:,.0f}".replace(",", "{,}"))
     H = S.get("txgnn_h2h", {})
     nc("TxhTxPublishedRecall", f"{TXGNN_PUBLISHED_RECALL100:.3f}")
-    n = (H.get("ours") or H.get("txgnn") or {}).get("n_diseases")
-    if n:
-        nc("TxhN", str(n))
+    if H.get("n_diseases"):
+        nc("TxhN", str(H["n_diseases"]))
     for who, wt in (("ours", "Ours"), ("txgnn", "Tx")):
         if H.get(who):
+            nc(f"TxhSeeds{wt}", str(H[f"n_seeds_{who}"]))
             for k, key in TXH_KEYS:
                 if H[who].get(key):
                     nc(f"Txh{wt}{k}", f"{H[who][key]['mean']:.3f}")
+                    if H[who][key].get("sd") is not None:
+                        nc(f"Txh{wt}{k}Sd", f"{H[who][key]['sd']:.3f}")
+    cov = H.get("coverage", {})
+    for tag, key in (("TxhHeldOut", "held_out_diseases"), ("TxhHeldInd", "held_out_with_train_indications"),
+                     ("TxhDroppedEdges", "dropped_random_test_edges"), ("TxhDroppedDis", "diseases_with_dropped_test_edges"),
+                     ("TxhAreaDis", "area_diseases_with_test_edges"), ("TxhNoIndDis", "no_indication_diseases"),
+                     ("TxhNoIndEdges", "no_indication_disease_drug_edges")):
+        if cov.get(key) is not None:
+            nc(tag, f"{cov[key]:,}".replace(",", "{,}"))
+    # run 1 (strict coverage, 1 seed each) = coverage ablation
+    R = S.get("txgnn_h2h_strict", {})
+    if R.get("n_train_diseases"):
+        nc("TxhStrictTrainDis", str(R["n_train_diseases"])); nc("TxhStrictValidDis", str(R["n_valid_diseases"]))
+    for who, wt in (("ours", "Ours"), ("txgnn", "Tx")):
+        for k, key in TXH_KEYS:
+            if (R.get(who) or {}).get(key):
+                nc(f"TxhStrict{wt}{k}", f"{R[who][key]['mean']:.3f}")
+    for k, key, src in (("Recall", "recall@100", "paired"), ("Auroc", "auroc", "paired"), ("Auprc", "auprc", "paired"),
+                        ("FullMrr", "mrr", "paired_full"), ("FullHitsTen", "hits@10", "paired_full"),
+                        ("FullHitsHund", "hits@100", "paired_full"), ("FullAuroc", "auroc", "paired_full")):
+        for tag, c in (("TxhStrict", R.get(src, {}).get(key)),
+                       ("TxhCov", S.get("txgnn_coverage_ablation", {}).get(
+                           "txgnn_protocol" if src == "paired" else "full", {}).get(key))):
+            if c:
+                nc(f"{tag}Diff{k}", f"{c['mean_diff']:+.3f}"); nc(f"{tag}DiffLo{k}", f"{c['diff_ci95'][0]:+.3f}")
+                nc(f"{tag}DiffHi{k}", f"{c['diff_ci95'][1]:+.3f}"); nc(f"{tag}Pwil{k}", ptext(c["p_wilcoxon_two_sided"]))
+                nc(f"{tag}Wins{k}", str(c["wins"])); nc(f"{tag}Losses{k}", str(c["losses"]))
     if H.get("n_test_pairs"):
         nc("TxhPairs", str(H["n_test_pairs"])); nc("TxhCand", f"{H['n_candidates']:,}".replace(",", "{,}"))
     if H.get("n_train_diseases"):
-        nc("TxhTrainDis", str(H["n_train_diseases"])); nc("TxhValidDis", str(H["n_valid_diseases"]))
-    if H.get("coverage"):
-        nc("TxhNonTestDis", f"{H['coverage']['non_test_diseases_with_indications']:,}".replace(",", "{,}"))
+        nc("TxhTrainDis", f"{H['n_train_diseases']:,}".replace(",", "{,}")); nc("TxhValidDis", str(H["n_valid_diseases"]))
+        if H.get("coverage", {}).get("held_out_with_train_indications") is not None:
+            # held-out diseases with training indications = validation diseases + relatives of test/validation diseases
+            nc("TxhHeldRel", str(H["coverage"]["held_out_with_train_indications"] - H["n_valid_diseases"]))
+    if cov.get("non_test_diseases_with_indications"):
+        nc("TxhNonTestDis", f"{cov['non_test_diseases_with_indications']:,}".replace(",", "{,}"))
     for stage, tag in (("pretrain", "TxhPretrainH"), ("finetune", "TxhFinetuneH")):
         if H.get(f"txgnn_{stage}_h") is not None:
             nc(tag, f"{H[f'txgnn_{stage}_h']:.2f}")
@@ -877,8 +943,8 @@ def macros(S) -> str:
     if H.get("txgnn_official", {}).get("Recall@100"):
         nc("TxhTxOfficialRecall", f"{H['txgnn_official']['Recall@100']['mean']:.3f}")
     for k, key, src in (("Recall", "recall@100", "paired"), ("Auroc", "auroc", "paired"), ("Auprc", "auprc", "paired"),
-                        ("FullMrr", "mrr", "paired_full"), ("FullHitsHund", "hits@100", "paired_full"),
-                        ("FullAuroc", "auroc", "paired_full")):
+                        ("FullMrr", "mrr", "paired_full"), ("FullHitsTen", "hits@10", "paired_full"),
+                        ("FullHitsHund", "hits@100", "paired_full"), ("FullAuroc", "auroc", "paired_full")):
         c = H.get(src, {}).get(key)
         if c:
             nc(f"TxhDiff{k}", f"{c['mean_diff']:+.3f}"); nc(f"TxhDiffLo{k}", f"{c['diff_ci95'][0]:+.3f}")

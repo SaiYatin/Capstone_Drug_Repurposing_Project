@@ -33,7 +33,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
 | Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
 | TxGNN head-to-head | **DONE 21 Oct** (Kaggle, results (5).zip) → `outputs/bpp/txgnn_h2h/`; papers updated (journal §"Head-to-head with TxGNN" + abstract sentence, conf discussion); no TxGNN RECHECK left |
-| TxGNN head-to-head run 2 (fair coverage, 3 seeds each) | **DONE 21 Oct** (Kaggle, results (6).zip) → `outputs/bpp/txgnn_h2h_full/`, verified; results in "RUN 2 RESULTS" below. Papers NOT updated yet (still run 1); `bpp/analyze.py` not yet extended |
+| TxGNN head-to-head run 2 (fair coverage, 3 seeds each) | **DONE 21 Oct** (Kaggle, results (6).zip) → `outputs/bpp/txgnn_h2h_full/`, verified; results in "RUN 2 RESULTS" below. Papers + analyze.py UPDATED 21 Oct (run 1 = coverage ablation); Claude Docs not |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
@@ -121,12 +121,26 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
   → TxGNN higher but NOT significant by our rule (run 1: −0.163, p 0.003 significant); AUPRC +0.182 (CI −0.003..+0.395,
   p 0.17, 8/13) n.s. Full ranking: MRR +0.226 (CI +0.055..+0.422, p 0.040, 10/13) SIGNIFICANT; H@10 +0.365 (p 0.027)
   SIGNIFICANT; H@100 +0.386 (p 0.002) SIGNIFICANT; AUROC +0.183 (p 0.0002, 13/13) SIGNIFICANT.
-- Reading: with matched coverage our model clearly wins full ranking and no longer loses significantly on TxGNN's
+- Reading: with full coverage our model clearly wins full ranking and no longer loses significantly on TxGNN's
   own protocol; TxGNN still has the higher mean AUROC over its filtered candidates. Still only 13 diseases, 1 split.
   Our valid MRR (0.30–0.33) is a different valid set from run 1 (0.186) → not comparable.
-- TODO before paper text: extend `bpp/analyze.py::load_txgnn_h2h` for run 2 (seed means, `txgnn_h2h_full`, coverage),
-  regenerate macros/table, then rewrite the journal §"Head-to-head with TxGNN", abstract sentence and conf discussion
-  (run 1 becomes the coverage ablation). Full download incl. checkpoints + converted KG: `kaggle/txgnn-h2h-run2-results.zip`.
+- NOT "same edges" (found 21 Oct while writing): our MessageGraph holds drug–disease edges of TRAINING diseases only,
+  so our graph has 20,744 drug–disease edges vs TxGNN's ~33.9k training ones. Missing: 10,206 contraindication/off-label
+  edges of 667 diseases WITHOUT any indication (exact), 1,121 of the 63 validation diseases, ≤1,791 of held-out
+  relatives (64 with indications; 127 held-out-with-indications includes the 63 valid). True for run 1 too and for our
+  own protocol by design. Works AGAINST us → wins are conservative. Papers say "trained only on edges TxGNN also trains
+  on" + "our model still sees less than TxGNN"; never write "same edges"/"matched training data". Numbers in
+  txgnn_h2h_full/coverage.json (`edge_note`), computed from the KG in `kaggle/txgnn-h2h-run2-results.zip`.
+- Coverage ablation (ours run 2 seed mean vs ours run 1, same 13 diseases): full MRR +0.213 (CI +0.073..+0.391, p 0.013),
+  H@10 +0.339 (p 0.012), H@100 +0.220 (p 0.016), AUPRC +0.242 (p 0.013) significant; R@100 +0.139 (CI excl 0, p 0.062)
+  suggestive; both AUROCs n.s. (+0.031, +0.026). TxGNN AUROC lead only shrank −0.163 → −0.124; lost significance
+  mainly through consistency (TxGNN better on 7 vs 10 of 13). 3-seed mean vs 1 seed → includes seed noise.
+- PAPERS UPDATED 21 Oct: `bpp/analyze.py` reads run 2 (`txgnn_h2h_full`, main: seed means/sd) and run 1 (`txgnn_h2h`,
+  macros `TxhStrict*`) + `TxhCov*` (coverage ablation), `TxhHeldRel`, `TxhNoInd*`, `Txh*Sd`, `TxhSeeds*`;
+  tab_txgnn has main + ablation blocks. Journal: abstract sentence, new contribution bullet, §Head-to-head rewritten
+  (setup, results, coverage ablation), limitation (iii), conclusion. Conf: discussion paragraph. All 54 strict macros
+  equal the previous Txh values; non-Txh macros unchanged; figures unaffected. `outputs/paper/v3_latest.zip` rebuilt.
+  Claude Docs (explainer, audit/plan) NOT updated. Full download incl. checkpoints + KG: `kaggle/txgnn-h2h-run2-results.zip`.
 
 **TxGNN head-to-head RUN 2 — preparation (21 Oct; code + notebook; tests 9/9):**
 - `bpp.build_txgnn --coverage {strict,full}` (default strict = run 1, unchanged except new keys `coverage` in

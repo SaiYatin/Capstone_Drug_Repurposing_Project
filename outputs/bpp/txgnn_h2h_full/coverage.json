@@ -11,5 +11,11 @@
  "diseases_with_dropped_test_edges": 851,
  "run1_train_diseases": 637,
  "run1_valid_diseases": 34,
- "note": "same TxGNN split as run 1 (split_info md5 identical); only non-area diseases' random test edges removed"
+ "note": "same TxGNN split as run 1 (split_info md5 identical); only non-area diseases' random test edges removed; non_test_diseases_with_indications (diseases TxGNN trains on) taken from run 1's coverage.json, valid because the TxGNN split files are byte-identical",
+ "non_test_diseases_with_indications": 1299,
+ "our_graph_drug_edges": 20744,
+ "no_indication_diseases": 667,
+ "no_indication_disease_drug_edges": 10206,
+ "valid_disease_drug_edges": 1121,
+ "edge_note": "our message graph holds drug-disease edges of TRAINING diseases only (bpp.kg.MessageGraph), so it lacks TxGNN training edges of: diseases without any indication (10,206 contraindication/off-label edges, 667 diseases; exact), validation diseases (1,121, exact) and held-out relatives (<= 1,791; may include their own TxGNN test edges). Computed from the converted KG in kaggle/txgnn-h2h-run2-results.zip. Our model never sees an edge TxGNN does not train on."
 }

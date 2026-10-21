@@ -35829,6 +35829,1214 @@
    "tx_commit": "0e0203c3939f7d12da27aaf10e55daaff5424023",
    "split": "autoimmune",
    "split_random_seed": 0,
+   "tx_split_seed": 1,
+   "tx_seeds": [
+    0,
+    1,
+    2
+   ],
+   "our_seeds": [
+    0,
+    1,
+    2
+   ],
+   "coverage": "full",
+   "pretrain_max_h": 3.0,
+   "finetune_epochs": 500,
+   "dgl_ok": true,
+   "jobs": {
+    "txgnn_s0": "done",
+    "txgnn_s1": "done",
+    "ours_s0": "done",
+    "txgnn_s2": "done",
+    "ours_s1": "done",
+    "ours_s2": "done"
+   },
+   "ours_finished": {
+    "0": true,
+    "1": true,
+    "2": true
+   },
+   "convert_stats": {
+    "coverage": "full",
+    "nodes": 129312,
+    "context_edges": 3430198,
+    "relations": 27,
+    "therapeutic": 34302,
+    "train_diseases": 1139,
+    "valid_diseases": 63,
+    "held_out_diseases": 411,
+    "held_out_with_train_indications": 127,
+    "area_diseases": 18,
+    "eval_diseases": 13,
+    "test_pairs": 75,
+    "candidate_drugs": 1798,
+    "dropped_test_edges": 3248,
+    "dropped_test_pairs": 3248,
+    "diseases_with_dropped_test_edges": 851
+   }
+  },
+  "split_info": {
+   "kg_directed": 4049642,
+   "train": 6928056,
+   "valid": 989724,
+   "test_processed": 178224,
+   "test_diseases_indication": 13,
+   "md5": {
+    "kg_directed": "765b8af348579b256e4719d05b187d0b",
+    "train": "c9f1346c9151c88f35121955dcf1099d",
+    "valid": "b7f52eaa195e89e7d31642e4cb169aa1",
+    "test_processed": "d470e0e60b74d8af1376ea6de3159991"
+   }
+  },
+  "paired": {
+   "recall@100": {
+    "mean_diff": 0.07813838583069352,
+    "diff_ci95": [
+     -0.08967883967883966,
+     0.24552415177415168
+    ],
+    "p_boot_one_sided": 0.1704,
+    "p_wilcoxon_two_sided": 0.388671875,
+    "n": 13,
+    "wins": 7,
+    "ties": 3,
+    "losses": 3
+   },
+   "auroc": {
+    "mean_diff": -0.12406566963665508,
+    "diff_ci95": [
+     -0.25911502447003615,
+     -0.01047346751426604
+    ],
+    "p_boot_one_sided": 0.9866,
+    "p_wilcoxon_two_sided": 0.167724609375,
+    "n": 13,
+    "wins": 6,
+    "ties": 0,
+    "losses": 7
+   },
+   "auprc": {
+    "mean_diff": 0.18203355797426138,
+    "diff_ci95": [
+     -0.0032801285255448717,
+     0.39540068852549076
+    ],
+    "p_boot_one_sided": 0.0276,
+    "p_wilcoxon_two_sided": 0.167724609375,
+    "n": 13,
+    "wins": 8,
+    "ties": 0,
+    "losses": 5
+   }
+  },
+  "paired_full": {
+   "mrr": {
+    "mean_diff": 0.22571749728046125,
+    "diff_ci95": [
+     0.05531183145035889,
+     0.42153243934340257
+    ],
+    "p_boot_one_sided": 0.0028,
+    "p_wilcoxon_two_sided": 0.039794921875,
+    "n": 13,
+    "wins": 10,
+    "ties": 0,
+    "losses": 3
+   },
+   "hits@10": {
+    "mean_diff": 0.3652949614488076,
+    "diff_ci95": [
+     0.13304644073874844,
+     0.620833333333333
+    ],
+    "p_boot_one_sided": 0.0006,
+    "p_wilcoxon_two_sided": 0.02734375,
+    "n": 13,
+    "wins": 7,
+    "ties": 4,
+    "losses": 2
+   },
+   "hits@100": {
+    "mean_diff": 0.38625156894387663,
+    "diff_ci95": [
+     0.19714508248162094,
+     0.5885108481262328
+    ],
+    "p_boot_one_sided": 0.0,
+    "p_wilcoxon_two_sided": 0.001953125,
+    "n": 13,
+    "wins": 10,
+    "ties": 3,
+    "losses": 0
+   },
+   "auroc": {
+    "mean_diff": 0.18297948630013983,
+    "diff_ci95": [
+     0.09407527120855193,
+     0.2899152094839254
+    ],
+    "p_boot_one_sided": 0.0,
+    "p_wilcoxon_two_sided": 0.000244140625,
+    "n": 13,
+    "wins": 13,
+    "ties": 0,
+    "losses": 0
+   }
+  },
+  "n_seeds_ours": 3,
+  "n_diseases": 13,
+  "ours": {
+   "txgnn_auroc": {
+    "mean": 0.7772207096510774,
+    "sd": 0.009525492531178842,
+    "seeds": [
+     0.7873312175222983,
+     0.7759162197577696,
+     0.7684146916731645
+    ]
+   },
+   "txgnn_auprc": {
+    "mean": 0.3425796774380638,
+    "sd": 0.007732091438675048,
+    "seeds": [
+     0.35150783574761946,
+     0.33815066843676994,
+     0.3380805281298018
+    ]
+   },
+   "txgnn_recall@10": {
+    "mean": 0.44199390353236506,
+    "sd": 0.04301399262117436,
+    "seeds": [
+     0.49166218396987627,
+     0.4171597633136095,
+     0.4171597633136095
+    ]
+   },
+   "txgnn_recall@50": {
+    "mean": 0.5693921463152233,
+    "sd": 0.03782046792444744,
+    "seeds": [
+     0.6113501882732651,
+     0.5589026358257128,
+     0.5379236148466917
+    ]
+   },
+   "txgnn_recall@100": {
+    "mean": 0.6136811906042675,
+    "sd": 0.04200657643575783,
+    "seeds": [
+     0.6568047337278107,
+     0.6113501882732651,
+     0.5728886498117267
+    ]
+   },
+   "txgnn_mrr@10": {
+    "mean": 0.38247863247863245,
+    "sd": 0.02872720012766824,
+    "seeds": [
+     0.4155982905982905,
+     0.3643162393162393,
+     0.3675213675213675
+    ]
+   },
+   "txgnn_mrr@50": {
+    "mean": 0.38668987012526185,
+    "sd": 0.026473931393921082,
+    "seeds": [
+     0.4172349518094198,
+     0.3703601953601953,
+     0.3724744632061705
+    ]
+   },
+   "txgnn_mrr@100": {
+    "mean": 0.3871102148079016,
+    "sd": 0.02609227541891496,
+    "seeds": [
+     0.4172349518094198,
+     0.3716212294081146,
+     0.3724744632061705
+    ]
+   },
+   "full_mrr": {
+    "mean": 0.2733241960211508,
+    "sd": 0.00942935801169379,
+    "seeds": [
+     0.26420812893763335,
+     0.2727260892225677,
+     0.28303836990325143
+    ]
+   },
+   "full_hits@1": {
+    "mean": 0.17464586695355924,
+    "sd": 0.039135464140594635,
+    "seeds": [
+     0.13118612157073695,
+     0.18565088757396447,
+     0.20710059171597633
+    ]
+   },
+   "full_hits@10": {
+    "mean": 0.45615922538999465,
+    "sd": 0.05225963216758138,
+    "seeds": [
+     0.5164066702528242,
+     0.4230769230769231,
+     0.4289940828402367
+    ]
+   },
+   "full_hits@100": {
+    "mean": 0.6179845795230411,
+    "sd": 0.04491769552669607,
+    "seeds": [
+     0.6627218934911242,
+     0.6183431952662721,
+     0.5728886498117267
+    ]
+   },
+   "full_auroc": {
+    "mean": 0.9361598935437297,
+    "sd": 0.0069045871753428455,
+    "seeds": [
+     0.9408506799775466,
+     0.928231426259952,
+     0.9393975743936908
+    ]
+   }
+  },
+  "ours_per_disease_txgnn": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8970861172976986,
+    "auprc": 0.39237130823669286,
+    "recall@10": 0.5,
+    "mrr@10": 0.7777777777777777,
+    "recall@50": 0.5,
+    "mrr@50": 0.7777777777777777,
+    "recall@100": 0.5,
+    "mrr@100": 0.7777777777777777
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.4344277499536264,
+    "auprc": 0.0009856609987764263,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9996042830540036,
+    "auprc": 0.8699900793650794,
+    "recall@10": 1.0,
+    "mrr@10": 0.8333333333333334,
+    "recall@50": 1.0,
+    "mrr@50": 0.8333333333333334,
+    "recall@100": 1.0,
+    "mrr@100": 0.8333333333333334
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7133444691907944,
+    "auprc": 0.06797586189347446,
+    "recall@10": 0.16666666666666666,
+    "mrr@10": 0.1111111111111111,
+    "recall@50": 0.5,
+    "mrr@50": 0.13396825396825396,
+    "recall@100": 0.5,
+    "mrr@100": 0.13396825396825396
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.35188276757558895,
+    "auprc": 0.0008617668454397601,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7765280471162824,
+    "auprc": 0.6664595362392628,
+    "recall@10": 0.6666666666666666,
+    "mrr@10": 1.0,
+    "recall@50": 0.6923076923076922,
+    "mrr@50": 1.0,
+    "recall@100": 0.6923076923076922,
+    "mrr@100": 1.0
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.21849574560586296,
+    "auprc": 0.003735743382117513,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "n_candidates": 1798.0,
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "recall@10": 1.0,
+    "mrr@10": 1.0,
+    "recall@50": 1.0,
+    "mrr@50": 1.0,
+    "recall@100": 1.0,
+    "mrr@100": 1.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9680181784266844,
+    "auprc": 0.2760306581608058,
+    "recall@10": 0.1818181818181818,
+    "mrr@10": 0.3333333333333333,
+    "recall@50": 0.6969696969696969,
+    "mrr@50": 0.35813008130081303,
+    "recall@100": 0.9393939393939394,
+    "mrr@100": 0.35813008130081303
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9994646182495345,
+    "auprc": 0.7922123015873016,
+    "recall@10": 1.0,
+    "mrr@10": 0.6666666666666666,
+    "recall@50": 1.0,
+    "mrr@50": 0.6666666666666666,
+    "recall@100": 1.0,
+    "mrr@100": 0.6666666666666666
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9955481357818586,
+    "auprc": 0.1111111111111111,
+    "recall@10": 1.0,
+    "mrr@10": 0.1111111111111111,
+    "recall@50": 1.0,
+    "mrr@50": 0.1111111111111111,
+    "recall@100": 1.0,
+    "mrr@100": 0.1111111111111111
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8806866336278101,
+    "auprc": 0.2580832930979058,
+    "recall@10": 0.23076923076923075,
+    "mrr@10": 0.13888888888888887,
+    "recall@50": 0.8461538461538461,
+    "mrr@50": 0.13888888888888887,
+    "recall@100": 0.8461538461538461,
+    "mrr@100": 0.13888888888888887
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8687824795842612,
+    "auprc": 0.013718485776861506,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.16666666666666666,
+    "mrr@50": 0.0070921985815602835,
+    "recall@100": 0.5,
+    "mrr@100": 0.012556679455877224
+   }
+  },
+  "ours_per_disease_full": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.3905940925285612,
+    "mean_rank": 191.16666666666666,
+    "auroc": 0.9760946993505133,
+    "auprc": 0.39228469037842517,
+    "hits@1": 0.3333333333333333,
+    "hits@10": 0.5,
+    "hits@50": 0.5,
+    "hits@100": 0.5
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0008619351717922296,
+    "mean_rank": 1191.3333333333333,
+    "auroc": 0.8503854533266297,
+    "auprc": 0.0008619351717922296,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.6458333333333334,
+    "mean_rank": 1.7083333333333333,
+    "auroc": 0.9999108902587327,
+    "auprc": 0.8699900793650794,
+    "hits@1": 0.2916666666666667,
+    "hits@10": 1.0,
+    "hits@50": 1.0,
+    "hits@100": 1.0
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.06742551847985993,
+    "mean_rank": 597.8333333333334,
+    "auroc": 0.9249738110203226,
+    "auprc": 0.06786610710171266,
+    "hits@1": 0.0,
+    "hits@10": 0.16666666666666666,
+    "hits@50": 0.5,
+    "hits@100": 0.5
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0007434283829544501,
+    "mean_rank": 1365.0,
+    "auroc": 0.8285570638511816,
+    "auprc": 0.0007434283829544501,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.5893328226164035,
+    "mean_rank": 643.1538461538462,
+    "auroc": 0.9191649236966457,
+    "auprc": 0.6657592976570412,
+    "hits@1": 0.5128205128205128,
+    "hits@10": 0.6923076923076922,
+    "hits@50": 0.6923076923076922,
+    "hits@100": 0.7179487179487181
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "mrr": 0.0011236123306088378,
+    "mean_rank": 2024.1851851851854,
+    "auroc": 0.7454472590355831,
+    "auprc": 0.002801020536376963,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "mrr": 1.0,
+    "mean_rank": 1.0,
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "hits@1": 1.0,
+    "hits@10": 1.0,
+    "hits@50": 1.0,
+    "hits@100": 1.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "mrr": 0.1411071396741896,
+    "mean_rank": 58.51515151515152,
+    "auroc": 0.992761747858652,
+    "auprc": 0.27602532425852283,
+    "hits@1": 0.0909090909090909,
+    "hits@10": 0.21212121212121213,
+    "hits@50": 0.8181818181818182,
+    "hits@100": 0.9696969696969697
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.5208333333333334,
+    "mean_rank": 1.9583333333333333,
+    "auroc": 0.9998794397618149,
+    "auprc": 0.7922123015873016,
+    "hits@1": 0.041666666666666664,
+    "hits@10": 1.0,
+    "hits@50": 1.0,
+    "hits@100": 1.0
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.1111111111111111,
+    "mean_rank": 9.0,
+    "auroc": 0.9989944695827049,
+    "auprc": 0.1111111111111111,
+    "hits@1": 0.0,
+    "hits@10": 1.0,
+    "hits@50": 1.0,
+    "hits@100": 1.0
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.07345699301157799,
+    "mean_rank": 287.02564102564105,
+    "auroc": 0.9639947581790483,
+    "auprc": 0.2572511694017833,
+    "hits@1": 0.0,
+    "hits@10": 0.358974358974359,
+    "hits@50": 0.8461538461538461,
+    "hits@100": 0.8461538461538461
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.010791228301234976,
+    "mean_rank": 240.33333333333334,
+    "auroc": 0.9699141001466584,
+    "auprc": 0.013674540499564874,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.16666666666666666,
+    "hits@100": 0.5
+   }
+  },
+  "n_seeds_txgnn": 3,
+  "txgnn": {
+   "txgnn_auroc": {
+    "mean": 0.9012863792877326,
+    "sd": 0.004257415024485182,
+    "seeds": [
+     0.9058223044191558,
+     0.8973768869195792,
+     0.9006599465244627
+    ]
+   },
+   "txgnn_auprc": {
+    "mean": 0.1605461194638024,
+    "sd": 0.041226650907830606,
+    "seeds": [
+     0.12376048845166052,
+     0.20510665856889967,
+     0.15277121137084704
+    ]
+   },
+   "txgnn_recall@10": {
+    "mean": 0.16577759846990617,
+    "sd": 0.04267075349261573,
+    "seeds": [
+     0.12198912198912201,
+     0.20723507261968802,
+     0.16810860080090848
+    ]
+   },
+   "txgnn_recall@50": {
+    "mean": 0.3717799294722372,
+    "sd": 0.07844590131025331,
+    "seeds": [
+     0.2891040583348276,
+     0.3810665829896599,
+     0.44516914709222405
+    ]
+   },
+   "txgnn_recall@100": {
+    "mean": 0.535542804773574,
+    "sd": 0.06753025806663479,
+    "seeds": [
+     0.4943966290120136,
+     0.4987523160600084,
+     0.6134794692487
+    ]
+   },
+   "txgnn_mrr@10": {
+    "mean": 0.19397639397639396,
+    "sd": 0.060095601647429775,
+    "seeds": [
+     0.152014652014652,
+     0.26282051282051283,
+     0.1670940170940171
+    ]
+   },
+   "txgnn_mrr@50": {
+    "mean": 0.20123643448864137,
+    "sd": 0.05891982788286932,
+    "seeds": [
+     0.16148904858582278,
+     0.2689291101055807,
+     0.1732911447745207
+    ]
+   },
+   "txgnn_mrr@100": {
+    "mean": 0.20407062203764378,
+    "sd": 0.05762774604264261,
+    "seeds": [
+     0.16483540503195895,
+     0.2702328910703786,
+     0.17714357001059378
+    ]
+   },
+   "full_mrr": {
+    "mean": 0.04760669874068956,
+    "sd": 0.048755832502829645,
+    "seeds": [
+     0.019228070762104515,
+     0.10390445972798691,
+     0.019687565731977254
+    ]
+   },
+   "full_hits@1": {
+    "mean": 0.026716872870719024,
+    "sd": 0.04125678916467583,
+    "seeds": [
+     0.0,
+     0.07423345884884346,
+     0.00591715976331361
+    ]
+   },
+   "full_hits@10": {
+    "mean": 0.09086426394118702,
+    "sd": 0.06249533688095467,
+    "seeds": [
+     0.05056481979558902,
+     0.16285637439483594,
+     0.05917159763313609
+    ]
+   },
+   "full_hits@100": {
+    "mean": 0.23173301057916443,
+    "sd": 0.06826950373502909,
+    "seeds": [
+     0.20091447014523936,
+     0.30997848305540615,
+     0.18430607853684774
+    ]
+   },
+   "full_auroc": {
+    "mean": 0.7531804072435899,
+    "sd": 0.02088717650387208,
+    "seeds": [
+     0.7508868631883527,
+     0.7335346593649076,
+     0.7751196991775094
+    ]
+   }
+  },
+  "txgnn_per_disease_txgnn": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9303080920564216,
+    "auprc": 0.020469106919161872,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.16666666666666666,
+    "mrr@50": 0.016666666666666666,
+    "recall@100": 0.6666666666666666,
+    "mrr@100": 0.02793109922087675
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8963086625857911,
+    "auprc": 0.005648225773889972,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9718342644320298,
+    "auprc": 0.13040486059950518,
+    "recall@10": 0.125,
+    "mrr@10": 0.12222222222222223,
+    "recall@50": 0.75,
+    "mrr@50": 0.15252525252525254,
+    "recall@100": 0.8333333333333334,
+    "mrr@100": 0.15252525252525254
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8876206384558278,
+    "auprc": 0.009047229593612283,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.3333333333333333,
+    "mrr@100": 0.008810062018199734
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7135967352995735,
+    "auprc": 0.002099955729932311,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.958974358974359,
+    "auprc": 0.5603825855846014,
+    "recall@10": 0.5384615384615384,
+    "mrr@10": 0.8333333333333334,
+    "recall@50": 0.717948717948718,
+    "mrr@50": 0.8333333333333334,
+    "recall@100": 0.8717948717948718,
+    "mrr@100": 0.8333333333333334
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8758876260273688,
+    "auprc": 0.07592373642238794,
+    "recall@10": 0.1111111111111111,
+    "mrr@10": 0.08465608465608465,
+    "recall@50": 0.4444444444444445,
+    "mrr@50": 0.09446000622471211,
+    "recall@100": 0.5925925925925926,
+    "mrr@100": 0.09446000622471211
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8814567075436641,
+    "auprc": 0.014364197671695922,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.08333333333333333,
+    "mrr@50": 0.007246376811594203,
+    "recall@100": 0.25,
+    "mrr@100": 0.012077294685990338
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9597768394634651,
+    "auprc": 0.46068725514985936,
+    "recall@10": 0.5151515151515151,
+    "mrr@10": 0.5833333333333334,
+    "recall@50": 0.8181818181818182,
+    "mrr@50": 0.5833333333333334,
+    "recall@100": 0.8181818181818182,
+    "mrr@100": 0.5833333333333334
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9814245810055867,
+    "auprc": 0.1981313655117126,
+    "recall@10": 0.25,
+    "mrr@10": 0.12037037037037036,
+    "recall@50": 0.75,
+    "mrr@50": 0.13112305854241338,
+    "recall@100": 0.9166666666666666,
+    "mrr@100": 0.13112305854241338
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9630866258579113,
+    "auprc": 0.02790306329688184,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.3333333333333333,
+    "mrr@50": 0.0196078431372549,
+    "recall@100": 0.6666666666666666,
+    "mrr@100": 0.025257560651379195
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9545212956977661,
+    "auprc": 0.57625391534124,
+    "recall@10": 0.6153846153846153,
+    "mrr@10": 0.7777777777777777,
+    "recall@50": 0.7692307692307692,
+    "mrr@50": 0.7777777777777777,
+    "recall@100": 0.8461538461538461,
+    "mrr@100": 0.7777777777777777
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7419265033407573,
+    "auprc": 0.005784055434950745,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.16666666666666666,
+    "mrr@100": 0.006289308176100628
+   }
+  },
+  "txgnn_per_disease_full": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.003838943700282311,
+    "mean_rank": 1898.0,
+    "auroc": 0.7615336266499058,
+    "auprc": 0.004092535237022914,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.16666666666666666
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.000534462673259468,
+    "mean_rank": 2495.6666666666665,
+    "auroc": 0.686442098206804,
+    "auprc": 0.000534462673259468,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.028641332477860344,
+    "mean_rank": 376.9583333333333,
+    "auroc": 0.9527036943850379,
+    "auprc": 0.06340212953864145,
+    "hits@1": 0.0,
+    "hits@10": 0.08333333333333333,
+    "hits@50": 0.375,
+    "hits@100": 0.5833333333333334
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.002660762289909881,
+    "mean_rank": 1337.3333333333333,
+    "auroc": 0.8320134087575948,
+    "auprc": 0.0030612534650235855,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.00016677480877007214,
+    "mean_rank": 6097.0,
+    "auroc": 0.2337858220211161,
+    "auprc": 0.00016677480877007214,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.10801272306036891,
+    "mean_rank": 1038.7179487179487,
+    "auroc": 0.8693708523768947,
+    "auprc": 0.23373242406722394,
+    "hits@1": 0.0,
+    "hits@10": 0.2564102564102564,
+    "hits@50": 0.6153846153846154,
+    "hits@100": 0.6923076923076922
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "mrr": 0.002201087957561821,
+    "mean_rank": 2219.444444444445,
+    "auroc": 0.7208801655203265,
+    "auprc": 0.005620871615182062,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "mrr": 0.0011521361535269002,
+    "mean_rank": 2215.75,
+    "auroc": 0.7215201810637496,
+    "auprc": 0.0019045927914106522,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "mrr": 0.15370007180451858,
+    "mean_rank": 909.2424242424241,
+    "auroc": 0.8856981595466369,
+    "auprc": 0.2527322591168325,
+    "hits@1": 0.0909090909090909,
+    "hits@10": 0.30303030303030304,
+    "hits@50": 0.6060606060606061,
+    "hits@100": 0.7272727272727272
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.004322710550818787,
+    "mean_rank": 947.5,
+    "auroc": 0.8809284186690151,
+    "auprc": 0.012923202828409716,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.125
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0037855542409842083,
+    "mean_rank": 511.3333333333333,
+    "auroc": 0.9358555387967153,
+    "auprc": 0.0037855542409842083,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.3090384993689132,
+    "mean_rank": 765.1794871794873,
+    "auroc": 0.9038041934567614,
+    "auprc": 0.4251905302952815,
+    "hits@1": 0.2564102564102564,
+    "hits@10": 0.5384615384615384,
+    "hits@50": 0.6923076923076922,
+    "hits@100": 0.7179487179487181
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.0008320245421897459,
+    "mean_rank": 4719.833333333333,
+    "auroc": 0.4068091347161114,
+    "auprc": 0.000906432228641079,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   }
+  },
+  "txgnn_official": {
+   "AUROC": {
+    "mean": 0.9012863792877325,
+    "n_runs": 3
+   },
+   "AUPRC": {
+    "mean": 0.1605461194638024,
+    "n_runs": 3
+   },
+   "Accuracy": {
+    "mean": 0.9350275234591141,
+    "n_runs": 3
+   },
+   "Sensitivity": {
+    "mean": 0.5265574880959497,
+    "n_runs": 3
+   },
+   "Specificity": {
+    "mean": 0.9358711888856504,
+    "n_runs": 3
+   },
+   "F1": {
+    "mean": 0.08064667741792568,
+    "n_runs": 3
+   },
+   "PPV": {
+    "mean": 0.04579882577277362,
+    "n_runs": 3
+   },
+   "NPV": {
+    "mean": 0.9989302195675819,
+    "n_runs": 3
+   },
+   "FPR": {
+    "mean": 0.06412881111434975,
+    "n_runs": 3
+   },
+   "FNR": {
+    "mean": 0.47344251190405034,
+    "n_runs": 3
+   },
+   "FDR": {
+    "mean": 0.9542011742272264,
+    "n_runs": 3
+   },
+   "# of Pos": {
+    "mean": 5.769230769230769,
+    "n_runs": 3
+   },
+   "Recall@1%": {
+    "mean": 0.24449375410913868,
+    "n_runs": 3
+   },
+   "Recall_Random@1%": {
+    "mean": 0.009454949944382647,
+    "n_runs": 3
+   },
+   "Enrichment@1%": {
+    "mean": 25.858809993425382,
+    "n_runs": 3
+   },
+   "MRR@1%": {
+    "mean": 0.197815691933339,
+    "n_runs": 3
+   },
+   "AP@1%": {
+    "mean": 0.1984653136385881,
+    "n_runs": 3
+   },
+   "Recall@5%": {
+    "mean": 0.524448130217361,
+    "n_runs": 3
+   },
+   "Recall_Random@5%": {
+    "mean": 0.04949944382647386,
+    "n_runs": 3
+   },
+   "Enrichment@5%": {
+    "mean": 10.595030765514776,
+    "n_runs": 3
+   },
+   "MRR@5%": {
+    "mean": 0.20407062203764378,
+    "n_runs": 3
+   },
+   "AP@5%": {
+    "mean": 0.18973468124691684,
+    "n_runs": 3
+   },
+   "Recall@10%": {
+    "mean": 0.656134819596358,
+    "n_runs": 3
+   },
+   "Recall_Random@10%": {
+    "mean": 0.09955506117908787,
+    "n_runs": 3
+   },
+   "Enrichment@10%": {
+    "mean": 6.590672657174591,
+    "n_runs": 3
+   },
+   "MRR@10%": {
+    "mean": 0.2047804147897135,
+    "n_runs": 3
+   },
+   "AP@10%": {
+    "mean": 0.1800944837201737,
+    "n_runs": 3
+   },
+   "Recall@10": {
+    "mean": 0.16577759846990617,
+    "n_runs": 3
+   },
+   "Recall_Random@10": {
+    "mean": 0.005561735261401556,
+    "n_runs": 3
+   },
+   "Enrichment@10": {
+    "mean": 29.806812204889123,
+    "n_runs": 3
+   },
+   "MRR@10": {
+    "mean": 0.19397639397639396,
+    "n_runs": 3
+   },
+   "AP@10": {
+    "mean": 0.19400487996718155,
+    "n_runs": 3
+   },
+   "Recall@50": {
+    "mean": 0.3717799294722372,
+    "n_runs": 3
+   },
+   "Recall_Random@50": {
+    "mean": 0.027808676307007785,
+    "n_runs": 3
+   },
+   "Enrichment@50": {
+    "mean": 13.369206263821651,
+    "n_runs": 3
+   },
+   "MRR@50": {
+    "mean": 0.2012364344886414,
+    "n_runs": 3
+   },
+   "AP@50": {
+    "mean": 0.19354782046697214,
+    "n_runs": 3
+   },
+   "Recall@100": {
+    "mean": 0.5355428047735741,
+    "n_runs": 3
+   },
+   "Recall_Random@100": {
+    "mean": 0.05561735261401557,
+    "n_runs": 3
+   },
+   "Enrichment@100": {
+    "mean": 9.62905962982886,
+    "n_runs": 3
+   },
+   "MRR@100": {
+    "mean": 0.20407062203764378,
+    "n_runs": 3
+   },
+   "AP@100": {
+    "mean": 0.18429574844381028,
+    "n_runs": 3
+   }
+  },
+  "n_candidates": 1798,
+  "n_test_pairs": 75,
+  "ours_top100_indicated_share": 0.9851282051282052,
+  "txgnn_top100_indicated_share": 0.23000000000000007,
+  "n_train_diseases": 1139,
+  "n_valid_diseases": 63,
+  "coverage": {
+   "source": "converted KG kg_txgnn_autoimmune_full from the Kaggle run (results (6).zip), 21 Oct 2026",
+   "coverage": "full",
+   "train_diseases": 1139,
+   "valid_diseases": 63,
+   "held_out_diseases": 411,
+   "held_out_with_train_indications": 127,
+   "area_diseases_with_test_edges": 18,
+   "eval_diseases": 13,
+   "dropped_random_test_edges": 3248,
+   "diseases_with_dropped_test_edges": 851,
+   "run1_train_diseases": 637,
+   "run1_valid_diseases": 34,
+   "note": "same TxGNN split as run 1 (split_info md5 identical); only non-area diseases' random test edges removed; non_test_diseases_with_indications (diseases TxGNN trains on) taken from run 1's coverage.json, valid because the TxGNN split files are byte-identical",
+   "non_test_diseases_with_indications": 1299,
+   "our_graph_drug_edges": 20744,
+   "no_indication_diseases": 667,
+   "no_indication_disease_drug_edges": 10206,
+   "valid_disease_drug_edges": 1121,
+   "edge_note": "our message graph holds drug-disease edges of TRAINING diseases only (bpp.kg.MessageGraph), so it lacks TxGNN training edges of: diseases without any indication (10,206 contraindication/off-label edges, 667 diseases; exact), validation diseases (1,121, exact) and held-out relatives (<= 1,791; may include their own TxGNN test edges). Computed from the converted KG in kaggle/txgnn-h2h-run2-results.zip. Our model never sees an edge TxGNN does not train on."
+  },
+  "txgnn_pretrain_h": 1.2366666666666666,
+  "txgnn_finetune_h": 0.14,
+  "txgnn_pretrain_capped": false
+ },
+ "txgnn_h2h_strict": {
+  "settings": {
+   "tx_commit": "0e0203c3939f7d12da27aaf10e55daaff5424023",
+   "split": "autoimmune",
+   "split_random_seed": 0,
    "tx_seed": 1,
    "our_seed": 0,
    "pretrain_max_h": 3.0,
@@ -35944,6 +37152,8 @@
     "losses": 1
    }
   },
+  "n_seeds_ours": 1,
+  "n_diseases": 13,
   "ours": {
    "n_diseases": 13,
    "txgnn_auroc": {
@@ -36051,6 +37261,310 @@
     "n": 13
    }
   },
+  "ours_per_disease_txgnn": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7750556792873051,
+    "auprc": 0.02127226463104326,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.5,
+    "mrr@50": 0.04,
+    "recall@100": 0.5,
+    "mrr@100": 0.04
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8336115748469672,
+    "auprc": 0.0033333333333333335,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8873603351955306,
+    "auprc": 0.25541964742796464,
+    "recall@10": 0.125,
+    "mrr@10": 1.0,
+    "recall@50": 0.875,
+    "mrr@50": 1.0,
+    "recall@100": 0.875,
+    "mrr@100": 1.0
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.6767817371937639,
+    "auprc": 0.100862812769629,
+    "recall@10": 0.5,
+    "mrr@10": 0.2,
+    "recall@50": 0.5,
+    "mrr@50": 0.2,
+    "recall@100": 0.5,
+    "mrr@100": 0.2
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7167501391207568,
+    "auprc": 0.00196078431372549,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7508726567550097,
+    "auprc": 0.18522336413756835,
+    "recall@10": 0.3076923076923077,
+    "mrr@10": 0.2,
+    "recall@50": 0.6923076923076923,
+    "mrr@50": 0.2,
+    "recall@100": 0.6923076923076923,
+    "mrr@100": 0.2
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.41568846655487235,
+    "auprc": 0.00549821374763477,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.5151895206243032,
+    "auprc": 0.0032648542699353755,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9803632293839344,
+    "auprc": 0.16949982278929646,
+    "recall@10": 0.09090909090909091,
+    "mrr@10": 0.2,
+    "recall@50": 0.8181818181818182,
+    "mrr@50": 0.2,
+    "recall@100": 0.9090909090909091,
+    "mrr@100": 0.2
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9900139664804468,
+    "auprc": 0.4753988393188199,
+    "recall@10": 0.375,
+    "mrr@10": 1.0,
+    "recall@50": 0.875,
+    "mrr@50": 1.0,
+    "recall@100": 1.0,
+    "mrr@100": 1.0
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9449081803005009,
+    "auprc": 0.01,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 1.0,
+    "mrr@100": 0.01
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8524024994613231,
+    "auprc": 0.08070965393457448,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.46153846153846156,
+    "mrr@50": 0.058823529411764705,
+    "recall@100": 0.6923076923076923,
+    "mrr@100": 0.058823529411764705
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.357739420935412,
+    "auprc": 0.0013335150891237747,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   }
+  },
+  "ours_per_disease_full": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.020588235294117647,
+    "mean_rank": 437.5,
+    "auroc": 0.9451288497800127,
+    "auprc": 0.02117508813160987,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.5,
+    "hits@100": 0.5
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0033003300330033004,
+    "mean_rank": 303.0,
+    "auroc": 0.9620412267471091,
+    "auprc": 0.0033003300330033004,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.16302803632188978,
+    "mean_rank": 371.5,
+    "auroc": 0.9533903635677443,
+    "auprc": 0.25510212145123734,
+    "hits@1": 0.125,
+    "hits@10": 0.125,
+    "hits@50": 0.875,
+    "hits@100": 0.875
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.10028121484814399,
+    "mean_rank": 891.5,
+    "auroc": 0.8880578252671276,
+    "auprc": 0.10056211354693649,
+    "hits@1": 0.0,
+    "hits@10": 0.5,
+    "hits@50": 0.5,
+    "hits@100": 0.5
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0019455252918287938,
+    "mean_rank": 514.0,
+    "auroc": 0.9355203619909502,
+    "auprc": 0.0019455252918287938,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.06831229334894871,
+    "mean_rank": 839.8461538461538,
+    "auroc": 0.8944050662328608,
+    "auprc": 0.18409475553304191,
+    "hits@1": 0.0,
+    "hits@10": 0.3076923076923077,
+    "hits@50": 0.6923076923076923,
+    "hits@100": 0.6923076923076923
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "mrr": 0.0018563874539779441,
+    "mean_rank": 1807.2222222222222,
+    "auroc": 0.7727450651456691,
+    "auprc": 0.004002100511797292,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "mrr": 0.001604964151915861,
+    "mean_rank": 1434.0,
+    "auroc": 0.8198164214761725,
+    "auprc": 0.0024021048865799873,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "mrr": 0.05214955332957907,
+    "mean_rank": 36.27272727272727,
+    "auroc": 0.9955609454728508,
+    "auprc": 0.16941438191438193,
+    "hits@1": 0.0,
+    "hits@10": 0.09090909090909091,
+    "hits@50": 0.9090909090909091,
+    "hits@100": 0.9090909090909091
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.34419908114761055,
+    "mean_rank": 18.875,
+    "auroc": 0.9977512894703736,
+    "auprc": 0.4753988393188199,
+    "hits@1": 0.25,
+    "hits@10": 0.5,
+    "hits@50": 0.875,
+    "hits@100": 1.0
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.009900990099009901,
+    "mean_rank": 101.0,
+    "auroc": 0.987430869783811,
+    "auprc": 0.009900990099009901,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.021250153521630386,
+    "mean_rank": 409.0769230769231,
+    "auroc": 0.9486308002169029,
+    "auprc": 0.07909048598697882,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.46153846153846156,
+    "hits@100": 0.6923076923076923
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.0008314400329037134,
+    "mean_rank": 2114.5,
+    "auroc": 0.7343180389692018,
+    "auprc": 0.0009740933620136609,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   }
+  },
+  "n_seeds_txgnn": 1,
   "txgnn": {
    "n_diseases": 13,
    "txgnn_auroc": {
@@ -36158,174 +37672,477 @@
     "n": 13
    }
   },
+  "txgnn_per_disease_txgnn": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9501670378619154,
+    "auprc": 0.02108843537414966,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.5,
+    "mrr@50": 0.02857142857142857,
+    "recall@100": 0.5,
+    "mrr@100": 0.02857142857142857
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8903728436282693,
+    "auprc": 0.005050505050505051,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9569134078212291,
+    "auprc": 0.09583660059103084,
+    "recall@10": 0.125,
+    "mrr@10": 0.1111111111111111,
+    "recall@50": 0.5,
+    "mrr@50": 0.1111111111111111,
+    "recall@100": 0.875,
+    "mrr@100": 0.1111111111111111
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9164810690423163,
+    "auprc": 0.013433962264150943,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.5,
+    "mrr@100": 0.018867924528301886
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8107957707289928,
+    "auprc": 0.002932551319648094,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9802628743805215,
+    "auprc": 0.44756889044831066,
+    "recall@10": 0.46153846153846156,
+    "mrr@10": 0.3333333333333333,
+    "recall@50": 0.8461538461538461,
+    "mrr@50": 0.3333333333333333,
+    "recall@100": 0.8461538461538461,
+    "mrr@100": 0.3333333333333333
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8624930128563443,
+    "auprc": 0.11495264480177081,
+    "recall@10": 0.1111111111111111,
+    "mrr@10": 0.1,
+    "recall@50": 0.6666666666666666,
+    "mrr@50": 0.1,
+    "recall@100": 0.7777777777777778,
+    "mrr@100": 0.1
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.8607859531772575,
+    "auprc": 0.015117995546694017,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.25,
+    "mrr@50": 0.03333333333333333,
+    "recall@100": 0.25,
+    "mrr@100": 0.03333333333333333
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9696800122093909,
+    "auprc": 0.44030262117317104,
+    "recall@10": 0.45454545454545453,
+    "mrr@10": 1.0,
+    "recall@50": 0.8181818181818182,
+    "mrr@50": 1.0,
+    "recall@100": 0.8181818181818182,
+    "mrr@100": 1.0
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9615921787709497,
+    "auprc": 0.05804852778764767,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.125,
+    "mrr@50": 0.04,
+    "recall@100": 0.75,
+    "mrr@100": 0.04
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9193099610461881,
+    "auprc": 0.00684931506849315,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.9620771385477268,
+    "auprc": 0.6888920634741517,
+    "recall@10": 0.6153846153846154,
+    "mrr@10": 1.0,
+    "recall@50": 0.6923076923076923,
+    "mrr@50": 1.0,
+    "recall@100": 0.8461538461538461,
+    "mrr@100": 1.0
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "n_candidates": 1798.0,
+    "auroc": 0.7700445434298441,
+    "auprc": 0.003758582037270562,
+    "recall@10": 0.0,
+    "mrr@10": 0.0,
+    "recall@50": 0.0,
+    "mrr@50": 0.0,
+    "recall@100": 0.0,
+    "mrr@100": 0.0
+   }
+  },
+  "txgnn_per_disease_full": {
+   "Sjogren syndrome [disease:10030.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.0008794496599461315,
+    "mean_rank": 2227.5,
+    "auroc": 0.7201131363922062,
+    "auprc": 0.0010114454176687378,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "CINCA syndrome [disease:11776.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0003698224852071006,
+    "mean_rank": 2704.0,
+    "auroc": 0.6602564102564102,
+    "auprc": 0.0003698224852071006,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Balo concentric sclerosis [disease:16430.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.020212405545267192,
+    "mean_rank": 658.0,
+    "auroc": 0.9173480940998868,
+    "auprc": 0.039268210060748335,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.25,
+    "hits@100": 0.375
+   },
+   "familial Mediterranean fever [disease:18088.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.004824016563146998,
+    "mean_rank": 582.5,
+    "auroc": 0.9269013199245757,
+    "auprc": 0.005299300872874695,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "neuromyelitis optica [disease:19100.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0002397506593143131,
+    "mean_rank": 4171.0,
+    "auroc": 0.475867269984917,
+    "auprc": 0.0002397506593143131,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "multiple sclerosis [disease:5301.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.012823787465669841,
+    "mean_rank": 980.8461538461538,
+    "auroc": 0.8766558215198699,
+    "auprc": 0.038599597740813764,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.07692307692307693,
+    "hits@100": 0.3076923076923077
+   },
+   "relapsing-remitting multiple sclerosis [disease:5314.0]": {
+    "n_pos": 9.0,
+    "mrr": 0.0032379282085588696,
+    "mean_rank": 1873.3333333333333,
+    "auroc": 0.7644271095453783,
+    "auprc": 0.009197428991074735,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Graves disease [disease:5364.0]": {
+    "n_pos": 4.0,
+    "mrr": 0.001106896050568257,
+    "mean_rank": 2520.25,
+    "auroc": 0.6832327423613731,
+    "auprc": 0.0015477099087563785,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "pemphigus [disease:6594.0]": {
+    "n_pos": 11.0,
+    "mrr": 0.01527742166940566,
+    "mean_rank": 1035.909090909091,
+    "auroc": 0.8697572249044687,
+    "auprc": 0.05272246961800288,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.45454545454545453,
+    "hits@100": 0.6363636363636364
+   },
+   "autoimmune disease [disease:7179.0]": {
+    "n_pos": 8.0,
+    "mrr": 0.000498493887794684,
+    "mean_rank": 2430.5,
+    "auroc": 0.6943640709523211,
+    "auprc": 0.0017424885167223103,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "Hashimoto thyroiditis [disease:7699.0]": {
+    "n_pos": 1.0,
+    "mrr": 0.0005330490405117271,
+    "mean_rank": 1876.0,
+    "auroc": 0.7643288084464555,
+    "auprc": 0.0005330490405117271,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   },
+   "systemic lupus erythematosus (disease) [disease:7915.0]": {
+    "n_pos": 13.0,
+    "mrr": 0.28050799574256985,
+    "mean_rank": 738.3846153846154,
+    "auroc": 0.9071771632194592,
+    "auprc": 0.4980146747527895,
+    "hits@1": 0.0,
+    "hits@10": 0.6923076923076923,
+    "hits@50": 0.6923076923076923,
+    "hits@100": 0.6923076923076923
+   },
+   "vitiligo [disease:8661.0]": {
+    "n_pos": 2.0,
+    "mrr": 0.00019084550002301454,
+    "mean_rank": 5502.0,
+    "auroc": 0.30848522941546197,
+    "auprc": 0.00026541671221489815,
+    "hits@1": 0.0,
+    "hits@10": 0.0,
+    "hits@50": 0.0,
+    "hits@100": 0.0
+   }
+  },
   "txgnn_official": {
    "AUROC": {
     "mean": 0.9085366002693035,
-    "sd": 0.06341598043089645
+    "n_runs": 1
    },
    "AUPRC": {
     "mean": 0.14721789961053802,
-    "sd": 0.2172774628764924
+    "n_runs": 1
    },
    "Accuracy": {
     "mean": 0.9350560451784032,
-    "sd": 0.04115346088289544
+    "n_runs": 1
    },
    "Sensitivity": {
     "mean": 0.38755902217440674,
-    "sd": 0.37697546117200204
+    "n_runs": 1
    },
    "Specificity": {
     "mean": 0.9360449636791655,
-    "sd": 0.04147056936091169
+    "n_runs": 1
    },
    "F1": {
     "mean": 0.08296316454855256,
-    "sd": 0.11267686905535321
+    "n_runs": 1
    },
    "PPV": {
     "mean": 0.04890642650962175,
-    "sd": 0.06876057307368351
+    "n_runs": 1
    },
    "NPV": {
     "mean": 0.9987745799497756,
-    "sd": 0.000871504125799318
+    "n_runs": 1
    },
    "FPR": {
     "mean": 0.06395503632083448,
-    "sd": 0.041470569360911674
+    "n_runs": 1
    },
    "FNR": {
     "mean": 0.6124409778255931,
-    "sd": 0.37697546117200204
+    "n_runs": 1
    },
    "FDR": {
     "mean": 0.9510935734903782,
-    "sd": 0.06876057307368352
+    "n_runs": 1
    },
    "# of Pos": {
     "mean": 5.769230769230769,
-    "sd": 4.526058671801738
+    "n_runs": 1
    },
    "Recall@1%": {
     "mean": 0.2003317195624888,
-    "sd": 0.2794807408029065
+    "n_runs": 1
    },
    "Recall_Random@1%": {
     "mean": 0.009454949944382647,
-    "sd": 0.0
+    "n_runs": 1
    },
    "Enrichment@1%": {
     "mean": 21.18802539843264,
-    "sd": 29.559198350801534
+    "n_runs": 1
    },
    "MRR@1%": {
     "mean": 0.19572649572649573,
-    "sd": 0.35468746756736913
+    "n_runs": 1
    },
    "AP@1%": {
     "mean": 0.1845037229921953,
-    "sd": 0.3029762377454709
+    "n_runs": 1
    },
    "Recall@5%": {
     "mean": 0.46818032394955467,
-    "sd": 0.35335430708534343
+    "n_runs": 1
    },
    "Recall_Random@5%": {
     "mean": 0.04949944382647386,
-    "sd": 0.0
+    "n_runs": 1
    },
    "Enrichment@5%": {
     "mean": 9.458294634396623,
-    "sd": 7.138551057746602
+    "n_runs": 1
    },
    "MRR@5%": {
     "mean": 0.20501670237519293,
-    "sd": 0.34982701209144956
+    "n_runs": 1
    },
    "AP@5%": {
     "mean": 0.17734721669885653,
-    "sd": 0.2684193343763959
+    "n_runs": 1
    },
    "Recall@10%": {
     "mean": 0.6205471878548802,
-    "sd": 0.39716323038739515
+    "n_runs": 1
    },
    "Recall_Random@10%": {
     "mean": 0.09955506117908787,
-    "sd": 0.0
+    "n_runs": 1
    },
    "Enrichment@10%": {
     "mean": 6.23320583107863,
-    "sd": 3.9893826158465724
+    "n_runs": 1
    },
    "MRR@10%": {
     "mean": 0.205543572765077,
-    "sd": 0.34952286768950863
+    "n_runs": 1
    },
    "AP@10%": {
     "mean": 0.1649568196295588,
-    "sd": 0.24014259727188425
+    "n_runs": 1
    },
    "Recall@10": {
     "mean": 0.13596766481381867,
-    "sd": 0.2123068441988265
+    "n_runs": 1
    },
    "Recall_Random@10": {
     "mean": 0.005561735261401557,
-    "sd": 8.673617379884035e-19
+    "n_runs": 1
    },
    "Enrichment@10": {
     "mean": 24.446986133524597,
-    "sd": 38.172770586949
+    "n_runs": 1
    },
    "MRR@10": {
     "mean": 0.19572649572649573,
-    "sd": 0.35468746756736913
+    "n_runs": 1
    },
    "AP@10": {
     "mean": 0.18147512210012212,
-    "sd": 0.30815872416289747
+    "n_runs": 1
    },
    "Recall@50": {
     "mean": 0.3383315402546172,
-    "sd": 0.328067793126934
+    "n_runs": 1
    },
    "Recall_Random@50": {
     "mean": 0.027808676307007785,
-    "sd": 0.0
+    "n_runs": 1
    },
    "Enrichment@50": {
     "mean": 12.166402187556034,
-    "sd": 11.797317840844547
+    "n_runs": 1
    },
    "MRR@50": {
     "mean": 0.20356532356532353,
-    "sd": 0.3506345122453411
+    "n_runs": 1
    },
    "AP@50": {
     "mean": 0.1822375034429801,
-    "sd": 0.286095074773137
+    "n_runs": 1
    },
    "Recall@100": {
     "mean": 0.47409748371286836,
-    "sd": 0.35894588290552865
+    "n_runs": 1
    },
    "Recall_Random@100": {
     "mean": 0.05561735261401557,
-    "sd": 0.0
+    "n_runs": 1
    },
    "Enrichment@100": {
     "mean": 8.524272757157375,
-    "sd": 6.453846974641404
+    "n_runs": 1
    },
    "MRR@100": {
     "mean": 0.20501670237519293,
-    "sd": 0.34982701209144956
+    "n_runs": 1
    },
    "AP@100": {
     "mean": 0.17207155058390697,
-    "sd": 0.25504124082684937
+    "n_runs": 1
    }
   },
   "n_candidates": 1798,
@@ -36346,6 +38163,103 @@
   "txgnn_pretrain_h": 1.27,
   "txgnn_finetune_h": 0.14,
   "txgnn_pretrain_capped": false
+ },
+ "txgnn_coverage_ablation": {
+  "txgnn_protocol": {
+   "recall@100": {
+    "mean_diff": 0.13916532185762953,
+    "diff_ci95": [
+     0.014277389277389273,
+     0.3173076923076923
+    ],
+    "p_boot_one_sided": 0.0022,
+    "p_wilcoxon_two_sided": 0.0625,
+    "n": 13,
+    "wins": 5,
+    "ties": 7,
+    "losses": 1
+   },
+   "auroc": {
+    "mean_diff": 0.031317832255683076,
+    "diff_ci95": [
+     -0.10509672709889288,
+     0.1722381119370619
+    ],
+    "p_boot_one_sided": 0.3338,
+    "p_wilcoxon_two_sided": 0.375732421875,
+    "n": 13,
+    "wins": 9,
+    "ties": 0,
+    "losses": 4
+   },
+   "auprc": {
+    "mean_diff": 0.24151990007170615,
+    "diff_ci95": [
+     0.0960198700539395,
+     0.4223608268127925
+    ],
+    "p_boot_one_sided": 0.0,
+    "p_wilcoxon_two_sided": 0.013427734375,
+    "n": 13,
+    "wins": 9,
+    "ties": 0,
+    "losses": 4
+   }
+  },
+  "full": {
+   "mrr": {
+    "mean_diff": 0.2126127956461847,
+    "diff_ci95": [
+     0.07267993201298419,
+     0.3907888317374499
+    ],
+    "p_boot_one_sided": 0.0,
+    "p_wilcoxon_two_sided": 0.013427734375,
+    "n": 13,
+    "wins": 9,
+    "ties": 0,
+    "losses": 4
+   },
+   "hits@10": {
+    "mean_diff": 0.3389591178052716,
+    "diff_ci95": [
+     0.12987885511923972,
+     0.5682938856015778
+    ],
+    "p_boot_one_sided": 0.0004,
+    "p_wilcoxon_two_sided": 0.01171875,
+    "n": 13,
+    "wins": 8,
+    "ties": 4,
+    "losses": 1
+   },
+   "hits@100": {
+    "mean_diff": 0.22039178769948004,
+    "diff_ci95": [
+     0.04672763134301599,
+     0.4373543123543123
+    ],
+    "p_boot_one_sided": 0.0002,
+    "p_wilcoxon_two_sided": 0.015625,
+    "n": 13,
+    "wins": 7,
+    "ties": 6,
+    "losses": 0
+   },
+   "auroc": {
+    "mean_diff": 0.02579088399597698,
+    "diff_ci95": [
+     -0.02167586808053032,
+     0.07740580259166603
+    ],
+    "p_boot_one_sided": 0.1572,
+    "p_wilcoxon_two_sided": 0.2734375,
+    "n": 13,
+    "wins": 9,
+    "ties": 0,
+    "losses": 4
+   }
+  }
  },
  "_knn_targets_pd": {
   "Primary Biliary Cholangitis": {
