@@ -1,0 +1,18 @@
+{
+ "coverage": "full",
+ "nodes": 129312,
+ "context_edges": 3430198,
+ "relations": 27,
+ "therapeutic": 34302,
+ "train_diseases": 1139,
+ "valid_diseases": 63,
+ "held_out_diseases": 411,
+ "held_out_with_train_indications": 127,
+ "area_diseases": 18,
+ "eval_diseases": 13,
+ "test_pairs": 75,
+ "candidate_drugs": 1798,
+ "dropped_test_edges": 3248,
+ "dropped_test_pairs": 3248,
+ "diseases_with_dropped_test_edges": 851
+}

@@ -1,0 +1,2904 @@
+Found local copy...
+Found local copy...
+Found local copy...
+Found saved processed KG... Loading...
+Splits detected... Loading splits....
+Creating DGL graph....
+Done!
+### split seed 1, training seed 2
+Creating minibatch pretraining dataloader...
+Start pre-training with #param: 1015000
+Epoch: 0 Step: 0 LR: 0.00100 Loss 0.6926, Pretrain Micro AUROC 0.5345 Pretrain Micro AUPRC 0.5376 Pretrain Macro AUROC 0.4348 Pretrain Macro AUPRC 0.5672
+Epoch: 0 Step: 20 LR: 0.00100 Loss 0.6773, Pretrain Micro AUROC 0.6035 Pretrain Micro AUPRC 0.5975 Pretrain Macro AUROC 0.6451 Pretrain Macro AUPRC 0.7092
+Epoch: 0 Step: 40 LR: 0.00100 Loss 0.6717, Pretrain Micro AUROC 0.6172 Pretrain Micro AUPRC 0.6036 Pretrain Macro AUROC 0.5999 Pretrain Macro AUPRC 0.7066
+Epoch: 0 Step: 60 LR: 0.00100 Loss 0.6608, Pretrain Micro AUROC 0.6337 Pretrain Micro AUPRC 0.6163 Pretrain Macro AUROC 0.6493 Pretrain Macro AUPRC 0.7195
+Epoch: 0 Step: 80 LR: 0.00100 Loss 0.6586, Pretrain Micro AUROC 0.6349 Pretrain Micro AUPRC 0.6186 Pretrain Macro AUROC 0.6777 Pretrain Macro AUPRC 0.7306
+Epoch: 0 Step: 100 LR: 0.00100 Loss 0.6669, Pretrain Micro AUROC 0.6159 Pretrain Micro AUPRC 0.5780 Pretrain Macro AUROC 0.6084 Pretrain Macro AUPRC 0.6814
+Epoch: 0 Step: 120 LR: 0.00100 Loss 0.6495, Pretrain Micro AUROC 0.6547 Pretrain Micro AUPRC 0.6247 Pretrain Macro AUROC 0.6224 Pretrain Macro AUPRC 0.7002
+Epoch: 0 Step: 140 LR: 0.00100 Loss 0.6445, Pretrain Micro AUROC 0.6605 Pretrain Micro AUPRC 0.6319 Pretrain Macro AUROC 0.6966 Pretrain Macro AUPRC 0.7320
+Epoch: 0 Step: 160 LR: 0.00100 Loss 0.6503, Pretrain Micro AUROC 0.6575 Pretrain Micro AUPRC 0.6290 Pretrain Macro AUROC 0.6687 Pretrain Macro AUPRC 0.7489
+Epoch: 0 Step: 180 LR: 0.00100 Loss 0.6419, Pretrain Micro AUROC 0.6672 Pretrain Micro AUPRC 0.6379 Pretrain Macro AUROC 0.6348 Pretrain Macro AUPRC 0.7119
+Epoch: 0 Step: 200 LR: 0.00100 Loss 0.6422, Pretrain Micro AUROC 0.6622 Pretrain Micro AUPRC 0.6307 Pretrain Macro AUROC 0.6565 Pretrain Macro AUPRC 0.7215
+Epoch: 0 Step: 220 LR: 0.00100 Loss 0.6545, Pretrain Micro AUROC 0.6454 Pretrain Micro AUPRC 0.6150 Pretrain Macro AUROC 0.6561 Pretrain Macro AUPRC 0.7091
+Epoch: 0 Step: 240 LR: 0.00100 Loss 0.6404, Pretrain Micro AUROC 0.6685 Pretrain Micro AUPRC 0.6329 Pretrain Macro AUROC 0.6344 Pretrain Macro AUPRC 0.7040
+Epoch: 0 Step: 260 LR: 0.00100 Loss 0.6363, Pretrain Micro AUROC 0.6732 Pretrain Micro AUPRC 0.6384 Pretrain Macro AUROC 0.6526 Pretrain Macro AUPRC 0.7252
+Epoch: 0 Step: 280 LR: 0.00100 Loss 0.6339, Pretrain Micro AUROC 0.6732 Pretrain Micro AUPRC 0.6450 Pretrain Macro AUROC 0.6338 Pretrain Macro AUPRC 0.6947
+Epoch: 0 Step: 300 LR: 0.00100 Loss 0.6266, Pretrain Micro AUROC 0.6905 Pretrain Micro AUPRC 0.6532 Pretrain Macro AUROC 0.6519 Pretrain Macro AUPRC 0.7259
+Epoch: 0 Step: 320 LR: 0.00100 Loss 0.6257, Pretrain Micro AUROC 0.6862 Pretrain Micro AUPRC 0.6600 Pretrain Macro AUROC 0.6775 Pretrain Macro AUPRC 0.7433
+Epoch: 0 Step: 340 LR: 0.00100 Loss 0.6272, Pretrain Micro AUROC 0.6901 Pretrain Micro AUPRC 0.6504 Pretrain Macro AUROC 0.7370 Pretrain Macro AUPRC 0.7533
+Epoch: 0 Step: 360 LR: 0.00100 Loss 0.6251, Pretrain Micro AUROC 0.6887 Pretrain Micro AUPRC 0.6608 Pretrain Macro AUROC 0.6820 Pretrain Macro AUPRC 0.7441
+Epoch: 0 Step: 380 LR: 0.00100 Loss 0.6197, Pretrain Micro AUROC 0.6986 Pretrain Micro AUPRC 0.6803 Pretrain Macro AUROC 0.6317 Pretrain Macro AUPRC 0.7192
+Epoch: 0 Step: 400 LR: 0.00100 Loss 0.6230, Pretrain Micro AUROC 0.6912 Pretrain Micro AUPRC 0.6573 Pretrain Macro AUROC 0.6814 Pretrain Macro AUPRC 0.7446
+Epoch: 0 Step: 420 LR: 0.00100 Loss 0.6209, Pretrain Micro AUROC 0.6871 Pretrain Micro AUPRC 0.6446 Pretrain Macro AUROC 0.6602 Pretrain Macro AUPRC 0.7232
+Epoch: 0 Step: 440 LR: 0.00100 Loss 0.6133, Pretrain Micro AUROC 0.7026 Pretrain Micro AUPRC 0.6823 Pretrain Macro AUROC 0.6774 Pretrain Macro AUPRC 0.7543
+Epoch: 0 Step: 460 LR: 0.00100 Loss 0.6211, Pretrain Micro AUROC 0.6926 Pretrain Micro AUPRC 0.6488 Pretrain Macro AUROC 0.6488 Pretrain Macro AUPRC 0.6989
+Epoch: 0 Step: 480 LR: 0.00100 Loss 0.6192, Pretrain Micro AUROC 0.6952 Pretrain Micro AUPRC 0.6681 Pretrain Macro AUROC 0.7284 Pretrain Macro AUPRC 0.7825
+Epoch: 0 Step: 500 LR: 0.00100 Loss 0.6246, Pretrain Micro AUROC 0.6830 Pretrain Micro AUPRC 0.6496 Pretrain Macro AUROC 0.7134 Pretrain Macro AUPRC 0.7706
+Epoch: 0 Step: 520 LR: 0.00100 Loss 0.6029, Pretrain Micro AUROC 0.7151 Pretrain Micro AUPRC 0.6885 Pretrain Macro AUROC 0.8088 Pretrain Macro AUPRC 0.8321
+Epoch: 0 Step: 540 LR: 0.00100 Loss 0.6122, Pretrain Micro AUROC 0.6974 Pretrain Micro AUPRC 0.6656 Pretrain Macro AUROC 0.7122 Pretrain Macro AUPRC 0.7555
+Epoch: 0 Step: 560 LR: 0.00100 Loss 0.6065, Pretrain Micro AUROC 0.7056 Pretrain Micro AUPRC 0.6771 Pretrain Macro AUROC 0.6709 Pretrain Macro AUPRC 0.7442
+Epoch: 0 Step: 580 LR: 0.00100 Loss 0.6090, Pretrain Micro AUROC 0.7057 Pretrain Micro AUPRC 0.6652 Pretrain Macro AUROC 0.7113 Pretrain Macro AUPRC 0.7637
+Epoch: 0 Step: 600 LR: 0.00100 Loss 0.6160, Pretrain Micro AUROC 0.6974 Pretrain Micro AUPRC 0.6583 Pretrain Macro AUROC 0.7161 Pretrain Macro AUPRC 0.7722
+Epoch: 0 Step: 620 LR: 0.00100 Loss 0.6079, Pretrain Micro AUROC 0.7084 Pretrain Micro AUPRC 0.6665 Pretrain Macro AUROC 0.6582 Pretrain Macro AUPRC 0.7128
+Epoch: 0 Step: 640 LR: 0.00100 Loss 0.6091, Pretrain Micro AUROC 0.7142 Pretrain Micro AUPRC 0.6854 Pretrain Macro AUROC 0.7628 Pretrain Macro AUPRC 0.7910
+Epoch: 0 Step: 660 LR: 0.00100 Loss 0.5932, Pretrain Micro AUROC 0.7254 Pretrain Micro AUPRC 0.6940 Pretrain Macro AUROC 0.7368 Pretrain Macro AUPRC 0.7905
+Epoch: 0 Step: 680 LR: 0.00100 Loss 0.5899, Pretrain Micro AUROC 0.7338 Pretrain Micro AUPRC 0.6889 Pretrain Macro AUROC 0.7402 Pretrain Macro AUPRC 0.7764
+Epoch: 0 Step: 700 LR: 0.00100 Loss 0.6014, Pretrain Micro AUROC 0.7138 Pretrain Micro AUPRC 0.6813 Pretrain Macro AUROC 0.7093 Pretrain Macro AUPRC 0.7583
+Epoch: 0 Step: 720 LR: 0.00100 Loss 0.6115, Pretrain Micro AUROC 0.7046 Pretrain Micro AUPRC 0.6721 Pretrain Macro AUROC 0.7521 Pretrain Macro AUPRC 0.7726
+Epoch: 0 Step: 740 LR: 0.00100 Loss 0.5973, Pretrain Micro AUROC 0.7215 Pretrain Micro AUPRC 0.6929 Pretrain Macro AUROC 0.7842 Pretrain Macro AUPRC 0.8109
+Epoch: 0 Step: 760 LR: 0.00100 Loss 0.6096, Pretrain Micro AUROC 0.7061 Pretrain Micro AUPRC 0.6639 Pretrain Macro AUROC 0.7002 Pretrain Macro AUPRC 0.7699
+Epoch: 0 Step: 780 LR: 0.00100 Loss 0.6056, Pretrain Micro AUROC 0.7072 Pretrain Micro AUPRC 0.6818 Pretrain Macro AUROC 0.6625 Pretrain Macro AUPRC 0.7442
+Epoch: 0 Step: 800 LR: 0.00100 Loss 0.5981, Pretrain Micro AUROC 0.7222 Pretrain Micro AUPRC 0.6930 Pretrain Macro AUROC 0.6874 Pretrain Macro AUPRC 0.7596
+Epoch: 0 Step: 820 LR: 0.00100 Loss 0.6026, Pretrain Micro AUROC 0.7118 Pretrain Micro AUPRC 0.6821 Pretrain Macro AUROC 0.7039 Pretrain Macro AUPRC 0.7620
+Epoch: 0 Step: 840 LR: 0.00100 Loss 0.5940, Pretrain Micro AUROC 0.7214 Pretrain Micro AUPRC 0.6791 Pretrain Macro AUROC 0.7253 Pretrain Macro AUPRC 0.7744
+Epoch: 0 Step: 860 LR: 0.00100 Loss 0.5814, Pretrain Micro AUROC 0.7408 Pretrain Micro AUPRC 0.7101 Pretrain Macro AUROC 0.7469 Pretrain Macro AUPRC 0.7891
+Epoch: 0 Step: 880 LR: 0.00100 Loss 0.5855, Pretrain Micro AUROC 0.7364 Pretrain Micro AUPRC 0.7164 Pretrain Macro AUROC 0.6887 Pretrain Macro AUPRC 0.7544
+Epoch: 0 Step: 900 LR: 0.00100 Loss 0.5796, Pretrain Micro AUROC 0.7466 Pretrain Micro AUPRC 0.7011 Pretrain Macro AUROC 0.6995 Pretrain Macro AUPRC 0.7483
+Epoch: 0 Step: 920 LR: 0.00100 Loss 0.5923, Pretrain Micro AUROC 0.7264 Pretrain Micro AUPRC 0.6947 Pretrain Macro AUROC 0.7001 Pretrain Macro AUPRC 0.7519
+Epoch: 0 Step: 940 LR: 0.00100 Loss 0.5925, Pretrain Micro AUROC 0.7262 Pretrain Micro AUPRC 0.6882 Pretrain Macro AUROC 0.7259 Pretrain Macro AUPRC 0.7688
+Epoch: 0 Step: 960 LR: 0.00100 Loss 0.5841, Pretrain Micro AUROC 0.7381 Pretrain Micro AUPRC 0.6988 Pretrain Macro AUROC 0.7707 Pretrain Macro AUPRC 0.7933
+Epoch: 0 Step: 980 LR: 0.00100 Loss 0.5831, Pretrain Micro AUROC 0.7361 Pretrain Micro AUPRC 0.7007 Pretrain Macro AUROC 0.7411 Pretrain Macro AUPRC 0.7899
+Epoch: 0 Step: 1000 LR: 0.00100 Loss 0.5836, Pretrain Micro AUROC 0.7450 Pretrain Micro AUPRC 0.6946 Pretrain Macro AUROC 0.7240 Pretrain Macro AUPRC 0.7709
+Epoch: 0 Step: 1020 LR: 0.00100 Loss 0.5758, Pretrain Micro AUROC 0.7439 Pretrain Micro AUPRC 0.7138 Pretrain Macro AUROC 0.8057 Pretrain Macro AUPRC 0.8264
+Epoch: 0 Step: 1040 LR: 0.00100 Loss 0.5880, Pretrain Micro AUROC 0.7358 Pretrain Micro AUPRC 0.6978 Pretrain Macro AUROC 0.7312 Pretrain Macro AUPRC 0.7768
+Epoch: 0 Step: 1060 LR: 0.00100 Loss 0.5916, Pretrain Micro AUROC 0.7348 Pretrain Micro AUPRC 0.7089 Pretrain Macro AUROC 0.7628 Pretrain Macro AUPRC 0.7970
+Epoch: 0 Step: 1080 LR: 0.00100 Loss 0.5742, Pretrain Micro AUROC 0.7500 Pretrain Micro AUPRC 0.7078 Pretrain Macro AUROC 0.7143 Pretrain Macro AUPRC 0.7545
+Epoch: 0 Step: 1100 LR: 0.00100 Loss 0.5722, Pretrain Micro AUROC 0.7537 Pretrain Micro AUPRC 0.7177 Pretrain Macro AUROC 0.7247 Pretrain Macro AUPRC 0.7690
+Epoch: 0 Step: 1120 LR: 0.00100 Loss 0.5732, Pretrain Micro AUROC 0.7558 Pretrain Micro AUPRC 0.7185 Pretrain Macro AUROC 0.7352 Pretrain Macro AUPRC 0.7808
+Epoch: 0 Step: 1140 LR: 0.00100 Loss 0.5689, Pretrain Micro AUROC 0.7574 Pretrain Micro AUPRC 0.7222 Pretrain Macro AUROC 0.7865 Pretrain Macro AUPRC 0.8215
+Epoch: 0 Step: 1160 LR: 0.00100 Loss 0.5723, Pretrain Micro AUROC 0.7537 Pretrain Micro AUPRC 0.7228 Pretrain Macro AUROC 0.7500 Pretrain Macro AUPRC 0.7965
+Epoch: 0 Step: 1180 LR: 0.00100 Loss 0.5845, Pretrain Micro AUROC 0.7398 Pretrain Micro AUPRC 0.6994 Pretrain Macro AUROC 0.6721 Pretrain Macro AUPRC 0.7388
+Epoch: 0 Step: 1200 LR: 0.00100 Loss 0.5723, Pretrain Micro AUROC 0.7495 Pretrain Micro AUPRC 0.7227 Pretrain Macro AUROC 0.6912 Pretrain Macro AUPRC 0.7641
+Epoch: 0 Step: 1220 LR: 0.00100 Loss 0.5813, Pretrain Micro AUROC 0.7338 Pretrain Micro AUPRC 0.7051 Pretrain Macro AUROC 0.7919 Pretrain Macro AUPRC 0.8244
+Epoch: 0 Step: 1240 LR: 0.00100 Loss 0.5693, Pretrain Micro AUROC 0.7532 Pretrain Micro AUPRC 0.7241 Pretrain Macro AUROC 0.7622 Pretrain Macro AUPRC 0.8060
+Epoch: 0 Step: 1260 LR: 0.00100 Loss 0.5725, Pretrain Micro AUROC 0.7483 Pretrain Micro AUPRC 0.7116 Pretrain Macro AUROC 0.7349 Pretrain Macro AUPRC 0.7901
+Epoch: 0 Step: 1280 LR: 0.00100 Loss 0.5680, Pretrain Micro AUROC 0.7557 Pretrain Micro AUPRC 0.7273 Pretrain Macro AUROC 0.8235 Pretrain Macro AUPRC 0.8421
+Epoch: 0 Step: 1300 LR: 0.00100 Loss 0.5757, Pretrain Micro AUROC 0.7475 Pretrain Micro AUPRC 0.7158 Pretrain Macro AUROC 0.7307 Pretrain Macro AUPRC 0.8008
+Epoch: 0 Step: 1320 LR: 0.00100 Loss 0.5908, Pretrain Micro AUROC 0.7336 Pretrain Micro AUPRC 0.6954 Pretrain Macro AUROC 0.6922 Pretrain Macro AUPRC 0.7511
+Epoch: 0 Step: 1340 LR: 0.00100 Loss 0.5716, Pretrain Micro AUROC 0.7509 Pretrain Micro AUPRC 0.7197 Pretrain Macro AUROC 0.7867 Pretrain Macro AUPRC 0.7990
+Epoch: 0 Step: 1360 LR: 0.00100 Loss 0.5708, Pretrain Micro AUROC 0.7532 Pretrain Micro AUPRC 0.7163 Pretrain Macro AUROC 0.6883 Pretrain Macro AUPRC 0.7726
+Epoch: 0 Step: 1380 LR: 0.00100 Loss 0.5764, Pretrain Micro AUROC 0.7509 Pretrain Micro AUPRC 0.7174 Pretrain Macro AUROC 0.8049 Pretrain Macro AUPRC 0.8293
+Epoch: 0 Step: 1400 LR: 0.00100 Loss 0.5782, Pretrain Micro AUROC 0.7442 Pretrain Micro AUPRC 0.7062 Pretrain Macro AUROC 0.7825 Pretrain Macro AUPRC 0.8111
+Epoch: 0 Step: 1420 LR: 0.00100 Loss 0.5800, Pretrain Micro AUROC 0.7423 Pretrain Micro AUPRC 0.7060 Pretrain Macro AUROC 0.7848 Pretrain Macro AUPRC 0.7967
+Epoch: 0 Step: 1440 LR: 0.00100 Loss 0.5882, Pretrain Micro AUROC 0.7315 Pretrain Micro AUPRC 0.6987 Pretrain Macro AUROC 0.7191 Pretrain Macro AUPRC 0.7779
+Epoch: 0 Step: 1460 LR: 0.00100 Loss 0.5859, Pretrain Micro AUROC 0.7365 Pretrain Micro AUPRC 0.6924 Pretrain Macro AUROC 0.7922 Pretrain Macro AUPRC 0.8087
+Epoch: 0 Step: 1480 LR: 0.00100 Loss 0.5716, Pretrain Micro AUROC 0.7464 Pretrain Micro AUPRC 0.7104 Pretrain Macro AUROC 0.7675 Pretrain Macro AUPRC 0.8116
+Epoch: 0 Step: 1500 LR: 0.00100 Loss 0.5631, Pretrain Micro AUROC 0.7625 Pretrain Micro AUPRC 0.7319 Pretrain Macro AUROC 0.7747 Pretrain Macro AUPRC 0.8143
+Epoch: 0 Step: 1520 LR: 0.00100 Loss 0.5695, Pretrain Micro AUROC 0.7570 Pretrain Micro AUPRC 0.7107 Pretrain Macro AUROC 0.7862 Pretrain Macro AUPRC 0.7948
+Epoch: 0 Step: 1540 LR: 0.00100 Loss 0.5800, Pretrain Micro AUROC 0.7418 Pretrain Micro AUPRC 0.7102 Pretrain Macro AUROC 0.7470 Pretrain Macro AUPRC 0.7905
+Epoch: 0 Step: 1560 LR: 0.00100 Loss 0.5705, Pretrain Micro AUROC 0.7491 Pretrain Micro AUPRC 0.7203 Pretrain Macro AUROC 0.7710 Pretrain Macro AUPRC 0.7854
+Epoch: 0 Step: 1580 LR: 0.00100 Loss 0.5724, Pretrain Micro AUROC 0.7514 Pretrain Micro AUPRC 0.7221 Pretrain Macro AUROC 0.7642 Pretrain Macro AUPRC 0.8108
+Epoch: 0 Step: 1600 LR: 0.00100 Loss 0.5732, Pretrain Micro AUROC 0.7486 Pretrain Micro AUPRC 0.7097 Pretrain Macro AUROC 0.7663 Pretrain Macro AUPRC 0.8000
+Epoch: 0 Step: 1620 LR: 0.00100 Loss 0.5773, Pretrain Micro AUROC 0.7491 Pretrain Micro AUPRC 0.7221 Pretrain Macro AUROC 0.7537 Pretrain Macro AUPRC 0.8107
+Epoch: 0 Step: 1640 LR: 0.00100 Loss 0.5634, Pretrain Micro AUROC 0.7593 Pretrain Micro AUPRC 0.7267 Pretrain Macro AUROC 0.7706 Pretrain Macro AUPRC 0.7991
+Epoch: 0 Step: 1660 LR: 0.00100 Loss 0.5783, Pretrain Micro AUROC 0.7426 Pretrain Micro AUPRC 0.7010 Pretrain Macro AUROC 0.7512 Pretrain Macro AUPRC 0.7861
+Epoch: 0 Step: 1680 LR: 0.00100 Loss 0.5563, Pretrain Micro AUROC 0.7668 Pretrain Micro AUPRC 0.7356 Pretrain Macro AUROC 0.7391 Pretrain Macro AUPRC 0.7975
+Epoch: 0 Step: 1700 LR: 0.00100 Loss 0.5696, Pretrain Micro AUROC 0.7517 Pretrain Micro AUPRC 0.7275 Pretrain Macro AUROC 0.8039 Pretrain Macro AUPRC 0.8398
+Epoch: 0 Step: 1720 LR: 0.00100 Loss 0.5644, Pretrain Micro AUROC 0.7551 Pretrain Micro AUPRC 0.7271 Pretrain Macro AUROC 0.7721 Pretrain Macro AUPRC 0.8088
+Epoch: 0 Step: 1740 LR: 0.00100 Loss 0.5593, Pretrain Micro AUROC 0.7650 Pretrain Micro AUPRC 0.7422 Pretrain Macro AUROC 0.7441 Pretrain Macro AUPRC 0.7995
+Epoch: 0 Step: 1760 LR: 0.00100 Loss 0.5679, Pretrain Micro AUROC 0.7522 Pretrain Micro AUPRC 0.7283 Pretrain Macro AUROC 0.7987 Pretrain Macro AUPRC 0.8423
+Epoch: 0 Step: 1780 LR: 0.00100 Loss 0.5568, Pretrain Micro AUROC 0.7670 Pretrain Micro AUPRC 0.7393 Pretrain Macro AUROC 0.7209 Pretrain Macro AUPRC 0.7767
+Epoch: 0 Step: 1800 LR: 0.00100 Loss 0.5702, Pretrain Micro AUROC 0.7581 Pretrain Micro AUPRC 0.7245 Pretrain Macro AUROC 0.7299 Pretrain Macro AUPRC 0.7689
+Epoch: 0 Step: 1820 LR: 0.00100 Loss 0.5855, Pretrain Micro AUROC 0.7351 Pretrain Micro AUPRC 0.7057 Pretrain Macro AUROC 0.7763 Pretrain Macro AUPRC 0.8041
+Epoch: 0 Step: 1840 LR: 0.00100 Loss 0.5668, Pretrain Micro AUROC 0.7593 Pretrain Micro AUPRC 0.7382 Pretrain Macro AUROC 0.7916 Pretrain Macro AUPRC 0.8222
+Epoch: 0 Step: 1860 LR: 0.00100 Loss 0.5699, Pretrain Micro AUROC 0.7565 Pretrain Micro AUPRC 0.7270 Pretrain Macro AUROC 0.7311 Pretrain Macro AUPRC 0.7957
+Epoch: 0 Step: 1880 LR: 0.00100 Loss 0.5587, Pretrain Micro AUROC 0.7615 Pretrain Micro AUPRC 0.7219 Pretrain Macro AUROC 0.7651 Pretrain Macro AUPRC 0.7991
+Epoch: 0 Step: 1900 LR: 0.00100 Loss 0.5570, Pretrain Micro AUROC 0.7690 Pretrain Micro AUPRC 0.7451 Pretrain Macro AUROC 0.7786 Pretrain Macro AUPRC 0.8103
+Epoch: 0 Step: 1920 LR: 0.00100 Loss 0.5740, Pretrain Micro AUROC 0.7405 Pretrain Micro AUPRC 0.7044 Pretrain Macro AUROC 0.7172 Pretrain Macro AUPRC 0.7788
+Epoch: 0 Step: 1940 LR: 0.00100 Loss 0.5601, Pretrain Micro AUROC 0.7633 Pretrain Micro AUPRC 0.7291 Pretrain Macro AUROC 0.7713 Pretrain Macro AUPRC 0.8074
+Epoch: 0 Step: 1960 LR: 0.00100 Loss 0.5548, Pretrain Micro AUROC 0.7709 Pretrain Micro AUPRC 0.7411 Pretrain Macro AUROC 0.7896 Pretrain Macro AUPRC 0.8345
+Epoch: 0 Step: 1980 LR: 0.00100 Loss 0.5712, Pretrain Micro AUROC 0.7536 Pretrain Micro AUPRC 0.7089 Pretrain Macro AUROC 0.8128 Pretrain Macro AUPRC 0.8270
+Epoch: 0 Step: 2000 LR: 0.00100 Loss 0.5550, Pretrain Micro AUROC 0.7685 Pretrain Micro AUPRC 0.7304 Pretrain Macro AUROC 0.7706 Pretrain Macro AUPRC 0.8135
+Epoch: 0 Step: 2020 LR: 0.00100 Loss 0.5586, Pretrain Micro AUROC 0.7669 Pretrain Micro AUPRC 0.7300 Pretrain Macro AUROC 0.7924 Pretrain Macro AUPRC 0.8297
+Epoch: 0 Step: 2040 LR: 0.00100 Loss 0.5684, Pretrain Micro AUROC 0.7504 Pretrain Micro AUPRC 0.7190 Pretrain Macro AUROC 0.7046 Pretrain Macro AUPRC 0.7563
+Epoch: 0 Step: 2060 LR: 0.00100 Loss 0.5684, Pretrain Micro AUROC 0.7543 Pretrain Micro AUPRC 0.7138 Pretrain Macro AUROC 0.7703 Pretrain Macro AUPRC 0.8010
+Epoch: 0 Step: 2080 LR: 0.00100 Loss 0.5656, Pretrain Micro AUROC 0.7521 Pretrain Micro AUPRC 0.7294 Pretrain Macro AUROC 0.7485 Pretrain Macro AUPRC 0.8135
+Epoch: 0 Step: 2100 LR: 0.00100 Loss 0.5754, Pretrain Micro AUROC 0.7411 Pretrain Micro AUPRC 0.7143 Pretrain Macro AUROC 0.7850 Pretrain Macro AUPRC 0.8163
+Epoch: 0 Step: 2120 LR: 0.00100 Loss 0.5553, Pretrain Micro AUROC 0.7688 Pretrain Micro AUPRC 0.7407 Pretrain Macro AUROC 0.7576 Pretrain Macro AUPRC 0.7925
+Epoch: 0 Step: 2140 LR: 0.00100 Loss 0.5620, Pretrain Micro AUROC 0.7623 Pretrain Micro AUPRC 0.7363 Pretrain Macro AUROC 0.7689 Pretrain Macro AUPRC 0.8044
+Epoch: 0 Step: 2160 LR: 0.00100 Loss 0.5477, Pretrain Micro AUROC 0.7754 Pretrain Micro AUPRC 0.7429 Pretrain Macro AUROC 0.7992 Pretrain Macro AUPRC 0.8374
+Epoch: 0 Step: 2180 LR: 0.00100 Loss 0.5479, Pretrain Micro AUROC 0.7766 Pretrain Micro AUPRC 0.7404 Pretrain Macro AUROC 0.8257 Pretrain Macro AUPRC 0.8316
+Epoch: 0 Step: 2200 LR: 0.00100 Loss 0.5604, Pretrain Micro AUROC 0.7692 Pretrain Micro AUPRC 0.7310 Pretrain Macro AUROC 0.7412 Pretrain Macro AUPRC 0.7845
+Epoch: 0 Step: 2220 LR: 0.00100 Loss 0.5353, Pretrain Micro AUROC 0.7895 Pretrain Micro AUPRC 0.7527 Pretrain Macro AUROC 0.8016 Pretrain Macro AUPRC 0.8326
+Epoch: 0 Step: 2240 LR: 0.00100 Loss 0.5709, Pretrain Micro AUROC 0.7537 Pretrain Micro AUPRC 0.7209 Pretrain Macro AUROC 0.7469 Pretrain Macro AUPRC 0.7915
+Epoch: 0 Step: 2260 LR: 0.00100 Loss 0.5707, Pretrain Micro AUROC 0.7607 Pretrain Micro AUPRC 0.7134 Pretrain Macro AUROC 0.7104 Pretrain Macro AUPRC 0.7730
+Epoch: 0 Step: 2280 LR: 0.00100 Loss 0.5569, Pretrain Micro AUROC 0.7615 Pretrain Micro AUPRC 0.7216 Pretrain Macro AUROC 0.7179 Pretrain Macro AUPRC 0.7789
+Epoch: 0 Step: 2300 LR: 0.00100 Loss 0.5687, Pretrain Micro AUROC 0.7690 Pretrain Micro AUPRC 0.7299 Pretrain Macro AUROC 0.7326 Pretrain Macro AUPRC 0.7853
+Epoch: 0 Step: 2320 LR: 0.00100 Loss 0.5431, Pretrain Micro AUROC 0.7807 Pretrain Micro AUPRC 0.7440 Pretrain Macro AUROC 0.8430 Pretrain Macro AUPRC 0.8543
+Epoch: 0 Step: 2340 LR: 0.00100 Loss 0.5475, Pretrain Micro AUROC 0.7757 Pretrain Micro AUPRC 0.7446 Pretrain Macro AUROC 0.8193 Pretrain Macro AUPRC 0.8434
+Epoch: 0 Step: 2360 LR: 0.00100 Loss 0.5614, Pretrain Micro AUROC 0.7599 Pretrain Micro AUPRC 0.7359 Pretrain Macro AUROC 0.8189 Pretrain Macro AUPRC 0.8361
+Epoch: 0 Step: 2380 LR: 0.00100 Loss 0.5498, Pretrain Micro AUROC 0.7802 Pretrain Micro AUPRC 0.7487 Pretrain Macro AUROC 0.7840 Pretrain Macro AUPRC 0.8179
+Epoch: 0 Step: 2400 LR: 0.00100 Loss 0.5456, Pretrain Micro AUROC 0.7789 Pretrain Micro AUPRC 0.7549 Pretrain Macro AUROC 0.7736 Pretrain Macro AUPRC 0.8234
+Epoch: 0 Step: 2420 LR: 0.00100 Loss 0.5625, Pretrain Micro AUROC 0.7639 Pretrain Micro AUPRC 0.7257 Pretrain Macro AUROC 0.7500 Pretrain Macro AUPRC 0.7977
+Epoch: 0 Step: 2440 LR: 0.00100 Loss 0.5635, Pretrain Micro AUROC 0.7564 Pretrain Micro AUPRC 0.7321 Pretrain Macro AUROC 0.8053 Pretrain Macro AUPRC 0.8232
+Epoch: 0 Step: 2460 LR: 0.00100 Loss 0.5458, Pretrain Micro AUROC 0.7776 Pretrain Micro AUPRC 0.7534 Pretrain Macro AUROC 0.8496 Pretrain Macro AUPRC 0.8740
+Epoch: 0 Step: 2480 LR: 0.00100 Loss 0.5542, Pretrain Micro AUROC 0.7705 Pretrain Micro AUPRC 0.7347 Pretrain Macro AUROC 0.7889 Pretrain Macro AUPRC 0.8027
+Epoch: 0 Step: 2500 LR: 0.00100 Loss 0.5538, Pretrain Micro AUROC 0.7741 Pretrain Micro AUPRC 0.7390 Pretrain Macro AUROC 0.7996 Pretrain Macro AUPRC 0.8338
+Epoch: 0 Step: 2520 LR: 0.00100 Loss 0.5581, Pretrain Micro AUROC 0.7698 Pretrain Micro AUPRC 0.7238 Pretrain Macro AUROC 0.7950 Pretrain Macro AUPRC 0.8319
+Epoch: 0 Step: 2540 LR: 0.00100 Loss 0.5792, Pretrain Micro AUROC 0.7430 Pretrain Micro AUPRC 0.7186 Pretrain Macro AUROC 0.7912 Pretrain Macro AUPRC 0.8237
+Epoch: 0 Step: 2560 LR: 0.00100 Loss 0.5480, Pretrain Micro AUROC 0.7751 Pretrain Micro AUPRC 0.7518 Pretrain Macro AUROC 0.8107 Pretrain Macro AUPRC 0.8391
+Epoch: 0 Step: 2580 LR: 0.00100 Loss 0.5564, Pretrain Micro AUROC 0.7666 Pretrain Micro AUPRC 0.7341 Pretrain Macro AUROC 0.7764 Pretrain Macro AUPRC 0.8125
+Epoch: 0 Step: 2600 LR: 0.00100 Loss 0.5544, Pretrain Micro AUROC 0.7752 Pretrain Micro AUPRC 0.7507 Pretrain Macro AUROC 0.7611 Pretrain Macro AUPRC 0.8172
+Epoch: 0 Step: 2620 LR: 0.00100 Loss 0.5364, Pretrain Micro AUROC 0.7922 Pretrain Micro AUPRC 0.7566 Pretrain Macro AUROC 0.8285 Pretrain Macro AUPRC 0.8380
+Epoch: 0 Step: 2640 LR: 0.00100 Loss 0.5605, Pretrain Micro AUROC 0.7666 Pretrain Micro AUPRC 0.7336 Pretrain Macro AUROC 0.8268 Pretrain Macro AUPRC 0.8449
+Epoch: 0 Step: 2660 LR: 0.00100 Loss 0.5424, Pretrain Micro AUROC 0.7865 Pretrain Micro AUPRC 0.7605 Pretrain Macro AUROC 0.7760 Pretrain Macro AUPRC 0.8221
+Epoch: 0 Step: 2680 LR: 0.00100 Loss 0.5685, Pretrain Micro AUROC 0.7538 Pretrain Micro AUPRC 0.7254 Pretrain Macro AUROC 0.8127 Pretrain Macro AUPRC 0.8306
+Epoch: 0 Step: 2700 LR: 0.00100 Loss 0.5671, Pretrain Micro AUROC 0.7701 Pretrain Micro AUPRC 0.7255 Pretrain Macro AUROC 0.7844 Pretrain Macro AUPRC 0.7991
+Epoch: 0 Step: 2720 LR: 0.00100 Loss 0.5612, Pretrain Micro AUROC 0.7605 Pretrain Micro AUPRC 0.7248 Pretrain Macro AUROC 0.7462 Pretrain Macro AUPRC 0.7852
+Epoch: 0 Step: 2740 LR: 0.00100 Loss 0.5512, Pretrain Micro AUROC 0.7680 Pretrain Micro AUPRC 0.7381 Pretrain Macro AUROC 0.8115 Pretrain Macro AUPRC 0.8335
+Epoch: 0 Step: 2760 LR: 0.00100 Loss 0.5406, Pretrain Micro AUROC 0.7814 Pretrain Micro AUPRC 0.7595 Pretrain Macro AUROC 0.8146 Pretrain Macro AUPRC 0.8295
+Epoch: 0 Step: 2780 LR: 0.00100 Loss 0.5435, Pretrain Micro AUROC 0.7836 Pretrain Micro AUPRC 0.7523 Pretrain Macro AUROC 0.8103 Pretrain Macro AUPRC 0.8221
+Epoch: 0 Step: 2800 LR: 0.00100 Loss 0.5390, Pretrain Micro AUROC 0.7878 Pretrain Micro AUPRC 0.7621 Pretrain Macro AUROC 0.7646 Pretrain Macro AUPRC 0.8115
+Epoch: 0 Step: 2820 LR: 0.00100 Loss 0.5501, Pretrain Micro AUROC 0.7747 Pretrain Micro AUPRC 0.7456 Pretrain Macro AUROC 0.7437 Pretrain Macro AUPRC 0.7752
+Epoch: 0 Step: 2840 LR: 0.00100 Loss 0.5587, Pretrain Micro AUROC 0.7623 Pretrain Micro AUPRC 0.7256 Pretrain Macro AUROC 0.7310 Pretrain Macro AUPRC 0.7844
+Epoch: 0 Step: 2860 LR: 0.00100 Loss 0.5598, Pretrain Micro AUROC 0.7624 Pretrain Micro AUPRC 0.7318 Pretrain Macro AUROC 0.7782 Pretrain Macro AUPRC 0.8235
+Epoch: 0 Step: 2880 LR: 0.00100 Loss 0.5614, Pretrain Micro AUROC 0.7673 Pretrain Micro AUPRC 0.7344 Pretrain Macro AUROC 0.7591 Pretrain Macro AUPRC 0.7869
+Epoch: 0 Step: 2900 LR: 0.00100 Loss 0.5444, Pretrain Micro AUROC 0.7786 Pretrain Micro AUPRC 0.7538 Pretrain Macro AUROC 0.7593 Pretrain Macro AUPRC 0.8215
+Epoch: 0 Step: 2920 LR: 0.00100 Loss 0.5325, Pretrain Micro AUROC 0.7938 Pretrain Micro AUPRC 0.7662 Pretrain Macro AUROC 0.7577 Pretrain Macro AUPRC 0.8108
+Epoch: 0 Step: 2940 LR: 0.00100 Loss 0.5476, Pretrain Micro AUROC 0.7754 Pretrain Micro AUPRC 0.7368 Pretrain Macro AUROC 0.7850 Pretrain Macro AUPRC 0.8069
+Epoch: 0 Step: 2960 LR: 0.00100 Loss 0.5453, Pretrain Micro AUROC 0.7812 Pretrain Micro AUPRC 0.7504 Pretrain Macro AUROC 0.8203 Pretrain Macro AUPRC 0.8349
+Epoch: 0 Step: 2980 LR: 0.00100 Loss 0.5529, Pretrain Micro AUROC 0.7722 Pretrain Micro AUPRC 0.7407 Pretrain Macro AUROC 0.7689 Pretrain Macro AUPRC 0.8035
+Epoch: 0 Step: 3000 LR: 0.00100 Loss 0.5452, Pretrain Micro AUROC 0.7791 Pretrain Micro AUPRC 0.7505 Pretrain Macro AUROC 0.7515 Pretrain Macro AUPRC 0.7946
+Epoch: 0 Step: 3020 LR: 0.00100 Loss 0.5441, Pretrain Micro AUROC 0.7798 Pretrain Micro AUPRC 0.7477 Pretrain Macro AUROC 0.8017 Pretrain Macro AUPRC 0.8217
+Epoch: 0 Step: 3040 LR: 0.00100 Loss 0.5477, Pretrain Micro AUROC 0.7716 Pretrain Micro AUPRC 0.7422 Pretrain Macro AUROC 0.7747 Pretrain Macro AUPRC 0.8215
+Epoch: 0 Step: 3060 LR: 0.00100 Loss 0.5543, Pretrain Micro AUROC 0.7690 Pretrain Micro AUPRC 0.7452 Pretrain Macro AUROC 0.8008 Pretrain Macro AUPRC 0.8296
+Epoch: 0 Step: 3080 LR: 0.00100 Loss 0.5516, Pretrain Micro AUROC 0.7674 Pretrain Micro AUPRC 0.7434 Pretrain Macro AUROC 0.7850 Pretrain Macro AUPRC 0.8311
+Epoch: 0 Step: 3100 LR: 0.00100 Loss 0.5524, Pretrain Micro AUROC 0.7751 Pretrain Micro AUPRC 0.7420 Pretrain Macro AUROC 0.8140 Pretrain Macro AUPRC 0.8265
+Epoch: 0 Step: 3120 LR: 0.00100 Loss 0.5487, Pretrain Micro AUROC 0.7773 Pretrain Micro AUPRC 0.7523 Pretrain Macro AUROC 0.8226 Pretrain Macro AUPRC 0.8513
+Epoch: 0 Step: 3140 LR: 0.00100 Loss 0.5567, Pretrain Micro AUROC 0.7666 Pretrain Micro AUPRC 0.7316 Pretrain Macro AUROC 0.7524 Pretrain Macro AUPRC 0.7998
+Epoch: 0 Step: 3160 LR: 0.00100 Loss 0.5608, Pretrain Micro AUROC 0.7599 Pretrain Micro AUPRC 0.7248 Pretrain Macro AUROC 0.7760 Pretrain Macro AUPRC 0.8100
+Epoch: 0 Step: 3180 LR: 0.00100 Loss 0.5463, Pretrain Micro AUROC 0.7744 Pretrain Micro AUPRC 0.7458 Pretrain Macro AUROC 0.8026 Pretrain Macro AUPRC 0.8500
+Epoch: 0 Step: 3200 LR: 0.00100 Loss 0.5456, Pretrain Micro AUROC 0.7765 Pretrain Micro AUPRC 0.7468 Pretrain Macro AUROC 0.7563 Pretrain Macro AUPRC 0.8099
+Epoch: 0 Step: 3220 LR: 0.00100 Loss 0.5480, Pretrain Micro AUROC 0.7752 Pretrain Micro AUPRC 0.7437 Pretrain Macro AUROC 0.7912 Pretrain Macro AUPRC 0.8301
+Epoch: 0 Step: 3240 LR: 0.00100 Loss 0.5243, Pretrain Micro AUROC 0.7997 Pretrain Micro AUPRC 0.7725 Pretrain Macro AUROC 0.8380 Pretrain Macro AUPRC 0.8543
+Epoch: 0 Step: 3260 LR: 0.00100 Loss 0.5458, Pretrain Micro AUROC 0.7812 Pretrain Micro AUPRC 0.7511 Pretrain Macro AUROC 0.7814 Pretrain Macro AUPRC 0.8083
+Epoch: 0 Step: 3280 LR: 0.00100 Loss 0.5357, Pretrain Micro AUROC 0.7904 Pretrain Micro AUPRC 0.7544 Pretrain Macro AUROC 0.8386 Pretrain Macro AUPRC 0.8470
+Epoch: 0 Step: 3300 LR: 0.00100 Loss 0.5472, Pretrain Micro AUROC 0.7800 Pretrain Micro AUPRC 0.7500 Pretrain Macro AUROC 0.7615 Pretrain Macro AUPRC 0.8037
+Epoch: 0 Step: 3320 LR: 0.00100 Loss 0.5499, Pretrain Micro AUROC 0.7786 Pretrain Micro AUPRC 0.7425 Pretrain Macro AUROC 0.7948 Pretrain Macro AUPRC 0.8153
+Epoch: 0 Step: 3340 LR: 0.00100 Loss 0.5504, Pretrain Micro AUROC 0.7763 Pretrain Micro AUPRC 0.7530 Pretrain Macro AUROC 0.7654 Pretrain Macro AUPRC 0.8013
+Epoch: 0 Step: 3360 LR: 0.00100 Loss 0.5604, Pretrain Micro AUROC 0.7647 Pretrain Micro AUPRC 0.7316 Pretrain Macro AUROC 0.8003 Pretrain Macro AUPRC 0.8387
+Epoch: 0 Step: 3380 LR: 0.00100 Loss 0.5547, Pretrain Micro AUROC 0.7698 Pretrain Micro AUPRC 0.7353 Pretrain Macro AUROC 0.7807 Pretrain Macro AUPRC 0.8226
+Epoch: 0 Step: 3400 LR: 0.00100 Loss 0.5566, Pretrain Micro AUROC 0.7706 Pretrain Micro AUPRC 0.7419 Pretrain Macro AUROC 0.8096 Pretrain Macro AUPRC 0.8400
+Epoch: 0 Step: 3420 LR: 0.00100 Loss 0.5479, Pretrain Micro AUROC 0.7779 Pretrain Micro AUPRC 0.7427 Pretrain Macro AUROC 0.8203 Pretrain Macro AUPRC 0.8375
+Epoch: 0 Step: 3440 LR: 0.00100 Loss 0.5274, Pretrain Micro AUROC 0.7966 Pretrain Micro AUPRC 0.7653 Pretrain Macro AUROC 0.7298 Pretrain Macro AUPRC 0.7974
+Epoch: 0 Step: 3460 LR: 0.00100 Loss 0.5410, Pretrain Micro AUROC 0.7830 Pretrain Micro AUPRC 0.7546 Pretrain Macro AUROC 0.8076 Pretrain Macro AUPRC 0.8302
+Epoch: 0 Step: 3480 LR: 0.00100 Loss 0.5474, Pretrain Micro AUROC 0.7701 Pretrain Micro AUPRC 0.7433 Pretrain Macro AUROC 0.7856 Pretrain Macro AUPRC 0.8340
+Epoch: 0 Step: 3500 LR: 0.00100 Loss 0.5458, Pretrain Micro AUROC 0.7770 Pretrain Micro AUPRC 0.7482 Pretrain Macro AUROC 0.7593 Pretrain Macro AUPRC 0.8036
+Epoch: 0 Step: 3520 LR: 0.00100 Loss 0.5487, Pretrain Micro AUROC 0.7774 Pretrain Micro AUPRC 0.7378 Pretrain Macro AUROC 0.8383 Pretrain Macro AUPRC 0.8465
+Epoch: 0 Step: 3540 LR: 0.00100 Loss 0.5458, Pretrain Micro AUROC 0.7831 Pretrain Micro AUPRC 0.7569 Pretrain Macro AUROC 0.8315 Pretrain Macro AUPRC 0.8480
+Epoch: 0 Step: 3560 LR: 0.00100 Loss 0.5386, Pretrain Micro AUROC 0.7866 Pretrain Micro AUPRC 0.7535 Pretrain Macro AUROC 0.7832 Pretrain Macro AUPRC 0.8121
+Epoch: 0 Step: 3580 LR: 0.00100 Loss 0.5308, Pretrain Micro AUROC 0.7968 Pretrain Micro AUPRC 0.7666 Pretrain Macro AUROC 0.8040 Pretrain Macro AUPRC 0.8289
+Epoch: 0 Step: 3600 LR: 0.00100 Loss 0.5507, Pretrain Micro AUROC 0.7718 Pretrain Micro AUPRC 0.7431 Pretrain Macro AUROC 0.7484 Pretrain Macro AUPRC 0.8059
+Epoch: 0 Step: 3620 LR: 0.00100 Loss 0.5431, Pretrain Micro AUROC 0.7867 Pretrain Micro AUPRC 0.7587 Pretrain Macro AUROC 0.8662 Pretrain Macro AUPRC 0.8729
+Epoch: 0 Step: 3640 LR: 0.00100 Loss 0.5493, Pretrain Micro AUROC 0.7749 Pretrain Micro AUPRC 0.7447 Pretrain Macro AUROC 0.7725 Pretrain Macro AUPRC 0.8194
+Epoch: 0 Step: 3660 LR: 0.00100 Loss 0.5416, Pretrain Micro AUROC 0.7812 Pretrain Micro AUPRC 0.7520 Pretrain Macro AUROC 0.8207 Pretrain Macro AUPRC 0.8442
+Epoch: 0 Step: 3680 LR: 0.00100 Loss 0.5416, Pretrain Micro AUROC 0.7836 Pretrain Micro AUPRC 0.7579 Pretrain Macro AUROC 0.8211 Pretrain Macro AUPRC 0.8441
+Epoch: 0 Step: 3700 LR: 0.00100 Loss 0.5555, Pretrain Micro AUROC 0.7693 Pretrain Micro AUPRC 0.7335 Pretrain Macro AUROC 0.7827 Pretrain Macro AUPRC 0.8070
+Epoch: 0 Step: 3720 LR: 0.00100 Loss 0.5429, Pretrain Micro AUROC 0.7788 Pretrain Micro AUPRC 0.7508 Pretrain Macro AUROC 0.7999 Pretrain Macro AUPRC 0.8258
+Epoch: 0 Step: 3740 LR: 0.00100 Loss 0.5504, Pretrain Micro AUROC 0.7808 Pretrain Micro AUPRC 0.7395 Pretrain Macro AUROC 0.7857 Pretrain Macro AUPRC 0.8072
+Epoch: 0 Step: 3760 LR: 0.00100 Loss 0.5522, Pretrain Micro AUROC 0.7714 Pretrain Micro AUPRC 0.7341 Pretrain Macro AUROC 0.8272 Pretrain Macro AUPRC 0.8273
+Epoch: 0 Step: 3780 LR: 0.00100 Loss 0.5453, Pretrain Micro AUROC 0.7815 Pretrain Micro AUPRC 0.7527 Pretrain Macro AUROC 0.8004 Pretrain Macro AUPRC 0.8254
+Epoch: 0 Step: 3800 LR: 0.00100 Loss 0.5539, Pretrain Micro AUROC 0.7701 Pretrain Micro AUPRC 0.7333 Pretrain Macro AUROC 0.8423 Pretrain Macro AUPRC 0.8543
+Epoch: 0 Step: 3820 LR: 0.00100 Loss 0.5263, Pretrain Micro AUROC 0.7906 Pretrain Micro AUPRC 0.7684 Pretrain Macro AUROC 0.8825 Pretrain Macro AUPRC 0.8807
+Epoch: 0 Step: 3840 LR: 0.00100 Loss 0.5284, Pretrain Micro AUROC 0.7900 Pretrain Micro AUPRC 0.7639 Pretrain Macro AUROC 0.8229 Pretrain Macro AUPRC 0.8449
+Epoch: 0 Step: 3860 LR: 0.00100 Loss 0.5428, Pretrain Micro AUROC 0.7826 Pretrain Micro AUPRC 0.7506 Pretrain Macro AUROC 0.7802 Pretrain Macro AUPRC 0.8112
+Epoch: 0 Step: 3880 LR: 0.00100 Loss 0.5371, Pretrain Micro AUROC 0.7851 Pretrain Micro AUPRC 0.7562 Pretrain Macro AUROC 0.7636 Pretrain Macro AUPRC 0.8098
+Epoch: 0 Step: 3900 LR: 0.00100 Loss 0.5383, Pretrain Micro AUROC 0.7838 Pretrain Micro AUPRC 0.7492 Pretrain Macro AUROC 0.8378 Pretrain Macro AUPRC 0.8327
+Epoch: 0 Step: 3920 LR: 0.00100 Loss 0.5280, Pretrain Micro AUROC 0.7956 Pretrain Micro AUPRC 0.7557 Pretrain Macro AUROC 0.8514 Pretrain Macro AUPRC 0.8562
+Epoch: 0 Step: 3940 LR: 0.00100 Loss 0.5316, Pretrain Micro AUROC 0.7906 Pretrain Micro AUPRC 0.7724 Pretrain Macro AUROC 0.8146 Pretrain Macro AUPRC 0.8505
+Epoch: 0 Step: 3960 LR: 0.00100 Loss 0.5554, Pretrain Micro AUROC 0.7737 Pretrain Micro AUPRC 0.7356 Pretrain Macro AUROC 0.7314 Pretrain Macro AUPRC 0.7671
+Epoch: 0 Step: 3980 LR: 0.00100 Loss 0.5469, Pretrain Micro AUROC 0.7795 Pretrain Micro AUPRC 0.7471 Pretrain Macro AUROC 0.8295 Pretrain Macro AUPRC 0.8497
+Epoch: 0 Step: 4000 LR: 0.00100 Loss 0.5433, Pretrain Micro AUROC 0.7796 Pretrain Micro AUPRC 0.7495 Pretrain Macro AUROC 0.7640 Pretrain Macro AUPRC 0.8154
+Epoch: 0 Step: 4020 LR: 0.00100 Loss 0.5299, Pretrain Micro AUROC 0.7883 Pretrain Micro AUPRC 0.7691 Pretrain Macro AUROC 0.8405 Pretrain Macro AUPRC 0.8602
+Epoch: 0 Step: 4040 LR: 0.00100 Loss 0.5375, Pretrain Micro AUROC 0.7851 Pretrain Micro AUPRC 0.7542 Pretrain Macro AUROC 0.8098 Pretrain Macro AUPRC 0.8410
+Epoch: 0 Step: 4060 LR: 0.00100 Loss 0.5421, Pretrain Micro AUROC 0.7870 Pretrain Micro AUPRC 0.7437 Pretrain Macro AUROC 0.8062 Pretrain Macro AUPRC 0.8291
+Epoch: 0 Step: 4080 LR: 0.00100 Loss 0.5476, Pretrain Micro AUROC 0.7789 Pretrain Micro AUPRC 0.7538 Pretrain Macro AUROC 0.7558 Pretrain Macro AUPRC 0.8141
+Epoch: 0 Step: 4100 LR: 0.00100 Loss 0.5406, Pretrain Micro AUROC 0.7811 Pretrain Micro AUPRC 0.7483 Pretrain Macro AUROC 0.7908 Pretrain Macro AUPRC 0.8248
+Epoch: 0 Step: 4120 LR: 0.00100 Loss 0.5368, Pretrain Micro AUROC 0.7890 Pretrain Micro AUPRC 0.7605 Pretrain Macro AUROC 0.7946 Pretrain Macro AUPRC 0.8097
+Epoch: 0 Step: 4140 LR: 0.00100 Loss 0.5391, Pretrain Micro AUROC 0.7905 Pretrain Micro AUPRC 0.7658 Pretrain Macro AUROC 0.8231 Pretrain Macro AUPRC 0.8591
+Epoch: 0 Step: 4160 LR: 0.00100 Loss 0.5284, Pretrain Micro AUROC 0.7912 Pretrain Micro AUPRC 0.7606 Pretrain Macro AUROC 0.8328 Pretrain Macro AUPRC 0.8429
+Epoch: 0 Step: 4180 LR: 0.00100 Loss 0.5511, Pretrain Micro AUROC 0.7666 Pretrain Micro AUPRC 0.7329 Pretrain Macro AUROC 0.7800 Pretrain Macro AUPRC 0.8141
+Epoch: 0 Step: 4200 LR: 0.00100 Loss 0.5334, Pretrain Micro AUROC 0.7974 Pretrain Micro AUPRC 0.7702 Pretrain Macro AUROC 0.8507 Pretrain Macro AUPRC 0.8668
+Epoch: 0 Step: 4220 LR: 0.00100 Loss 0.5526, Pretrain Micro AUROC 0.7746 Pretrain Micro AUPRC 0.7335 Pretrain Macro AUROC 0.8325 Pretrain Macro AUPRC 0.8425
+Epoch: 0 Step: 4240 LR: 0.00100 Loss 0.5298, Pretrain Micro AUROC 0.7949 Pretrain Micro AUPRC 0.7678 Pretrain Macro AUROC 0.7683 Pretrain Macro AUPRC 0.8096
+Epoch: 0 Step: 4260 LR: 0.00100 Loss 0.5444, Pretrain Micro AUROC 0.7791 Pretrain Micro AUPRC 0.7472 Pretrain Macro AUROC 0.8393 Pretrain Macro AUPRC 0.8505
+Epoch: 0 Step: 4280 LR: 0.00100 Loss 0.5299, Pretrain Micro AUROC 0.7948 Pretrain Micro AUPRC 0.7639 Pretrain Macro AUROC 0.7880 Pretrain Macro AUPRC 0.8310
+Epoch: 0 Step: 4300 LR: 0.00100 Loss 0.5401, Pretrain Micro AUROC 0.7836 Pretrain Micro AUPRC 0.7485 Pretrain Macro AUROC 0.8329 Pretrain Macro AUPRC 0.8405
+Epoch: 0 Step: 4320 LR: 0.00100 Loss 0.5198, Pretrain Micro AUROC 0.8034 Pretrain Micro AUPRC 0.7769 Pretrain Macro AUROC 0.7980 Pretrain Macro AUPRC 0.8319
+Epoch: 0 Step: 4340 LR: 0.00100 Loss 0.5460, Pretrain Micro AUROC 0.7754 Pretrain Micro AUPRC 0.7469 Pretrain Macro AUROC 0.7770 Pretrain Macro AUPRC 0.8300
+Epoch: 0 Step: 4360 LR: 0.00100 Loss 0.5500, Pretrain Micro AUROC 0.7731 Pretrain Micro AUPRC 0.7342 Pretrain Macro AUROC 0.8162 Pretrain Macro AUPRC 0.8234
+Epoch: 0 Step: 4380 LR: 0.00100 Loss 0.5279, Pretrain Micro AUROC 0.7904 Pretrain Micro AUPRC 0.7613 Pretrain Macro AUROC 0.7694 Pretrain Macro AUPRC 0.8120
+Epoch: 0 Step: 4400 LR: 0.00100 Loss 0.5445, Pretrain Micro AUROC 0.7770 Pretrain Micro AUPRC 0.7426 Pretrain Macro AUROC 0.8090 Pretrain Macro AUPRC 0.8298
+Epoch: 0 Step: 4420 LR: 0.00100 Loss 0.5357, Pretrain Micro AUROC 0.7884 Pretrain Micro AUPRC 0.7551 Pretrain Macro AUROC 0.7965 Pretrain Macro AUPRC 0.8357
+Epoch: 0 Step: 4440 LR: 0.00100 Loss 0.5394, Pretrain Micro AUROC 0.7838 Pretrain Micro AUPRC 0.7494 Pretrain Macro AUROC 0.8367 Pretrain Macro AUPRC 0.8548
+Epoch: 0 Step: 4460 LR: 0.00100 Loss 0.5279, Pretrain Micro AUROC 0.7937 Pretrain Micro AUPRC 0.7616 Pretrain Macro AUROC 0.8150 Pretrain Macro AUPRC 0.8363
+Epoch: 0 Step: 4480 LR: 0.00100 Loss 0.5410, Pretrain Micro AUROC 0.7829 Pretrain Micro AUPRC 0.7474 Pretrain Macro AUROC 0.7853 Pretrain Macro AUPRC 0.8011
+Epoch: 0 Step: 4500 LR: 0.00100 Loss 0.5463, Pretrain Micro AUROC 0.7741 Pretrain Micro AUPRC 0.7504 Pretrain Macro AUROC 0.8298 Pretrain Macro AUPRC 0.8647
+Epoch: 0 Step: 4520 LR: 0.00100 Loss 0.5345, Pretrain Micro AUROC 0.7913 Pretrain Micro AUPRC 0.7670 Pretrain Macro AUROC 0.7821 Pretrain Macro AUPRC 0.8324
+Epoch: 0 Step: 4540 LR: 0.00100 Loss 0.5635, Pretrain Micro AUROC 0.7574 Pretrain Micro AUPRC 0.7229 Pretrain Macro AUROC 0.7734 Pretrain Macro AUPRC 0.8164
+Epoch: 0 Step: 4560 LR: 0.00100 Loss 0.5387, Pretrain Micro AUROC 0.7892 Pretrain Micro AUPRC 0.7564 Pretrain Macro AUROC 0.7705 Pretrain Macro AUPRC 0.8118
+Epoch: 0 Step: 4580 LR: 0.00100 Loss 0.5282, Pretrain Micro AUROC 0.7970 Pretrain Micro AUPRC 0.7775 Pretrain Macro AUROC 0.7483 Pretrain Macro AUPRC 0.8112
+Epoch: 0 Step: 4600 LR: 0.00100 Loss 0.5451, Pretrain Micro AUROC 0.7804 Pretrain Micro AUPRC 0.7393 Pretrain Macro AUROC 0.7506 Pretrain Macro AUPRC 0.7945
+Epoch: 0 Step: 4620 LR: 0.00100 Loss 0.5109, Pretrain Micro AUROC 0.8155 Pretrain Micro AUPRC 0.7920 Pretrain Macro AUROC 0.8384 Pretrain Macro AUPRC 0.8642
+Epoch: 0 Step: 4640 LR: 0.00100 Loss 0.5223, Pretrain Micro AUROC 0.8027 Pretrain Micro AUPRC 0.7700 Pretrain Macro AUROC 0.7863 Pretrain Macro AUPRC 0.8241
+Epoch: 0 Step: 4660 LR: 0.00100 Loss 0.5252, Pretrain Micro AUROC 0.7941 Pretrain Micro AUPRC 0.7594 Pretrain Macro AUROC 0.8419 Pretrain Macro AUPRC 0.8459
+Epoch: 0 Step: 4680 LR: 0.00100 Loss 0.5433, Pretrain Micro AUROC 0.7771 Pretrain Micro AUPRC 0.7388 Pretrain Macro AUROC 0.7929 Pretrain Macro AUPRC 0.8059
+Epoch: 0 Step: 4700 LR: 0.00100 Loss 0.5422, Pretrain Micro AUROC 0.7790 Pretrain Micro AUPRC 0.7403 Pretrain Macro AUROC 0.7805 Pretrain Macro AUPRC 0.8122
+Epoch: 0 Step: 4720 LR: 0.00100 Loss 0.5349, Pretrain Micro AUROC 0.7850 Pretrain Micro AUPRC 0.7584 Pretrain Macro AUROC 0.8155 Pretrain Macro AUPRC 0.8527
+Epoch: 0 Step: 4740 LR: 0.00100 Loss 0.5290, Pretrain Micro AUROC 0.7917 Pretrain Micro AUPRC 0.7684 Pretrain Macro AUROC 0.8002 Pretrain Macro AUPRC 0.8395
+Epoch: 0 Step: 4760 LR: 0.00100 Loss 0.5362, Pretrain Micro AUROC 0.7814 Pretrain Micro AUPRC 0.7491 Pretrain Macro AUROC 0.8415 Pretrain Macro AUPRC 0.8540
+Epoch: 0 Step: 4780 LR: 0.00100 Loss 0.5334, Pretrain Micro AUROC 0.7901 Pretrain Micro AUPRC 0.7578 Pretrain Macro AUROC 0.8359 Pretrain Macro AUPRC 0.8447
+Epoch: 0 Step: 4800 LR: 0.00100 Loss 0.5407, Pretrain Micro AUROC 0.7824 Pretrain Micro AUPRC 0.7552 Pretrain Macro AUROC 0.7743 Pretrain Macro AUPRC 0.8270
+Epoch: 0 Step: 4820 LR: 0.00100 Loss 0.5343, Pretrain Micro AUROC 0.7877 Pretrain Micro AUPRC 0.7598 Pretrain Macro AUROC 0.7735 Pretrain Macro AUPRC 0.8330
+Epoch: 0 Step: 4840 LR: 0.00100 Loss 0.5310, Pretrain Micro AUROC 0.7988 Pretrain Micro AUPRC 0.7703 Pretrain Macro AUROC 0.8349 Pretrain Macro AUPRC 0.8496
+Epoch: 0 Step: 4860 LR: 0.00100 Loss 0.5372, Pretrain Micro AUROC 0.7922 Pretrain Micro AUPRC 0.7592 Pretrain Macro AUROC 0.8595 Pretrain Macro AUPRC 0.8772
+Epoch: 0 Step: 4880 LR: 0.00100 Loss 0.5371, Pretrain Micro AUROC 0.7885 Pretrain Micro AUPRC 0.7532 Pretrain Macro AUROC 0.8373 Pretrain Macro AUPRC 0.8730
+Epoch: 0 Step: 4900 LR: 0.00100 Loss 0.5419, Pretrain Micro AUROC 0.7836 Pretrain Micro AUPRC 0.7493 Pretrain Macro AUROC 0.7503 Pretrain Macro AUPRC 0.8110
+Epoch: 0 Step: 4920 LR: 0.00100 Loss 0.5322, Pretrain Micro AUROC 0.7941 Pretrain Micro AUPRC 0.7660 Pretrain Macro AUROC 0.8193 Pretrain Macro AUPRC 0.8522
+Epoch: 0 Step: 4940 LR: 0.00100 Loss 0.5325, Pretrain Micro AUROC 0.7894 Pretrain Micro AUPRC 0.7642 Pretrain Macro AUROC 0.8204 Pretrain Macro AUPRC 0.8402
+Epoch: 0 Step: 4960 LR: 0.00100 Loss 0.5481, Pretrain Micro AUROC 0.7825 Pretrain Micro AUPRC 0.7470 Pretrain Macro AUROC 0.8007 Pretrain Macro AUPRC 0.8354
+Epoch: 0 Step: 4980 LR: 0.00100 Loss 0.5179, Pretrain Micro AUROC 0.8030 Pretrain Micro AUPRC 0.7823 Pretrain Macro AUROC 0.7453 Pretrain Macro AUPRC 0.7968
+Epoch: 0 Step: 5000 LR: 0.00100 Loss 0.5334, Pretrain Micro AUROC 0.7886 Pretrain Micro AUPRC 0.7584 Pretrain Macro AUROC 0.8561 Pretrain Macro AUPRC 0.8757
+Epoch: 0 Step: 5020 LR: 0.00100 Loss 0.5487, Pretrain Micro AUROC 0.7792 Pretrain Micro AUPRC 0.7518 Pretrain Macro AUROC 0.7816 Pretrain Macro AUPRC 0.8215
+Epoch: 0 Step: 5040 LR: 0.00100 Loss 0.5220, Pretrain Micro AUROC 0.8029 Pretrain Micro AUPRC 0.7694 Pretrain Macro AUROC 0.8425 Pretrain Macro AUPRC 0.8500
+Epoch: 0 Step: 5060 LR: 0.00100 Loss 0.5296, Pretrain Micro AUROC 0.7961 Pretrain Micro AUPRC 0.7617 Pretrain Macro AUROC 0.8350 Pretrain Macro AUPRC 0.8538
+Epoch: 0 Step: 5080 LR: 0.00100 Loss 0.5494, Pretrain Micro AUROC 0.7768 Pretrain Micro AUPRC 0.7367 Pretrain Macro AUROC 0.7710 Pretrain Macro AUPRC 0.8041
+Epoch: 0 Step: 5100 LR: 0.00100 Loss 0.5347, Pretrain Micro AUROC 0.7872 Pretrain Micro AUPRC 0.7583 Pretrain Macro AUROC 0.8461 Pretrain Macro AUPRC 0.8630
+Epoch: 0 Step: 5120 LR: 0.00100 Loss 0.5391, Pretrain Micro AUROC 0.7812 Pretrain Micro AUPRC 0.7470 Pretrain Macro AUROC 0.7653 Pretrain Macro AUPRC 0.8055
+Epoch: 0 Step: 5140 LR: 0.00100 Loss 0.5282, Pretrain Micro AUROC 0.7974 Pretrain Micro AUPRC 0.7711 Pretrain Macro AUROC 0.7655 Pretrain Macro AUPRC 0.8104
+Epoch: 0 Step: 5160 LR: 0.00100 Loss 0.5305, Pretrain Micro AUROC 0.7929 Pretrain Micro AUPRC 0.7768 Pretrain Macro AUROC 0.8608 Pretrain Macro AUPRC 0.8769
+Epoch: 0 Step: 5180 LR: 0.00100 Loss 0.5188, Pretrain Micro AUROC 0.8060 Pretrain Micro AUPRC 0.7814 Pretrain Macro AUROC 0.8623 Pretrain Macro AUPRC 0.8716
+Epoch: 0 Step: 5200 LR: 0.00100 Loss 0.5168, Pretrain Micro AUROC 0.8036 Pretrain Micro AUPRC 0.7744 Pretrain Macro AUROC 0.8664 Pretrain Macro AUPRC 0.8757
+Epoch: 0 Step: 5220 LR: 0.00100 Loss 0.5391, Pretrain Micro AUROC 0.7806 Pretrain Micro AUPRC 0.7533 Pretrain Macro AUROC 0.8633 Pretrain Macro AUPRC 0.8738
+Epoch: 0 Step: 5240 LR: 0.00100 Loss 0.5427, Pretrain Micro AUROC 0.7789 Pretrain Micro AUPRC 0.7576 Pretrain Macro AUROC 0.7939 Pretrain Macro AUPRC 0.8249
+Epoch: 0 Step: 5260 LR: 0.00100 Loss 0.5335, Pretrain Micro AUROC 0.7910 Pretrain Micro AUPRC 0.7585 Pretrain Macro AUROC 0.7776 Pretrain Macro AUPRC 0.8164
+Epoch: 0 Step: 5280 LR: 0.00100 Loss 0.5505, Pretrain Micro AUROC 0.7688 Pretrain Micro AUPRC 0.7432 Pretrain Macro AUROC 0.7918 Pretrain Macro AUPRC 0.8325
+Epoch: 0 Step: 5300 LR: 0.00100 Loss 0.5359, Pretrain Micro AUROC 0.7847 Pretrain Micro AUPRC 0.7543 Pretrain Macro AUROC 0.8111 Pretrain Macro AUPRC 0.8397
+Epoch: 0 Step: 5320 LR: 0.00100 Loss 0.5374, Pretrain Micro AUROC 0.7853 Pretrain Micro AUPRC 0.7548 Pretrain Macro AUROC 0.8481 Pretrain Macro AUPRC 0.8666
+Epoch: 0 Step: 5340 LR: 0.00100 Loss 0.5391, Pretrain Micro AUROC 0.7882 Pretrain Micro AUPRC 0.7599 Pretrain Macro AUROC 0.7847 Pretrain Macro AUPRC 0.8188
+Epoch: 0 Step: 5360 LR: 0.00100 Loss 0.5404, Pretrain Micro AUROC 0.7839 Pretrain Micro AUPRC 0.7478 Pretrain Macro AUROC 0.7783 Pretrain Macro AUPRC 0.8227
+Epoch: 0 Step: 5380 LR: 0.00100 Loss 0.5201, Pretrain Micro AUROC 0.8051 Pretrain Micro AUPRC 0.7816 Pretrain Macro AUROC 0.8531 Pretrain Macro AUPRC 0.8661
+Epoch: 0 Step: 5400 LR: 0.00100 Loss 0.5314, Pretrain Micro AUROC 0.7927 Pretrain Micro AUPRC 0.7581 Pretrain Macro AUROC 0.8075 Pretrain Macro AUPRC 0.8450
+Epoch: 0 Step: 5420 LR: 0.00100 Loss 0.5346, Pretrain Micro AUROC 0.7886 Pretrain Micro AUPRC 0.7586 Pretrain Macro AUROC 0.7312 Pretrain Macro AUPRC 0.8066
+Epoch: 0 Step: 5440 LR: 0.00100 Loss 0.5333, Pretrain Micro AUROC 0.7971 Pretrain Micro AUPRC 0.7533 Pretrain Macro AUROC 0.8024 Pretrain Macro AUPRC 0.8173
+Epoch: 0 Step: 5460 LR: 0.00100 Loss 0.5208, Pretrain Micro AUROC 0.8035 Pretrain Micro AUPRC 0.7763 Pretrain Macro AUROC 0.8419 Pretrain Macro AUPRC 0.8657
+Epoch: 0 Step: 5480 LR: 0.00100 Loss 0.5323, Pretrain Micro AUROC 0.7905 Pretrain Micro AUPRC 0.7649 Pretrain Macro AUROC 0.8207 Pretrain Macro AUPRC 0.8456
+Epoch: 0 Step: 5500 LR: 0.00100 Loss 0.5306, Pretrain Micro AUROC 0.8003 Pretrain Micro AUPRC 0.7732 Pretrain Macro AUROC 0.7970 Pretrain Macro AUPRC 0.8352
+Epoch: 0 Step: 5520 LR: 0.00100 Loss 0.5420, Pretrain Micro AUROC 0.7837 Pretrain Micro AUPRC 0.7572 Pretrain Macro AUROC 0.8406 Pretrain Macro AUPRC 0.8576
+Epoch: 0 Step: 5540 LR: 0.00100 Loss 0.5256, Pretrain Micro AUROC 0.7961 Pretrain Micro AUPRC 0.7636 Pretrain Macro AUROC 0.8288 Pretrain Macro AUPRC 0.8311
+Epoch: 0 Step: 5560 LR: 0.00100 Loss 0.5174, Pretrain Micro AUROC 0.8059 Pretrain Micro AUPRC 0.7737 Pretrain Macro AUROC 0.8418 Pretrain Macro AUPRC 0.8638
+Epoch: 0 Step: 5580 LR: 0.00100 Loss 0.5249, Pretrain Micro AUROC 0.7978 Pretrain Micro AUPRC 0.7706 Pretrain Macro AUROC 0.7774 Pretrain Macro AUPRC 0.8330
+Epoch: 0 Step: 5600 LR: 0.00100 Loss 0.5338, Pretrain Micro AUROC 0.7887 Pretrain Micro AUPRC 0.7700 Pretrain Macro AUROC 0.8024 Pretrain Macro AUPRC 0.8280
+Epoch: 0 Step: 5620 LR: 0.00100 Loss 0.5396, Pretrain Micro AUROC 0.7847 Pretrain Micro AUPRC 0.7662 Pretrain Macro AUROC 0.8261 Pretrain Macro AUPRC 0.8521
+Epoch: 0 Step: 5640 LR: 0.00100 Loss 0.5477, Pretrain Micro AUROC 0.7735 Pretrain Micro AUPRC 0.7394 Pretrain Macro AUROC 0.7616 Pretrain Macro AUPRC 0.8162
+Epoch: 0 Step: 5660 LR: 0.00100 Loss 0.5397, Pretrain Micro AUROC 0.7830 Pretrain Micro AUPRC 0.7539 Pretrain Macro AUROC 0.7959 Pretrain Macro AUPRC 0.8096
+Epoch: 0 Step: 5680 LR: 0.00100 Loss 0.5349, Pretrain Micro AUROC 0.7870 Pretrain Micro AUPRC 0.7627 Pretrain Macro AUROC 0.8253 Pretrain Macro AUPRC 0.8445
+Epoch: 0 Step: 5700 LR: 0.00100 Loss 0.5267, Pretrain Micro AUROC 0.7943 Pretrain Micro AUPRC 0.7648 Pretrain Macro AUROC 0.8283 Pretrain Macro AUPRC 0.8464
+Epoch: 0 Step: 5720 LR: 0.00100 Loss 0.5266, Pretrain Micro AUROC 0.7980 Pretrain Micro AUPRC 0.7698 Pretrain Macro AUROC 0.8228 Pretrain Macro AUPRC 0.8415
+Epoch: 0 Step: 5740 LR: 0.00100 Loss 0.5322, Pretrain Micro AUROC 0.7899 Pretrain Micro AUPRC 0.7628 Pretrain Macro AUROC 0.8742 Pretrain Macro AUPRC 0.8713
+Epoch: 0 Step: 5760 LR: 0.00100 Loss 0.5337, Pretrain Micro AUROC 0.7930 Pretrain Micro AUPRC 0.7660 Pretrain Macro AUROC 0.8188 Pretrain Macro AUPRC 0.8443
+Epoch: 0 Step: 5780 LR: 0.00100 Loss 0.5271, Pretrain Micro AUROC 0.7949 Pretrain Micro AUPRC 0.7559 Pretrain Macro AUROC 0.7827 Pretrain Macro AUPRC 0.8390
+Epoch: 0 Step: 5800 LR: 0.00100 Loss 0.5264, Pretrain Micro AUROC 0.7956 Pretrain Micro AUPRC 0.7709 Pretrain Macro AUROC 0.7814 Pretrain Macro AUPRC 0.8308
+Epoch: 0 Step: 5820 LR: 0.00100 Loss 0.5271, Pretrain Micro AUROC 0.7972 Pretrain Micro AUPRC 0.7620 Pretrain Macro AUROC 0.8508 Pretrain Macro AUPRC 0.8615
+Epoch: 0 Step: 5840 LR: 0.00100 Loss 0.5234, Pretrain Micro AUROC 0.7958 Pretrain Micro AUPRC 0.7684 Pretrain Macro AUROC 0.8245 Pretrain Macro AUPRC 0.8550
+Epoch: 0 Step: 5860 LR: 0.00100 Loss 0.5275, Pretrain Micro AUROC 0.7955 Pretrain Micro AUPRC 0.7632 Pretrain Macro AUROC 0.8255 Pretrain Macro AUPRC 0.8452
+Epoch: 0 Step: 5880 LR: 0.00100 Loss 0.5347, Pretrain Micro AUROC 0.7912 Pretrain Micro AUPRC 0.7647 Pretrain Macro AUROC 0.7684 Pretrain Macro AUPRC 0.8084
+Epoch: 0 Step: 5900 LR: 0.00100 Loss 0.5278, Pretrain Micro AUROC 0.7960 Pretrain Micro AUPRC 0.7668 Pretrain Macro AUROC 0.8097 Pretrain Macro AUPRC 0.8461
+Epoch: 0 Step: 5920 LR: 0.00100 Loss 0.5299, Pretrain Micro AUROC 0.7928 Pretrain Micro AUPRC 0.7699 Pretrain Macro AUROC 0.8028 Pretrain Macro AUPRC 0.8344
+Epoch: 0 Step: 5940 LR: 0.00100 Loss 0.5405, Pretrain Micro AUROC 0.7815 Pretrain Micro AUPRC 0.7540 Pretrain Macro AUROC 0.7998 Pretrain Macro AUPRC 0.8423
+Epoch: 0 Step: 5960 LR: 0.00100 Loss 0.5284, Pretrain Micro AUROC 0.7960 Pretrain Micro AUPRC 0.7696 Pretrain Macro AUROC 0.8395 Pretrain Macro AUPRC 0.8425
+Epoch: 0 Step: 5980 LR: 0.00100 Loss 0.5353, Pretrain Micro AUROC 0.7878 Pretrain Micro AUPRC 0.7624 Pretrain Macro AUROC 0.8442 Pretrain Macro AUPRC 0.8497
+Epoch: 0 Step: 6000 LR: 0.00100 Loss 0.5183, Pretrain Micro AUROC 0.8044 Pretrain Micro AUPRC 0.7731 Pretrain Macro AUROC 0.7788 Pretrain Macro AUPRC 0.8294
+Epoch: 0 Step: 6020 LR: 0.00100 Loss 0.5419, Pretrain Micro AUROC 0.7869 Pretrain Micro AUPRC 0.7602 Pretrain Macro AUROC 0.8049 Pretrain Macro AUPRC 0.8360
+Epoch: 0 Step: 6040 LR: 0.00100 Loss 0.5425, Pretrain Micro AUROC 0.7765 Pretrain Micro AUPRC 0.7370 Pretrain Macro AUROC 0.8168 Pretrain Macro AUPRC 0.8260
+Epoch: 0 Step: 6060 LR: 0.00100 Loss 0.5360, Pretrain Micro AUROC 0.7867 Pretrain Micro AUPRC 0.7591 Pretrain Macro AUROC 0.8091 Pretrain Macro AUPRC 0.8360
+Epoch: 0 Step: 6080 LR: 0.00100 Loss 0.5080, Pretrain Micro AUROC 0.8118 Pretrain Micro AUPRC 0.7813 Pretrain Macro AUROC 0.7803 Pretrain Macro AUPRC 0.8184
+Epoch: 0 Step: 6100 LR: 0.00100 Loss 0.5292, Pretrain Micro AUROC 0.7913 Pretrain Micro AUPRC 0.7657 Pretrain Macro AUROC 0.7564 Pretrain Macro AUPRC 0.8186
+Epoch: 0 Step: 6120 LR: 0.00100 Loss 0.5146, Pretrain Micro AUROC 0.8029 Pretrain Micro AUPRC 0.7747 Pretrain Macro AUROC 0.7895 Pretrain Macro AUPRC 0.8338
+Epoch: 0 Step: 6140 LR: 0.00100 Loss 0.5293, Pretrain Micro AUROC 0.7893 Pretrain Micro AUPRC 0.7601 Pretrain Macro AUROC 0.7570 Pretrain Macro AUPRC 0.8118
+Epoch: 0 Step: 6160 LR: 0.00100 Loss 0.5204, Pretrain Micro AUROC 0.8008 Pretrain Micro AUPRC 0.7737 Pretrain Macro AUROC 0.8330 Pretrain Macro AUPRC 0.8442
+Epoch: 0 Step: 6180 LR: 0.00100 Loss 0.5330, Pretrain Micro AUROC 0.7911 Pretrain Micro AUPRC 0.7553 Pretrain Macro AUROC 0.8350 Pretrain Macro AUPRC 0.8490
+Epoch: 0 Step: 6200 LR: 0.00100 Loss 0.5376, Pretrain Micro AUROC 0.7882 Pretrain Micro AUPRC 0.7490 Pretrain Macro AUROC 0.8208 Pretrain Macro AUPRC 0.8363
+Epoch: 0 Step: 6220 LR: 0.00100 Loss 0.5328, Pretrain Micro AUROC 0.7882 Pretrain Micro AUPRC 0.7530 Pretrain Macro AUROC 0.8128 Pretrain Macro AUPRC 0.8351
+Epoch: 0 Step: 6240 LR: 0.00100 Loss 0.5384, Pretrain Micro AUROC 0.7878 Pretrain Micro AUPRC 0.7552 Pretrain Macro AUROC 0.8056 Pretrain Macro AUPRC 0.8384
+Epoch: 0 Step: 6260 LR: 0.00100 Loss 0.5503, Pretrain Micro AUROC 0.7709 Pretrain Micro AUPRC 0.7388 Pretrain Macro AUROC 0.7797 Pretrain Macro AUPRC 0.8196
+Epoch: 0 Step: 6280 LR: 0.00100 Loss 0.5099, Pretrain Micro AUROC 0.8179 Pretrain Micro AUPRC 0.7887 Pretrain Macro AUROC 0.8509 Pretrain Macro AUPRC 0.8771
+Epoch: 0 Step: 6300 LR: 0.00100 Loss 0.5288, Pretrain Micro AUROC 0.7951 Pretrain Micro AUPRC 0.7598 Pretrain Macro AUROC 0.7823 Pretrain Macro AUPRC 0.8233
+Epoch: 0 Step: 6320 LR: 0.00100 Loss 0.5432, Pretrain Micro AUROC 0.7820 Pretrain Micro AUPRC 0.7496 Pretrain Macro AUROC 0.8209 Pretrain Macro AUPRC 0.8421
+Epoch: 0 Step: 6340 LR: 0.00100 Loss 0.5315, Pretrain Micro AUROC 0.7920 Pretrain Micro AUPRC 0.7581 Pretrain Macro AUROC 0.8135 Pretrain Macro AUPRC 0.8420
+Epoch: 0 Step: 6360 LR: 0.00100 Loss 0.5182, Pretrain Micro AUROC 0.8051 Pretrain Micro AUPRC 0.7725 Pretrain Macro AUROC 0.7829 Pretrain Macro AUPRC 0.8277
+Epoch: 0 Step: 6380 LR: 0.00100 Loss 0.5243, Pretrain Micro AUROC 0.7957 Pretrain Micro AUPRC 0.7616 Pretrain Macro AUROC 0.7883 Pretrain Macro AUPRC 0.8264
+Epoch: 0 Step: 6400 LR: 0.00100 Loss 0.5255, Pretrain Micro AUROC 0.7974 Pretrain Micro AUPRC 0.7635 Pretrain Macro AUROC 0.7767 Pretrain Macro AUPRC 0.8327
+Epoch: 0 Step: 6420 LR: 0.00100 Loss 0.5403, Pretrain Micro AUROC 0.7854 Pretrain Micro AUPRC 0.7631 Pretrain Macro AUROC 0.8034 Pretrain Macro AUPRC 0.8415
+Epoch: 0 Step: 6440 LR: 0.00100 Loss 0.5300, Pretrain Micro AUROC 0.7937 Pretrain Micro AUPRC 0.7684 Pretrain Macro AUROC 0.8070 Pretrain Macro AUPRC 0.8554
+Epoch: 0 Step: 6460 LR: 0.00100 Loss 0.5369, Pretrain Micro AUROC 0.7929 Pretrain Micro AUPRC 0.7611 Pretrain Macro AUROC 0.8071 Pretrain Macro AUPRC 0.8411
+Epoch: 0 Step: 6480 LR: 0.00100 Loss 0.5274, Pretrain Micro AUROC 0.7960 Pretrain Micro AUPRC 0.7579 Pretrain Macro AUROC 0.7612 Pretrain Macro AUPRC 0.8055
+Epoch: 0 Step: 6500 LR: 0.00100 Loss 0.5400, Pretrain Micro AUROC 0.7819 Pretrain Micro AUPRC 0.7515 Pretrain Macro AUROC 0.7337 Pretrain Macro AUPRC 0.8116
+Epoch: 0 Step: 6520 LR: 0.00100 Loss 0.5208, Pretrain Micro AUROC 0.8072 Pretrain Micro AUPRC 0.7758 Pretrain Macro AUROC 0.7881 Pretrain Macro AUPRC 0.8217
+Epoch: 0 Step: 6540 LR: 0.00100 Loss 0.5170, Pretrain Micro AUROC 0.8089 Pretrain Micro AUPRC 0.7842 Pretrain Macro AUROC 0.8220 Pretrain Macro AUPRC 0.8501
+Epoch: 0 Step: 6560 LR: 0.00100 Loss 0.5226, Pretrain Micro AUROC 0.8014 Pretrain Micro AUPRC 0.7684 Pretrain Macro AUROC 0.8247 Pretrain Macro AUPRC 0.8507
+Epoch: 0 Step: 6580 LR: 0.00100 Loss 0.5367, Pretrain Micro AUROC 0.7742 Pretrain Micro AUPRC 0.7386 Pretrain Macro AUROC 0.8784 Pretrain Macro AUPRC 0.8885
+Epoch: 0 Step: 6600 LR: 0.00100 Loss 0.5279, Pretrain Micro AUROC 0.7933 Pretrain Micro AUPRC 0.7651 Pretrain Macro AUROC 0.8941 Pretrain Macro AUPRC 0.8998
+Epoch: 0 Step: 6620 LR: 0.00100 Loss 0.5381, Pretrain Micro AUROC 0.7848 Pretrain Micro AUPRC 0.7529 Pretrain Macro AUROC 0.8628 Pretrain Macro AUPRC 0.8694
+Epoch: 0 Step: 6640 LR: 0.00100 Loss 0.5290, Pretrain Micro AUROC 0.7924 Pretrain Micro AUPRC 0.7548 Pretrain Macro AUROC 0.8347 Pretrain Macro AUPRC 0.8308
+Epoch: 0 Step: 6660 LR: 0.00100 Loss 0.5161, Pretrain Micro AUROC 0.8082 Pretrain Micro AUPRC 0.7777 Pretrain Macro AUROC 0.8097 Pretrain Macro AUPRC 0.8408
+Epoch: 0 Step: 6680 LR: 0.00100 Loss 0.5288, Pretrain Micro AUROC 0.7954 Pretrain Micro AUPRC 0.7630 Pretrain Macro AUROC 0.8159 Pretrain Macro AUPRC 0.8408
+Epoch: 0 Step: 6700 LR: 0.00100 Loss 0.5507, Pretrain Micro AUROC 0.7644 Pretrain Micro AUPRC 0.7378 Pretrain Macro AUROC 0.7891 Pretrain Macro AUPRC 0.8292
+Epoch: 0 Step: 6720 LR: 0.00100 Loss 0.5449, Pretrain Micro AUROC 0.7783 Pretrain Micro AUPRC 0.7444 Pretrain Macro AUROC 0.7593 Pretrain Macro AUPRC 0.8131
+Epoch: 0 Step: 6740 LR: 0.00100 Loss 0.5199, Pretrain Micro AUROC 0.8019 Pretrain Micro AUPRC 0.7736 Pretrain Macro AUROC 0.8124 Pretrain Macro AUPRC 0.8595
+Epoch: 0 Step: 6760 LR: 0.00100 Loss 0.5335, Pretrain Micro AUROC 0.7868 Pretrain Micro AUPRC 0.7533 Pretrain Macro AUROC 0.8003 Pretrain Macro AUPRC 0.8204
+### pretrain 1.23 h
+Epoch: 0 LR: 0.00050 Loss 0.7234, Train Micro AUROC 0.5190 Train Micro AUPRC 0.5220 Train Macro AUROC 0.5221 Train Macro AUPRC 0.5276
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.5319676947156211
+('drug', 'indication', 'disease'): 0.4450046270008409
+('drug', 'off-label use', 'disease'): 0.43360028050594923
+('disease', 'rev_contraindication', 'drug'): 0.5028507659573871
+('disease', 'rev_indication', 'drug'): 0.6618863967972171
+('disease', 'rev_off-label use', 'drug'): 0.557424097844748
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.5330099974708754
+('drug', 'indication', 'disease'): 0.46678151556167224
+('drug', 'off-label use', 'disease'): 0.44604570296364954
+('disease', 'rev_contraindication', 'drug'): 0.5049081732953774
+('disease', 'rev_indication', 'drug'): 0.6527249676660756
+('disease', 'rev_off-label use', 'drug'): 0.5623811707427813
+----------------------------------------------
+Validation.....
+Epoch: 0 LR: 0.00050 Validation Loss 0.7201,  Validation Micro AUROC 0.5166 Validation Micro AUPRC 0.5153 Validation Macro AUROC 0.5075 Validation Macro AUPRC 0.5129 (Best Macro AUROC 0.5075)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.5384132646320519
+('drug', 'indication', 'disease'): 0.44918185850208914
+('drug', 'off-label use', 'disease'): 0.4243040464252328
+('disease', 'rev_contraindication', 'drug'): 0.4969499355925485
+('disease', 'rev_indication', 'drug'): 0.6293313891069349
+('disease', 'rev_off-label use', 'drug'): 0.5067379718097828
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.5322786932019424
+('drug', 'indication', 'disease'): 0.4611673426319194
+('drug', 'off-label use', 'disease'): 0.4454206098539812
+('disease', 'rev_contraindication', 'drug'): 0.5018608490108699
+('disease', 'rev_indication', 'drug'): 0.6179689944026028
+('disease', 'rev_off-label use', 'drug'): 0.518723360096104
+----------------------------------------------
+Epoch: 5 LR: 0.00050 Loss 0.6912, Train Micro AUROC 0.5713 Train Micro AUPRC 0.5702 Train Macro AUROC 0.5544 Train Macro AUPRC 0.5565
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6162163199632974
+('drug', 'indication', 'disease'): 0.47985582624758316
+('drug', 'off-label use', 'disease'): 0.4363494564084507
+('disease', 'rev_contraindication', 'drug'): 0.5277989736569775
+('disease', 'rev_indication', 'drug'): 0.6924859482925918
+('disease', 'rev_off-label use', 'drug'): 0.57373691341085
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6182795303414381
+('drug', 'indication', 'disease'): 0.494531360046526
+('drug', 'off-label use', 'disease'): 0.44898154505594234
+('disease', 'rev_contraindication', 'drug'): 0.5150671895450768
+('disease', 'rev_indication', 'drug'): 0.6750133883987987
+('disease', 'rev_off-label use', 'drug'): 0.5870545336264272
+----------------------------------------------
+Epoch: 10 LR: 0.00050 Loss 0.6769, Train Micro AUROC 0.6009 Train Micro AUPRC 0.5928 Train Macro AUROC 0.5757 Train Macro AUPRC 0.5715
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6659277181098833
+('drug', 'indication', 'disease'): 0.5130842419624952
+('drug', 'off-label use', 'disease'): 0.4375160881684796
+('disease', 'rev_contraindication', 'drug'): 0.5375008594474566
+('disease', 'rev_indication', 'drug'): 0.70881620654213
+('disease', 'rev_off-label use', 'drug'): 0.5914175169338405
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6614308879039505
+('drug', 'indication', 'disease'): 0.5143731779550084
+('drug', 'off-label use', 'disease'): 0.4462320999007499
+('disease', 'rev_contraindication', 'drug'): 0.5185921704905498
+('disease', 'rev_indication', 'drug'): 0.6872130063526114
+('disease', 'rev_off-label use', 'drug'): 0.6012451231481318
+----------------------------------------------
+Epoch: 15 LR: 0.00050 Loss 0.6671, Train Micro AUROC 0.6259 Train Micro AUPRC 0.6117 Train Macro AUROC 0.5932 Train Macro AUPRC 0.5822
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6979488069756995
+('drug', 'indication', 'disease'): 0.5503197212658755
+('drug', 'off-label use', 'disease'): 0.4410487470577661
+('disease', 'rev_contraindication', 'drug'): 0.5557800000974449
+('disease', 'rev_indication', 'drug'): 0.7184513473107692
+('disease', 'rev_off-label use', 'drug'): 0.595736502443918
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6819750950807
+('drug', 'indication', 'disease'): 0.5398947490887873
+('drug', 'off-label use', 'disease'): 0.44741548323264446
+('disease', 'rev_contraindication', 'drug'): 0.5313395432991252
+('disease', 'rev_indication', 'drug'): 0.6908287179618972
+('disease', 'rev_off-label use', 'drug'): 0.6014799418920715
+----------------------------------------------
+Epoch: 20 LR: 0.00050 Loss 0.6581, Train Micro AUROC 0.6497 Train Micro AUPRC 0.6320 Train Macro AUROC 0.6113 Train Macro AUPRC 0.5998
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.722638375279074
+('drug', 'indication', 'disease'): 0.5838363766720094
+('drug', 'off-label use', 'disease'): 0.43197817275991496
+('disease', 'rev_contraindication', 'drug'): 0.5763837859071804
+('disease', 'rev_indication', 'drug'): 0.7345313521983196
+('disease', 'rev_off-label use', 'drug'): 0.6183987818366463
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6980333924313677
+('drug', 'indication', 'disease'): 0.5681994851561345
+('drug', 'off-label use', 'disease'): 0.44245213268435835
+('disease', 'rev_contraindication', 'drug'): 0.5473670209284944
+('disease', 'rev_indication', 'drug'): 0.7030978728901344
+('disease', 'rev_off-label use', 'drug'): 0.6394194806157012
+----------------------------------------------
+Validation.....
+Epoch: 20 LR: 0.00050 Validation Loss 0.6818,  Validation Micro AUROC 0.5918 Validation Micro AUPRC 0.5789 Validation Macro AUROC 0.5566 Validation Macro AUPRC 0.5522 (Best Macro AUROC 0.5566)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6466358666930903
+('drug', 'indication', 'disease'): 0.5202097758096934
+('drug', 'off-label use', 'disease'): 0.42376986487634916
+('disease', 'rev_contraindication', 'drug'): 0.5464152711718853
+('disease', 'rev_indication', 'drug'): 0.6729365621336976
+('disease', 'rev_off-label use', 'drug'): 0.5298170428195074
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6254228320183937
+('drug', 'indication', 'disease'): 0.5097127857395455
+('drug', 'off-label use', 'disease'): 0.445304193036933
+('disease', 'rev_contraindication', 'drug'): 0.5290205633490348
+('disease', 'rev_indication', 'drug'): 0.6423653007400967
+('disease', 'rev_off-label use', 'drug'): 0.5611503370097182
+----------------------------------------------
+Epoch: 25 LR: 0.00050 Loss 0.6508, Train Micro AUROC 0.6632 Train Micro AUPRC 0.6451 Train Macro AUROC 0.6236 Train Macro AUPRC 0.6102
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7374125587156798
+('drug', 'indication', 'disease'): 0.6046481233243968
+('drug', 'off-label use', 'disease'): 0.44113380880542397
+('disease', 'rev_contraindication', 'drug'): 0.5882496161724554
+('disease', 'rev_indication', 'drug'): 0.7420687904750267
+('disease', 'rev_off-label use', 'drug'): 0.6279546284594353
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7117950751069735
+('drug', 'indication', 'disease'): 0.5904268649713076
+('drug', 'off-label use', 'disease'): 0.44923631725648616
+('disease', 'rev_contraindication', 'drug'): 0.5600644577304781
+('disease', 'rev_indication', 'drug'): 0.7120180364669723
+('disease', 'rev_off-label use', 'drug'): 0.6377602622853159
+----------------------------------------------
+Epoch: 30 LR: 0.00050 Loss 0.6432, Train Micro AUROC 0.6771 Train Micro AUPRC 0.6568 Train Macro AUROC 0.6380 Train Macro AUPRC 0.6213
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7499681007787906
+('drug', 'indication', 'disease'): 0.6243838991152096
+('drug', 'off-label use', 'disease'): 0.45187866535150656
+('disease', 'rev_contraindication', 'drug'): 0.6032077281481588
+('disease', 'rev_indication', 'drug'): 0.7507296106491099
+('disease', 'rev_off-label use', 'drug'): 0.6479044519192181
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7198718770337245
+('drug', 'indication', 'disease'): 0.6059848756209498
+('drug', 'off-label use', 'disease'): 0.45322947947146464
+('disease', 'rev_contraindication', 'drug'): 0.5737278278659407
+('disease', 'rev_indication', 'drug'): 0.717681225604166
+('disease', 'rev_off-label use', 'drug'): 0.6573931321858402
+----------------------------------------------
+Epoch: 35 LR: 0.00050 Loss 0.6367, Train Micro AUROC 0.6881 Train Micro AUPRC 0.6693 Train Macro AUROC 0.6455 Train Macro AUPRC 0.6308
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7601711352117262
+('drug', 'indication', 'disease'): 0.6355308023488992
+('drug', 'off-label use', 'disease'): 0.45973018611460936
+('disease', 'rev_contraindication', 'drug'): 0.6131568488081708
+('disease', 'rev_indication', 'drug'): 0.758739766691344
+('disease', 'rev_off-label use', 'drug'): 0.6458932608594055
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7315565859643205
+('drug', 'indication', 'disease'): 0.622244058358269
+('drug', 'off-label use', 'disease'): 0.4600280449873818
+('disease', 'rev_contraindication', 'drug'): 0.5838033661821816
+('disease', 'rev_indication', 'drug'): 0.7322178623569038
+('disease', 'rev_off-label use', 'drug'): 0.6547509348452071
+----------------------------------------------
+Epoch: 40 LR: 0.00050 Loss 0.6299, Train Micro AUROC 0.6975 Train Micro AUPRC 0.6784 Train Macro AUROC 0.6534 Train Macro AUPRC 0.6372
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7687747138490582
+('drug', 'indication', 'disease'): 0.6489029964996514
+('drug', 'off-label use', 'disease'): 0.45503794273217835
+('disease', 'rev_contraindication', 'drug'): 0.6240837479476508
+('disease', 'rev_indication', 'drug'): 0.7593317083426173
+('disease', 'rev_off-label use', 'drug'): 0.6643124674063907
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7399020543039647
+('drug', 'indication', 'disease'): 0.631184413474159
+('drug', 'off-label use', 'disease'): 0.4584876352101566
+('disease', 'rev_contraindication', 'drug'): 0.5977068599887788
+('disease', 'rev_indication', 'drug'): 0.7376453662878683
+('disease', 'rev_off-label use', 'drug'): 0.6585556354390841
+----------------------------------------------
+Validation.....
+Epoch: 40 LR: 0.00050 Validation Loss 0.6674,  Validation Micro AUROC 0.6276 Validation Micro AUPRC 0.6161 Validation Macro AUROC 0.5854 Validation Macro AUPRC 0.5806 (Best Macro AUROC 0.5854)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6841631985731274
+('drug', 'indication', 'disease'): 0.5684561000249921
+('drug', 'off-label use', 'disease'): 0.441070062766332
+('disease', 'rev_contraindication', 'drug'): 0.5835464972255252
+('disease', 'rev_indication', 'drug'): 0.6825488667283844
+('disease', 'rev_off-label use', 'drug'): 0.5527382874625162
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.6636577264215593
+('drug', 'indication', 'disease'): 0.555994654551389
+('drug', 'off-label use', 'disease'): 0.4514631002430207
+('disease', 'rev_contraindication', 'drug'): 0.5657426263431561
+('disease', 'rev_indication', 'drug'): 0.663798683773618
+('disease', 'rev_off-label use', 'drug'): 0.5827680830720181
+----------------------------------------------
+Epoch: 45 LR: 0.00050 Loss 0.6209, Train Micro AUROC 0.7108 Train Micro AUPRC 0.6923 Train Macro AUROC 0.6641 Train Macro AUPRC 0.6484
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7832478612623606
+('drug', 'indication', 'disease'): 0.6676226289989866
+('drug', 'off-label use', 'disease'): 0.47125667110356
+('disease', 'rev_contraindication', 'drug'): 0.6364304053269734
+('disease', 'rev_indication', 'drug'): 0.7647621092655018
+('disease', 'rev_off-label use', 'drug'): 0.6612090736157499
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7555146537743549
+('drug', 'indication', 'disease'): 0.650413749078502
+('drug', 'off-label use', 'disease'): 0.4670770109575959
+('disease', 'rev_contraindication', 'drug'): 0.6119245032942183
+('disease', 'rev_indication', 'drug'): 0.7424924019817236
+('disease', 'rev_off-label use', 'drug'): 0.6632649064164966
+----------------------------------------------
+Epoch: 50 LR: 0.00050 Loss 0.6142, Train Micro AUROC 0.7205 Train Micro AUPRC 0.7013 Train Macro AUROC 0.6750 Train Macro AUPRC 0.6559
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.791863455353067
+('drug', 'indication', 'disease'): 0.682623985653602
+('drug', 'off-label use', 'disease'): 0.4864263457992478
+('disease', 'rev_contraindication', 'drug'): 0.6454983573478954
+('disease', 'rev_indication', 'drug'): 0.769098112183657
+('disease', 'rev_off-label use', 'drug'): 0.6742986918541753
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.765436997958695
+('drug', 'indication', 'disease'): 0.6647797290147281
+('drug', 'off-label use', 'disease'): 0.47616060105202307
+('disease', 'rev_contraindication', 'drug'): 0.6201001986340066
+('disease', 'rev_indication', 'drug'): 0.7460731067458215
+('disease', 'rev_off-label use', 'drug'): 0.6627308470434337
+----------------------------------------------
+Epoch: 55 LR: 0.00050 Loss 0.6073, Train Micro AUROC 0.7300 Train Micro AUPRC 0.7110 Train Macro AUROC 0.6845 Train Macro AUPRC 0.6650
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8000727848791231
+('drug', 'indication', 'disease'): 0.6986104352794887
+('drug', 'off-label use', 'disease'): 0.49249218804284045
+('disease', 'rev_contraindication', 'drug'): 0.653533200312206
+('disease', 'rev_indication', 'drug'): 0.7775651912972853
+('disease', 'rev_off-label use', 'drug'): 0.6846950177801308
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7742208528185575
+('drug', 'indication', 'disease'): 0.6815656157278315
+('drug', 'off-label use', 'disease'): 0.4821531735041742
+('disease', 'rev_contraindication', 'drug'): 0.6276473794079668
+('disease', 'rev_indication', 'drug'): 0.7549511226774489
+('disease', 'rev_off-label use', 'drug'): 0.6697164684816002
+----------------------------------------------
+Epoch: 60 LR: 0.00050 Loss 0.6001, Train Micro AUROC 0.7387 Train Micro AUPRC 0.7192 Train Macro AUROC 0.6942 Train Macro AUPRC 0.6726
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8084078330064365
+('drug', 'indication', 'disease'): 0.7100757300778414
+('drug', 'off-label use', 'disease'): 0.5028895030588847
+('disease', 'rev_contraindication', 'drug'): 0.6615750339631843
+('disease', 'rev_indication', 'drug'): 0.7829020279740384
+('disease', 'rev_off-label use', 'drug'): 0.6992766784178812
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.78315054951537
+('drug', 'indication', 'disease'): 0.6875796418423644
+('drug', 'off-label use', 'disease'): 0.48936643018846127
+('disease', 'rev_contraindication', 'drug'): 0.6345707208720375
+('disease', 'rev_indication', 'drug'): 0.7633213860555879
+('disease', 'rev_off-label use', 'drug'): 0.6775110792824923
+----------------------------------------------
+Validation.....
+Epoch: 60 LR: 0.00050 Validation Loss 0.6516,  Validation Micro AUROC 0.6633 Validation Micro AUPRC 0.6526 Validation Macro AUROC 0.6216 Validation Macro AUPRC 0.6113 (Best Macro AUROC 0.6216)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7197687111903819
+('drug', 'indication', 'disease'): 0.6268550524659525
+('drug', 'off-label use', 'disease'): 0.4818621083174495
+('disease', 'rev_contraindication', 'drug'): 0.6186553705905669
+('disease', 'rev_indication', 'drug'): 0.7029658839307401
+('disease', 'rev_off-label use', 'drug'): 0.5797872986196263
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7046886447516707
+('drug', 'indication', 'disease'): 0.6074560175449915
+('drug', 'off-label use', 'disease'): 0.47694735238733554
+('disease', 'rev_contraindication', 'drug'): 0.6022574800909364
+('disease', 'rev_indication', 'drug'): 0.6826833883059855
+('disease', 'rev_off-label use', 'drug'): 0.5937140531205318
+----------------------------------------------
+Epoch: 65 LR: 0.00050 Loss 0.5937, Train Micro AUROC 0.7470 Train Micro AUPRC 0.7280 Train Macro AUROC 0.7026 Train Macro AUPRC 0.6822
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8105595471501936
+('drug', 'indication', 'disease'): 0.7300901142105528
+('drug', 'off-label use', 'disease'): 0.5060262786400308
+('disease', 'rev_contraindication', 'drug'): 0.6744910699632051
+('disease', 'rev_indication', 'drug'): 0.7948177231202697
+('disease', 'rev_off-label use', 'drug'): 0.6995312454795493
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7868456527379862
+('drug', 'indication', 'disease'): 0.7125121673905969
+('drug', 'off-label use', 'disease'): 0.49430680738550514
+('disease', 'rev_contraindication', 'drug'): 0.6482698051076418
+('disease', 'rev_indication', 'drug'): 0.7743567669812661
+('disease', 'rev_off-label use', 'drug'): 0.6772018709754754
+----------------------------------------------
+Epoch: 70 LR: 0.00050 Loss 0.5854, Train Micro AUROC 0.7572 Train Micro AUPRC 0.7391 Train Macro AUROC 0.7157 Train Macro AUPRC 0.6945
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8177071417015103
+('drug', 'indication', 'disease'): 0.7510087311056646
+('drug', 'off-label use', 'disease'): 0.5245180596722996
+('disease', 'rev_contraindication', 'drug'): 0.6837372878647859
+('disease', 'rev_indication', 'drug'): 0.8059087789030324
+('disease', 'rev_off-label use', 'drug'): 0.7112737230166951
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.797096561020384
+('drug', 'indication', 'disease'): 0.7335105866147101
+('drug', 'off-label use', 'disease'): 0.5097979173161806
+('disease', 'rev_contraindication', 'drug'): 0.6602421062870589
+('disease', 'rev_indication', 'drug'): 0.7815717579733521
+('disease', 'rev_off-label use', 'drug'): 0.6845360088281395
+----------------------------------------------
+Epoch: 75 LR: 0.00050 Loss 0.5790, Train Micro AUROC 0.7651 Train Micro AUPRC 0.7454 Train Macro AUROC 0.7240 Train Macro AUPRC 0.7029
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8222802153349236
+('drug', 'indication', 'disease'): 0.7634219681015461
+('drug', 'off-label use', 'disease'): 0.540498170059699
+('disease', 'rev_contraindication', 'drug'): 0.6930959398720455
+('disease', 'rev_indication', 'drug'): 0.8189088274191578
+('disease', 'rev_off-label use', 'drug'): 0.7059895092159705
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7992250231590934
+('drug', 'indication', 'disease'): 0.7425001867340542
+('drug', 'off-label use', 'disease'): 0.5223200637933474
+('disease', 'rev_contraindication', 'drug'): 0.6698012338334355
+('disease', 'rev_indication', 'drug'): 0.7961674404508983
+('disease', 'rev_off-label use', 'drug'): 0.6875587189737763
+----------------------------------------------
+Epoch: 80 LR: 0.00050 Loss 0.5718, Train Micro AUROC 0.7727 Train Micro AUPRC 0.7549 Train Macro AUROC 0.7362 Train Macro AUPRC 0.7160
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8280412767891923
+('drug', 'indication', 'disease'): 0.7723738221362908
+('drug', 'off-label use', 'disease'): 0.5562920842378356
+('disease', 'rev_contraindication', 'drug'): 0.6988082881385638
+('disease', 'rev_indication', 'drug'): 0.8327905756528113
+('disease', 'rev_off-label use', 'drug'): 0.7287391994453182
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8080034743577746
+('drug', 'indication', 'disease'): 0.7545752275699147
+('drug', 'off-label use', 'disease'): 0.5388927495366689
+('disease', 'rev_contraindication', 'drug'): 0.6730560080420823
+('disease', 'rev_indication', 'drug'): 0.8165962818116465
+('disease', 'rev_off-label use', 'drug'): 0.7051139705719461
+----------------------------------------------
+Validation.....
+Epoch: 80 LR: 0.00050 Validation Loss 0.6352,  Validation Micro AUROC 0.6948 Validation Micro AUPRC 0.6833 Validation Macro AUROC 0.6573 Validation Macro AUPRC 0.6455 (Best Macro AUROC 0.6573)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7439826925617651
+('drug', 'indication', 'disease'): 0.6807237344634955
+('drug', 'off-label use', 'disease'): 0.516693173402615
+('disease', 'rev_contraindication', 'drug'): 0.6495220223939755
+('disease', 'rev_indication', 'drug'): 0.7471853010852233
+('disease', 'rev_off-label use', 'drug'): 0.6059864754944215
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7301557434828748
+('drug', 'indication', 'disease'): 0.6583126079209087
+('drug', 'off-label use', 'disease'): 0.5036721991940566
+('disease', 'rev_contraindication', 'drug'): 0.6321206587972066
+('disease', 'rev_indication', 'drug'): 0.7331134009779813
+('disease', 'rev_off-label use', 'drug'): 0.6154145114317564
+----------------------------------------------
+Epoch: 85 LR: 0.00050 Loss 0.5648, Train Micro AUROC 0.7801 Train Micro AUPRC 0.7627 Train Macro AUROC 0.7417 Train Macro AUPRC 0.7232
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.833413601797588
+('drug', 'indication', 'disease'): 0.7870703897102689
+('drug', 'off-label use', 'disease'): 0.5561138007492852
+('disease', 'rev_contraindication', 'drug'): 0.7076471493913667
+('disease', 'rev_indication', 'drug'): 0.8411383859583552
+('disease', 'rev_off-label use', 'drug'): 0.724888671728665
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8148289544559026
+('drug', 'indication', 'disease'): 0.7658965187761362
+('drug', 'off-label use', 'disease'): 0.5449993680122374
+('disease', 'rev_contraindication', 'drug'): 0.6824076040166219
+('disease', 'rev_indication', 'drug'): 0.8245955274679428
+('disease', 'rev_off-label use', 'drug'): 0.706695646275395
+----------------------------------------------
+Epoch: 90 LR: 0.00050 Loss 0.5571, Train Micro AUROC 0.7880 Train Micro AUPRC 0.7707 Train Macro AUROC 0.7529 Train Macro AUPRC 0.7350
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.837197514036993
+('drug', 'indication', 'disease'): 0.8022691261347381
+('drug', 'off-label use', 'disease'): 0.5702031417952134
+('disease', 'rev_contraindication', 'drug'): 0.7163157719189108
+('disease', 'rev_indication', 'drug'): 0.8543311602900905
+('disease', 'rev_off-label use', 'drug'): 0.7370726543543084
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8175573953147017
+('drug', 'indication', 'disease'): 0.781533692911663
+('drug', 'off-label use', 'disease'): 0.5634130379876212
+('disease', 'rev_contraindication', 'drug'): 0.6907639834504075
+('disease', 'rev_indication', 'drug'): 0.8412362879533156
+('disease', 'rev_off-label use', 'drug'): 0.7155438678227302
+----------------------------------------------
+Epoch: 95 LR: 0.00050 Loss 0.5494, Train Micro AUROC 0.7955 Train Micro AUPRC 0.7784 Train Macro AUROC 0.7636 Train Macro AUPRC 0.7463
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8425224168089368
+('drug', 'indication', 'disease'): 0.8164898134105758
+('drug', 'off-label use', 'disease'): 0.598807998079187
+('disease', 'rev_contraindication', 'drug'): 0.7227057103550445
+('disease', 'rev_indication', 'drug'): 0.8579997969510311
+('disease', 'rev_off-label use', 'drug'): 0.7432775873916729
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8233425663959448
+('drug', 'indication', 'disease'): 0.7995443155278532
+('drug', 'off-label use', 'disease'): 0.5868067004671779
+('disease', 'rev_contraindication', 'drug'): 0.6984341131336578
+('disease', 'rev_indication', 'drug'): 0.8425263230913932
+('disease', 'rev_off-label use', 'drug'): 0.7273147201681222
+----------------------------------------------
+Epoch: 100 LR: 0.00050 Loss 0.5433, Train Micro AUROC 0.8010 Train Micro AUPRC 0.7842 Train Macro AUROC 0.7730 Train Macro AUPRC 0.7560
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8458504749321348
+('drug', 'indication', 'disease'): 0.823740054194309
+('drug', 'off-label use', 'disease'): 0.6160674964967665
+('disease', 'rev_contraindication', 'drug'): 0.7270618721492697
+('disease', 'rev_indication', 'drug'): 0.8671857143370543
+('disease', 'rev_off-label use', 'drug'): 0.7581412623410624
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.827410894226614
+('drug', 'indication', 'disease'): 0.8058530528846144
+('drug', 'off-label use', 'disease'): 0.6140045206279866
+('disease', 'rev_contraindication', 'drug'): 0.7031928935388584
+('disease', 'rev_indication', 'drug'): 0.851447431985385
+('disease', 'rev_off-label use', 'drug'): 0.7342991841258624
+----------------------------------------------
+Validation.....
+Epoch: 100 LR: 0.00050 Validation Loss 0.6179,  Validation Micro AUROC 0.7209 Validation Micro AUPRC 0.7087 Validation Macro AUROC 0.6901 Validation Macro AUPRC 0.6772 (Best Macro AUROC 0.6901)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.76422595455146
+('drug', 'indication', 'disease'): 0.7259472383654417
+('drug', 'off-label use', 'disease'): 0.5592941519260888
+('disease', 'rev_contraindication', 'drug'): 0.6713304680274805
+('disease', 'rev_indication', 'drug'): 0.7809625680684574
+('disease', 'rev_off-label use', 'drug'): 0.638741516832789
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7493646311007864
+('drug', 'indication', 'disease'): 0.7042584700546711
+('drug', 'off-label use', 'disease'): 0.5407797038717059
+('disease', 'rev_contraindication', 'drug'): 0.6547478638302436
+('disease', 'rev_indication', 'drug'): 0.7680072274069862
+('disease', 'rev_off-label use', 'drug'): 0.6462019938894725
+----------------------------------------------
+Epoch: 105 LR: 0.00050 Loss 0.5367, Train Micro AUROC 0.8064 Train Micro AUPRC 0.7897 Train Macro AUROC 0.7790 Train Macro AUPRC 0.7617
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.848643604801443
+('drug', 'indication', 'disease'): 0.8328254264028349
+('drug', 'off-label use', 'disease'): 0.6218113899163749
+('disease', 'rev_contraindication', 'drug'): 0.7330656096959651
+('disease', 'rev_indication', 'drug'): 0.8761048828784798
+('disease', 'rev_off-label use', 'drug'): 0.7612957179075501
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8307763074690819
+('drug', 'indication', 'disease'): 0.8160472755428495
+('drug', 'off-label use', 'disease'): 0.6121687773033253
+('disease', 'rev_contraindication', 'drug'): 0.7086029372555589
+('disease', 'rev_indication', 'drug'): 0.8601214205634357
+('disease', 'rev_off-label use', 'drug'): 0.742344523741428
+----------------------------------------------
+Epoch: 110 LR: 0.00050 Loss 0.5316, Train Micro AUROC 0.8107 Train Micro AUPRC 0.7935 Train Macro AUROC 0.7854 Train Macro AUPRC 0.7672
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8530350208577367
+('drug', 'indication', 'disease'): 0.8424752747450207
+('drug', 'off-label use', 'disease'): 0.6397722768433487
+('disease', 'rev_contraindication', 'drug'): 0.7358165241095496
+('disease', 'rev_indication', 'drug'): 0.8778718401627266
+('disease', 'rev_off-label use', 'drug'): 0.7632651199111006
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8356967924488824
+('drug', 'indication', 'disease'): 0.8256003871233262
+('drug', 'off-label use', 'disease'): 0.6324531632010612
+('disease', 'rev_contraindication', 'drug'): 0.7070105777877572
+('disease', 'rev_indication', 'drug'): 0.8606127011989455
+('disease', 'rev_off-label use', 'drug'): 0.7417654467616082
+----------------------------------------------
+Epoch: 115 LR: 0.00050 Loss 0.5234, Train Micro AUROC 0.8179 Train Micro AUPRC 0.8016 Train Macro AUROC 0.7951 Train Macro AUPRC 0.7774
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8580481428805213
+('drug', 'indication', 'disease'): 0.8531294607881894
+('drug', 'off-label use', 'disease'): 0.6606724922424427
+('disease', 'rev_contraindication', 'drug'): 0.7443538361606281
+('disease', 'rev_indication', 'drug'): 0.8798011737308542
+('disease', 'rev_off-label use', 'drug'): 0.7746509068348844
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.840348945399686
+('drug', 'indication', 'disease'): 0.8383723787418274
+('drug', 'off-label use', 'disease'): 0.6539304577887666
+('disease', 'rev_contraindication', 'drug'): 0.7198216277848579
+('disease', 'rev_indication', 'drug'): 0.8618684925731394
+('disease', 'rev_off-label use', 'drug'): 0.749926814364887
+----------------------------------------------
+Epoch: 120 LR: 0.00050 Loss 0.5195, Train Micro AUROC 0.8207 Train Micro AUPRC 0.8035 Train Macro AUROC 0.8023 Train Macro AUPRC 0.7868
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8561080427882135
+('drug', 'indication', 'disease'): 0.8576949899014584
+('drug', 'off-label use', 'disease'): 0.6721463081841517
+('disease', 'rev_contraindication', 'drug'): 0.7495403029442381
+('disease', 'rev_indication', 'drug'): 0.8871149796232274
+('disease', 'rev_off-label use', 'drug'): 0.7909051188132106
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8355724434316031
+('drug', 'indication', 'disease'): 0.8460099813318321
+('drug', 'off-label use', 'disease'): 0.6704208634157931
+('disease', 'rev_contraindication', 'drug'): 0.724297726190385
+('disease', 'rev_indication', 'drug'): 0.8705573240566817
+('disease', 'rev_off-label use', 'drug'): 0.7741924558201909
+----------------------------------------------
+Validation.....
+Epoch: 120 LR: 0.00050 Validation Loss 0.6021,  Validation Micro AUROC 0.7425 Validation Micro AUPRC 0.7292 Validation Macro AUROC 0.7198 Validation Macro AUPRC 0.7065 (Best Macro AUROC 0.7198)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7796686732065002
+('drug', 'indication', 'disease'): 0.7600175473179179
+('drug', 'off-label use', 'disease'): 0.6114375553909845
+('disease', 'rev_contraindication', 'drug'): 0.6880000247720968
+('disease', 'rev_indication', 'drug'): 0.8003306182217544
+('disease', 'rev_off-label use', 'drug'): 0.679108645242749
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7630974622332921
+('drug', 'indication', 'disease'): 0.7393733388170488
+('drug', 'off-label use', 'disease'): 0.592276752295219
+('disease', 'rev_contraindication', 'drug'): 0.6705736994440883
+('disease', 'rev_indication', 'drug'): 0.786928638942443
+('disease', 'rev_off-label use', 'drug'): 0.6865171203929822
+----------------------------------------------
+Epoch: 125 LR: 0.00050 Loss 0.5144, Train Micro AUROC 0.8247 Train Micro AUPRC 0.8083 Train Macro AUROC 0.8100 Train Macro AUPRC 0.7930
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8598704504080712
+('drug', 'indication', 'disease'): 0.8673062050327395
+('drug', 'off-label use', 'disease'): 0.6973917199806831
+('disease', 'rev_contraindication', 'drug'): 0.7500857568330326
+('disease', 'rev_indication', 'drug'): 0.8887755697949384
+('disease', 'rev_off-label use', 'drug'): 0.796358590655423
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8435961213892336
+('drug', 'indication', 'disease'): 0.8496012819027012
+('drug', 'off-label use', 'disease'): 0.6962323393595333
+('disease', 'rev_contraindication', 'drug'): 0.7248794779110403
+('disease', 'rev_indication', 'drug'): 0.8704294721627237
+('disease', 'rev_off-label use', 'drug'): 0.7731587751125519
+----------------------------------------------
+Epoch: 130 LR: 0.00050 Loss 0.5081, Train Micro AUROC 0.8296 Train Micro AUPRC 0.8129 Train Macro AUROC 0.8151 Train Macro AUPRC 0.7973
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8649445530265755
+('drug', 'indication', 'disease'): 0.8704721607285325
+('drug', 'off-label use', 'disease'): 0.7166798421708945
+('disease', 'rev_contraindication', 'drug'): 0.7549279542073486
+('disease', 'rev_indication', 'drug'): 0.8935669953783899
+('disease', 'rev_off-label use', 'drug'): 0.7898113088109877
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8466248126485252
+('drug', 'indication', 'disease'): 0.8550129895089569
+('drug', 'off-label use', 'disease'): 0.7092648040049649
+('disease', 'rev_contraindication', 'drug'): 0.730442765340402
+('disease', 'rev_indication', 'drug'): 0.875471641521983
+('disease', 'rev_off-label use', 'drug'): 0.7667387940694352
+----------------------------------------------
+Epoch: 135 LR: 0.00050 Loss 0.5023, Train Micro AUROC 0.8345 Train Micro AUPRC 0.8160 Train Macro AUROC 0.8207 Train Macro AUPRC 0.8019
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8678875975647609
+('drug', 'indication', 'disease'): 0.8770114695714047
+('drug', 'off-label use', 'disease'): 0.7218332488073428
+('disease', 'rev_contraindication', 'drug'): 0.7612575971283149
+('disease', 'rev_indication', 'drug'): 0.896117254490437
+('disease', 'rev_off-label use', 'drug'): 0.7998527986674978
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8473001034926474
+('drug', 'indication', 'disease'): 0.861668971003982
+('drug', 'off-label use', 'disease'): 0.7182735106344994
+('disease', 'rev_contraindication', 'drug'): 0.7357784556344251
+('disease', 'rev_indication', 'drug'): 0.8743516724714244
+('disease', 'rev_off-label use', 'drug'): 0.773939334491735
+----------------------------------------------
+Epoch: 140 LR: 0.00050 Loss 0.5018, Train Micro AUROC 0.8338 Train Micro AUPRC 0.8150 Train Macro AUROC 0.8244 Train Macro AUPRC 0.8061
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8656069736757721
+('drug', 'indication', 'disease'): 0.8776068163359184
+('drug', 'off-label use', 'disease'): 0.7357692808894689
+('disease', 'rev_contraindication', 'drug'): 0.7614154479455817
+('disease', 'rev_indication', 'drug'): 0.8981427757692502
+('disease', 'rev_off-label use', 'drug'): 0.8081461954278816
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.844424852159681
+('drug', 'indication', 'disease'): 0.8620637594029242
+('drug', 'off-label use', 'disease'): 0.7311182313706306
+('disease', 'rev_contraindication', 'drug'): 0.7365156142389319
+('disease', 'rev_indication', 'drug'): 0.8803382239292318
+('disease', 'rev_off-label use', 'drug'): 0.7823636588712444
+----------------------------------------------
+Validation.....
+Epoch: 140 LR: 0.00050 Validation Loss 0.5931,  Validation Micro AUROC 0.7558 Validation Micro AUPRC 0.7412 Validation Macro AUROC 0.7442 Validation Macro AUPRC 0.7310 (Best Macro AUROC 0.7442)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.789916352886775
+('drug', 'indication', 'disease'): 0.7845213119832166
+('drug', 'off-label use', 'disease'): 0.6607886462139883
+('disease', 'rev_contraindication', 'drug'): 0.7012334026952041
+('disease', 'rev_indication', 'drug'): 0.8132297449038857
+('disease', 'rev_off-label use', 'drug'): 0.7156272384027972
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7711562563630715
+('drug', 'indication', 'disease'): 0.7615497831981826
+('drug', 'off-label use', 'disease'): 0.6510589062452659
+('disease', 'rev_contraindication', 'drug'): 0.6828361122765902
+('disease', 'rev_indication', 'drug'): 0.7976250184656586
+('disease', 'rev_off-label use', 'drug'): 0.7219794187158679
+----------------------------------------------
+Epoch: 145 LR: 0.00050 Loss 0.4952, Train Micro AUROC 0.8387 Train Micro AUPRC 0.8213 Train Macro AUROC 0.8298 Train Macro AUPRC 0.8128
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8696001649626781
+('drug', 'indication', 'disease'): 0.8852367407226387
+('drug', 'off-label use', 'disease'): 0.7424759298745018
+('disease', 'rev_contraindication', 'drug'): 0.7662448925412053
+('disease', 'rev_indication', 'drug'): 0.8999082775697375
+('disease', 'rev_off-label use', 'drug'): 0.8152803786039043
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8506266117623913
+('drug', 'indication', 'disease'): 0.8722034881123948
+('drug', 'off-label use', 'disease'): 0.7353892403562975
+('disease', 'rev_contraindication', 'drug'): 0.7417962782221137
+('disease', 'rev_indication', 'drug'): 0.8803727324757982
+('disease', 'rev_off-label use', 'drug'): 0.7962713384329791
+----------------------------------------------
+Epoch: 150 LR: 0.00050 Loss 0.4902, Train Micro AUROC 0.8430 Train Micro AUPRC 0.8260 Train Macro AUROC 0.8358 Train Macro AUPRC 0.8174
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8731615347254414
+('drug', 'indication', 'disease'): 0.8911182337974111
+('drug', 'off-label use', 'disease'): 0.7604668604129302
+('disease', 'rev_contraindication', 'drug'): 0.7700252015771157
+('disease', 'rev_indication', 'drug'): 0.901138907057479
+('disease', 'rev_off-label use', 'drug'): 0.8190919608983015
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8537246189221158
+('drug', 'indication', 'disease'): 0.8762174839311097
+('drug', 'off-label use', 'disease'): 0.7538009626820388
+('disease', 'rev_contraindication', 'drug'): 0.7455357103633264
+('disease', 'rev_indication', 'drug'): 0.8848084938479825
+('disease', 'rev_off-label use', 'drug'): 0.7903335371437622
+----------------------------------------------
+Epoch: 155 LR: 0.00050 Loss 0.4892, Train Micro AUROC 0.8432 Train Micro AUPRC 0.8257 Train Macro AUROC 0.8377 Train Macro AUPRC 0.8196
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.871838346721074
+('drug', 'indication', 'disease'): 0.8918102803872665
+('drug', 'off-label use', 'disease'): 0.7631825308886654
+('disease', 'rev_contraindication', 'drug'): 0.770114072450961
+('disease', 'rev_indication', 'drug'): 0.9041944616147604
+('disease', 'rev_off-label use', 'drug'): 0.8252813157667636
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8523565364443264
+('drug', 'indication', 'disease'): 0.8747350605661321
+('drug', 'off-label use', 'disease'): 0.7601965701391243
+('disease', 'rev_contraindication', 'drug'): 0.7464795206252969
+('disease', 'rev_indication', 'drug'): 0.8853462383006974
+('disease', 'rev_off-label use', 'drug'): 0.7982591600546585
+----------------------------------------------
+Epoch: 160 LR: 0.00050 Loss 0.4819, Train Micro AUROC 0.8485 Train Micro AUPRC 0.8312 Train Macro AUROC 0.8448 Train Macro AUPRC 0.8273
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8775795147169468
+('drug', 'indication', 'disease'): 0.896885309676631
+('drug', 'off-label use', 'disease'): 0.7778330569238656
+('disease', 'rev_contraindication', 'drug'): 0.7745767259301342
+('disease', 'rev_indication', 'drug'): 0.906276845589345
+('disease', 'rev_off-label use', 'drug'): 0.8356436417209079
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8588919387538918
+('drug', 'indication', 'disease'): 0.8831559028867438
+('drug', 'off-label use', 'disease'): 0.7668347127693971
+('disease', 'rev_contraindication', 'drug'): 0.7504637387849624
+('disease', 'rev_indication', 'drug'): 0.887249402758653
+('disease', 'rev_off-label use', 'drug'): 0.8171171279518568
+----------------------------------------------
+Validation.....
+Epoch: 160 LR: 0.00050 Validation Loss 0.5853,  Validation Micro AUROC 0.7669 Validation Micro AUPRC 0.7511 Validation Macro AUROC 0.7612 Validation Macro AUPRC 0.7471 (Best Macro AUROC 0.7612)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7974145362663496
+('drug', 'indication', 'disease'): 0.8006447803329237
+('drug', 'off-label use', 'disease'): 0.6923174980878728
+('disease', 'rev_contraindication', 'drug'): 0.7112711801426872
+('disease', 'rev_indication', 'drug'): 0.8232591723016378
+('disease', 'rev_off-label use', 'drug'): 0.7425184231931916
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7777560062682303
+('drug', 'indication', 'disease'): 0.7765079456383756
+('drug', 'off-label use', 'disease'): 0.6838213844606232
+('disease', 'rev_contraindication', 'drug'): 0.6921402005735494
+('disease', 'rev_indication', 'drug'): 0.8061924481731466
+('disease', 'rev_off-label use', 'drug'): 0.746468223271987
+----------------------------------------------
+Epoch: 165 LR: 0.00050 Loss 0.4806, Train Micro AUROC 0.8502 Train Micro AUPRC 0.8323 Train Macro AUROC 0.8459 Train Macro AUPRC 0.8264
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8783755597801197
+('drug', 'indication', 'disease'): 0.8971693536214592
+('drug', 'off-label use', 'disease'): 0.7723413814769637
+('disease', 'rev_contraindication', 'drug'): 0.7790074553297017
+('disease', 'rev_indication', 'drug'): 0.9058652132193864
+('disease', 'rev_off-label use', 'drug'): 0.8424759051472495
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8596839761538266
+('drug', 'indication', 'disease'): 0.8818805327917125
+('drug', 'off-label use', 'disease'): 0.7603782040436355
+('disease', 'rev_contraindication', 'drug'): 0.7543227304117446
+('disease', 'rev_indication', 'drug'): 0.882948027142201
+('disease', 'rev_off-label use', 'drug'): 0.8192041616370368
+----------------------------------------------
+Epoch: 170 LR: 0.00050 Loss 0.4760, Train Micro AUROC 0.8526 Train Micro AUPRC 0.8348 Train Macro AUROC 0.8472 Train Macro AUPRC 0.8277
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8789331723740648
+('drug', 'indication', 'disease'): 0.9013167905325274
+('drug', 'off-label use', 'disease'): 0.7792353393976095
+('disease', 'rev_contraindication', 'drug'): 0.7825213169049478
+('disease', 'rev_indication', 'drug'): 0.9119459907711547
+('disease', 'rev_off-label use', 'drug'): 0.8289791527009207
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.860271788125405
+('drug', 'indication', 'disease'): 0.8862529948635824
+('drug', 'off-label use', 'disease'): 0.7698077992074459
+('disease', 'rev_contraindication', 'drug'): 0.7568460849223443
+('disease', 'rev_indication', 'drug'): 0.8933195641695748
+('disease', 'rev_off-label use', 'drug'): 0.7998696439688818
+----------------------------------------------
+Epoch: 175 LR: 0.00050 Loss 0.4761, Train Micro AUROC 0.8523 Train Micro AUPRC 0.8344 Train Macro AUROC 0.8505 Train Macro AUPRC 0.8306
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8769829764021804
+('drug', 'indication', 'disease'): 0.9049706836820504
+('drug', 'off-label use', 'disease'): 0.7919052125294966
+('disease', 'rev_contraindication', 'drug'): 0.7806723325260804
+('disease', 'rev_indication', 'drug'): 0.9114712065780679
+('disease', 'rev_off-label use', 'drug'): 0.8369691460764898
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8562947932297237
+('drug', 'indication', 'disease'): 0.8906986822152567
+('drug', 'off-label use', 'disease'): 0.7716151904568359
+('disease', 'rev_contraindication', 'drug'): 0.7570844179120164
+('disease', 'rev_indication', 'drug'): 0.8938999314480431
+('disease', 'rev_off-label use', 'drug'): 0.8137081678549024
+----------------------------------------------
+Epoch: 180 LR: 0.00050 Loss 0.4721, Train Micro AUROC 0.8551 Train Micro AUPRC 0.8369 Train Macro AUROC 0.8529 Train Macro AUPRC 0.8340
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8782701694485316
+('drug', 'indication', 'disease'): 0.909403116891518
+('drug', 'off-label use', 'disease'): 0.7894077600546572
+('disease', 'rev_contraindication', 'drug'): 0.7842333315195411
+('disease', 'rev_indication', 'drug'): 0.9139853121922821
+('disease', 'rev_off-label use', 'drug'): 0.8422683198648113
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8568802800165565
+('drug', 'indication', 'disease'): 0.8944813428195963
+('drug', 'off-label use', 'disease'): 0.7775577217341163
+('disease', 'rev_contraindication', 'drug'): 0.760961204710501
+('disease', 'rev_indication', 'drug'): 0.8942551191202863
+('disease', 'rev_off-label use', 'drug'): 0.819710119319006
+----------------------------------------------
+Validation.....
+Epoch: 180 LR: 0.00050 Validation Loss 0.5763,  Validation Micro AUROC 0.7770 Validation Micro AUPRC 0.7605 Validation Macro AUROC 0.7740 Validation Macro AUPRC 0.7596 (Best Macro AUROC 0.7740)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8037241544457657
+('drug', 'indication', 'disease'): 0.8139663098536022
+('drug', 'off-label use', 'disease'): 0.715178040282145
+('disease', 'rev_contraindication', 'drug'): 0.7191285589245608
+('disease', 'rev_indication', 'drug'): 0.832123471869731
+('disease', 'rev_off-label use', 'drug'): 0.7596729352062062
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7836297775833425
+('drug', 'indication', 'disease'): 0.7892941536010871
+('drug', 'off-label use', 'disease'): 0.7067608821238921
+('disease', 'rev_contraindication', 'drug'): 0.7000952945729753
+('disease', 'rev_indication', 'drug'): 0.814797680919058
+('disease', 'rev_off-label use', 'drug'): 0.7632387483185139
+----------------------------------------------
+Epoch: 185 LR: 0.00050 Loss 0.4668, Train Micro AUROC 0.8591 Train Micro AUPRC 0.8413 Train Macro AUROC 0.8584 Train Macro AUPRC 0.8377
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.88284435960314
+('drug', 'indication', 'disease'): 0.9083188803197033
+('drug', 'off-label use', 'disease'): 0.8088006021580463
+('disease', 'rev_contraindication', 'drug'): 0.7890586900689195
+('disease', 'rev_indication', 'drug'): 0.9169783797770416
+('disease', 'rev_off-label use', 'drug'): 0.8445214670876563
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8630267222726482
+('drug', 'indication', 'disease'): 0.8936861488116468
+('drug', 'off-label use', 'disease'): 0.7897966694933978
+('disease', 'rev_contraindication', 'drug'): 0.7667638211103371
+('disease', 'rev_indication', 'drug'): 0.8957828639638363
+('disease', 'rev_off-label use', 'drug'): 0.8169539699538673
+----------------------------------------------
+Epoch: 190 LR: 0.00050 Loss 0.4642, Train Micro AUROC 0.8606 Train Micro AUPRC 0.8420 Train Macro AUROC 0.8614 Train Macro AUPRC 0.8398
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8835878809813215
+('drug', 'indication', 'disease'): 0.9087413659265862
+('drug', 'off-label use', 'disease'): 0.8097100704949235
+('disease', 'rev_contraindication', 'drug'): 0.7911533798939469
+('disease', 'rev_indication', 'drug'): 0.9177027704504452
+('disease', 'rev_off-label use', 'drug'): 0.8573287001056595
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8629211368373304
+('drug', 'indication', 'disease'): 0.8908715689160478
+('drug', 'off-label use', 'disease'): 0.7866954499928132
+('disease', 'rev_contraindication', 'drug'): 0.7675610757837499
+('disease', 'rev_indication', 'drug'): 0.8986578362851635
+('disease', 'rev_off-label use', 'drug'): 0.8320222539955653
+----------------------------------------------
+Epoch: 195 LR: 0.00050 Loss 0.4611, Train Micro AUROC 0.8629 Train Micro AUPRC 0.8452 Train Macro AUROC 0.8618 Train Macro AUPRC 0.8427
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8868760586527443
+('drug', 'indication', 'disease'): 0.9121225894673289
+('drug', 'off-label use', 'disease'): 0.8055315357774903
+('disease', 'rev_contraindication', 'drug'): 0.7933157384873168
+('disease', 'rev_indication', 'drug'): 0.9177758950326674
+('disease', 'rev_off-label use', 'drug'): 0.8552453054693469
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8670674390599061
+('drug', 'indication', 'disease'): 0.8972884730111922
+('drug', 'off-label use', 'disease'): 0.7923753811095436
+('disease', 'rev_contraindication', 'drug'): 0.7704040485178593
+('disease', 'rev_indication', 'drug'): 0.897099924405876
+('disease', 'rev_off-label use', 'drug'): 0.8317733055619316
+----------------------------------------------
+Epoch: 200 LR: 0.00050 Loss 0.4607, Train Micro AUROC 0.8629 Train Micro AUPRC 0.8449 Train Macro AUROC 0.8650 Train Macro AUPRC 0.8447
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8861084827734035
+('drug', 'indication', 'disease'): 0.913956373221974
+('drug', 'off-label use', 'disease'): 0.8137037690019661
+('disease', 'rev_contraindication', 'drug'): 0.790844017571829
+('disease', 'rev_indication', 'drug'): 0.9201823397710039
+('disease', 'rev_off-label use', 'drug'): 0.86496892649849
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8658287491013927
+('drug', 'indication', 'disease'): 0.8967461429608212
+('drug', 'off-label use', 'disease'): 0.7953150657155326
+('disease', 'rev_contraindication', 'drug'): 0.7673330241365985
+('disease', 'rev_indication', 'drug'): 0.9018150801160669
+('disease', 'rev_off-label use', 'drug'): 0.841123254151816
+----------------------------------------------
+Validation.....
+Epoch: 200 LR: 0.00050 Validation Loss 0.5701,  Validation Micro AUROC 0.7844 Validation Micro AUPRC 0.7674 Validation Macro AUROC 0.7842 Validation Macro AUPRC 0.7683 (Best Macro AUROC 0.7842)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8089885552913199
+('drug', 'indication', 'disease'): 0.8236789351224441
+('drug', 'off-label use', 'disease'): 0.7336922871468634
+('disease', 'rev_contraindication', 'drug'): 0.7261805142687278
+('disease', 'rev_indication', 'drug'): 0.838833516961234
+('disease', 'rev_off-label use', 'drug'): 0.7736344984156661
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.788230330481614
+('drug', 'indication', 'disease'): 0.7991298092667309
+('drug', 'off-label use', 'disease'): 0.7215305132937172
+('disease', 'rev_contraindication', 'drug'): 0.706930628478237
+('disease', 'rev_indication', 'drug'): 0.8218837641687433
+('disease', 'rev_off-label use', 'drug'): 0.7723855748516706
+----------------------------------------------
+Epoch: 205 LR: 0.00050 Loss 0.4569, Train Micro AUROC 0.8654 Train Micro AUPRC 0.8470 Train Macro AUROC 0.8654 Train Macro AUPRC 0.8445
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8877962861525412
+('drug', 'indication', 'disease'): 0.914800841305551
+('drug', 'off-label use', 'disease'): 0.8132789548087209
+('disease', 'rev_contraindication', 'drug'): 0.7952948232864714
+('disease', 'rev_indication', 'drug'): 0.9227293375212932
+('disease', 'rev_off-label use', 'drug'): 0.8587182480445071
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8670608733514822
+('drug', 'indication', 'disease'): 0.8962129992419767
+('drug', 'off-label use', 'disease'): 0.7925107544030245
+('disease', 'rev_contraindication', 'drug'): 0.7735123419673641
+('disease', 'rev_indication', 'drug'): 0.9037317984686118
+('disease', 'rev_off-label use', 'drug'): 0.8340090169675356
+----------------------------------------------
+Epoch: 210 LR: 0.00050 Loss 0.4548, Train Micro AUROC 0.8665 Train Micro AUPRC 0.8487 Train Macro AUROC 0.8687 Train Macro AUPRC 0.8477
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8880094060329534
+('drug', 'indication', 'disease'): 0.9196548077683301
+('drug', 'off-label use', 'disease'): 0.8182106816289623
+('disease', 'rev_contraindication', 'drug'): 0.7957953930232216
+('disease', 'rev_indication', 'drug'): 0.9223063577686894
+('disease', 'rev_off-label use', 'drug'): 0.8683364073429058
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8671449900266806
+('drug', 'indication', 'disease'): 0.9059007839293186
+('drug', 'off-label use', 'disease'): 0.7897683281572644
+('disease', 'rev_contraindication', 'drug'): 0.7729207509558514
+('disease', 'rev_indication', 'drug'): 0.9037663260738324
+('disease', 'rev_off-label use', 'drug'): 0.8467459360409528
+----------------------------------------------
+Epoch: 215 LR: 0.00050 Loss 0.4538, Train Micro AUROC 0.8670 Train Micro AUPRC 0.8484 Train Macro AUROC 0.8677 Train Macro AUPRC 0.8470
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8890480395521726
+('drug', 'indication', 'disease'): 0.9179995633548721
+('drug', 'off-label use', 'disease'): 0.8201023164242612
+('disease', 'rev_contraindication', 'drug'): 0.7977144898771984
+('disease', 'rev_indication', 'drug'): 0.9228913723954029
+('disease', 'rev_off-label use', 'drug'): 0.8586759644432004
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8676487457983875
+('drug', 'indication', 'disease'): 0.9027430576303361
+('drug', 'off-label use', 'disease'): 0.80526547105627
+('disease', 'rev_contraindication', 'drug'): 0.7723760343234817
+('disease', 'rev_indication', 'drug'): 0.9044153992986066
+('disease', 'rev_off-label use', 'drug'): 0.8294474480098131
+----------------------------------------------
+Epoch: 220 LR: 0.00050 Loss 0.4490, Train Micro AUROC 0.8702 Train Micro AUPRC 0.8519 Train Macro AUROC 0.8742 Train Macro AUPRC 0.8527
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8898687778508944
+('drug', 'indication', 'disease'): 0.921312406112313
+('drug', 'off-label use', 'disease'): 0.8341000430006916
+('disease', 'rev_contraindication', 'drug'): 0.8016762812174671
+('disease', 'rev_indication', 'drug'): 0.9262820655650511
+('disease', 'rev_off-label use', 'drug'): 0.8717862299372348
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8686480783275204
+('drug', 'indication', 'disease'): 0.9061868530197236
+('drug', 'off-label use', 'disease'): 0.8107396023456241
+('disease', 'rev_contraindication', 'drug'): 0.7780133963815143
+('disease', 'rev_indication', 'drug'): 0.9089177744878612
+('disease', 'rev_off-label use', 'drug'): 0.8435328556133611
+----------------------------------------------
+Validation.....
+Epoch: 220 LR: 0.00050 Validation Loss 0.5650,  Validation Micro AUROC 0.7903 Validation Micro AUPRC 0.7730 Validation Macro AUROC 0.7929 Validation Macro AUPRC 0.7763 (Best Macro AUROC 0.7929)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8132626502840534
+('drug', 'indication', 'disease'): 0.8323056330938544
+('drug', 'off-label use', 'disease'): 0.7491835520644903
+('disease', 'rev_contraindication', 'drug'): 0.7319627345091823
+('disease', 'rev_indication', 'drug'): 0.8446969963638155
+('disease', 'rev_off-label use', 'drug'): 0.7857142857142857
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7924223809670744
+('drug', 'indication', 'disease'): 0.8076794832786647
+('drug', 'off-label use', 'disease'): 0.7341528527146098
+('disease', 'rev_contraindication', 'drug'): 0.7124221804237738
+('disease', 'rev_indication', 'drug'): 0.828822642925811
+('disease', 'rev_off-label use', 'drug'): 0.7820486200859502
+----------------------------------------------
+Epoch: 225 LR: 0.00050 Loss 0.4469, Train Micro AUROC 0.8715 Train Micro AUPRC 0.8535 Train Macro AUROC 0.8749 Train Macro AUPRC 0.8551
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.893094315733969
+('drug', 'indication', 'disease'): 0.9197917759776899
+('drug', 'off-label use', 'disease'): 0.8307012821822096
+('disease', 'rev_contraindication', 'drug'): 0.8032645633745443
+('disease', 'rev_indication', 'drug'): 0.9272687308181614
+('disease', 'rev_off-label use', 'drug'): 0.8754754123331127
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8742331762182616
+('drug', 'indication', 'disease'): 0.904099219362305
+('drug', 'off-label use', 'disease'): 0.8057393974259972
+('disease', 'rev_contraindication', 'drug'): 0.7785513127499009
+('disease', 'rev_indication', 'drug'): 0.9097154718323696
+('disease', 'rev_off-label use', 'drug'): 0.858182290172266
+----------------------------------------------
+Epoch: 230 LR: 0.00050 Loss 0.4447, Train Micro AUROC 0.8728 Train Micro AUPRC 0.8557 Train Macro AUROC 0.8766 Train Macro AUPRC 0.8568
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8924204711769665
+('drug', 'indication', 'disease'): 0.921933349625168
+('drug', 'off-label use', 'disease'): 0.8301889335160841
+('disease', 'rev_contraindication', 'drug'): 0.805217139011225
+('disease', 'rev_indication', 'drug'): 0.9294883705050708
+('disease', 'rev_off-label use', 'drug'): 0.8803741282716318
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8737174288731562
+('drug', 'indication', 'disease'): 0.9067939041993494
+('drug', 'off-label use', 'disease'): 0.8063079395837683
+('disease', 'rev_contraindication', 'drug'): 0.7826011111297558
+('disease', 'rev_indication', 'drug'): 0.9129351968545629
+('disease', 'rev_off-label use', 'drug'): 0.858236348252942
+----------------------------------------------
+Epoch: 235 LR: 0.00050 Loss 0.4426, Train Micro AUROC 0.8742 Train Micro AUPRC 0.8563 Train Macro AUROC 0.8794 Train Macro AUPRC 0.8588
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.892093581578729
+('drug', 'indication', 'disease'): 0.9282924300469348
+('drug', 'off-label use', 'disease'): 0.8432745953941536
+('disease', 'rev_contraindication', 'drug'): 0.8056857332662616
+('disease', 'rev_indication', 'drug'): 0.9299081607716579
+('disease', 'rev_off-label use', 'drug'): 0.8769830329013399
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8708233553076805
+('drug', 'indication', 'disease'): 0.9155917797509273
+('drug', 'off-label use', 'disease'): 0.8266816808019157
+('disease', 'rev_contraindication', 'drug'): 0.7824931702592457
+('disease', 'rev_indication', 'drug'): 0.9139016991141162
+('disease', 'rev_off-label use', 'drug'): 0.8435631907276946
+----------------------------------------------
+Epoch: 240 LR: 0.00050 Loss 0.4386, Train Micro AUROC 0.8770 Train Micro AUPRC 0.8598 Train Macro AUROC 0.8801 Train Macro AUPRC 0.8605
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8987097213103942
+('drug', 'indication', 'disease'): 0.9263047693148085
+('drug', 'off-label use', 'disease'): 0.8310646491536726
+('disease', 'rev_contraindication', 'drug'): 0.8078252920754984
+('disease', 'rev_indication', 'drug'): 0.9290243676731667
+('disease', 'rev_off-label use', 'drug'): 0.8878779838684352
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8786337315219587
+('drug', 'indication', 'disease'): 0.9115780840226725
+('drug', 'off-label use', 'disease'): 0.809079368618893
+('disease', 'rev_contraindication', 'drug'): 0.7840077908371345
+('disease', 'rev_indication', 'drug'): 0.912837346442718
+('disease', 'rev_off-label use', 'drug'): 0.8667309860798851
+----------------------------------------------
+Validation.....
+Epoch: 240 LR: 0.00050 Validation Loss 0.5625,  Validation Micro AUROC 0.7962 Validation Micro AUPRC 0.7786 Validation Macro AUROC 0.8007 Validation Macro AUPRC 0.7842 (Best Macro AUROC 0.8007)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8179302913198573
+('drug', 'indication', 'disease'): 0.839353600456195
+('drug', 'off-label use', 'disease'): 0.7643470237589385
+('disease', 'rev_contraindication', 'drug'): 0.7373663132514203
+('disease', 'rev_indication', 'drug'): 0.8502577537321052
+('disease', 'rev_off-label use', 'drug'): 0.7950988842889921
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.7967247964701788
+('drug', 'indication', 'disease'): 0.8152974342976861
+('drug', 'off-label use', 'disease'): 0.7470938699366629
+('disease', 'rev_contraindication', 'drug'): 0.7182288362458865
+('disease', 'rev_indication', 'drug'): 0.8351480694138227
+('disease', 'rev_off-label use', 'drug'): 0.7928584518016752
+----------------------------------------------
+Epoch: 245 LR: 0.00050 Loss 0.4388, Train Micro AUROC 0.8764 Train Micro AUPRC 0.8597 Train Macro AUROC 0.8820 Train Macro AUPRC 0.8631
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8951238824589787
+('drug', 'indication', 'disease'): 0.9273897066751
+('drug', 'off-label use', 'disease'): 0.8460351458326791
+('disease', 'rev_contraindication', 'drug'): 0.8077284648294838
+('disease', 'rev_indication', 'drug'): 0.9330802348899223
+('disease', 'rev_off-label use', 'drug'): 0.8825488901049201
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.875423594527353
+('drug', 'indication', 'disease'): 0.913581417307485
+('drug', 'off-label use', 'disease'): 0.8275463149773805
+('disease', 'rev_contraindication', 'drug'): 0.7851882921932734
+('disease', 'rev_indication', 'drug'): 0.91827800601697
+('disease', 'rev_off-label use', 'drug'): 0.8586393531087413
+----------------------------------------------
+Epoch: 250 LR: 0.00050 Loss 0.4362, Train Micro AUROC 0.8780 Train Micro AUPRC 0.8606 Train Macro AUROC 0.8830 Train Macro AUPRC 0.8623
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8966159238596656
+('drug', 'indication', 'disease'): 0.9270395460328186
+('drug', 'off-label use', 'disease'): 0.8437334095592095
+('disease', 'rev_contraindication', 'drug'): 0.8098927590071445
+('disease', 'rev_indication', 'drug'): 0.9347019582545695
+('disease', 'rev_off-label use', 'drug'): 0.8862353525030532
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8772196077248925
+('drug', 'indication', 'disease'): 0.9130360042998148
+('drug', 'off-label use', 'disease'): 0.8172820594746684
+('disease', 'rev_contraindication', 'drug'): 0.787874779353934
+('disease', 'rev_indication', 'drug'): 0.9173679766368429
+('disease', 'rev_off-label use', 'drug'): 0.860743976178307
+----------------------------------------------
+Epoch: 255 LR: 0.00050 Loss 0.4337, Train Micro AUROC 0.8794 Train Micro AUPRC 0.8619 Train Macro AUROC 0.8860 Train Macro AUPRC 0.8655
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8977228160074814
+('drug', 'indication', 'disease'): 0.9347606447972745
+('drug', 'off-label use', 'disease'): 0.854266229917453
+('disease', 'rev_contraindication', 'drug'): 0.8092458693784366
+('disease', 'rev_indication', 'drug'): 0.9334810948831659
+('disease', 'rev_off-label use', 'drug'): 0.886639148531906
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8774888423585616
+('drug', 'indication', 'disease'): 0.9229687849120473
+('drug', 'off-label use', 'disease'): 0.8266972622222847
+('disease', 'rev_contraindication', 'drug'): 0.7853404730262403
+('disease', 'rev_indication', 'drug'): 0.9164546690420036
+('disease', 'rev_off-label use', 'drug'): 0.8640745083017507
+----------------------------------------------
+Epoch: 260 LR: 0.00050 Loss 0.4329, Train Micro AUROC 0.8801 Train Micro AUPRC 0.8621 Train Macro AUROC 0.8862 Train Macro AUPRC 0.8642
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8972101010481005
+('drug', 'indication', 'disease'): 0.9319950729179396
+('drug', 'off-label use', 'disease'): 0.8524715259508803
+('disease', 'rev_contraindication', 'drug'): 0.8121856300803221
+('disease', 'rev_indication', 'drug'): 0.9351068882116598
+('disease', 'rev_off-label use', 'drug'): 0.8884924560862546
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.875171981938372
+('drug', 'indication', 'disease'): 0.9172122135272206
+('drug', 'off-label use', 'disease'): 0.8261083474925663
+('disease', 'rev_contraindication', 'drug'): 0.7900494957974737
+('disease', 'rev_indication', 'drug'): 0.9189569935556143
+('disease', 'rev_off-label use', 'drug'): 0.8578154974030867
+----------------------------------------------
+Validation.....
+Epoch: 260 LR: 0.00050 Validation Loss 0.5522,  Validation Micro AUROC 0.8014 Validation Micro AUPRC 0.7840 Validation Macro AUROC 0.8077 Validation Macro AUPRC 0.7912 (Best Macro AUROC 0.8077)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.822220405601797
+('drug', 'indication', 'disease'): 0.8450287585932579
+('drug', 'off-label use', 'disease'): 0.7770823975039152
+('disease', 'rev_contraindication', 'drug'): 0.7425326578808298
+('disease', 'rev_indication', 'drug'): 0.8543145809939842
+('disease', 'rev_off-label use', 'drug'): 0.8047262926586458
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.800856397296075
+('drug', 'indication', 'disease'): 0.8213676045783228
+('drug', 'off-label use', 'disease'): 0.757130448551648
+('disease', 'rev_contraindication', 'drug'): 0.724184796100567
+('disease', 'rev_indication', 'drug'): 0.8400433730668749
+('disease', 'rev_off-label use', 'drug'): 0.8036883432833651
+----------------------------------------------
+Epoch: 265 LR: 0.00050 Loss 0.4306, Train Micro AUROC 0.8815 Train Micro AUPRC 0.8640 Train Macro AUROC 0.8880 Train Macro AUPRC 0.8683
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8989632044853326
+('drug', 'indication', 'disease'): 0.9315715990196148
+('drug', 'off-label use', 'disease'): 0.8538009866668184
+('disease', 'rev_contraindication', 'drug'): 0.815881266362081
+('disease', 'rev_indication', 'drug'): 0.9339771273422508
+('disease', 'rev_off-label use', 'drug'): 0.8937620808081657
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8791148692612438
+('drug', 'indication', 'disease'): 0.917587729851612
+('drug', 'off-label use', 'disease'): 0.8275591848504921
+('disease', 'rev_contraindication', 'drug'): 0.7918471195489212
+('disease', 'rev_indication', 'drug'): 0.9179523187840696
+('disease', 'rev_off-label use', 'drug'): 0.8754480565908275
+----------------------------------------------
+Epoch: 270 LR: 0.00050 Loss 0.4290, Train Micro AUROC 0.8826 Train Micro AUPRC 0.8646 Train Macro AUROC 0.8896 Train Macro AUPRC 0.8686
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9015032362741824
+('drug', 'indication', 'disease'): 0.9305595256919835
+('drug', 'off-label use', 'disease'): 0.8607609663509078
+('disease', 'rev_contraindication', 'drug'): 0.8149188394170528
+('disease', 'rev_indication', 'drug'): 0.9331966017149551
+('disease', 'rev_off-label use', 'drug'): 0.8966132566260998
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8811742059006247
+('drug', 'indication', 'disease'): 0.916097869141822
+('drug', 'off-label use', 'disease'): 0.832561409074354
+('disease', 'rev_contraindication', 'drug'): 0.7920826003330985
+('disease', 'rev_indication', 'drug'): 0.9132890494558596
+('disease', 'rev_off-label use', 'drug'): 0.8761007237701046
+----------------------------------------------
+Epoch: 275 LR: 0.00050 Loss 0.4270, Train Micro AUROC 0.8836 Train Micro AUPRC 0.8659 Train Macro AUROC 0.8915 Train Macro AUPRC 0.8704
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9017571281380108
+('drug', 'indication', 'disease'): 0.9340265508988062
+('drug', 'off-label use', 'disease'): 0.8647306794232912
+('disease', 'rev_contraindication', 'drug'): 0.8158127355551098
+('disease', 'rev_indication', 'drug'): 0.9338755309820382
+('disease', 'rev_off-label use', 'drug'): 0.8987882657319106
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8806918813079135
+('drug', 'indication', 'disease'): 0.9218387500578726
+('drug', 'off-label use', 'disease'): 0.8406598538148253
+('disease', 'rev_contraindication', 'drug'): 0.79237910728104
+('disease', 'rev_indication', 'drug'): 0.917446713362987
+('disease', 'rev_off-label use', 'drug'): 0.8693956878998088
+----------------------------------------------
+Epoch: 280 LR: 0.00050 Loss 0.4243, Train Micro AUROC 0.8850 Train Micro AUPRC 0.8674 Train Macro AUROC 0.8929 Train Macro AUPRC 0.8724
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9014652442178775
+('drug', 'indication', 'disease'): 0.9333806665037483
+('drug', 'off-label use', 'disease'): 0.8685401599012492
+('disease', 'rev_contraindication', 'drug'): 0.8188756304276823
+('disease', 'rev_indication', 'drug'): 0.939668302438744
+('disease', 'rev_off-label use', 'drug'): 0.895289606814435
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8810540106892116
+('drug', 'indication', 'disease'): 0.9170987770873227
+('drug', 'off-label use', 'disease'): 0.8526289982819245
+('disease', 'rev_contraindication', 'drug'): 0.7961007991570409
+('disease', 'rev_indication', 'drug'): 0.9255349207158718
+('disease', 'rev_off-label use', 'drug'): 0.8620846974975535
+----------------------------------------------
+Validation.....
+Epoch: 280 LR: 0.00050 Validation Loss 0.5526,  Validation Micro AUROC 0.8048 Validation Micro AUPRC 0.7872 Validation Macro AUROC 0.8136 Validation Macro AUPRC 0.7965 (Best Macro AUROC 0.8136)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8255016349583828
+('drug', 'indication', 'disease'): 0.8501838332353593
+('drug', 'off-label use', 'disease'): 0.7884944578664304
+('disease', 'rev_contraindication', 'drug'): 0.7470183891531246
+('disease', 'rev_indication', 'drug'): 0.8581681268898127
+('disease', 'rev_off-label use', 'drug'): 0.8124355036482171
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8036775547622168
+('drug', 'indication', 'disease'): 0.8270252835290742
+('drug', 'off-label use', 'disease'): 0.7633774838566688
+('disease', 'rev_contraindication', 'drug'): 0.7286487936517639
+('disease', 'rev_indication', 'drug'): 0.8447060298311562
+('disease', 'rev_off-label use', 'drug'): 0.8115391507819332
+----------------------------------------------
+Epoch: 285 LR: 0.00050 Loss 0.4227, Train Micro AUROC 0.8860 Train Micro AUPRC 0.8688 Train Macro AUROC 0.8947 Train Macro AUPRC 0.8759
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9027324013967142
+('drug', 'indication', 'disease'): 0.9349520229427366
+('drug', 'off-label use', 'disease'): 0.870531692795542
+('disease', 'rev_contraindication', 'drug'): 0.8189827094449119
+('disease', 'rev_indication', 'drug'): 0.9381794952885453
+('disease', 'rev_off-label use', 'drug'): 0.9026295207289792
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8845576823387827
+('drug', 'indication', 'disease'): 0.9208659947425021
+('drug', 'off-label use', 'disease'): 0.8515103787126791
+('disease', 'rev_contraindication', 'drug'): 0.7957390353721256
+('disease', 'rev_indication', 'drug'): 0.918395165091785
+('disease', 'rev_off-label use', 'drug'): 0.8841372157717624
+----------------------------------------------
+Epoch: 290 LR: 0.00050 Loss 0.4221, Train Micro AUROC 0.8864 Train Micro AUPRC 0.8687 Train Macro AUROC 0.8953 Train Macro AUPRC 0.8757
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.903121547374135
+('drug', 'indication', 'disease'): 0.938330003090657
+('drug', 'off-label use', 'disease'): 0.8699179623952894
+('disease', 'rev_contraindication', 'drug'): 0.818524057705786
+('disease', 'rev_indication', 'drug'): 0.9381477531643295
+('disease', 'rev_off-label use', 'drug'): 0.9040295777500229
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8813601247749709
+('drug', 'indication', 'disease'): 0.9280556275627162
+('drug', 'off-label use', 'disease'): 0.8517669923174422
+('disease', 'rev_contraindication', 'drug'): 0.7934474492247097
+('disease', 'rev_indication', 'drug'): 0.9232233379391983
+('disease', 'rev_off-label use', 'drug'): 0.8762389611855984
+----------------------------------------------
+Epoch: 295 LR: 0.00050 Loss 0.4174, Train Micro AUROC 0.8893 Train Micro AUPRC 0.8717 Train Macro AUROC 0.8985 Train Macro AUPRC 0.8777
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9047314546507828
+('drug', 'indication', 'disease'): 0.9390812034155351
+('drug', 'off-label use', 'disease'): 0.8758204811379284
+('disease', 'rev_contraindication', 'drug'): 0.8238755260982564
+('disease', 'rev_indication', 'drug'): 0.9387395959864586
+('disease', 'rev_off-label use', 'drug'): 0.9088776028214786
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8837023626404248
+('drug', 'indication', 'disease'): 0.9251599634339128
+('drug', 'off-label use', 'disease'): 0.846827029031607
+('disease', 'rev_contraindication', 'drug'): 0.8029006312050343
+('disease', 'rev_indication', 'drug'): 0.922010950023299
+('disease', 'rev_off-label use', 'drug'): 0.8853618666226495
+----------------------------------------------
+Epoch: 300 LR: 0.00050 Loss 0.4168, Train Micro AUROC 0.8895 Train Micro AUPRC 0.8715 Train Macro AUROC 0.8994 Train Macro AUPRC 0.8794
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9053681666621363
+('drug', 'indication', 'disease'): 0.9383896958937389
+('drug', 'off-label use', 'disease'): 0.8819389924287626
+('disease', 'rev_contraindication', 'drug'): 0.8232007411354776
+('disease', 'rev_indication', 'drug'): 0.9404119917486649
+('disease', 'rev_off-label use', 'drug'): 0.9073783895190078
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8836562021103183
+('drug', 'indication', 'disease'): 0.9253838423288704
+('drug', 'off-label use', 'disease'): 0.8577933535615255
+('disease', 'rev_contraindication', 'drug'): 0.8000453263317574
+('disease', 'rev_indication', 'drug'): 0.9235729500678095
+('disease', 'rev_off-label use', 'drug'): 0.8858157541294178
+----------------------------------------------
+Validation.....
+Epoch: 300 LR: 0.00050 Validation Loss 0.5434,  Validation Micro AUROC 0.8094 Validation Micro AUPRC 0.7921 Validation Macro AUROC 0.8193 Validation Macro AUPRC 0.8022 (Best Macro AUROC 0.8193)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8293688069758225
+('drug', 'indication', 'disease'): 0.8545697827089399
+('drug', 'off-label use', 'disease'): 0.7991659483543566
+('disease', 'rev_contraindication', 'drug'): 0.7519677302153521
+('disease', 'rev_indication', 'drug'): 0.8612446275638973
+('disease', 'rev_off-label use', 'drug'): 0.8196955165171363
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8076763624740931
+('drug', 'indication', 'disease'): 0.8322590267735711
+('drug', 'off-label use', 'disease'): 0.7721552165008954
+('disease', 'rev_contraindication', 'drug'): 0.7340944633558056
+('disease', 'rev_indication', 'drug'): 0.8483487514589636
+('disease', 'rev_off-label use', 'drug'): 0.8187697549264945
+----------------------------------------------
+Epoch: 305 LR: 0.00050 Loss 0.4137, Train Micro AUROC 0.8910 Train Micro AUPRC 0.8730 Train Macro AUROC 0.8996 Train Macro AUPRC 0.8783
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9083309605642844
+('drug', 'indication', 'disease'): 0.9371823631306198
+('drug', 'off-label use', 'disease'): 0.8764401460787153
+('disease', 'rev_contraindication', 'drug'): 0.8241753604919567
+('disease', 'rev_indication', 'drug'): 0.9424908717808653
+('disease', 'rev_off-label use', 'drug'): 0.9090736899316315
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8882953694405282
+('drug', 'indication', 'disease'): 0.9229260907420589
+('drug', 'off-label use', 'disease'): 0.8478048320011924
+('disease', 'rev_contraindication', 'drug'): 0.800482170877456
+('disease', 'rev_indication', 'drug'): 0.9262123764662838
+('disease', 'rev_off-label use', 'drug'): 0.883803812697601
+----------------------------------------------
+Epoch: 310 LR: 0.00050 Loss 0.4150, Train Micro AUROC 0.8903 Train Micro AUPRC 0.8723 Train Macro AUROC 0.9002 Train Macro AUPRC 0.8795
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9061551371466297
+('drug', 'indication', 'disease'): 0.9381814718714285
+('drug', 'off-label use', 'disease'): 0.8832215950017323
+('disease', 'rev_contraindication', 'drug'): 0.825436854169697
+('disease', 'rev_indication', 'drug'): 0.9423471652207666
+('disease', 'rev_off-label use', 'drug'): 0.9058428271557654
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8858716145201075
+('drug', 'indication', 'disease'): 0.924163968796387
+('drug', 'off-label use', 'disease'): 0.8573901402846527
+('disease', 'rev_contraindication', 'drug'): 0.8012629123426773
+('disease', 'rev_indication', 'drug'): 0.9272877395178523
+('disease', 'rev_off-label use', 'drug'): 0.8810215541418158
+----------------------------------------------
+Epoch: 315 LR: 0.00050 Loss 0.4142, Train Micro AUROC 0.8910 Train Micro AUPRC 0.8730 Train Macro AUROC 0.9004 Train Macro AUPRC 0.8805
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9064709205189413
+('drug', 'indication', 'disease'): 0.9380240280602894
+('drug', 'off-label use', 'disease'): 0.8817390725945145
+('disease', 'rev_contraindication', 'drug'): 0.8276292366499975
+('disease', 'rev_indication', 'drug'): 0.9392008405867935
+('disease', 'rev_off-label use', 'drug'): 0.9094909623129477
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8862299165973555
+('drug', 'indication', 'disease'): 0.9236815972800366
+('drug', 'off-label use', 'disease'): 0.8561439919649311
+('disease', 'rev_contraindication', 'drug'): 0.806334294667088
+('disease', 'rev_indication', 'drug'): 0.9215175291669793
+('disease', 'rev_off-label use', 'drug'): 0.8892850175402002
+----------------------------------------------
+Epoch: 320 LR: 0.00050 Loss 0.4114, Train Micro AUROC 0.8922 Train Micro AUPRC 0.8737 Train Macro AUROC 0.9013 Train Macro AUPRC 0.8806
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9072054701226588
+('drug', 'indication', 'disease'): 0.9407661684479872
+('drug', 'off-label use', 'disease'): 0.8763803061283281
+('disease', 'rev_contraindication', 'drug'): 0.8286198361634156
+('disease', 'rev_indication', 'drug'): 0.9411378019679577
+('disease', 'rev_off-label use', 'drug'): 0.9134742753740553
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8860523892383058
+('drug', 'indication', 'disease'): 0.9251152832326139
+('drug', 'off-label use', 'disease'): 0.8506397791864877
+('disease', 'rev_contraindication', 'drug'): 0.8055082805733441
+('disease', 'rev_indication', 'drug'): 0.9255167890126111
+('disease', 'rev_off-label use', 'drug'): 0.8909602407628475
+----------------------------------------------
+Validation.....
+Epoch: 320 LR: 0.00050 Validation Loss 0.5381,  Validation Micro AUROC 0.8140 Validation Micro AUPRC 0.7966 Validation Macro AUROC 0.8242 Validation Macro AUPRC 0.8073 (Best Macro AUROC 0.8242)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8325022294887039
+('drug', 'indication', 'disease'): 0.8584910890601185
+('drug', 'off-label use', 'disease'): 0.8074821838312958
+('disease', 'rev_contraindication', 'drug'): 0.7558402282335843
+('disease', 'rev_indication', 'drug'): 0.8643519284449591
+('disease', 'rev_off-label use', 'drug'): 0.8264092073474245
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8104553404629383
+('drug', 'indication', 'disease'): 0.837084943079151
+('drug', 'off-label use', 'disease'): 0.7801039726940467
+('disease', 'rev_contraindication', 'drug'): 0.7383000733860796
+('disease', 'rev_indication', 'drug'): 0.8518782305505412
+('disease', 'rev_off-label use', 'drug'): 0.826218559983734
+----------------------------------------------
+Epoch: 325 LR: 0.00050 Loss 0.4074, Train Micro AUROC 0.8945 Train Micro AUPRC 0.8760 Train Macro AUROC 0.9052 Train Macro AUPRC 0.8856
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.908937787727196
+('drug', 'indication', 'disease'): 0.9403575907970303
+('drug', 'off-label use', 'disease'): 0.887147169928892
+('disease', 'rev_contraindication', 'drug'): 0.8314568314118436
+('disease', 'rev_indication', 'drug'): 0.9438514526087302
+('disease', 'rev_off-label use', 'drug'): 0.9191619142948492
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8868348465772762
+('drug', 'indication', 'disease'): 0.9272232162977786
+('drug', 'off-label use', 'disease'): 0.866620716557544
+('disease', 'rev_contraindication', 'drug'): 0.8079941368528102
+('disease', 'rev_indication', 'drug'): 0.926585928310047
+('disease', 'rev_off-label use', 'drug'): 0.8984537099272103
+----------------------------------------------
+Epoch: 330 LR: 0.00050 Loss 0.4077, Train Micro AUROC 0.8939 Train Micro AUPRC 0.8764 Train Macro AUROC 0.9034 Train Macro AUPRC 0.8833
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9094372797049963
+('drug', 'indication', 'disease'): 0.9413328817140927
+('drug', 'off-label use', 'disease'): 0.8825791809888972
+('disease', 'rev_contraindication', 'drug'): 0.8290566521185949
+('disease', 'rev_indication', 'drug'): 0.943388042751691
+('disease', 'rev_off-label use', 'drug'): 0.9143069655927704
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8888106353387695
+('drug', 'indication', 'disease'): 0.9292309022423699
+('drug', 'off-label use', 'disease'): 0.8547204051444682
+('disease', 'rev_contraindication', 'drug'): 0.8063454133584766
+('disease', 'rev_indication', 'drug'): 0.9279573242358418
+('disease', 'rev_off-label use', 'drug'): 0.8925908598943034
+----------------------------------------------
+Epoch: 335 LR: 0.00050 Loss 0.4036, Train Micro AUROC 0.8963 Train Micro AUPRC 0.8797 Train Macro AUROC 0.9079 Train Macro AUPRC 0.8883
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.910282733148362
+('drug', 'indication', 'disease'): 0.9453814625275822
+('drug', 'off-label use', 'disease'): 0.8911799374944519
+('disease', 'rev_contraindication', 'drug'): 0.8323950184710609
+('disease', 'rev_indication', 'drug'): 0.9469019489107231
+('disease', 'rev_off-label use', 'drug'): 0.9212111853230899
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8916004869969378
+('drug', 'indication', 'disease'): 0.9336161088724223
+('drug', 'off-label use', 'disease'): 0.8650968300197646
+('disease', 'rev_contraindication', 'drug'): 0.8097694378996113
+('disease', 'rev_indication', 'drug'): 0.9319822705693925
+('disease', 'rev_off-label use', 'drug'): 0.8978766155042327
+----------------------------------------------
+Epoch: 340 LR: 0.00050 Loss 0.4021, Train Micro AUROC 0.8972 Train Micro AUPRC 0.8797 Train Macro AUROC 0.9074 Train Macro AUPRC 0.8848
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.912002644306442
+('drug', 'indication', 'disease'): 0.945043026615587
+('drug', 'off-label use', 'disease'): 0.8876584058686672
+('disease', 'rev_contraindication', 'drug'): 0.8332034084666933
+('disease', 'rev_indication', 'drug'): 0.9467302467494197
+('disease', 'rev_off-label use', 'drug'): 0.9195615066908235
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8925111699785819
+('drug', 'indication', 'disease'): 0.9324266280900184
+('drug', 'off-label use', 'disease'): 0.8526274031756182
+('disease', 'rev_contraindication', 'drug'): 0.8109696277190488
+('disease', 'rev_indication', 'drug'): 0.9307337266210909
+('disease', 'rev_off-label use', 'drug'): 0.8896328094237207
+----------------------------------------------
+Validation.....
+Epoch: 340 LR: 0.00050 Validation Loss 0.5370,  Validation Micro AUROC 0.8168 Validation Micro AUPRC 0.7996 Validation Macro AUROC 0.8288 Validation Macro AUPRC 0.8118 (Best Macro AUROC 0.8288)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8349764665081252
+('drug', 'indication', 'disease'): 0.8613871885219069
+('drug', 'off-label use', 'disease'): 0.8156041714722773
+('disease', 'rev_contraindication', 'drug'): 0.7599110268859823
+('disease', 'rev_indication', 'drug'): 0.8680382732171961
+('disease', 'rev_off-label use', 'drug'): 0.8330864767084705
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.812620426512292
+('drug', 'indication', 'disease'): 0.8403159360590932
+('drug', 'off-label use', 'disease'): 0.7866873889106679
+('disease', 'rev_contraindication', 'drug'): 0.7432471642179648
+('disease', 'rev_indication', 'drug'): 0.8557070923209611
+('disease', 'rev_off-label use', 'drug'): 0.8319868723706159
+----------------------------------------------
+Epoch: 345 LR: 0.00050 Loss 0.4009, Train Micro AUROC 0.8979 Train Micro AUPRC 0.8809 Train Macro AUROC 0.9076 Train Macro AUPRC 0.8884
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.91326562190405
+('drug', 'indication', 'disease'): 0.9420365362361549
+('drug', 'off-label use', 'disease'): 0.8893964844276421
+('disease', 'rev_contraindication', 'drug'): 0.8347008066411443
+('disease', 'rev_indication', 'drug'): 0.9462882918011344
+('disease', 'rev_off-label use', 'drug'): 0.920083251712795
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8924153010097192
+('drug', 'indication', 'disease'): 0.9303445209621014
+('drug', 'off-label use', 'disease'): 0.8650826309525003
+('disease', 'rev_contraindication', 'drug'): 0.8124078172619296
+('disease', 'rev_indication', 'drug'): 0.932189482011375
+('disease', 'rev_off-label use', 'drug'): 0.8976962207094694
+----------------------------------------------
+Epoch: 350 LR: 0.00050 Loss 0.4015, Train Micro AUROC 0.8979 Train Micro AUPRC 0.8801 Train Macro AUROC 0.9084 Train Macro AUPRC 0.8893
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9122791834333952
+('drug', 'indication', 'disease'): 0.9438148498875146
+('drug', 'off-label use', 'disease'): 0.8918408969464563
+('disease', 'rev_contraindication', 'drug'): 0.8354685426254111
+('disease', 'rev_indication', 'drug'): 0.9452814114958059
+('disease', 'rev_off-label use', 'drug'): 0.9215149596166881
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8920806027002564
+('drug', 'indication', 'disease'): 0.9307676631584032
+('drug', 'off-label use', 'disease'): 0.8707367191429739
+('disease', 'rev_contraindication', 'drug'): 0.8124017572518605
+('disease', 'rev_indication', 'drug'): 0.9274111204720135
+('disease', 'rev_off-label use', 'drug'): 0.9023741248408256
+----------------------------------------------
+Epoch: 355 LR: 0.00050 Loss 0.3989, Train Micro AUROC 0.8994 Train Micro AUPRC 0.8814 Train Macro AUROC 0.9095 Train Macro AUPRC 0.8903
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.911847102370741
+('drug', 'indication', 'disease'): 0.9440915085999324
+('drug', 'off-label use', 'disease'): 0.8931545322209696
+('disease', 'rev_contraindication', 'drug'): 0.8396804473532525
+('disease', 'rev_indication', 'drug'): 0.9491581643654449
+('disease', 'rev_off-label use', 'drug'): 0.9189492599257045
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8905898825692636
+('drug', 'indication', 'disease'): 0.9290375452653636
+('drug', 'off-label use', 'disease'): 0.8714706541196603
+('disease', 'rev_contraindication', 'drug'): 0.8180036640375534
+('disease', 'rev_indication', 'drug'): 0.9348250770932971
+('disease', 'rev_off-label use', 'drug'): 0.8976882789447393
+----------------------------------------------
+Epoch: 360 LR: 0.00050 Loss 0.3989, Train Micro AUROC 0.8990 Train Micro AUPRC 0.8801 Train Macro AUROC 0.9091 Train Macro AUPRC 0.8869
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9118444024960924
+('drug', 'indication', 'disease'): 0.9417364909544381
+('drug', 'off-label use', 'disease'): 0.8924908527712202
+('disease', 'rev_contraindication', 'drug'): 0.8392224377191458
+('disease', 'rev_indication', 'drug'): 0.9494074833427969
+('disease', 'rev_off-label use', 'drug'): 0.9196165248270267
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8910815370251763
+('drug', 'indication', 'disease'): 0.92525608804555
+('drug', 'off-label use', 'disease'): 0.8637911538920298
+('disease', 'rev_contraindication', 'drug'): 0.8153654372319736
+('disease', 'rev_indication', 'drug'): 0.932754420863983
+('disease', 'rev_off-label use', 'drug'): 0.8931648858634624
+----------------------------------------------
+Validation.....
+Epoch: 360 LR: 0.00050 Validation Loss 0.5319,  Validation Micro AUROC 0.8202 Validation Micro AUPRC 0.8026 Validation Macro AUROC 0.8330 Validation Macro AUPRC 0.8157 (Best Macro AUROC 0.8330)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8376672529396221
+('drug', 'indication', 'disease'): 0.8644364090126685
+('drug', 'off-label use', 'disease'): 0.8233498039310907
+('disease', 'rev_contraindication', 'drug'): 0.7642734756903158
+('disease', 'rev_indication', 'drug'): 0.870119487202954
+('disease', 'rev_off-label use', 'drug'): 0.8378576891791815
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8149261606988938
+('drug', 'indication', 'disease'): 0.8435505446128864
+('drug', 'off-label use', 'disease'): 0.7936653972451992
+('disease', 'rev_contraindication', 'drug'): 0.7476771660622872
+('disease', 'rev_indication', 'drug'): 0.8577344244582358
+('disease', 'rev_off-label use', 'drug'): 0.8364329735725436
+----------------------------------------------
+Epoch: 365 LR: 0.00050 Loss 0.3964, Train Micro AUROC 0.9002 Train Micro AUPRC 0.8830 Train Macro AUROC 0.9104 Train Macro AUPRC 0.8920
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9140380321095013
+('drug', 'indication', 'disease'): 0.94354931394605
+('drug', 'off-label use', 'disease'): 0.896850885519993
+('disease', 'rev_contraindication', 'drug'): 0.8399276215514451
+('disease', 'rev_indication', 'drug'): 0.9474615015561096
+('disease', 'rev_off-label use', 'drug'): 0.9207860002210617
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.894294542253409
+('drug', 'indication', 'disease'): 0.9302868874769272
+('drug', 'off-label use', 'disease'): 0.8774651097074571
+('disease', 'rev_contraindication', 'drug'): 0.8188240174838559
+('disease', 'rev_indication', 'drug'): 0.9311298953791384
+('disease', 'rev_off-label use', 'drug'): 0.9000839815870321
+----------------------------------------------
+Epoch: 370 LR: 0.00050 Loss 0.3962, Train Micro AUROC 0.8999 Train Micro AUPRC 0.8813 Train Macro AUROC 0.9107 Train Macro AUPRC 0.8901
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9135730115649466
+('drug', 'indication', 'disease'): 0.9441011309647881
+('drug', 'off-label use', 'disease'): 0.8982220116559322
+('disease', 'rev_contraindication', 'drug'): 0.8378572196437062
+('disease', 'rev_indication', 'drug'): 0.9486349179538413
+('disease', 'rev_off-label use', 'drug'): 0.9221086609426374
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8918441839135345
+('drug', 'indication', 'disease'): 0.9304328864550824
+('drug', 'off-label use', 'disease'): 0.8770309757023073
+('disease', 'rev_contraindication', 'drug'): 0.8144274229551193
+('disease', 'rev_indication', 'drug'): 0.9324342847259866
+('disease', 'rev_off-label use', 'drug'): 0.8942733458068443
+----------------------------------------------
+Epoch: 375 LR: 0.00050 Loss 0.3928, Train Micro AUROC 0.9018 Train Micro AUPRC 0.8842 Train Macro AUROC 0.9114 Train Macro AUPRC 0.8909
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9145364100940789
+('drug', 'indication', 'disease'): 0.9486296979781353
+('drug', 'off-label use', 'disease'): 0.8906607888339642
+('disease', 'rev_contraindication', 'drug'): 0.8408972161412172
+('disease', 'rev_indication', 'drug'): 0.9498822765203514
+('disease', 'rev_off-label use', 'drug'): 0.9237010959860005
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8944606118826204
+('drug', 'indication', 'disease'): 0.9378832807933012
+('drug', 'off-label use', 'disease'): 0.8619950035388599
+('disease', 'rev_contraindication', 'drug'): 0.8179510864549212
+('disease', 'rev_indication', 'drug'): 0.9309491548029141
+('disease', 'rev_off-label use', 'drug'): 0.9024389908708563
+----------------------------------------------
+Epoch: 380 LR: 0.00050 Loss 0.3906, Train Micro AUROC 0.9035 Train Micro AUPRC 0.8856 Train Macro AUROC 0.9133 Train Macro AUPRC 0.8923
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9161478510073873
+('drug', 'indication', 'disease'): 0.9491741477333984
+('drug', 'off-label use', 'disease'): 0.8999816029243437
+('disease', 'rev_contraindication', 'drug'): 0.843315408081309
+('disease', 'rev_indication', 'drug'): 0.9501678837625515
+('disease', 'rev_off-label use', 'drug'): 0.9208229674631396
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8946331366577377
+('drug', 'indication', 'disease'): 0.938125265835443
+('drug', 'off-label use', 'disease'): 0.8735211609606368
+('disease', 'rev_contraindication', 'drug'): 0.8202348526418102
+('disease', 'rev_indication', 'drug'): 0.9331899871449818
+('disease', 'rev_off-label use', 'drug'): 0.8943666523510875
+----------------------------------------------
+Validation.....
+Epoch: 380 LR: 0.00050 Validation Loss 0.5319,  Validation Micro AUROC 0.8236 Validation Micro AUPRC 0.8057 Validation Macro AUROC 0.8368 Validation Macro AUPRC 0.8194 (Best Macro AUROC 0.8368)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8398149111507465
+('drug', 'indication', 'disease'): 0.8666593039505225
+('drug', 'off-label use', 'disease'): 0.8295414537022424
+('disease', 'rev_contraindication', 'drug'): 0.7675831103844629
+('disease', 'rev_indication', 'drug'): 0.8730331867830151
+('disease', 'rev_off-label use', 'drug'): 0.8440007769913439
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8164361347693142
+('drug', 'indication', 'disease'): 0.8458753517473323
+('drug', 'off-label use', 'disease'): 0.7989955433972705
+('disease', 'rev_contraindication', 'drug'): 0.7510002854459019
+('disease', 'rev_indication', 'drug'): 0.8613284716294981
+('disease', 'rev_off-label use', 'drug'): 0.8427548417408715
+----------------------------------------------
+Epoch: 385 LR: 0.00050 Loss 0.3901, Train Micro AUROC 0.9033 Train Micro AUPRC 0.8855 Train Macro AUROC 0.9130 Train Macro AUPRC 0.8926
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9168712118047432
+('drug', 'indication', 'disease'): 0.9472775266119932
+('drug', 'off-label use', 'disease'): 0.9030524803783071
+('disease', 'rev_contraindication', 'drug'): 0.8411044053981038
+('disease', 'rev_indication', 'drug'): 0.9527080982397632
+('disease', 'rev_off-label use', 'drug'): 0.9170052033556859
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.89701000231589
+('drug', 'indication', 'disease'): 0.9335514183157029
+('drug', 'off-label use', 'disease'): 0.8800168313643907
+('disease', 'rev_contraindication', 'drug'): 0.8171621525967384
+('disease', 'rev_indication', 'drug'): 0.9374176369469143
+('disease', 'rev_off-label use', 'drug'): 0.8905593980640214
+----------------------------------------------
+Epoch: 390 LR: 0.00050 Loss 0.3881, Train Micro AUROC 0.9044 Train Micro AUPRC 0.8868 Train Macro AUROC 0.9165 Train Macro AUPRC 0.8977
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9160385970911351
+('drug', 'indication', 'disease'): 0.9487327048997692
+('drug', 'off-label use', 'disease'): 0.9074981930560435
+('disease', 'rev_contraindication', 'drug'): 0.8437067432829297
+('disease', 'rev_indication', 'drug'): 0.9512887410245168
+('disease', 'rev_off-label use', 'drug'): 0.9314668131838786
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8940805865843318
+('drug', 'indication', 'disease'): 0.9353039132432699
+('drug', 'off-label use', 'disease'): 0.8865673099033571
+('disease', 'rev_contraindication', 'drug'): 0.8220014601672908
+('disease', 'rev_indication', 'drug'): 0.936915977475439
+('disease', 'rev_off-label use', 'drug'): 0.9115111090213323
+----------------------------------------------
+Epoch: 395 LR: 0.00050 Loss 0.3884, Train Micro AUROC 0.9042 Train Micro AUPRC 0.8861 Train Macro AUROC 0.9146 Train Macro AUPRC 0.8935
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9153588935364954
+('drug', 'indication', 'disease'): 0.9496652836576126
+('drug', 'off-label use', 'disease'): 0.897644630316452
+('disease', 'rev_contraindication', 'drug'): 0.8439356537223422
+('disease', 'rev_indication', 'drug'): 0.9536862282486039
+('disease', 'rev_off-label use', 'drug'): 0.9270523804802082
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8926088818927711
+('drug', 'indication', 'disease'): 0.9371562620316566
+('drug', 'off-label use', 'disease'): 0.8692695680266568
+('disease', 'rev_contraindication', 'drug'): 0.8203907408967097
+('disease', 'rev_indication', 'drug'): 0.9400390395304443
+('disease', 'rev_off-label use', 'drug'): 0.9013887934057083
+----------------------------------------------
+Epoch: 400 LR: 0.00050 Loss 0.3871, Train Micro AUROC 0.9047 Train Micro AUPRC 0.8868 Train Macro AUROC 0.9156 Train Macro AUPRC 0.8950
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9176636174301487
+('drug', 'indication', 'disease'): 0.9468619231073321
+('drug', 'off-label use', 'disease'): 0.9079646726692895
+('disease', 'rev_contraindication', 'drug'): 0.8438660190340386
+('disease', 'rev_indication', 'drug'): 0.9521533792379735
+('disease', 'rev_off-label use', 'drug'): 0.9252210801803407
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8967875805814564
+('drug', 'indication', 'disease'): 0.9322496736402629
+('drug', 'off-label use', 'disease'): 0.8857670588624973
+('disease', 'rev_contraindication', 'drug'): 0.8212123057927925
+('disease', 'rev_indication', 'drug'): 0.9379524977955074
+('disease', 'rev_off-label use', 'drug'): 0.8961243154557837
+----------------------------------------------
+Validation.....
+Epoch: 400 LR: 0.00050 Validation Loss 0.5295,  Validation Micro AUROC 0.8257 Validation Micro AUPRC 0.8076 Validation Macro AUROC 0.8399 Validation Macro AUPRC 0.8223 (Best Macro AUROC 0.8399)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8419850706830492
+('drug', 'indication', 'disease'): 0.8688417186163491
+('drug', 'off-label use', 'disease'): 0.8341548398062377
+('disease', 'rev_contraindication', 'drug'): 0.7713507811467828
+('disease', 'rev_indication', 'drug'): 0.8752719218273146
+('disease', 'rev_off-label use', 'drug'): 0.8477279073437823
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8183225078919146
+('drug', 'indication', 'disease'): 0.84854092862819
+('drug', 'off-label use', 'disease'): 0.8035899953778904
+('disease', 'rev_contraindication', 'drug'): 0.7554774368821504
+('disease', 'rev_indication', 'drug'): 0.8633885323955581
+('disease', 'rev_off-label use', 'drug'): 0.8446434941719376
+----------------------------------------------
+Epoch: 405 LR: 0.00050 Loss 0.3872, Train Micro AUROC 0.9052 Train Micro AUPRC 0.8870 Train Macro AUROC 0.9175 Train Macro AUPRC 0.8979
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9179201864168729
+('drug', 'indication', 'disease'): 0.9487380776114254
+('drug', 'off-label use', 'disease'): 0.9058572925983174
+('disease', 'rev_contraindication', 'drug'): 0.8461679276089655
+('disease', 'rev_indication', 'drug'): 0.9522648495281357
+('disease', 'rev_off-label use', 'drug'): 0.9341659164006221
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8981244057848836
+('drug', 'indication', 'disease'): 0.9356092658609859
+('drug', 'off-label use', 'disease'): 0.8784235613105996
+('disease', 'rev_contraindication', 'drug'): 0.8222167325188285
+('disease', 'rev_indication', 'drug'): 0.9373290325364229
+('disease', 'rev_off-label use', 'drug'): 0.9155291068697793
+----------------------------------------------
+Epoch: 410 LR: 0.00050 Loss 0.3844, Train Micro AUROC 0.9059 Train Micro AUPRC 0.8891 Train Macro AUROC 0.9175 Train Macro AUPRC 0.8991
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.917606701814237
+('drug', 'indication', 'disease'): 0.9510436537314293
+('drug', 'off-label use', 'disease'): 0.9081062361882841
+('disease', 'rev_contraindication', 'drug'): 0.8467859343090062
+('disease', 'rev_indication', 'drug'): 0.9534840777264266
+('disease', 'rev_off-label use', 'drug'): 0.9280006706030803
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8985166646841951
+('drug', 'indication', 'disease'): 0.9400628250624055
+('drug', 'off-label use', 'disease'): 0.8861353460143819
+('disease', 'rev_contraindication', 'drug'): 0.8236722238102621
+('disease', 'rev_indication', 'drug'): 0.9390001628331014
+('disease', 'rev_off-label use', 'drug'): 0.907123563943226
+----------------------------------------------
+Epoch: 415 LR: 0.00050 Loss 0.3824, Train Micro AUROC 0.9069 Train Micro AUPRC 0.8901 Train Macro AUROC 0.9185 Train Macro AUPRC 0.9002
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9185715960604421
+('drug', 'indication', 'disease'): 0.9511173443351134
+('drug', 'off-label use', 'disease'): 0.9067966809103882
+('disease', 'rev_contraindication', 'drug'): 0.8466447462012582
+('disease', 'rev_indication', 'drug'): 0.9533925799078552
+('disease', 'rev_off-label use', 'drug'): 0.9346680032570736
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8984031122561192
+('drug', 'indication', 'disease'): 0.939869080282584
+('drug', 'off-label use', 'disease'): 0.8853028989776788
+('disease', 'rev_contraindication', 'drug'): 0.826433017034075
+('disease', 'rev_indication', 'drug'): 0.9361644590264884
+('disease', 'rev_off-label use', 'drug'): 0.9151652718045823
+----------------------------------------------
+Epoch: 420 LR: 0.00050 Loss 0.3823, Train Micro AUROC 0.9070 Train Micro AUPRC 0.8894 Train Macro AUROC 0.9185 Train Macro AUPRC 0.8986
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9178241251465311
+('drug', 'indication', 'disease'): 0.9502903240877173
+('drug', 'off-label use', 'disease'): 0.9084698504322695
+('disease', 'rev_contraindication', 'drug'): 0.8490449398196847
+('disease', 'rev_indication', 'drug'): 0.954929840292103
+('disease', 'rev_off-label use', 'drug'): 0.9306803629268263
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8962096390911524
+('drug', 'indication', 'disease'): 0.9390402094600414
+('drug', 'off-label use', 'disease'): 0.8788835853442887
+('disease', 'rev_contraindication', 'drug'): 0.827168263298846
+('disease', 'rev_indication', 'drug'): 0.9428871258985605
+('disease', 'rev_off-label use', 'drug'): 0.9072253266040565
+----------------------------------------------
+Validation.....
+Epoch: 420 LR: 0.00050 Validation Loss 0.5218,  Validation Micro AUROC 0.8290 Validation Micro AUPRC 0.8110 Validation Macro AUROC 0.8427 Validation Macro AUPRC 0.8248 (Best Macro AUROC 0.8427)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8443604670365966
+('drug', 'indication', 'disease'): 0.8709528528031708
+('drug', 'off-label use', 'disease'): 0.8383675897485704
+('disease', 'rev_contraindication', 'drug'): 0.7744182273087594
+('disease', 'rev_indication', 'drug'): 0.8764652098462102
+('disease', 'rev_off-label use', 'drug'): 0.85150359965521
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8207996334579996
+('drug', 'indication', 'disease'): 0.8502222813953182
+('drug', 'off-label use', 'disease'): 0.8064207760997113
+('disease', 'rev_contraindication', 'drug'): 0.7587707964259132
+('disease', 'rev_indication', 'drug'): 0.8649301651590972
+('disease', 'rev_off-label use', 'drug'): 0.8478350689662439
+----------------------------------------------
+Epoch: 425 LR: 0.00050 Loss 0.3816, Train Micro AUROC 0.9076 Train Micro AUPRC 0.8899 Train Macro AUROC 0.9195 Train Macro AUPRC 0.9000
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9184116731483686
+('drug', 'indication', 'disease'): 0.9511315218250688
+('drug', 'off-label use', 'disease'): 0.9098894419825718
+('disease', 'rev_contraindication', 'drug'): 0.8486034471153484
+('disease', 'rev_indication', 'drug'): 0.9556136301561858
+('disease', 'rev_off-label use', 'drug'): 0.9334234806525323
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8962446989164135
+('drug', 'indication', 'disease'): 0.9386175480135179
+('drug', 'off-label use', 'disease'): 0.8817286494256298
+('disease', 'rev_contraindication', 'drug'): 0.8277024089517336
+('disease', 'rev_indication', 'drug'): 0.9428571246349571
+('disease', 'rev_off-label use', 'drug'): 0.9126286540898063
+----------------------------------------------
+Epoch: 430 LR: 0.00050 Loss 0.3786, Train Micro AUROC 0.9091 Train Micro AUPRC 0.8915 Train Macro AUROC 0.9207 Train Macro AUPRC 0.9010
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9210194090971764
+('drug', 'indication', 'disease'): 0.9523082085690259
+('drug', 'off-label use', 'disease'): 0.9123485672164606
+('disease', 'rev_contraindication', 'drug'): 0.8502982546636741
+('disease', 'rev_indication', 'drug'): 0.9550531700795662
+('disease', 'rev_off-label use', 'drug'): 0.9332583026076617
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9008553888689426
+('drug', 'indication', 'disease'): 0.939975398741147
+('drug', 'off-label use', 'disease'): 0.8894458054320944
+('disease', 'rev_contraindication', 'drug'): 0.8268135319872342
+('disease', 'rev_indication', 'drug'): 0.9401943865587953
+('disease', 'rev_off-label use', 'drug'): 0.9086565941942318
+----------------------------------------------
+Epoch: 435 LR: 0.00050 Loss 0.3780, Train Micro AUROC 0.9093 Train Micro AUPRC 0.8911 Train Macro AUROC 0.9205 Train Macro AUPRC 0.9014
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9204680557631839
+('drug', 'indication', 'disease'): 0.9498592493297587
+('drug', 'off-label use', 'disease'): 0.9115281169875975
+('disease', 'rev_contraindication', 'drug'): 0.8512806542769037
+('disease', 'rev_indication', 'drug'): 0.9584903309159126
+('disease', 'rev_off-label use', 'drug'): 0.9316322385012714
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8990486539173161
+('drug', 'indication', 'disease'): 0.9349113893808323
+('drug', 'off-label use', 'disease'): 0.8927109235255266
+('disease', 'rev_contraindication', 'drug'): 0.8285427748585477
+('disease', 'rev_indication', 'drug'): 0.9438314593719519
+('disease', 'rev_off-label use', 'drug'): 0.9092903909319928
+----------------------------------------------
+Epoch: 440 LR: 0.00050 Loss 0.3775, Train Micro AUROC 0.9093 Train Micro AUPRC 0.8918 Train Macro AUROC 0.9201 Train Macro AUPRC 0.9004
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9197919520414086
+('drug', 'indication', 'disease'): 0.9512146640887233
+('drug', 'off-label use', 'disease'): 0.9070322079878421
+('disease', 'rev_contraindication', 'drug'): 0.8514654397986847
+('disease', 'rev_indication', 'drug'): 0.9559019057852783
+('disease', 'rev_off-label use', 'drug'): 0.9354912971199428
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8986866511729016
+('drug', 'indication', 'disease'): 0.9390903581933184
+('drug', 'off-label use', 'disease'): 0.8792952355556432
+('disease', 'rev_contraindication', 'drug'): 0.8304987148097318
+('disease', 'rev_indication', 'drug'): 0.9395529665852647
+('disease', 'rev_off-label use', 'drug'): 0.91525232439059
+----------------------------------------------
+Validation.....
+Epoch: 440 LR: 0.00050 Validation Loss 0.5198,  Validation Micro AUROC 0.8319 Validation Micro AUPRC 0.8137 Validation Macro AUROC 0.8456 Validation Macro AUPRC 0.8274 (Best Macro AUROC 0.8456)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8459447251948737
+('drug', 'indication', 'disease'): 0.8727471848610823
+('drug', 'off-label use', 'disease'): 0.8428838519345871
+('disease', 'rev_contraindication', 'drug'): 0.7772405948606157
+('disease', 'rev_indication', 'drug'): 0.8786335444174185
+('disease', 'rev_off-label use', 'drug'): 0.8561898286976897
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8218534295403266
+('drug', 'indication', 'disease'): 0.8518110252528338
+('drug', 'off-label use', 'disease'): 0.8105549180853215
+('disease', 'rev_contraindication', 'drug'): 0.7617898750664874
+('disease', 'rev_indication', 'drug'): 0.8671596888349602
+('disease', 'rev_off-label use', 'drug'): 0.851509371860735
+----------------------------------------------
+Epoch: 445 LR: 0.00050 Loss 0.3746, Train Micro AUROC 0.9109 Train Micro AUPRC 0.8947 Train Macro AUROC 0.9224 Train Macro AUPRC 0.9039
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9218290083063295
+('drug', 'indication', 'disease'): 0.9540662981837
+('drug', 'off-label use', 'disease'): 0.9117825604130044
+('disease', 'rev_contraindication', 'drug'): 0.8527179600166463
+('disease', 'rev_indication', 'drug'): 0.957823090441245
+('disease', 'rev_off-label use', 'drug'): 0.9364011363656033
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9029521048988971
+('drug', 'indication', 'disease'): 0.943465077272442
+('drug', 'off-label use', 'disease'): 0.88520270813495
+('disease', 'rev_contraindication', 'drug'): 0.8314855818929263
+('disease', 'rev_indication', 'drug'): 0.9429998944969793
+('disease', 'rev_off-label use', 'drug'): 0.917477141683625
+----------------------------------------------
+Epoch: 450 LR: 0.00050 Loss 0.3728, Train Micro AUROC 0.9118 Train Micro AUPRC 0.8953 Train Macro AUROC 0.9222 Train Macro AUPRC 0.9035
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9238770730489055
+('drug', 'indication', 'disease'): 0.9530444317863278
+('drug', 'off-label use', 'disease'): 0.9084548904446726
+('disease', 'rev_contraindication', 'drug'): 0.8534268591258883
+('disease', 'rev_indication', 'drug'): 0.9570958427071281
+('disease', 'rev_off-label use', 'drug'): 0.9372712883714409
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9043758466343447
+('drug', 'indication', 'disease'): 0.9406444532145615
+('drug', 'off-label use', 'disease'): 0.8869425497723686
+('disease', 'rev_contraindication', 'drug'): 0.8322896229997564
+('disease', 'rev_indication', 'drug'): 0.9438479170051581
+('disease', 'rev_off-label use', 'drug'): 0.9130298654743912
+----------------------------------------------
+Epoch: 455 LR: 0.00050 Loss 0.3734, Train Micro AUROC 0.9112 Train Micro AUPRC 0.8944 Train Macro AUROC 0.9224 Train Macro AUPRC 0.9033
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9221103362558881
+('drug', 'indication', 'disease'): 0.9553171876459977
+('drug', 'off-label use', 'disease'): 0.9152029575771843
+('disease', 'rev_contraindication', 'drug'): 0.8543312573044396
+('disease', 'rev_indication', 'drug'): 0.9529905159959462
+('disease', 'rev_off-label use', 'drug'): 0.9343819089488173
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9034195120971982
+('drug', 'indication', 'disease'): 0.9436374168267683
+('drug', 'off-label use', 'disease'): 0.8919771580934779
+('disease', 'rev_contraindication', 'drug'): 0.8331503868420022
+('disease', 'rev_indication', 'drug'): 0.9375830411984613
+('disease', 'rev_off-label use', 'drug'): 0.910132669159786
+----------------------------------------------
+Epoch: 460 LR: 0.00050 Loss 0.3722, Train Micro AUROC 0.9118 Train Micro AUPRC 0.8936 Train Macro AUROC 0.9239 Train Macro AUPRC 0.9044
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9225874851699232
+('drug', 'indication', 'disease'): 0.9525280944303489
+('drug', 'off-label use', 'disease'): 0.9184461839791638
+('disease', 'rev_contraindication', 'drug'): 0.8549504437249883
+('disease', 'rev_indication', 'drug'): 0.9546571706833227
+('disease', 'rev_off-label use', 'drug'): 0.9403715912555533
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9014091675091676
+('drug', 'indication', 'disease'): 0.9386440346891026
+('drug', 'off-label use', 'disease'): 0.8951846413879029
+('disease', 'rev_contraindication', 'drug'): 0.8318921616943834
+('disease', 'rev_indication', 'drug'): 0.939208717927794
+('disease', 'rev_off-label use', 'drug'): 0.9202155553693075
+----------------------------------------------
+Validation.....
+Epoch: 460 LR: 0.00050 Validation Loss 0.5184,  Validation Micro AUROC 0.8339 Validation Micro AUPRC 0.8155 Validation Macro AUROC 0.8482 Validation Macro AUPRC 0.8299 (Best Macro AUROC 0.8482)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8477753005681068
+('drug', 'indication', 'disease'): 0.8746673577646442
+('drug', 'off-label use', 'disease'): 0.8481042625259502
+('disease', 'rev_contraindication', 'drug'): 0.7802018513013609
+('disease', 'rev_indication', 'drug'): 0.880224595109279
+('disease', 'rev_off-label use', 'drug'): 0.8584722407701926
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8233764968619243
+('drug', 'indication', 'disease'): 0.8533154702233539
+('drug', 'off-label use', 'disease'): 0.8154106273314569
+('disease', 'rev_contraindication', 'drug'): 0.765338426923462
+('disease', 'rev_indication', 'drug'): 0.8688797557492747
+('disease', 'rev_off-label use', 'drug'): 0.8531906145372375
+----------------------------------------------
+Epoch: 465 LR: 0.00050 Loss 0.3699, Train Micro AUROC 0.9132 Train Micro AUPRC 0.8961 Train Macro AUROC 0.9230 Train Macro AUPRC 0.9036
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9239504322833847
+('drug', 'indication', 'disease'): 0.9545365452206227
+('drug', 'off-label use', 'disease'): 0.9149237868995513
+('disease', 'rev_contraindication', 'drug'): 0.8566770624368141
+('disease', 'rev_indication', 'drug'): 0.9583438122174386
+('disease', 'rev_off-label use', 'drug'): 0.9298313527216421
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9034153484675843
+('drug', 'indication', 'disease'): 0.9413270165809635
+('drug', 'off-label use', 'disease'): 0.8929614082052145
+('disease', 'rev_contraindication', 'drug'): 0.8361865061307013
+('disease', 'rev_indication', 'drug'): 0.9447578728962672
+('disease', 'rev_off-label use', 'drug'): 0.9032304753657807
+----------------------------------------------
+Epoch: 470 LR: 0.00050 Loss 0.3707, Train Micro AUROC 0.9127 Train Micro AUPRC 0.8949 Train Macro AUROC 0.9226 Train Macro AUPRC 0.9026
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9233683573420471
+('drug', 'indication', 'disease'): 0.9551354947566647
+('drug', 'off-label use', 'disease'): 0.9135330025980924
+('disease', 'rev_contraindication', 'drug'): 0.856971073224492
+('disease', 'rev_indication', 'drug'): 0.9553511129958528
+('disease', 'rev_off-label use', 'drug'): 0.9314476495634032
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9022940733010674
+('drug', 'indication', 'disease'): 0.9430646426750178
+('drug', 'off-label use', 'disease'): 0.8929043212535295
+('disease', 'rev_contraindication', 'drug'): 0.8362542506431927
+('disease', 'rev_indication', 'drug'): 0.938876704803403
+('disease', 'rev_off-label use', 'drug'): 0.9020648430117271
+----------------------------------------------
+Epoch: 475 LR: 0.00050 Loss 0.3698, Train Micro AUROC 0.9128 Train Micro AUPRC 0.8959 Train Macro AUROC 0.9234 Train Macro AUPRC 0.9034
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9236161888130943
+('drug', 'indication', 'disease'): 0.9557433479001503
+('drug', 'off-label use', 'disease'): 0.9173214649116582
+('disease', 'rev_contraindication', 'drug'): 0.857418910297189
+('disease', 'rev_indication', 'drug'): 0.9586436778098024
+('disease', 'rev_off-label use', 'drug'): 0.9277030781225388
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9040708246989966
+('drug', 'indication', 'disease'): 0.9443586459305614
+('drug', 'off-label use', 'disease'): 0.8891679270683596
+('disease', 'rev_contraindication', 'drug'): 0.8359117682540946
+('disease', 'rev_indication', 'drug'): 0.9456412224573996
+('disease', 'rev_off-label use', 'drug'): 0.9014730037718157
+----------------------------------------------
+Epoch: 480 LR: 0.00050 Loss 0.3691, Train Micro AUROC 0.9133 Train Micro AUPRC 0.8956 Train Macro AUROC 0.9246 Train Macro AUPRC 0.9048
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9234386442472604
+('drug', 'indication', 'disease'): 0.9548510465107922
+('drug', 'off-label use', 'disease'): 0.9144843836274928
+('disease', 'rev_contraindication', 'drug'): 0.8556197438300622
+('disease', 'rev_indication', 'drug'): 0.958588099892905
+('disease', 'rev_off-label use', 'drug'): 0.940792325452181
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9030315040901059
+('drug', 'indication', 'disease'): 0.941955164497697
+('drug', 'off-label use', 'disease'): 0.888412601448699
+('disease', 'rev_contraindication', 'drug'): 0.8329183481967688
+('disease', 'rev_indication', 'drug'): 0.9426551768022029
+('disease', 'rev_off-label use', 'drug'): 0.9197127824725327
+----------------------------------------------
+Validation.....
+Epoch: 480 LR: 0.00050 Validation Loss 0.5162,  Validation Micro AUROC 0.8360 Validation Micro AUPRC 0.8174 Validation Macro AUROC 0.8503 Validation Macro AUPRC 0.8316 (Best Macro AUROC 0.8503)
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8494638492535341
+('drug', 'indication', 'disease'): 0.8757796852394848
+('drug', 'off-label use', 'disease'): 0.8513700542679892
+('disease', 'rev_contraindication', 'drug'): 0.7826246449332805
+('disease', 'rev_indication', 'drug'): 0.8824826902836787
+('disease', 'rev_off-label use', 'drug'): 0.8600626449270964
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.8244782510786727
+('drug', 'indication', 'disease'): 0.854250927228134
+('drug', 'off-label use', 'disease'): 0.8183619070058047
+('disease', 'rev_contraindication', 'drug'): 0.7674219329831862
+('disease', 'rev_indication', 'drug'): 0.8715597018807137
+('disease', 'rev_off-label use', 'drug'): 0.8537933539756426
+----------------------------------------------
+Epoch: 485 LR: 0.00050 Loss 0.3674, Train Micro AUROC 0.9142 Train Micro AUPRC 0.8960 Train Macro AUROC 0.9254 Train Macro AUPRC 0.9058
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9236088290424389
+('drug', 'indication', 'disease'): 0.9554424041716679
+('drug', 'off-label use', 'disease'): 0.9156355608548805
+('disease', 'rev_contraindication', 'drug'): 0.8599679669479255
+('disease', 'rev_indication', 'drug'): 0.9572714620963279
+('disease', 'rev_off-label use', 'drug'): 0.9403497076373333
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9012854324543793
+('drug', 'indication', 'disease'): 0.9420678273653614
+('drug', 'off-label use', 'disease'): 0.8901029987466282
+('disease', 'rev_contraindication', 'drug'): 0.837768227322351
+('disease', 'rev_indication', 'drug'): 0.9444611096483757
+('disease', 'rev_off-label use', 'drug'): 0.9190795082132551
+----------------------------------------------
+Epoch: 490 LR: 0.00050 Loss 0.3640, Train Micro AUROC 0.9157 Train Micro AUPRC 0.8993 Train Macro AUROC 0.9263 Train Macro AUPRC 0.9075
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9256263474504312
+('drug', 'indication', 'disease'): 0.9578545810003665
+('drug', 'off-label use', 'disease'): 0.9194075795457158
+('disease', 'rev_contraindication', 'drug'): 0.8582368290638965
+('disease', 'rev_indication', 'drug'): 0.9619006461629135
+('disease', 'rev_off-label use', 'drug'): 0.9345324979148745
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9054158902276757
+('drug', 'indication', 'disease'): 0.948314215164616
+('drug', 'off-label use', 'disease'): 0.8978481638622581
+('disease', 'rev_contraindication', 'drug'): 0.8369033985303839
+('disease', 'rev_indication', 'drug'): 0.9488392512919863
+('disease', 'rev_off-label use', 'drug'): 0.9077316447643432
+----------------------------------------------
+Epoch: 495 LR: 0.00050 Loss 0.3650, Train Micro AUROC 0.9149 Train Micro AUPRC 0.8975 Train Macro AUROC 0.9270 Train Macro AUPRC 0.9077
+----- AUROC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9256518850288009
+('drug', 'indication', 'disease'): 0.956483605143428
+('drug', 'off-label use', 'disease'): 0.9248554877561774
+('disease', 'rev_contraindication', 'drug'): 0.8584248697716222
+('disease', 'rev_indication', 'drug'): 0.9596326520710995
+('disease', 'rev_off-label use', 'drug'): 0.9372434702126866
+----- AUPRC Performance in Each Relation -----
+('drug', 'contraindication', 'disease'): 0.9053137177203092
+('drug', 'indication', 'disease'): 0.9465130352982196
+('drug', 'off-label use', 'disease'): 0.9035120513280721
+('disease', 'rev_contraindication', 'drug'): 0.8347065151048553
+('disease', 'rev_indication', 'drug'): 0.9449377678564326
+('disease', 'rev_off-label use', 'drug'): 0.9113616503573438
+----------------------------------------------
+Testing...
+Testing Loss 0.5471 Testing Micro AUROC 0.8231 Testing Micro AUPRC 0.7979 Testing Macro AUROC 0.7901 Testing Macro AUPRC 0.7626
+----- AUROC Performance in Each Relation -----
+('disease', 'rev_contraindication', 'drug'): 0.6581991136093395
+('disease', 'rev_indication', 'drug'): 0.8209777777777777
+('disease', 'rev_off-label use', 'drug'): 0.7410207939508506
+('drug', 'contraindication', 'disease'): 0.8320560600043563
+('drug', 'indication', 'disease'): 0.8490923832259808
+('drug', 'off-label use', 'disease'): 0.839489363444647
+----- AUPRC Performance in Each Relation -----
+('disease', 'rev_contraindication', 'drug'): 0.6369438018297149
+('disease', 'rev_indication', 'drug'): 0.8264667314665025
+('disease', 'rev_off-label use', 'drug'): 0.672211395422812
+('drug', 'contraindication', 'disease'): 0.804490522567983
+('drug', 'indication', 'disease'): 0.8247211762061512
+('drug', 'off-label use', 'disease'): 0.8108596780803313
+----------------------------------------------
+### finetune 0.14 h
+Evaluating relation: contraindication
+  0%|          | 0/11 [00:00<?, ?it/s]  9%|▉         | 1/11 [00:00<00:06,  1.52it/s] 18%|█▊        | 2/11 [00:01<00:05,  1.51it/s] 27%|██▋       | 3/11 [00:01<00:05,  1.50it/s] 36%|███▋      | 4/11 [00:02<00:04,  1.51it/s] 45%|████▌     | 5/11 [00:03<00:04,  1.50it/s] 55%|█████▍    | 6/11 [00:04<00:03,  1.47it/s] 64%|██████▎   | 7/11 [00:04<00:02,  1.49it/s] 73%|███████▎  | 8/11 [00:05<00:01,  1.50it/s] 82%|████████▏ | 9/11 [00:05<00:01,  1.52it/s] 91%|█████████ | 10/11 [00:06<00:00,  1.53it/s]100%|██████████| 11/11 [00:07<00:00,  1.55it/s]100%|██████████| 11/11 [00:07<00:00,  1.52it/s]
+---------
+AUROC mean:  0.8008276335399437
+AUROC std:  0.14416257719426934
+---------
+---------
+AUPRC mean:  0.145423659564446
+AUPRC std:  0.18100123233684023
+---------
+---------
+Accuracy mean:  0.8639245065552514
+Accuracy std:  0.047324678437407904
+---------
+---------
+Sensitivity mean:  0.5566288978359436
+Sensitivity std:  0.37188577891107194
+---------
+---------
+Specificity mean:  0.8696096966617457
+Specificity std:  0.04731269222052537
+---------
+---------
+F1 mean:  0.10334795893017022
+F1 std:  0.16766534351823892
+---------
+---------
+PPV mean:  0.07759994025574025
+PPV std:  0.14488266369113367
+---------
+---------
+NPV mean:  0.9894571645931325
+NPV std:  0.02190966633335412
+---------
+---------
+FPR mean:  0.13039030333825438
+FPR std:  0.04731269222052538
+---------
+---------
+FNR mean:  0.4433711021640564
+FNR std:  0.37188577891107194
+---------
+---------
+FDR mean:  0.9224000597442598
+FDR std:  0.14488266369113367
+---------
+---------
+# of Pos mean:  29.0
+# of Pos std:  56.95771956619944
+---------
+---------
+Recall@1% mean:  0.10133100439928207
+Recall@1% std:  0.15162480298355754
+---------
+---------
+Recall_Random@1% mean:  0.009508716323296357
+Recall_Random@1% std:  1.734723475976807e-18
+---------
+---------
+Enrichment@1% mean:  10.656643962657832
+Enrichment@1% std:  15.945875113770803
+---------
+---------
+MRR@1% mean:  0.18939393939393936
+MRR@1% std:  0.21930477009288077
+---------
+---------
+AP@1% mean:  0.23911903370581056
+AP@1% std:  0.281713116875892
+---------
+---------
+Recall@5% mean:  0.3252879051775962
+Recall@5% std:  0.26114064675448767
+---------
+---------
+Recall_Random@5% mean:  0.04992076069730587
+Recall_Random@5% std:  6.938893903907228e-18
+---------
+---------
+Enrichment@5% mean:  6.516084703716292
+Enrichment@5% std:  5.231103114351802
+---------
+---------
+MRR@5% mean:  0.20208495208495209
+MRR@5% std:  0.20940084846834273
+---------
+---------
+AP@5% mean:  0.22397772305520175
+AP@5% std:  0.2677134374904967
+---------
+---------
+Recall@10% mean:  0.4597946182901654
+Recall@10% std:  0.28795568128774757
+---------
+---------
+Recall_Random@10% mean:  0.09984152139461173
+Recall_Random@10% std:  1.3877787807814457e-17
+---------
+---------
+Enrichment@10% mean:  4.605244510176101
+Enrichment@10% std:  2.8841275379772813
+---------
+---------
+MRR@10% mean:  0.20297621768210003
+MRR@10% std:  0.20855799229931035
+---------
+---------
+AP@10% mean:  0.2062314586247861
+AP@10% std:  0.24857349145394664
+---------
+---------
+Recall@10 mean:  0.08386001566121842
+Recall@10 std:  0.11877243438687668
+---------
+---------
+Recall_Random@10 mean:  0.007923930269413628
+Recall_Random@10 std:  1.734723475976807e-18
+---------
+---------
+Enrichment@10 mean:  10.583133976445765
+Enrichment@10 std:  14.989081219623834
+---------
+---------
+MRR@10 mean:  0.18939393939393936
+MRR@10 std:  0.21930477009288077
+---------
+---------
+AP@10 mean:  0.2367684784351451
+AP@10 std:  0.2773761997777783
+---------
+---------
+Recall@50 mean:  0.3172913228949553
+Recall@50 std:  0.26331393592300656
+---------
+---------
+Recall_Random@50 mean:  0.03961965134706814
+Recall_Random@50 std:  6.938893903907228e-18
+---------
+---------
+Enrichment@50 mean:  8.008432989868673
+Enrichment@50 std:  6.646043742696686
+---------
+---------
+MRR@50 mean:  0.20208495208495209
+MRR@50 std:  0.20940084846834273
+---------
+---------
+AP@50 mean:  0.22650788642404007
+AP@50 std:  0.27159307704941993
+---------
+---------
+Recall@100 mean:  0.416910663669857
+Recall@100 std:  0.3173371271696888
+---------
+---------
+Recall_Random@100 mean:  0.07923930269413627
+Recall_Random@100 std:  1.3877787807814457e-17
+---------
+---------
+Enrichment@100 mean:  5.261412575513596
+Enrichment@100 std:  4.004794544881473
+---------
+---------
+MRR@100 mean:  0.20208495208495209
+MRR@100 std:  0.20940084846834273
+---------
+---------
+AP@100 mean:  0.21010739684620863
+AP@100 std:  0.2583521319619961
+---------
+Evaluating relation: indication
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:00<00:08,  1.42it/s] 15%|█▌        | 2/13 [00:01<00:07,  1.43it/s] 23%|██▎       | 3/13 [00:02<00:06,  1.50it/s] 31%|███       | 4/13 [00:02<00:05,  1.50it/s] 38%|███▊      | 5/13 [00:03<00:05,  1.47it/s] 46%|████▌     | 6/13 [00:04<00:04,  1.47it/s] 54%|█████▍    | 7/13 [00:04<00:04,  1.48it/s] 62%|██████▏   | 8/13 [00:05<00:03,  1.45it/s] 69%|██████▉   | 9/13 [00:06<00:02,  1.47it/s] 77%|███████▋  | 10/13 [00:06<00:02,  1.47it/s] 85%|████████▍ | 11/13 [00:07<00:01,  1.47it/s] 92%|█████████▏| 12/13 [00:08<00:00,  1.48it/s]100%|██████████| 13/13 [00:08<00:00,  1.49it/s]100%|██████████| 13/13 [00:08<00:00,  1.48it/s]
+---------
+AUROC mean:  0.9006599465244626
+AUROC std:  0.10185329812034082
+---------
+---------
+AUPRC mean:  0.15277121137084707
+AUPRC std:  0.19552331881272772
+---------
+---------
+Accuracy mean:  0.9181569264995293
+Accuracy std:  0.046742938675175115
+---------
+---------
+Sensitivity mean:  0.7288640846333154
+Sensitivity std:  0.26399681516892587
+---------
+---------
+Specificity mean:  0.9186696138686296
+Specificity std:  0.04695280038496252
+---------
+---------
+F1 mean:  0.07615549964084313
+F1 std:  0.0711683569950764
+---------
+---------
+PPV mean:  0.041815617145231604
+PPV std:  0.04008447718811432
+---------
+---------
+NPV mean:  0.9992160273151156
+NPV std:  0.0005920488995809599
+---------
+---------
+FPR mean:  0.08133038613137034
+FPR std:  0.046952800384962544
+---------
+---------
+FNR mean:  0.2711359153666846
+FNR std:  0.26399681516892587
+---------
+---------
+FDR mean:  0.9581843828547684
+FDR std:  0.04008447718811434
+---------
+---------
+# of Pos mean:  5.769230769230769
+# of Pos std:  4.526058671801738
+---------
+---------
+Recall@1% mean:  0.30823770246847165
+Recall@1% std:  0.35015084468703284
+---------
+---------
+Recall_Random@1% mean:  0.009454949944382647
+Recall_Random@1% std:  0.0
+---------
+---------
+Enrichment@1% mean:  32.60066994343013
+Enrichment@1% std:  37.033601102781475
+---------
+---------
+MRR@1% mean:  0.17161890397184515
+MRR@1% std:  0.2770395610503589
+---------
+---------
+AP@1% mean:  0.1910036416893775
+AP@1% std:  0.26496284274251136
+---------
+---------
+Recall@5% mean:  0.6038640846333154
+Recall@5% std:  0.30929005735339254
+---------
+---------
+Recall_Random@5% mean:  0.04949944382647386
+Recall_Random@5% std:  0.0
+---------
+---------
+Enrichment@5% mean:  12.199411507535967
+Enrichment@5% std:  6.248354192375279
+---------
+---------
+MRR@5% mean:  0.17714357001059378
+MRR@5% std:  0.27372790971246497
+---------
+---------
+AP@5% mean:  0.18271714937136943
+AP@5% std:  0.2415464280426745
+---------
+---------
+Recall@10% mean:  0.7129280975434822
+Recall@10% std:  0.2902756314379992
+---------
+---------
+Recall_Random@10% mean:  0.09955506117908787
+Recall_Random@10% std:  0.0
+---------
+---------
+Enrichment@10% mean:  7.161143683704922
+Enrichment@10% std:  2.9157295269582266
+---------
+---------
+MRR@10% mean:  0.17770098361148565
+MRR@10% std:  0.2733737599041942
+---------
+---------
+AP@10% mean:  0.1735146707286061
+AP@10% std:  0.22568854167596566
+---------
+---------
+Recall@10 mean:  0.16810860080090848
+Recall@10 std:  0.23417818837782367
+---------
+---------
+Recall_Random@10 mean:  0.005561735261401557
+Recall_Random@10 std:  8.673617379884035e-19
+---------
+---------
+Enrichment@10 mean:  30.225926424003344
+Enrichment@10 std:  42.10523827033269
+---------
+---------
+MRR@10 mean:  0.1670940170940171
+MRR@10 std:  0.2793159254724199
+---------
+---------
+AP@10 mean:  0.17953466286799621
+AP@10 std:  0.26284723448693287
+---------
+---------
+Recall@50 mean:  0.445169147092224
+Recall@50 std:  0.38985579304088974
+---------
+---------
+Recall_Random@50 mean:  0.027808676307007785
+Recall_Random@50 std:  0.0
+---------
+---------
+Enrichment@50 mean:  16.00828252943638
+Enrichment@50 std:  14.019214317750395
+---------
+---------
+MRR@50 mean:  0.17329114477452073
+MRR@50 std:  0.2760624907355883
+---------
+---------
+AP@50 mean:  0.18204483885415507
+AP@50 std:  0.24876843108192445
+---------
+---------
+Recall@100 mean:  0.6134794692487
+Recall@100 std:  0.31556316815818364
+---------
+---------
+Recall_Random@100 mean:  0.05561735261401557
+Recall_Random@100 std:  0.0
+---------
+---------
+Enrichment@100 mean:  11.030360857091628
+Enrichment@100 std:  5.6738257634841425
+---------
+---------
+MRR@100 mean:  0.17714357001059378
+MRR@100 std:  0.27372790971246497
+---------
+---------
+AP@100 mean:  0.18191885920972523
+AP@100 std:  0.24167454385387147
+---------
+Evaluating relation: off-label use
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:04,  1.80it/s] 22%|██▏       | 2/9 [00:01<00:03,  1.81it/s] 33%|███▎      | 3/9 [00:01<00:03,  1.83it/s] 44%|████▍     | 4/9 [00:02<00:02,  1.84it/s] 56%|█████▌    | 5/9 [00:02<00:02,  1.87it/s] 67%|██████▋   | 6/9 [00:03<00:01,  1.89it/s] 78%|███████▊  | 7/9 [00:03<00:01,  1.91it/s] 89%|████████▉ | 8/9 [00:04<00:00,  1.94it/s]100%|██████████| 9/9 [00:04<00:00,  1.89it/s]100%|██████████| 9/9 [00:04<00:00,  1.88it/s]
+---------
+AUROC mean:  0.8673160194678105
+AUROC std:  0.11442849919971441
+---------
+---------
+AUPRC mean:  0.18952924018187156
+AUPRC std:  0.2369668694872552
+---------
+---------
+Accuracy mean:  0.8634987188446308
+Accuracy std:  0.03152323041713471
+---------
+---------
+Sensitivity mean:  0.5962962962962962
+Sensitivity std:  0.37033333148129627
+---------
+---------
+Specificity mean:  0.8662988385997084
+Specificity std:  0.03172042414180534
+---------
+---------
+F1 mean:  0.08691973382719155
+F1 std:  0.0839663804715079
+---------
+---------
+PPV mean:  0.0481019370342779
+PPV std:  0.04755850354641303
+---------
+---------
+NPV mean:  0.9951677507792098
+NPV std:  0.006415032605470305
+---------
+---------
+FPR mean:  0.13370116140029162
+FPR std:  0.03172042414180537
+---------
+---------
+FNR mean:  0.4037037037037037
+FNR std:  0.37033333148129627
+---------
+---------
+FDR mean:  0.9518980629657222
+FDR std:  0.04755850354641303
+---------
+---------
+# of Pos mean:  5.111111111111111
+# of Pos std:  3.2470309324894346
+---------
+---------
+Recall@1% mean:  0.2142857142857143
+Recall@1% std:  0.3367175148507369
+---------
+---------
+Recall_Random@1% mean:  0.008385744234800839
+Recall_Random@1% std:  0.0
+---------
+---------
+Enrichment@1% mean:  25.55357142857143
+Enrichment@1% std:  40.15356364595038
+---------
+---------
+MRR@1% mean:  0.17592592592592593
+MRR@1% std:  0.3153590067764148
+---------
+---------
+AP@1% mean:  0.16666666666666666
+AP@1% std:  0.29133579115837543
+---------
+---------
+Recall@5% mean:  0.3915343915343915
+Recall@5% std:  0.4259341416934133
+---------
+---------
+Recall_Random@5% mean:  0.04821802935010482
+Recall_Random@5% std:  0.0
+---------
+---------
+Enrichment@5% mean:  8.12008281573499
+Enrichment@5% std:  8.833503721206876
+---------
+---------
+MRR@5% mean:  0.1979717813051146
+MRR@5% std:  0.30629873914047856
+---------
+---------
+AP@5% mean:  0.1893770784121661
+AP@5% std:  0.25289251775496624
+---------
+---------
+Recall@10% mean:  0.48518518518518516
+Recall@10% std:  0.39349999956424964
+---------
+---------
+Recall_Random@10% mean:  0.09853249475890985
+Recall_Random@10% std:  0.0
+---------
+---------
+Enrichment@10% mean:  4.924113475177305
+Enrichment@10% std:  3.993606378556321
+---------
+---------
+MRR@10% mean:  0.2055253875429314
+MRR@10% std:  0.30172985741373004
+---------
+---------
+AP@10% mean:  0.1985643713818317
+AP@10% std:  0.24658330238365705
+---------
+---------
+Recall@10 mean:  0.2777777777777778
+Recall@10 std:  0.38161318349750184
+---------
+---------
+Recall_Random@10 mean:  0.020964360587002098
+Recall_Random@10 std:  0.0
+---------
+---------
+Enrichment@10 mean:  13.25
+Enrichment@10 std:  18.202948852830836
+---------
+---------
+MRR@10 mean:  0.19179894179894177
+MRR@10 std:  0.3096481457862335
+---------
+---------
+AP@10 mean:  0.17574955908289241
+AP@10 std:  0.26832886442612264
+---------
+---------
+Recall@50 mean:  0.48518518518518516
+Recall@50 std:  0.39349999956424964
+---------
+---------
+Recall_Random@50 mean:  0.10482180293501048
+Recall_Random@50 std:  0.0
+---------
+---------
+Enrichment@50 mean:  4.628666666666667
+Enrichment@50 std:  3.753989995842942
+---------
+---------
+MRR@50 mean:  0.2055253875429314
+MRR@50 std:  0.30172985741373004
+---------
+---------
+AP@50 mean:  0.1985643713818317
+AP@50 std:  0.24658330238365705
+---------
+---------
+Recall@100 mean:  0.7925925925925925
+Recall@100 std:  0.3118157804422102
+---------
+---------
+Recall_Random@100 mean:  0.20964360587002095
+Recall_Random@100 std:  0.0
+---------
+---------
+Enrichment@100 mean:  3.780666666666667
+Enrichment@100 std:  1.4873612727093428
+---------
+---------
+MRR@100 mean:  0.20737723939478325
+MRR@100 std:  0.30051145828089754
+---------
+---------
+AP@100 mean:  0.19033164303647643
+AP@100 std:  0.23655808690203933
+---------
+### TxGNN done

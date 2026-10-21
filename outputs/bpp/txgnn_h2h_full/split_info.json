@@ -1,0 +1,13 @@
+{
+ "kg_directed": 4049642,
+ "train": 6928056,
+ "valid": 989724,
+ "test_processed": 178224,
+ "test_diseases_indication": 13,
+ "md5": {
+  "kg_directed": "765b8af348579b256e4719d05b187d0b",
+  "train": "c9f1346c9151c88f35121955dcf1099d",
+  "valid": "b7f52eaa195e89e7d31642e4cb169aa1",
+  "test_processed": "d470e0e60b74d8af1376ea6de3159991"
+ }
+}

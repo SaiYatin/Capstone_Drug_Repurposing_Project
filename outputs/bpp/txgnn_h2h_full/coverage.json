@@ -1,0 +1,15 @@
+{
+ "source": "converted KG kg_txgnn_autoimmune_full from the Kaggle run (results (6).zip), 21 Oct 2026",
+ "coverage": "full",
+ "train_diseases": 1139,
+ "valid_diseases": 63,
+ "held_out_diseases": 411,
+ "held_out_with_train_indications": 127,
+ "area_diseases_with_test_edges": 18,
+ "eval_diseases": 13,
+ "dropped_random_test_edges": 3248,
+ "diseases_with_dropped_test_edges": 851,
+ "run1_train_diseases": 637,
+ "run1_valid_diseases": 34,
+ "note": "same TxGNN split as run 1 (split_info md5 identical); only non-area diseases' random test edges removed"
+}

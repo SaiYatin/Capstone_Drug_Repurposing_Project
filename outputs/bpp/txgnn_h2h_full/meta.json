@@ -1,0 +1,51 @@
+{
+  "source": "TxGNN disease-area split converted by bpp/build_txgnn.py",
+  "node_types": [
+    "anatomy",
+    "biological_process",
+    "cellular_component",
+    "disease",
+    "drug",
+    "effect/phenotype",
+    "exposure",
+    "gene/protein",
+    "molecular_function",
+    "pathway"
+  ],
+  "drug_type": "drug",
+  "disease_type": "disease",
+  "relations": [
+    "anatomy_anatomy",
+    "anatomy_protein_absent",
+    "anatomy_protein_present",
+    "bioprocess_bioprocess",
+    "bioprocess_protein",
+    "cellcomp_cellcomp",
+    "cellcomp_protein",
+    "disease_disease",
+    "disease_phenotype_negative",
+    "disease_phenotype_positive",
+    "disease_protein",
+    "drug_drug",
+    "drug_effect",
+    "drug_protein",
+    "exposure_bioprocess",
+    "exposure_cellcomp",
+    "exposure_disease",
+    "exposure_exposure",
+    "exposure_molfunc",
+    "exposure_protein",
+    "molfunc_molfunc",
+    "molfunc_protein",
+    "pathway_pathway",
+    "pathway_protein",
+    "phenotype_phenotype",
+    "phenotype_protein",
+    "protein_protein"
+  ],
+  "therapeutic_relations": [
+    "indication",
+    "contraindication",
+    "off-label use"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+ "tx_commit": "0e0203c3939f7d12da27aaf10e55daaff5424023",
+ "split": "autoimmune",
+ "split_random_seed": 0,
+ "tx_split_seed": 1,
+ "tx_seeds": [
+  0,
+  1,
+  2
+ ],
+ "our_seeds": [
+  0,
+  1,
+  2
+ ],
+ "coverage": "full",
+ "pretrain_max_h": 3.0,
+ "finetune_epochs": 500,
+ "dgl_ok": true,
+ "jobs": {
+  "txgnn_s0": "done",
+  "txgnn_s1": "done",
+  "ours_s0": "done",
+  "txgnn_s2": "done",
+  "ours_s1": "done",
+  "ours_s2": "done"
+ },
+ "ours_finished": {
+  "0": true,
+  "1": true,
+  "2": true
+ },
+ "convert_stats": {
+  "coverage": "full",
+  "nodes": 129312,
+  "context_edges": 3430198,
+  "relations": 27,
+  "therapeutic": 34302,
+  "train_diseases": 1139,
+  "valid_diseases": 63,
+  "held_out_diseases": 411,
+  "held_out_with_train_indications": 127,
+  "area_diseases": 18,
+  "eval_diseases": 13,
+  "test_pairs": 75,
+  "candidate_drugs": 1798,
+  "dropped_test_edges": 3248,
+  "dropped_test_pairs": 3248,
+  "diseases_with_dropped_test_edges": 851
+ }
+}
