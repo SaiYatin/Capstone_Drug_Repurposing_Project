@@ -1,0 +1,3614 @@
+{
+ "Primary Biliary Cholangitis": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.30904221534729,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.306753396987915,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.3049516677856445,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.3032820224761963,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.2958152294158936,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.2946951389312744,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.2942986488342285,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.292940139770508,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.2840919494628906,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.2817223072052,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.278719186782837,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.2782955169677734,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.2752113342285156,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.2738428115844727,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.2732417583465576,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.272085666656494,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.271587610244751,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.2714881896972656,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.2710256576538086,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.27069091796875,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.270610809326172,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.270427703857422,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.270141839981079,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.269986152648926,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.2697741985321045,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.2697269916534424,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.2693800926208496,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.2686774730682373,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.2667500972747803,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.266040563583374,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.265101909637451,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.2645251750946045,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.263296365737915,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625555992126465,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.2622601985931396,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2616305351257324,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.2616147994995117,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.2615854740142822,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.2603931427001953,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.2600760459899902,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.258112668991089,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.2576630115509033,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.2574470043182373,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.257197380065918,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.256993532180786,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.2568130493164062,
+   "label": ""
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.2555909156799316,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.2547008991241455,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.2545528411865234,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253492832183838,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.2532424926757812,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.2504494190216064,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.2500553131103516,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.2486133575439453,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.248112201690674,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.2476017475128174,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.2467081546783447,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2465808391571045,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.2460176944732666,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.2454721927642822,
+   "label": ""
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.2453558444976807,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.244874954223633,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.244687557220459,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.243478536605835,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.243391752243042,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.2432079315185547,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.2423107624053955,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.241903066635132,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.241546869277954,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.2413930892944336,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.2412502765655518,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.2409369945526123,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.2405049800872803,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.2398102283477783,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.2397377490997314,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.239471435546875,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.2386281490325928,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.2385787963867188,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.2381489276885986,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2377572059631348,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.236610174179077,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.235957622528076,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.235875368118286,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.235861301422119,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.235236406326294,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.2350196838378906,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.234476089477539,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.2343034744262695,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.233577251434326,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.233384847640991,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2326982021331787,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.232254981994629,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.2321455478668213,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.2320337295532227,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.23165225982666,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.2315590381622314,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.231506109237671,
+   "label": ""
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.231137990951538,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.2308528423309326,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.230618476867676,
+   "label": ""
+  }
+ ],
+ "Systemic Sclerosis": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.3090436458587646,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.3067257404327393,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.3049802780151367,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.303300380706787,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.295853614807129,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.294612169265747,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.294177293777466,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.2930166721343994,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.2841107845306396,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.28155779838562,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.278655529022217,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.2783260345458984,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.275123119354248,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.273831367492676,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.2731363773345947,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.2720987796783447,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.271519184112549,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.271510362625122,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.2710113525390625,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.2705390453338623,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.2704966068267822,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.270437240600586,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.269986152648926,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.2699363231658936,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.269670009613037,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.2696197032928467,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.269320011138916,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.268620729446411,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.266728639602661,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.2662017345428467,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.265017509460449,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.264523506164551,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.263240337371826,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625551223754883,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.262258768081665,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.261587619781494,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.2615373134613037,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2614798545837402,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.260294198989868,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.2600176334381104,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.2580931186676025,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.257645606994629,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.2574121952056885,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.2570979595184326,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.2569494247436523,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.2567644119262695,
+   "label": ""
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.255545139312744,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.254556655883789,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.2544476985931396,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253493070602417,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.2531826496124268,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.250460147857666,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.249826192855835,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.2485103607177734,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.2481181621551514,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.2476677894592285,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.246584892272949,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2465155124664307,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.245859146118164,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.245391368865967,
+   "label": ""
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.2453389167785645,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.2449026107788086,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.2447149753570557,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.2432496547698975,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.243238687515259,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.242952823638916,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.242274761199951,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.2418811321258545,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.2414662837982178,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.2413434982299805,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.2412707805633545,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.2409801483154297,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.2404823303222656,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.239809036254883,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.2397496700286865,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.2396717071533203,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.238621711730957,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.238450050354004,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.238173007965088,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2375566959381104,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.2366013526916504,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.2359325885772705,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.235931396484375,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.2358405590057373,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.2351980209350586,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.2349166870117188,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.2344188690185547,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.2342238426208496,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.2335777282714844,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.2334136962890625,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2327096462249756,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.2322676181793213,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.2320187091827393,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.231938600540161,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.2316579818725586,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.231539011001587,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.231304407119751,
+   "label": ""
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.2310950756073,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.230882406234741,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.230691432952881,
+   "label": ""
+  }
+ ],
+ "Sjogren Syndrome": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.3090217113494873,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.306636333465576,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.304994821548462,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.3032608032226562,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.295774221420288,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.294503927230835,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.294146776199341,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.2929859161376953,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.283944845199585,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.281649351119995,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.2785236835479736,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.2782797813415527,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.275163173675537,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.273740530014038,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.273106813430786,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.272110939025879,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.271475315093994,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.2714061737060547,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.271017551422119,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.2706139087677,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.2704219818115234,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.2701973915100098,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.269972085952759,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.269845485687256,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.269723415374756,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.269477605819702,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.2693490982055664,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.2682294845581055,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.2665200233459473,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.266096591949463,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.2650563716888428,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.264486074447632,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.2630157470703125,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625372409820557,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.2622387409210205,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.2615854740142822,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.2615582942962646,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2614848613739014,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.2601466178894043,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.2598631381988525,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.2581121921539307,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.2574896812438965,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.2574265003204346,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.257071018218994,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.2569117546081543,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.2563517093658447,
+   "label": "indication"
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.2556052207946777,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.2546684741973877,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.2541913986206055,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253493070602417,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.2530786991119385,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.2504045963287354,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.249835252761841,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.2481088638305664,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.248103380203247,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.247498035430908,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.246616840362549,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2459347248077393,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.2456955909729004,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.2454261779785156,
+   "label": ""
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.2452337741851807,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.244903326034546,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.2447149753570557,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.2433383464813232,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.2431533336639404,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.2431206703186035,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.2422597408294678,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.241830348968506,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.2414376735687256,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.2412829399108887,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.241244077682495,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.2408218383789062,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.2404823303222656,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.2398149967193604,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.2397501468658447,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.239466667175293,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.2384819984436035,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.238354206085205,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.2381131649017334,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2375290393829346,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.236509323120117,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.2359416484832764,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.23588228225708,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.2357089519500732,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.2352139949798584,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.234905242919922,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.23442006111145,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.234154224395752,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.2335774898529053,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.2334144115448,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2327098846435547,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.2322676181793213,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.2319257259368896,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.231829881668091,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.2315573692321777,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.231551170349121,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.2311501502990723,
+   "label": ""
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.23099422454834,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.2308707237243652,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.2306911945343018,
+   "label": ""
+  }
+ ],
+ "Autoimmune Hepatitis": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.30905818939209,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.306774139404297,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.3049864768981934,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.3033018112182617,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.295912504196167,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.2947092056274414,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.294177293777466,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.2930526733398438,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.284121036529541,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.281728744506836,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.278855800628662,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.278318166732788,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.2752492427825928,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.273894786834717,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.273261308670044,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.272106170654297,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.2716422080993652,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.2714998722076416,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.2710204124450684,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.2707273960113525,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.2706291675567627,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.270470142364502,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.2701401710510254,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.2700257301330566,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.269808292388916,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.269751787185669,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.2694101333618164,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.268568515777588,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.2666380405426025,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.266211986541748,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.2651190757751465,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.2645554542541504,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.263352632522583,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625670433044434,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.262270927429199,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.2618203163146973,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.2617011070251465,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2616071701049805,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.260392427444458,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.2601187229156494,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.2581193447113037,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.257678270339966,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.2574822902679443,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.257206916809082,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.257006883621216,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.256866931915283,
+   "label": ""
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.2556865215301514,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.2547202110290527,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.2544972896575928,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253492593765259,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.2532379627227783,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.2504570484161377,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.250112771987915,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.2485239505767822,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.2481515407562256,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.2477219104766846,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.2467448711395264,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2466070652008057,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.246005058288574,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.245506525039673,
+   "label": ""
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.245371103286743,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.2449023723602295,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.2447144985198975,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.2434701919555664,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.24341082572937,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.2432284355163574,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.2422962188720703,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.2419018745422363,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.24155855178833,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.241453170776367,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.241265058517456,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.241074800491333,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.240506649017334,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.239830732345581,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.239750385284424,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.2396905422210693,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.2386035919189453,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.2385573387145996,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.2381837368011475,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2376773357391357,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.236609935760498,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.235968589782715,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.23596453666687,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.2359607219696045,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.235226631164551,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.2350082397460938,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.234433174133301,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.234337568283081,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.2335777282714844,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.2334141731262207,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2327094078063965,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.232266902923584,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.2321791648864746,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.2320408821105957,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.2315680980682373,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.2315566539764404,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.2315430641174316,
+   "label": ""
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.231173276901245,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.230886220932007,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.230664014816284,
+   "label": ""
+  }
+ ],
+ "Myasthenia Gravis": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.308981418609619,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.3067448139190674,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.3050408363342285,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.3032844066619873,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.295872211456299,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.2945406436920166,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.29406476020813,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.2930221557617188,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.2841334342956543,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.281578779220581,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.2785842418670654,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.278329372406006,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.275278329849243,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.2738022804260254,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.2731523513793945,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.2721221446990967,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.271510124206543,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.271493434906006,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.2710089683532715,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.2706351280212402,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.2704219818115234,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.2703826427459717,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.2701098918914795,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.2698967456817627,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.2697505950927734,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.2696235179901123,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.269376754760742,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.2685978412628174,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.266747236251831,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.266223430633545,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.265108823776245,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.2645695209503174,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.2630388736724854,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625555992126465,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.262239456176758,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.2616875171661377,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.261582851409912,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2615814208984375,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.260348320007324,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.259880542755127,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.2581121921539307,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.2576465606689453,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.257413625717163,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.2570836544036865,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.256953001022339,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.25675106048584,
+   "label": ""
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.255622148513794,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.2546939849853516,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.254509925842285,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253492593765259,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.253204584121704,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.250469207763672,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.2499399185180664,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.2483973503112793,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.2481043338775635,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.2476730346679688,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2467899322509766,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.2467005252838135,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.24581241607666,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.2454991340637207,
+   "label": ""
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.2453486919403076,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.2449026107788086,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.2447152137756348,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.2434563636779785,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.2433855533599854,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.243025302886963,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.2423033714294434,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.241809606552124,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.2415924072265625,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.241408348083496,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.2412753105163574,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.240980625152588,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.240511655807495,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.2399017810821533,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.2397501468658447,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.2397117614746094,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.2385878562927246,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.238471269607544,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.2381763458251953,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2377548217773438,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.2365849018096924,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.2360072135925293,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.2359492778778076,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.2358930110931396,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.2352428436279297,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.2348601818084717,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.234490156173706,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.2343502044677734,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.2335774898529053,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.2334134578704834,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2327094078063965,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.232267141342163,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.2321295738220215,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.2318928241729736,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.2316958904266357,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.2315306663513184,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.231233596801758,
+   "label": ""
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.2311997413635254,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.231017589569092,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.230672836303711,
+   "label": ""
+  }
+ ],
+ "Crohn Disease": [
+  {
+   "rank": 1,
+   "drug": "Chlorpromazine [DrugBank:DB00477]",
+   "score": 2.3090689182281494,
+   "label": ""
+  },
+  {
+   "rank": 2,
+   "drug": "Quinidine [DrugBank:DB00908]",
+   "score": 2.3067610263824463,
+   "label": ""
+  },
+  {
+   "rank": 3,
+   "drug": "Amitriptyline [DrugBank:DB00321]",
+   "score": 2.3050737380981445,
+   "label": ""
+  },
+  {
+   "rank": 4,
+   "drug": "Imipramine [DrugBank:DB00458]",
+   "score": 2.3033015727996826,
+   "label": ""
+  },
+  {
+   "rank": 5,
+   "drug": "Duloxetine [DrugBank:DB00476]",
+   "score": 2.295969247817993,
+   "label": ""
+  },
+  {
+   "rank": 6,
+   "drug": "Lamotrigine [DrugBank:DB00555]",
+   "score": 2.294769287109375,
+   "label": ""
+  },
+  {
+   "rank": 7,
+   "drug": "Clomipramine [DrugBank:DB01242]",
+   "score": 2.2943506240844727,
+   "label": ""
+  },
+  {
+   "rank": 8,
+   "drug": "Doxepin [DrugBank:DB01142]",
+   "score": 2.293092966079712,
+   "label": ""
+  },
+  {
+   "rank": 9,
+   "drug": "Methadone [DrugBank:DB00333]",
+   "score": 2.2841362953186035,
+   "label": ""
+  },
+  {
+   "rank": 10,
+   "drug": "Ziprasidone [DrugBank:DB00246]",
+   "score": 2.281773805618286,
+   "label": ""
+  },
+  {
+   "rank": 11,
+   "drug": "Aripiprazole [DrugBank:DB01238]",
+   "score": 2.2789292335510254,
+   "label": ""
+  },
+  {
+   "rank": 12,
+   "drug": "Nortriptyline [DrugBank:DB00540]",
+   "score": 2.278355360031128,
+   "label": ""
+  },
+  {
+   "rank": 13,
+   "drug": "Fentanyl [DrugBank:DB00813]",
+   "score": 2.275359630584717,
+   "label": ""
+  },
+  {
+   "rank": 14,
+   "drug": "Indomethacin [DrugBank:DB00328]",
+   "score": 2.2739152908325195,
+   "label": ""
+  },
+  {
+   "rank": 15,
+   "drug": "Propranolol [DrugBank:DB00571]",
+   "score": 2.273268461227417,
+   "label": ""
+  },
+  {
+   "rank": 16,
+   "drug": "Warfarin [DrugBank:DB00682]",
+   "score": 2.272153854370117,
+   "label": ""
+  },
+  {
+   "rank": 17,
+   "drug": "Olanzapine [DrugBank:DB00334]",
+   "score": 2.271707057952881,
+   "label": ""
+  },
+  {
+   "rank": 18,
+   "drug": "Desipramine [DrugBank:DB01151]",
+   "score": 2.271477222442627,
+   "label": ""
+  },
+  {
+   "rank": 19,
+   "drug": "Methylene blue [DrugBank:DB09241]",
+   "score": 2.2710354328155518,
+   "label": ""
+  },
+  {
+   "rank": 20,
+   "drug": "Fluoxetine [DrugBank:DB00472]",
+   "score": 2.2708091735839844,
+   "label": ""
+  },
+  {
+   "rank": 21,
+   "drug": "Meperidine [DrugBank:DB00454]",
+   "score": 2.2706387042999268,
+   "label": ""
+  },
+  {
+   "rank": 22,
+   "drug": "Disopyramide [DrugBank:DB00280]",
+   "score": 2.2704787254333496,
+   "label": ""
+  },
+  {
+   "rank": 23,
+   "drug": "Metoprolol [DrugBank:DB00264]",
+   "score": 2.270249605178833,
+   "label": ""
+  },
+  {
+   "rank": 24,
+   "drug": "Phenytoin [DrugBank:DB00252]",
+   "score": 2.27006196975708,
+   "label": ""
+  },
+  {
+   "rank": 25,
+   "drug": "Tacrolimus [DrugBank:DB00864]",
+   "score": 2.2699198722839355,
+   "label": ""
+  },
+  {
+   "rank": 26,
+   "drug": "Promethazine [DrugBank:DB01069]",
+   "score": 2.2697737216949463,
+   "label": ""
+  },
+  {
+   "rank": 27,
+   "drug": "Verapamil [DrugBank:DB00661]",
+   "score": 2.269378185272217,
+   "label": ""
+  },
+  {
+   "rank": 28,
+   "drug": "Diclofenac [DrugBank:DB00586]",
+   "score": 2.2687783241271973,
+   "label": ""
+  },
+  {
+   "rank": 29,
+   "drug": "Estradiol [DrugBank:DB00783]",
+   "score": 2.26684308052063,
+   "label": ""
+  },
+  {
+   "rank": 30,
+   "drug": "Clozapine [DrugBank:DB00363]",
+   "score": 2.266279697418213,
+   "label": ""
+  },
+  {
+   "rank": 31,
+   "drug": "Nifedipine [DrugBank:DB01115]",
+   "score": 2.26520037651062,
+   "label": ""
+  },
+  {
+   "rank": 32,
+   "drug": "Atomoxetine [DrugBank:DB00289]",
+   "score": 2.2645835876464844,
+   "label": ""
+  },
+  {
+   "rank": 33,
+   "drug": "Carbamazepine [DrugBank:DB00564]",
+   "score": 2.2633931636810303,
+   "label": ""
+  },
+  {
+   "rank": 34,
+   "drug": "Benzatropine [DrugBank:DB00245]",
+   "score": 2.2625670433044434,
+   "label": ""
+  },
+  {
+   "rank": 35,
+   "drug": "Haloperidol [DrugBank:DB00502]",
+   "score": 2.2622976303100586,
+   "label": ""
+  },
+  {
+   "rank": 36,
+   "drug": "Risperidone [DrugBank:DB00734]",
+   "score": 2.261939525604248,
+   "label": ""
+  },
+  {
+   "rank": 37,
+   "drug": "Quetiapine [DrugBank:DB01224]",
+   "score": 2.26175594329834,
+   "label": ""
+  },
+  {
+   "rank": 38,
+   "drug": "Zonisamide [DrugBank:DB00909]",
+   "score": 2.2616515159606934,
+   "label": ""
+  },
+  {
+   "rank": 39,
+   "drug": "Hydrochlorothiazide [DrugBank:DB00999]",
+   "score": 2.2604496479034424,
+   "label": ""
+  },
+  {
+   "rank": 40,
+   "drug": "Valproic acid [DrugBank:DB00313]",
+   "score": 2.260098934173584,
+   "label": ""
+  },
+  {
+   "rank": 41,
+   "drug": "Penbutolol [DrugBank:DB01359]",
+   "score": 2.258119821548462,
+   "label": ""
+  },
+  {
+   "rank": 42,
+   "drug": "Clonidine [DrugBank:DB00575]",
+   "score": 2.2576465606689453,
+   "label": ""
+  },
+  {
+   "rank": 43,
+   "drug": "Labetalol [DrugBank:DB00598]",
+   "score": 2.257514476776123,
+   "label": ""
+  },
+  {
+   "rank": 44,
+   "drug": "Diazepam [DrugBank:DB00829]",
+   "score": 2.2572479248046875,
+   "label": ""
+  },
+  {
+   "rank": 45,
+   "drug": "Maprotiline [DrugBank:DB00934]",
+   "score": 2.257044792175293,
+   "label": ""
+  },
+  {
+   "rank": 46,
+   "drug": "Cyclosporine [DrugBank:DB00091]",
+   "score": 2.2569241523742676,
+   "label": ""
+  },
+  {
+   "rank": 47,
+   "drug": "Paliperidone [DrugBank:DB01267]",
+   "score": 2.2557287216186523,
+   "label": ""
+  },
+  {
+   "rank": 48,
+   "drug": "Propofol [DrugBank:DB00818]",
+   "score": 2.254737615585327,
+   "label": ""
+  },
+  {
+   "rank": 49,
+   "drug": "Naproxen [DrugBank:DB00788]",
+   "score": 2.2546567916870117,
+   "label": ""
+  },
+  {
+   "rank": 50,
+   "drug": "Fluticasone propionate [DrugBank:DB00588]",
+   "score": 2.253492832183838,
+   "label": ""
+  },
+  {
+   "rank": 51,
+   "drug": "Quinine [DrugBank:DB00468]",
+   "score": 2.253222942352295,
+   "label": ""
+  },
+  {
+   "rank": 52,
+   "drug": "Metoclopramide [DrugBank:DB01233]",
+   "score": 2.2504801750183105,
+   "label": ""
+  },
+  {
+   "rank": 53,
+   "drug": "Topiramate [DrugBank:DB00273]",
+   "score": 2.2501516342163086,
+   "label": ""
+  },
+  {
+   "rank": 54,
+   "drug": "Venlafaxine [DrugBank:DB00285]",
+   "score": 2.248708724975586,
+   "label": ""
+  },
+  {
+   "rank": 55,
+   "drug": "Alprazolam [DrugBank:DB00404]",
+   "score": 2.2482059001922607,
+   "label": ""
+  },
+  {
+   "rank": 56,
+   "drug": "Indapamide [DrugBank:DB00808]",
+   "score": 2.2477946281433105,
+   "label": ""
+  },
+  {
+   "rank": 57,
+   "drug": "Methotrexate [DrugBank:DB00563]",
+   "score": 2.2468245029449463,
+   "label": ""
+  },
+  {
+   "rank": 58,
+   "drug": "Diltiazem [DrugBank:DB00343]",
+   "score": 2.2467851638793945,
+   "label": ""
+  },
+  {
+   "rank": 59,
+   "drug": "Fluvoxamine [DrugBank:DB00176]",
+   "score": 2.2460803985595703,
+   "label": ""
+  },
+  {
+   "rank": 60,
+   "drug": "Budesonide [DrugBank:DB01222]",
+   "score": 2.2455575466156006,
+   "label": "indication"
+  },
+  {
+   "rank": 61,
+   "drug": "Sulfamethoxazole [DrugBank:DB01015]",
+   "score": 2.245399236679077,
+   "label": ""
+  },
+  {
+   "rank": 62,
+   "drug": "Estradiol cypionate [DrugBank:DB13954]",
+   "score": 2.2449026107788086,
+   "label": ""
+  },
+  {
+   "rank": 63,
+   "drug": "Estradiol valerate [DrugBank:DB13956]",
+   "score": 2.2447149753570557,
+   "label": ""
+  },
+  {
+   "rank": 64,
+   "drug": "Carvedilol [DrugBank:DB01136]",
+   "score": 2.24352765083313,
+   "label": ""
+  },
+  {
+   "rank": 65,
+   "drug": "Ciprofloxacin [DrugBank:DB00537]",
+   "score": 2.2435050010681152,
+   "label": ""
+  },
+  {
+   "rank": 66,
+   "drug": "Hydromorphone [DrugBank:DB00327]",
+   "score": 2.243269443511963,
+   "label": ""
+  },
+  {
+   "rank": 67,
+   "drug": "Nicardipine [DrugBank:DB00622]",
+   "score": 2.2423205375671387,
+   "label": ""
+  },
+  {
+   "rank": 68,
+   "drug": "Nefazodone [DrugBank:DB01149]",
+   "score": 2.2419650554656982,
+   "label": ""
+  },
+  {
+   "rank": 69,
+   "drug": "Nabumetone [DrugBank:DB00461]",
+   "score": 2.241626024246216,
+   "label": ""
+  },
+  {
+   "rank": 70,
+   "drug": "Sevoflurane [DrugBank:DB01236]",
+   "score": 2.2414791584014893,
+   "label": ""
+  },
+  {
+   "rank": 71,
+   "drug": "Phenelzine [DrugBank:DB00780]",
+   "score": 2.2412877082824707,
+   "label": ""
+  },
+  {
+   "rank": 72,
+   "drug": "Amiodarone [DrugBank:DB01118]",
+   "score": 2.2410876750946045,
+   "label": ""
+  },
+  {
+   "rank": 73,
+   "drug": "Amphetamine [DrugBank:DB00182]",
+   "score": 2.240496873855591,
+   "label": ""
+  },
+  {
+   "rank": 74,
+   "drug": "Piroxicam [DrugBank:DB00554]",
+   "score": 2.2399754524230957,
+   "label": ""
+  },
+  {
+   "rank": 75,
+   "drug": "Butabarbital [DrugBank:DB00237]",
+   "score": 2.239750623703003,
+   "label": ""
+  },
+  {
+   "rank": 76,
+   "drug": "Conjugated estrogens [DrugBank:DB00286]",
+   "score": 2.239737033843994,
+   "label": ""
+  },
+  {
+   "rank": 77,
+   "drug": "Efavirenz [DrugBank:DB00625]",
+   "score": 2.2387850284576416,
+   "label": ""
+  },
+  {
+   "rank": 78,
+   "drug": "Tramadol [DrugBank:DB00193]",
+   "score": 2.2386693954467773,
+   "label": ""
+  },
+  {
+   "rank": 79,
+   "drug": "Amoxapine [DrugBank:DB00543]",
+   "score": 2.2382068634033203,
+   "label": ""
+  },
+  {
+   "rank": 80,
+   "drug": "Flurbiprofen [DrugBank:DB00712]",
+   "score": 2.2378644943237305,
+   "label": ""
+  },
+  {
+   "rank": 81,
+   "drug": "Ketamine [DrugBank:DB01221]",
+   "score": 2.2366104125976562,
+   "label": ""
+  },
+  {
+   "rank": 82,
+   "drug": "Sorafenib [DrugBank:DB00398]",
+   "score": 2.236116647720337,
+   "label": ""
+  },
+  {
+   "rank": 83,
+   "drug": "Ibuprofen [DrugBank:DB01050]",
+   "score": 2.236024856567383,
+   "label": ""
+  },
+  {
+   "rank": 84,
+   "drug": "Asenapine [DrugBank:DB06216]",
+   "score": 2.235990047454834,
+   "label": ""
+  },
+  {
+   "rank": 85,
+   "drug": "Pindolol [DrugBank:DB00960]",
+   "score": 2.235260486602783,
+   "label": ""
+  },
+  {
+   "rank": 86,
+   "drug": "Fosphenytoin [DrugBank:DB01320]",
+   "score": 2.2350502014160156,
+   "label": ""
+  },
+  {
+   "rank": 87,
+   "drug": "Torasemide [DrugBank:DB00214]",
+   "score": 2.234489917755127,
+   "label": ""
+  },
+  {
+   "rank": 88,
+   "drug": "Rofecoxib [DrugBank:DB00533]",
+   "score": 2.2343993186950684,
+   "label": ""
+  },
+  {
+   "rank": 89,
+   "drug": "Propacetamol [DrugBank:DB09288]",
+   "score": 2.233577251434326,
+   "label": ""
+  },
+  {
+   "rank": 90,
+   "drug": "Estradiol acetate [DrugBank:DB13952]",
+   "score": 2.2334139347076416,
+   "label": ""
+  },
+  {
+   "rank": 91,
+   "drug": "Aripiprazole lauroxil [DrugBank:DB14185]",
+   "score": 2.2327096462249756,
+   "label": ""
+  },
+  {
+   "rank": 92,
+   "drug": "Thalidomide [DrugBank:DB01041]",
+   "score": 2.232283592224121,
+   "label": ""
+  },
+  {
+   "rank": 93,
+   "drug": "Estrone sulfate [DrugBank:DB04574]",
+   "score": 2.232267141342163,
+   "label": ""
+  },
+  {
+   "rank": 94,
+   "drug": "Bupropion [DrugBank:DB01156]",
+   "score": 2.232133388519287,
+   "label": ""
+  },
+  {
+   "rank": 95,
+   "drug": "Etodolac [DrugBank:DB00749]",
+   "score": 2.2317726612091064,
+   "label": ""
+  },
+  {
+   "rank": 96,
+   "drug": "Paroxetine [DrugBank:DB00715]",
+   "score": 2.2316486835479736,
+   "label": ""
+  },
+  {
+   "rank": 97,
+   "drug": "Salicylic acid [DrugBank:DB00936]",
+   "score": 2.2315566539764404,
+   "label": "off-label"
+  },
+  {
+   "rank": 98,
+   "drug": "Arsenic trioxide [DrugBank:DB01169]",
+   "score": 2.23122501373291,
+   "label": ""
+  },
+  {
+   "rank": 99,
+   "drug": "Atazanavir [DrugBank:DB01072]",
+   "score": 2.2310991287231445,
+   "label": ""
+  },
+  {
+   "rank": 100,
+   "drug": "Isoflurane [DrugBank:DB00753]",
+   "score": 2.230692148208618,
+   "label": ""
+  }
+ ]
+}

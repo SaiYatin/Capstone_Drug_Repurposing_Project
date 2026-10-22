@@ -31,7 +31,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | Kaggle session 1 + 2 | DONE — main ×3 seeds, paths-only ×3, prior-only ×1, no-autoimmune ×1 finished |
 | Kaggle session 3 | **DONE** 17 Oct → `outputs/bpp/kaggle_session3/`. All 13 planned runs finished |
 | Kaggle session 4 | **DONE** 18 Oct → `outputs/bpp/kaggle_session4/`. Transfer curve complete (7 runs) + test_main_s0. test_main_s1/s2 stopped cleanly at epochs 12/8 (time budget) |
-| Kaggle session 5 (optional, ~4 h) | Resume test_main_s1/s2: upload `kaggle/bpp-runs-session4.zip` as dataset, add as input next to biopathnet-pp-v3, Save & Run All (notebook code unchanged) |
+| Kaggle session 5 | **DONE 22 Oct** (old account, results (7).zip) → `outputs/bpp/kaggle_session5/` (8 new runs only). Papers updated, no `[pending]`/RECHECK left in either paper |
 | TxGNN head-to-head | **DONE 21 Oct** (Kaggle, results (5).zip) → `outputs/bpp/txgnn_h2h/`; papers updated (journal §"Head-to-head with TxGNN" + abstract sentence, conf discussion); no TxGNN RECHECK left |
 | TxGNN head-to-head run 2 (fair coverage, 3 seeds each) | **DONE 21 Oct** (Kaggle, results (6).zip) → `outputs/bpp/txgnn_h2h_full/`, verified; results in "RUN 2 RESULTS" below. Papers + analyze.py UPDATED 21 Oct (run 1 = coverage ablation); Claude Docs not |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
@@ -87,6 +87,17 @@ If more runs are ever added: copy to `outputs/bpp/kaggle_sessionN/runs/`, run
 - NOT done / could not verify: no LaTeX compiler (tectonic/MiKTeX need a download → not installed; Overleaf zip
   `outputs/paper/v3_latest.zip` instead) → page counts unmeasured (conf ≈5 pp, journal may exceed 11 pp by word
   count); test split still 1 seed (session 5 optional); literature labels not human-verified.
+
+**Session 5 RESULTS (22 Oct, verified):** test_main_s1/s2 resumed from epochs 12/8 (log "resumed from epoch") and ran
+to the 20-epoch cap; Kaggle code = repo (only analyze.py differs, unused); restored session-4 results byte-identical.
+- Test split, 3 seeds: MRR 0.501 vs kNN 0.392, +0.109, CI +0.044..+0.180, Wilcoxon p 0.003 (1 seed was +0.102, p 0.016);
+  Any@10 76%, H@10 0.637, AUPRC 0.556, median known-drug rank 2 (43% at rank 1).
+- Paths-only transfer (tr_A_paths ×3 vs tr_Actl{0,1,2}_paths): E MRR 0.007 vs 0.010, −0.003, CI −0.005..−0.001,
+  p 0.034, A better on 3/12 → formally "significant" but negligible and both near the floor (random 0.001). Reading
+  (in papers): paths alone learn almost nothing from 11 diseases; the scarce-data advantage (0.290 vs 0.126) comes
+  from the transfer channel's drug-class prior. Conf sentence shortened (5-page limit; page count unmeasured).
+- 22 Oct: college Turnitin reports on the conference PDF: similarity 0% (only a disease-name list matched, <1%), AI
+  "*%" (<20%, not surfaced). That PDF still printed six "[pending]" — fixed by this session.
 
 **TxGNN head-to-head RESULTS (21 Oct, verified; 1 seed each; Kaggle h2h.json reproduced locally byte-for-byte in summaries):**
 - Run: DGL OK, TxGNN full pretrain epoch 1.27 h (cap NOT hit), finetune 500 ep 0.14 h (val AUROC still rising at

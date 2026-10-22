@@ -1,0 +1,47 @@
+/kaggle/working/code/bpp/kg.py:112: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  a = torch.sparse_coo_tensor(torch.stack([rows, cols]), vals, (n, n)).coalesce()
+/kaggle/working/code/bpp/kg.py:113: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  return a.to_sparse_csr()
+graph: 129,375 nodes, 4,007,433 context edges, 60 relations (incl. inverse) [1.3s]
+parameters: 68,129
+  ep0 step 1/2 loss 8.9340 8.70s/step peak_mem 5.75GB
+  ep0 step 2/2 loss 8.6081 7.12s/step peak_mem 5.75GB
+epoch 0: loss 8.7711  valid MRR 0.0038  H@50 0.030  [0.01 h]
+  ep1 step 1/2 loss 8.4691 8.00s/step peak_mem 5.75GB
+  ep1 step 2/2 loss 8.6993 6.76s/step peak_mem 5.75GB
+epoch 1: loss 8.5842  valid MRR 0.0045  H@50 0.030  [0.02 h]
+  ep2 step 1/2 loss 8.5567 8.00s/step peak_mem 5.75GB
+  ep2 step 2/2 loss 8.7842 6.77s/step peak_mem 5.75GB
+epoch 2: loss 8.6704  valid MRR 0.0043  H@50 0.030  [0.03 h]
+  ep3 step 1/2 loss 8.6938 8.30s/step peak_mem 5.75GB
+  ep3 step 2/2 loss 8.3356 6.92s/step peak_mem 5.75GB
+epoch 3: loss 8.5147  valid MRR 0.0043  H@50 0.023  [0.04 h]
+  ep4 step 1/2 loss 8.2517 8.18s/step peak_mem 5.75GB
+  ep4 step 2/2 loss 8.9017 6.85s/step peak_mem 5.75GB
+epoch 4: loss 8.5767  valid MRR 0.0044  H@50 0.021  [0.06 h]
+  ep5 step 1/2 loss 8.4444 8.29s/step peak_mem 5.75GB
+  ep5 step 2/2 loss 8.4417 6.91s/step peak_mem 5.75GB
+epoch 5: loss 8.4431  valid MRR 0.0044  H@50 0.025  [0.07 h]
+  ep6 step 1/2 loss 8.2653 8.13s/step peak_mem 5.75GB
+  ep6 step 2/2 loss 8.6950 6.84s/step peak_mem 5.75GB
+epoch 6: loss 8.4801  valid MRR 0.0044  H@50 0.025  [0.08 h]
+  ep7 step 1/2 loss 8.4329 8.03s/step peak_mem 5.75GB
+  ep7 step 2/2 loss 8.3664 6.78s/step peak_mem 5.75GB
+epoch 7: loss 8.3997  valid MRR 0.0038  H@50 0.025  [0.09 h]
+  ep8 step 1/2 loss 8.3996 8.02s/step peak_mem 5.75GB
+  ep8 step 2/2 loss 8.5655 6.77s/step peak_mem 5.75GB
+epoch 8: loss 8.4826  valid MRR 0.0038  H@50 0.025  [0.10 h]
+  ep9 step 1/2 loss 8.4865 8.27s/step peak_mem 5.75GB
+  ep9 step 2/2 loss 8.5068 6.90s/step peak_mem 5.75GB
+epoch 9: loss 8.4967  valid MRR 0.0034  H@50 0.031  [0.11 h]
+  ep10 step 1/2 loss 8.4010 7.99s/step peak_mem 5.75GB
+  ep10 step 2/2 loss 8.2707 6.76s/step peak_mem 5.75GB
+epoch 10: loss 8.3359  valid MRR 0.0036  H@50 0.031  [0.12 h]
+  ep11 step 1/2 loss 8.3879 8.23s/step peak_mem 5.75GB
+  ep11 step 2/2 loss 8.2398 6.83s/step peak_mem 5.75GB
+epoch 11: loss 8.3139  valid MRR 0.0035  H@50 0.026  [0.13 h]
+early stopping
+[valid] MRR 0.0045 [0.0018591396208064916, 0.008340953213427656]  H@10 0.003  H@50 0.030  AUROC 0.796  AUROC-hard 0.431
+[targets] MRR 0.0023 [0.001454614019127511, 0.0030643019143312346]  H@10 0.000  H@50 0.014  AUROC 0.801  AUROC-hard 0.438
+[area] MRR 0.0025 [0.001663390917906342, 0.0032981500045068685]  H@10 0.000  H@50 0.000  AUROC 0.854  AUROC-hard 0.527
+saved /kaggle/working/runs/tr_Actl2_paths_s0/results.json

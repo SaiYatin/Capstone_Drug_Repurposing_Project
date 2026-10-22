@@ -682,7 +682,7 @@ PENDING_MACROS = [
     *(f"{c}{f}Mrr" for c in ("TrA", "TrActl", "TrD", "TrCE") for f in ("E", "EKnn", "Targets", "TargetsKnn")),
     *(f"{p}{t}" for t in ("TrAActlE", "TrAActlEKnn", "TrAActlTargets", "TrCEDE", "TrCEAE", "TrDAE", "TestKnn")
       for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
-    "TrAPathsEMrr", "TrActlPathsEMrr",
+    "TrAPathsEMrr", "TrActlPathsEMrr", "TrAPathsSeeds",
     *(f"{p}TrAActlPathsE" for p in ("Diff", "DiffLo", "DiffHi", "Pwil", "Wins", "Ties", "Losses")),
     "TestMrr", "TestHitsTen", "TestAnyTen", "TestModelValidMrr", "KnnTestMrr", "KnnTestHitsTen", "KnnTestAnyTen",
     "TxhN", "TxhPairs", "TxhTxOfficialRecall", "TxhCand", "TxhTrainDis", "TxhValidDis", "TxhPretrainH", "TxhFinetuneH",
@@ -833,6 +833,7 @@ def macros(S) -> str:
     po = S.get("transfer", {}).get("paths_only")
     if po:
         nc("TrAPathsEMrr", f"{po['A']['mean']:.3f}"); nc("TrActlPathsEMrr", f"{po['Actl']['mean']:.3f}")
+        nc("TrAPathsSeeds", str(len(S["models"].get("tr_A_paths", {}).get("seeds", []))))
     T = S.get("test_split", {})
     nc("TestSeeds", str(len(S["models"]["test_main"]["seeds"])) if "test_main" in S["models"] else "0")
     for k, kt in (("model", "Test"), ("disease_knn", "KnnTest"), ("popularity", "PopTest")):
