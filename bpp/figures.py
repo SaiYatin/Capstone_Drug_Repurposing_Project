@@ -115,7 +115,7 @@ def architecture(out: Path):
 
         # ---- readout, transfer channel, score (right)
         box(66.5, 27, 17, 22, "Path readout", "for every drug $d$:\n$[\\mathbf{h}^{(1)}_d;\\dots;\\mathbf{h}^{(6)}_d;\\mathbf{q}]\\in\\mathbb{R}^{224}$\n\nMLP $224\\rightarrow64\\rightarrow1$\n(ReLU, dropout 0.1)\n$\\rightarrow s_{\\mathrm{path}}(u,d)$", accent=True)
-        box(66.5, 1.5, 17, 23.5, "Transfer channel", "4 priors for $(u,d)$,\nown family excluded:\npopularity, disease $k$NN,\nshared targets,\nautoimmune frequency\nMLP $4\\rightarrow16\\rightarrow1$\n$\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True, fs=6.2)
+        box(66.5, 1.5, 17, 23.5, "Prior channel", "4 priors for $(u,d)$,\nown family excluded:\npopularity, disease $k$NN,\nshared targets,\nautoimmune frequency\nMLP $4\\rightarrow16\\rightarrow1$\n$\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True, fs=6.2)
         box(86.5, 1.5, 13.2, 47.5, "Score", "$s(u,d)=$\n$s_{\\mathrm{path}}+s_{\\mathrm{prior}}$\n\nsoftmax over\nall 7,957 drugs\n\nTraining:\nlistwise loss,\nmean $-\\log p$ of\nthe known drugs\n\nInference:\nfull ranking\n\n68,226 parameters")
         ax.plot([63.8, 64.9], [38.0, 38.0], color=INK2, lw=0.8)
         arrow(64.9, 38.0, 66.3, 38.0)

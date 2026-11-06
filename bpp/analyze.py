@@ -31,7 +31,7 @@ from bpp.metrics import paired_bootstrap
 GROUPS = {  # run-name prefix -> (label, split protocol)
     "main": ("BioPathNet++ (paths + prior)", "targets"),
     "paths": ("Paths only (NBFNet)", "targets"),
-    "prioronly": ("Prior only (transfer channel)", "targets"),
+    "prioronly": ("Prior only (no path reasoning)", "targets"),
     "brg_main": ("BioPathNet++, BRG relations", "targets"),
     "bce_main": ("BioPathNet++, BCE loss", "targets"),
     "noauto_main": ("BioPathNet++, no autoimmune training", "no_autoimmune"),
@@ -40,8 +40,8 @@ GROUPS = {  # run-name prefix -> (label, split protocol)
     "tr_A": ("A: RA/SLE/MS families only", "transfer"),
     "tr_Actl": ("A$'$: matched non-autoimmune controls", "transfer"),
     "tr_CE": ("C$_E$: all diseases except E", "transfer"),
-    "tr_A_paths": ("A, paths only (no transfer channel)", "transfer"),
-    "tr_Actl_paths": ("A$'$, paths only (no transfer channel)", "transfer"),
+    "tr_A_paths": ("A, paths only (no prior channel)", "transfer"),
+    "tr_Actl_paths": ("A$'$, paths only (no prior channel)", "transfer"),
     "test_main": ("BioPathNet++ (selection-free test split)", "test"),
 }
 # extra baseline files written by bpp.run_baselines for the derived splits
@@ -232,6 +232,24 @@ def analyse(root: Path, data: Path) -> dict:
     test_runs("s0_main_vs_brg_valid", "main_s0", "brg_main_s0", "valid")
     test_runs("s0_noauto_main_vs_paths_area", "noauto_main_s0", "noauto_paths_s0", "area")
 
+    # knowledge-graph embedding baselines (bpp/kge.py): same split as test_main, seeds averaged
+    out["kge"] = {}
+    for kind in KGE_MODELS:
+        files = sorted((root / "kge").glob(f"kge_{kind}_test_s*.json"))
+        if not files:
+            continue
+        by_seed = {}
+        for f in files:
+            r = json.loads(f.read_text())
+            by_seed[r["seed"]] = {st: {"per_disease": pdd} for st, pdd in r["per_disease"].items()}
+        out["kge"][kind] = {"seeds": sorted(by_seed), "best_valid_mrr": [json.loads(f.read_text())["best_valid_mrr"] for f in files]}
+        for st in ("test", "valid"):
+            per[(f"kge_{kind}", st)] = seed_avg_per_disease(by_seed, st)
+            out["kge"][kind][st] = {k: macro(per[(f"kge_{kind}", st)], k) for k in METRICS + ["_any10"]}
+        test(f"test_main_vs_kge_{kind}_test", ("test_main", "test"), (f"kge_{kind}", "test"))
+    out["fewshot"] = json.loads((root / "fewshot" / "fewshot_test_summary.json").read_text()) \
+        if (root / "fewshot" / "fewshot_test_summary.json").exists() else {}
+
     out["run_info"] = {name: run_info(path) for name, path in runs.items()}
     out["sparsity"] = sparsity(per, data)
     out["case_studies"] = case_studies(runs)
@@ -317,6 +335,35 @@ def txgnn_coverage_ablation(full: dict, strict: dict) -> dict:
 
 
 # ----------------------------------------------------------------------------- reader-friendly metrics table
+KGE_MODELS = ("transe", "distmult", "rotate")
+FS_METHODS = [("bpp", r"\sysname{} (graph edges, no retraining)"), ("bpp_rrf_coind", r"\sysname{} + co-indication (RRF)"),
+              ("disease_knn", "Disease $k$NN (ignores revealed drugs)"), ("co_indication", "Co-indication (item-based CF)"),
+              ("target_similarity", "Target similarity (Jaccard)"), ("knn_plus_coind", "Disease $k$NN + co-indication")]
+FS_WORD = {0: "Zero", 1: "One", 2: "Two", 3: "Three"}
+
+
+def table_fewshot(S):
+    F = S.get("fewshot") or {}
+    if not F:
+        return "% few-shot results pending"
+    ks = sorted(int(k) for k in F["mean"]["bpp"])
+    lines = [r"\begin{tabular}{l" + "c" * len(ks) + "c}", r"\toprule",
+             "Revealed known drugs $k$ & " + " & ".join(f"MRR, $k$={k}" for k in ks) + f" & H@10, $k$={ks[-1]}\\\\",
+             r"\midrule"]
+    best = {k: max(F["mean"][m][str(k)]["mrr"] for m, _ in FS_METHODS if m in F["mean"]) for k in ks}
+    for m, lab in FS_METHODS:
+        if m not in F["mean"]:
+            continue
+        cells = []
+        for k in ks:
+            v = F["mean"][m][str(k)]["mrr"]
+            cells.append((r"\textbf{%.3f}" % v) if abs(v - best[k]) < 1e-12 else f"{v:.3f}")
+        cells.append(f"{F['mean'][m][str(ks[-1])]['hits10']:.3f}")
+        lines.append(f"{lab} & " + " & ".join(cells) + r"\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines)
+
+
 TABLE_METRICS = [("_any10", "Any@10"), ("hits@1", "H@1"), ("hits@10", "H@10"), ("hits@50", "H@50"), ("auroc", "AUROC"),
                  ("auroc_hard", r"AUROC$_\text{hard}$"), ("auroc_degmatch", r"AUROC$_\text{deg}$"), ("auprc", "AUPRC"),
                  ("mrr", "MRR"), ("mean_rank", "Mean rank")]
@@ -338,6 +385,11 @@ def metrics_table(per: dict, groups: dict, data: Path) -> dict:
         for b in ("random", "popularity", "disease_knn"):
             if (f"{bpref}:{b}", s) in per:
                 rows[b] = {k: (macro(per[(f"{bpref}:{b}", s)], k) or {}).get("mean") for k, _ in TABLE_METRICS}
+        if s == "test":
+            for kind in KGE_MODELS:
+                if (f"kge_{kind}", "test") in per:
+                    rows[f"kge_{kind}"] = {k: (macro(per[(f"kge_{kind}", "test")], k) or {}).get("mean")
+                                           for k, _ in TABLE_METRICS}
         ref = per.get(mkey) or per.get((f"{bpref}:random", s)) or {}
         npos = np.array([m["n_pos"] for m in ref.values()], float)
         if len(npos):
@@ -581,13 +633,14 @@ def table_transfer(S):
 
 def table_ablation(S):
     lines = [r"\begin{tabular}{lcccc}", r"\toprule",
-             r"Variant (seed 0 unless noted) & Valid MRR & Valid H@10 & Targets MRR & $p$ vs full (valid)\\", r"\midrule"]
-    for g, lab in (("main", "Full model ($n$=3)"), ("paths", "$-$ transfer channel ($n$=3)"),
+             r"Variant (seeds) & Valid MRR & Valid H@10 & Targets MRR & $p$ vs full (valid)\\", r"\midrule"]
+    for g, lab in (("main", "Full model"), ("paths", "$-$ prior channel (paths only)"),
                    ("prioronly", "$-$ path reasoning (prior only)"), ("brg_main", "BRG relation subset"),
                    ("bce_main", "BCE loss instead of listwise")):
         if g not in S["models"]:
             lines.append(f"{lab} & \\multicolumn{{4}}{{c}}{{pending}}\\\\"); continue
         m = S["models"][g]
+        lab = f"{lab} ($n$={len(m['seeds'])})"
         key = {"paths": "main_vs_paths_valid", "prioronly": "main_vs_prioronly_valid",
                "brg_main": "main_vs_brg_valid", "bce_main": "main_vs_bce_valid"}.get(g)
         p = pfmt(S["tests"][key]["p_wilcoxon_two_sided"]) if key in S["tests"] else "--"
@@ -601,13 +654,14 @@ def table_metrics(S):
     M = S.get("metrics_table", {})
     head = " & ".join(lab for _, lab in TABLE_METRICS)
     lines = [r"\begin{tabular}{ll" + "c" * len(TABLE_METRICS) + "}", r"\toprule", f"Set & Method & {head}\\\\", r"\midrule"]
-    names = {"random": "Random", "popularity": "Popularity", "disease_knn": "Disease $k$NN", "model": r"\textbf{\sysname}"}
+    names = {"random": "Random", "popularity": "Popularity", "disease_knn": "Disease $k$NN", "model": r"\textbf{\sysname}",
+             "kge_transe": "TransE", "kge_distmult": "DistMult", "kge_rotate": "RotatE"}
     titles = {"test": "Test (68, never selected)", "valid": "Validation (68)", "targets": "Rare targets (6)"}
     for s in ("test", "valid", "targets"):
         if s not in M:
             continue
         first = True
-        for k in ("random", "popularity", "disease_knn", "model"):
+        for k in ("random", "popularity", "kge_transe", "kge_distmult", "kge_rotate", "disease_knn", "model"):
             r = M[s]["rows"].get(k)
             if not r:
                 continue
@@ -764,6 +818,9 @@ def macros(S) -> str:
 
     def nc(name, val):
         assert re.fullmatch(r"[A-Za-z]+", name), name
+        val = str(val)
+        if re.match(r"^-\d", val):              # '-0.081' -> '$-$0.081' (a hyphen is not a minus sign)
+            val = "$-$" + val[1:]
         out.append(f"\\newcommand{{\\{name}}}{{{val}}}")
 
     def g(group, s, k):
@@ -836,6 +893,7 @@ def macros(S) -> str:
     if po:
         nc("TrAPathsEMrr", f"{po['A']['mean']:.3f}"); nc("TrActlPathsEMrr", f"{po['Actl']['mean']:.3f}")
         nc("TrAPathsSeeds", str(len(S["models"].get("tr_A_paths", {}).get("seeds", []))))
+        nc("TrCESeeds", str(len(S["models"].get("tr_CE", {}).get("seeds", []))))
     T = S.get("test_split", {})
     nc("TestSeeds", str(len(S["models"]["test_main"]["seeds"])) if "test_main" in S["models"] else "0")
     for k, kt in (("model", "Test"), ("disease_knn", "KnnTest"), ("popularity", "PopTest")):
@@ -978,6 +1036,40 @@ def macros(S) -> str:
             nc(f"Rho{tag}", f"{sp[lab]['spearman_rho']:.2f}"); nc(f"RhoP{tag}", ptext(sp[lab]["spearman_p"]))
             for b, bt in (("low", "Low"), ("mid", "Mid"), ("high", "High")):
                 nc(f"Tert{tag}{bt}", f"{sp[lab]['tertile_mrr'][b]:.3f}")
+    for kind, tag in (("transe", "Transe"), ("distmult", "Distmult"), ("rotate", "Rotate")):
+        K = S.get("kge", {}).get(kind)
+        if K and K.get("test"):
+            nc(f"Kge{tag}TestMrr", f3(K["test"]["mrr"]["mean"]))
+            nc(f"Kge{tag}TestHitsTen", f3(K["test"]["hits@10"]["mean"]))
+            nc(f"Kge{tag}TestAnyTen", f"{100 * K['test']['_any10']['mean']:.0f}")
+            nc(f"Kge{tag}TestAuroc", f3(K["test"]["auroc"]["mean"]))
+            nc(f"Kge{tag}Seeds", str(len(K["seeds"])))
+            t = S["tests"].get(f"test_main_vs_kge_{kind}_test")
+            if t:
+                nc(f"DiffTestKge{tag}", f"{t['mean_diff']:+.3f}")
+                nc(f"PwilTestKge{tag}", ptext(t["p_wilcoxon_two_sided"]))
+    F = S.get("fewshot") or {}
+    if F:
+        nc("FsN", str(F["n_diseases"])); nc("FsDraws", str(F["draws"])); nc("FsKmax", str(F["k_max"]))
+        for m, tag in (("bpp", "Bpp"), ("bpp_rrf_coind", "Rrf"), ("disease_knn", "Knn"), ("co_indication", "Coind"),
+                       ("target_similarity", "Tgt"), ("knn_plus_coind", "KnnCoind")):
+            for k, v in F["mean"].get(m, {}).items():
+                nc(f"Fs{tag}{FS_WORD[int(k)]}Mrr", f3(v["mrr"]))
+                nc(f"Fs{tag}{FS_WORD[int(k)]}HitsTen", f3(v["hits10"]))
+        for k, g in F.get("bpp_gain_over_k0", {}).items():
+            w = FS_WORD[int(k)]
+            nc(f"FsBppGain{w}", f"{g['mean_diff']:+.3f}"); nc(f"FsBppGainLo{w}", f"{g['ci_lo']:+.3f}")
+            nc(f"FsBppGainHi{w}", f"{g['ci_hi']:+.3f}"); nc(f"FsBppGainP{w}", ptext(g["wilcoxon_p"]))
+        for k, g in F.get("rrf_vs_knn_plus_coind", {}).items():
+            w = FS_WORD[int(k)]
+            nc(f"FsDiffRrfKnnCoind{w}", f"{g['mean_diff']:+.3f}"); nc(f"FsDiffLoRrfKnnCoind{w}", f"{g['ci_lo']:+.3f}")
+            nc(f"FsDiffHiRrfKnnCoind{w}", f"{g['ci_hi']:+.3f}"); nc(f"FsPRrfKnnCoind{w}", ptext(g["wilcoxon_p"]))
+        for m, tag in (("knn_plus_coind", "KnnCoind"), ("co_indication", "Coind"), ("disease_knn", "Knn"),
+                       ("bpp_rrf_coind", "Rrf")):
+            for k, g in F.get("paired_vs_bpp", {}).get(m, {}).items():
+                w = FS_WORD[int(k)]
+                nc(f"FsDiffBpp{tag}{w}", f"{g['mean_diff']:+.3f}"); nc(f"FsDiffLoBpp{tag}{w}", f"{g['ci_lo']:+.3f}")
+                nc(f"FsDiffHiBpp{tag}{w}", f"{g['ci_hi']:+.3f}"); nc(f"FsPBpp{tag}{w}", ptext(g["wilcoxon_p"]))
     return "\n".join(out) + "\n"
 
 
@@ -1006,6 +1098,7 @@ def main():
     (paper / "tab_temporal.tex").write_text(table_temporal(S))
     (paper / "tab_paths.tex").write_text(table_paths(S))
     (paper / "tab_txgnn.tex").write_text(table_txgnn(S))
+    (paper / "tab_fewshot.tex").write_text(table_fewshot(S))
     print("runs:", ", ".join(S["runs_found"]))
     for k, v in S["tests"].items():
         print(f"  {k:28s} diff {v['mean_diff']:+.3f} [{v['diff_ci95'][0]:+.3f},{v['diff_ci95'][1]:+.3f}] "

@@ -46,18 +46,27 @@ SMALL = ["--epochs", "60", "--patience", "10"]   # 11 training diseases = 2 step
 #
 # Session 4 (finished): tr_A_s0-2, tr_Actl0-2_s0, tr_CE_s0, test_main_s0 (test_main_s1/s2 stopped by the time budget).
 #
-# Session 5: resume the two test seeds (needs the bpp-runs-session4 dataset as an input, so their last.pt
-# files are restored), then paths-only transfer runs: does path reasoning itself transfer when data is scarce?
+# Session 5 (finished): test_main_s1/s2 resumed to completion; tr_A_paths_s0-2, tr_Actl0-2_paths_s0.
+#
+# Session 6 (+7 to finish; journal revision, Nov 2026): every ablation that still has ONE seed gets
+# seeds 1 and 2, with exactly the settings of its seed-0 run (sessions 1-3 used patience 5; tr_CE used 6).
+# Order = shortest first, so the first session finishes as many complete 3-seed groups as possible.
+# Estimated GPU hours per run (T4, from the seed-0 logs): prioronly ~0.5, bce ~3.2, brg ~4.4,
+# noauto_paths ~4.2, tr_CE ~7. Total ~39 GPU-h = two sessions on T4 x2. Unfinished runs resume next session
+# when this session's output (runs/) is added as an input.
+P5 = ["--patience", "5"]
 EXPERIMENTS = [
-    # name,                 extra args                                                       purpose
-    ("test_main_s2",       ["--prior", "--seed", "2", "--split", "splits_test.json"]),           # resumes at epoch 9
-    ("test_main_s1",       ["--prior", "--seed", "1", "--split", "splits_test.json"]),           # resumes at epoch 13
-    ("tr_A_paths_s0",      ["--seed", "0", "--split", "splits_tr_A.json"] + SMALL),               # A, no transfer channel
-    ("tr_Actl0_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl0.json"] + SMALL),           # A', no transfer channel
-    ("tr_A_paths_s1",      ["--seed", "1", "--split", "splits_tr_A.json"] + SMALL),
-    ("tr_Actl1_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl1.json"] + SMALL),
-    ("tr_A_paths_s2",      ["--seed", "2", "--split", "splits_tr_A.json"] + SMALL),
-    ("tr_Actl2_paths_s0",  ["--seed", "0", "--split", "splits_tr_Actl2.json"] + SMALL),
+    # name,                 extra args
+    ("prioronly_s1",       ["--prior", "--no-paths", "--seed", "1", "--split", "splits.json"] + P5),
+    ("prioronly_s2",       ["--prior", "--no-paths", "--seed", "2", "--split", "splits.json"] + P5),
+    ("bce_main_s1",        ["--prior", "--loss", "bce", "--seed", "1", "--split", "splits.json"] + P5),
+    ("bce_main_s2",        ["--prior", "--loss", "bce", "--seed", "2", "--split", "splits.json"] + P5),
+    ("brg_main_s1",        ["--prior", "--relations", "brg", "--seed", "1", "--split", "splits.json"] + P5),
+    ("brg_main_s2",        ["--prior", "--relations", "brg", "--seed", "2", "--split", "splits.json"] + P5),
+    ("noauto_paths_s1",    ["--seed", "1", "--split", "splits_noauto.json"] + P5),
+    ("noauto_paths_s2",    ["--seed", "2", "--split", "splits_noauto.json"] + P5),
+    ("tr_CE_s1",           ["--prior", "--seed", "1", "--split", "splits_tr_CE.json"]),
+    ("tr_CE_s2",           ["--prior", "--seed", "2", "--split", "splits_tr_CE.json"]),
 ]
 
 INPUT = os.environ.get("BPP_INPUT", "/kaggle/input")

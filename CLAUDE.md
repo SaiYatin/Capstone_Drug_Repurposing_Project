@@ -124,6 +124,38 @@ to the 20-epoch cap; Kaggle code = repo (only analyze.py differs, unused); resto
   Capstone report + slides (outputs/capstone_review3) UPDATED 5 Nov to the corrected evidence (incl. top-10 trial
   grades, now "tests the drug" grades); report still 56 pages, deck 22 slides.
 
+**Journal revision for the mentor (6 Nov 2026; IN PROGRESS):** mentor's 13 points: novelty vs BioPathNet, title,
+recent (2025/26) refs, abstract <200 words without Aim labels, keywords (+PrimeKG), more baselines + 3 seeds for every
+ablation, verify literature, "ref 10" (Brière: was cited; a bib `note` leaked into the reference list -> removed),
+dataset+repo info, FEW-SHOT, float numbering/placement, architecture figure at start of Method, drop Discussion.
+- Commits 21a9a3a (evidence + conf revisions) and 78329be (capstone report/slides) made 6 Nov (not pushed).
+- `bpp/fewshot.py` (NEW): test diseases with >=4 indications (34/68); 3 draws; reveal k=0..3 drugs as graph edges of the
+  query only (`MessageGraph.build(extra=...)`, NO retraining), same held-back positives for every k. Baselines: disease
+  kNN, co-indication (item-based CF over training indication profiles, query family excluded), target Jaccard,
+  kNN+co-ind; fusion bpp+co-ind by RRF (c=60). Seed 0: bpp 0.307->0.506 (k=0->3); co-ind 0.539, kNN+co-ind 0.574 at k=3
+  -> CF beats the untrained-for-few-shot model at k>=2. Checkpoints from `Downloads/results (7).zip` (test_main_s0-2
+  best.pt, results.json identical to repo) extracted to the session scratchpad. Output: outputs/bpp/fewshot/.
+- `bpp/kge.py` (NEW): TransE/DistMult/RotatE on the test split's message graph (context + train-disease drug edges),
+  dim 128, 256 shared negatives, self-adversarial, lr 1e-3, batch 1024, epoch by valid MRR; outputs/bpp/kge/
+  kge_{model}_test_s{N}.json. A 1-epoch dim-256 smoke test gave valid MRR 0.023 (8 min/epoch while GPU shared).
+- `bpp/analyze.py`: loads kge + fewshot -> macros Kge*, Fs*, table generated/tab_fewshot.tex, KGE rows in tab_metrics
+  (test block); macro TrCESeeds.
+- `kaggle/run_kaggle.py`: session-6 queue = seeds 1,2 of prioronly, bce_main, brg_main, noauto_paths, tr_CE (settings
+  verified identical to each seed-0 run; ~39 GPU-h = 2 sessions). Existing Kaggle dataset version is sufficient.
+  After download: copy runs to outputs/bpp/kaggle_session6/runs/, `python -m bpp.analyze`, then replace "seed(s)".
+- references.bib: + wei2025kgreview, kumar2025scoping (PES Univ.), oguztuzun2025kgia, yang2024fewshot,
+  bianchi2026negatives, papadimas2026neuromuscular, perdomo2026rdexplainer, cormack2009rrf, sarwar2001itemcf (all
+  verified on OpenAlex 6 Nov). TxGNN abstract claim = "49.2% better indication prediction vs 8 methods" (old text's
+  "0.5-59.3% relative AUPRC" was unverifiable -> removed). DREAMwalk "up to 16.8%" verified.
+- Journal rewritten (backup of the old one in the scratchpad): new title (zero- and few-shot, transfer study),
+  Table I novelty, Dataset and Code section, protocol incl. few-shot, Method opens with fig_architecture, Discussion
+  merged into Conclusion, \usepackage{flafter}; pipeline/AUROC figures and audit/transfer tables removed for length.
+  Few-shot DONE (3 seeds, 34 diseases): bpp 0.313/0.362/0.419/0.533 (k=0..3, gain significant every k); RRF fusion
+  0.313/0.384/0.476/0.607 (fusion := model at k=0); best baseline kNN+co-ind 0.574 at k=3; fusion vs it +0.033, NOT
+  significant; co-ind ties the model from k>=1 (n.s.). Text written. Journal compiles to 11 pp (refs on p.11), floats
+  numbered in order; conf 5 pp. "prior channel" naming everywhere (figure label too). Macro values starting with '-'
+  are emitted as '$-$'. KGE grid DONE 7 Nov 04:54 (9 runs, 20 epochs, valid MRR peaked ep 12-20, max 0.058): test MRR TransE 0.037, DistMult 0.047, RotatE 0.071 (3 seeds each) vs kNN 0.392, model 0.501 (diff +0.43..+0.46, p<0.001 each); AUROC 0.85-0.88 (model 0.959, kNN 0.907). Journal claims checked ("far below both", "AUROC high", abstract "incl. KG embeddings"); conf baseline sentence now names the 3 KGEs; conf captions shortened (conf 5 pp, 1.8 pt invisible overfull on p.3); journal 11 pp; v3_latest.zip rebuilt 7 Nov. Conf still hard-codes "C$_E$, one seed" -> use \TrCESeeds after session 6. Kaggle session 6 RUNNING (started ~17:45 6 Nov; session 2 needed for noauto_paths remainder + tr_CE). Kaggle session 6 steps given to the user.
+
 **TxGNN head-to-head RESULTS (21 Oct, verified; 1 seed each; Kaggle h2h.json reproduced locally byte-for-byte in summaries):**
 - Run: DGL OK, TxGNN full pretrain epoch 1.27 h (cap NOT hit), finetune 500 ep 0.14 h (val AUROC still rising at
   ep 480); ours early-stopped (best ep 13, valid MRR 0.186). Test = 13 area diseases with indications, 75 pairs;

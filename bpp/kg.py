@@ -164,16 +164,23 @@ class MessageGraph:
         self.num_ctx_edges = int(keep.sum())
 
     # ------------------------------------------------------------------
-    def build(self, drop_diseases: torch.Tensor | None = None):
+    def build(self, drop_diseases: torch.Tensor | None = None, extra=None):
         """Return (mats, mats_T, deg) for one batch.
 
         drop_diseases: diseases whose therapeutic edges must be removed for this batch
         (the batch's own query diseases during training; nothing at evaluation, because
-        valid/test families were never allowed in the graph)."""
+        valid/test families were never allowed in the graph).
+        extra: optional (disease, drug, trel) tensors of therapeutic edges to add for this
+        batch only -- used by the few-shot evaluation (bpp/fewshot.py), which reveals k known
+        drugs of a held-out query disease."""
         keep = torch.ones_like(self.td, dtype=torch.bool)
         if drop_diseases is not None and drop_diseases.numel() > 0:
             keep = ~torch.isin(self.td, drop_diseases.to(self.device))
         td, tg, tr = self.td[keep], self.tg[keep], self.tr[keep]
+        if extra is not None and extra[0].numel() > 0:
+            td = torch.cat([td, extra[0].to(self.device)])
+            tg = torch.cat([tg, extra[1].to(self.device)])
+            tr = torch.cat([tr, extra[2].to(self.device)])
 
         deg = self.static_deg.clone()
         deg += torch.bincount(td, minlength=self.n).float() + torch.bincount(tg, minlength=self.n).float()
