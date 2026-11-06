@@ -60,6 +60,70 @@ def pipeline(out: Path):
     save(fig, out, "fig_pipeline")
 
 
+# ------------------------------------------------------------------ 1b. model architecture (layer level)
+def architecture(out: Path):
+    """Layer-level diagram of bpp/model.py (BioPathNetPP + NBFLayer + RelSpMM); every size is the code's default."""
+    with plt.rc_context({"mathtext.fontset": "stix"}):
+        fig, ax = plt.subplots(figsize=(COL2, 3.3))
+        ax.set_xlim(0, 100); ax.set_ylim(0, 50); ax.axis("off")
+
+        def box(x, y, w, h, title, body="", accent=False, fs=6.4):
+            ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.2,rounding_size=0.9",
+                                        fc="#eef4fc" if accent else "#f6f6f4", ec=ACCENT if accent else MUTED, lw=0.8))
+            if body:
+                ax.text(x + w / 2, y + h - 1.4, title, ha="center", va="top", fontsize=7.2, weight="bold", color=INK)
+                ax.text(x + w / 2, y + h - 5.4, body, ha="center", va="top", fontsize=fs, color=INK2, linespacing=1.35)
+            else:
+                ax.text(x + w / 2, y + h / 2, title, ha="center", va="center", fontsize=fs, color=INK, linespacing=1.3)
+
+        def arrow(x0, y0, x1, y1, color=INK2, ls="-"):
+            ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), arrowstyle="-|>", mutation_scale=7, lw=0.8,
+                                         color=color, linestyle=ls, shrinkA=0, shrinkB=0))
+
+        # ---- inputs (left column)
+        box(0.5, 34, 16.5, 15, "Query", "disease $u$ (held out),\nrelation = indication\n\n$\\mathbf{q}\\in\\mathbb{R}^{32}$ (learned)")
+        box(0.5, 19, 16.5, 12.5, "Boundary", "$\\mathbf{h}^{(0)}_v=\\mathbf{q}$ if $v=u$,\nelse $\\mathbf{0}$")
+        box(0.5, 1.5, 16.5, 15, "Message graph", "context edges, 27 types\n+ inverses; drug edges\nof training diseases;\nbatch families removed")
+        arrow(8.75, 34, 8.75, 31.6)
+
+        # ---- NBF layer, expanded (middle)
+        ax.add_patch(FancyBboxPatch((20.5, 4.5), 43, 45, boxstyle="round,pad=0.2,rounding_size=1.2",
+                                    fc="white", ec=ACCENT, lw=0.9, linestyle=(0, (4, 2))))
+        ax.text(42, 48.6, "Path channel: NBF layer $\\ell=1,\\dots,6$", ha="center", va="top", fontsize=7.4,
+                weight="bold", color=ACCENT)
+        ys = [38.6, 31.6, 24.6, 17.6, 10.6]
+        texts = ["DistMult messages over all relations (RelSpMM)\n"
+                 "$\\mathbf{m}_v=\\sum_r\\,(A_r\\mathbf{H}^{(\\ell-1)})_v\\odot\\mathbf{w}_r$",
+                 "mean over in-degree, plus the boundary as a self-message\n"
+                 "$\\bar{\\mathbf{m}}_v=\\mathbf{m}_v/\\deg_v+\\mathbf{h}^{(0)}_v$",
+                 "PNA-style degree scaling, concatenated with the old state\n"
+                 "$\\mathbf{z}_v=[\\,\\mathbf{h}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,\\log(1+\\deg_v)/c\\,]\\in\\mathbb{R}^{96}$",
+                 "Linear $96\\rightarrow32$, LayerNorm, ReLU",
+                 "shortcut: $\\mathbf{h}^{(\\ell)}_v=\\mathrm{ReLU}(\\mathrm{LN}(W\\mathbf{z}_v))+\\mathbf{h}^{(\\ell-1)}_v$"]
+        for y, t in zip(ys, texts):
+            box(22.5, y, 35.5, 5.4, t, accent=True, fs=6.1)
+        for y0, y1 in zip(ys[:-1], ys[1:]):
+            arrow(40.25, y0 - 0.2, 40.25, y1 + 5.6)
+        # repeat loop: from the last block back to the first, outside the blocks
+        ax.plot([58.2, 59.6, 59.6], [13.3, 13.3, 41.3], color=ACCENT, lw=0.8)
+        arrow(59.6, 41.3, 58.4, 41.3, color=ACCENT)
+        ax.text(60.2, 27.3, "$\\times6$", fontsize=8, color=ACCENT, weight="bold", ha="left", va="center")
+        arrow(17.2, 25.2, 22.3, 40.2)                      # boundary -> first layer
+        arrow(17.2, 9.0, 22.3, 39.2, ls=(0, (2, 1.5)))     # graph matrices A_r -> messages
+        ax.text(40.25, 6.6, "$A_r$: sparse matrix per relation; $A_r\\mathbf{H}$ recomputed in backward",
+                ha="center", va="center", fontsize=5.9, color=MUTED, style="italic")
+
+        # ---- readout, transfer channel, score (right)
+        box(66.5, 27, 17, 22, "Path readout", "for every drug $d$:\n$[\\mathbf{h}^{(1)}_d;\\dots;\\mathbf{h}^{(6)}_d;\\mathbf{q}]\\in\\mathbb{R}^{224}$\n\nMLP $224\\rightarrow64\\rightarrow1$\n(ReLU, dropout 0.1)\n$\\rightarrow s_{\\mathrm{path}}(u,d)$", accent=True)
+        box(66.5, 1.5, 17, 23.5, "Transfer channel", "4 priors for $(u,d)$,\nown family excluded:\npopularity, disease $k$NN,\nshared targets,\nautoimmune frequency\nMLP $4\\rightarrow16\\rightarrow1$\n$\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True, fs=6.2)
+        box(86.5, 1.5, 13.2, 47.5, "Score", "$s(u,d)=$\n$s_{\\mathrm{path}}+s_{\\mathrm{prior}}$\n\nsoftmax over\nall 7,957 drugs\n\nTraining:\nlistwise loss,\nmean $-\\log p$ of\nthe known drugs\n\nInference:\nfull ranking\n\n68,226 parameters")
+        ax.plot([63.8, 64.9], [38.0, 38.0], color=INK2, lw=0.8)
+        arrow(64.9, 38.0, 66.3, 38.0)
+        arrow(83.7, 38.0, 86.3, 30.0)
+        arrow(83.7, 12.75, 86.3, 20.0)
+        save(fig, out, "fig_architecture")
+
+
 # ------------------------------------------------------------------ 2. main results (dot + CI)
 METHODS = [("base", "random", "Random"), ("base", "popularity", "Popularity"),
            ("base", "shared_targets", "Shared targets"), ("base", "disease_knn", "Disease kNN (best baseline)"),
@@ -219,7 +283,7 @@ def main():
     a = ap.parse_args()
     root, out = Path(a.root), Path(a.out)
     S = json.loads((root / "analysis" / "summary.json").read_text())
-    pipeline(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
+    pipeline(out); architecture(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
     transfer_curve(S, out)
     print("figures ->", out)
 

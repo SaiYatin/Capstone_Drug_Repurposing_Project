@@ -120,8 +120,15 @@ def ctgov(cache: Cache, drug: str, cond_terms: list) -> list:
     return cache.get("ctgov", f"{drug}__{cond}", fetch)
 
 
+def mentions(text: str, drug: str) -> bool:
+    """Whole-name match: 'prednisolone' must not match inside 'methylprednisolone'."""
+    return re.search(r"(?<![a-z0-9])" + re.escape(drug.lower()) + r"(?![a-z0-9])", (text or "").lower()) is not None
+
+
 def parse_trials(studies: list, drug: str) -> list:
-    """Keep trials that name the drug as an intervention; record phase and the drug's arm role."""
+    """Keep trials that name the drug as an intervention; record phase, the drug's arm role, and whether the
+    trial tests the drug (named in the title, or given in some arms but not all) rather than using it as
+    background therapy, premedication or part of a conditioning regimen."""
     out, d = [], drug.lower()
     for s in studies:
         if s.get("query_rejected"):
@@ -129,11 +136,15 @@ def parse_trials(studies: list, drug: str) -> list:
         ps = s.get("protocolSection", {})
         ai = ps.get("armsInterventionsModule", {})
         names = [i.get("name", "") for i in ai.get("interventions", [])]
-        if not any(d in n.lower() for n in names):
+        if not any(mentions(n, d) for n in names):
             continue
+        arms = ai.get("armGroups", [])
+        in_arm = [any(mentions(n, d) for n in arm.get("interventionNames", [])) for arm in arms]
+        title = ps.get("identificationModule", {}).get("briefTitle", "")
+        tested = mentions(title, d) or (len(arms) > 1 and 0 < sum(in_arm) < len(arms))
         role = "other"
         for arm in ai.get("armGroups", []):
-            if any(d in n.lower() for n in arm.get("interventionNames", [])):
+            if any(mentions(n, d) for n in arm.get("interventionNames", [])):
                 t = arm.get("type", "")
                 if t == "EXPERIMENTAL":
                     role = "experimental"; break
@@ -144,7 +155,7 @@ def parse_trials(studies: list, drug: str) -> list:
                     "title": ps.get("identificationModule", {}).get("briefTitle"),
                     "phase": "/".join(phases), "status": ps.get("statusModule", {}).get("overallStatus"),
                     "start": (ps.get("statusModule", {}).get("startDateStruct", {}) or {}).get("date", ""),
-                    "type": ps.get("designModule", {}).get("studyType"), "role": role})
+                    "type": ps.get("designModule", {}).get("studyType"), "role": role, "tested": tested})
     return out
 
 
@@ -260,10 +271,13 @@ def evidence(ctx: Ctx, cands: dict, cache: Cache):
                     continue
                 trials = parse_trials(ctgov(cache, drug, TARGET_TERMS[t]), drug)
                 g = grade(trials)
-                best = sorted(trials, key=lambda x: ("PHASE4" in x["phase"], "PHASE3" in x["phase"],
+                tested = [x for x in trials if x["tested"]]
+                best = sorted(trials, key=lambda x: (x["tested"], "PHASE4" in x["phase"], "PHASE3" in x["phase"],
                                                      "PHASE2" in x["phase"]), reverse=True)[:3]
                 trial_rows.append({"target": t, "group": group, "drug": drug, "labelled": labelled,
-                                   "mean_rank": float(ctx.mean_rank[t][c]), "grade": g, "n_trials": len(trials),
+                                   "mean_rank": float(ctx.mean_rank[t][c]), "grade": g,
+                                   "grade_tested": grade(tested), "n_trials": len(trials), "n_tested": len(tested),
+                                   "tested_trials": "; ".join(x["nct"] for x in tested[:5]),
                                    "roles": ",".join(sorted({x["role"] for x in trials})),
                                    "top_trials": "; ".join(f"{x['nct']} {x['phase']} {x['status']} {x['start'][:4]} {x['role']}"
                                                            for x in best)})
@@ -473,6 +487,10 @@ def main():
     summary["v2_trial_grade_A_to_C_among_novel"] = share(trials, "grade", ["A", "B", "C"])
     summary["v2_trial_grade_A_or_B_among_novel"] = share(trials, "grade", ["A", "B"])
     summary["v2_grade_counts_model_novel"] = Counter(trials[(trials.group == "model") & (~trials.labelled)].grade)
+    # stricter: the trial tests the drug (not background therapy, premedication or conditioning)
+    summary["v2_trial_tested_A_to_C_among_novel"] = share(trials, "grade_tested", ["A", "B", "C"])
+    summary["v2_trial_tested_A_or_B_among_novel"] = share(trials, "grade_tested", ["A", "B"])
+    summary["v2_tested_grade_counts_model_novel"] = Counter(trials[(trials.group == "model") & (~trials.labelled)].grade_tested)
     summary["v3_any_pubmed_hit_among_novel"] = {
         grp: round(float((lit[(lit.group == grp) & (~lit.labelled)].pubmed_hits > 0).mean()), 3) for grp in ("model", "random", "popularity")}
     summary["v3_supporting_among_novel"] = share(lit, "lit_class", ["supports"])

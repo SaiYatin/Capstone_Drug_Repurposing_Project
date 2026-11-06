@@ -35,6 +35,7 @@ Keep implemented vs planned clearly separate. Run tests before claiming anything
 | TxGNN head-to-head | **DONE 21 Oct** (Kaggle, results (5).zip) → `outputs/bpp/txgnn_h2h/`; papers updated (journal §"Head-to-head with TxGNN" + abstract sentence, conf discussion); no TxGNN RECHECK left |
 | TxGNN head-to-head run 2 (fair coverage, 3 seeds each) | **DONE 21 Oct** (Kaggle, results (6).zip) → `outputs/bpp/txgnn_h2h_full/`, verified; results in "RUN 2 RESULTS" below. Papers + analyze.py UPDATED 21 Oct (run 1 = coverage ablation); Claude Docs not |
 | Paper rewrite (conference + journal) | **FINAL DRAFTS 19 Oct**: title/authors set, 3 aims, metrics table, validation section (V1–V8). Not compiled — upload `outputs/paper/v3_latest.zip` to Overleaf |
+| Mentor revisions (conf paper) | **DONE 5 Nov** — see "Mentor revisions" below; page count unmeasured |
 | Analysis/figures | `python -m bpp.analyze` → summary.json + `outputs/paper/v3/generated/` (all paper numbers/tables as macros); `python -m bpp.figures` → `outputs/paper/v3/figures/` |
 | Reviewer/panel explainer | Claude Doc "BioPathNet++ — Results Explained & Reviewer Q&A": https://claude.ai/code/artifact/5c6b4b6b-abb7-4065-b185-22ecfb0ab894 |
 | Old paper `outputs/paper/main.tex`, `main_2page.tex` | CONTAIN FALSE CLAIMS — superseded by v3, do not use |
@@ -98,6 +99,30 @@ to the 20-epoch cap; Kaggle code = repo (only analyze.py differs, unused); resto
   from the transfer channel's drug-class prior. Conf sentence shortened (5-page limit; page count unmeasured).
 - 22 Oct: college Turnitin reports on the conference PDF: similarity 0% (only a disease-name list matched, <1%), AI
   "*%" (<20%, not surfaced). That PDF still printed six "[pending]" — fixed by this session.
+
+**Mentor revisions to the conference paper (5 Nov 2026; not committed):**
+- Evidence CORRECTED: `bpp/validate.py` now matches drug names whole-word (old substring match let "prednisolone"
+  hit methylprednisolone trials) and adds `grade_tested` (trial title names the drug, or drug in some-but-not-all
+  arms; background/premedication/HSCT conditioning excluded). New: names-drug A–C 17% / pop 14% / random 0% (was
+  19/15/1), 11 grade A (was 13); tests-drug A–C 13% / 8% / 0%, 9 grade A. Cited NCTs live-checked.
+- Literature labels: abstracts of every supports/against label read; 17 relabels in `literature_labels.csv` (`note`
+  column; animal-only, drug in all arms, inconclusive → mixed; negative trials → against). Supports 15% / pop 10% /
+  random 0% (was 24/16/0); against 5% / 12% / 0%. Amifampridine–MG now mixed: phase-2b MuSK positive (Bonanno 2018)
+  but 2026 Neurology RCT in AChR+ MG negative (Remijn-Nelissen, doi:10.1212/WNL.0000000000214715) — both cited.
+- `bpp/analyze.py`: macros ValTrialTested*, ValTrialTestedAB*, ValGradeATested, ValLitSupCount, ValLitAgainstCount;
+  tab_validation has names/tests rows. `bpp/figures.py::architecture` → `fig_architecture.pdf` (layer-level, sizes
+  from model.py; 68,226 params verified from logs).
+- Conf paper: abstract 237→149 words, "What is new relative to BioPathNet" (no new architecture claimed),
+  related-work table, label types (targets: 26 indications + 24 off-label; valid/test = indications only; "approved"
+  only for FDA approvals), metrics-definition table, reproducibility paragraph, 0.405 (paths-only, validation) vs
+  0.501 (full model, test) explained, Preprocessing paragraph (both papers). Journal: trial + literature paragraphs
+  updated. References verified (BioPathNet author list fixed). Priyanka H is now 5th CO-AUTHOR in both papers (user
+  request 5 Nov; "under the guidance" line + guide acknowledgment removed) — supersedes the 19 Oct "guide, not author".
+- LaTeX now compiles locally: tectonic 0.17.0 in the session scratchpad (not in repo; re-download from GitHub release
+  if needed). Conf = EXACTLY 5 pages incl. references after condensing the body (transfer figure is now single-column);
+  journal = 14 pages (over the 10-11 target; pre-existing). PDFs: outputs/paper/v3/bpp_v3_{conf,journal}.pdf.
+  Capstone report + slides (outputs/capstone_review3) UPDATED 5 Nov to the corrected evidence (incl. top-10 trial
+  grades, now "tests the drug" grades); report still 56 pages, deck 22 slides.
 
 **TxGNN head-to-head RESULTS (21 Oct, verified; 1 seed each; Kaggle h2h.json reproduced locally byte-for-byte in summaries):**
 - Run: DGL OK, TxGNN full pretrain epoch 1.27 h (cap NOT hit), finetune 500 ep 0.14 h (val AUROC still rising at

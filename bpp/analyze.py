@@ -631,11 +631,13 @@ def table_validation(S):
         x = d.get(g)
         x = x["share"] if isinstance(x, dict) else x
         return "--" if x is None else f"{100 * x:.0f}\\%"
-    rows = [("Trial evidence, grade A--C (ClinicalTrials.gov)", V["v2_trial_grade_A_to_C_among_novel"]),
-            ("Trial evidence, phase $\\geq$2 (grade A--B)", V["v2_trial_grade_A_or_B_among_novel"]),
+    rows = [("Trial names the drug, grade A--C", V["v2_trial_grade_A_to_C_among_novel"]),
+            ("Trial names the drug, phase $\\geq$2 (A--B)", V["v2_trial_grade_A_or_B_among_novel"]),
+            ("Trial tests the drug, grade A--C", V["v2_trial_tested_A_to_C_among_novel"]),
+            ("Trial tests the drug, phase $\\geq$2 (A--B)", V["v2_trial_tested_A_or_B_among_novel"]),
             ("Any PubMed co-mention", V["v3_any_pubmed_hit_among_novel"]),
-            ("PubMed title supports use", V["v3_supporting_among_novel"]),
-            ("PubMed title reports harm / no benefit", V["v3_against_among_novel"]),
+            ("PubMed: evidence of benefit", V["v3_supporting_among_novel"]),
+            ("PubMed: harm or no benefit", V["v3_against_among_novel"]),
             ("$\\geq$1 drug target among disease genes", V["v5_share_any_disease_gene_target"])]
     n = {g: V["v2_trial_grade_A_to_C_among_novel"][g]["n"] for g in ("model", "random", "popularity")}
     lines = [r"\begin{tabular}{lccc}", r"\toprule",
@@ -866,6 +868,8 @@ def macros(S) -> str:
             x = d[g]
             return f"{100 * (x['share'] if isinstance(x, dict) else x):.0f}"
         for key, tag in (("v2_trial_grade_A_to_C_among_novel", "ValTrial"), ("v2_trial_grade_A_or_B_among_novel", "ValTrialAB"),
+                         ("v2_trial_tested_A_to_C_among_novel", "ValTrialTested"),
+                         ("v2_trial_tested_A_or_B_among_novel", "ValTrialTestedAB"),
                          ("v3_any_pubmed_hit_among_novel", "ValLitHit"), ("v3_supporting_among_novel", "ValLitSup"),
                          ("v3_against_among_novel", "ValLitAgainst"), ("v5_share_any_disease_gene_target", "ValDisGene")):
             for g, gt in (("model", "Model"), ("random", "Rand"), ("popularity", "Pop")):
@@ -876,6 +880,9 @@ def macros(S) -> str:
             nc("EcheckLabelled", str(e["labelled_in_top10"])); nc("EcheckDiseases", str(e["diseases_with_labelled_in_top10"]))
             nc("EcheckNovel", str(e["unlabelled"])); nc("EcheckNovelTrial", str(e["unlabelled_with_trial_A_to_C"]))
         nc("ValGradeA", str(V["v2_grade_counts_model_novel"].get("A", 0)))
+        nc("ValGradeATested", str(V["v2_tested_grade_counts_model_novel"].get("A", 0)))
+        nc("ValLitSupCount", str(V["v3_class_counts_model_novel"].get("supports", 0)))
+        nc("ValLitAgainstCount", str(V["v3_class_counts_model_novel"].get("against", 0)))
         nc("ValSteroidShare", f"{100 * V['v7']['share_corticosteroid_by_name_all_candidates']:.0f}")
         nc("ValAntibioticShare", f"{100 * V['v7']['share_antibacterial_by_name_all_candidates']:.0f}")
         nc("ValAtcCoverage", f"{100 * V['v7']['atc_coverage']:.0f}")

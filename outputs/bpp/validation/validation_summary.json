@@ -68,21 +68,7 @@
  "v2_trial_grade_A_to_C_among_novel": {
   "model": {
    "n": 86,
-   "share": 0.186
-  },
-  "random": {
-   "n": 120,
-   "share": 0.008
-  },
-  "popularity": {
-   "n": 120,
-   "share": 0.15
-  }
- },
- "v2_trial_grade_A_or_B_among_novel": {
-  "model": {
-   "n": 86,
-   "share": 0.163
+   "share": 0.174
   },
   "random": {
    "n": 120,
@@ -90,14 +76,62 @@
   },
   "popularity": {
    "n": 120,
-   "share": 0.133
+   "share": 0.142
+  }
+ },
+ "v2_trial_grade_A_or_B_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.151
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.125
   }
  },
  "v2_grade_counts_model_novel": {
-  "D": 70,
-  "A": 13,
-  "B": 1,
+  "D": 71,
+  "A": 11,
+  "B": 2,
   "C": 2
+ },
+ "v2_trial_tested_A_to_C_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.128
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.083
+  }
+ },
+ "v2_trial_tested_A_or_B_among_novel": {
+  "model": {
+   "n": 86,
+   "share": 0.116
+  },
+  "random": {
+   "n": 120,
+   "share": 0.0
+  },
+  "popularity": {
+   "n": 120,
+   "share": 0.075
+  }
+ },
+ "v2_tested_grade_counts_model_novel": {
+  "D": 75,
+  "A": 9,
+  "B": 1,
+  "C": 1
  },
  "v3_any_pubmed_hit_among_novel": {
   "model": 0.628,
@@ -107,7 +141,7 @@
  "v3_supporting_among_novel": {
   "model": {
    "n": 86,
-   "share": 0.244
+   "share": 0.151
   },
   "random": {
    "n": 120,
@@ -115,13 +149,13 @@
   },
   "popularity": {
    "n": 120,
-   "share": 0.158
+   "share": 0.1
   }
  },
  "v3_against_among_novel": {
   "model": {
    "n": 86,
-   "share": 0.035
+   "share": 0.047
   },
   "random": {
    "n": 120,
@@ -133,11 +167,11 @@
   }
  },
  "v3_class_counts_model_novel": {
-  "mixed": 10,
+  "mixed": 17,
   "no_hits": 32,
   "unrelated": 20,
-  "supports": 21,
-  "against": 3
+  "supports": 13,
+  "against": 4
  },
  "v4": [
   {
