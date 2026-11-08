@@ -17,7 +17,7 @@ ABSTRACT = [
     "the graph, so we rebuilt the evaluation around a strict hold-out of each disease family and a full ranking of "
     "7,957 drugs.",
     "On 68 never-seen test diseases, an approved drug appears in the model's top 10 for 76% of diseases (best "
-    "baseline 57%; MRR 0.501 versus 0.392, p = 0.003). Autoimmune training data helps only when data is scarce, and "
+    "baseline 57%; MRR 0.501 versus 0.392, p = 0.003). Autoimmune training data helps only when data is scarce (at full scale it even lowers accuracy), and "
     "on TxGNN's own split BioPathNet++ ranks all drugs significantly better than TxGNN.",
 ]
 
@@ -665,7 +665,7 @@ CHAPTERS.append(("RESULTS AND DISCUSSION", [
       ["Autoimmune frequency", "0.038", "0.040", "0.128", "0.094", "0.169"],
       ["Shared targets", "0.057", "0.105", "0.530", "0.008", "0.000"],
       ["Disease kNN", "0.281", "0.350", "0.661", "0.296", "0.424"],
-      ["Prior only (transfer channel)", "0.303", "0.353", "0.707", "0.322", "0.483"],
+      ["Prior only (transfer channel)", "0.306 ± 0.003", "0.354 ± 0.006", "0.700 ± 0.013", "0.330 ± 0.025", "0.490 ± 0.007"],
       ["Paths only (NBFNet)", "0.405 ± 0.013", "0.479 ± 0.025", "0.829 ± 0.011", "0.463 ± 0.087", "0.657 ± 0.025"],
       ["BioPathNet++ (paths + prior)", "0.394 ± 0.003", "0.456 ± 0.018", "0.799 ± 0.010", "0.475 ± 0.017", "0.648 ± 0.033"]],
      [4.6, 2.4, 2.3, 2.5, 2.4, 2.2], 9.5),
@@ -703,7 +703,7 @@ CHAPTERS.append(("RESULTS AND DISCUSSION", [
      [["A': matched non-autoimmune (3 draws)", "11", "0.126 [0.04, 0.22]", "0.086 [0.02, 0.17]", "0.041 [0.00, 0.08]"],
       ["A: RA / SLE / MS families", "11", "0.290 [0.09, 0.50]", "0.258 [0.06, 0.47]", "0.124 [0.01, 0.26]"],
       ["D: all non-autoimmune", "1,194", "0.532 [0.34, 0.72]", "0.318 [0.13, 0.53]", "0.487 [0.20, 0.73]"],
-      ["C_E: all except E", "1,185", "0.452 [0.25, 0.67]", "0.271 [0.08, 0.50]", "0.550 [0.28, 0.78]"]],
+      ["C_E: all except E", "1,185", "0.410 [0.23, 0.62]", "0.271 [0.08, 0.50]", "0.539 [0.26, 0.77]"]],
      [4.6, 1.8, 3.4, 3.3, 3.3], 9.5),
     ("fig", "fig:transfer", "fig_transfer_curve.png", "Transfer curve: MRR on E (left) and on the six targets (right) by training condition", 16.0),
     ("p", "**Scarce data.** Trained only on the RA, SLE and MS families (A), the model reaches MRR 0.290 on E, against "
@@ -715,36 +715,42 @@ CHAPTERS.append(("RESULTS AND DISCUSSION", [
           "paths-only repetition confirms this: without the transfer channel both A and A' stay near the floor (MRR "
           "0.007 and 0.010), so the advantage of A comes from the transfer channel, not from path reasoning."),
     ("p", "**Full scale.** With broad training data and no autoimmune disease (D), accuracy on E rises to 0.532. "
-          "Adding the autoimmune diseases (C_E) gives 0.452 (difference −0.081, p = 0.232): no measurable gain. On the "
+          "Adding the autoimmune diseases (C_E, three seeds) does not help but lowers it to 0.410 (difference −0.122, "
+          "CI −0.200 to −0.052, p = 0.010; lower on 9 of 12 diseases). Both conditions stop on the same validation "
+          "diseases, and disease kNN drops in the same way (0.318 to 0.271), so the drop comes from which diseases are "
+          "in the training set, not from the model or from early stopping. On the "
           "six targets, removing all 123 autoimmune nodes from training leaves MRR unchanged (0.487 versus 0.475, "
           "three seeds each, p = 0.812). On the 21 autoimmune-area diseases, never used for selection, the "
           "no-autoimmune model reaches 0.449 against 0.311 for kNN (difference +0.138, CI +0.010 to +0.280, p = 0.147), "
           "which by our rule is suggestive rather than significant."),
     ("p", "H1 is therefore only partly supported. Related autoimmune diseases are the most useful source of knowledge "
-          "when training data is scarce, but at full scale the broad pharmacological graph supplies what is needed and "
-          "autoimmune training labels add nothing measurable."),
+          "when training data is scarce, but at full scale the broad pharmacological graph is the better source, and "
+          "adding autoimmune training labels even lowers accuracy on held-out autoimmune diseases."),
     ("h2", "Aim 3: component analysis"),
     ("table", "tab:ablation", "Ablations (targets protocol; p: Wilcoxon on paired validation MRR versus the full model)",
      ["Variant", "Valid MRR", "Valid H@10", "Targets MRR", "p"],
      [["Full model (3 seeds)", "0.394 ± 0.003", "0.456 ± 0.018", "0.475 ± 0.017", "-"],
       ["Without transfer channel (3 seeds)", "0.405 ± 0.013", "0.479 ± 0.025", "0.463 ± 0.087", "0.148"],
-      ["Without path reasoning (prior only)", "0.303", "0.353", "0.322", "< 0.001"],
-      ["Background relation subset (72% fewer edges)", "0.397", "0.488", "0.424", "0.906"],
-      ["BCE loss instead of listwise", "0.347", "0.434", "0.292", "0.005"]],
+      ["Without path reasoning (prior only, 3 seeds)", "0.306 ± 0.003", "0.354 ± 0.006", "0.330 ± 0.025", "< 0.001"],
+      ["Background relation subset (72% fewer edges, 3 seeds)", "0.404 ± 0.006", "0.492 ± 0.004", "0.504 ± 0.075", "0.299"],
+      ["BCE loss instead of listwise (3 seeds)", "0.378 ± 0.028", "0.452 ± 0.017", "0.320 ± 0.046", "0.344"]],
      [6.0, 2.6, 2.6, 2.6, 2.6], 9.5),
     ("p", "{tab:ablation} isolates the components. Removing the transfer channel leaves validation MRR statistically "
-          "unchanged (0.405, p = 0.148), while removing path reasoning drops it to 0.303 (p < 0.001), close to disease "
+          "unchanged (0.405, p = 0.148), while removing path reasoning drops it to 0.306 (p < 0.001), close to disease "
           "kNN, which is one of its inputs. Path reasoning is therefore the source of the accuracy. The transfer "
           "channel does not raise the mean but makes the model much more stable across seeds on the targets: the "
           "standard deviation of target MRR falls from 0.087 to 0.017 ({fig:pertarget}), which matters when "
           "individual rankings are used as case studies. An interim claim that the channel improved rare-target "
           "accuracy, based on one seed, did not survive replication and was withdrawn."),
-    ("p", "Replacing the listwise softmax with binary cross-entropy lowers validation MRR to 0.347 (p = 0.005 against "
-          "the three-seed mean; borderline against the same seed alone). Dropping tissue-expression and drug-drug "
+    ("p", "With binary cross-entropy instead of the listwise softmax, validation MRR is 0.378, not significantly lower "
+          "(difference +0.016, CI −0.005 to +0.039, p = 0.344, three seeds each). A one-seed run had suggested a clear "
+          "gap (0.347, p = 0.005), but that seed stopped early at epoch 9, while the two new seeds kept improving to "
+          "the 20-epoch cap. BCE is lower on the six targets (0.320 against 0.475; too few to test), and the listwise "
+          "loss is kept because it needs no negative sampling. Dropping tissue-expression and drug-drug "
           "edges, as in BioPathNet's background graph, shrinks the context graph from 4,007,433 to 1,133,029 edges "
-          "(72% fewer) with no loss in accuracy (0.397, p = 0.906), 11% faster steps and lower memory. Most of "
-          "PrimeKG's edges are therefore redundant for this task. H3 is supported for path reasoning and the loss, but "
-          "not for the transfer channel's effect on the mean."),
+          "(72% fewer) with no loss in accuracy (0.404, p = 0.299, three seeds), 11% faster steps and lower memory. Most of "
+          "PrimeKG's edges are therefore redundant for this task. H3 is supported for path reasoning, but not for the "
+          "loss or for the transfer channel's effect on the mean."),
     ("h2", "Robustness"),
     ("h3", "Selection bias"),
     ("p", "From the training logs, the gap between best-epoch and last-epoch validation MRR is 0.002 to 0.016 for the "
@@ -852,7 +858,7 @@ CHAPTERS.append(("RESULTS AND DISCUSSION", [
         "the targets have 1 to 24 labelled drugs, so per-target metrics are noisy and can be lower bounds;",
         "the model favours corticosteroids (41% of top-20 slots) and antibacterials (21%), partly a popularity bias;",
         "the TxGNN comparison covers 13 diseases of one split, and BioPathNet itself was not run on a shared split;",
-        "some ablations use one seed, and the temporal test covers only six drugs;",
+        "the temporal test covers only six drugs;",
         "literature labels were assigned with AI assistance and checked against abstracts, but no clinician has "
         "reviewed them;",
         "no clinician has reviewed the candidates yet; the rankings are research hypotheses, not recommendations."]),
@@ -867,10 +873,10 @@ CHAPTERS.append(("CONCLUSION AND FUTURE WORK", [
     ("p", "The rebuilt BioPathNet++ answers the three aims as follows. On accuracy (Aim 2), it outperforms every "
           "baseline evaluated on the same split: on 68 never-seen test diseases, an approved drug is in its top 10 for "
           "76% of diseases against 57% for the best baseline. On the source of transfer (Aim 1), related autoimmune "
-          "diseases are the most useful knowledge when training data is scarce, but at full scale the broad graph "
-          "supplies it and autoimmune training data adds nothing measurable. On components (Aim 3), path reasoning "
-          "carries the accuracy, the transfer channel adds stability across seeds, the listwise loss beats binary "
-          "cross-entropy, and 72% of the graph's edges can be removed without loss. On TxGNN's own split, the model "
+          "diseases are the most useful knowledge when training data is scarce, but at full scale the broad graph is "
+          "the better source and adding autoimmune training data even lowers accuracy. On components (Aim 3), path "
+          "reasoning carries the accuracy, the transfer channel adds stability across seeds, the choice of loss makes "
+          "no significant difference, and 72% of the graph's edges can be removed without loss. On TxGNN's own split, the model "
           "ranks all drugs significantly better than TxGNN and is not significantly worse under TxGNN's protocol."),
     ("p", "The work is useful in three ways: as a tool that produces evidence-annotated candidate lists for expert "
           "review, as a reproducible and leakage-controlled evaluation protocol that other groups can reuse, and as a "

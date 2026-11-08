@@ -489,23 +489,25 @@ text(s, 9.0, 1.98, 3.6, 2.2, [{"t": "Scarce data", "size": 16, "bold": True, "co
                               {"t": "But paths alone: 0.007 vs 0.010, so the gain is a drug-class prior.", "size": 13}])
 card(s, 8.85, 4.4, 3.9, 2.35)
 text(s, 9.0, 4.48, 3.6, 2.2, [{"t": "Full scale", "size": 16, "bold": True, "color": RUST, "space": 4},
-                              {"t": "Adding autoimmune data: no gain (0.452 vs 0.532, p = 0.23).", "size": 13},
+                              {"t": "Adding autoimmune data **lowers** MRR: 0.410 vs 0.532 (p = 0.010, 3 seeds).", "size": 13},
                               {"t": "Rare targets unchanged without them (0.487 vs 0.475).", "size": 13}])
-notes(s, "Answer to Aim 1: related autoimmune diseases help only when data is scarce; at scale the broad graph supplies it.")
+notes(s, "Answer to Aim 1: related autoimmune diseases help only when data is scarce; at full scale the broad graph is "
+         "the better source, and adding autoimmune diseases even lowers MRR on E. Disease kNN drops the same way, "
+         "and both conditions stop on the same validation set.")
 
 # 13. Results 3: components
 s = S[12]
 frame(s, "Results and Discussion: Component Analysis (Aim 3)")
 bar_chart(s, 0.5, 1.9, 7.4, 4.3, ["Disease kNN", "Prior only", "BCE loss", "Full model", "BRG subset", "Paths only"],
-          [("Validation MRR", (0.281, 0.303, 0.347, 0.394, 0.397, 0.405))], [GREY],
+          [("Validation MRR", (0.281, 0.306, 0.378, 0.394, 0.404, 0.405))], [GREY],
           title="Validation MRR (68 diseases)", maxv=0.48,
-          point_colors=[GREY, GREY, GREY, ORANGE, ORANGE, ORANGE], label_size=12)
+          point_colors=[GREY, GREY, ORANGE, ORANGE, ORANGE, ORANGE], label_size=12)
 text(s, 8.2, 1.95, 4.55, 4.8, [
-    {"t": "**Path reasoning carries the accuracy**: without it MRR drops to 0.303 (p < 0.001).", "bullet": True, "size": 14,
+    {"t": "**Path reasoning carries the accuracy**: without it MRR drops to 0.306 (p < 0.001).", "bullet": True, "size": 14,
      "space": 9},
     {"t": "**Transfer channel = stability**: mean unchanged (p = 0.15), target sd 0.087 → 0.017 across seeds.",
      "bullet": True, "size": 14, "space": 9},
-    {"t": "**Listwise loss beats BCE**: 0.394 vs 0.347 (p = 0.005).", "bullet": True, "size": 14, "space": 9},
+    {"t": "**Loss choice is a tie**: BCE 0.378 vs listwise 0.394 (p = 0.34).", "bullet": True, "size": 14, "space": 9},
     {"t": "**72% of edges are redundant**: 4.0M → 1.1M edges, same MRR, 11% faster.", "bullet": True, "size": 14}])
 notes(s, "Honest reading: the ++ adds stability, not accuracy. Paths-only versus full model is a statistical tie.")
 
@@ -598,7 +600,7 @@ notes(s, "Show the report to the panel here.")
 s = S[18]
 frame(s, "Conclusion and Future Work")
 for i, (h, b) in enumerate([("Aim 2: accuracy", "Beats every baseline on unseen diseases: 76% vs 57% approved drug in top 10."),
-                            ("Aim 1: transfer", "Autoimmune data helps only when data is scarce; at scale the broad graph suffices."),
+                            ("Aim 1: transfer", "Autoimmune data helps only when data is scarce; at full scale it even lowers MRR."),
                             ("Aim 3: components", "Paths carry accuracy; transfer channel adds stability; 72% of edges redundant.")]):
     x = 0.55 + i * 4.1
     card(s, x, 1.95, 3.9, 1.75)
