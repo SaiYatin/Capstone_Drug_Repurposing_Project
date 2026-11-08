@@ -10,7 +10,7 @@
 \title{Leakage-Controlled Zero- and Few-Shot Drug Repurposing for Rare Autoimmune Diseases: A Transfer Study with a Path-Based Graph Neural Network}
 
 \author{TVNS~Yatin, Srijan~Jha, A~Charan~KR, Praveen~Kumar~Yadav, and~Priyanka~H%
-\thanks{The authors are with the Department of Computer Science and Engineering, PES University, Bengaluru, India. Code and data: \protect\url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).}}
+\thanks{The authors are with the Department of Computer Science and Engineering, PES University, Bengaluru, India.}}
 
 \markboth{Manuscript draft}{Yatin \MakeLowercase{\textit{et al.}}: Leakage-Controlled Drug Repurposing for Rare Autoimmune Diseases}
 
@@ -88,7 +88,7 @@ TxGNN comparison & on TxGNN's splits & TxGNN's code re-run, 3 seeds, two candida
 Method & KG & Unit held out & Evaluation & Reported result \\
 \midrule
 Hetionet~\cite{himmelstein2017hetionet} & Hetionet & none (edge-level) & metapath classifier & -- \\
-DREAMwalk~\cite{bang2023dreamwalk} & multi-layer KG & none (edge-level) & association prediction & up to 16.8\% accuracy gain over link-prediction models \\
+DREAMwalk~\cite{bang2023dreamwalk} & multi-layer KG & none (edge-level) & association prediction & up to 16.8\% higher accuracy than link prediction \\
 TxGNN~\cite{huang2024txgnn} & PrimeKG & disease area & zero-shot, 8 baselines & 49.2\% better indication prediction \\
 BioPathNet~\cite{hu2026biopathnet} & PrimeKG & TxGNN disease areas & MRR, Hits@k over all drugs & MRR $\approx$0.2--0.6+ by area \\
 Few-shot attention~\cite{yang2024fewshot} & medical KG & -- & few-shot link prediction (meta-learning) & -- \\
@@ -238,12 +238,12 @@ Table~\ref{tab:metrics} gives every metric for the selection-free test split, th
 
 On the 68 validation diseases (Fig.~\ref{fig:main}), \sysname reaches MRR \MainValidMrr$\pm$\MainValidMrrSd{} against \KnnValidMrr{} for disease $k$NN and \PopValidMrr{} for popularity (paired difference \DiffMainKnnValid, CI \DiffLoMainKnnValid{} to \DiffHiMainKnnValid; $p$\,\PwilMainKnnValid); it is better on \WinsMainKnnValid{} diseases, tied on \TiesMainKnnValid{} and worse on \LossesMainKnnValid. Against hard negatives AUROC is \MainValidAurocHard, versus \KnnValidAurocHard{} for disease $k$NN and \PopValidAurocHard{} (below chance) for popularity, so the model does more than rank generically popular drugs. On the six targets MRR is \MainTargetsMrr{} against \KnnTargetsMrr; the gain points the same way on \WinsMainKnnTargets{} of 6 targets but is not significant with six diseases ($p$\,\PwilMainKnnTargets). \sysname therefore outperforms every baseline evaluated on the same leakage-free split. The test diseases are non-autoimmune and easier for every method (disease $k$NN rises from \KnnValidMrr{} to \KnnTestMrr), so test and validation values are not comparable with each other.
 
-\begin{figure}[!t]
+\begin{figure*}[!t]
 \centering
-\includegraphics[width=\columnwidth]{fig_main_results.pdf}
-\caption{Validation MRR with 95\% bootstrap CIs over diseases (seed-averaged). Dashed line: disease $k$NN.}
+\includegraphics[width=0.92\textwidth]{fig_main_results.pdf}
+\caption{MRR with 95\% bootstrap CIs over diseases (seed-averaged) on the 68 validation diseases (left) and the six targets (right). Dashed line: disease $k$NN.}
 \label{fig:main}
-\end{figure}
+\end{figure*}
 
 \textbf{Why AUROC is not the headline metric.}
 \label{sec:auroc}
@@ -251,24 +251,16 @@ Baselines without learning reach validation AUROC 0.78--0.86, and popularity \Po
 
 \subsection{Transfer to rare autoimmune diseases}
 \label{sec:aim1}
-Fig.~\ref{fig:transfer} and Table~\ref{tab:transfercurve} give the transfer curve.
+Fig.~\ref{fig:transfer} gives the transfer curve with 95\% CIs.
 \emph{Scarce data.} Trained only on the RA/SLE/MS families (A), \sysname reaches MRR \TrAEMrr{} on $E$, against \TrActlEMrr{} with label-matched non-autoimmune diseases (A$'$): a significant difference of \DiffTrAActlE{} (CI \DiffLoTrAActlE{} to \DiffHiTrAActlE; $p$\,\PwilTrAActlE; better on \WinsTrAActlE{} of 12). It also holds for final instead of early-stopped checkpoints (\DiffTrAActlELast, $p$\,\PwilTrAActlELast), and the rare targets point the same way (\TrATargetsMrr{} vs.\ \TrActlTargetsMrr; $p$\,\PwilTrAActlTargets, $n=6$). Disease $k$NN shows the same pattern (\TrAEKnnMrr{} vs.\ \TrActlEKnnMrr), and the model is only slightly ahead of it. With 11 training diseases the transferable knowledge is a drug-class prior: the RA/SLE/MS families are treated mostly with corticosteroids and TNF inhibitors, and the A-trained model ranks the same corticosteroids first for every target. With paths only (\TrAPathsSeeds{} seeds), A and A$'$ both stay near the floor (\TrAPathsEMrr{} vs.\ \TrActlPathsEMrr), so the scarce-data advantage comes from the prior channel.
 
-\begin{figure*}[!t]
+\begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{fig_transfer_curve.pdf}
-\caption{Transfer curve. MRR on the 12 held-out autoimmune diseases $E$ (left) and the six rare targets (right) per training condition, \sysname vs.\ disease $k$NN, with 95\% bootstrap CIs over diseases.}
+\includegraphics[width=\columnwidth]{fig_transfer_curve_col.pdf}
+\caption{Transfer curve: MRR on the 12 held-out autoimmune diseases $E$ (left) and the six rare targets (right) when training on A$'$ (11 matched non-autoimmune), A (RA/SLE/MS, 11), D (\TrDNTrain{} non-autoimmune) or C$_E$ (all \TrCENTrain); \sysname vs.\ disease $k$NN, 95\% bootstrap CIs over diseases.}
 \label{fig:transfer}
-\end{figure*}
+\end{figure}
 
-\begin{table}[!t]
-\centering
-\caption{Transfer curve: MRR [95\% CI] by training condition. Test diseases are held out in every condition.}
-\label{tab:transfercurve}
-\scriptsize
-\setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_transfer_curve.tex}}
-\end{table}
 
 \emph{Full scale.} Training on all non-autoimmune diseases (D) raises MRR on $E$ to \TrDEMrr; adding the autoimmune diseases (C$_E$, $n$=\TrCESeeds) does not help but lowers it to \TrCEEMrr{} (C$_E$ minus D: \DiffTrCEDE, CI \DiffLoTrCEDE{} to \DiffHiTrCEDE, $p$\,\PwilTrCEDE; lower on \LossesTrCEDE{} of 12 diseases). Both conditions stop on the same validation diseases, and disease $k$NN drops in the same way (\TrDEKnnMrr{} to \TrCEEKnnMrr), so the drop comes from which diseases are in the training set rather than from the model or from early stopping. On the targets, removing all 123 autoimmune nodes leaves MRR unchanged (\NoautoTargetsMrr{} vs.\ \MainTargetsMrr; \NoautoSeeds{} seeds; $p$\,\PwilMainNoautoTargets), and on the area diseases the model reaches \NoautoAreaMrr{} against \NoautoKnnAreaMrr{} for disease $k$NN (CI \DiffLoNoautoKnnArea{} to \DiffHiNoautoKnnArea, $p$\,\PwilNoautoKnnArea; suggestive by our rule). The best source thus depends on data size: related autoimmune diseases when data is scarce, the broad pharmacological graph at full scale.
 
@@ -278,11 +270,11 @@ Table~\ref{tab:fewshot} shows what a few known drugs add on the \FsN{} test dise
 
 \begin{table}[!t]
 \centering
-\caption{Few-shot ranking on the \FsN{} test diseases with $\geq$4 indications: MRR on the same held-back indications after revealing $k$ known drugs (\FsDraws{} random draws; \sysname averaged over \TestSeeds{} seeds, not retrained). Best per column in bold.}
+\caption{Few-shot ranking on the \FsN{} test diseases with $\geq$4 indications: MRR on the same held-back indications after revealing $k$ known drugs (\FsDraws{} random draws; \sysname averaged over \TestSeeds{} seeds, not retrained). Columns: MRR for $k$ revealed drugs; H@10 at $k$=3. Best per column in bold.}
 \label{tab:fewshot}
 \scriptsize
 \setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_fewshot.tex}}
+\input{generated/tab_fewshot.tex}
 \end{table}
 
 \subsection{What each component contributes}
@@ -291,11 +283,11 @@ Table~\ref{tab:ablation} isolates the components on the validation diseases; it 
 
 \begin{table}[!t]
 \centering
-\caption{Ablations on the 68 validation diseases (means over $n$ seeds). $p$: two-sided Wilcoxon on paired MRR vs.\ the full model.}
+\caption{Ablations on the 68 validation diseases (mean $\pm$ sd over 3 seeds each). Paths only: no prior channel; prior only: no path reasoning; BRG: background relation subset. $p$: two-sided Wilcoxon on paired validation MRR vs.\ the full model.}
 \label{tab:ablation}
-\small
-\setlength{\tabcolsep}{3pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_ablation.tex}}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\input{generated/tab_ablation.tex}
 \end{table}
 
 \subsection{Head-to-head with TxGNN on its own split}
@@ -304,14 +296,14 @@ We ran both models on TxGNN's autoimmune disease-area split, generated by TxGNN'
 
 Over all 7,957 drugs, \sysname is significantly better: MRR \TxhOursMrr{} against \TxhTxMrr{} (\TxhDiffFullMrr, CI \TxhDiffLoFullMrr{} to \TxhDiffHiFullMrr, $p$\,\TxhPwilFullMrr), H@100 \TxhOursHitsHund{} against \TxhTxHitsHund{} ($p$\,\TxhPwilFullHitsHund) and AUROC \TxhOursFullAuroc{} against \TxhTxFullAuroc{} ($p$\,\TxhPwilFullAuroc). Under TxGNN's protocol, which ranks only the \TxhCand{} drugs with at least one indication, no difference is significant (Recall@100 \TxhOursRecall{} vs.\ \TxhTxRecall; AUROC \TxhOursAuroc{} vs.\ \TxhTxAuroc, $p$\,\TxhPwilAuroc). The ranked lists explain why: only \TxhTxIndShare\% of TxGNN's top-100 drugs have any indication, against \TxhOursIndShare\% for \sysname, and TxGNN's protocol removes those drugs before scoring. In a first, stricter conversion our model trained on only \TxhStrictTrainDis{} diseases; full coverage raised its full-ranking MRR by \TxhCovDiffFullMrr{} ($p$\,\TxhCovPwilFullMrr), while the AUROC difference under TxGNN's protocol (ours minus TxGNN) changed only from \TxhStrictDiffAuroc{} to \TxhDiffAuroc. The comparison rests on one split and \TxhN{} diseases.
 
-\begin{table}[!t]
+\begin{table*}[!t]
 \centering
 \caption{TxGNN's autoimmune split (\TxhN{} test diseases), means over seeds. TxGNN protocol: only drugs with $\geq$1 indication are ranked; full ranking: all 7,957 drugs. Lower block: first run with stricter coverage. Published row: TxGNN's repository (different draw).}
 \label{tab:txgnn}
-\small
-\setlength{\tabcolsep}{3pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_txgnn.tex}}
-\end{table}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\input{generated/tab_txgnn.tex}
+\end{table*}
 
 \subsection{Sparsity}
 Rare diseases are sparsely annotated, so we stratify the validation diseases by number of context edges (Fig.~\ref{fig:sparsity}). Accuracy grows with connectivity (Spearman $\rho=\RhoMain$, $p$\,\RhoPMain), and \sysname is ahead of disease $k$NN in every tertile: \TertMainLow{} vs.\ \TertKnnLow{} (sparsest), \TertMainMid{} vs.\ \TertKnnMid{} and \TertMainHigh{} vs.\ \TertKnnHigh{} (densest).
@@ -332,14 +324,14 @@ Table~\ref{tab:targets} and Fig.~\ref{fig:pertarget} show the six targets.
 \textbf{Crohn.} Labelled corticosteroids rank 1--4; many of the 24 labelled drugs rank low, which keeps MRR modest.
 \textbf{AIH.} PrimeKG lists a single off-label drug, while the model ranks prednisolone first in two of three seeds; corticosteroids are standard AIH therapy (prednisone is the comparator in NCT00838214). This is a label gap, so metrics on sparsely labelled diseases are lower bounds.
 
-\begin{table}[!t]
+\begin{table*}[!t]
 \centering
 \caption{Per-target MRR (seed mean) and top predictions (seed 0). $^{*}$\,labelled in PrimeKG.}
 \label{tab:targets}
 \scriptsize
 \setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_targets.tex}}
-\end{table}
+\input{generated/tab_targets.tex}
+\end{table*}
 
 \begin{figure}[!t]
 \centering
@@ -362,11 +354,11 @@ Ranking metrics only reward drugs PrimeKG already labels. To judge the \emph{unl
 
 \begin{table}[!t]
 \centering
-\caption{Evidence for unlabelled candidates: \sysname{} top-20 vs.\ popularity top-20 vs.\ random drugs (six targets).}
+\caption{Evidence for unlabelled candidates: \sysname{} top-20 (Ours, $n$=\ValNovelN) vs.\ popularity top-20 (Pop., $n$=120) vs.\ 20 random drugs per target ($n$=120). Trial grades: A phase $\geq$3, B phase 2, C phase 1 or observational.}
 \label{tab:validation}
 \scriptsize
 \setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_validation.tex}}
+\input{generated/tab_validation.tex}
 \end{table}
 
 \textbf{Clinical trials.} We searched ClinicalTrials.gov (API v2) with disease synonyms. A trial counts only if it names the drug as an intervention, matched by the whole drug name; grades are A (phase $\geq$3), B (phase 2) and C (phase 1 or observational). \ValTrialModel\% of the model's candidates have such a trial (\ValGradeA{} at phase $\geq$3), against \ValTrialPop\% for popularity and \ValTrialRand\% for random drugs. Corticosteroids often appear only as background therapy, premedication or transplant conditioning, so a stricter count keeps only trials whose title names the drug or in which it is in some but not all arms: \ValTrialTestedModel\% (\ValGradeATested{} at phase $\geq$3) against \ValTrialTestedPop\% and \ValTrialTestedRand\%. Examples are amifampridine for MG (NCT03304054), ciprofloxacin (NCT00609973) and clarithromycin (NCT00269386) for Crohn, N-acetylcysteine for SSc (NCT00428883), and ustekinumab for Crohn, FDA-approved in 2016 but unlabelled in PrimeKG; every cited trial was checked by hand. A trial is not proof of benefit: amifampridine helped in MuSK-antibody MG~\cite{bonanno2018amifampridine} but not, in a 2026 trial, in acetylcholine-receptor-antibody MG~\cite{remijn2026amifampridine}. On the transfer model C$_E$, \EcheckDiseases{} of the 12 area diseases have a labelled drug in the top 10, and \EcheckNovelTrial{} of \EcheckNovel{} unlabelled top-10 drugs have a registered trial, e.g.\ canakinumab for CINCA syndrome (NCT00685373).
@@ -377,11 +369,11 @@ Ranking metrics only reward drugs PrimeKG already labels. To judge the \emph{unl
 
 \begin{table}[!t]
 \centering
-\caption{Ranks of drugs approved after the PrimeKG snapshot (top) and of earlier approvals missing from its labels (bottom); mean over three seeds.}
+\caption{Ranks among 7,957 drugs of drugs approved after the PrimeKG snapshot (top) and of earlier approvals missing from its labels (bottom). FDA: approval month; Rank: \sysname, mean over three seeds; $k$NN, Pop.: disease $k$NN and popularity. Drugs that treat no training disease score zero in both baselines and share their random tie-break, hence equal ranks.}
 \label{tab:temporal}
 \scriptsize
 \setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_temporal.tex}}
+\input{generated/tab_temporal.tex}
 \end{table}
 
 \textbf{Mechanism and paths.} \ValDisGeneModel\% of the model's candidates have at least one target among the disease's genes, against \ValDisGenePop\% for popularity and \ValDisGeneRand\% for random drugs; a Reactome immune-pathway enrichment test found nothing significant in any set. Gradient-times-input attribution on every edge message followed by beam search~\cite{zhu2021nbfnet} extracts the paths behind a prediction (Table~\ref{tab:paths}). Cholinesterase inhibitors reach MG through the MuSK gene and neuromuscular-junction disease, amifampridine through Lambert--Eaton myasthenic syndrome, and ursodeoxycholic acid reaches PBC through biliary diseases; ciprofloxacin, however, reaches Crohn through ``mouth disease'' and sinusitis, a weak link. By name, corticosteroids fill \ValSteroidShare\% and antibacterials \ValAntibioticShare\% of all top-20 slots, so lists need expert filtering; a review sheet with all evidence is prepared (\texttt{expert\_review\_sheet.xlsx}).
@@ -397,7 +389,7 @@ Path-based zero-shot transfer works for rare autoimmune diseases that a model ha
 \textbf{Limitations.} (i)~The targets have 1--24 labelled drugs, so per-target metrics are noisy and can be lower bounds (AIH). (ii)~$E$ has 12 diseases and the TxGNN comparison \TxhN; BioPathNet itself was not re-run on a shared split. (iii)~Corticosteroids and antibiotics dominate the lists, partly a popularity bias. (iv)~PrimeKG labels are incomplete, so some true candidates count as false positives. (v)~The few-shot model is not trained with revealed drugs. (vi)~Literature labels were AI-assisted and checked against abstracts, but no clinician has reviewed the candidates; the rankings are hypotheses, not treatment recommendations. Future work: few-shot training, BioPathNet and TxGNN on further shared splits, and clinician review with the prepared sheet.
 
 \section*{Data and Code Availability}
-PrimeKG: Harvard Dataverse, doi:10.7910/DVN/IXA7BM. Code, splits, the audit script, run logs and the analysis that generates every number, table and figure: \url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).
+{\raggedright PrimeKG is available from Harvard Dataverse (doi:10.7910/DVN/IXA7BM). The code, splits, audit script, run logs and the analysis that generates every number, table and figure are at \url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).\par}
 
 \section*{Acknowledgment}
 % IEEE policy requires disclosure of AI-generated content; edit to describe actual use.

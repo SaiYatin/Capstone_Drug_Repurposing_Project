@@ -33,23 +33,22 @@ KG embeddings~\cite{bordes2013transe,yang2015distmult,sun2019rotate} and relatio
 
 \begin{table}[t]
 \centering
-\caption{Related approaches. Inductive: scores diseases with no known drugs. Hold-out: unit removed for zero-shot testing in the original evaluation.}
+\caption{Related approaches. KGE: KG embeddings. Induct.: scores diseases with no known drugs. Hold-out: unit removed for zero-shot testing (area: disease area). Transfer: controlled study of the training source.}
 \label{tab:related}
 \scriptsize
 \setlength{\tabcolsep}{2pt}
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
-Method & Inductive & Explanations & Zero-shot hold-out & Transfer study\\
+Method & Induct. & Explains & Hold-out & Transfer\\
 \midrule
-KG embeddings~\cite{bordes2013transe,yang2015distmult,sun2019rotate} & no & no & -- & no\\
+KGE~\cite{bordes2013transe,yang2015distmult,sun2019rotate} & no & no & -- & no\\
 R-GCN~\cite{schlichtkrull2018rgcn} & no & no & -- & no\\
-TxGNN~\cite{huang2024txgnn} & yes & GraphMask paths & disease area & no\\
-NBFNet~\cite{zhu2021nbfnet} & yes & paths & -- (KG completion) & no\\
-BioPathNet~\cite{hu2026biopathnet} & yes & paths & disease area & no\\
-\textbf{\sysname (ours)} & yes & paths & disease + relatives & matched controls\\
+TxGNN~\cite{huang2024txgnn} & yes & GraphMask & area & no\\
+NBFNet~\cite{zhu2021nbfnet} & yes & paths & -- & no\\
+BioPathNet~\cite{hu2026biopathnet} & yes & paths & area & no\\
+\textbf{\sysname} & yes & paths & disease+family & controlled\\
 \bottomrule
-\end{tabular}}
+\end{tabular}
 \end{table}
 
 \section{Data and Protocol}
@@ -99,7 +98,7 @@ AUPRC & area under precision--recall; rewards known drugs at the top & $\approx$
 \end{tabular}
 \end{table}
 
-\textbf{Reproducibility.} Data: PrimeKG (Harvard Dataverse, doi:10.7910/DVN/IXA7BM) and TxGNN's area files and code (GitHub, commit 0e0203c). Splits: validation seed 0, test seed 1, matched controls seeds 100--102, all stored as JSON. Model: dimension 32, 6 layers, readout MLP $224\!\to\!64\!\to\!1$ (dropout 0.1), prior MLP $4\!\to\!16\!\to\!1$; 68,226 parameters. Training: Adam, learning rate $5\times10^{-3}$, 8 diseases per batch, gradient clipping 1.0, $\leq$20 epochs, patience 6 on validation MRR; seeds 0--2; one NVIDIA T4 (16\,GB) per run, 8.5\,s per step, 5.8\,GB peak. Statistics: 1,000 bootstrap resamples (5,000 for paired tests). Code, splits, logs and the script that generates every number: \url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).
+\textbf{Reproducibility.} Data: PrimeKG (Harvard Dataverse, doi:10.7910/DVN/IXA7BM) and TxGNN's area files and code (GitHub, commit 0e0203c). Splits: validation seed 0, test seed 1, matched controls seeds 100--102, all stored as JSON. Model: dimension 32, 6 layers, readout MLP $224\!\to\!64\!\to\!1$ (dropout 0.1), prior MLP $4\!\to\!16\!\to\!1$; 68,226 parameters. Training: Adam, learning rate $5\times10^{-3}$, 8 diseases per batch, gradient clipping 1.0, $\leq$20 epochs, patience 5--6 on validation MRR (transfer runs: $\leq$60 epochs, patience 10); seeds 0--2; one NVIDIA T4 (16\,GB) per run, 8.5\,s per step, 5.8\,GB peak. Statistics: 1,000 bootstrap resamples (5,000 for paired tests). Code, splits, logs and the script that generates every number: \url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).
 
 \begin{table*}[t]
 \centering
@@ -112,8 +111,8 @@ AUPRC & area under precision--recall; rewards known drugs at the top & $\approx$
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{fig_transfer_curve.pdf}
-\caption{Aim 1: MRR on held-out autoimmune diseases ($E$, left) and the targets (right) per training condition (95\% CIs).}
+\includegraphics[width=\columnwidth]{fig_transfer_curve_col.pdf}
+\caption{Aim 1: MRR on held-out autoimmune diseases ($E$, left) and the targets (right) when training on A$'$, A, D or C$_E$ (95\% CIs).}
 \label{fig:transfer}
 \end{figure}
 
@@ -131,27 +130,27 @@ Path reasoning carries the signal. On the 68 validation diseases, paths alone re
 \subsection{Case studies and validation}
 \begin{table}[t]
 \centering
-\caption{Evidence for unlabelled top-20 candidates (6 targets) and two reference sets.}
+\caption{Evidence for unlabelled top-20 candidates (6 targets) and two reference sets (Ours $n$=\ValNovelN; Pop., Random $n$=120; grades as in the text).}
 \label{tab:validation}
 \scriptsize
 \setlength{\tabcolsep}{2.5pt}
-\resizebox{\columnwidth}{!}{\input{generated/tab_validation.tex}}
+\input{generated/tab_validation.tex}
 \end{table}
 \emph{Known drugs.} Ursodeoxycholic acid ranks first for PBC in every seed, and the four labelled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug for it, while the model's top choice, prednisolone, is standard AIH therapy (comparator in NCT00838214).
-\emph{Unlabelled candidates} (Table~\ref{tab:validation}). We searched ClinicalTrials.gov for each candidate and for two reference sets (popularity top 20; 20 random drugs per target). The drug must be a named intervention, matched by whole name (A: phase $\geq$3, B: phase 2, C: phase 1/observational). A trial \emph{tests} the drug only if its title names it or the drug is in some but not all arms, which excludes background therapy, premedication and transplant conditioning. \ValTrialTestedModel\% of the model's candidates have such a trial (\ValGradeATested{} at phase $\geq$3), against \ValTrialTestedPop\% for popularity and \ValTrialTestedRand\% for random drugs; examples are amifampridine for MG (NCT03304054), ciprofloxacin for Crohn (NCT00609973) and N-acetylcysteine for SSc (NCT00428883), all checked by hand. A trial is not proof of benefit: amifampridine helped in MuSK-antibody MG~\cite{bonanno2018amifampridine} but not in acetylcholine-receptor-antibody MG~\cite{remijn2026amifampridine}. Ustekinumab for Crohn counts as unlabelled only because PrimeKG misses its 2016 approval. PubMed titles were classified with AI assistance, and the abstracts behind every benefit or harm label were re-read (animal-only studies, drugs in every arm and inconclusive results count as neither). PubMed shows benefit for \ValLitSupModel\% of the model's candidates (popularity \ValLitSupPop\%, random \ValLitSupRand\%) and harm or no benefit for \ValLitAgainstModel\% (popularity \ValLitAgainstPop\%): three corticosteroid pairs and N-acetylcysteine for SSc, whereas popularity's are mostly antibiotics that can worsen MG or induce hepatitis.
+\emph{Unlabelled candidates} (Table~\ref{tab:validation}). We searched ClinicalTrials.gov for each candidate and for two reference sets (popularity top 20; 20 random drugs per target). The drug must be a named intervention, matched by whole name (A: phase $\geq$3, B: phase 2, C: phase 1/observational). A trial \emph{tests} the drug only if its title names it or the drug is in some but not all arms, which excludes background therapy, premedication and transplant conditioning. \ValTrialTestedModel\% of the model's candidates have such a trial (\ValGradeATested{} at phase $\geq$3), against \ValTrialTestedPop\% for popularity and \ValTrialTestedRand\% for random drugs; examples are amifampridine for MG (NCT03304054), ciprofloxacin for Crohn (NCT00609973) and N-acetylcysteine for SSc (NCT00428883), all checked by hand. A trial is not proof of benefit: amifampridine helped in MuSK-antibody MG~\cite{bonanno2018amifampridine} but not in acetylcholine-receptor-antibody MG~\cite{remijn2026amifampridine}. Ustekinumab for Crohn counts as unlabelled only because PrimeKG misses its 2016 approval. PubMed titles were classified with AI assistance and every benefit or harm label was re-checked against the abstract. PubMed shows benefit for \ValLitSupModel\% of the model's candidates (popularity \ValLitSupPop\%, random \ValLitSupRand\%) and harm or no benefit for \ValLitAgainstModel\% (popularity \ValLitAgainstPop\%): three corticosteroid pairs and N-acetylcysteine for SSc, whereas popularity's are mostly antibiotics that can worsen MG or induce hepatitis.
 \emph{Temporal check.} Six drugs approved after the PrimeKG snapshot (risankizumab, upadacitinib, guselkumab for Crohn; ravulizumab, rozanolixizumab for MG; elafibranor for PBC) rank at a median of \TempPostMedRank{} of 7,957; \TempPostBetter{} of 6 beat chance, not significant ($p$\,\TempPostP).
 \emph{Explanations and bias.} Gradient-based path extraction~\cite{zhu2021nbfnet} shows, for example, that amifampridine reaches MG through its indication for Lambert--Eaton syndrome, a related neuromuscular-junction disease, and exposes weak links such as ciprofloxacin reaching Crohn through ``mouth disease''. Corticosteroids fill \ValSteroidShare\% and antibacterials \ValAntibioticShare\% of top-20 slots, so the lists need expert filtering.
 
 \section{Discussion and Limitations}
 Our MRR values lie within the range BioPathNet reports on TxGNN's disease areas (about 0.2--0.8)~\cite{hu2026biopathnet}, but splits differ, so we ran TxGNN's own code on its autoimmune split, with our model trained only on edges that TxGNN also trains on (\TxhSeedsTx{} seeds, \TxhN{} diseases). Ranking all drugs, \sysname is significantly better (MRR \TxhOursMrr{} vs.\ \TxhTxMrr, $p$\,\TxhPwilFullMrr): only \TxhTxIndShare\% of TxGNN's top-100 drugs have any indication, against \TxhOursIndShare\% for ours. Ranking only drugs with indications, as TxGNN does, no difference is significant (Recall@100 \TxhOursRecall{} vs.\ \TxhTxRecall; AUROC \TxhOursAuroc{} vs.\ \TxhTxAuroc). BioPathNet was not re-run.
-Limitations: (i) the targets have 1--24 labelled drugs, so their metrics are noisy and can be lower bounds (AIH); (ii) the validation diseases also choose the stopping epoch (\SelGapMainMin--\SelGapMainMax{} MRR of optimism), which the test split avoids; (iii) $E$ has only 12 diseases, and 11-disease models are unstable across seeds; (iv) literature labels have not been reviewed by a clinician; (v) corticosteroids and antibiotics dominate the lists; (vi) predictions are hypotheses for expert review, not treatment advice.
+Limitations: (i) the targets have 1--24 labelled drugs, so their metrics are noisy and can be lower bounds (AIH); (ii) the validation diseases also choose the stopping epoch (\SelGapMainMin--\SelGapMainMax{} MRR of optimism), which the test split avoids; (iii) $E$ has only 12 diseases, and 11-disease models are unstable across seeds; (iv) literature labels have not been reviewed by a clinician; (v) corticosteroids and antibiotics dominate the lists.
 
 \section{Conclusion}
-Path-based zero-shot transfer works for rare autoimmune diseases the model never sees. When training data is scarce, related autoimmune diseases are the most useful source; at full scale the broad pharmacological graph is the better source. \sysname outperforms every baseline evaluated on the same leakage-free split, recovers established therapies and ranks later-approved drugs above chance. Path reasoning drives accuracy, and the prior channel adds stability.
+Path-based zero-shot transfer works for rare autoimmune diseases the model never sees. When training data is scarce, related autoimmune diseases are the most useful source; at full scale the broad pharmacological graph is the better source. \sysname outperforms every baseline evaluated on the same leakage-free split, recovers established therapies, and ranks later-approved drugs high but not significantly above chance. Path reasoning drives accuracy, and the prior channel adds stability.
 
 \section*{Acknowledgment}
 % IEEE policy requires disclosure of AI-generated content; edit to describe actual use.
-Generative AI tools were used to assist with code development, data analysis and language editing; all results were verified by the authors against the released run logs.
+Generative AI tools assisted with code, analysis and language editing; the authors verified all results against the released run logs.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}

@@ -512,7 +512,7 @@ CHAPTERS.append(("IMPLEMENTATION AND PSEUDOCODE", [
     ("p", "The system is implemented as the Python package bpp (about 3,900 lines across 19 modules) with PyTorch for "
           "the model. The model has 68,226 parameters: hidden size 32, six layers, MLP hidden size 64, dropout 0.1. "
           "Training uses Adam with learning rate 5×10⁻³, a batch of eight query diseases (151 steps per epoch), "
-          "gradient clipping at 1.0, at most 20 epochs and early stopping on validation MRR with patience 6. These "
+          "gradient clipping at 1.0, at most 20 epochs and early stopping on validation MRR with patience 5 (6 for the test-split and C_E runs). These "
           "settings were fixed in advance and not tuned. Transfer runs, which train on only 11 diseases (two steps "
           "per epoch), may run up to 60 epochs with patience 10."),
     ("h2", "Building the knowledge graph"),

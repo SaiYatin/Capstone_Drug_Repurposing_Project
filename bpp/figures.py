@@ -243,15 +243,20 @@ def per_target(S, root: Path, out: Path):
 
 
 # ------------------------------------------------------------------ 6. transfer curve (Aim 1)
-def transfer_curve(S, out: Path):
+def transfer_curve(S, out: Path, compact: bool = False):
+    """compact=True: a single-column version (short labels) that stays readable at 3.5 in."""
     T = S.get("transfer", {}).get("conditions", {})
     order = [k for k in ("Actl", "A", "D", "CE") if k in T]
     if not order:
         return
     short = {"Actl": "A$'$ matched\nnon-autoimmune", "A": "A  RA/SLE/MS\n(original design)",
              "D": "D  all non-\nautoimmune", "CE": "C$_E$  all\ndiseases"}
-    fig, axes = plt.subplots(1, 2, figsize=(COL2, 2.3), sharey=True)
-    for ax, (sname, title) in zip(axes, (("E", "12 held-out autoimmune-area diseases"), ("targets", "6 rare targets"))):
+    if compact:
+        short = {"Actl": "A$'$", "A": "A", "D": "D", "CE": "C$_E$"}
+    fig, axes = plt.subplots(1, 2, figsize=(COL1, 1.85) if compact else (COL2, 2.3), sharey=True)
+    titles = (("E", "12 autoimmune-area diseases ($E$)"), ("targets", "6 rare targets")) if compact else \
+        (("E", "12 held-out autoimmune-area diseases"), ("targets", "6 rare targets"))
+    for ax, (sname, title) in zip(axes, titles):
         labelled = set()
         for i, k in enumerate(order):
             c = T[k]
@@ -266,14 +271,17 @@ def transfer_curve(S, out: Path):
                         label=None if lab in labelled else lab)
                 labelled.add(lab)
         ax.set_xticks(range(len(order)))
-        ax.set_xticklabels([f"{short[k]}\n({T[k]['n_train']:,} dis.)" for k in order], fontsize=6.4)
-        ax.set_title(title, fontsize=8, color=INK, loc="left"); ax.set_ylim(0, 1.0)
+        if compact:
+            ax.set_xticklabels([short[k] for k in order], fontsize=7.5)
+        else:
+            ax.set_xticklabels([f"{short[k]}\n({T[k]['n_train']:,} dis.)" for k in order], fontsize=6.4)
+        ax.set_title(title, fontsize=7.5 if compact else 8, color=INK, loc="left"); ax.set_ylim(0, 1.0)
         ax.grid(axis="y", color=GRID, lw=0.5); ax.set_axisbelow(True); ax.tick_params(axis="x", length=0)
-    axes[0].set_ylabel("MRR (95% CI over diseases)")
+    axes[0].set_ylabel("MRR (95% CI)" if compact else "MRR (95% CI over diseases)")
     handles, labels = axes[0].get_legend_handles_labels()
     if handles:
         axes[0].legend(handles, labels, frameon=False, fontsize=6.6, loc="upper left")
-    save(fig, out, "fig_transfer_curve")
+    save(fig, out, "fig_transfer_curve_col" if compact else "fig_transfer_curve")
 
 
 def main():
@@ -284,7 +292,7 @@ def main():
     root, out = Path(a.root), Path(a.out)
     S = json.loads((root / "analysis" / "summary.json").read_text())
     pipeline(out); architecture(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
-    transfer_curve(S, out)
+    transfer_curve(S, out); transfer_curve(S, out, compact=True)
     print("figures ->", out)
 
 

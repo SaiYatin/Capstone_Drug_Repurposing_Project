@@ -1,11 +1,11 @@
 \begin{tabular}{lcccc}
 \toprule
-Variant (seeds) & Valid MRR & Valid H@10 & Targets MRR & $p$ vs full (valid)\\
+Variant & Valid MRR & Valid H@10 & Targets MRR & $p$\\
 \midrule
 Full model ($n$=3) & 0.394$\pm$0.003 & 0.456$\pm$0.018 & 0.475$\pm$0.017 & --\\
-$-$ prior channel (paths only) ($n$=3) & 0.405$\pm$0.013 & 0.479$\pm$0.025 & 0.463$\pm$0.087 & 0.148\\
-$-$ path reasoning (prior only) ($n$=3) & 0.306$\pm$0.003 & 0.354$\pm$0.006 & 0.330$\pm$0.025 & $<$0.001\\
-BRG relation subset ($n$=3) & 0.404$\pm$0.006 & 0.492$\pm$0.004 & 0.504$\pm$0.075 & 0.299\\
-BCE loss instead of listwise ($n$=3) & 0.378$\pm$0.028 & 0.452$\pm$0.017 & 0.320$\pm$0.046 & 0.344\\
+Paths only ($n$=3) & 0.405$\pm$0.013 & 0.479$\pm$0.025 & 0.463$\pm$0.087 & 0.148\\
+Prior only ($n$=3) & 0.306$\pm$0.003 & 0.354$\pm$0.006 & 0.330$\pm$0.025 & $<$0.001\\
+BRG subset ($n$=3) & 0.404$\pm$0.006 & 0.492$\pm$0.004 & 0.504$\pm$0.075 & 0.299\\
+BCE loss ($n$=3) & 0.378$\pm$0.028 & 0.452$\pm$0.017 & 0.320$\pm$0.046 & 0.344\\
 \bottomrule
 \end{tabular}

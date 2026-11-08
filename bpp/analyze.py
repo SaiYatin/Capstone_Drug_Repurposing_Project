@@ -336,9 +336,9 @@ def txgnn_coverage_ablation(full: dict, strict: dict) -> dict:
 
 # ----------------------------------------------------------------------------- reader-friendly metrics table
 KGE_MODELS = ("transe", "distmult", "rotate")
-FS_METHODS = [("bpp", r"\sysname{} (graph edges, no retraining)"), ("bpp_rrf_coind", r"\sysname{} + co-indication (RRF)"),
-              ("disease_knn", "Disease $k$NN (ignores revealed drugs)"), ("co_indication", "Co-indication (item-based CF)"),
-              ("target_similarity", "Target similarity (Jaccard)"), ("knn_plus_coind", "Disease $k$NN + co-indication")]
+FS_METHODS = [("bpp", r"\sysname{} (no retraining)"), ("bpp_rrf_coind", r"\sysname{} + co-ind.\ (RRF)"),
+              ("disease_knn", "Disease $k$NN"), ("co_indication", "Co-indication (CF)"),
+              ("target_similarity", "Target similarity"), ("knn_plus_coind", "Disease $k$NN + co-ind.")]
 FS_WORD = {0: "Zero", 1: "One", 2: "Two", 3: "Three"}
 
 
@@ -348,7 +348,7 @@ def table_fewshot(S):
         return "% few-shot results pending"
     ks = sorted(int(k) for k in F["mean"]["bpp"])
     lines = [r"\begin{tabular}{l" + "c" * len(ks) + "c}", r"\toprule",
-             "Revealed known drugs $k$ & " + " & ".join(f"MRR, $k$={k}" for k in ks) + f" & H@10, $k$={ks[-1]}\\\\",
+             "Method & " + " & ".join(f"$k$={k}" for k in ks) + r" & H@10\\",
              r"\midrule"]
     best = {k: max(F["mean"][m][str(k)]["mrr"] for m, _ in FS_METHODS if m in F["mean"]) for k in ks}
     for m, lab in FS_METHODS:
@@ -633,10 +633,10 @@ def table_transfer(S):
 
 def table_ablation(S):
     lines = [r"\begin{tabular}{lcccc}", r"\toprule",
-             r"Variant (seeds) & Valid MRR & Valid H@10 & Targets MRR & $p$ vs full (valid)\\", r"\midrule"]
-    for g, lab in (("main", "Full model"), ("paths", "$-$ prior channel (paths only)"),
-                   ("prioronly", "$-$ path reasoning (prior only)"), ("brg_main", "BRG relation subset"),
-                   ("bce_main", "BCE loss instead of listwise")):
+             r"Variant & Valid MRR & Valid H@10 & Targets MRR & $p$\\", r"\midrule"]
+    for g, lab in (("main", "Full model"), ("paths", "Paths only"),
+                   ("prioronly", "Prior only"), ("brg_main", "BRG subset"),
+                   ("bce_main", "BCE loss")):
         if g not in S["models"]:
             lines.append(f"{lab} & \\multicolumn{{4}}{{c}}{{pending}}\\\\"); continue
         m = S["models"][g]
@@ -685,17 +685,17 @@ def table_validation(S):
         x = d.get(g)
         x = x["share"] if isinstance(x, dict) else x
         return "--" if x is None else f"{100 * x:.0f}\\%"
-    rows = [("Trial names the drug, grade A--C", V["v2_trial_grade_A_to_C_among_novel"]),
-            ("Trial names the drug, phase $\\geq$2 (A--B)", V["v2_trial_grade_A_or_B_among_novel"]),
-            ("Trial tests the drug, grade A--C", V["v2_trial_tested_A_to_C_among_novel"]),
-            ("Trial tests the drug, phase $\\geq$2 (A--B)", V["v2_trial_tested_A_or_B_among_novel"]),
-            ("Any PubMed co-mention", V["v3_any_pubmed_hit_among_novel"]),
-            ("PubMed: evidence of benefit", V["v3_supporting_among_novel"]),
-            ("PubMed: harm or no benefit", V["v3_against_among_novel"]),
-            ("$\\geq$1 drug target among disease genes", V["v5_share_any_disease_gene_target"])]
+    rows = [("Trial names drug, A--C", V["v2_trial_grade_A_to_C_among_novel"]),
+            ("Trial names drug, A--B", V["v2_trial_grade_A_or_B_among_novel"]),
+            ("Trial tests drug, A--C", V["v2_trial_tested_A_to_C_among_novel"]),
+            ("Trial tests drug, A--B", V["v2_trial_tested_A_or_B_among_novel"]),
+            ("PubMed co-mention", V["v3_any_pubmed_hit_among_novel"]),
+            ("PubMed: benefit", V["v3_supporting_among_novel"]),
+            ("PubMed: harm/no benefit", V["v3_against_among_novel"]),
+            ("Target among disease genes", V["v5_share_any_disease_gene_target"])]
     n = {g: V["v2_trial_grade_A_to_C_among_novel"][g]["n"] for g in ("model", "random", "popularity")}
     lines = [r"\begin{tabular}{lccc}", r"\toprule",
-             f"Evidence for unlabelled candidates & \\sysname{{}} top-20 ($n$={n['model']}) & Popularity top-20 ($n$={n['popularity']}) & Random ($n$={n['random']})\\\\",
+             r"Evidence & Ours & Pop. & Random\\",
              r"\midrule"]
     for lab, d in rows:
         lines.append(f"{lab} & {pct(d, 'model')} & {pct(d, 'popularity')} & {pct(d, 'random')}\\\\")
@@ -707,7 +707,7 @@ def table_temporal(S):
     rows = [r for r in S.get("validation", {}).get("temporal_rows", []) if r.get("in_primekg") and not r.get("already_labelled")]
     short = {"Primary Biliary Cholangitis": "PBC", "Myasthenia Gravis": "MG", "Crohn Disease": "Crohn", "Systemic Sclerosis": "SSc"}
     lines = [r"\begin{tabular}{llccccc}", r"\toprule",
-             r"Drug & Target & FDA approval & \sysname{} rank & Top \% & $k$NN rank & Popularity rank\\", r"\midrule"]
+             r"Drug & Target & FDA & Rank & Top\,\% & $k$NN & Pop.\\", r"\midrule"]
     for post in (True, False):
         for r in sorted([r for r in rows if r.get("post_snapshot") == post], key=lambda r: r["mean_rank"]):
             lines.append(f"{r['primekg_name']} & {short.get(r['target'], r['target'])} & {str(r.get('fda_approval'))[:7]} & "
@@ -729,7 +729,8 @@ def table_paths(S, picks=(("Myasthenia Gravis", "Pyridostigmine"), ("Primary Bil
         p = e["paths"][0]
         steps = [p["nodes"][0]] + [f"$\\xrightarrow{{\\text{{{rel.replace('_', ' ').replace('^-1', '$^{-1}$').replace('->', r'$\to$')}}}}}$ {n}"
                                    for rel, n in zip(p["relations"], p["nodes"][1:])]
-        lines.append(r"\textbf{" + f"{d} for {t}" + r"}: " + " ".join(steps).replace("&", r"\&") + r"\\[2pt]")
+        lines.append(r"\raggedright\textbf{" + f"{d} for {t}" + r"}: " + " ".join(steps).replace("&", r"\&")
+                     + r"\tabularnewline[3pt]")
     lines += [r"\bottomrule", r"\end{tabular}"]
     return "\n".join(lines)
 

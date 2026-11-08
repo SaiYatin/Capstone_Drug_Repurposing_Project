@@ -1,12 +1,12 @@
 \begin{tabular}{lccccc}
 \toprule
-Revealed known drugs $k$ & MRR, $k$=0 & MRR, $k$=1 & MRR, $k$=2 & MRR, $k$=3 & H@10, $k$=3\\
+Method & $k$=0 & $k$=1 & $k$=2 & $k$=3 & H@10\\
 \midrule
-\sysname{} (graph edges, no retraining) & \textbf{0.313} & 0.362 & 0.419 & 0.533 & 0.709\\
-\sysname{} + co-indication (RRF) & \textbf{0.313} & \textbf{0.384} & \textbf{0.476} & \textbf{0.607} & 0.767\\
-Disease $k$NN (ignores revealed drugs) & 0.231 & 0.261 & 0.310 & 0.412 & 0.494\\
-Co-indication (item-based CF) & 0.080 & 0.297 & 0.416 & 0.539 & 0.673\\
-Target similarity (Jaccard) & 0.080 & 0.032 & 0.046 & 0.041 & 0.114\\
-Disease $k$NN + co-indication & 0.227 & 0.347 & 0.443 & 0.574 & 0.729\\
+\sysname{} (no retraining) & \textbf{0.313} & 0.362 & 0.419 & 0.533 & 0.709\\
+\sysname{} + co-ind.\ (RRF) & \textbf{0.313} & \textbf{0.384} & \textbf{0.476} & \textbf{0.607} & 0.767\\
+Disease $k$NN & 0.231 & 0.261 & 0.310 & 0.412 & 0.494\\
+Co-indication (CF) & 0.080 & 0.297 & 0.416 & 0.539 & 0.673\\
+Target similarity & 0.080 & 0.032 & 0.046 & 0.041 & 0.114\\
+Disease $k$NN + co-ind. & 0.227 & 0.347 & 0.443 & 0.574 & 0.729\\
 \bottomrule
 \end{tabular}
