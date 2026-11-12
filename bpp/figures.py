@@ -131,7 +131,7 @@ def architecture_tall(out: Path):
     """Same diagram as `architecture`, laid out top-to-bottom for a single-column page (SmartCom / Springer).
     Drawn at the printed width, so every label is printed at its font size (>= 6 pt)."""
     with plt.rc_context({"mathtext.fontset": "stix"}):
-        H = 5.26
+        H = 3.78   # compact: fits on a page together with the text before the Method heading
         fig, ax = plt.subplots(figsize=(SPRINGER_W, H))
         ax.set_xlim(0, 100); ax.set_ylim(0, 100 * H / SPRINGER_W); ax.axis("off")
         fig.subplots_adjust(0, 0, 1, 1)
@@ -140,57 +140,57 @@ def architecture_tall(out: Path):
             ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.2,rounding_size=0.9",
                                         fc="#eef4fc" if accent else "#f6f6f4", ec=ACCENT if accent else MUTED, lw=0.8))
             if body:
-                ax.text(x + w / 2, y + h - 1.2, title, ha="center", va="top", fontsize=7.6, weight="bold", color=INK)
-                ax.text(x + w / 2, y + h - 5.0, body, ha="center", va="top", fontsize=fs, color=INK2, linespacing=1.3)
+                ax.text(x + w / 2, y + h - 1.0, title, ha="center", va="top", fontsize=7.6, weight="bold", color=INK)
+                ax.text(x + w / 2, y + h - 4.6, body, ha="center", va="top", fontsize=fs, color=INK2, linespacing=1.3)
             else:
-                ax.text(x + w / 2, y + h / 2, title, ha="center", va="center", fontsize=fs, color=INK, linespacing=1.25)
+                ax.text(x + w / 2, y + h / 2, title, ha="center", va="center", fontsize=fs, color=INK, linespacing=1.3)
 
         def arrow(x0, y0, x1, y1, color=INK2, ls="-"):
             ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), arrowstyle="-|>", mutation_scale=7, lw=0.8,
                                          color=color, linestyle=ls, shrinkA=0, shrinkB=0))
 
         # ---- inputs (top row)
-        top = 92.6
-        box(0.5, top, 30, 16, "Query", "disease $u$ (held out),\nrelation = indication\n$\\mathbf{q}\\in\\mathbb{R}^{32}$ (learned)")
-        box(35, top, 30, 16, "Boundary", "$\\mathbf{h}^{(0)}_v=\\mathbf{q}$ if $v=u$,\nelse $\\mathbf{0}$")
-        box(69.5, top, 30, 16, "Message graph", "context edges, 27 types\n+ inverses; drug edges\nof training diseases;\nbatch families removed")
-        arrow(30.9, top + 8, 34.6, top + 8)
+        top, th = 62.4, 15.6
+        box(0.5, top, 30, th, "Query", "disease $u$ (held out),\nrelation = indication\n$\\mathbf{q}\\in\\mathbb{R}^{32}$ (learned)")
+        box(35, top, 30, th, "Boundary", "$\\mathbf{h}^{(0)}_v=\\mathbf{q}$ if $v=u$,\nelse $\\mathbf{0}$")
+        box(69.5, top, 30, th, "Message graph", "context edges, 27 types\n+ inverses; drug edges\nof training diseases;\nbatch families removed")
+        arrow(30.9, top + th / 2, 34.6, top + th / 2)
 
-        # ---- NBF layer, expanded (middle)
-        y0, y1 = 29, 88.6
+        # ---- NBF layer, expanded (middle): three steps
+        y0, y1 = 21.4, 58.8
         ax.add_patch(FancyBboxPatch((0.5, y0), 99, y1 - y0, boxstyle="round,pad=0.2,rounding_size=1.2",
                                     fc="white", ec=ACCENT, lw=0.9, linestyle=(0, (4, 2))))
-        ax.text(2.5, y1 - 1.0, "Path channel: NBF layer $\\ell=1,\\dots,6$", ha="left", va="top", fontsize=7.8,
+        ax.text(2.5, y1 - 0.8, "Path channel: NBF layer $\\ell=1,\\dots,6$", ha="left", va="top", fontsize=7.8,
                 weight="bold", color=ACCENT)
-        ys = [75.5, 65.5, 55.5, 45.5, 35.5]
-        texts = ["DistMult messages over all relations (RelSpMM)\n"
-                 "$\\mathbf{m}_v=\\sum_r\\,(A_r\\mathbf{H}^{(\\ell-1)})_v\\odot\\mathbf{w}_r$",
-                 "mean over in-degree, plus the boundary as a self-message\n"
-                 "$\\bar{\\mathbf{m}}_v=\\mathbf{m}_v/\\deg_v+\\mathbf{h}^{(0)}_v$",
-                 "PNA-style degree scaling, concatenated with the old state\n"
-                 "$\\mathbf{z}_v=[\\,\\mathbf{h}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,\\log(1+\\deg_v)/c\\,]\\in\\mathbb{R}^{96}$",
-                 "Linear $96\\rightarrow32$, LayerNorm, ReLU",
-                 "shortcut: $\\mathbf{h}^{(\\ell)}_v=\\mathrm{ReLU}(\\mathrm{LN}(W\\mathbf{z}_v))+\\mathbf{h}^{(\\ell-1)}_v$"]
-        for y, t in zip(ys, texts):
-            box(10, y, 76, 7.6, t, accent=True, fs=6.6)
-        for ya, yb in zip(ys[:-1], ys[1:]):
-            arrow(48, ya - 0.2, 48, yb + 7.8)
-        # repeat loop: from the last block back to the first, outside the blocks
-        ax.plot([86.2, 90.5, 90.5], [39.3, 39.3, 79.3], color=ACCENT, lw=0.8)
-        arrow(90.5, 79.3, 86.4, 79.3, color=ACCENT)
-        ax.text(91.5, 59.3, "$\\times6$", fontsize=8.5, color=ACCENT, weight="bold", ha="left", va="center")
-        arrow(50, top - 0.4, 50, 83.3)                       # boundary -> first layer
-        arrow(84.5, top - 0.4, 70, 83.3, ls=(0, (2, 1.5)))   # graph matrices A_r -> messages
-        ax.text(48, 32.4, "$A_r$: sparse matrix per relation; $A_r\\mathbf{H}$ recomputed in backward",
+        steps = [(47.4, 6.8, "DistMult messages over all relations (RelSpMM)\n"
+                             "$\\mathbf{m}_v=\\sum_r\\,(A_r\\mathbf{H}^{(\\ell-1)})_v\\odot\\mathbf{w}_r$"),
+                 (35.6, 8.8, "mean + boundary self-message; PNA-style degree scaling, concatenation\n"
+                             "$\\bar{\\mathbf{m}}_v=\\mathbf{m}_v/\\deg_v+\\mathbf{h}^{(0)}_v$\n"
+                             "$\\mathbf{z}_v=[\\,\\mathbf{h}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,\\log(1+\\deg_v)/c\\,]\\in\\mathbb{R}^{96}$"),
+                 (25.8, 6.8, "Linear $96\\rightarrow32$, LayerNorm, ReLU, shortcut\n"
+                             "$\\mathbf{h}^{(\\ell)}_v=\\mathrm{ReLU}(\\mathrm{LN}(W\\mathbf{z}_v))+\\mathbf{h}^{(\\ell-1)}_v$")]
+        for y, h, t in steps:
+            box(10, y, 76, h, t, accent=True, fs=6.6)
+        for (ya, _, _), (yb, hb, _) in zip(steps[:-1], steps[1:]):
+            arrow(48, ya - 0.2, 48, yb + hb + 0.2)
+        # repeat loop: from the last step back to the first, outside the boxes
+        ly0, ly1 = steps[2][0] + steps[2][1] / 2, steps[0][0] + steps[0][1] / 2
+        ax.plot([86.2, 90.5, 90.5], [ly0, ly0, ly1], color=ACCENT, lw=0.8)
+        arrow(90.5, ly1, 86.4, ly1, color=ACCENT)
+        ax.text(91.5, (ly0 + ly1) / 2, "$\\times6$", fontsize=8.5, color=ACCENT, weight="bold", ha="left", va="center")
+        arrow(50, top - 0.4, 50, 54.4)                       # boundary -> first step
+        arrow(84.5, top - 0.4, 70, 54.4, ls=(0, (2, 1.5)))   # graph matrices A_r -> messages
+        ax.text(48, 23.5, "$A_r$: sparse matrix per relation; $A_r\\mathbf{H}$ recomputed in backward",
                 ha="center", va="center", fontsize=6.2, color=MUTED, style="italic")
 
         # ---- readout, prior channel, score (bottom row)
-        box(0.5, 1, 30, 24, "Path readout", "for every drug $d$:\n$[\\mathbf{h}^{(1)}_d;\\dots;\\mathbf{h}^{(6)}_d;\\mathbf{q}]\\in\\mathbb{R}^{224}$\nMLP $224\\rightarrow64\\rightarrow1$\n(ReLU, dropout 0.1)\n$\\rightarrow s_{\\mathrm{path}}(u,d)$", accent=True)
-        box(69.5, 1, 30, 24, "Prior channel", "4 priors for $(u,d)$,\nown family excluded:\npopularity, disease $k$NN,\nshared targets,\nautoimmune frequency\nMLP $4\\rightarrow16\\rightarrow1$\n$\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True)
-        box(35, 1, 30, 24, "Score", "$s(u,d)=s_{\\mathrm{path}}+s_{\\mathrm{prior}}$\nsoftmax over all\n7,957 drugs\ntraining: listwise loss,\nmean $-\\log p$ of known drugs\ninference: full ranking\n68,226 parameters")
-        arrow(15.75, y0 - 0.4, 15.75, 25.4)                  # NBF output -> path readout
-        arrow(30.9, 13, 34.6, 13)                            # path readout -> score
-        arrow(69.1, 13, 65.4, 13)                            # prior channel -> score
+        bh = 17.4
+        box(0.5, 0.8, 30, bh, "Path readout", "for every drug $d$:\n$[\\mathbf{h}^{(1)}_d;\\dots;\\mathbf{h}^{(6)}_d;\\mathbf{q}]\\in\\mathbb{R}^{224}$\nMLP $224\\rightarrow64\\rightarrow1$ (ReLU,\ndropout 0.1) $\\rightarrow s_{\\mathrm{path}}(u,d)$", accent=True)
+        box(69.5, 0.8, 30, bh, "Prior channel", "4 priors for $(u,d)$, own\nfamily excluded: popularity,\ndisease $k$NN, shared targets,\nautoimmune frequency;\nMLP $4\\rightarrow16\\rightarrow1$ $\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True)
+        box(35, 0.8, 30, bh, "Score", "$s(u,d)=s_{\\mathrm{path}}+s_{\\mathrm{prior}}$,\nsoftmax over 7,957 drugs;\nlistwise loss: mean $-\\log p$\nof known drugs; full ranking;\n68,226 parameters")
+        arrow(15.75, y0 - 0.4, 15.75, 0.8 + bh + 0.4)        # NBF output -> path readout
+        arrow(30.9, 0.8 + bh / 2, 34.6, 0.8 + bh / 2)        # path readout -> score
+        arrow(69.1, 0.8 + bh / 2, 65.4, 0.8 + bh / 2)        # prior channel -> score
         save(fig, out, "fig_architecture_tall")
 
 
@@ -313,8 +313,9 @@ def per_target(S, root: Path, out: Path):
 
 
 # ------------------------------------------------------------------ 6. transfer curve (Aim 1)
-def transfer_curve(S, out: Path, compact: bool = False):
-    """compact=True: a single-column version (short labels) that stays readable at 3.5 in."""
+def transfer_curve(S, out: Path, compact: bool = False, width: float = 0.0, name: str = ""):
+    """compact=True: a single-column version (short labels) that stays readable at 3.5 in.
+    width>0 (with compact): drawn at that printed width with short titles, labels >= 6 pt (SmartCom half-width)."""
     T = S.get("transfer", {}).get("conditions", {})
     order = [k for k in ("Actl", "A", "D", "CE") if k in T]
     if not order:
@@ -323,9 +324,11 @@ def transfer_curve(S, out: Path, compact: bool = False):
              "D": "D  all non-\nautoimmune", "CE": "C$_E$  all\ndiseases"}
     if compact:
         short = {"Actl": "A$'$", "A": "A", "D": "D", "CE": "C$_E$"}
-    fig, axes = plt.subplots(1, 2, figsize=(COL1, 1.85) if compact else (COL2, 2.3), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(width, 1.6) if width else (COL1, 1.85) if compact else (COL2, 2.3), sharey=True)
     titles = (("E", "12 autoimmune-area diseases ($E$)"), ("targets", "6 rare targets")) if compact else \
         (("E", "12 held-out autoimmune-area diseases"), ("targets", "6 rare targets"))
+    if width:
+        titles = (("E", "$E$ (12 diseases)"), ("targets", "Targets (6)"))
     for ax, (sname, title) in zip(axes, titles):
         labelled = set()
         for i, k in enumerate(order):
@@ -342,7 +345,8 @@ def transfer_curve(S, out: Path, compact: bool = False):
                 labelled.add(lab)
         ax.set_xticks(range(len(order)))
         if compact:
-            ax.set_xticklabels([short[k] for k in order], fontsize=7.5)
+            ax.set_xticklabels([short[k] for k in order], fontsize=7 if width else 7.5)
+            ax.tick_params(axis="y", labelsize=6.5 if width else 8)
         else:
             ax.set_xticklabels([f"{short[k]}\n({T[k]['n_train']:,} dis.)" for k in order], fontsize=6.4)
         ax.set_title(title, fontsize=7.5 if compact else 8, color=INK, loc="left"); ax.set_ylim(0, 1.0)
@@ -351,7 +355,7 @@ def transfer_curve(S, out: Path, compact: bool = False):
     handles, labels = axes[0].get_legend_handles_labels()
     if handles:
         axes[0].legend(handles, labels, frameon=False, fontsize=6.6, loc="upper left")
-    save(fig, out, "fig_transfer_curve_col" if compact else "fig_transfer_curve")
+    save(fig, out, name or ("fig_transfer_curve_col" if compact else "fig_transfer_curve"))
 
 
 def main():
@@ -363,6 +367,7 @@ def main():
     S = json.loads((root / "analysis" / "summary.json").read_text())
     pipeline(out); architecture(out); architecture_tall(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
     transfer_curve(S, out); transfer_curve(S, out, compact=True)
+    transfer_curve(S, out, compact=True, width=0.47 * SPRINGER_W, name="fig_transfer_curve_half")  # SmartCom
     print("figures ->", out)
 
 
