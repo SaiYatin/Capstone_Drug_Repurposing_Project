@@ -3,7 +3,6 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{rotating}
 \usepackage{xspace}
 \usepackage[table]{xcolor}
 \usepackage[authoryear,round]{natbib}
@@ -40,20 +39,7 @@ Knowledge graphs (KGs) link drugs, proteins, phenotypes and diseases, and link p
 \textbf{What is new relative to BioPathNet.} \sysname uses the design of BioPathNet~\citep{hu2026biopathnet}, a Neural Bellman--Ford network (NBFNet)~\citep{zhu2021nbfnet} (Fig.~\ref{fig:arch}); we do not claim a new architecture. Our contributions are (i)~a \emph{strict-family} zero-shot protocol that also hides each test disease's related diseases, motivated by a leakage audit of our own earlier pipeline; (ii)~a \emph{controlled transfer study} that compares autoimmune source diseases with label-matched non-autoimmune controls; (iii)~a full-graph implementation whose memory is linear in the number of nodes, plus a prior channel that stabilises training; (iv)~a head-to-head run of TxGNN's own code, showing that the winner depends on the candidate set; and (v)~external checks of new candidates against trials, PubMed and later approvals.
 
 \section{Related Work}
-\begin{sidewaysfigure}
-\centering
-\includegraphics[width=0.98\textheight]{fig_architecture.pdf}
-\caption{\sysname architecture. Six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; a path MLP and a prior MLP (four leakage-free priors) give two scores whose sum ranks all 7,957 drugs.}
-\label{fig:arch}
-\end{sidewaysfigure}
-
-\textbf{Biomedical KGs.} Hetionet combined 29 public resources and ranked candidates with metapath features~\citep{himmelstein2017hetionet}. DRKG~\citep{drkg2020} and PrimeKG~\citep{chandak2023primekg} followed; PrimeKG separates indications, contraindications and off-label uses for 17,080 diseases. Recent reviews trace KG-based repurposing from feature-based learning to graph neural networks~\citep{wei2025kgreview,kumar2025scoping}.
-
-\textbf{Embeddings and GNNs.} KG embeddings~\citep{bordes2013transe,yang2015distmult,sun2019rotate} and relational GCNs~\citep{schlichtkrull2018rgcn} have been used for COVID-19~\citep{zhang2021covidkg,morselli2021covid}, rare diseases~\citep{sosa2020rare} and general repurposing~\citep{gao2022kgpredict,bang2023dreamwalk}. Their reported gains depend strongly on how the dataset is built and evaluated~\citep{bonner2022kge,ali2021pykeen}, and because they learn one vector per node from its training edges, they degrade for diseases without known drugs~\citep{huang2024txgnn}.
-
-\textbf{Zero-shot and path-based models.} TxGNN handles such diseases with disease-similarity metric learning and reports 49.2\% better zero-shot indication prediction than eight other methods~\citep{huang2024txgnn}. NBFNet scores a (disease, drug) pair by Bellman--Ford message passing that starts at the disease, which makes it inductive and explainable by paths~\citep{zhu2021nbfnet}; BioPathNet adapts it to biomedical KGs and evaluates it on TxGNN's disease-area splits~\citep{hu2026biopathnet}. Recent rare-disease studies instead build disease-specific graphs and explainable GNNs~\citep{papadimas2026neuromuscular,perdomo2026rdexplainer}.
-
-\textbf{Leakage.} Redundant triples and loose splits overestimate repurposing accuracy~\citep{briere2026leakage,kapoor2023leakage}, and under heavy class imbalance AUROC can look high for weak rankings~\citep{saito2015prc}. Table~\ref{tab:related} positions \sysname: it reuses BioPathNet's model and adds a stricter hold-out unit and a controlled transfer study.
+\textbf{Biomedical KGs.} Hetionet combined 29 public resources and ranked candidates with metapath features~\citep{himmelstein2017hetionet}. DRKG~\citep{drkg2020} and PrimeKG~\citep{chandak2023primekg} followed; PrimeKG separates indications, contraindications and off-label uses for 17,080 diseases. Recent reviews trace KG-based repurposing from feature-based learning to graph neural networks~\citep{wei2025kgreview,kumar2025scoping}; Table~\ref{tab:related} compares the approaches discussed below.
 
 \begin{table}[tb]
 \centering
@@ -75,6 +61,12 @@ BioPathNet & yes & paths & area & no\\
 \end{tabular}
 \end{table}
 
+\textbf{Embeddings and GNNs.} KG embeddings~\citep{bordes2013transe,yang2015distmult,sun2019rotate} and relational GCNs~\citep{schlichtkrull2018rgcn} have been used for COVID-19~\citep{zhang2021covidkg,morselli2021covid}, rare diseases~\citep{sosa2020rare} and general repurposing~\citep{gao2022kgpredict,bang2023dreamwalk}. Their reported gains depend strongly on how the dataset is built and evaluated~\citep{bonner2022kge,ali2021pykeen}, and because they learn one vector per node from its training edges, they degrade for diseases without known drugs~\citep{huang2024txgnn}.
+
+\textbf{Zero-shot and path-based models.} TxGNN handles such diseases with disease-similarity metric learning and reports 49.2\% better zero-shot indication prediction than eight other methods~\citep{huang2024txgnn}. NBFNet scores a (disease, drug) pair by Bellman--Ford message passing that starts at the disease, which makes it inductive and explainable by paths~\citep{zhu2021nbfnet}; BioPathNet adapts it to biomedical KGs and evaluates it on TxGNN's disease-area splits~\citep{hu2026biopathnet}. Recent rare-disease studies instead build disease-specific graphs and explainable GNNs~\citep{papadimas2026neuromuscular,perdomo2026rdexplainer}.
+
+\textbf{Leakage.} Redundant triples and loose splits overestimate repurposing accuracy~\citep{briere2026leakage,kapoor2023leakage}, and under heavy class imbalance AUROC can look high for weak rankings~\citep{saito2015prc}. Table~\ref{tab:related} positions \sysname: it reuses BioPathNet's model and adds a stricter hold-out unit and a controlled transfer study.
+
 \section{Data and Protocol}
 \textbf{Knowledge graph and labels.} We use PrimeKG~\citep{chandak2023primekg}: 129,375 nodes (7,957 drugs, 17,080 diseases), 4,007,433 edges of 27 non-therapeutic relation types and 42,631 drug--disease pairs of three types: \emph{indication} (the drug is labelled for the disease), \emph{off-label use} and \emph{contraindication}. We call indications and off-label uses \emph{known drugs}, and use ``approved'' only for regulatory approvals that we checked ourselves. Validation and test positives are indications only. The rare targets have so few that their labels are indications plus off-label uses: PBC 1+0, SSc 3+2, Sj\"ogren 2+10, AIH 0+1, MG 4+3, Crohn 16+8. Contraindications are never positives. With so few labels, the targets are case studies; statistical claims rest on larger held-out sets.
 
@@ -84,10 +76,17 @@ BioPathNet & yes & paths & area & no\\
 
 \textbf{Transfer conditions (Aim~1).} The test set $E$ holds the 12 diseases with indications in TxGNN's autoimmune area (descendants of DOID:417~\citep{huang2024txgnn}) that are neither targets nor RA/SLE/MS relatives. $E$ and the targets are held out in every condition: \textbf{A} trains on the RA/SLE/MS families only (11 diseases, 161 indications); \textbf{A$'$} on three random sets of 11 non-autoimmune diseases, each matched to A disease by disease on number of indications; \textbf{D} on all \TrDNTrain{} non-autoimmune diseases; \textbf{C$_E$} on all \TrCENTrain{} diseases except $E$. A vs.\ A$'$ asks whether autoimmune data helps when data is scarce, C$_E$ vs.\ D whether it still helps at scale.
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig_architecture_tall.pdf}
+\caption{\sysname architecture. Six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; a path MLP and a prior MLP (four leakage-free priors) give two scores whose sum ranks all 7,957 drugs.}
+\label{fig:arch}
+\end{figure}
+
 \section{Method}
-\textbf{Path channel.} For a query disease $u$, node states start from an indicator, $h^{(0)}_v=\mathbb{1}[v=u]\,q$, with a learned query vector $q$, and pass through $L=6$ layers
+\textbf{Path channel.} For a query disease $u$, node states start from an indicator, $h^{(0)}_v=\mathbf{1}[v=u]\,q$, with a learned query vector $q$, and pass through $L=6$ layers
 \begin{align}
-m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)} h^{(t-1)}_x \odot w^{(t)}_r \;+\; \mathbb{1}[v=u]\,q,\\
+m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)} h^{(t-1)}_x \odot w^{(t)}_r \;+\; \mathbf{1}[v=u]\,q,\\
 h^{(t)}_v &= h^{(t-1)}_v + \mathrm{ReLU}\big(\mathrm{LN}\big(W^{(t)}[h^{(t-1)}_v;\, m^{(t)}_v;\, a_v m^{(t)}_v]\big)\big),
 \end{align}
 with DistMult relation vectors $w_r$ and a PNA-style degree scaler $a_v$~\citep{corso2020pna}. An MLP over $[h^{(1)}_d;\dots;h^{(L)}_d;q]$ scores every drug $d$ in one pass (Fig.~\ref{fig:arch}). The messages use one sparse matrix per relation and a custom autograd function that recomputes products in the backward pass, so memory grows with nodes, not edges.
@@ -117,14 +116,41 @@ AUPRC & area under precision--recall; rewards known drugs at the top & $\approx$
 
 \textbf{Reproducibility.} Data: PrimeKG (Harvard Dataverse, \url{https://doi.org/10.7910/DVN/IXA7BM}) and TxGNN's area files and code (GitHub, commit 0e0203c). Splits: validation seed 0, test seed 1, matched controls seeds 100--102, all stored as JSON. Model: dimension 32, 6 layers, readout MLP $224\!\to\!64\!\to\!1$ (dropout 0.1), prior MLP $4\!\to\!16\!\to\!1$; 68,226 parameters. Training: Adam, learning rate $5\times10^{-3}$, 8 diseases per batch, gradient clipping 1.0, $\leq$20 epochs, patience 5--6 on validation MRR (transfer runs: $\leq$60 epochs, patience 10); seeds 0--2; one NVIDIA T4 (16\,GB) per run, 8.5\,s per step, 5.8\,GB peak. Statistics: 1,000 bootstrap resamples (5,000 for paired tests). Code, splits, logs and the script that generates every number: \url{https://github.com/SaiYatin/Capstone_Drug_Repurposing_Project} (branch \texttt{bpp-v3}).
 
-\begin{sidewaystable}
+\begin{table}[!htbp]
 \centering
-\caption{Aim 2: ranking of all 7,957 drugs. Any@10: diseases with a known indication in the top 10 (random \RandExpAnyTenTest\%); H@$k$: known drugs in the top $k$; random AUPRC $\approx$0.001. Test: seed means (\TestSeeds{} seeds; KG embeddings \KgeRotateSeeds).}
+\caption{Aim 2: ranking of all 7,957 drugs. Any@10: diseases with a known indication in the top 10 (random \RandExpAnyTenTest\%); H@$k$: known drugs in the top $k$; random AUPRC $\approx$0.001. AUROC hard/deg.: against drugs indicated for autoimmune diseases / degree-matched drugs. Test diseases were never used for model selection. Test: seed means (\TestSeeds{} seeds; KG embeddings \KgeRotateSeeds).}
 \label{tab:main}
 \scriptsize
 \setlength{\tabcolsep}{3pt}
-\input{generated/tab_metrics.tex}
-\end{sidewaystable}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lcccccccccc}
+\toprule
+Method & Any@10 & H@1 & H@10 & H@50 & AUROC & AUROC & AUROC & AUPRC & MRR & Mean\\
+ & & & & & & hard & deg. & & & rank\\
+\midrule
+\multicolumn{11}{l}{\textit{Test (68 diseases)}}\\
+Random & 1\% & 0.000 & 0.005 & 0.006 & 0.453 & 0.471 & 0.500 & 0.002 & 0.001 & 4,349\\
+Popularity & 19\% & 0.042 & 0.070 & 0.267 & 0.885 & 0.562 & 0.812 & 0.084 & 0.062 & 918\\
+TransE & 27\% & 0.019 & 0.061 & 0.146 & 0.880 & 0.674 & 0.773 & 0.050 & 0.037 & 952\\
+DistMult & 22\% & 0.025 & 0.089 & 0.193 & 0.852 & 0.638 & 0.732 & 0.060 & 0.047 & 1,175\\
+RotatE & 27\% & 0.052 & 0.094 & 0.209 & 0.878 & 0.723 & 0.785 & 0.089 & 0.071 & 971\\
+Disease $k$NN & 57\% & 0.347 & 0.459 & 0.583 & 0.907 & 0.721 & 0.859 & 0.429 & 0.392 & 742\\
+\textbf{\sysname} & 76\% & 0.435 & 0.637 & 0.727 & 0.959 & 0.862 & 0.924 & 0.556 & 0.501 & 329\\
+\midrule
+\multicolumn{11}{l}{\textit{Validation (68 diseases)}}\\
+Random & 1\% & 0.000 & 0.002 & 0.004 & 0.471 & 0.488 & 0.490 & 0.002 & 0.001 & 4,205\\
+Popularity & 15\% & 0.034 & 0.049 & 0.188 & 0.830 & 0.476 & 0.760 & 0.069 & 0.046 & 1,355\\
+Disease $k$NN & 44\% & 0.239 & 0.350 & 0.490 & 0.860 & 0.661 & 0.822 & 0.313 & 0.281 & 1,118\\
+\textbf{\sysname} & 56\% & 0.353 & 0.456 & 0.601 & 0.938 & 0.799 & 0.886 & 0.424 & 0.394 & 495\\
+\midrule
+\multicolumn{11}{l}{\textit{Rare targets (6 diseases)}}\\
+Random & 0\% & 0.000 & 0.000 & 0.000 & 0.476 & 0.488 & 0.389 & 0.002 & 0.001 & 4,165\\
+Popularity & 50\% & 0.062 & 0.148 & 0.162 & 0.905 & 0.460 & 0.766 & 0.116 & 0.099 & 755\\
+Disease $k$NN & 67\% & 0.243 & 0.424 & 0.725 & 0.962 & 0.778 & 0.917 & 0.407 & 0.296 & 299\\
+\textbf{\sysname} & 83\% & 0.396 & 0.648 & 0.695 & 0.982 & 0.892 & 0.954 & 0.594 & 0.475 & 141\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[tb]
 \centering

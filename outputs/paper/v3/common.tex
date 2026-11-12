@@ -6,6 +6,13 @@
 \usepackage{cite}
 \usepackage{xspace}
 \usepackage[table]{xcolor}
+% Local builds use XeTeX (tectonic), which has no Type-1 Times: without this, IEEEtran's Times silently falls back
+% to a font without bold/italic. TeX Gyre Termes is a Times clone; pdfLaTeX (Overleaf) skips this block.
+\usepackage{iftex}
+\ifXeTeX
+\usepackage[no-math]{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\fi
 \graphicspath{{figures/}}
 
 % System name in one place: change here to rename everywhere.

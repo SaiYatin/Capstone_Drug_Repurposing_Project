@@ -1,6 +1,24 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
+\usepackage{cuted}
+% cuted.sty bug: \check@floats swaps #1 and ##1 (box vs. dimen), which crashes a strip when a float is queued
+% at the top of the page; corrected definition:
+\makeatletter
+\def\check@floats#1{%
+    \begingroup
+        \global#1\z@
+        \def\@elt##1{%
+            \setbox\@tempboxa\vbox{\copy ##1\vskip\floatsep}%
+            \global\advance#1 by\ht\@tempboxa
+            }%
+        \ifx\@toplist\@empty \else \@toplist \fi
+        \ifx\@botlist\@empty \else \@botlist \fi
+    \endgroup
+    }
+\makeatother
 \input{common.tex}
+\usepackage{capt-of}
+\usepackage{float}
 
 \begin{document}
 
@@ -29,23 +47,9 @@ Knowledge graphs (KGs) link drugs, proteins, phenotypes and diseases, and link p
 \textbf{What is new relative to BioPathNet.} \sysname uses the design of BioPathNet~\cite{hu2026biopathnet}, a Neural Bellman--Ford network (NBFNet)~\cite{zhu2021nbfnet} (Fig.~\ref{fig:arch}); we do not claim a new architecture. Our contributions are (i)~a \emph{strict-family} zero-shot protocol that also hides each test disease's related diseases, motivated by a leakage audit of our own earlier pipeline; (ii)~a \emph{controlled transfer study} that compares autoimmune source diseases with label-matched non-autoimmune controls; (iii)~a full-graph implementation whose memory is linear in the number of nodes, plus a prior channel that stabilises training; (iv)~a head-to-head run of TxGNN's own code, showing that the winner depends on the candidate set; and (v)~external checks of new candidates against trials, PubMed and later approvals.
 
 \section{Related Work}
-% a two-column figure can only appear at the top of a later page: defined here, it lands before the Method section
-\begin{figure*}[t]
-\centering
-\includegraphics[width=0.92\textwidth]{fig_architecture.pdf}
-\caption{\sysname architecture. Six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; a path MLP and a prior MLP (four leakage-free priors) give two scores whose sum ranks all 7,957 drugs.}
-\label{fig:arch}
-\end{figure*}
+\textbf{Biomedical KGs.} Hetionet combined 29 public resources and ranked candidates with metapath features~\cite{himmelstein2017hetionet}. DRKG~\cite{drkg2020} and PrimeKG~\cite{chandak2023primekg} followed; PrimeKG separates indications, contraindications and off-label uses for 17,080 diseases. Recent reviews trace KG-based repurposing from feature-based learning to graph neural networks~\cite{wei2025kgreview,kumar2025scoping}; Table~\ref{tab:related} compares the approaches discussed below.
 
-\textbf{Biomedical KGs.} Hetionet combined 29 public resources and ranked candidates with metapath features~\cite{himmelstein2017hetionet}. DRKG~\cite{drkg2020} and PrimeKG~\cite{chandak2023primekg} followed; PrimeKG separates indications, contraindications and off-label uses for 17,080 diseases. Recent reviews trace KG-based repurposing from feature-based learning to graph neural networks~\cite{wei2025kgreview,kumar2025scoping}.
-
-\textbf{Embeddings and GNNs.} KG embeddings~\cite{bordes2013transe,yang2015distmult,sun2019rotate} and relational GCNs~\cite{schlichtkrull2018rgcn} have been used for COVID-19~\cite{zhang2021covidkg,morselli2021covid}, rare diseases~\cite{sosa2020rare} and general repurposing~\cite{gao2022kgpredict,bang2023dreamwalk}. Their reported gains depend strongly on how the dataset is built and evaluated~\cite{bonner2022kge,ali2021pykeen}, and because they learn one vector per node from its training edges, they degrade for diseases without known drugs~\cite{huang2024txgnn}.
-
-\textbf{Zero-shot and path-based models.} TxGNN handles such diseases with disease-similarity metric learning and reports 49.2\% better zero-shot indication prediction than eight other methods~\cite{huang2024txgnn}. NBFNet scores a (disease, drug) pair by Bellman--Ford message passing that starts at the disease, which makes it inductive and explainable by paths~\cite{zhu2021nbfnet}; BioPathNet adapts it to biomedical KGs and evaluates it on TxGNN's disease-area splits~\cite{hu2026biopathnet}. Recent rare-disease studies instead build disease-specific graphs and explainable GNNs~\cite{papadimas2026neuromuscular,perdomo2026rdexplainer}.
-
-\textbf{Leakage.} Redundant triples and loose splits overestimate repurposing accuracy~\cite{briere2026leakage,kapoor2023leakage}, and under heavy class imbalance AUROC can look high for weak rankings~\cite{saito2015prc}. Table~\ref{tab:related} positions \sysname: it reuses BioPathNet's model and adds a stricter hold-out unit and a controlled transfer study.
-
-\begin{table}[!h]
+\begin{table}[H]
 \centering
 \caption{Related approaches. KGE: KG embeddings. Induct.: scores diseases with no known drugs. Hold-out: unit removed for zero-shot testing (area: disease area). Transfer: controlled study of the training source.}
 \label{tab:related}
@@ -65,6 +69,12 @@ BioPathNet~\cite{hu2026biopathnet} & yes & paths & area & no\\
 \end{tabular}
 \end{table}
 
+\textbf{Embeddings and GNNs.} KG embeddings~\cite{bordes2013transe,yang2015distmult,sun2019rotate} and relational GCNs~\cite{schlichtkrull2018rgcn} have been used for COVID-19~\cite{zhang2021covidkg,morselli2021covid}, rare diseases~\cite{sosa2020rare} and general repurposing~\cite{gao2022kgpredict,bang2023dreamwalk}. Their reported gains depend strongly on how the dataset is built and evaluated~\cite{bonner2022kge,ali2021pykeen}, and because they learn one vector per node from its training edges, they degrade for diseases without known drugs~\cite{huang2024txgnn}.
+
+\textbf{Zero-shot and path-based models.} TxGNN handles such diseases with disease-similarity metric learning and reports 49.2\% better zero-shot indication prediction than eight other methods~\cite{huang2024txgnn}. NBFNet scores a (disease, drug) pair by Bellman--Ford message passing that starts at the disease, which makes it inductive and explainable by paths~\cite{zhu2021nbfnet}; BioPathNet adapts it to biomedical KGs and evaluates it on TxGNN's disease-area splits~\cite{hu2026biopathnet}. Recent rare-disease studies instead build disease-specific graphs and explainable GNNs~\cite{papadimas2026neuromuscular,perdomo2026rdexplainer}.
+
+\textbf{Leakage.} Redundant triples and loose splits overestimate repurposing accuracy~\cite{briere2026leakage,kapoor2023leakage}, and under heavy class imbalance AUROC can look high for weak rankings~\cite{saito2015prc}. Table~\ref{tab:related} positions \sysname: it reuses BioPathNet's model and adds a stricter hold-out unit and a controlled transfer study.
+
 \section{Data and Protocol}
 \textbf{Knowledge graph and labels.} We use PrimeKG~\cite{chandak2023primekg}: 129,375 nodes (7,957 drugs, 17,080 diseases), 4,007,433 edges of 27 non-therapeutic relation types and 42,631 drug--disease pairs of three types: \emph{indication} (the drug is labelled for the disease), \emph{off-label use} and \emph{contraindication}. We call indications and off-label uses \emph{known drugs}, and use ``approved'' only for regulatory approvals that we checked ourselves. Validation and test positives are indications only. The rare targets have so few that their labels are indications plus off-label uses: PBC 1+0, SSc 3+2, Sj\"ogren 2+10, AIH 0+1, MG 4+3, Crohn 16+8. Contraindications are never positives. With so few labels, the targets are case studies; statistical claims rest on larger held-out sets.
 
@@ -74,10 +84,18 @@ BioPathNet~\cite{hu2026biopathnet} & yes & paths & area & no\\
 
 \textbf{Transfer conditions (Aim~1).} The test set $E$ holds the 12 diseases with indications in TxGNN's autoimmune area (descendants of DOID:417~\cite{huang2024txgnn}) that are neither targets nor RA/SLE/MS relatives. $E$ and the targets are held out in every condition: \textbf{A} trains on the RA/SLE/MS families only (11 diseases, 161 indications); \textbf{A$'$} on three random sets of 11 non-autoimmune diseases, each matched to A disease by disease on number of indications; \textbf{D} on all \TrDNTrain{} non-autoimmune diseases; \textbf{C$_E$} on all \TrCENTrain{} diseases except $E$. A vs.\ A$'$ asks whether autoimmune data helps when data is scarce, C$_E$ vs.\ D whether it still helps at scale.
 
+% full-width figure set exactly here (cuted's strip), so it sits right before the Method section
+\begin{strip}
+\centering
+\includegraphics[width=0.86\textwidth]{fig_architecture.pdf}
+\captionof{figure}{\sysname architecture. Six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; a path MLP and a prior MLP (four leakage-free priors) give two scores whose sum ranks all 7,957 drugs.}
+\label{fig:arch}
+\end{strip}
+
 \section{Method}
-\textbf{Path channel.} For a query disease $u$, node states start from an indicator, $h^{(0)}_v=\mathbb{1}[v=u]\,q$, with a learned query vector $q$, and pass through $L=6$ layers
+\textbf{Path channel.} For a query disease $u$, node states start from an indicator, $h^{(0)}_v=\mathbf{1}[v=u]\,q$, with a learned query vector $q$, and pass through $L=6$ layers
 \begin{align}
-m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)} h^{(t-1)}_x \odot w^{(t)}_r \;+\; \mathbb{1}[v=u]\,q,\\
+m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)} h^{(t-1)}_x \odot w^{(t)}_r \;+\; \mathbf{1}[v=u]\,q,\\
 h^{(t)}_v &= h^{(t-1)}_v + \mathrm{ReLU}\big(\mathrm{LN}\big(W^{(t)}[h^{(t-1)}_v;\, m^{(t)}_v;\, a_v m^{(t)}_v]\big)\big),
 \end{align}
 with DistMult relation vectors $w_r$ and a PNA-style degree scaler $a_v$~\cite{corso2020pna}. An MLP over $[h^{(1)}_d;\dots;h^{(L)}_d;q]$ scores every drug $d$ in one pass (Fig.~\ref{fig:arch}). The messages use one sparse matrix per relation and a custom autograd function that recomputes products in the backward pass, so memory grows with nodes, not edges.

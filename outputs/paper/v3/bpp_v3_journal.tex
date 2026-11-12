@@ -183,9 +183,9 @@ For each test disease with at least four indications (\FsN{} of 68) we draw a ra
 \end{figure*}
 
 \subsection{Path channel}
-For a query $(u, r_q)$, NBFNet~\cite{zhu2021nbfnet} computes a representation of every node $v$ that summarises all paths from $u$ to $v$. Node states start from an indicator boundary condition, $h^{(0)}_v=\mathbb{1}[v=u]\,q$, with $q=\mathrm{emb}(r_q)\in\mathbb{R}^{d}$, and each of $L$ layers aggregates relation-specific messages:
+For a query $(u, r_q)$, NBFNet~\cite{zhu2021nbfnet} computes a representation of every node $v$ that summarises all paths from $u$ to $v$. Node states start from an indicator boundary condition, $h^{(0)}_v=\mathbf{1}[v=u]\,q$, with $q=\mathrm{emb}(r_q)\in\mathbb{R}^{d}$, and each of $L$ layers aggregates relation-specific messages:
 \begin{align}
-m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)\in\mathcal{E}} h^{(t-1)}_x \odot w^{(t)}_{r_q,r} \;+\; \mathbb{1}[v=u]\,q,\label{eq:msg}\\
+m^{(t)}_v &= \frac{1}{\deg v}\sum_{(x,r,v)\in\mathcal{E}} h^{(t-1)}_x \odot w^{(t)}_{r_q,r} \;+\; \mathbf{1}[v=u]\,q,\label{eq:msg}\\
 h^{(t)}_v &= h^{(t-1)}_v + \mathrm{ReLU}\Big(\mathrm{LN}\big(W^{(t)}\big[h^{(t-1)}_v;\, m^{(t)}_v;\, a_v\, m^{(t)}_v\big]\big)\Big).\label{eq:upd}
 \end{align}
 Here $w^{(t)}_{r_q,r}$ are query-dependent DistMult relation vectors~\cite{yang2015distmult}, $a_v=\log(\deg v+1)/\overline{\log(\deg+1)}$ is a PNA-style degree amplifier~\cite{corso2020pna} and LN is layer normalisation. The path logit of drug $d$ is $s_\text{path}(u,d)=\mathrm{MLP}([h^{(1)}_d;\dots;h^{(L)}_d;q])$. Because propagation starts at $u$, one forward pass scores all 7,957 drugs, and a disease whose drugs were never seen is handled like any other node.
@@ -213,7 +213,7 @@ All baselines use the same protocol and family exclusions. \emph{Random}; \emph{
 For disease $u$ with positives $P_u$, each positive $d$ is ranked among all drugs after removing the other positives (filtered rank~\cite{bordes2013transe}):
 \begin{align}
 \mathrm{MRR}_u&=\frac{1}{|P_u|}\sum_{d\in P_u}\frac{1}{\mathrm{rank}_u(d)},\\
-\mathrm{H@}k_u&=\frac{1}{|P_u|}\sum_{d\in P_u}\mathbb{1}[\mathrm{rank}_u(d)\le k],
+\mathrm{H@}k_u&=\frac{1}{|P_u|}\sum_{d\in P_u}\mathbf{1}[\mathrm{rank}_u(d)\le k],
 \end{align}
 macro-averaged over diseases~\cite{voorhees1999trec}. We also report Any@10, the share of diseases with at least one known drug in the top 10; AUROC and AUPRC over all drugs; AUROC against \emph{hard} negatives (drugs indicated for other autoimmune diseases); and AUROC against \emph{degree-matched} negatives. With about 7 positives among 7,957 drugs, random ranking gives MRR and AUPRC of about 0.001 and Any@10 of \RandExpAnyTenTest\%. AUROC hardly reflects this imbalance~\cite{saito2015prc}, so it is not a headline metric (Section~\ref{sec:auroc}). MRR is easiest to read through ranks: \sysname's test MRR of \TestMrr{} corresponds to a median known-drug rank of \MedRankTest, with \RankOneShareTest\% of known drugs ranked first.
 

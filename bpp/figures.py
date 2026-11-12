@@ -124,6 +124,76 @@ def architecture(out: Path):
         save(fig, out, "fig_architecture")
 
 
+SPRINGER_W = 4.8  # Springer LNNS text width (12.2 cm) in inches
+
+
+def architecture_tall(out: Path):
+    """Same diagram as `architecture`, laid out top-to-bottom for a single-column page (SmartCom / Springer).
+    Drawn at the printed width, so every label is printed at its font size (>= 6 pt)."""
+    with plt.rc_context({"mathtext.fontset": "stix"}):
+        H = 5.26
+        fig, ax = plt.subplots(figsize=(SPRINGER_W, H))
+        ax.set_xlim(0, 100); ax.set_ylim(0, 100 * H / SPRINGER_W); ax.axis("off")
+        fig.subplots_adjust(0, 0, 1, 1)
+
+        def box(x, y, w, h, title, body="", accent=False, fs=6.6):
+            ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.2,rounding_size=0.9",
+                                        fc="#eef4fc" if accent else "#f6f6f4", ec=ACCENT if accent else MUTED, lw=0.8))
+            if body:
+                ax.text(x + w / 2, y + h - 1.2, title, ha="center", va="top", fontsize=7.6, weight="bold", color=INK)
+                ax.text(x + w / 2, y + h - 5.0, body, ha="center", va="top", fontsize=fs, color=INK2, linespacing=1.3)
+            else:
+                ax.text(x + w / 2, y + h / 2, title, ha="center", va="center", fontsize=fs, color=INK, linespacing=1.25)
+
+        def arrow(x0, y0, x1, y1, color=INK2, ls="-"):
+            ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), arrowstyle="-|>", mutation_scale=7, lw=0.8,
+                                         color=color, linestyle=ls, shrinkA=0, shrinkB=0))
+
+        # ---- inputs (top row)
+        top = 92.6
+        box(0.5, top, 30, 16, "Query", "disease $u$ (held out),\nrelation = indication\n$\\mathbf{q}\\in\\mathbb{R}^{32}$ (learned)")
+        box(35, top, 30, 16, "Boundary", "$\\mathbf{h}^{(0)}_v=\\mathbf{q}$ if $v=u$,\nelse $\\mathbf{0}$")
+        box(69.5, top, 30, 16, "Message graph", "context edges, 27 types\n+ inverses; drug edges\nof training diseases;\nbatch families removed")
+        arrow(30.9, top + 8, 34.6, top + 8)
+
+        # ---- NBF layer, expanded (middle)
+        y0, y1 = 29, 88.6
+        ax.add_patch(FancyBboxPatch((0.5, y0), 99, y1 - y0, boxstyle="round,pad=0.2,rounding_size=1.2",
+                                    fc="white", ec=ACCENT, lw=0.9, linestyle=(0, (4, 2))))
+        ax.text(2.5, y1 - 1.0, "Path channel: NBF layer $\\ell=1,\\dots,6$", ha="left", va="top", fontsize=7.8,
+                weight="bold", color=ACCENT)
+        ys = [75.5, 65.5, 55.5, 45.5, 35.5]
+        texts = ["DistMult messages over all relations (RelSpMM)\n"
+                 "$\\mathbf{m}_v=\\sum_r\\,(A_r\\mathbf{H}^{(\\ell-1)})_v\\odot\\mathbf{w}_r$",
+                 "mean over in-degree, plus the boundary as a self-message\n"
+                 "$\\bar{\\mathbf{m}}_v=\\mathbf{m}_v/\\deg_v+\\mathbf{h}^{(0)}_v$",
+                 "PNA-style degree scaling, concatenated with the old state\n"
+                 "$\\mathbf{z}_v=[\\,\\mathbf{h}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,;\\,\\bar{\\mathbf{m}}_v\\,\\log(1+\\deg_v)/c\\,]\\in\\mathbb{R}^{96}$",
+                 "Linear $96\\rightarrow32$, LayerNorm, ReLU",
+                 "shortcut: $\\mathbf{h}^{(\\ell)}_v=\\mathrm{ReLU}(\\mathrm{LN}(W\\mathbf{z}_v))+\\mathbf{h}^{(\\ell-1)}_v$"]
+        for y, t in zip(ys, texts):
+            box(10, y, 76, 7.6, t, accent=True, fs=6.6)
+        for ya, yb in zip(ys[:-1], ys[1:]):
+            arrow(48, ya - 0.2, 48, yb + 7.8)
+        # repeat loop: from the last block back to the first, outside the blocks
+        ax.plot([86.2, 90.5, 90.5], [39.3, 39.3, 79.3], color=ACCENT, lw=0.8)
+        arrow(90.5, 79.3, 86.4, 79.3, color=ACCENT)
+        ax.text(91.5, 59.3, "$\\times6$", fontsize=8.5, color=ACCENT, weight="bold", ha="left", va="center")
+        arrow(50, top - 0.4, 50, 83.3)                       # boundary -> first layer
+        arrow(84.5, top - 0.4, 70, 83.3, ls=(0, (2, 1.5)))   # graph matrices A_r -> messages
+        ax.text(48, 32.4, "$A_r$: sparse matrix per relation; $A_r\\mathbf{H}$ recomputed in backward",
+                ha="center", va="center", fontsize=6.2, color=MUTED, style="italic")
+
+        # ---- readout, prior channel, score (bottom row)
+        box(0.5, 1, 30, 24, "Path readout", "for every drug $d$:\n$[\\mathbf{h}^{(1)}_d;\\dots;\\mathbf{h}^{(6)}_d;\\mathbf{q}]\\in\\mathbb{R}^{224}$\nMLP $224\\rightarrow64\\rightarrow1$\n(ReLU, dropout 0.1)\n$\\rightarrow s_{\\mathrm{path}}(u,d)$", accent=True)
+        box(69.5, 1, 30, 24, "Prior channel", "4 priors for $(u,d)$,\nown family excluded:\npopularity, disease $k$NN,\nshared targets,\nautoimmune frequency\nMLP $4\\rightarrow16\\rightarrow1$\n$\\rightarrow s_{\\mathrm{prior}}(u,d)$", accent=True)
+        box(35, 1, 30, 24, "Score", "$s(u,d)=s_{\\mathrm{path}}+s_{\\mathrm{prior}}$\nsoftmax over all\n7,957 drugs\ntraining: listwise loss,\nmean $-\\log p$ of known drugs\ninference: full ranking\n68,226 parameters")
+        arrow(15.75, y0 - 0.4, 15.75, 25.4)                  # NBF output -> path readout
+        arrow(30.9, 13, 34.6, 13)                            # path readout -> score
+        arrow(69.1, 13, 65.4, 13)                            # prior channel -> score
+        save(fig, out, "fig_architecture_tall")
+
+
 # ------------------------------------------------------------------ 2. main results (dot + CI)
 METHODS = [("base", "random", "Random"), ("base", "popularity", "Popularity"),
            ("base", "shared_targets", "Shared targets"), ("base", "disease_knn", "Disease kNN (best baseline)"),
@@ -291,7 +361,7 @@ def main():
     a = ap.parse_args()
     root, out = Path(a.root), Path(a.out)
     S = json.loads((root / "analysis" / "summary.json").read_text())
-    pipeline(out); architecture(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
+    pipeline(out); architecture(out); architecture_tall(out); main_results(S, out); auroc_vs_mrr(S, out); sparsity(S, out); per_target(S, root, out)
     transfer_curve(S, out); transfer_curve(S, out, compact=True)
     print("figures ->", out)
 
