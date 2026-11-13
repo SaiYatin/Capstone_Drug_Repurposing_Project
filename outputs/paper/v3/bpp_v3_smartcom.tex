@@ -36,9 +36,10 @@
 \predisplaypenalty=0
 \title{BioPathNet++ for Autoimmune Diseases: Path-Based Transfer Learning for Rare Disease Drug Repurposing}
 \titlerunning{BioPathNet++ for Rare Autoimmune Disease Drug Repurposing}
-\author{TVNS Yatin\textsuperscript{*} \and Srijan Jha \and A~Charan~KR \and Praveen Kumar Yadav \and Priyanka~H}
-\authorrunning{TVNS Yatin et al.}
-\tocauthor{TVNS Yatin, Srijan Jha, A Charan KR, Praveen Kumar Yadav, Priyanka H}
+\author{Venkata Naga Sai Yatin Tatikonda\textsuperscript{*} \and Srijan Jha \and Charan Kumar Reddy Arikeri \and Praveen Kumar Yadav \and Priyanka~H}
+% Springer: names in full, given names first, surname last; running head = initials + surname
+\authorrunning{V. N. S. Y. Tatikonda et al.}
+\tocauthor{Venkata Naga Sai Yatin Tatikonda, Srijan Jha, Charan Kumar Reddy Arikeri, Praveen Kumar Yadav, Priyanka H}
 \institute{Department of Computer Science and Engineering, PES University, Bengaluru, India\\
 \textsuperscript{*}Corresponding author: \email{sumakkiyatin@gmail.com}}
 \maketitle
@@ -119,7 +120,8 @@ with DistMult relation vectors $w_r$ in (\ref{eq:msg}) and a PNA-style degree sc
 \emph{Scarce data} (Fig.~\ref{fig:transfer}). Trained only on the RA/SLE/MS families (A), \sysname reaches MRR \TrAEMrr{} on $E$, against \TrActlEMrr{} with label-matched non-autoimmune diseases (A$'$): a significant difference of \DiffTrAActlE{} (CI \DiffLoTrAActlE{} to \DiffHiTrAActlE; $p$\,\PwilTrAActlE; better on \WinsTrAActlE{} of 12), also with final checkpoints ($p$\,\PwilTrAActlELast). The targets (\TrATargetsMrr{} vs.\ \TrActlTargetsMrr; $p$\,\PwilTrAActlTargets, $n=6$) and disease $k$NN (\TrAEKnnMrr{} vs.\ \TrActlEKnnMrr) point the same way. What transfers is a drug-class prior: the A model ranks the same corticosteroids first for every target. With paths only, both stay near the floor (\TrAPathsEMrr{} vs.\ \TrActlPathsEMrr), so the advantage comes from the prior channel.
 
 \begin{table}[tb]
-\begin{minipage}[b]{0.535\textwidth}
+\begin{minipage}[t]{0.535\textwidth}
+\vspace{0pt}
 \centering
 \captionof{table}{Metrics (per disease over all 7,957 drugs, then averaged) and their value for a random ranking.}
 \label{tab:metricdefs}
@@ -137,7 +139,8 @@ AUPRC & area under precision--recall; rewards known drugs at the top & $\approx$
 \bottomrule
 \end{tabular}
 \end{minipage}\hfill
-\begin{minipage}[b]{0.44\textwidth}
+\begin{minipage}[t]{0.44\textwidth}
+\vspace{0pt}
 \centering
 \includegraphics[width=\linewidth]{fig_transfer_curve_half.pdf}
 \captionof{figure}{Aim 1: MRR on $E$ (left) and the targets (right) by training set (95\% CIs).}
@@ -190,9 +193,9 @@ Paths carry the signal: on validation, paths alone reach MRR \PathsValidMrr{}, t
 
 \subsection{Case Studies and Validation}
 \emph{Known drugs.} Ursodeoxycholic acid ranks first for PBC in every seed; the four labeled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug; the top choice, prednisolone, is standard therapy (comparator in NCT00838214).
-\emph{Unlabeled candidates} (Table~\ref{tab:validation}). We searched ClinicalTrials.gov for each candidate and two reference sets (popularity top 20; 20 random drugs per target), requiring a whole-name match to a named intervention (A: phase $\geq$3, B: 2, C: 1/observational). A trial \emph{tests} the drug only if its title names it or the drug is in some but not all arms (not as background therapy). Of the model's candidates, \ValTrialTestedModel\% have such a trial (\ValGradeATested{} at phase $\geq$3), against \ValTrialTestedPop\% (popularity) and \ValTrialTestedRand\% (random); e.g.\ amifampridine for MG (NCT03304054) and ciprofloxacin for Crohn (NCT00609973), checked by hand. A trial is no proof of benefit: amifampridine helped in MuSK-antibody MG~\citep{bonanno2018amifampridine} but not in AChR-antibody MG~\citep{remijn2026amifampridine}. Ustekinumab--Crohn is unlabeled only because PrimeKG misses its 2016 approval. AI-assisted PubMed title labels were each re-checked against the abstract. PubMed shows benefit for \ValLitSupModel\% of candidates (popularity \ValLitSupPop\%, random \ValLitSupRand\%) and harm or no benefit for \ValLitAgainstModel\% (popularity \ValLitAgainstPop\%): three corticosteroid pairs and N-acetylcysteine for SSc; popularity's are mostly antibiotics that can worsen MG or induce hepatitis.
+\emph{Unlabeled candidates} (Table~\ref{tab:validation}). We searched ClinicalTrials.gov for each candidate and two reference sets (popularity top 20; 20 random drugs per target), requiring a whole-name match to a named intervention (A: phase $\geq$3, B: 2, C: 1/observational). A trial \emph{tests} the drug only if its title names it or the drug is in some but not all arms (not as background therapy). Of the model's candidates, \ValTrialTestedModel\% have such a trial (\ValGradeATested{} at phase $\geq$3), against \ValTrialTestedPop\% (popularity) and \ValTrialTestedRand\% (random); e.g.\ amifampridine--MG (NCT03304054), ciprofloxacin--Crohn (NCT00609973), both checked by hand. A trial is no proof of benefit: amifampridine helped in MuSK-antibody MG~\citep{bonanno2018amifampridine} but not in AChR-antibody MG~\citep{remijn2026amifampridine}. Ustekinumab--Crohn is a PrimeKG label gap (approved 2016). AI-assisted PubMed labels were each re-checked against the abstract. PubMed shows benefit for \ValLitSupModel\% of candidates (popularity \ValLitSupPop\%, random \ValLitSupRand\%) and harm or no benefit for \ValLitAgainstModel\% (popularity \ValLitAgainstPop\%): three corticosteroid pairs and N-acetylcysteine for SSc; popularity's are mostly antibiotics that can worsen MG or induce hepatitis.
 
-\begin{table}[tb]
+\begin{table}[t]
 \centering
 \caption{Evidence for unlabeled top-20 candidates (Ours $n$=\ValNovelN; others $n$=120).}
 \label{tab:validation}
@@ -209,8 +212,8 @@ Trial tests drug, A--B & 12\% & 8\% & 0\% & Drug targets a disease gene & 17\% &
 \bottomrule
 \end{tabular}
 \end{table}
-\emph{Temporal check.} Six drugs approved after the PrimeKG snapshot (risankizumab, upadacitinib, guselkumab for Crohn; ravulizumab, rozanolixizumab for MG; elafibranor for PBC) rank at a median of \TempPostMedRank{} of 7,957 (\TempPostBetter{} of 6 above chance; $p$\,\TempPostP).
-\emph{Explanations and bias.} Gradient-based path extraction~\citep{zhu2021nbfnet} shows that amifampridine reaches MG through its indication for the related Lambert--Eaton syndrome and exposes weak links such as ciprofloxacin reaching Crohn through ``mouth disease''. Corticosteroids fill \ValSteroidShare\% and antibacterials \ValAntibioticShare\% of top-20 slots, so the lists need expert filtering.
+\emph{Temporal check.} Six drugs approved after the PrimeKG snapshot (three for Crohn, two for MG, one for PBC) rank at a median of \TempPostMedRank{} of 7,957 (\TempPostBetter{} of 6 above chance; $p$\,\TempPostP).
+\emph{Explanations and bias.} Gradient-based path extraction~\citep{zhu2021nbfnet} shows that amifampridine reaches MG through the related Lambert--Eaton syndrome and exposes weak links such as ciprofloxacin reaching Crohn through ``mouth disease''. Corticosteroids fill \ValSteroidShare\% and antibacterials \ValAntibioticShare\% of top-20 slots, so the lists need expert filtering.
 
 \section{Discussion and Limitations}
 BioPathNet reports MRR of about 0.2--0.8 on TxGNN's disease areas~\citep{hu2026biopathnet}, but on other splits; we therefore ran TxGNN's own code on its autoimmune split, training our model only on edges TxGNN also trains on (\TxhSeedsTx{} seeds, \TxhN{} diseases). Ranking all drugs, \sysname is significantly better (MRR \TxhOursMrr{} vs.\ \TxhTxMrr, $p$\,\TxhPwilFullMrr): only \TxhTxIndShare\% of TxGNN's top-100 drugs have any indication, against \TxhOursIndShare\% for ours. Ranking only drugs with indications, as TxGNN does, nothing is significant (Recall@100 \TxhOursRecall{} vs.\ \TxhTxRecall; AUROC \TxhOursAuroc{} vs.\ \TxhTxAuroc). BioPathNet was not re-run.
@@ -219,7 +222,7 @@ Limitations: (i) the targets have 1--24 labeled drugs, so their metrics are nois
 \section{Conclusion}
 Path-based zero-shot transfer works for rare autoimmune diseases the model never sees: related autoimmune diseases are the best source when data is scarce, the broad pharmacological graph at full scale. \sysname outperforms every baseline evaluated on the same leakage-free split, recovers established therapies, and ranks later-approved drugs high but not significantly above chance. Paths drive accuracy; the prior channel adds stability.
 
-\paragraph{Acknowledgments.} Generative AI tools assisted with code, analysis and language editing; the authors verified all results against the released run logs.
+\paragraph{Acknowledgments.} Generative AI tools (Anthropic's Claude) assisted with code, data analysis, and drafting and editing of the text; the authors designed the study, ran all experiments and verified every result against the run logs.
 
 \bibliographystyle{spmpsci}
 \bibliography{references}

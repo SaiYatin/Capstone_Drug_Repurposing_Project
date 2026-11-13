@@ -184,6 +184,8 @@ CONDENSE = [
     (r"The path channel uses no node features or text embeddings: nodes differ only by their edges (\texttt{bpp/build\_primekg.py}).",
      r"The path channel uses no node features: nodes differ only by their edges."),
     (r" The best source thus depends on data size.", r""),
+    (r"(risankizumab, upadacitinib, guselkumab for Crohn; ravulizumab, rozanolixizumab for MG; elafibranor for PBC)",
+     r"(three for Crohn, two for MG, one for PBC)"),
     (r"The targets point the same way (\TrATargetsMrr{} vs.\ \TrActlTargetsMrr; $p$\,\PwilTrAActlTargets, $n=6$), and so does disease $k$NN (\TrAEKnnMrr{} vs.\ \TrActlEKnnMrr).",
      r"The targets (\TrATargetsMrr{} vs.\ \TrActlTargetsMrr; $p$\,\PwilTrAActlTargets, $n=6$) and disease $k$NN (\TrAEKnnMrr{} vs.\ \TrActlEKnnMrr) point the same way."),
     (r"rank at a median of \TempPostMedRank{} of 7,957; \TempPostBetter{} of 6 beat chance, not significant ($p$\,\TempPostP).",
@@ -208,15 +210,15 @@ CONDENSE = [
     (r"MRR~\citep{voorhees1999trec} rewards known drugs at the very top: on the test split, MRR \TestMrr{} corresponds to a median known-drug rank of \MedRankTest, with \RankOneShareTest\% ranked first.",
      r"On the test split, MRR~\citep{voorhees1999trec} is \TestMrr{}; the median known-drug rank is \MedRankTest, and \RankOneShareTest\% are ranked first."),
     (r"PubMed titles were classified with AI assistance; every benefit or harm label was re-checked against the abstract.",
-     r"AI-assisted PubMed title labels were each re-checked against the abstract."),
+     r"AI-assisted PubMed labels were each re-checked against the abstract."),
     (r"(excluding background therapy, premedication and conditioning)", r"(not as background therapy)"),
     (r"Ustekinumab for Crohn counts as unlabeled only because PrimeKG misses its 2016 approval.",
-     r"Ustekinumab--Crohn is unlabeled only because PrimeKG misses its 2016 approval."),
+     r"Ustekinumab--Crohn is a PrimeKG label gap (approved 2016)."),
     (r"on the six targets it is ahead for \WinsMainKnnTargets{} of 6, not significant with $n=6$.",
      r"on the six targets it is ahead for \WinsMainKnnTargets{} of 6 (not significant)."),
     (r"examples are amifampridine for MG (NCT03304054), ciprofloxacin for Crohn (NCT00609973) and N-acetylcysteine for SSc (NCT00428883), all checked by hand.",
-     r"e.g.\ amifampridine for MG (NCT03304054) and ciprofloxacin for Crohn (NCT00609973), checked by hand."),
-    (r"through its Lambert--Eaton indication, a related neuromuscular-junction disease, and exposes", r"through its indication for the related Lambert--Eaton syndrome and exposes"),
+     r"e.g.\ amifampridine--MG (NCT03304054), ciprofloxacin--Crohn (NCT00609973), both checked by hand."),
+    (r"through its Lambert--Eaton indication, a related neuromuscular-junction disease, and exposes", r"through the related Lambert--Eaton syndrome and exposes"),
     (r"Our MRR values lie within BioPathNet's range on TxGNN's disease areas (about 0.2--0.8)~\citep{hu2026biopathnet}, but splits differ, so we ran",
      r"BioPathNet reports MRR of about 0.2--0.8 on TxGNN's disease areas~\citep{hu2026biopathnet}, but on other splits; we therefore ran"),
     (r"(iii) $E$ has 12 diseases, and 11-disease models are seed-unstable; (iv) no clinician has reviewed the literature labels; (v) corticosteroids and antibiotics dominate the lists.",
@@ -244,8 +246,11 @@ a = body.index(r"\begin{figure}[tb]" + "\n" + r"\centering" + "\n" + r"\includeg
 b = body.index(r"\end{figure}", a) + len(r"\end{figure}")
 fig2 = body[a:b]
 fcap = fig2[fig2.index(r"\caption{") + len(r"\caption"):fig2.index(r"\label{fig:transfer}")].strip()
+# both halves top-aligned (\vspace{0pt} gives each [t] minipage its top edge as reference), so the shorter table
+# does not drop to the bottom and leave a gap above its caption
 body = body[:a] + r"""\begin{table}[tb]
-\begin{minipage}[b]{0.535\textwidth}
+\begin{minipage}[t]{0.535\textwidth}
+\vspace{0pt}
 \centering
 \captionof{table}""" + t2cap + r"""
 \label{tab:metricdefs}
@@ -259,7 +264,8 @@ Metric & Meaning & Random\\
 \bottomrule
 \end{tabular}
 \end{minipage}\hfill
-\begin{minipage}[b]{0.44\textwidth}
+\begin{minipage}[t]{0.44\textwidth}
+\vspace{0pt}
 \centering
 \includegraphics[width=\linewidth]{fig_transfer_curve_half.pdf}
 \captionof{figure}""" + fcap + r"""
@@ -275,6 +281,12 @@ _rows = [r.replace("Target among disease genes", "Drug targets a disease gene") 
 _tab4 = "\n".join([r"\begin{tabular}{lccc@{\hspace{14pt}}lccc}", r"\toprule",
                    r"Clinical trials & Ours & Pop. & Rand. & Literature and targets & Ours & Pop. & Rand.\\", r"\midrule"]
                   + [_rows[i] + " & " + _rows[i + 4] + r"\\" for i in range(4)] + [r"\bottomrule", r"\end{tabular}"])
+# top of a page only: as a bottom float it left a gap on its page (the next section heading did not fit under it)
+rep(r"""\begin{table}[tb]
+\centering
+\caption{Evidence""", r"""\begin{table}[t]
+\centering
+\caption{Evidence""")
 rep(r"""\label{tab:validation}
 \footnotesize
 \setlength{\tabcolsep}{2.5pt}
@@ -292,8 +304,9 @@ for old, new in ((r"\subsection{Aim 1: transfer to rare autoimmune diseases}", r
 
 # acknowledgment: run-in heading, not a numbered section
 ack = body[body.index(r"\section*{Acknowledgment}"):]
-body = body.replace(ack, "\\paragraph{Acknowledgments.} Generative AI tools assisted with code, analysis and language "
-                         "editing; the authors verified all results against the released run logs.\n\n")
+body = body.replace(ack, "\\paragraph{Acknowledgments.} Generative AI tools (Anthropic's Claude) assisted with code, data "
+                         "analysis, and drafting and editing of the text; the authors designed the study, ran all "
+                         "experiments and verified every result against the run logs.\n\n")
 
 ABSTRACT = r"""Rare autoimmune diseases have few approved drugs, so drug repurposing must rank candidates for diseases whose treatments were never seen in training. This zero-shot setting is studied with \sysname, a BioPathNet-style path-based graph neural network with a channel of four leakage-free prior features, on the PrimeKG knowledge graph. A strict protocol holds out each test disease together with its related diseases and ranks all 7,957 drugs. On 68 unseen test diseases, a known indication appears in the top ten for \TabModelTestAnyTen\% of diseases, against \TabKnnTestAnyTen\% for the best baseline and \RandExpAnyTenTest\% by chance, and the mean reciprocal rank is significantly higher than the baseline's (\TestMrr{} vs.\ \KnnTestMrr). When training data are scarce, data-rich autoimmune diseases transfer better than label-matched non-autoimmune diseases; with the full graph they lower accuracy. Ablations show that path reasoning carries the accuracy, while the prior channel mainly stabilizes training across seeds. Registered clinical trials test \ValTrialTestedModel\% of the new candidates, against \ValTrialTestedPop\% of popular drugs. The output is a ranked list of hypotheses for expert review, not treatment advice."""
 
@@ -335,9 +348,10 @@ HEAD = r"""% SmartCom 2027 (Springer LNNS) version -- GENERATED by make_smartcom
 \predisplaypenalty=0
 \title{BioPathNet++ for Autoimmune Diseases: Path-Based Transfer Learning for Rare Disease Drug Repurposing}
 \titlerunning{BioPathNet++ for Rare Autoimmune Disease Drug Repurposing}
-\author{TVNS Yatin\textsuperscript{*} \and Srijan Jha \and A~Charan~KR \and Praveen Kumar Yadav \and Priyanka~H}
-\authorrunning{TVNS Yatin et al.}
-\tocauthor{TVNS Yatin, Srijan Jha, A Charan KR, Praveen Kumar Yadav, Priyanka H}
+\author{Venkata Naga Sai Yatin Tatikonda\textsuperscript{*} \and Srijan Jha \and Charan Kumar Reddy Arikeri \and Praveen Kumar Yadav \and Priyanka~H}
+% Springer: names in full, given names first, surname last; running head = initials + surname
+\authorrunning{V. N. S. Y. Tatikonda et al.}
+\tocauthor{Venkata Naga Sai Yatin Tatikonda, Srijan Jha, Charan Kumar Reddy Arikeri, Praveen Kumar Yadav, Priyanka H}
 \institute{Department of Computer Science and Engineering, PES University, Bengaluru, India\\
 \textsuperscript{*}Corresponding author: \email{sumakkiyatin@gmail.com}}
 \maketitle
