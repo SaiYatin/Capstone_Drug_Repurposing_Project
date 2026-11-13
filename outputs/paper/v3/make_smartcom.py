@@ -5,7 +5,8 @@
 The body is taken from bpp_v3_conf.tex (so both versions stay in sync with the same generated numbers) and
 converted to Springer's single-column proceedings format, following the SmartCom author guidelines
 (smartcomconference.com/author-guidelines-for-paper-submission, read 12 Nov 2026):
-  - svproc.cls from the conference's LaTeX package; references author-year, alphabetical (spbasic.bst + natbib)
+  - svproc.cls from the conference's LaTeX package; numbered citations [1] (Springer LaTeX instructions: "by number
+    (preferred)"), list sorted alphabetically (spmpsci.bst, MathPhySci style recommended for computer science)
   - abstract <= 250 words, no citations, no mathematical expressions, no first person; 4-6 keywords
   - corresponding author's e-mail on the title page; acknowledgment as a run-in heading
   - Springer: table captions above, figure captions below, figure lettering >= 6 pt, title-case headings
@@ -74,9 +75,6 @@ rep(r"Test: seed means", r"AUROC hard/deg.: against drugs indicated for autoimmu
 # unbreakable DOI token -> breakable link
 rep(r"(Harvard Dataverse, doi:10.7910/DVN/IXA7BM)", r"(Harvard Dataverse, \url{https://doi.org/10.7910/DVN/IXA7BM})")
 
-# Table 1: author-year citations do not fit table cells; the same works are cited in the Related Work text
-tab = body[body.index(r"\label{tab:related}"):body.index(r"\end{table}", body.index(r"\label{tab:related}"))]
-body = body.replace(tab, re.sub(r"~?\\citep\{[^}]*\}", "", tab))
 
 # single-column page: the compact transfer figure at a readable size; small tables a little larger
 rep(r"\includegraphics[width=\columnwidth]{fig_transfer_curve_col.pdf}", r"\includegraphics[width=0.62\textwidth]{fig_transfer_curve_col.pdf}")
@@ -95,20 +93,14 @@ CONDENSE = [
      r"Link prediction on knowledge graphs (KGs) of drugs, proteins, phenotypes and diseases ranks candidate drugs"),
     (r"Because autoimmune diseases share immune pathways, the best source of that knowledge might be the data-rich ones: rheumatoid arthritis (RA), lupus (SLE) and multiple sclerosis (MS). We ask three questions.",
      r"As autoimmune diseases share immune pathways, the best source might be the data-rich ones: rheumatoid arthritis (RA), lupus (SLE) and multiple sclerosis (MS)."),
-    (r"must the knowledge come from related autoimmune diseases, or does broad pharmacology suffice?",
-     r"related autoimmune diseases, or broad pharmacology?"),
     (r"does a path-based model beat simple repurposing rules on unseen diseases?",
      r"does a path-based model beat simple rules on unseen diseases?"),
     (r"what do path reasoning, the prior channel, the loss and the graph each contribute?",
      r"what do paths, the prior channel, the loss and the graph contribute?"),
     (r"that also hides each test disease's related diseases, motivated by a leakage audit of our own earlier pipeline;",
      r"that also hides each test disease's relatives, motivated by a leakage audit of our earlier pipeline;"),
-    (r"(iii)~a full-graph implementation whose memory is linear in the number of nodes, plus a prior channel that stabilises training;",
-     r"(iii)~a full-graph implementation with memory linear in the number of nodes, plus a stabilising prior channel;"),
-    (r"(iv)~a head-to-head run of TxGNN's own code, showing that the winner depends on the candidate set;",
-     r"(iv)~a head-to-head run of TxGNN's own code;"),
-    (r"We call indications and off-label uses \emph{known drugs}, and use ``approved'' only for regulatory approvals that we checked ourselves.",
-     r"Indications and off-label uses are \emph{known drugs}; ``approved'' means a regulatory approval we checked."),
+    (r"(iii)~a full-graph implementation whose memory is linear in the number of nodes, plus a prior channel that stabilizes training;",
+     r"(iii)~a full-graph implementation with memory linear in the number of nodes, plus a stabilizing prior channel;"),
     (r"The rare targets have so few that their labels are indications plus off-label uses:",
      r"The rare targets use indications plus off-label uses:"),
     (r"Contraindications are never positives. With so few labels, the targets are case studies; statistical claims rest on larger held-out sets.",
@@ -116,7 +108,7 @@ CONDENSE = [
     (r"PrimeKG's file lists every edge in both directions (8,100,498 rows). We keep one canonical direction per relation, drop duplicates, and add an explicit inverse for every relation (60 relation types in all). Drug--disease pairs are kept in a separate table, and each split's message graph receives only those of its training diseases.",
      r"PrimeKG lists every edge in both directions (8,100,498 rows); we keep one direction per relation, drop duplicates and add explicit inverses (60 relation types). Drug--disease pairs sit in a separate table; a split's message graph receives only those of its training diseases."),
     (r"Without this rule, all 16 Crohn indications stayed reachable through ``Crohn's colitis''. No drug edge of a held-out family enters the message graph, and each training batch also hides its own diseases' drug edges, so training mimics zero-shot inference. An earlier version of our pipeline broke these rules: test pairs were graph edges, and a degree score with no learning reached AUROC 0.972.",
-     r"Without it, all 16 Crohn indications stayed reachable through ``Crohn's colitis''. No drug edge of a held-out family enters the message graph, and each training batch hides its own diseases' drug edges, mimicking zero-shot inference. Our earlier pipeline broke these rules: test pairs were graph edges, and a degree score with no learning reached AUROC 0.972."),
+     r"Without this rule, all 16 Crohn indications stayed reachable through ``Crohn's colitis''. No drug edge of a held-out family enters the message graph, and each training batch hides its own diseases' drug edges, mimicking zero-shot inference. Our earlier pipeline broke these rules: test pairs were graph edges, and a degree score with no learning reached AUROC 0.972."),
     (r"A vs.\ A$'$ asks whether autoimmune data helps when data is scarce, C$_E$ vs.\ D whether it still helps at scale.",
      r"A vs.\ A$'$ asks whether autoimmune data helps when data is scarce, C$_E$ vs.\ D whether it helps at scale."),
     (r"The messages use one sparse matrix per relation and a custom autograd function that recomputes products in the backward pass, so memory grows with nodes, not edges.",
@@ -137,8 +129,8 @@ CONDENSE = [
      r"These are not comparable with the test MRR of \TestMrr{}: the test diseases are easier for every method"),
     (r"The prior channel does not raise the mean but reduces seed variance on the targets",
      r"The prior channel does not raise the mean but cuts seed variance on the targets"),
-    (r"Ursodeoxycholic acid ranks first for PBC in every seed, and the four labelled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug for it, while the model's top choice, prednisolone, is standard AIH therapy (comparator in NCT00838214).",
-     r"Ursodeoxycholic acid ranks first for PBC in every seed; the four labelled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug, while the top choice, prednisolone, is standard AIH therapy (comparator in NCT00838214)."),
+    (r"Ursodeoxycholic acid ranks first for PBC in every seed, and the four labeled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug for it, while the model's top choice, prednisolone, is standard AIH therapy (comparator in NCT00838214).",
+     r"Ursodeoxycholic acid ranks first for PBC in every seed; the four labeled cholinesterase inhibitors hold ranks 1--4 for MG. AIH scores near zero only because PrimeKG lists one off-label drug, while the top choice, prednisolone, is standard AIH therapy (comparator in NCT00838214)."),
     (r"We searched ClinicalTrials.gov for each candidate and for two reference sets (popularity top 20; 20 random drugs per target). The drug must be a named intervention, matched by whole name",
      r"We searched ClinicalTrials.gov for each candidate and two reference sets (popularity top 20; 20 random drugs per target), requiring a named intervention matched by whole name"),
     (r"A trial \emph{tests} the drug only if its title names it or the drug is in some but not all arms, which excludes background therapy, premedication and transplant conditioning.",
@@ -148,14 +140,14 @@ CONDENSE = [
     (r"Gradient-based path extraction~\citep{zhu2021nbfnet} shows, for example, that amifampridine reaches MG through its indication for Lambert--Eaton syndrome, a related neuromuscular-junction disease, and exposes weak links such as ciprofloxacin reaching Crohn through ``mouth disease''.",
      r"Gradient-based path extraction~\citep{zhu2021nbfnet} shows that amifampridine reaches MG through its Lambert--Eaton indication, a related neuromuscular-junction disease, and exposes weak links such as ciprofloxacin reaching Crohn through ``mouth disease''."),
     (r"Our MRR values lie within the range BioPathNet reports on TxGNN's disease areas (about 0.2--0.8)~\citep{hu2026biopathnet}, but splits differ, so we ran TxGNN's own code on its autoimmune split, with our model trained only on edges that TxGNN also trains on",
-     r"Our MRR values lie within BioPathNet's range on TxGNN's disease areas (about 0.2--0.8)~\citep{hu2026biopathnet}, but splits differ, so we ran TxGNN's own code on its autoimmune split, our model trained only on edges TxGNN also trains on"),
+     r"Our MRR values lie within BioPathNet's range on TxGNN's disease areas (about 0.2--0.8)~\citep{hu2026biopathnet}, but splits differ, so we ran TxGNN's own code on its autoimmune split, training our model only on edges TxGNN also trains on"),
     (r"Ranking only drugs with indications, as TxGNN does, no difference is significant",
      r"Ranking only drugs with indications, as TxGNN does, nothing is significant"),
     (r"When training data is scarce, related autoimmune diseases are the most useful source; at full scale the broad pharmacological graph is the better source.",
      r"With scarce data, related autoimmune diseases are the most useful source; at full scale, the broad pharmacological graph."),
     (r"Aim 2: ranking of all 7,957 drugs. Any@10: diseases with a known indication in the top 10 (random \RandExpAnyTenTest\%); H@$k$: known drugs in the top $k$; random AUPRC $\approx$0.001. AUROC hard/deg.",
-     r"Aim 2: ranking of all 7,957 drugs (metrics and random values: Table~\ref{tab:metricdefs}). AUROC hard/deg."),
-    (r"Test diseases were never used for model selection. Test: seed means", r"Test diseases were never used for model selection; test: seed means"),
+     r"Aim 2: ranking of all 7,957 drugs (metrics: Table~\ref{tab:metricdefs}). AUROC hard/deg."),
+    (r"Test diseases were never used for model selection. Test: seed means", r"Test: never used for model selection; seed means"),
     (r"\sysname architecture. Six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; a path MLP and a prior MLP (four leakage-free priors) give two scores whose sum ranks all 7,957 drugs.",
      r"\sysname architecture: six NBF layers pass DistMult messages from the query disease $u$ over a graph without the drug edges of $u$'s family; path and prior scores are summed to rank all 7,957 drugs."),
     (r"Their reported gains depend strongly on how the dataset is built and evaluated~\citep{bonner2022kge,ali2021pykeen}, and because they learn one vector per node from its training edges, they degrade for diseases without known drugs~\citep{huang2024txgnn}.",
@@ -171,8 +163,8 @@ CONDENSE = [
      r"A trial is no proof of benefit: amifampridine helped in MuSK-antibody MG~\citep{bonanno2018amifampridine} but not in AChR-antibody MG~\citep{remijn2026amifampridine}."),
     (r"three corticosteroid pairs and N-acetylcysteine for SSc, whereas popularity's are mostly antibiotics that can worsen MG or induce hepatitis.",
      r"three corticosteroid pairs and N-acetylcysteine for SSc; popularity's are mostly antibiotics that can worsen MG or induce hepatitis."),
-    (r"Limitations: (i) the targets have 1--24 labelled drugs, so their metrics are noisy and can be lower bounds (AIH); (ii) the validation diseases also choose the stopping epoch",
-     r"Limitations: (i) the targets have 1--24 labelled drugs, so their metrics are noisy lower bounds (AIH); (ii) validation diseases also choose the stopping epoch"),
+    (r"Limitations: (i) the targets have 1--24 labeled drugs, so their metrics are noisy and can be lower bounds (AIH); (ii) the validation diseases also choose the stopping epoch",
+     r"Limitations: (i) the targets have 1--24 labeled drugs, so their metrics are noisy lower bounds (AIH); (ii) validation diseases also choose the stopping epoch"),
     (r"(iii) $E$ has only 12 diseases, and 11-disease models are unstable across seeds; (iv) literature labels have not been reviewed by a clinician;",
      r"(iii) $E$ has 12 diseases, and 11-disease models are seed-unstable; (iv) no clinician has reviewed the literature labels;"),
     (r"\sysname outperforms every baseline evaluated on the same leakage-free split, recovers established therapies, and ranks later-approved drugs high but not significantly above chance. Path reasoning drives accuracy, and the prior channel adds stability.",
@@ -181,13 +173,12 @@ CONDENSE = [
      r"Related approaches. Induct.: scores diseases with no known drugs. Hold-out: unit removed for zero-shot testing. Transfer: controlled study of the training source."),
     (r"Metrics, per disease over all 7,957 drugs, averaged over diseases. Random: value for a random ranking.",
      r"Metrics (per disease over all 7,957 drugs, then averaged) and their value for a random ranking."),
-    (r"Evidence for unlabelled top-20 candidates (6 targets) and two reference sets (Ours $n$=\ValNovelN; Pop., Random $n$=120; grades as in the text).",
-     r"Evidence for unlabelled top-20 candidates (Ours, $n$=\ValNovelN) and reference sets ($n$=120)."),
+    (r"Evidence for unlabeled top-20 candidates (6 targets) and two reference sets (Ours $n$=\ValNovelN; Pop., Random $n$=120; grades as in the text).",
+     r"Evidence for unlabeled top-20 candidates (Ours, $n$=\ValNovelN) and reference sets ($n$=120)."),
     (r"knowledge learned from diseases with known drugs must \emph{transfer} to diseases whose drugs the model has never seen.",
      r"knowledge must \emph{transfer} from diseases with known drugs."),
     (r"\emph{controlled transfer study} that compares autoimmune source diseases with label-matched non-autoimmune controls;",
      r"\emph{controlled transfer study} against label-matched non-autoimmune controls;"),
-    (r"Recent reviews trace KG-based repurposing from feature-based learning to graph neural networks", r"Recent reviews cover KG-based repurposing"),
     (r"compares the approaches discussed below.", r"compares the approaches below."),
     (r"Splits: validation seed 0, test seed 1, matched controls seeds 100--102, all stored as JSON.", r"Split seeds: validation 0, test 1, controls 100--102 (JSON)."),
     (r"The path channel uses no node features or text embeddings: nodes differ only by their edges (\texttt{bpp/build\_primekg.py}).",
@@ -199,8 +190,8 @@ CONDENSE = [
      r"rank at a median of \TempPostMedRank{} of 7,957 (\TempPostBetter{} of 6 above chance; $p$\,\TempPostP)."),
     (r"against \ValTrialTestedPop\% for popularity and \ValTrialTestedRand\% for random drugs;", r"against \ValTrialTestedPop\% (popularity) and \ValTrialTestedRand\% (random);"),
     (r"PubMed shows benefit for \ValLitSupModel\% of the model's candidates", r"PubMed shows benefit for \ValLitSupModel\% of candidates"),
-    (r"Evidence for unlabelled top-20 candidates (Ours, $n$=\ValNovelN) and reference sets ($n$=120).",
-     r"Evidence for unlabelled top-20 candidates (Ours $n$=\ValNovelN; others $n$=120)."),
+    (r"Evidence for unlabeled top-20 candidates (Ours, $n$=\ValNovelN) and reference sets ($n$=120).",
+     r"Evidence for unlabeled top-20 candidates (Ours $n$=\ValNovelN; others $n$=120)."),
     (r"the strongest is disease $k$NN, which transfers the drugs of the 20 most similar training diseases.",
      r"the strongest is disease $k$NN (drugs of the 20 most similar training diseases)."),
     (r"On the 68 validation diseases the gain over $k$NN is", r"On validation the gain over $k$NN is"),
@@ -214,21 +205,20 @@ CONDENSE = [
      r"Path-based zero-shot transfer works for rare autoimmune diseases the model never sees: related autoimmune diseases are the best source when data is scarce, the broad pharmacological graph at full scale."),
     (r"Aim 1: MRR on held-out autoimmune diseases ($E$, left) and the targets (right) when training on A$'$, A, D or C$_E$ (95\% CIs).",
      r"Aim 1: MRR on $E$ (left) and the targets (right) by training set (95\% CIs)."),
-    (r"MRR~\citep{voorhees1999trec} rewards known drugs at the very top: on the test split, MRR \TestMrr{} means",
-     r"On the test split, MRR~\citep{voorhees1999trec} \TestMrr{} means"),
+    (r"MRR~\citep{voorhees1999trec} rewards known drugs at the very top: on the test split, MRR \TestMrr{} corresponds to a median known-drug rank of \MedRankTest, with \RankOneShareTest\% ranked first.",
+     r"On the test split, MRR~\citep{voorhees1999trec} is \TestMrr{}; the median known-drug rank is \MedRankTest, and \RankOneShareTest\% are ranked first."),
     (r"PubMed titles were classified with AI assistance; every benefit or harm label was re-checked against the abstract.",
      r"AI-assisted PubMed title labels were each re-checked against the abstract."),
     (r"(excluding background therapy, premedication and conditioning)", r"(not as background therapy)"),
-    (r"Ustekinumab for Crohn counts as unlabelled only because PrimeKG misses its 2016 approval.",
-     r"Ustekinumab--Crohn is unlabelled only because PrimeKG misses its 2016 approval."),
+    (r"Ustekinumab for Crohn counts as unlabeled only because PrimeKG misses its 2016 approval.",
+     r"Ustekinumab--Crohn is unlabeled only because PrimeKG misses its 2016 approval."),
     (r"on the six targets it is ahead for \WinsMainKnnTargets{} of 6, not significant with $n=6$.",
      r"on the six targets it is ahead for \WinsMainKnnTargets{} of 6 (not significant)."),
-    (r"Self-adversarial BCE is not significantly worse than the listwise loss", r"Self-adversarial BCE ties the listwise loss"),
     (r"examples are amifampridine for MG (NCT03304054), ciprofloxacin for Crohn (NCT00609973) and N-acetylcysteine for SSc (NCT00428883), all checked by hand.",
      r"e.g.\ amifampridine for MG (NCT03304054) and ciprofloxacin for Crohn (NCT00609973), checked by hand."),
     (r"through its Lambert--Eaton indication, a related neuromuscular-junction disease, and exposes", r"through its indication for the related Lambert--Eaton syndrome and exposes"),
     (r"Our MRR values lie within BioPathNet's range on TxGNN's disease areas (about 0.2--0.8)~\citep{hu2026biopathnet}, but splits differ, so we ran",
-     r"BioPathNet reports MRR of about 0.2--0.8 on TxGNN's disease areas~\citep{hu2026biopathnet}, on other splits, so we ran"),
+     r"BioPathNet reports MRR of about 0.2--0.8 on TxGNN's disease areas~\citep{hu2026biopathnet}, but on other splits; we therefore ran"),
     (r"(iii) $E$ has 12 diseases, and 11-disease models are seed-unstable; (iv) no clinician has reviewed the literature labels; (v) corticosteroids and antibiotics dominate the lists.",
      r"(iii) $E$ has 12 diseases, and 11-disease models are seed-unstable; (iv) no clinician has reviewed the literature labels."),
     (r"Model: dimension 32, 6 layers, readout MLP $224\!\to\!64\!\to\!1$ (dropout 0.1), prior MLP $4\!\to\!16\!\to\!1$; 68,226 parameters.",
@@ -239,35 +229,59 @@ CONDENSE = [
 for old, new in CONDENSE:
     rep(old, new)
 
-# Fig. 2 (transfer curve) and Table 4 (evidence) are both narrow: set them side by side in one float, which saves
-# about a quarter page. It is a `table` float, so it stays in order behind Table 3; Springer caption positions kept
-# (figure caption below, table caption above).
-a = body.index(r"\begin{table}[tb]" + "\n" + r"\centering" + "\n" + r"\caption{Evidence")
-b = body.index(r"\end{table}", a) + len(r"\end{table}") + 1
-tab4 = body[a:b]
-body = body[:a] + body[b:]
-tcap = tab4[tab4.index(r"\caption{") + len(r"\caption"):tab4.index(r"\label{tab:validation}")].strip()
+# Fig. 2 (transfer curve) and Table 2 (metric definitions) are both narrow: set them side by side in one float, placed
+# right after the Aim 1 paragraph that cites Fig. 2 (Table 2 is cited earlier, in Evaluation), so with flafter both
+# print after their first mention and Fig. 2 stays next to Aim 1. It is a `table` float, so Table 2 keeps its number
+# ahead of Table 3. Springer caption positions: figure caption below, table caption above. Table 4 stays on its own,
+# right after the paragraph that cites it.
+a = body.index(r"\begin{table}[tb]" + "\n" + r"\centering" + "\n" + r"\caption{Metrics")
+b = body.index(r"\end{table}", a) + len(r"\end{table}")
+tab2 = body[a:b]
+body = body[:a] + body[b:].lstrip("\n")
+t2cap = tab2[tab2.index(r"\caption{") + len(r"\caption"):tab2.index(r"\label{tab:metricdefs}")].strip()
+t2rows = tab2[tab2.index(r"\midrule") + len(r"\midrule"):tab2.index(r"\bottomrule")].strip()
 a = body.index(r"\begin{figure}[tb]" + "\n" + r"\centering" + "\n" + r"\includegraphics[width=0.62\textwidth]{fig_transfer_curve_col.pdf}")
 b = body.index(r"\end{figure}", a) + len(r"\end{figure}")
 fig2 = body[a:b]
 fcap = fig2[fig2.index(r"\caption{") + len(r"\caption"):fig2.index(r"\label{fig:transfer}")].strip()
 body = body[:a] + r"""\begin{table}[tb]
-\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.535\textwidth}
+\centering
+\captionof{table}""" + t2cap + r"""
+\label{tab:metricdefs}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}p{1.1cm}>{\raggedright\arraybackslash}p{3.8cm}r@{}}
+\toprule
+Metric & Meaning & Random\\
+\midrule
+""" + t2rows + r"""
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.44\textwidth}
 \centering
 \includegraphics[width=\linewidth]{fig_transfer_curve_half.pdf}
 \captionof{figure}""" + fcap + r"""
 \label{fig:transfer}
-\end{minipage}\hfill
-\begin{minipage}[b]{0.51\textwidth}
-\centering
-\captionof{table}""" + tcap + r"""
-\label{tab:validation}
-\scriptsize
-\setlength{\tabcolsep}{2pt}
-""" + (HERE / "generated" / "tab_validation.tex").read_text(encoding="utf-8").strip().replace(
-    "Target among disease genes", "Drug targets a disease gene") + r"""
 \end{minipage}
 \end{table}""" + body[b:]
+# Table 4 on its own, as two blocks side by side (trial evidence | literature and target evidence): same 8 rows and
+# numbers as the generated table, half the height
+_rows = [r for r in (HERE / "generated" / "tab_validation.tex").read_text(encoding="utf-8").splitlines() if r.endswith("\\\\")]
+_rows = [r[:-2].strip() for r in _rows if not r.startswith("Evidence")]
+assert len(_rows) == 8 and _rows[0].startswith("Trial") and _rows[4].startswith("PubMed"), _rows
+_rows = [r.replace("Target among disease genes", "Drug targets a disease gene") for r in _rows]
+_tab4 = "\n".join([r"\begin{tabular}{lccc@{\hspace{14pt}}lccc}", r"\toprule",
+                   r"Clinical trials & Ours & Pop. & Rand. & Literature and targets & Ours & Pop. & Rand.\\", r"\midrule"]
+                  + [_rows[i] + " & " + _rows[i + 4] + r"\\" for i in range(4)] + [r"\bottomrule", r"\end{tabular}"])
+rep(r"""\label{tab:validation}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\input{generated/tab_validation.tex}""", r"""\label{tab:validation}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+""" + _tab4)
 
 # Springer headings: title case
 for old, new in ((r"\subsection{Aim 1: transfer to rare autoimmune diseases}", r"\subsection{Aim 1: Transfer to Rare Autoimmune Diseases}"),
@@ -281,26 +295,33 @@ ack = body[body.index(r"\section*{Acknowledgment}"):]
 body = body.replace(ack, "\\paragraph{Acknowledgments.} Generative AI tools assisted with code, analysis and language "
                          "editing; the authors verified all results against the released run logs.\n\n")
 
-ABSTRACT = r"""Rare autoimmune diseases have few approved drugs, so drug repurposing must rank candidates for diseases whose treatments were never seen in training. This zero-shot setting is studied with \sysname, a BioPathNet-style path-based graph neural network with a channel of four leakage-free prior features, on the PrimeKG knowledge graph. A strict protocol holds out each test disease together with its related diseases and ranks all 7,957 drugs. On 68 unseen test diseases, a known indication appears in the top ten for \TabModelTestAnyTen\% of diseases, against \TabKnnTestAnyTen\% for the best baseline and \RandExpAnyTenTest\% by chance, and the mean reciprocal rank rises significantly from \KnnTestMrr{} to \TestMrr. When training data are scarce, data-rich autoimmune diseases transfer better than label-matched non-autoimmune diseases; with the full graph they lower accuracy. Ablations show that path reasoning carries the accuracy, while the prior channel mainly stabilises training across seeds. Registered clinical trials test \ValTrialTestedModel\% of the new candidates, against \ValTrialTestedPop\% of popular drugs. The output is a ranked list of hypotheses for expert review, not treatment advice."""
+ABSTRACT = r"""Rare autoimmune diseases have few approved drugs, so drug repurposing must rank candidates for diseases whose treatments were never seen in training. This zero-shot setting is studied with \sysname, a BioPathNet-style path-based graph neural network with a channel of four leakage-free prior features, on the PrimeKG knowledge graph. A strict protocol holds out each test disease together with its related diseases and ranks all 7,957 drugs. On 68 unseen test diseases, a known indication appears in the top ten for \TabModelTestAnyTen\% of diseases, against \TabKnnTestAnyTen\% for the best baseline and \RandExpAnyTenTest\% by chance, and the mean reciprocal rank is significantly higher than the baseline's (\TestMrr{} vs.\ \KnnTestMrr). When training data are scarce, data-rich autoimmune diseases transfer better than label-matched non-autoimmune diseases; with the full graph they lower accuracy. Ablations show that path reasoning carries the accuracy, while the prior channel mainly stabilizes training across seeds. Registered clinical trials test \ValTrialTestedModel\% of the new candidates, against \ValTrialTestedPop\% of popular drugs. The output is a ranked list of hypotheses for expert review, not treatment advice."""
 
 HEAD = r"""% SmartCom 2027 (Springer LNNS) version -- GENERATED by make_smartcom.py from bpp_v3_conf.tex; edit that file, then rerun.
 \documentclass{svproc}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{xspace}
 \usepackage[table]{xcolor}
-\usepackage[authoryear,round]{natbib}
+% numbered citations in square brackets, sorted and compressed ([3, 5-7]); Springer's LaTeX instructions call
+% numbered citation "preferred" and the list "ideally sorted in alphabetical order": spmpsci.bst (MathPhySci) does both
+\usepackage[numbers,sort&compress]{natbib}
 % svproc defines \chapter, so natbib would start the references with \chapter* on a new page in normal size;
-% use svproc's own reference layout instead: an unnumbered section set in \small
+% use svproc's own reference layout instead: an unnumbered section in \small, entries labeled "1."
 \renewcommand{\bibsection}{\section*{References}}
 \renewcommand{\bibfont}{\small}
+\renewcommand{\bibnumfmt}[1]{#1.}
 \usepackage{float}
 \usepackage{capt-of}
 \usepackage{flafter}  % a float never appears before the text that defines it (keeps Table 2 below the Method heading)
 \usepackage{xurl}
 \def\UrlFont{\rmfamily}
+\usepackage[hidelinks]{hyperref}  % clickable cross-references and citations (Springer: \label/\ref become links)
 \graphicspath{{figures/}}
+\hyphenation{Table Tables Figure Figures ri-san-ki-zu-mab up-a-da-ci-ti-nib gu-sel-ku-mab ra-vu-li-zu-mab
+  ro-za-no-li-xi-zu-mab el-a-fi-bra-nor us-te-ki-nu-mab am-i-fam-pri-dine}
 \newcommand{\sysname}{BioPathNet++\xspace}
 \input{generated/numbers.tex}
 \emergencystretch=1.5em
@@ -327,7 +348,7 @@ HEAD = r"""% SmartCom 2027 (Springer LNNS) version -- GENERATED by make_smartcom
 \end{abstract}
 
 """
-TAIL = r"""\bibliographystyle{spbasic}
+TAIL = r"""\bibliographystyle{spmpsci}
 \bibliography{references}
 
 \end{document}

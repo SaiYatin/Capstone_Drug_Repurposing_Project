@@ -1,217 +1,232 @@
-\begin{thebibliography}{33}
-\providecommand{\natexlab}[1]{#1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
   \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
-\providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{Ali et~al(2022)Ali, Berrendorf, Hoyt, Vermue, Galkin, Sharifzadeh,
-  Fischer, Tresp, and Lehmann}]{ali2021pykeen}
-Ali M, Berrendorf M, Hoyt CT, Vermue L, Galkin M, Sharifzadeh S, Fischer A,
-  Tresp V, Lehmann J (2022) Bringing light into the dark: A large-scale
-  evaluation of knowledge graph embedding models under a unified framework.
-  IEEE Transactions on Pattern Analysis and Machine Intelligence
-  44(12):8825--8845, \doi{10.1109/TPAMI.2021.3124805}
+\bibitem{ali2021pykeen}
+Ali, M., Berrendorf, M., Hoyt, C.T., Vermue, L., Galkin, M., Sharifzadeh, S.,
+  Fischer, A., Tresp, V., Lehmann, J.: Bringing light into the dark: A
+  large-scale evaluation of knowledge graph embedding models under a unified
+  framework.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence
+  \textbf{44}(12), 8825--8845 (2022).
+\newblock \doi{10.1109/TPAMI.2021.3124805}
 
-\bibitem[{Bang et~al(2023)Bang, Lim, Lee, and Kim}]{bang2023dreamwalk}
-Bang D, Lim S, Lee S, Kim S (2023) Biomedical knowledge graph learning for drug
-  repurposing by extending guilt-by-association to multiple layers. Nature
-  Communications 14:3570, \doi{10.1038/s41467-023-39301-y}
+\bibitem{bang2023dreamwalk}
+Bang, D., Lim, S., Lee, S., Kim, S.: Biomedical knowledge graph learning for
+  drug repurposing by extending guilt-by-association to multiple layers.
+\newblock Nature Communications \textbf{14}, 3570 (2023).
+\newblock \doi{10.1038/s41467-023-39301-y}
 
-\bibitem[{Bonanno et~al(2018)Bonanno, Pasanisi, Frangiamore, Maggi, Antozzi,
-  Andreetta, Campanella, Brenna, Cottini, and
-  Mantegazza}]{bonanno2018amifampridine}
-Bonanno S, Pasanisi MB, Frangiamore R, Maggi L, Antozzi C, Andreetta F,
-  Campanella A, Brenna G, Cottini L, Mantegazza R (2018) Amifampridine
-  phosphate in the treatment of muscle-specific kinase myasthenia gravis: a
-  phase {IIb}, randomized, double-blind, placebo-controlled, double crossover
-  study. SAGE Open Medicine 6:2050312118819,013, \doi{10.1177/2050312118819013}
+\bibitem{bonanno2018amifampridine}
+Bonanno, S., Pasanisi, M.B., Frangiamore, R., Maggi, L., Antozzi, C.,
+  Andreetta, F., Campanella, A., Brenna, G., Cottini, L., Mantegazza, R.:
+  Amifampridine phosphate in the treatment of muscle-specific kinase myasthenia
+  gravis: a phase {IIb}, randomized, double-blind, placebo-controlled, double
+  crossover study.
+\newblock SAGE Open Medicine \textbf{6}, 2050{}3121{}1881{}9013 (2018).
+\newblock \doi{10.1177/2050312118819013}
 
-\bibitem[{Bonner et~al(2022{\natexlab{a}})Bonner, Barrett, Ye, Swiers,
-  Engkvist, Bender, Hoyt, and Hamilton}]{bonner2022review}
-Bonner S, Barrett IP, Ye C, Swiers R, Engkvist O, Bender A, Hoyt CT, Hamilton
-  WL (2022{\natexlab{a}}) A review of biomedical datasets relating to drug
-  discovery: a knowledge graph perspective. Briefings in Bioinformatics
-  23(6):bbac404, \doi{10.1093/bib/bbac404}
+\bibitem{bonner2022review}
+Bonner, S., Barrett, I.P., Ye, C., Swiers, R., Engkvist, O., Bender, A., Hoyt,
+  C.T., Hamilton, W.L.: A review of biomedical datasets relating to drug
+  discovery: a knowledge graph perspective.
+\newblock Briefings in Bioinformatics \textbf{23}(6), bbac404 (2022).
+\newblock \doi{10.1093/bib/bbac404}
 
-\bibitem[{Bonner et~al(2022{\natexlab{b}})Bonner, Barrett, Ye, Swiers,
-  Engkvist, Hoyt, and Hamilton}]{bonner2022kge}
-Bonner S, Barrett IP, Ye C, Swiers R, Engkvist O, Hoyt CT, Hamilton WL
-  (2022{\natexlab{b}}) Understanding the performance of knowledge graph
-  embeddings in drug discovery. Artificial Intelligence in the Life Sciences
-  2:100,036, \doi{10.1016/j.ailsci.2022.100036}
+\bibitem{bonner2022kge}
+Bonner, S., Barrett, I.P., Ye, C., Swiers, R., Engkvist, O., Hoyt, C.T.,
+  Hamilton, W.L.: Understanding the performance of knowledge graph embeddings
+  in drug discovery.
+\newblock Artificial Intelligence in the Life Sciences \textbf{2}, 10{}0036
+  (2022).
+\newblock \doi{10.1016/j.ailsci.2022.100036}
 
-\bibitem[{Bordes et~al(2013)Bordes, Usunier, Garcia-Duran, Weston, and
-  Yakhnenko}]{bordes2013transe}
-Bordes A, Usunier N, Garcia-Duran A, Weston J, Yakhnenko O (2013) Translating
-  embeddings for modeling multi-relational data. In: Advances in Neural
-  Information Processing Systems (NeurIPS)
+\bibitem{bordes2013transe}
+Bordes, A., Usunier, N., Garcia-Duran, A., Weston, J., Yakhnenko, O.:
+  Translating embeddings for modeling multi-relational data.
+\newblock In: Advances in Neural Information Processing Systems (NeurIPS)
+  (2013)
 
-\bibitem[{Bri{\`e}re et~al(2026)Bri{\`e}re, Stosskopf, Loire, and
-  Baudot}]{briere2026leakage}
-Bri{\`e}re G, Stosskopf T, Loire B, Baudot A (2026) Benchmarking the impact of
-  data leakage on the performance of knowledge graph embedding models for
-  biomedical link prediction. Bioinformatics 42(8):btag608,
-  \doi{10.1093/bioinformatics/btag608}
+\bibitem{briere2026leakage}
+Bri{\`e}re, G., Stosskopf, T., Loire, B., Baudot, A.: Benchmarking the impact
+  of data leakage on the performance of knowledge graph embedding models for
+  biomedical link prediction.
+\newblock Bioinformatics \textbf{42}(8), btag608 (2026).
+\newblock \doi{10.1093/bioinformatics/btag608}
 
-\bibitem[{Chandak et~al(2023)Chandak, Huang, and Zitnik}]{chandak2023primekg}
-Chandak P, Huang K, Zitnik M (2023) Building a knowledge graph to enable
-  precision medicine. Scientific Data 10:67, \doi{10.1038/s41597-023-01960-3}
+\bibitem{chandak2023primekg}
+Chandak, P., Huang, K., Zitnik, M.: Building a knowledge graph to enable
+  precision medicine.
+\newblock Scientific Data \textbf{10}, 67 (2023).
+\newblock \doi{10.1038/s41597-023-01960-3}
 
-\bibitem[{Conrad et~al(2023)Conrad, Misra, Verbakel, Verbeke, Molenberghs
-  et~al}]{conrad2023autoimmune}
-Conrad N, Misra S, Verbakel JY, Verbeke G, Molenberghs G, et~al (2023)
+\bibitem{conrad2023autoimmune}
+Conrad, N., Misra, S., Verbakel, J.Y., Verbeke, G., Molenberghs, G., et~al.:
   Incidence, prevalence, and co-occurrence of autoimmune disorders over time
   and by age, sex, and socioeconomic status: a population-based cohort study of
-  22 million individuals in the {UK}. The Lancet 401(10391):1878--1890,
-  \doi{10.1016/S0140-6736(23)00457-9}
+  22 million individuals in the {UK}.
+\newblock The Lancet \textbf{401}(10391), 1878--1890 (2023).
+\newblock \doi{10.1016/S0140-6736(23)00457-9}
 
-\bibitem[{Corso et~al(2020)Corso, Cavalleri, Beaini, Li{\`o}, and
-  Veli{\v{c}}kovi{\'c}}]{corso2020pna}
-Corso G, Cavalleri L, Beaini D, Li{\`o} P, Veli{\v{c}}kovi{\'c} P (2020)
-  Principal neighbourhood aggregation for graph nets. In: Advances in Neural
-  Information Processing Systems (NeurIPS), arXiv:2004.05718
+\bibitem{corso2020pna}
+Corso, G., Cavalleri, L., Beaini, D., Li{\`o}, P., Veli{\v{c}}kovi{\'c}, P.:
+  Principal neighbourhood aggregation for graph nets.
+\newblock In: Advances in Neural Information Processing Systems (NeurIPS)
+  (2020).
+\newblock ArXiv:2004.05718
 
-\bibitem[{Efron and Tibshirani(1993)}]{efron1993bootstrap}
-Efron B, Tibshirani RJ (1993) An Introduction to the Bootstrap. Chapman \&
-  Hall, New York
+\bibitem{efron1993bootstrap}
+Efron, B., Tibshirani, R.J.: An Introduction to the Bootstrap.
+\newblock Chapman \& Hall, New York (1993)
 
-\bibitem[{Gao et~al(2022)Gao, Ding, and Xu}]{gao2022kgpredict}
-Gao Z, Ding P, Xu R (2022) {KG-Predict}: A knowledge graph computational
-  framework for drug repurposing. Journal of Biomedical Informatics
-  132:104,133, \doi{10.1016/j.jbi.2022.104133}
+\bibitem{gao2022kgpredict}
+Gao, Z., Ding, P., Xu, R.: {KG-Predict}: A knowledge graph computational
+  framework for drug repurposing.
+\newblock Journal of Biomedical Informatics \textbf{132}, 10{}4133 (2022).
+\newblock \doi{10.1016/j.jbi.2022.104133}
 
-\bibitem[{Himmelstein et~al(2017)Himmelstein, Lizee, Hessler, Brueggeman, Chen,
-  Hadley, Green, Khankhanian, and Baranzini}]{himmelstein2017hetionet}
-Himmelstein DS, Lizee A, Hessler C, Brueggeman L, Chen SL, Hadley D, Green A,
-  Khankhanian P, Baranzini SE (2017) Systematic integration of biomedical
-  knowledge prioritizes drugs for repurposing. eLife 6:e26,726,
-  \doi{10.7554/eLife.26726}
+\bibitem{himmelstein2017hetionet}
+Himmelstein, D.S., Lizee, A., Hessler, C., Brueggeman, L., Chen, S.L., Hadley,
+  D., Green, A., Khankhanian, P., Baranzini, S.E.: Systematic integration of
+  biomedical knowledge prioritizes drugs for repurposing.
+\newblock eLife \textbf{6}, e2{}6726 (2017).
+\newblock \doi{10.7554/eLife.26726}
 
-\bibitem[{Hu et~al(2026)Hu, Oleshko, Firmani, Cheng, Zhu, W{\"o}rheide, Arnold,
-  Colom{\'e}-Tatch{\'e}, Tang, Xhonneux, and Marsico}]{hu2026biopathnet}
-Hu EY, Oleshko S, Firmani S, Cheng HG, Zhu Z, W{\"o}rheide MA, Arnold M,
-  Colom{\'e}-Tatch{\'e} M, Tang J, Xhonneux S, Marsico A (2026) Enhancing link
-  prediction in biomedical knowledge graphs with {BioPathNet}. Nature
-  Biomedical Engineering 10(8):1747--1769, \doi{10.1038/s41551-025-01598-z}
+\bibitem{hu2026biopathnet}
+Hu, E.Y., Oleshko, S., Firmani, S., Cheng, H.G., Zhu, Z., W{\"o}rheide, M.A.,
+  Arnold, M., Colom{\'e}-Tatch{\'e}, M., Tang, J., Xhonneux, S., Marsico, A.:
+  Enhancing link prediction in biomedical knowledge graphs with {BioPathNet}.
+\newblock Nature Biomedical Engineering \textbf{10}(8), 1747--1769 (2026).
+\newblock \doi{10.1038/s41551-025-01598-z}
 
-\bibitem[{Huang et~al(2024)Huang, Chandak, Wang, Havaldar, Vaid, Leskovec,
-  Nadkarni, Glicksberg, Gehlenborg, and Zitnik}]{huang2024txgnn}
-Huang K, Chandak P, Wang Q, Havaldar S, Vaid A, Leskovec J, Nadkarni GN,
-  Glicksberg BS, Gehlenborg N, Zitnik M (2024) A foundation model for
-  clinician-centered drug repurposing. Nature Medicine 30(12):3601--3613,
-  \doi{10.1038/s41591-024-03233-x}
+\bibitem{huang2024txgnn}
+Huang, K., Chandak, P., Wang, Q., Havaldar, S., Vaid, A., Leskovec, J.,
+  Nadkarni, G.N., Glicksberg, B.S., Gehlenborg, N., Zitnik, M.: A foundation
+  model for clinician-centered drug repurposing.
+\newblock Nature Medicine \textbf{30}(12), 3601--3613 (2024).
+\newblock \doi{10.1038/s41591-024-03233-x}
 
-\bibitem[{Ioannidis et~al(2020)Ioannidis, Song, Manchanda, Li, Pan, Zheng,
-  Ning, Zeng, and Karypis}]{drkg2020}
-Ioannidis VN, Song X, Manchanda S, Li M, Pan X, Zheng D, Ning X, Zeng X,
-  Karypis G (2020) {DRKG} -- drug repurposing knowledge graph for {COVID-19}.
-  \url{https://github.com/gnn4dr/DRKG}
+\bibitem{drkg2020}
+Ioannidis, V.N., Song, X., Manchanda, S., Li, M., Pan, X., Zheng, D., Ning, X.,
+  Zeng, X., Karypis, G.: {DRKG} -- drug repurposing knowledge graph for
+  {COVID-19}.
+\newblock \url{https://github.com/gnn4dr/DRKG} (2020)
 
-\bibitem[{Kapoor and Narayanan(2023)}]{kapoor2023leakage}
-Kapoor S, Narayanan A (2023) Leakage and the reproducibility crisis in
-  machine-learning-based science. Patterns 4(9):100,804,
-  \doi{10.1016/j.patter.2023.100804}
+\bibitem{kapoor2023leakage}
+Kapoor, S., Narayanan, A.: Leakage and the reproducibility crisis in
+  machine-learning-based science.
+\newblock Patterns \textbf{4}(9), 10{}0804 (2023).
+\newblock \doi{10.1016/j.patter.2023.100804}
 
-\bibitem[{Kumar et~al(2025)Kumar, Bhandary, Hegde, and
-  Chatterjee}]{kumar2025scoping}
-Kumar A, Bhandary S, Hegde SG, Chatterjee J (2025) Knowledge graph applications
-  and multi-relation learning for drug repurposing: A scoping review.
-  Computational Biology and Chemistry 115:108,364,
-  \doi{10.1016/j.compbiolchem.2025.108364}
+\bibitem{kumar2025scoping}
+Kumar, A., Bhandary, S., Hegde, S.G., Chatterjee, J.: Knowledge graph
+  applications and multi-relation learning for drug repurposing: A scoping
+  review.
+\newblock Computational Biology and Chemistry \textbf{115}, 10{}8364 (2025).
+\newblock \doi{10.1016/j.compbiolchem.2025.108364}
 
-\bibitem[{Morselli~Gysi et~al(2021)Morselli~Gysi, do~Valle, Zitnik, Ameli, Gan
-  et~al}]{morselli2021covid}
-Morselli~Gysi D, do~Valle {\'I}, Zitnik M, Ameli A, Gan X, et~al (2021) Network
-  medicine framework for identifying drug-repurposing opportunities for
-  {COVID-19}. Proceedings of the National Academy of Sciences
-  118(19):e2025581,118, \doi{10.1073/pnas.2025581118}
+\bibitem{morselli2021covid}
+Morselli~Gysi, D., do~Valle, {\'I}., Zitnik, M., Ameli, A., Gan, X., et~al.:
+  Network medicine framework for identifying drug-repurposing opportunities for
+  {COVID-19}.
+\newblock Proceedings of the National Academy of Sciences \textbf{118}(19),
+  e20{}2558{}1118 (2021).
+\newblock \doi{10.1073/pnas.2025581118}
 
-\bibitem[{Papadimas et~al(2026)Papadimas, Svolou, Bougiatiotis, Aisopos,
-  Krithara et~al}]{papadimas2026neuromuscular}
-Papadimas F, Svolou S, Bougiatiotis K, Aisopos F, Krithara A, et~al (2026)
+\bibitem{papadimas2026neuromuscular}
+Papadimas, F., Svolou, S., Bougiatiotis, K., Aisopos, F., Krithara, A., et~al.:
   Identifying drug repurposing candidates for rare neuro-muscular disorders,
-  using different {AI} methods on the literature knowledge graph. JAMIA Open
-  9(2), \doi{10.1093/jamiaopen/ooag050}
+  using different {AI} methods on the literature knowledge graph.
+\newblock JAMIA Open \textbf{9}(2) (2026).
+\newblock \doi{10.1093/jamiaopen/ooag050}
 
-\bibitem[{Perdomo-Quinteiro et~al(2026)Perdomo-Quinteiro, Wolstencroft, Roos,
-  and Queralt-Rosi{\~n}ach}]{perdomo2026rdexplainer}
-Perdomo-Quinteiro P, Wolstencroft K, Roos M, Queralt-Rosi{\~n}ach N (2026)
+\bibitem{perdomo2026rdexplainer}
+Perdomo-Quinteiro, P., Wolstencroft, K., Roos, M., Queralt-Rosi{\~n}ach, N.:
   Knowledge graphs and explainable artificial intelligence ({AI}) for drug
-  repurposing on rare diseases. Neurosymbolic Artificial Intelligence 2,
-  \doi{10.1177/29498732261443101}
+  repurposing on rare diseases.
+\newblock Neurosymbolic Artificial Intelligence \textbf{2} (2026).
+\newblock \doi{10.1177/29498732261443101}
 
-\bibitem[{Pushpakom et~al(2019)Pushpakom, Iorio, Eyers, Escott, Hopper, Wells
-  et~al}]{pushpakom2019repurposing}
-Pushpakom S, Iorio F, Eyers PA, Escott KJ, Hopper S, Wells A, et~al (2019) Drug
-  repurposing: progress, challenges and recommendations. Nature Reviews Drug
-  Discovery 18(1):41--58, \doi{10.1038/nrd.2018.168}
+\bibitem{pushpakom2019repurposing}
+Pushpakom, S., Iorio, F., Eyers, P.A., Escott, K.J., Hopper, S., Wells, A.,
+  et~al.: Drug repurposing: progress, challenges and recommendations.
+\newblock Nature Reviews Drug Discovery \textbf{18}(1), 41--58 (2019).
+\newblock \doi{10.1038/nrd.2018.168}
 
-\bibitem[{Remijn-Nelissen et~al(2026)Remijn-Nelissen, Bakker, van Gelder, Moes,
-  Ruiter, Campman, Badrising, Straathof, Verschuuren, and
-  Tannemaat}]{remijn2026amifampridine}
-Remijn-Nelissen L, Bakker WR, van Gelder T, Moes DJAR, Ruiter AM, Campman YJM,
-  Badrising UA, Straathof CSM, Verschuuren JJGM, Tannemaat MR (2026) Efficacy
-  and safety of amifampridine in myasthenia gravis: A randomized, double-blind,
-  placebo-controlled crossover trial. Neurology 106(8):e214,715,
-  \doi{10.1212/WNL.0000000000214715}
+\bibitem{remijn2026amifampridine}
+Remijn-Nelissen, L., Bakker, W.R., van Gelder, T., Moes, D.J.A.R., Ruiter,
+  A.M., Campman, Y.J.M., Badrising, U.A., Straathof, C.S.M., Verschuuren,
+  J.J.G.M., Tannemaat, M.R.: Efficacy and safety of amifampridine in myasthenia
+  gravis: A randomized, double-blind, placebo-controlled crossover trial.
+\newblock Neurology \textbf{106}(8), e21{}4715 (2026).
+\newblock \doi{10.1212/WNL.0000000000214715}
 
-\bibitem[{Saito and Rehmsmeier(2015)}]{saito2015prc}
-Saito T, Rehmsmeier M (2015) The precision-recall plot is more informative than
+\bibitem{saito2015prc}
+Saito, T., Rehmsmeier, M.: The precision-recall plot is more informative than
   the {ROC} plot when evaluating binary classifiers on imbalanced datasets.
-  PLoS ONE 10(3):e0118,432, \doi{10.1371/journal.pone.0118432}
+\newblock PLoS ONE \textbf{10}(3), e011{}8432 (2015).
+\newblock \doi{10.1371/journal.pone.0118432}
 
-\bibitem[{Schlichtkrull et~al(2018)Schlichtkrull, Kipf, Bloem, van~den Berg,
-  Titov, and Welling}]{schlichtkrull2018rgcn}
-Schlichtkrull M, Kipf TN, Bloem P, van~den Berg R, Titov I, Welling M (2018)
-  Modeling relational data with graph convolutional networks. In: The Semantic
-  Web (ESWC), Lecture Notes in Computer Science, vol 10843, pp 593--607,
-  \doi{10.1007/978-3-319-93417-4_38}
+\bibitem{schlichtkrull2018rgcn}
+Schlichtkrull, M., Kipf, T.N., Bloem, P., van~den Berg, R., Titov, I., Welling,
+  M.: Modeling relational data with graph convolutional networks.
+\newblock In: The Semantic Web (ESWC), \emph{Lecture Notes in Computer
+  Science}, vol. 10843, pp. 593--607 (2018).
+\newblock \doi{10.1007/978-3-319-93417-4_38}
 
-\bibitem[{Sosa et~al(2020)Sosa, Derry, Guo, Wei, Brinton, and
-  Altman}]{sosa2020rare}
-Sosa DN, Derry A, Guo M, Wei E, Brinton C, Altman RB (2020) A literature-based
-  knowledge graph embedding method for identifying drug repurposing
-  opportunities in rare diseases. Pacific Symposium on Biocomputing
-  25:463--474, \doi{10.1142/9789811215636_0041}
+\bibitem{sosa2020rare}
+Sosa, D.N., Derry, A., Guo, M., Wei, E., Brinton, C., Altman, R.B.: A
+  literature-based knowledge graph embedding method for identifying drug
+  repurposing opportunities in rare diseases.
+\newblock Pacific Symposium on Biocomputing \textbf{25}, 463--474 (2020).
+\newblock \doi{10.1142/9789811215636_0041}
 
-\bibitem[{Sun et~al(2019)Sun, Deng, Nie, and Tang}]{sun2019rotate}
-Sun Z, Deng ZH, Nie JY, Tang J (2019) {RotatE}: Knowledge graph embedding by
-  relational rotation in complex space. In: International Conference on
-  Learning Representations (ICLR), arXiv:1902.10197
+\bibitem{sun2019rotate}
+Sun, Z., Deng, Z.H., Nie, J.Y., Tang, J.: {RotatE}: Knowledge graph embedding
+  by relational rotation in complex space.
+\newblock In: International Conference on Learning Representations (ICLR)
+  (2019).
+\newblock ArXiv:1902.10197
 
-\bibitem[{Voorhees(1999)}]{voorhees1999trec}
-Voorhees EM (1999) The {TREC-8} question answering track report. In:
-  Proceedings of the Eighth Text REtrieval Conference (TREC-8)
+\bibitem{voorhees1999trec}
+Voorhees, E.M.: The {TREC-8} question answering track report.
+\newblock In: Proceedings of the Eighth Text REtrieval Conference (TREC-8)
+  (1999)
 
-\bibitem[{Wei et~al(2025)Wei, Sasi, Piepenbrock, Huynen, and
-  't~Hoen}]{wei2025kgreview}
-Wei S, Sasi C, Piepenbrock J, Huynen MA, 't~Hoen PAC (2025) The use of
+\bibitem{wei2025kgreview}
+Wei, S., Sasi, C., Piepenbrock, J., Huynen, M.A., 't~Hoen, P.A.C.: The use of
   knowledge graphs for drug repurposing: From classical machine learning
-  algorithms to graph neural networks. Computers in Biology and Medicine
-  196:110,873, \doi{10.1016/j.compbiomed.2025.110873}
+  algorithms to graph neural networks.
+\newblock Computers in Biology and Medicine \textbf{196}, 11{}0873 (2025).
+\newblock \doi{10.1016/j.compbiomed.2025.110873}
 
-\bibitem[{Wilcoxon(1945)}]{wilcoxon1945}
-Wilcoxon F (1945) Individual comparisons by ranking methods. Biometrics
-  Bulletin 1(6):80--83, \doi{10.2307/3001968}
+\bibitem{wilcoxon1945}
+Wilcoxon, F.: Individual comparisons by ranking methods.
+\newblock Biometrics Bulletin \textbf{1}(6), 80--83 (1945).
+\newblock \doi{10.2307/3001968}
 
-\bibitem[{Yang et~al(2015)Yang, Yih, He, Gao, and Deng}]{yang2015distmult}
-Yang B, Yih Wt, He X, Gao J, Deng L (2015) Embedding entities and relations for
-  learning and inference in knowledge bases. In: International Conference on
-  Learning Representations (ICLR), arXiv:1412.6575
+\bibitem{yang2015distmult}
+Yang, B., Yih, W.t., He, X., Gao, J., Deng, L.: Embedding entities and
+  relations for learning and inference in knowledge bases.
+\newblock In: International Conference on Learning Representations (ICLR)
+  (2015).
+\newblock ArXiv:1412.6575
 
-\bibitem[{Zhang et~al(2021)Zhang, Hristovski, Schutte, Kastrin, Fiszman, and
-  Kilicoglu}]{zhang2021covidkg}
-Zhang R, Hristovski D, Schutte D, Kastrin A, Fiszman M, Kilicoglu H (2021) Drug
-  repurposing for {COVID-19} via knowledge graph completion. Journal of
-  Biomedical Informatics 115:103,696, \doi{10.1016/j.jbi.2021.103696}
+\bibitem{zhang2021covidkg}
+Zhang, R., Hristovski, D., Schutte, D., Kastrin, A., Fiszman, M., Kilicoglu,
+  H.: Drug repurposing for {COVID-19} via knowledge graph completion.
+\newblock Journal of Biomedical Informatics \textbf{115}, 10{}3696 (2021).
+\newblock \doi{10.1016/j.jbi.2021.103696}
 
-\bibitem[{Zhu et~al(2021)Zhu, Zhang, Xhonneux, and Tang}]{zhu2021nbfnet}
-Zhu Z, Zhang Z, Xhonneux LP, Tang J (2021) Neural {Bellman-Ford} networks: A
-  general graph neural network framework for link prediction. In: Advances in
-  Neural Information Processing Systems (NeurIPS), arXiv:2106.06935
+\bibitem{zhu2021nbfnet}
+Zhu, Z., Zhang, Z., Xhonneux, L.P., Tang, J.: Neural {Bellman-Ford} networks: A
+  general graph neural network framework for link prediction.
+\newblock In: Advances in Neural Information Processing Systems (NeurIPS)
+  (2021).
+\newblock ArXiv:2106.06935
 
 \end{thebibliography}
