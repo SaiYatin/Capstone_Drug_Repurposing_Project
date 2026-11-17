@@ -273,9 +273,9 @@ notes(s, "Introduce the team and the project. One sentence: we rank existing dru
 # 2. Outline
 s = S[1]
 frame(s, "Outline")
-items = ["Abstract", "Suggestions from Review 2 and key changes", "Implementation details", "Project demonstration",
-         "Test plan and strategy", "Results and discussion", "Applicability to other domains",
-         "Timeline and report status", "Conclusion and future work", "IEEE drafts and target venues", "References"]
+items = ["Abstract", "Panel remarks and our response", "Implementation details", "Project demonstration",
+         "Test plan and strategy", "Results, reasoning and trust", "Applicability to other domains",
+         "Timeline and report status", "Conclusion and future work", "Papers and target venues", "References"]
 for i, it in enumerate(items):
     col, row = divmod(i, 6)
     x, y = 1.2 + col * 5.8, 2.05 + row * 0.72
@@ -307,31 +307,46 @@ text(s, 0.7, 2.0, 7.3, 4.7, [
           "strict-family hold-out, full ranking of all 7,957 drugs, six baselines, 3 seeds, paired tests, TxGNN "
           "head-to-head, five validation layers.", "size": 15, "space": 10},
     {"t": "**Scope.** Ranked hypotheses for expert review, not treatment advice.", "size": 15}])
-stat(s, 8.35, 2.0, 4.3, "76%", "unseen test diseases with an approved drug in the top 10",
+stat(s, 8.35, 2.0, 4.3, "76%", "unseen test diseases with a known drug in the top 10",
      "best baseline 57%, random 0.8%")
 stat(s, 8.35, 3.7, 4.3, "0.501 vs 0.392", "MRR vs best baseline (68 test diseases)", "p = 0.003, 3 seeds", big_size=28)
 stat(s, 8.35, 5.4, 4.3, "7,957", "drugs ranked for every disease", big_size=30)
 notes(s, "Key message: a leakage-controlled, path-based model that beats every baseline on diseases it has never seen.")
 
-# 4. Suggestions from Review 2
+# 4. Panel remarks from the last review and our response (one row per remark, pointing to the slide that answers it)
 s = S[3]
-frame(s, "Suggestions from Review - 2")
-card(s, 0.7, 2.0, 5.6, 4.6, fill=TINT2)
-text(s, 0.95, 2.15, 5.1, 0.5, [{"t": "Panel remarks (Review 2)", "size": 18, "bold": True, "color": RUST}])
-ph = text(s, 0.95, 2.8, 5.1, 3.6, [{"t": "[Add the panel's remarks from Review 2 and our response to each.]",
-                                    "size": 15, "color": DARK}], name="TODO_review2_remarks")
-ph.fill.solid()
-ph.fill.fore_color.rgb = YELLOW
-card(s, 6.6, 2.0, 6.1, 4.6)
-text(s, 6.85, 2.15, 5.6, 0.5, [{"t": "Key changes made in Phase 3", "size": 18, "bold": True, "color": RUST}])
-text(s, 6.85, 2.75, 5.7, 3.8, [
-    {"t": "Audited the earlier pipeline: its AUPRC 0.935-0.999 came from leakage (277/277 test pairs were graph "
-          "edges; a no-learning degree rule scored AUROC 0.972). Those numbers are withdrawn.", "bullet": True, "size": 14},
-    {"t": "Rebuilt on PrimeKG with a strict-family zero-shot protocol and full ranking.", "bullet": True, "size": 14},
-    {"t": "Added six baselines, 3 seeds, paired tests and a selection-free test split.", "bullet": True, "size": 14},
-    {"t": "Head-to-head with TxGNN on TxGNN's own split; five validation layers.", "bullet": True, "size": 14},
-    {"t": "IEEE conference and journal drafts; college Turnitin similarity 0%.", "bullet": True, "size": 14}])
-notes(s, "Fill in the panel's actual Review-2 remarks in the yellow box before presenting.")
+frame(s, "Suggestions from Last Review")
+remarks = [("Can we trust these numbers?",
+            "Safeguards and their limits, in one place: hidden answers, no tuning on test, fair baselines, 3 seeds, "
+            "reproducible from logs.", "Slide 20"),
+           ("What are the numbers built upon?",
+            "Curated PrimeKG drug-disease facts; the test disease's answers are hidden; the model must re-find them "
+            "among all 7,957 drugs.", "Slide 11"),
+           ("Drugs and diseases need full clarity: reasoning behind every number",
+            "One disease worked through by hand, from each drug's rank to the headline MRR 0.501.", "Slide 12"),
+           ("How do you say this drug will work for this disease?",
+            "We do not claim it works. Each rank is a hypothesis with a traceable reason (graph path + prior), "
+            "checked against trials and literature.", "Slide 18")]
+text(s, 0.6, 1.95, 4.4, 0.4, [{"t": "Panel remark", "size": 16, "bold": True, "color": RUST}])
+text(s, 5.25, 1.95, 6.0, 0.4, [{"t": "Our response", "size": 16, "bold": True, "color": RUST}])
+for i, (q, a, where) in enumerate(remarks):
+    y = 2.45 + i * 1.08
+    card(s, 0.6, y, 4.45, 0.95, fill=TINT2)
+    text(s, 0.75, y + 0.05, 4.15, 0.85, [{"t": q, "size": 14, "bold": True}], anchor=MSO_ANCHOR.MIDDLE)
+    card(s, 5.2, y, 6.15, 0.95)
+    text(s, 5.35, y + 0.05, 5.85, 0.85, [{"t": a, "size": 13}], anchor=MSO_ANCHOR.MIDDLE)
+    b = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(11.5), Inches(y + 0.22), Inches(1.2), Inches(0.5))
+    b.fill.solid()
+    b.fill.fore_color.rgb = ORANGE
+    b.line.fill.background()
+    b.text_frame.text = where
+    for p in b.text_frame.paragraphs:
+        p.alignment = PP_ALIGN.CENTER
+        for r in p.runs:
+            r.font.size, r.font.bold, r.font.name, r.font.color.rgb = Pt(12), True, FONT, RGBColor(0xFF, 0xFF, 0xFF)
+notes(s, "The panel asked whether the numbers can be trusted, what they are built on, and how we can say a drug works. "
+         "Short answer: every number measures whether the model re-finds treatments that are already known but were "
+         "hidden from it; it never claims a new drug works. Slides 11, 12, 18 and 20 answer each point.")
 
 # 5. Implementation 1: architecture
 s = S[4]
@@ -466,7 +481,7 @@ notes(s, "Every downloaded Kaggle result was verified against the repository cod
 s = S[10]
 frame(s, "Results and Discussion: Accuracy on Unseen Diseases")
 bar_chart(s, 0.5, 1.9, 6.1, 4.0, ["Random", "Popularity", "Disease kNN", "BioPathNet++"],
-          [("Any@10", (0.8, 19, 57, 76))], [GREY], title="Approved drug in top 10 (% of 68 test diseases)",
+          [("Any@10", (0.8, 19, 57, 76))], [GREY], title="Known drug in top 10 (% of 68 test diseases)",
           fmt='0"%"', maxv=95, point_colors=[GREY, GREY, GREY, ORANGE])
 bar_chart(s, 6.7, 1.9, 6.1, 4.0, ["Random", "Popularity", "Disease kNN", "BioPathNet++"],
           [("MRR", (0.001, 0.062, 0.392, 0.501))], [GREY], title="Mean reciprocal rank (68 test diseases)",
@@ -590,16 +605,16 @@ card(s, 8.95, 1.95, 3.8, 3.7, fill=TINT2)
 text(s, 9.1, 2.05, 3.5, 3.5, [
     {"t": "Status", "size": 16, "bold": True, "color": RUST, "space": 8},
     {"t": "All planned experiments complete (7 Kaggle sessions)", "bullet": True, "size": 13},
-    {"t": "Project report complete (56 pages, Phase-3 format)", "bullet": True, "size": 13},
-    {"t": "IEEE conference paper: final draft", "bullet": True, "size": 13},
-    {"t": "Journal manuscript: complete draft", "bullet": True, "size": 13},
+    {"t": "Project report complete (57 pages, Phase-3 format)", "bullet": True, "size": 13},
+    {"t": "SmartCom 2027 (Springer) paper submitted, under review", "bullet": True, "size": 13},
+    {"t": "IEEE conference paper and journal manuscript: complete", "bullet": True, "size": 13},
     {"t": "Pending: clinician review of candidates", "bullet": True, "size": 13}])
 notes(s, "Show the report to the panel here.")
 
 # 19. Conclusion
 s = S[18]
 frame(s, "Conclusion and Future Work")
-for i, (h, b) in enumerate([("Aim 2: accuracy", "Beats every baseline on unseen diseases: 76% vs 57% approved drug in top 10."),
+for i, (h, b) in enumerate([("Aim 2: accuracy", "Beats every baseline on unseen diseases: 76% vs 57% with a known drug in the top 10."),
                             ("Aim 1: transfer", "Autoimmune data helps only when data is scarce; at full scale it even lowers MRR."),
                             ("Aim 3: components", "Paths carry accuracy; transfer channel adds stability; 72% of edges redundant.")]):
     x = 0.55 + i * 4.1
@@ -608,19 +623,21 @@ for i, (h, b) in enumerate([("Aim 2: accuracy", "Beats every baseline on unseen 
 text(s, 0.6, 4.0, 12.1, 2.4, [
     {"t": "Future work", "size": 16, "bold": True, "color": RUST, "space": 6},
     {"t": "Clinician review of top candidates with the prepared review sheet", "bullet": True, "size": 14},
-    {"t": "KG-embedding baselines and BioPathNet's official code on the same split", "bullet": True, "size": 14},
+    {"t": "BioPathNet's official code on the same split (KG-embedding baselines now done: TransE, DistMult, RotatE)",
+     "bullet": True, "size": 14},
     {"t": "TxGNN comparison on more disease areas; reduce the corticosteroid bias", "bullet": True, "size": 14}])
 notes(s, "One line to close: rigorous evaluation turned an impressive but invalid result into a modest, trustworthy one.")
 
 # 20. IEEE draft + venues
 s = S[19]
-frame(s, "IEEE Draft and Target Venues")
+frame(s, "Papers and Target Venues")
 card(s, 0.6, 1.95, 5.9, 3.6, fill=TINT2)
 text(s, 0.8, 2.05, 5.5, 3.4, [
-    {"t": "Status of the drafts", "size": 16, "bold": True, "color": RUST, "space": 6},
-    {"t": "Conference paper (IEEE, 5 pages): final draft", "bullet": True, "size": 14},
-    {"t": "Journal manuscript (IEEE, about 11 pages): complete draft", "bullet": True, "size": 14},
-    {"t": "College Turnitin check: 0% similarity; AI score below the reporting threshold", "bullet": True, "size": 14},
+    {"t": "Status of the papers", "size": 16, "bold": True, "color": RUST, "space": 6},
+    {"t": "**SmartCom 2027** (Springer LNNS, Scopus-indexed series): submitted 13 Nov 2026, Submission 228, under review",
+     "bullet": True, "size": 14},
+    {"t": "IEEE conference version (6 pages) and journal manuscript (11 pages): complete", "bullet": True, "size": 14},
+    {"t": "College Turnitin: 0% similarity; AI use disclosed in every paper", "bullet": True, "size": 14},
     {"t": "Every number generated from run logs", "bullet": True, "size": 14},
     {"t": "Title: BioPathNet++ for Autoimmune Diseases: Path-Based Transfer Learning for Rare Disease Drug Repurposing",
      "size": 12, "color": MUTED}])
@@ -630,7 +647,8 @@ text(s, 7.0, 2.05, 5.5, 3.4, [
     {"t": "Conferences: IEEE CONECCT, IEEE INDICON, ICCCNT, InCoB 2027", "bullet": True, "size": 14},
     {"t": "Journals: Computers in Biology and Medicine, Journal of Biomedical Informatics, BMC Bioinformatics, "
           "IEEE Access, Scientific Reports", "bullet": True, "size": 14}])
-notes(s, "Venue deadlines and indexing must be checked before submission.")
+notes(s, "SmartCom is the first submission; the same paper goes nowhere else while it is under review. Other venues "
+         "are for the journal version or after a decision.")
 
 # 21. References
 s = S[20]
@@ -646,6 +664,180 @@ refs = [
     "[8] S. Pushpakom et al., \"Drug repurposing: progress, challenges and recommendations,\" Nature Reviews Drug Discovery, vol. 18, pp. 41-58, 2019."]
 text(s, 0.6, 1.95, 12.1, 4.8, [{"t": r, "size": 13, "space": 7} for r in refs])
 notes(s, "The full list of 34 references is in the report.")
+
+# ------------------------------------------------------------------------------------------------- panel slides
+# Answers to the last review ("can we trust these numbers, what are they built upon, how do you say this drug works").
+# Every number below comes from the run outputs: results.json per-disease ranks (main_s0, test_main_s*),
+# validation/explanations_main_s0.json (path and prior logits), validation_summary.json.
+def num_circle(slide, x, y, n, d=0.46):
+    c = slide.shapes.add_shape(MSO_SHAPE.OVAL, Inches(x), Inches(y), Inches(d), Inches(d))
+    c.fill.solid()
+    c.fill.fore_color.rgb = ORANGE
+    c.line.fill.background()
+    c.text_frame.text = str(n)
+    for m in ("margin_left", "margin_right", "margin_top", "margin_bottom"):
+        setattr(c.text_frame, m, 0)
+    for p in c.text_frame.paragraphs:
+        p.alignment = PP_ALIGN.CENTER
+        for r in p.runs:
+            r.font.size, r.font.bold, r.font.name, r.font.color.rgb = Pt(14), True, FONT, RGBColor(0xFF, 0xFF, 0xFF)
+
+
+def badge(slide, x, y, w, h, label, fill):
+    b = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(x), Inches(y), Inches(w), Inches(h))
+    b.fill.solid()
+    b.fill.fore_color.rgb = fill
+    b.line.fill.background()
+    b.text_frame.text = label
+    b.text_frame.word_wrap = True
+    for p in b.text_frame.paragraphs:
+        p.alignment = PP_ALIGN.CENTER
+        for r in p.runs:
+            r.font.size, r.font.bold, r.font.name, r.font.color.rgb = Pt(12), True, FONT, RGBColor(0xFF, 0xFF, 0xFF)
+
+
+# A. What the numbers are built on
+s = S[22]
+frame(s, "Where the Numbers Come From")
+steps = [("Known facts", "PrimeKG (Harvard, 2023): 129,375 entities, 4 million links, including 9,388 curated "
+                         "drug-disease indications (DrugBank drugs, MONDO diseases)."),
+         ("Hide the answers", "For a test disease, every drug link of that disease and of its related diseases is "
+                              "removed. The model never sees them."),
+         ("Rank every drug", "Using only the remaining graph, the model scores all 7,957 drugs for that disease."),
+         ("Check", "Where did the hidden known drugs land? Rank 1 is best. Every baseline gets the same check.")]
+for i, (h, b) in enumerate(steps):
+    x = 0.55 + i * 3.1
+    card(s, x, 1.95, 2.85, 2.35)
+    num_circle(s, x + 0.15, 2.07, i + 1)
+    text(s, x + 0.7, 2.1, 2.05, 0.45, [{"t": h, "size": 15, "bold": True, "color": RUST}], anchor=MSO_ANCHOR.MIDDLE)
+    text(s, x + 0.15, 2.65, 2.6, 1.6, [{"t": b, "size": 13}])
+    if i < 3:
+        a = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(x + 2.88), Inches(2.95), Inches(0.2), Inches(0.3))
+        a.fill.solid()
+        a.fill.fore_color.rgb = ORANGE
+        a.line.fill.background()
+card(s, 0.55, 4.55, 6.0, 2.2)
+text(s, 0.75, 4.62, 5.65, 2.1, [
+    {"t": "What the numbers measure", "size": 15, "bold": True, "color": RUST, "space": 5},
+    {"t": "**Any@10 = 76%**: for 76% of the 68 hidden test diseases, at least one known drug is in the top 10 "
+          "(random: 0.8%).", "bullet": True, "size": 14, "space": 6},
+    {"t": "**MRR = 0.501**: the hidden known drugs sit near the very top; the median one is at rank 2 of 7,957.",
+     "bullet": True, "size": 14}])
+card(s, 6.75, 4.55, 6.0, 2.2, fill=TINT2)
+text(s, 6.95, 4.62, 5.65, 2.1, [
+    {"t": "What they do not measure", "size": 15, "bold": True, "color": RUST, "space": 5},
+    {"t": "Whether a drug works or is safe for a patient, its dose or its side effects.", "bullet": True, "size": 14,
+     "space": 6},
+    {"t": "A drug used in clinics but missing from PrimeKG counts as wrong (e.g. prednisolone for AIH).",
+     "bullet": True, "size": 14, "space": 6},
+    {"t": "New candidates stay hypotheses until trials and clinicians confirm them.", "bullet": True, "size": 14}])
+notes(s, "The ground truth is curated knowledge, not our opinion: PrimeKG's indication records. The test is whether the "
+         "model can re-find treatments medicine already knows when we hide them. That is the only thing the accuracy "
+         "numbers measure.")
+
+# B. One number worked through by hand (myasthenia gravis, full model, seed 0; ranks from results.json)
+s = S[23]
+frame(s, "How One Number Is Computed: Myasthenia Gravis")
+mg = [["Known drug (PrimeKG)", "Rank of 7,957", "Filtered rank", "1 / rank"],
+      ["Ambenonium", "1", "1", "1.000"], ["Neostigmine", "2", "1", "1.000"], ["Pyridostigmine", "3", "1", "1.000"],
+      ["Distigmine", "4", "1", "1.000"], ["Prednisolone", "7", "3", "0.333"], ["Dexamethasone", "10", "5", "0.200"],
+      ["Prednisone", "16", "10", "0.100"], ["**Average = MRR for MG**", "", "", "**0.662**"]]
+table(s, 0.55, 1.95, 6.6, mg, [2.6, 1.4, 1.4, 1.2], size=13, row_h=0.42)
+text(s, 0.55, 5.85, 6.6, 0.9, [{"t": "Full model, seed 0. MG is one of the 6 rare targets: its drug links were hidden "
+                                     "during training. The 68 test diseases are scored exactly the same way.",
+                                "size": 11, "color": MUTED}])
+for i, t in enumerate([
+        "**Filtered rank**: known drugs ranked above it are not counted as mistakes. Prednisolone is 7th, but 4 known "
+        "drugs are above it, so it counts as 3rd.",
+        "**One disease**: MRR = average of 1/rank = 4.633 / 7 = **0.662**. Any@10: yes, a known drug is at #1.",
+        "**Headline**: repeat for each of the 68 test diseases and average: 0.494 for seed 0; mean of 3 seeds "
+        "**0.501**. Disease kNN, same steps: **0.392**.",
+        "**Not every disease works**: for tenosynovial giant cell tumor the only known drug ranked 988, "
+        "so its MRR is 0.001."]):
+    y = 1.95 + i * 1.2
+    num_circle(s, 7.45, y + 0.05, i + 1, d=0.42)
+    text(s, 8.0, y, 4.75, 1.15, [{"t": t, "size": 13}])
+notes(s, "This is the whole calculation behind the headline number; nothing is hand-picked. Each disease contributes "
+         "the average of 1/rank of its own hidden known drugs; the 68 diseases are then averaged. Confidence intervals "
+         "come from resampling the diseases.")
+
+# C. Why a drug is ranked high: score = path evidence + prior (explanations_main_s0.json)
+s = S[24]
+frame(s, "Why the Model Ranks a Drug High")
+card(s, 0.55, 1.95, 12.2, 0.95, fill=TINT2)
+text(s, 0.75, 2.0, 11.8, 0.85, [
+    {"t": "Score(disease, drug) = **path evidence** (chains of known facts linking the two in the graph) + **prior** "
+          "(how often the drug treats similar diseases). A high score is a reason to look, not proof that the drug "
+          "works.", "size": 14}], anchor=MSO_ANCHOR.MIDDLE)
+text(s, 2.45, 3.0, 5.6, 0.35, [{"t": "Strongest path found", "size": 12, "bold": True, "color": MUTED}])
+text(s, 8.15, 3.0, 1.6, 0.35, [{"t": "Score parts", "size": 12, "bold": True, "color": MUTED}])
+text(s, 9.85, 3.0, 2.8, 0.35, [{"t": "What it means", "size": 12, "bold": True, "color": MUTED}])
+rows = [("Correct", ORANGE, "Myasthenia gravis → MUSK (gene) → neuromuscular junction disease → **Pyridostigmine**",
+         "path 3.94\nprior 4.06", "Standard MG therapy; the path is the real mechanism link."),
+        ("New candidate", SLATE, "Myasthenia gravis → immune-mediated neuromuscular junction disease → Lambert-Eaton "
+                                 "syndrome → **Amifampridine**",
+         "path 3.86\nprior 2.55", "Approved for Lambert-Eaton; MG trials mixed (helped MuSK-MG, not AChR-MG)."),
+        ("Weak link", RUST, "Crohn disease → mouth disease → maxillary sinusitis → **Ciprofloxacin**",
+         "path 2.46\nprior 4.04", "Spurious path. Crohn steroids rank high mostly from the prior: expert filter needed.")]
+for i, (lab, col, path, sc, verdict) in enumerate(rows):
+    y = 3.4 + i * 1.12
+    card(s, 0.55, y, 12.2, 1.0)
+    badge(s, 0.7, y + 0.2, 1.6, 0.6, lab, col)
+    text(s, 2.45, y + 0.05, 5.6, 0.9, [{"t": path, "size": 13}], anchor=MSO_ANCHOR.MIDDLE)
+    text(s, 8.15, y + 0.05, 1.6, 0.9, [{"t": l, "size": 12, "space": 0} for l in sc.split("\n")], anchor=MSO_ANCHOR.MIDDLE)
+    text(s, 9.85, y + 0.05, 2.8, 0.9, [{"t": verdict, "size": 12}], anchor=MSO_ANCHOR.MIDDLE)
+notes(s, "Paths come from gradient-times-input on every edge plus beam search (explain.py), full model, seed 0. "
+         "Score parts are the model's two logits. Pyridostigmine: correct mechanism. Amifampridine: a real hypothesis "
+         "with mixed trial evidence (phase-2b positive in MuSK-antibody MG, 2026 RCT negative in AChR-antibody MG). "
+         "Ciprofloxacin for Crohn: the path goes through 'mouth disease', which is not a mechanism; for Crohn the "
+         "steroids' scores are mostly prior (about 5.3) rather than path (about 1.5). This is why every list needs a "
+         "clinician.")
+
+# D. Can we trust the numbers: safeguards and limits
+s = S[25]
+frame(s, "Can We Trust These Numbers?")
+card(s, 0.55, 1.95, 6.85, 3.75)
+text(s, 0.75, 2.02, 6.5, 3.65, [
+    {"t": "Why they can be trusted", "size": 16, "bold": True, "color": RUST, "space": 6},
+    {"t": "**Answers hidden**: each test disease and its relatives lose all drug links; automated checks fail if a "
+          "test pair reaches training.", "bullet": True, "size": 13, "space": 5},
+    {"t": "**No tuning on test**: the 68 test diseases were never used for training or for choosing the epoch.",
+     "bullet": True, "size": 13, "space": 5},
+    {"t": "**Fair comparison**: 6 simple baselines and 3 KG embeddings on the same split; random scores 0.001.",
+     "bullet": True, "size": 13, "space": 5},
+    {"t": "**Repeated and tested**: 3 seeds, 95% CI; significant only if the CI excludes 0 and Wilcoxon p < 0.05.",
+     "bullet": True, "size": 13, "space": 5},
+    {"t": "**Reproducible**: every number is generated from run logs; laptop re-scoring reproduces the Kaggle top-10 "
+          "lists (17 of 18, one exact tie).", "bullet": True, "size": 13, "space": 5},
+    {"t": "**Self-audited**: our earlier AUPRC 0.935-0.999 came from leakage; withdrawn and rebuilt.",
+     "bullet": True, "size": 13}])
+card(s, 7.6, 1.95, 5.15, 3.75, fill=TINT2)
+text(s, 7.8, 2.02, 4.8, 3.65, [
+    {"t": "Where to be careful", "size": 16, "bold": True, "color": RUST, "space": 6},
+    {"t": "**Incomplete labels**: a drug used in clinics but missing from PrimeKG counts as wrong (AIH: "
+          "prednisolone).", "bullet": True, "size": 13, "space": 5},
+    {"t": "**Small rare targets**: 1-24 known drugs each, so they are case studies, not statistics.",
+     "bullet": True, "size": 13, "space": 5},
+    {"t": "**Bias**: corticosteroids fill 41% and antibacterials 21% of top-20 slots.", "bullet": True, "size": 13,
+     "space": 5},
+    {"t": "**Scope**: the numbers show the model re-finds known treatments, not that new candidates work. "
+          "Clinician review comes next.", "bullet": True, "size": 13}])
+band = card(s, 0.55, 5.85, 12.2, 0.9, fill=ORANGE)
+text(s, 0.8, 5.9, 11.7, 0.8, [{"t": "In one line: the model is graded on answers it never saw, the grading is repeated "
+                                    "and can be re-run, and it shows re-finding of known treatments, not proof of new ones.",
+                               "size": 15, "bold": True, "color": RGBColor(0xFF, 0xFF, 0xFF)}], anchor=MSO_ANCHOR.MIDDLE)
+notes(s, "Trust here means: the evaluation cannot see the answers, is repeated, is compared fairly and can be re-run "
+         "from the logs. It does not mean the model is a clinical tool; that needs clinicians and trials.")
+
+# put the panel slides where they belong: A and B before the results, C after the case studies, D after validation
+lst = prs.slides._sldIdLst
+ids = list(lst)
+order = list(range(10)) + [22, 23] + list(range(10, 15)) + [24, 15, 25] + list(range(16, 22))
+assert sorted(order) == list(range(len(ids))), order
+for e in ids:
+    lst.remove(e)
+for i in order:
+    lst.append(ids[i])
 
 prs.save(OUT)
 print("saved", OUT, len(prs.slides), "slides")
