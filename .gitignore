@@ -90,3 +90,8 @@ tmp/
 kaggle/*.zip
 # invalid v2 model weights (66 MB; results invalidated by the leakage audit)
 checkpoints/best_model_v2.pt
+
+# IEEE Access template fonts (IEEE-licensed) and the source zip that contains them: keep local only
+outputs/paper/ieee_access/*.pfb
+outputs/paper/ieee_access/*.tfm
+outputs/paper/BioPathNet++_IEEEAccess_source.zip
